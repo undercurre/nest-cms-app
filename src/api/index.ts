@@ -6,7 +6,8 @@ interface RequestOptions extends AxiosRequestConfig {
 
 class Request {
   private instance = axios.create({
-    baseURL: 'http://172.27.36.208:80', //替换为你的基础 URL
+    // baseURL: 'http://172.27.36.208/web/cms/',
+    baseURL: 'https://web.navbird.cn/web/cms/',
     timeout: 5000,
     headers: {
       'Content-Type': 'application/json',

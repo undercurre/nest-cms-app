@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <img class="p-20px w-full border-box" src="@/assets/welcome.jpg" />
   </div>
 </template>
 

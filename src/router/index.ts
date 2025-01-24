@@ -2,11 +2,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
-  history: createWebHistory('markH5/'),
+  history: createWebHistory('web/cms/markH5/'),
   routes: [
     {
       path: '/',
-      redirect: '/product/:id',
+      redirect: '/about',
     },
     {
       path: '/product/:id',
