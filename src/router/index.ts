@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import ProductView from '../views/ProductView.vue'
+import DietView from '../views/DietView.vue'
+import GuideView from '../views/GuideView.vue'
 
 const router = createRouter({
   history: createWebHistory('web/cms/markH5/'),
@@ -10,8 +12,18 @@ const router = createRouter({
     },
     {
       path: '/product/:id',
-      name: 'home',
-      component: HomeView,
+      name: 'product',
+      component: ProductView,
+    },
+    {
+      path: '/guide/:id',
+      name: 'guide',
+      component: GuideView,
+    },
+    {
+      path: '/diet/:id',
+      name: 'diet',
+      component: DietView,
     },
     {
       path: '/about',

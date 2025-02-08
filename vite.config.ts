@@ -3,13 +3,26 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { VantResolver } from '@vant/auto-import-resolver'
 import UnoCSS from 'unocss/vite'
 
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
   return {
     base: mode === 'development' ? '/' : './',
-    plugins: [vue(), vueDevTools(), UnoCSS()],
+    plugins: [
+      vue(),
+      vueDevTools(),
+      UnoCSS(),
+      AutoImport({
+        resolvers: [VantResolver()],
+      }),
+      Components({
+        resolvers: [VantResolver()],
+      }),
+    ],
     server: {
       host: '0.0.0.0', // 监听所有网络接口
       port: 5173, // 保持端口不变
@@ -22,6 +35,7 @@ export default defineConfig(({ mode }) => {
       },
     },
     resolve: {
+      extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue'],
       alias: {
         '@': fileURLToPath(new URL('./src', import.meta.url)),
       },

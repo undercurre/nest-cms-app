@@ -1,9 +1,85 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
+
+import DietActiveIcon from '@/assets/images/app/diet_active.png'
+import DietInActiveIcon from '@/assets/images/app/diet_inactive.png'
+import ProductActiveIcon from '@/assets/images/app/product_active.png'
+import ProductInActiveIcon from '@/assets/images/app/product_inactive.png'
+import GuideActiveIcon from '@/assets/images/app/guide_active.png'
+import GuideInActiveIcon from '@/assets/images/app/guide_inactive.png'
+import { useProductStore } from '@/stores/product'
+import { useAppStore } from '@/stores/app'
+
+const productStore = useProductStore()
+const appStore = useAppStore()
+
+// NavBar
+function onClickLeft() {
+  console.log('go2Back')
+}
 </script>
 
 <template>
-  <RouterView />
+  <div class="w-full h-full flex flex-col justify-around items-center overflow-scroll">
+    <van-nav-bar :safe-area-inset-top="true" :border="true" :fixed="true" title="">
+      <template #left>
+        <div class="flex items-center">
+          <img
+            class="w-14px h-14px mr-10px"
+            src="@/assets/images/app/left-arrow.png"
+            @click="onClickLeft"
+          />
+          <span class="w-full font-bold leading-28px text-18px">智能厨房助手</span>
+        </div>
+      </template>
+      <template #right>
+        <img class="h-150%" src="@/assets/images/app/logo.png" />
+      </template>
+    </van-nav-bar>
+    <div class="shadow-md w-full">
+      <van-nav-bar class="opacity-0" title="标题" left-text="返回" />
+    </div>
+
+    <div class="w-full flex-1">
+      <RouterView />
+    </div>
+
+    <van-tabbar
+      class="opacity-0"
+      :fixed="false"
+      v-model="appStore.tabbarActive"
+      active-color="#000000"
+      inactive-color="#000000"
+    >
+    </van-tabbar>
+    <van-tabbar v-model="appStore.tabbarActive" active-color="#000000" inactive-color="#000000">
+      <van-tabbar-item name="guide" replace :to="`/guide/${productStore.id}`">
+        <span>操作指引</span>
+        <template #icon="props">
+          <img
+            class="w-15px h-15px pb-8px"
+            :src="props.active ? GuideActiveIcon : GuideInActiveIcon"
+          />
+        </template>
+      </van-tabbar-item>
+      <van-tabbar-item name="product" replace :to="`/product/${productStore.id}`"
+        ><span>产品说明</span>
+        <template #icon="props">
+          <img
+            class="w-15px h-15px pb-8px"
+            :src="props.active ? ProductActiveIcon : ProductInActiveIcon"
+          /> </template
+      ></van-tabbar-item>
+      <van-tabbar-item name="diet" replace :to="`/diet/${productStore.id}`"
+        ><span>食谱大全</span>
+        <template #icon="props">
+          <img
+            class="w-15px h-15px pb-8px"
+            :src="props.active ? DietActiveIcon : DietInActiveIcon"
+          /> </template
+      ></van-tabbar-item>
+    </van-tabbar>
+  </div>
 </template>
 
 <style scoped>
