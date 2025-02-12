@@ -15,7 +15,9 @@ export default defineConfig(({ mode }) => {
     plugins: [
       vue(),
       vueDevTools(),
-      UnoCSS(),
+      UnoCSS({
+        configFile: '../uno.config.ts',
+      }),
       AutoImport({
         resolvers: [VantResolver()],
       }),

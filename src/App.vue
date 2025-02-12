@@ -9,18 +9,23 @@ import GuideActiveIcon from '@/assets/images/app/guide_active.png'
 import GuideInActiveIcon from '@/assets/images/app/guide_inactive.png'
 import { useProductStore } from '@/stores/product'
 import { useAppStore } from '@/stores/app'
+import router from './router'
 
 const productStore = useProductStore()
 const appStore = useAppStore()
 
 // NavBar
 function onClickLeft() {
-  console.log('go2Back')
+  router.back()
+}
+
+function go2AI() {
+  router.push('/ai')
 }
 </script>
 
 <template>
-  <div class="w-full h-full flex flex-col justify-around items-center overflow-scroll">
+  <div class="w-100vw h-100vh">
     <van-nav-bar :safe-area-inset-top="true" :border="true" :fixed="true" title="">
       <template #left>
         <div class="flex items-center">
@@ -33,26 +38,59 @@ function onClickLeft() {
         </div>
       </template>
       <template #right>
-        <img class="h-150%" src="@/assets/images/app/logo.png" />
+        <img class="h-150%" src="@/assets/images/app/logo.png" @click="go2AI" />
       </template>
     </van-nav-bar>
-    <div class="shadow-md w-full">
-      <van-nav-bar class="opacity-0" title="标题" left-text="返回" />
-    </div>
+    <div class="flex flex-col h-full">
+      <div class="shadow-md w-full h-46px"></div>
 
-    <div class="w-full flex-1">
-      <RouterView />
-    </div>
+      <div class="w-full flex-1 overflow-hidden">
+        <div class="h-full overflow-scroll">
+          <RouterView />
+        </div>
+      </div>
 
+      <van-tabbar
+        class="shrink-0"
+        :fixed="false"
+        :safe-area-inset-bottom="true"
+        v-model="appStore.tabbarActive"
+        active-color="#000000"
+        inactive-color="#000000"
+      >
+        <van-tabbar-item name="guide" replace :to="`/guide/${productStore.id}`">
+          <span>操作指引</span>
+          <template #icon="props">
+            <img
+              class="w-15px h-15px pb-8px"
+              :src="props.active ? GuideActiveIcon : GuideInActiveIcon"
+            />
+          </template>
+        </van-tabbar-item>
+        <van-tabbar-item name="product" replace :to="`/product/${productStore.id}`"
+          ><span>产品说明</span>
+          <template #icon="props">
+            <img
+              class="w-15px h-15px pb-8px"
+              :src="props.active ? ProductActiveIcon : ProductInActiveIcon"
+            /> </template
+        ></van-tabbar-item>
+        <van-tabbar-item name="diet" replace :to="`/diet/${productStore.id}`"
+          ><span>食谱大全</span>
+          <template #icon="props">
+            <img
+              class="w-15px h-15px pb-8px"
+              :src="props.active ? DietActiveIcon : DietInActiveIcon"
+            /> </template
+        ></van-tabbar-item>
+      </van-tabbar>
+    </div>
     <van-tabbar
-      class="opacity-0"
-      :fixed="false"
+      :safe-area-inset-bottom="false"
       v-model="appStore.tabbarActive"
       active-color="#000000"
       inactive-color="#000000"
     >
-    </van-tabbar>
-    <van-tabbar v-model="appStore.tabbarActive" active-color="#000000" inactive-color="#000000">
       <van-tabbar-item name="guide" replace :to="`/guide/${productStore.id}`">
         <span>操作指引</span>
         <template #icon="props">

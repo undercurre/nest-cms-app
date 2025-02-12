@@ -26,6 +26,7 @@
       />
       <div
         class="flex justify-center items-center absolute border-5px border-#fff border-solid rounded-full"
+        @click="handlePlay"
       >
         <img class="w-50px h-50px" src="@/assets/images/app/play.png" v-if="firstFrameImage" />
       </div>
@@ -45,15 +46,18 @@
 </template>
 
 <script lang="ts" setup>
+import router from '@/router'
 import { ref } from 'vue'
 
 interface Props {
+  id: number
   url: string
   title: string
   description: string
 }
 
 const props = withDefaults(defineProps<Props>(), {
+  id: 1,
   url: 'https://raw.githubusercontent.com/undercurre/Video/refs/heads/main/kitchen-demo.mp4',
   title: '日常维护指南',
   description: '正确的清洁和保养方法',
@@ -98,5 +102,9 @@ function formatDuration(seconds: number) {
     .padStart(2, '0')
 
   return minute + ':' + second
+}
+
+function handlePlay() {
+  router.push({ name: 'guideDetail', params: { id: props.id } })
 }
 </script>
