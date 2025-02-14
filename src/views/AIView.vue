@@ -1,18 +1,23 @@
 <template>
   <div class="h-full flex flex-col justify-between">
-    <div class="w-full pt-40px flex-1 text-12px overflow-scroll">
-      <div v-for="(item, index) in talks" :key="item.content">
-        <span v-if="index === 0" class="bg-red/20 rounded-8px p-10px mb-20px"
-          >我是一个AI营养师，可以为你提供食谱等饮食咨询！</span
-        >
+    <div class="w-full pt-40px flex-1 text-12px overflow-scroll flex flex-col">
+      <div
+        v-for="(item, index) in talks"
+        :key="item.content"
+        class="w-75% talk"
+        :style="{ alignSelf: item.role === 'system' || index === 0 ? 'flex-start' : 'flex-end' }"
+      >
+        <div v-if="index === 0" class="bg-green/20 rounded-8px p-10px mb-20px">
+          我是一个AI营养师，可以为你提供食谱等饮食咨询！
+        </div>
         <div
-          v-if="index !== 0 && index !== 1 && index % 2 !== 1"
-          class="bg-red/20 rounded-8px p-10px mb-20px"
+          v-if="index !== 0 && item.role === 'user'"
+          class="bg-blue/20 rounded-8px p-10px mb-20px"
           v-html="md.render(item.content)"
         ></div>
         <div
-          v-if="index !== 0 && index !== 1 && index % 2 !== 0"
-          class="bg-green/20 self-end rounded-8px p-10px mb-20px"
+          v-if="index !== 1 && item.role === 'system'"
+          class="bg-green/20 rounded-8px p-10px mb-20px"
           v-html="md.render(item.content)"
         ></div>
       </div>
@@ -79,3 +84,20 @@ onMounted(async () => {
   }
 })
 </script>
+
+<style scoped>
+:deep(.talk p) {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+:deep(.talk hr) {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+:deep(.talk strong) {
+  font-weight: 900;
+  font-size: 14px;
+}
+</style>
