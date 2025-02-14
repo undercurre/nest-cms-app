@@ -22,10 +22,8 @@ declare module 'vue' {
     VanField: typeof import('vant/es')['Field']
     VanNavBar: typeof import('vant/es')['NavBar']
     VanSearch: typeof import('vant/es')['Search']
-    VanTab: typeof import('vant/es')['Tab']
     VanTabbar: typeof import('vant/es')['Tabbar']
     VanTabbarItem: typeof import('vant/es')['TabbarItem']
-    VanTabs: typeof import('vant/es')['Tabs']
     VideoCard: typeof import('./src/components/guide/VideoCard.vue')['default']
     WelcomeItem: typeof import('./src/components/WelcomeItem.vue')['default']
   }
