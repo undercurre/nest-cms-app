@@ -83,6 +83,8 @@ export const getDietById = (params: { id: number }) => {
  * @name ai营养师
  */
 
-export const getAIAnswer = (params: { content: string }) => {
-  return request.post<ResultData<string>>(`${PORT1}/deepseek/completion`, params)
+export const getAIAnswer = (messages: { role: string; content: string }[]) => {
+  return request.post<ResultData<string>>(`${PORT1}/deepseek/completion`, {
+    json: JSON.stringify(messages),
+  })
 }

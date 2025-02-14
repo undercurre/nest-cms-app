@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --mode development",
+    "dev:prod": "vite --mode production",
     "build": "run-p type-check \"build-only {@}\" --",
     "build:dev": "vite build --mode development",
     "build:prod": "vite build --mode production",
@@ -18,6 +19,7 @@
   },
   "dependencies": {
     "axios": "^1.7.9",
+    "markdown-it": "^14.1.0",
     "pinia": "^2.3.0",
     "vant": "^4.9.16",
     "vue": "^3.5.13",
@@ -27,6 +29,7 @@
   "devDependencies": {
     "@tsconfig/node22": "^22.0.0",
     "@types/jsdom": "^21.1.7",
+    "@types/markdown-it": "^14.1.2",
     "@types/node": "^22.10.2",
     "@vant/auto-import-resolver": "^1.2.1",
     "@vitejs/plugin-vue": "^5.2.1",

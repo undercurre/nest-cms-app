@@ -42,5 +42,8 @@ export default defineConfig(({ mode }) => {
         '@': fileURLToPath(new URL('./src', import.meta.url)),
       },
     },
+    define: {
+      'process.env.MODE': JSON.stringify(process.env.MODE),
+    },
   }
 })
