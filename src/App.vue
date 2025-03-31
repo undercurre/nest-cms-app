@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
+import { RouterView, useRoute } from 'vue-router'
 
 import DietActiveIcon from '@/assets/images/app/diet_active.png'
 import DietInActiveIcon from '@/assets/images/app/diet_inactive.png'
@@ -7,12 +7,22 @@ import ProductActiveIcon from '@/assets/images/app/product_active.png'
 import ProductInActiveIcon from '@/assets/images/app/product_inactive.png'
 import GuideActiveIcon from '@/assets/images/app/guide_active.png'
 import GuideInActiveIcon from '@/assets/images/app/guide_inactive.png'
+import StatisticsActiveIcon from '@/assets/images/app/statistics_active.png'
+import StatisticsInActiveIcon from '@/assets/images/app/statistics_inactive.png'
 import { useProductStore } from '@/stores/product'
 import { useAppStore } from '@/stores/app'
 import router from './router'
+import { computed, onMounted, ref } from 'vue'
+
+const route = useRoute()
+
+// 检查当前路由是否为 list
+const isListRoute = computed(() => route.name === 'list')
 
 const productStore = useProductStore()
 const appStore = useAppStore()
+
+const couponShow = ref(false)
 
 // NavBar
 function onClickLeft() {
@@ -22,6 +32,17 @@ function onClickLeft() {
 function go2AI() {
   router.push('/ai')
 }
+
+// function go2SaleApp() {
+//   couponShow.value = false
+//   router.push('/sale')
+// }
+
+onMounted(() => {
+  setTimeout(() => {
+    couponShow.value = true
+  }, 1000)
+})
 </script>
 
 <template>
@@ -34,11 +55,13 @@ function go2AI() {
             src="@/assets/images/app/left-arrow.png"
             @click="onClickLeft"
           />
-          <span class="w-full font-bold leading-28px text-18px">智能厨房助手</span>
+          <span class="w-full font-bold leading-28px text-18px">{{
+            isListRoute ? '设备列表' : '智能厨房助手'
+          }}</span>
         </div>
       </template>
       <template #right>
-        <img class="h-150%" src="@/assets/images/app/logo.png" @click="go2AI" />
+        <img v-if="!isListRoute" class="h-150%" src="@/assets/images/app/logo.png" @click="go2AI" />
       </template>
     </van-nav-bar>
     <div class="flex flex-col h-full">
@@ -51,6 +74,7 @@ function go2AI() {
       </div>
 
       <van-tabbar
+        v-if="!isListRoute"
         class="shrink-0"
         :fixed="false"
         :safe-area-inset-bottom="true"
@@ -83,9 +107,18 @@ function go2AI() {
               :src="props.active ? DietActiveIcon : DietInActiveIcon"
             /> </template
         ></van-tabbar-item>
+        <van-tabbar-item name="statistics" replace :to="`/statistics`"
+          ><span>智能分析</span>
+          <template #icon="props">
+            <img
+              class="w-15px h-15px pb-8px"
+              :src="props.active ? StatisticsActiveIcon : StatisticsInActiveIcon"
+            /> </template
+        ></van-tabbar-item>
       </van-tabbar>
     </div>
     <van-tabbar
+      v-if="!isListRoute"
       :safe-area-inset-bottom="false"
       v-model="appStore.tabbarActive"
       active-color="#000000"
@@ -116,7 +149,22 @@ function go2AI() {
             :src="props.active ? DietActiveIcon : DietInActiveIcon"
           /> </template
       ></van-tabbar-item>
+      <!-- <van-tabbar-item name="statistics" replace :to="`/statistics`"
+        ><span>智能分析</span>
+        <template #icon="props">
+          <img
+            class="w-15px h-15px pb-8px"
+            :src="props.active ? StatisticsActiveIcon : StatisticsInActiveIcon"
+          /> </template
+      ></van-tabbar-item> -->
     </van-tabbar>
+    <!-- <van-overlay :show="couponShow" @click="couponShow = false" />
+    <img
+      v-if="couponShow"
+      class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-999"
+      src="./assets//images/app/coupon.png"
+      @click="go2SaleApp"
+    /> -->
   </div>
 </template>
 

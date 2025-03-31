@@ -67,5 +67,8 @@ onBeforeMount(async () => {
         :difficulty="item.difficulty"
       ></DietCard>
     </div>
+    <div class="mb-50px">
+      <p class="text-#8B0000">下载APP查看更多菜谱 >>></p>
+    </div>
   </div>
 </template>

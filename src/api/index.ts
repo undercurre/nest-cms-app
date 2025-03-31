@@ -8,7 +8,7 @@ class Request {
   private instance = axios.create({
     baseURL:
       import.meta.env.MODE === 'production'
-        ? 'https://web.navbird.cn/web/cms/'
+        ? 'http://81.71.85.68:9006/web/cms/'
         : 'http://172.27.36.208:4000/web/cms/',
     timeout: 60000,
     headers: {

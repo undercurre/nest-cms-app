@@ -5,13 +5,23 @@ import GuideView from '../views/GuideView.vue'
 import GuideDetail from '../views/GuideDetail.vue'
 import DietDetail from '../views/DietDetail.vue'
 import AIView from '../views/AIView.vue'
+import SaleApp from '../views/SaleApp.vue'
+import StatisticsView from '../views/StatisticsView.vue'
 
 const router = createRouter({
   history: createWebHistory('web/cms/markH5/'),
   routes: [
     {
       path: '/',
-      redirect: '/about',
+      redirect: '/list',
+    },
+    {
+      path: '/list',
+      name: 'list',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/ListView.vue'),
     },
     {
       path: '/product/:id',
@@ -50,6 +60,16 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue'),
+    },
+    {
+      path: '/sale',
+      name: 'sale',
+      component: SaleApp,
+    },
+    {
+      path: '/statistics',
+      name: 'statistics',
+      component: StatisticsView,
     },
   ],
 })
