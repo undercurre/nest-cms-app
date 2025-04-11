@@ -1,6 +1,6 @@
-import request from '..'
+import { cmsService } from '..'
 
-const PORT1 = '/mova-cms'
+const PORT1 = 'device-api/h5'
 
 // 请求响应参数（不包含data）
 export interface Result {
@@ -14,17 +14,22 @@ export interface ResultData<T = unknown> extends Result {
 }
 
 export interface Product {
+  createTime: string
+  createUid: string
+  description: string
   id: number
-  model: string
-  name: string
-  sellingPoints: string
-  imageUrl: string
+  imageOssUrl: string
   manualOssUrl: string
+  productModel: string
+  productName: string
+  sku: string
+  updateTime: string
+  updateUid: string | null
 }
 
 /**
  * @name 查询产品列表
  */
 export const getProductInfo = (id: number) => {
-  return request.get<ResultData<Product>>(PORT1 + `/products/${id}`)
+  return cmsService.get<ResultData<Product>>(PORT1 + `/products/${id}`)
 }

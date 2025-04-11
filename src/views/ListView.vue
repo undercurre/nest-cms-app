@@ -17,15 +17,12 @@
             v-for="item in deviceList"
             :key="item.id"
           >
-            <img
-              class="h-200px"
-              src="https://img.pchome.com.tw/cs/items/DSBE1EA900HS0HS/000001_1725335604.jpg"
-            />
+            <img class="w-full h-200px" :src="item.imageOssUrl" />
             <div>
-              <span>设备名称：{{ item.name }}</span>
+              <span>设备名称：{{ item.productName }}</span>
             </div>
             <div>
-              <span>设备型号：{{ item.modal }}</span>
+              <span>设备型号：{{ item.productModel }}</span>
             </div>
           </div>
         </div>
@@ -35,13 +32,26 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { ref, onBeforeMount } from 'vue'
+import { getDeviceListByUid } from '@/api/modules/list'
+import { useRoute } from 'vue-router'
+import { useAppStore } from '@/stores/app'
+import type { Product } from '@/api/modules/product'
 
-const deviceList = ref([
-  { id: 1, name: '设备1', modal: 'n24011-1' },
-  { id: 2, name: '设备2', modal: 'n24011-2' },
-  { id: 3, name: '设备3', modal: 'n24011-3' },
-])
+const route = useRoute()
+const token = typeof route.query.token === 'string' ? decodeURIComponent(route.query.token) : '' // 类型断言
+const appStore = useAppStore()
+if (token) {
+  localStorage.setItem('token', token)
+  appStore.token = token
+}
+const deviceList = ref<Product[]>([])
+
+onBeforeMount(async () => {
+  const res = await getDeviceListByUid()
+  console.log(res.data)
+  deviceList.value = res.data
+})
 </script>
 
 <style scoped>

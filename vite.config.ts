@@ -31,8 +31,34 @@ export default defineConfig(({ mode }) => {
       proxy: {
         // 将 /api 开头的请求代理到目标服务器
         '/mova-cms': {
-          target: 'http://172.27.36.208:4000', // 目标服务器
+          target: 'http://127.0.0.1:4000/web/cms', // 目标服务器
           changeOrigin: true, // 是否修改请求的源
+          configure: (proxy, options) => {
+            proxy.on('proxyReq', (proxyReq, req, res) => {
+              console.log(`[PROXY REQ] ${req.method} ${req.url} => ${options.target}${req.url}`)
+            })
+            proxy.on('proxyRes', (proxyRes, req, res) => {
+              console.log(`[PROXY RES] ${req.method} ${req.url} => ${proxyRes.statusCode}`)
+            })
+            proxy.on('error', (err, req, res) => {
+              console.error(`[PROXY ERROR] ${req.method} ${req.url}:`, err)
+            })
+          },
+        },
+        '/device-api': {
+          target: 'http://172.27.65.66:20010', // 目标服务器
+          changeOrigin: true, // 是否修改请求的源
+          configure: (proxy, options) => {
+            proxy.on('proxyReq', (proxyReq, req, res) => {
+              console.log(`[PROXY REQ] ${req.method} ${req.url} => ${options.target}${req.url}`)
+            })
+            proxy.on('proxyRes', (proxyRes, req, res) => {
+              console.log(`[PROXY RES] ${req.method} ${req.url} => ${proxyRes.statusCode}`)
+            })
+            proxy.on('error', (err, req, res) => {
+              console.error(`[PROXY ERROR] ${req.method} ${req.url}:`, err)
+            })
+          },
         },
       },
     },

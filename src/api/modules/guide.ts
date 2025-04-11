@@ -1,4 +1,4 @@
-import request from '..'
+import { cmsService } from '..'
 
 const PORT1 = '/mova-cms/guide'
 
@@ -25,12 +25,12 @@ export interface Guide {
  * @name 获取列表
  */
 export const getGuideList = () => {
-  return request.get<ResultData<Guide[]>>(PORT1)
+  return cmsService.get<ResultData<Guide[]>>(PORT1)
 }
 
 /**
  * @name 获取id的guide
  */
 export const getGuideById = (params: { id: number }) => {
-  return request.get<ResultData<Guide>>(`${PORT1}/${params.id}`)
+  return cmsService.get<ResultData<Guide>>(`${PORT1}/${params.id}`)
 }

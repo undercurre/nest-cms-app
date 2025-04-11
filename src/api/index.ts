@@ -4,19 +4,19 @@ interface RequestOptions extends AxiosRequestConfig {
   loading?: boolean // 是否显示 loading
 }
 
-class Request {
-  private instance = axios.create({
-    baseURL:
-      import.meta.env.MODE === 'production'
-        ? 'http://81.71.85.68:9006/web/cms/'
-        : 'http://172.27.36.208:4000/web/cms/',
-    timeout: 60000,
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  })
+class RequestService {
+  private instance
 
-  constructor() {
+  constructor(config: AxiosRequestConfig) {
+    // 创建 axios 实例并合并配置
+    this.instance = axios.create({
+      timeout: 60000,
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      ...config, // 允许覆盖默认配置
+    })
+
     // 请求拦截器
     this.instance.interceptors.request.use(
       (config) => {
@@ -68,5 +68,17 @@ class Request {
   }
 }
 
-const request = new Request()
-export default request
+// 创建不同服务的实例
+const cmsService = new RequestService({
+  baseURL: import.meta.env.MODE === 'production' ? 'http://172.26.224.136:31829/' : '/',
+})
+
+const userService = new RequestService({
+  baseURL: import.meta.env.MODE === 'production' ? 'http://172.27.65.66:20010/' : '/',
+  timeout: 30000, // 自定义超时时间
+  headers: {
+    'X-Custom-Header': 'value', // 自定义 headers
+  },
+})
+
+export { cmsService, userService }

@@ -1,4 +1,4 @@
-import request from '..'
+import { cmsService } from '..'
 
 const PORT1 = '/mova-cms'
 
@@ -48,35 +48,35 @@ export const searchDiet = (params: {
   name?: string
   category?: string
 }) => {
-  return request.get<ResultData<Diet[]>>(PORT1 + '/cookbooks/search/condition', params)
+  return cmsService.get<ResultData<Diet[]>>(PORT1 + '/cookbooks/search/condition', params)
 }
 
 /**
  * @name 查询品类列表
  */
 export const getCategoryList = () => {
-  return request.get<ResultData<Category[]>>(PORT1 + '/cookbooks/list/categories')
+  return cmsService.get<ResultData<Category[]>>(PORT1 + '/cookbooks/list/categories')
 }
 
 /**
  * @name 查询材料列表
  */
 export const getIngredients = (id: number) => {
-  return request.get<ResultData<Ingredients[]>>(PORT1 + `/ingredients/recipe/${id}`)
+  return cmsService.get<ResultData<Ingredients[]>>(PORT1 + `/ingredients/recipe/${id}`)
 }
 
 /**
  * @name 查询步骤列表
  */
 export const getSteps = (id: number) => {
-  return request.get<ResultData<Steps[]>>(PORT1 + `/steps/recipe/${id}`)
+  return cmsService.get<ResultData<Steps[]>>(PORT1 + `/steps/recipe/${id}`)
 }
 
 /**
  * @name 获取id的diet
  */
 export const getDietById = (params: { id: number }) => {
-  return request.get<ResultData<Diet>>(`${PORT1}/cookbooks/${params.id}`)
+  return cmsService.get<ResultData<Diet>>(`${PORT1}/cookbooks/${params.id}`)
 }
 
 /**
@@ -84,7 +84,7 @@ export const getDietById = (params: { id: number }) => {
  */
 
 export const getAIAnswer = (messages: { role: string; content: string }[]) => {
-  return request.post<ResultData<string>>(`${PORT1}/deepseek/completion`, {
+  return cmsService.post<ResultData<string>>(`${PORT1}/deepseek/completion`, {
     json: JSON.stringify(messages),
   })
 }

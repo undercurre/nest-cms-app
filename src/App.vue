@@ -13,6 +13,7 @@ import { useProductStore } from '@/stores/product'
 import { useAppStore } from '@/stores/app'
 import router from './router'
 import { computed, onMounted, ref } from 'vue'
+import { goBack2Native } from './api/modules/native'
 
 const route = useRoute()
 
@@ -26,7 +27,17 @@ const couponShow = ref(false)
 
 // NavBar
 function onClickLeft() {
-  router.back()
+  if (window.history.length <= 1) {
+    // 无法后退时的处理
+    console.log('无法后退')
+    // 跳到原生
+    // goBack2Native()
+    window.flutter_inappwebview?.callHandler('jsHandler', 'goBack').then(() => {
+      console.log('goBack 调用成功')
+    })
+  } else {
+    router.back()
+  }
 }
 
 function go2AI() {
