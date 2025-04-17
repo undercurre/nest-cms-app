@@ -6,7 +6,7 @@
         <el-card class="device-list">
           <template #header>
             <div class="header">
-              <span>设备列表</span>
+              <span>{{$t("common.equipmentList")}}</span>
             </div>
           </template>
         </el-card>
@@ -17,12 +17,12 @@
             v-for="item in deviceList"
             :key="item.id"
           >
-            <img class="w-full h-200px" :src="item.imageOssUrl" />
+            <img class="w-full h-200px" :src="getUrlConcat(item.imageOssUrl)" />
             <div>
-              <span>设备名称：{{ item.productName }}</span>
+              <span>{{$t("device.deviceName")}}：{{ item.productName }}</span>
             </div>
             <div>
-              <span>设备型号：{{ item.productModel }}</span>
+              <span>{{$t("device.deviceModel")}}：{{ item.productModel }}</span>
             </div>
           </div>
         </div>
@@ -47,6 +47,11 @@ if (token) {
 }
 const deviceList = ref<Product[]>([])
 
+// url加http前缀
+const getUrlConcat = (url: string) => {
+  if (url.startsWith("http")) return url;
+  return `${window.location.protocol}//${url}`;
+};
 onBeforeMount(async () => {
   const res = await getDeviceListByUid()
   console.log(res.data)

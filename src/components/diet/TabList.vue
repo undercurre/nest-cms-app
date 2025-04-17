@@ -16,6 +16,7 @@
 </template>
 
 <script lang="ts" setup>
+import {useI18n} from 'vue-i18n'
 import { computed, ref, watch } from 'vue'
 
 interface Props {
@@ -28,8 +29,9 @@ const props = withDefaults(defineProps<Props>(), {
   cur: 'all',
 })
 
+const {t} = useI18n()
 const listWithAll = computed(() => {
-  const all = [{ label: '全部', value: 'all' }]
+  const all = [{ label: t("common.all"), value: 'all' }]
   const result = all.concat(props.list)
   return result
 })

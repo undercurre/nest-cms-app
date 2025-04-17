@@ -12,8 +12,11 @@ import StatisticsInActiveIcon from '@/assets/images/app/statistics_inactive.png'
 import { useProductStore } from '@/stores/product'
 import { useAppStore } from '@/stores/app'
 import router from './router'
-import { computed, onMounted, ref } from 'vue'
+import { computed, onMounted, ref, nextTick } from 'vue'
 import { goBack2Native } from './api/modules/native'
+import { useI18n } from 'vue-i18n' 
+
+const { locale } = useI18n()
 
 const route = useRoute()
 
@@ -44,15 +47,22 @@ function go2AI() {
   router.push('/ai')
 }
 
-// function go2SaleApp() {
-//   couponShow.value = false
-//   router.push('/sale')
-// }
+// 获取系统语言
+function getLanguage() {
+  if(!localStorage.getItem('locale')) {
+    localStorage.setItem('locale', route.query.lang || 'en')
+  }
+  locale.value = route.query.lang || localStorage.getItem('locale') || 'en'
+  console.log('当前语言:', locale.value)
+}
 
 onMounted(() => {
   setTimeout(() => {
     couponShow.value = true
   }, 1000)
+  setTimeout(() => {
+    getLanguage()
+  })
 })
 </script>
 
@@ -67,7 +77,7 @@ onMounted(() => {
             @click="onClickLeft"
           />
           <span class="w-full font-bold leading-28px text-18px">{{
-            isListRoute ? '设备列表' : '智能厨房助手'
+            isListRoute ? $t("common.equipmentList") : $t("common.smartKitchenAssistant")
           }}</span>
         </div>
       </template>
@@ -94,7 +104,7 @@ onMounted(() => {
         inactive-color="#000000"
       >
         <van-tabbar-item name="guide" replace :to="`/guide/${productStore.id}`">
-          <span>操作指引</span>
+          <span>{{ $t("common.operationInstructions") }}</span>
           <template #icon="props">
             <img
               class="w-15px h-15px pb-8px"
@@ -103,7 +113,7 @@ onMounted(() => {
           </template>
         </van-tabbar-item>
         <van-tabbar-item name="product" replace :to="`/product/${productStore.id}`"
-          ><span>产品说明</span>
+          ><span>{{ $t("common.productDescription") }}</span>
           <template #icon="props">
             <img
               class="w-15px h-15px pb-8px"
@@ -111,7 +121,7 @@ onMounted(() => {
             /> </template
         ></van-tabbar-item>
         <van-tabbar-item name="diet" replace :to="`/diet/${productStore.id}`"
-          ><span>食谱大全</span>
+          ><span>{{ $t("common.completeRecipeCollection") }}</span>
           <template #icon="props">
             <img
               class="w-15px h-15px pb-8px"
@@ -119,7 +129,7 @@ onMounted(() => {
             /> </template
         ></van-tabbar-item>
         <van-tabbar-item name="statistics" replace :to="`/statistics`"
-          ><span>智能分析</span>
+          ><span>{{ $t("common.smartAnalysis") }}</span>
           <template #icon="props">
             <img
               class="w-15px h-15px pb-8px"
@@ -136,7 +146,7 @@ onMounted(() => {
       inactive-color="#000000"
     >
       <van-tabbar-item name="guide" replace :to="`/guide/${productStore.id}`">
-        <span>操作指引</span>
+        <span>{{ $t("common.operationInstructions") }}</span>
         <template #icon="props">
           <img
             class="w-15px h-15px pb-8px"
@@ -145,7 +155,7 @@ onMounted(() => {
         </template>
       </van-tabbar-item>
       <van-tabbar-item name="product" replace :to="`/product/${productStore.id}`"
-        ><span>产品说明</span>
+        ><span>{{ $t("common.productDescription") }}</span>
         <template #icon="props">
           <img
             class="w-15px h-15px pb-8px"
@@ -153,7 +163,7 @@ onMounted(() => {
           /> </template
       ></van-tabbar-item>
       <van-tabbar-item name="diet" replace :to="`/diet/${productStore.id}`"
-        ><span>食谱大全</span>
+        ><span>{{ $t("common.completeRecipeCollection") }}</span>
         <template #icon="props">
           <img
             class="w-15px h-15px pb-8px"

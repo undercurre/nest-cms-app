@@ -28,7 +28,7 @@ const curProduct = ref<Product>()
 const downloadManual = () => {
   if (!curProduct.value) return
   const a = document.createElement('a')
-  a.href = curProduct.value.manualOssUrl
+  a.href = getUrlConcat(curProduct.value.manualOssUrl)
   a.download = `${curProduct.value.productModel}-${curProduct.value.productName}说明书.pdf`
   document.body.appendChild(a)
   a.click()
@@ -38,10 +38,14 @@ const downloadManual = () => {
 const add2my = async () => {
   const res = await collectProduct(Number(productId))
   console.log(res)
-  showSuccessToast('添加成功')
+  showSuccessToast($t('product.successfullyAdded'))
   router.push('/list')
 }
-
+// url加http前缀
+const getUrlConcat = (url: string) => {
+  if (url?.startsWith("http")) return url;
+  return `${window.location.protocol}//${url}`;
+};
 onBeforeMount(async () => {
   const res = await getProductInfo(Number(productId))
   curProduct.value = res.data
@@ -50,7 +54,7 @@ onBeforeMount(async () => {
 
 <template>
   <div class="px-20px flex flex-col justify-around items-center">
-    <img class="w-full my-10px rounded-8px" :src="curProduct?.imageOssUrl" />
+    <img class="w-full my-10px rounded-8px" :src="getUrlConcat(curProduct?.imageOssUrl)" />
 
     <p class="font-bold text-20px w-full leading-30px py-10px">
       <span class="mr-8px">{{ curProduct?.productModel }}</span>
@@ -66,7 +70,7 @@ onBeforeMount(async () => {
       color="#FF6B6B"
       type="danger"
       @click="add2my"
-      >添加到我的设备</van-button
+      >{{$t("product.addToMyDevices")}}</van-button
     >
     <van-button
       class="w-full"
@@ -78,7 +82,7 @@ onBeforeMount(async () => {
       <template #icon>
         <div class="flex items-center">
           <img class="w-16px mr-2px" src="@/assets/images/app/download.png" />
-          <span class="text-#000 text-14px">下载说明书</span>
+          <span class="text-#000 text-14px">{{ $t("product.downloadInstructionManual") }}</span>
         </div>
       </template>
     </van-button>

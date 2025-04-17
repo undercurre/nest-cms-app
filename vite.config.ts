@@ -31,7 +31,7 @@ export default defineConfig(({ mode }) => {
       proxy: {
         // 将 /api 开头的请求代理到目标服务器
         '/mova-cms': {
-          target: 'http://127.0.0.1:4000/web/cms', // 目标服务器
+          target: 'http://192.168.137.16:4000/web/cms', // 目标服务器
           changeOrigin: true, // 是否修改请求的源
           configure: (proxy, options) => {
             proxy.on('proxyReq', (proxyReq, req, res) => {
@@ -46,7 +46,7 @@ export default defineConfig(({ mode }) => {
           },
         },
         '/device-api': {
-          target: 'http://172.27.65.66:20010', // 目标服务器
+          target: 'http://172.27.64.144:20010', // 目标服务器
           changeOrigin: true, // 是否修改请求的源
           configure: (proxy, options) => {
             proxy.on('proxyReq', (proxyReq, req, res) => {

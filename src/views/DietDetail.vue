@@ -8,17 +8,17 @@
       }}</span>
     </div>
     <div class="flex flex-col mt-20px">
-      <span class="font-bold text-18px px-10px">简介</span>
+      <span class="font-bold text-18px px-10px">{{$t("diet.introduction")}}</span>
       <p class="text-14px my-10px px-10px">{{ diet?.description }}</p>
     </div>
     <div class="flex flex-col mt-20px">
-      <span class="font-bold text-18px px-10px">食材</span>
+      <span class="font-bold text-18px px-10px">{{$t("diet.ingredients")}}</span>
       <p v-for="item in ingredients" :key="item.id" class="text-14px my-10px px-10px">
         {{ item.name }}：{{ item.quantity }}
       </p>
     </div>
     <div class="flex flex-col mt-20px">
-      <span class="font-bold text-18px px-10px">步骤</span>
+      <span class="font-bold text-18px px-10px">{{$t("diet.steps")}}</span>
       <p v-for="item in steps" :key="item.id" class="text-14px my-10px px-10px">
         {{ item.step_number }}、{{ item.description }}
       </p>

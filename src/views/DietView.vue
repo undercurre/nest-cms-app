@@ -52,7 +52,7 @@ onBeforeMount(async () => {
 
 <template>
   <div class="w-full h-full flex flex-col items-center">
-    <van-search class="w-full" v-model="keyword" placeholder="搜索食谱" />
+    <van-search class="w-full" v-model="keyword" :placeholder="$t('diet.searchForRecipes')" />
     <TabList :list="category" @change="handleCategoryChange"></TabList>
     <div
       class="w-full grid grid-cols-2 grid-rows-[repeat(2,_minmax(100px,_209px))] gap-20px p-12px flex-1 box-border overflow-scroll"
