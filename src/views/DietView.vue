@@ -40,6 +40,11 @@ async function handleCategoryChange(key: string) {
   diet.value = dietRes.data
 }
 
+// url加http前缀
+const getUrlConcat = (url: string) => {
+  if (url?.startsWith("http")) return url;
+  return `${window.location.protocol}//${url}`;
+};
 onBeforeMount(async () => {
   const categoryListRes = await getCategoryList()
   category.value = categoryListRes.data.map((item) => {
@@ -61,7 +66,7 @@ onBeforeMount(async () => {
         v-for="item in diet"
         :key="item.id"
         :id="item.id"
-        :url="item.image"
+        :url="getUrlConcat(item.image)"
         :title="item.name"
         :time="item.time"
         :difficulty="item.difficulty"
