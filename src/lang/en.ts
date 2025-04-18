@@ -1,6 +1,7 @@
 const en = {
     common: {
         equipmentList: 'Equipment List',
+        AI: 'Q&A',
         smartKitchenAssistant: 'Smart Kitchen Assistant',
         operationInstructions: 'Operation Instructions',
         productDescription: 'Product Description',
@@ -11,7 +12,7 @@ const en = {
     product: {
         successfullyAdded: 'Successfully Added',
         addToMyDevices: 'Add to My Devices',
-        downloadInstructionManual: 'Download Instruction Manual'
+        downloadInstructionManual: 'download The Brochure'
     },
     guide: {
 

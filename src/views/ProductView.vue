@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { Icon } from '@iconify/vue'
 import { onBeforeMount, ref } from 'vue'
 import { useRoute } from 'vue-router'
 import { getProductInfo, type Product } from '@/api/modules/product'
@@ -44,11 +45,11 @@ const add2my = async () => {
 // url加http前缀
 const getUrlConcat = (url: string) => {
   if (!url) {
-    return "";
+    return ''
   }
-  if (url.startsWith("http")) return url;
-  return `${window.location.protocol}//${url}`;
-};
+  if (url.startsWith('http')) return url
+  return `${window.location.protocol}//${url}`
+}
 onBeforeMount(async () => {
   const res = await getProductInfo(Number(productId))
   curProduct.value = res.data
@@ -56,38 +57,35 @@ onBeforeMount(async () => {
 </script>
 
 <template>
-  <div class="px-20px flex flex-col justify-around items-center">
+  <div class="px-16px flex flex-col justify-around items-center">
     <img class="w-full my-10px rounded-8px" :src="getUrlConcat(curProduct?.imageOssUrl)" />
 
-    <p class="font-bold text-20px w-full leading-30px py-10px">
-      <span class="mr-8px">{{ curProduct?.productModel }}</span>
-      <span>{{ curProduct?.productName }}</span>
+    <p class="font-bold text-20px pt-5px w-full leading-30px">
+      <span>{{ curProduct?.productModel }} 系列</span>
+    </p>
+    <p class="text-#bbbcbb text-16px w-full">{{ curProduct?.productName }}</p>
+    <p class="mt-18px text-#454d5c text-16px w-full flex items-center">
+      <Icon icon="icon-park-solid:correct" class="text-#2296f3" width="16" height="16" />
+      <span class="ml-12px">{{ curProduct?.description }}</span>
     </p>
 
-    <p class="text-#4B5563">{{ curProduct?.description }}</p>
+    <!-- v-if="token" -->
+    <div class="flex flex-row justify-between w-full items-center">
+      <van-button class="w-48%" icon="like" color="#fe4080" type="danger" @click="add2my">{{
+        $t('product.addToMyDevices')
+      }}</van-button>
 
-    <van-button
-      v-if="token"
-      class="w-full mt-20px mb-10px"
-      icon="plus"
-      color="#FF6B6B"
-      type="danger"
-      @click="add2my"
-      >{{$t("product.addToMyDevices")}}</van-button
-    >
-    <van-button
-      class="w-full"
-      :style="{ marginTop: token ? 0 : '20px' }"
-      color="#d3d3d3"
-      type="default"
-      @click="downloadManual"
-    >
-      <template #icon>
-        <div class="flex items-center">
-          <img class="w-16px mr-2px" src="@/assets/images/app/download.png" />
-          <span class="text-#000 text-14px">{{ $t("product.downloadInstructionManual") }}</span>
-        </div>
-      </template>
-    </van-button>
+      <!-- :style="{ marginTop: token ? 0 : '20px' }" -->
+      <van-button class="w-48%" color="#2196f3" type="default" @click="downloadManual">
+        <template #icon>
+          <div class="flex items-center">
+            <Icon icon="icomoon-free:download2" class="mr-4px" width="16" height="16" />
+            <span class="text-#fff text-14px">{{ $t('product.downloadInstructionManual') }}</span>
+          </div>
+        </template>
+      </van-button>
+    </div>
   </div>
 </template>
+
+<style lang="less" scoped></style>

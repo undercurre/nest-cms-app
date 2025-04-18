@@ -1,6 +1,7 @@
 const zh = {
     common: {
         equipmentList: '设备列表',
+        AI: 'Q&A',
         smartKitchenAssistant: '智能厨房助手',
         operationInstructions: '操作指引',
         productDescription: '产品说明',
@@ -11,7 +12,7 @@ const zh = {
     product: {
         successfullyAdded: '添加成功',
         addToMyDevices: '添加到我的设备',
-        downloadInstructionManual: '下载说明书'
+        downloadInstructionManual: '下载手册'
     },
     guide: {
 
