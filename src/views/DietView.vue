@@ -42,7 +42,10 @@ async function handleCategoryChange(key: string) {
 
 // url加http前缀
 const getUrlConcat = (url: string) => {
-  if (url?.startsWith("http")) return url;
+  if (!url) {
+    return "";
+  }
+  if (url.startsWith("http")) return url;
   return `${window.location.protocol}//${url}`;
 };
 onBeforeMount(async () => {

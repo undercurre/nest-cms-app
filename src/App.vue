@@ -82,7 +82,8 @@ onMounted(() => {
         </div>
       </template>
       <template #right>
-        <img v-if="!isListRoute" class="h-150%" src="@/assets/images/app/logo.png" @click="go2AI" />
+        <img v-if="!isListRoute" class="h-150%" src="@/assets/images/app/logo.png" />
+        <!-- @click="go2AI" -->
       </template>
     </van-nav-bar>
     <div class="flex flex-col h-full">
