@@ -1,53 +1,67 @@
 <template>
   <div class="h-full flex flex-col justify-between">
-    <div
-      class="w-full pt-40px flex-1 text-12px overflow-scroll flex flex-col"
-      ref="scrollContainer"
-    >
+    <div class="w-full p-12px flex-1 text-12px overflow-scroll flex flex-col" ref="scrollContainer">
       <div
         v-for="(item, index) in talks"
         :key="item.content"
         class="w-75% talk"
         :style="{ alignSelf: item.role === 'system' || index === 0 ? 'flex-start' : 'flex-end' }"
       >
-        <div v-if="index === 0" class="bg-green/20 rounded-8px p-10px mb-20px">
-          我是一个AI营养师，可以为你提供食谱等饮食咨询！
+        <div v-if="index === 0" class="bg-#2196f3 color-#fff rounded-8px p-10px mb-20px">
+          {{ $t('AI.desc') }}
         </div>
         <div
           v-if="index !== 0 && item.role === 'user'"
-          class="bg-blue/20 rounded-8px p-10px mb-20px"
+          class="bg-#f3f4f6 rounded-8px p-10px mb-20px"
           v-html="md.render(item.content)"
         ></div>
         <div
           v-if="index !== 1 && item.role === 'system'"
-          class="bg-green/20 rounded-8px p-10px mb-20px"
+          class="bg-#2196f3 color-#fff rounded-8px p-10px mb-20px"
           v-html="md.render(item.content)"
         ></div>
       </div>
     </div>
-    <div class="border-2px border-solid border-#ddd rounded-4px">
-      <van-field v-model="input" label="对话" label-align="top">
-        <template #button>
-          <van-button
-            size="small"
-            :loading="loading"
-            type="primary"
-            loading-type="spinner"
-            @click="submit"
-            >提交</van-button
-          >
-        </template>
+    <div class="flex items-center justify-between w-full px-12px mb-12px">
+      <van-field
+        v-model="input"
+        label-align="top"
+        class="bg-#f3f4f6 rounded-50px py-5px"
+        @keyup.enter="submit"
+        :placeholder="$t('AI.input')"
+      >
       </van-field>
+      <van-button
+        size="small"
+        :loading="loading"
+        class="bg-transparent border-0"
+        loading-type="spinner"
+        @click="submit"
+      >
+        <Icon
+          icon="fa:send"
+          width="18"
+          height="18"
+          :class="[input ? 'text-#2196f3' : 'text-#9ba1ad']"
+        />
+      </van-button>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { onUpdated, ref } from 'vue'
+import { Icon } from '@iconify/vue'
+import { onUpdated, ref, onUnmounted } from 'vue'
+import { useRoute } from 'vue-router'
+import { useAppStore } from '@/stores/app'
 import markdownit from 'markdown-it'
 // import { getAIAnswer } from '@/api/modules/diet'
 import WebSocketService from '@/api/modules/ai'
 
+const appStore = useAppStore()
+
+const route = useRoute()
+appStore.tabbarActive = route.name as string
 const webSocketService = new WebSocketService()
 
 const md = markdownit()
@@ -70,6 +84,7 @@ const input = ref('')
 const loading = ref(false)
 
 const submit = async () => {
+  if (!input.value.trim()) return
   loading.value = true
   talks.value.push({ role: 'user', content: input.value })
   input.value = ''
@@ -111,12 +126,17 @@ onUpdated(() => {
     scrollContainer.value.scrollTop = scrollContainer.value.scrollHeight
   }
 })
+
+// 断开连接
+onUnmounted(() => {
+  webSocketService.disconnect()
+})
 </script>
 
 <style scoped>
 :deep(.talk p) {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
 }
 
 :deep(.talk hr) {

@@ -1,6 +1,7 @@
 const en = {
   common: {
     equipmentList: 'Equipment List',
+    AI: 'AI',
     smartKitchenAssistant: 'Smart Kitchen Assistant',
     operationInstructions: 'Operation Instructions',
     productDescription: 'Product Description',
@@ -19,6 +20,11 @@ const en = {
     ingredients: 'Ingredients',
     steps: 'Steps',
     searchForRecipes: 'Search for Recipes',
+    nutritionFacts: 'Nutrition Facts',
+    calorie: 'Calories',
+    protein: 'Protein',
+    fat: 'Fat',
+    carbohydrate: 'Carbohydrate',
   },
   device: {
     deviceName: 'Device Name',
@@ -35,5 +41,9 @@ const en = {
     root: 'root',
     g: 'g',
   },
+  AI: {
+    desc: 'I am an AI nutritionist who can provide you with dietary advice such as recipes!',
+    input: 'Please enter your dietary needs',
+  }
 }
 export default en

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { RouterView, useRoute } from 'vue-router'
+import { Icon } from '@iconify/vue'
 
 import DietActiveIcon from '@/assets/images/app/diet_active.png'
 import DietInActiveIcon from '@/assets/images/app/diet_inactive.png'
@@ -113,70 +114,60 @@ onMounted(() => {
         <van-tabbar-item name="guide" replace :to="`/guide/${productStore.id}`">
           <span>{{ $t('common.operationInstructions') }}</span>
           <template #icon="props">
-            <img
-              class="w-15px h-15px pb-8px"
-              :src="props.active ? GuideActiveIcon : GuideInActiveIcon"
-            />
+            <Icon icon="nrk:media-programguide" width="18" height="18" />
           </template>
         </van-tabbar-item>
-        <van-tabbar-item name="product" replace :to="`/product/${productStore.id}`"
-          ><span>{{ $t('common.productDescription') }}</span>
+        <van-tabbar-item name="product" replace :to="`/product/${productStore.id}`">
+          <span>{{ $t('common.productDescription') }}</span>
           <template #icon="props">
-            <img
-              class="w-15px h-15px pb-8px"
-              :src="props.active ? ProductActiveIcon : ProductInActiveIcon"
-            /> </template
-        ></van-tabbar-item>
-        <van-tabbar-item name="diet" replace :to="`/diet/${productStore.id}`"
-          ><span>{{ $t('common.completeRecipeCollection') }}</span>
+            <Icon icon="akar-icons:question" width="18" height="18" />
+          </template>
+        </van-tabbar-item>
+        <van-tabbar-item name="diet" replace :to="`/diet/${productStore.id}`">
+          <span>{{ $t('common.completeRecipeCollection') }}</span>
           <template #icon="props">
-            <img
-              class="w-15px h-15px pb-8px"
-              :src="props.active ? DietActiveIcon : DietInActiveIcon"
-            /> </template
-        ></van-tabbar-item>
+            <Icon icon="icon-park-outline:knife-fork" width="18" height="18" />
+          </template>
+        </van-tabbar-item>
         <van-tabbar-item name="statistics" replace :to="`/statistics`"
           ><span>{{ $t('common.smartAnalysis') }}</span>
           <template #icon="props">
-            <img
-              class="w-15px h-15px pb-8px"
-              :src="props.active ? StatisticsActiveIcon : StatisticsInActiveIcon"
-            /> </template
-        ></van-tabbar-item>
+            <Icon icon="akar-icons:statistic-up" width="18" height="18" />
+          </template>
+        </van-tabbar-item>
       </van-tabbar>
     </div>
     <van-tabbar
       v-if="!isListRoute"
       :safe-area-inset-bottom="false"
       v-model="appStore.tabbarActive"
-      active-color="#000000"
+      active-color="#2296f3"
       inactive-color="#000000"
     >
       <van-tabbar-item name="guide" replace :to="`/guide/${productStore.id}`">
         <span>{{ $t('common.operationInstructions') }}</span>
         <template #icon="props">
-          <img
-            class="w-15px h-15px pb-8px"
-            :src="props.active ? GuideActiveIcon : GuideInActiveIcon"
-          />
+          <Icon icon="nrk:media-programguide" width="18" height="18" />
         </template>
       </van-tabbar-item>
       <van-tabbar-item name="product" replace :to="`/product/${productStore.id}`"
         ><span>{{ $t('common.productDescription') }}</span>
         <template #icon="props">
-          <img
-            class="w-15px h-15px pb-8px"
-            :src="props.active ? ProductActiveIcon : ProductInActiveIcon"
-          /> </template
-      ></van-tabbar-item>
+          <Icon icon="icon-park-outline:ad-product" width="18" height="18" />
+        </template>
+      </van-tabbar-item>
       <van-tabbar-item name="diet" replace :to="`/diet/${productStore.id}`"
         ><span>{{ $t('common.completeRecipeCollection') }}</span>
         <template #icon="props">
-          <img
-            class="w-15px h-15px pb-8px"
-            :src="props.active ? DietActiveIcon : DietInActiveIcon"
-          /> </template
-      ></van-tabbar-item>
+          <Icon icon="icon-park-outline:knife-fork" width="18" height="18" />
+        </template>
+      </van-tabbar-item>
+      <van-tabbar-item name="ai" replace :to="`/ai`"
+        ><span>{{ $t('common.AI') }}</span>
+        <template #icon="props">
+          <Icon icon="hugeicons:ai-mail" width="18" height="18" />
+        </template>
+      </van-tabbar-item>
       <!-- <van-tabbar-item name="statistics" replace :to="`/statistics`"
         ><span>智能分析</span>
         <template #icon="props">

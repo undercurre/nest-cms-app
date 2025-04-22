@@ -7,6 +7,7 @@ import { useAppStore } from '@/stores/app'
 import TabList from '@/components/diet/TabList.vue'
 import DietCard from '@/components/diet/DietCard.vue'
 import { getCategoryList, searchDiet, type Diet } from '@/api/modules/diet'
+import { getUrlConcat } from '@/utils'
 
 const productStore = useProductStore()
 const appStore = useAppStore()
@@ -40,14 +41,6 @@ async function handleCategoryChange(key: string) {
   diet.value = dietRes.data
 }
 
-// url加http前缀
-const getUrlConcat = (url: string) => {
-  if (!url) {
-    return "";
-  }
-  if (url.startsWith("http")) return url;
-  return `${window.location.protocol}//${url}`;
-};
 onBeforeMount(async () => {
   const categoryListRes = await getCategoryList()
   category.value = categoryListRes.data.map((item) => {
@@ -62,9 +55,7 @@ onBeforeMount(async () => {
   <div class="w-full h-full flex flex-col items-center">
     <van-search class="w-full" v-model="keyword" :placeholder="$t('diet.searchForRecipes')" />
     <TabList :list="category" @change="handleCategoryChange"></TabList>
-    <div
-      class="w-full grid grid-cols-2 grid-rows-[repeat(2,_minmax(100px,_209px))] gap-20px p-12px flex-1 box-border overflow-scroll"
-    >
+    <div class="w-full grid grid-cols-2 gap-12px px-12px pb-12px box-border overflow-scroll">
       <DietCard
         v-for="item in diet"
         :key="item.id"
