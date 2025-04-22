@@ -12,7 +12,7 @@
     ></video>
 
     <!-- 用于展示第一帧的图片 -->
-    <div class="w-full h-196px flex justify-center items-center relative">
+    <div class="w-full min-h-196px flex justify-center items-center relative">
       <img
         class="w-full h-196px"
         :src="firstFrameImage"
@@ -38,34 +38,40 @@
       </div>
     </div>
 
-    <div class="h-69px bg-#fff p-12px flex flex-col justify-between">
-      <p class="font-bold text-14px leading-21px text-#000">{{ title }}</p>
-      <p class="text-14px leading-20px text-#4B5563">{{ description }}</p>
+    <div class="min-h-69px bg-#fff p-12px flex flex-col justify-between">
+      <p class="font-bold text-14px leading-21px text-#000">{{ getI18NTitle() }}</p>
+      <p class="text-14px leading-20px text-#4B5563 truncate">{{ getI18NDescription() }}</p>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
+import type { Guide } from '@/api/modules/guide'
 import router from '@/router'
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 interface Props {
-  id: number
-  url: string
-  title: string
-  description: string
+  resource: Guide
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  id: 1,
-  url: 'https://raw.githubusercontent.com/undercurre/Video/refs/heads/main/kitchen-demo.mp4',
-  title: '日常维护指南',
-  description: '正确的清洁和保养方法',
+  resource: () => {
+    return {
+      id: 1,
+      video: 'https://raw.githubusercontent.com/undercurre/Video/refs/heads/main/kitchen-demo.mp4',
+      title: '日常维护指南',
+      description: '正确的清洁和保养方法',
+      title_en: '',
+      description_en: '',
+      createdAt: '',
+    }
+  },
 })
 
 const video = ref<HTMLVideoElement | null>(null)
 
-const videoUrl = props.url // 视频的 URL 地址
+const videoUrl = props.resource.video // 视频的 URL 地址
 const firstFrameImage = ref<string | null>(null) // 用来存储提取的第一帧图片数据
 const duration = ref(0)
 
@@ -105,6 +111,24 @@ function formatDuration(seconds: number) {
 }
 
 function handlePlay() {
-  router.push({ name: 'guideDetail', params: { id: props.id } })
+  router.push({ name: 'guideDetail', params: { id: props.resource.id } })
+}
+
+const { locale } = useI18n()
+
+const getI18NTitle = () => {
+  if (locale.value === 'zh-CN') {
+    return props.resource.title
+  } else {
+    return props.resource.title_en
+  }
+}
+
+const getI18NDescription = () => {
+  if (locale.value === 'zh-CN') {
+    return props.resource.description
+  } else {
+    return props.resource.description_en
+  }
 }
 </script>

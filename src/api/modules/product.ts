@@ -1,6 +1,6 @@
 import { cmsService } from '..'
 
-const PORT1 = 'device-api/h5'
+const PORT1 = 'web/cms/device-api/h5'
 
 // 请求响应参数（不包含data）
 export interface Result {
@@ -17,11 +17,13 @@ export interface Product {
   createTime: string
   createUid: string
   description: string
+  description_en: string
   id: number
   imageOssUrl: string
   manualOssUrl: string
   productModel: string
   productName: string
+  productName_en: string
   sku: string
   updateTime: string
   updateUid: string | null

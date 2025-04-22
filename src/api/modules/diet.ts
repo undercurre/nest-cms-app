@@ -19,8 +19,10 @@ export interface Diet {
   time: number
   difficulty: number
   name: string
+  name_en: string
   category: string
   description: string
+  description_en: string
   createdAt: string
 }
 
@@ -29,13 +31,16 @@ export type Category = string
 export interface Ingredients {
   id: number
   name: string
+  name_en: string
   quantity: string
+  unit: string
 }
 
 export interface Steps {
   id: number
   step_number: number
   description: string
+  description_en: string
   image_url: null | string
 }
 

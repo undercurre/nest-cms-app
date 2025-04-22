@@ -11,7 +11,7 @@ import UnoCSS from 'unocss/vite'
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
   return {
-    base: mode === 'development' ? '/' : './',
+    base: mode === 'development' ? './' : '/web/cms/markH5/',
     plugins: [
       vue(),
       vueDevTools(),
@@ -19,6 +19,16 @@ export default defineConfig(({ mode }) => {
         configFile: '../uno.config.ts',
       }),
       AutoImport({
+        imports: [
+          'vue',
+          'vue-router',
+          {
+            'vue-i18n': [
+              // 自动导入 vue-i18n 相关函数
+              'useI18n',
+            ],
+          },
+        ],
         resolvers: [VantResolver()],
       }),
       Components({
@@ -31,7 +41,7 @@ export default defineConfig(({ mode }) => {
       proxy: {
         // 将 /api 开头的请求代理到目标服务器
         '/mova-cms': {
-          target: 'http://192.168.137.16:4000/web/cms', // 目标服务器
+          target: 'http://172.26.228.16:4000/web/cms', // 目标服务器
           changeOrigin: true, // 是否修改请求的源
           configure: (proxy, options) => {
             proxy.on('proxyReq', (proxyReq, req, res) => {
@@ -46,7 +56,7 @@ export default defineConfig(({ mode }) => {
           },
         },
         '/device-api': {
-          target: 'http://172.27.64.144:20010', // 目标服务器
+          target: 'http://172.26.224.136:30850', // 目标服务器
           changeOrigin: true, // 是否修改请求的源
           configure: (proxy, options) => {
             proxy.on('proxyReq', (proxyReq, req, res) => {
@@ -70,6 +80,14 @@ export default defineConfig(({ mode }) => {
     },
     define: {
       'process.env.MODE': JSON.stringify(process.env.MODE),
+    },
+    build: {
+      assetsDir: 'assets', // 确保静态资源输出到 assets 目录
+      rollupOptions: {
+        output: {
+          assetFileNames: 'assets/[name].[hash].[ext]', // 明确资源路径
+        },
+      },
     },
   }
 })

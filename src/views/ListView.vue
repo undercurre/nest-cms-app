@@ -6,7 +6,7 @@
         <el-card class="device-list">
           <template #header>
             <div class="header">
-              <span>{{$t("common.equipmentList")}}</span>
+              <span>{{ $t('common.equipmentList') }}</span>
             </div>
           </template>
         </el-card>
@@ -19,10 +19,10 @@
           >
             <img class="w-full h-200px" :src="getUrlConcat(item.imageOssUrl)" />
             <div>
-              <span>{{$t("device.deviceName")}}：{{ item.productName }}</span>
+              <span>{{ $t('device.deviceName') }}：{{ item.productName }}</span>
             </div>
             <div>
-              <span>{{$t("device.deviceModel")}}：{{ item.productModel }}</span>
+              <span>{{ $t('device.deviceModel') }}：{{ item.productModel }}</span>
             </div>
           </div>
         </div>
@@ -50,11 +50,11 @@ const deviceList = ref<Product[]>([])
 // url加http前缀
 const getUrlConcat = (url: string) => {
   if (!url) {
-    return "";
+    return ''
   }
-  if (url.startsWith("http")) return url;
-  return `${window.location.protocol}//${url}`;
-};
+  if (url.startsWith('http')) return url
+  return `${window.location.protocol}//${url}`
+}
 onBeforeMount(async () => {
   const res = await getDeviceListByUid()
   console.log(res.data)

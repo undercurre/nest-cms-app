@@ -1,7 +1,7 @@
 <template>
   <div class="flex px-12px w-full gap-10px overflow-scroll hide-scrollbar">
     <div
-      class="w-50px h-34px rounded-4px flex justify-center items-center shrink-0"
+      class="h-34px rounded-4px flex justify-center items-center shrink-0 px-6px"
       v-for="item in listWithAll"
       :key="item.value"
       :style="{
@@ -10,13 +10,13 @@
       }"
       @click="handleSelect(item.value)"
     >
-      <span class="text-14px">{{ item.label }}</span>
+      <span class="text-14px">{{ $t(`cookbook.${item.label}`) }}</span>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import {useI18n} from 'vue-i18n'
+import { useI18n } from 'vue-i18n'
 import { computed, ref, watch } from 'vue'
 
 interface Props {
@@ -29,9 +29,9 @@ const props = withDefaults(defineProps<Props>(), {
   cur: 'all',
 })
 
-const {t} = useI18n()
+const { t } = useI18n()
 const listWithAll = computed(() => {
-  const all = [{ label: t("common.all"), value: 'all' }]
+  const all = [{ label: t('common.all'), value: 'all' }]
   const result = all.concat(props.list)
   return result
 })

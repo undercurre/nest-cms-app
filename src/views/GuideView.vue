@@ -24,13 +24,6 @@ onBeforeMount(async () => {
 
 <template>
   <div class="px-20px flex flex-col justify-around items-center">
-    <VideoCard
-      v-for="item in guides"
-      :key="item.id"
-      :id="item.id"
-      :url="item.video"
-      :title="item.title"
-      :description="item.description"
-    ></VideoCard>
+    <VideoCard v-for="item in guides" :key="item.id" :resource="item"></VideoCard>
   </div>
 </template>

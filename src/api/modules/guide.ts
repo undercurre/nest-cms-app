@@ -17,7 +17,9 @@ export interface Guide {
   id: number
   video: string
   title: string
+  title_en: string
   description: string
+  description_en: string
   createdAt: string
 }
 
