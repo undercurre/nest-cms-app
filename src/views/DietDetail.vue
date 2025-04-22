@@ -7,11 +7,11 @@
       >
         <div class="flex items-center mr-8px text-#fff">
           <Icon icon="weui:time-outlined" width="16" height="16" />
-          <span class="ml-4px">{{ diet?.time }}分钟</span>
+          <span class="ml-4px">{{ diet?.time }}{{ $t('diet.minute') }}</span>
         </div>
         <div class="flex items-center mr-8px text-#fff ml-6px">
           <Icon icon="material-symbols:groups-rounded" width="16" height="16" />
-          <span class="text-12px ml-4px">2人份</span>
+          <span class="text-12px ml-4px">{{ $t('diet.serves', { num: 2 }) }}</span>
         </div>
         <div class="flex items-center mr-8px text-#fff ml-6px">
           <Icon icon="carbon:skill-level-advanced" width="16" height="16" />
@@ -46,9 +46,14 @@
         :key="item.id"
         class="bg-#f9fafc p-10px text-14px my-5px rounded-8px"
       >
-        {{ getI18NIngredientsName(item) }}：{{
-          item.quantity === 'AppropriateAmount' ? $t(`cookbook.${item.quantity}`) : item.quantity
-        }}{{ item.quantity === 'AppropriateAmount' ? '' : $t(`cookbook.${item.unit}`) }}
+        {{
+          item.quantity.toUpperCase() === 'APPROPRIATE AMOUNT'
+            ? $t(`cookbook.AppropriateAmount`)
+            : item.quantity
+        }}{{ locale === 'zh-CN' ? '' : ' '
+        }}{{
+          item.quantity.toUpperCase() === 'APPROPRIATE AMOUNT' ? '' : $t(`cookbook.${item.unit}`)
+        }}{{ locale === 'zh-CN' ? '' : ' ' }}{{ getI18NIngredientsName(item) }}
       </p>
     </div>
     <div class="flex flex-col mt-20px px-12px">
@@ -98,7 +103,7 @@ const diet = ref<Diet>()
 const ingredients = ref<Ingredients[]>()
 const steps = ref<Steps[]>()
 
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 
 const getI18NDietName = () => {
   if (diet.value) {
@@ -148,12 +153,11 @@ onBeforeMount(async () => {
   const stepsRes = await getSteps(Number(route.params.id as string))
   steps.value = stepsRes.data
 })
-
 function formatDifficulty(level: number) {
   const map: Record<number, string> = {
-    1: '简单',
-    2: '普通',
-    3: '困难',
+    1: t('diet.easy'),
+    2: t('diet.normal'),
+    3: t('diet.hard'),
   }
 
   return map[level]

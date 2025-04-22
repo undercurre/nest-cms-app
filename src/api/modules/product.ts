@@ -17,13 +17,13 @@ export interface Product {
   createTime: string
   createUid: string
   description: string
-  description_en: string
+  descriptionEn: string
   id: number
   imageOssUrl: string
   manualOssUrl: string
   productModel: string
   productName: string
-  productName_en: string
+  productNameEn: string
   sku: string
   updateTime: string
   updateUid: string | null

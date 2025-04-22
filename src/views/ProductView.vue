@@ -58,7 +58,7 @@ const getI18NProductName = () => {
     if (locale.value === 'zh-CN') {
       return curProduct.value.productName
     } else {
-      return curProduct.value.productName_en
+      return curProduct.value.productNameEn
     }
   }
 }
@@ -68,7 +68,7 @@ const getI18NDescription = () => {
     if (locale.value === 'zh-CN') {
       return curProduct.value.description
     } else {
-      return curProduct.value.description_en
+      return curProduct.value.descriptionEn
     }
   }
 }
@@ -84,7 +84,10 @@ onBeforeMount(async () => {
     <img class="w-full my-10px rounded-8px" :src="getUrlConcat(curProduct?.imageOssUrl ?? '')" />
 
     <p class="font-bold text-20px pt-5px w-full leading-30px">
-      <span>{{ curProduct?.productModel }} {{ curProduct?.productModel ? '系列' : '' }}</span>
+      <span
+        >{{ curProduct?.productModel }}
+        {{ curProduct?.productModel ? $t('product.series') : '' }}</span
+      >
     </p>
     <p class="text-#bbbcbb text-16px w-full">{{ getI18NProductName() }}</p>
     <p class="mt-18px text-#454d5c text-16px w-full flex items-center">

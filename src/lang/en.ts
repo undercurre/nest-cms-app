@@ -13,6 +13,7 @@ const en = {
     successfullyAdded: 'Successfully Added',
     addToMyDevices: 'Add to My Devices',
     downloadInstructionManual: 'Download Instruction Manual',
+    series: 'Series',
   },
   guide: {},
   diet: {
@@ -25,6 +26,11 @@ const en = {
     protein: 'Protein',
     fat: 'Fat',
     carbohydrate: 'Carbohydrate',
+    minute: 'min',
+    easy: 'Easy',
+    normal: 'Normal',
+    hard: 'Hard',
+    serves: 'Serves {num}',
   },
   device: {
     deviceName: 'Device Name',

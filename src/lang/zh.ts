@@ -12,6 +12,7 @@ const zh = {
     successfullyAdded: '添加成功',
     addToMyDevices: '添加到我的设备',
     downloadInstructionManual: '下载说明书',
+    series: '系列',
   },
   guide: {},
   diet: {
@@ -24,6 +25,11 @@ const zh = {
     protein: '蛋白质',
     fat: '脂肪',
     carbohydrate: '碳水化合物',
+    minute: '分钟',
+    easy: '简单',
+    normal: '普通',
+    hard: '困难',
+    serves: '{num}人份',
   },
   device: {
     deviceName: '设备名称',

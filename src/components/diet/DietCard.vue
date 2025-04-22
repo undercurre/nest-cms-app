@@ -17,7 +17,7 @@
       <div class="flex text-12px mt-4px">
         <div class="flex items-center mr-8px">
           <Icon icon="weui:time-outlined" width="16" height="16" />
-          <span class="ml-4px">{{ time }}分钟</span>
+          <span class="ml-4px">{{ time }}{{ $t('diet.minute') }}</span>
         </div>
         <div class="flex items-center mr-8px">
           <Icon icon="fluent-color:star-16" width="16" height="16" />

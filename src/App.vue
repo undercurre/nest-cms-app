@@ -112,25 +112,25 @@ onMounted(() => {
         inactive-color="#000000"
       >
         <van-tabbar-item name="guide" replace :to="`/guide/${productStore.id}`">
-          <span>{{ $t('common.operationInstructions') }}</span>
+          <div class="w-full text-center">{{ $t('common.operationInstructions') }}</div>
           <template #icon="props">
             <Icon icon="nrk:media-programguide" width="18" height="18" />
           </template>
         </van-tabbar-item>
         <van-tabbar-item name="product" replace :to="`/product/${productStore.id}`">
-          <span>{{ $t('common.productDescription') }}</span>
+          <div class="w-full text-center">{{ $t('common.productDescription') }}</div>
           <template #icon="props">
             <Icon icon="akar-icons:question" width="18" height="18" />
           </template>
         </van-tabbar-item>
         <van-tabbar-item name="diet" replace :to="`/diet/${productStore.id}`">
-          <span>{{ $t('common.completeRecipeCollection') }}</span>
+          <div class="w-full text-center">{{ $t('common.completeRecipeCollection') }}</div>
           <template #icon="props">
             <Icon icon="icon-park-outline:knife-fork" width="18" height="18" />
           </template>
         </van-tabbar-item>
         <van-tabbar-item name="statistics" replace :to="`/statistics`"
-          ><span>{{ $t('common.smartAnalysis') }}</span>
+          ><div class="w-full text-center">{{ $t('common.smartAnalysis') }}</div>
           <template #icon="props">
             <Icon icon="akar-icons:statistic-up" width="18" height="18" />
           </template>
@@ -145,29 +145,29 @@ onMounted(() => {
       inactive-color="#000000"
     >
       <van-tabbar-item name="guide" replace :to="`/guide/${productStore.id}`">
-        <span>{{ $t('common.operationInstructions') }}</span>
+        <div class="w-full text-center">{{ $t('common.operationInstructions') }}</div>
         <template #icon="props">
           <Icon icon="nrk:media-programguide" width="18" height="18" />
         </template>
       </van-tabbar-item>
       <van-tabbar-item name="product" replace :to="`/product/${productStore.id}`"
-        ><span>{{ $t('common.productDescription') }}</span>
+        ><div class="w-full text-center">{{ $t('common.productDescription') }}</div>
         <template #icon="props">
           <Icon icon="icon-park-outline:ad-product" width="18" height="18" />
         </template>
       </van-tabbar-item>
       <van-tabbar-item name="diet" replace :to="`/diet/${productStore.id}`"
-        ><span>{{ $t('common.completeRecipeCollection') }}</span>
+        ><div class="w-full text-center">{{ $t('common.completeRecipeCollection') }}</div>
         <template #icon="props">
           <Icon icon="icon-park-outline:knife-fork" width="18" height="18" />
         </template>
       </van-tabbar-item>
-      <van-tabbar-item name="ai" replace :to="`/ai`"
-        ><span>{{ $t('common.AI') }}</span>
+      <!-- <van-tabbar-item name="ai" replace :to="`/ai`"
+        ><div class="w-full text-center">{{ $t('common.AI') }}</div>
         <template #icon="props">
           <Icon icon="hugeicons:ai-mail" width="18" height="18" />
         </template>
-      </van-tabbar-item>
+      </van-tabbar-item> -->
       <!-- <van-tabbar-item name="statistics" replace :to="`/statistics`"
         ><span>智能分析</span>
         <template #icon="props">
