@@ -11,18 +11,18 @@
           </template>
         </el-card>
 
-        <div class="w-full grid grid-cols-2 gap-10px place-items-center">
+        <div class="w-full grid grid-cols-3 gap-10px place-items-center">
           <div
-            class="h-300px flex flex-col justify-center items-center"
+            class="w-full rounded-8px shadow-md flex flex-col"
             v-for="item in deviceList"
             :key="item.id"
           >
-            <img class="w-full h-200px" :src="getUrlConcat(item.imageOssUrl)" />
-            <div>
-              <span>{{ $t('device.deviceName') }}：{{ item.productName }}</span>
+            <img class="w-full h-100px rounded-t-8px" :src="getUrlConcat(item.imageOssUrl)" />
+            <div class="px-6px pt-4px text-12px font-bold truncate w-full">
+              {{ item.productModel }} {{ item.productModel ? $t('product.series') : '' }}
             </div>
-            <div>
-              <span>{{ $t('device.deviceModel') }}：{{ item.productModel }}</span>
+            <div class="px-6px pb-6px text-12px truncate w-full">
+              {{ item.productName }}
             </div>
           </div>
         </div>
@@ -57,12 +57,12 @@ onBeforeMount(async () => {
 
 <style scoped>
 .list-view {
-  padding: 20px;
+  padding: 12px;
 }
 
 .list-container {
   display: flex;
-  gap: 20px;
+  gap: 12px;
 }
 
 .left-column {
