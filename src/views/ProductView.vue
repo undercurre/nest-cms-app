@@ -33,6 +33,14 @@ if (token) {
 const curProduct = ref<Product>()
 const downloadManual = () => {
   if (!curProduct.value) return
+  if (window.flutter_inappwebview) {
+    const dataStr = JSON.stringify({
+      title: curProduct.value.productModel,
+      pdfUrl: curProduct.value.manualOssUrl,
+    })
+    window.flutter_inappwebview.callHandler('jsHandler', dataStr)
+    return
+  }
   const a = document.createElement('a')
   a.href = getUrlConcat(curProduct.value.manualOssUrl)
   a.download = `${curProduct.value.productModel}-${curProduct.value.productName}说明书.pdf`

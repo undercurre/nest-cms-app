@@ -7,6 +7,7 @@ const en = {
     completeRecipeCollection: 'Recipe Collection',
     smartAnalysis: 'Smart Analysis',
     all: 'all',
+    noData: 'No Data',
   },
   product: {
     successfullyAdded: 'Successfully Added',

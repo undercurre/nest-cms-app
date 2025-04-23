@@ -5,11 +5,7 @@ export default class WebSocketService {
   socket: Socket
   constructor() {
     // 连接到 WebSocket 服务器
-    this.socket = io(
-      import.meta.env.MODE === 'production'
-        ? 'http://172.26.224.136:31829/web/cms/'
-        : 'http://localhost:4001',
-    ) // WebSocket 服务器地址
+    this.socket = io(import.meta.env.MODE === 'production' ? '/' : 'http://localhost:4001') // WebSocket 服务器地址
 
     this.socket.on('connect', () => {
       console.log('', this.socket.connected) // true

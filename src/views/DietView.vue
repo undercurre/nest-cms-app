@@ -43,11 +43,11 @@ async function handleCategoryChange(key: string) {
 // url加http前缀
 const getUrlConcat = (url: string) => {
   if (!url) {
-    return "";
+    return ''
   }
-  if (url.startsWith("http")) return url;
-  return `${window.location.protocol}//${url}`;
-};
+  if (url.startsWith('http')) return url
+  return `${window.location.protocol}//${url}`
+}
 onBeforeMount(async () => {
   const categoryListRes = await getCategoryList()
   category.value = categoryListRes.data.map((item) => {

@@ -6,6 +6,7 @@ const zh = {
     productDescription: '产品说明',
     completeRecipeCollection: '食谱大全',
     smartAnalysis: '智能分析',
+    noData: '暂无数据',
   },
   product: {
     successfullyAdded: '添加成功',

@@ -24,6 +24,9 @@ const route = useRoute()
 
 // 检查当前路由是否为 list
 const isListRoute = computed(() => route.name === 'list')
+const isHomeRoute = computed(
+  () => route.name === 'product' || route.name === 'guide' || route.name === 'diet',
+)
 
 const productStore = useProductStore()
 const appStore = useAppStore()
@@ -32,12 +35,14 @@ const couponShow = ref(false)
 
 // NavBar
 function onClickLeft() {
-  if (window.history.length <= 1) {
+  console.log(window.history)
+  if (isHomeRoute.value || isListRoute.value) {
     // 无法后退时的处理
     console.log('无法后退')
     // 跳到原生
     // goBack2Native()
-    window.flutter_inappwebview?.callHandler('jsHandler', 'goBack').then(() => {
+    const dataStr = JSON.stringify({ goBack: true })
+    window.flutter_inappwebview?.callHandler('jsHandler', dataStr).then(() => {
       console.log('goBack 调用成功')
     })
   } else {
@@ -55,6 +60,7 @@ function getLanguage() {
     const lang = typeof route.query.lang === 'string' ? route.query.lang : 'en'
     localStorage.setItem('locale', lang)
   }
+  console.log(route.query.lang)
   locale.value =
     (Array.isArray(route.query.lang) ? route.query.lang[0] : route.query.lang) ||
     localStorage.getItem('locale') ||
@@ -68,7 +74,7 @@ onMounted(() => {
   }, 1000)
   setTimeout(() => {
     getLanguage()
-  }, 0)
+  }, 300)
 })
 </script>
 
