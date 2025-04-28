@@ -38,7 +38,7 @@
       </div>
     </div>
 
-    <div class="min-h-69px bg-#fff p-12px flex flex-col justify-between">
+    <div class="min-h-69px bg-[--color-background-mute] p-12px flex flex-col justify-between">
       <p class="font-bold text-14px leading-21px text-#000">{{ getI18NTitle() }}</p>
       <p class="text-14px leading-20px text-#4B5563 truncate">{{ getI18NDescription() }}</p>
     </div>

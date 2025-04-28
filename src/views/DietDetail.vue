@@ -23,28 +23,35 @@
         </div>
       </div>
       <van-button
-        class="rounded-16px absolute bottom--11px right-12px bg-#ff4181 border-0 p-4px color-#fff w-32px h-32px"
+        class="rounded-16px absolute bottom--11px right-12px bg-#ff4181 border-0 p-4px color-#fff w-32px h-32px dark:bg-#fe4080/80%"
       >
         <Icon icon="lsicon:label-outline" width="16" height="16" class="mt-5px" />
         <!-- <Icon icon="lsicon:label-filled" width="16" height="16" class="mt-5px" /> -->
       </van-button>
     </div>
     <div class="flex flex-col items-center justify-center mt-20px">
-      <p class="text-center font-bold text-20px my-10px">{{ getI18NDietName() }}</p>
-      <span class="text-12px bg-#ddd leading-12px rounded-20px font-bold p-10px">{{
-        $t(`cookbook.${diet?.category}`)
+      <p class="text-center font-bold text-20px my-10px dark:text-[--vt-c-white]">
+        {{ getI18NDietName() }}
+      </p>
+      <span
+        class="text-12px bg-#ddd leading-12px rounded-20px font-bold p-10px text-[--vt-c-text-light-2]"
+        >{{ $t(`cookbook.${diet?.category}`) }}</span
+      >
+    </div>
+    <div class="flex flex-col mt-20px px-12px">
+      <span class="font-bold text-18px mb-10px dark:text-[--vt-c-white]">{{
+        $t('diet.introduction')
       }}</span>
+      <p class="text-14px my-10px dark:text-[--vt-c-white-mute]">{{ getI18NDescription() }}</p>
     </div>
     <div class="flex flex-col mt-20px px-12px">
-      <span class="font-bold text-18px mb-10px">{{ $t('diet.introduction') }}</span>
-      <p class="text-14px my-10px">{{ getI18NDescription() }}</p>
-    </div>
-    <div class="flex flex-col mt-20px px-12px">
-      <span class="font-bold text-18px mb-10px">{{ $t('diet.ingredients') }}</span>
+      <span class="font-bold text-18px mb-10px dark:text-[--vt-c-white]">{{
+        $t('diet.ingredients')
+      }}</span>
       <p
         v-for="item in ingredients"
         :key="item.id"
-        class="bg-#f9fafc p-10px text-14px my-5px rounded-8px"
+        class="bg-#f9fafc dark:bg-[--vt-c-indigo] dark:text-[--vt-c-white] p-10px text-14px my-5px rounded-8px"
       >
         {{
           item.quantity.toUpperCase() === 'APPROPRIATE AMOUNT'
@@ -57,11 +64,13 @@
       </p>
     </div>
     <div class="flex flex-col mt-20px px-12px">
-      <span class="font-bold text-18px mb-10px">{{ $t('diet.steps') }}</span>
+      <span class="font-bold text-18px mb-10px dark:text-[--vt-c-white]">{{
+        $t('diet.steps')
+      }}</span>
       <div
         v-for="item in steps"
         :key="item.id"
-        class="flex items-start bg-#f9fafc p-10px text-14px my-5px rounded-8px"
+        class="flex items-start bg-#f9fafc dark:bg-[--vt-c-indigo] dark:text-[--vt-c-white] p-10px text-14px my-5px rounded-8px"
       >
         <div class="step-circle">{{ item.step_number }}</div>
         <div class="flex-1">{{ getI18NStepDescription(item) }}</div>
@@ -69,8 +78,10 @@
     </div>
 
     <div class="flex flex-col mt-20px px-12px">
-      <span class="font-bold text-18px mb-10px">{{ $t('diet.nutritionFacts') }}</span>
-      <div class="bg-#f9fafc rounded-8px p-10px">
+      <span class="font-bold text-18px mb-10px dark:text-[--vt-c-white]">{{
+        $t('diet.nutritionFacts')
+      }}</span>
+      <div class="bg-#f9fafc dark:bg-[--vt-c-indigo] dark:text-[--vt-c-white] rounded-8px p-10px">
         <div
           class="w-full flex items-center justify-between my-5px"
           v-for="(item, index) in diet?.nutrition_info"
@@ -85,15 +96,15 @@
 </template>
 
 <script lang="ts" setup>
-import { Icon } from '@iconify/vue'
 import type { Ingredients, Steps } from '@/api/modules/diet'
 import { getDietById, getIngredients, getSteps, type Diet } from '@/api/modules/diet'
+import defaultImg from '@/assets/images/app/default-food.png'
+import { useAppStore } from '@/stores/app'
+import { getUrlConcat } from '@/utils'
+import { Icon } from '@iconify/vue'
 import { onBeforeMount, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { getUrlConcat } from '@/utils'
 import { useRoute } from 'vue-router'
-import { useAppStore } from '@/stores/app'
-import defaultImg from '@/assets/images/app/default-food.png'
 
 const route = useRoute()
 

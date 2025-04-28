@@ -1,6 +1,17 @@
 <template>
   <div
-    class="rounded-16px px-6px py-2px text-#fff text-12px text-center absolute bottom-8px left-6px"
+    :class="[
+      'rounded-16px',
+      'px-6px',
+      'py-2px',
+      'text-#fff',
+      'text-12px',
+      'text-center',
+      'absolute',
+      'bottom-8px',
+      'left-6px',
+      'dark:opacity-90',
+    ]"
     :style="{ backgroundColor: formatDifficultyColor(level) }"
   >
     {{ formatDifficulty(level) }}

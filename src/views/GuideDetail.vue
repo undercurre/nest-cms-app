@@ -11,7 +11,7 @@
 
     <div>
       <p class="text-#fff font-bold text-18px p-10px">{{ getI18NTitle() }}</p>
-      <p class="text-#fff/80 text-16px p-10px">{{ getI18NDescription() }}</p>
+      <p class="text-#fff/80% text-16px p-10px">{{ getI18NDescription() }}</p>
     </div>
   </div>
 </template>

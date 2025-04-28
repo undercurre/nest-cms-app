@@ -3,7 +3,7 @@
     <div class="relative">
       <van-button
         round
-        class="rounded-16px absolute top-8px right-6px bg-#e6e9e8/80 h-32px w-32px"
+        class="rounded-16px absolute top-8px right-6px bg-#e6e9e8/80% h-32px w-32px"
         @click.stop
       >
         <Icon icon="lsicon:label-outline" width="16" height="16" class="mt-5px" />
@@ -12,8 +12,10 @@
       <img class="w-full h-130px img-fit rounded-t-8px" :src="url" @error="imgError" />
       <DifficuteTag :level="difficulty" />
     </div>
-    <div class="bg-#fff px-8px py-6px flex flex-col justify-between rounded-b-8px">
-      <p class="font-bold text-14px leading-21px text-#000">{{ title }}</p>
+    <div
+      class="dark:bg-[--color-background-mute] px-8px py-6px flex flex-col justify-between rounded-b-8px"
+    >
+      <p class="font-bold text-14px leading-21px text-[--color-text]">{{ title }}</p>
       <div class="flex text-12px mt-4px">
         <div class="flex items-center mr-8px">
           <Icon icon="weui:time-outlined" width="16" height="16" />
@@ -29,9 +31,9 @@
 </template>
 
 <script lang="ts" setup>
+import defaultImg from '@/assets/images/app/default-food.png'
 import router from '@/router'
 import { Icon } from '@iconify/vue'
-import defaultImg from '@/assets/images/app/default-food.png'
 
 interface Props {
   id: number

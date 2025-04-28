@@ -1,11 +1,22 @@
 <template>
   <div class="flex px-12px w-full min-h-36px mb-12px gap-10px overflow-scroll hide-scrollbar">
     <div
-      class="min-w-50px h-30px rounded-4px px-5px flex justify-center items-center shrink-0"
+      :class="[
+        'min-w-50px',
+        'h-30px',
+        'rounded-4px',
+        'px-5px',
+        'flex',
+        'justify-center',
+        'items-center',
+        'shrink-0',
+        item.value === curItemKey
+          ? 'bg-[--van-button-default-background]'
+          : 'bg-[--van-button-inactive-background]',
+      ]"
       v-for="item in listWithAll"
       :key="item.value"
       :style="{
-        backgroundColor: item.value === curItemKey ? '#2196f3' : '#9CA3AF',
         color: item.value === curItemKey ? '#fff' : '#fff',
       }"
       @click="handleSelect(item.value)"
@@ -16,8 +27,8 @@
 </template>
 
 <script lang="ts" setup>
-import { useI18n } from 'vue-i18n'
 import { computed, ref, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 interface Props {
   list: { label: string; value: string }[]

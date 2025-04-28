@@ -19,6 +19,8 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+  --van-primary-color: rgb(34, 150, 243)!important;
+  --van-primary-color-dark: rgb(34, 150, 243, 0.6);
 }
 
 /* semantic color variables for this project */
@@ -34,10 +36,20 @@
   --color-text: var(--vt-c-text-light-1);
 
   --section-gap: 160px;
+
+  --van-nav-bar-background: var(--vt-c-white)!important;
+  --van-search-background: var(--vt-c-white)!important;
+  --van-search-content-background:  var(--vt-c-white-soft)!important;
+  --van-tabbar-background: var(--vt-c-white)!important;
+  --van-tabbar-item-active-background: var(--vt-c-white)!important;
+  --van-tabbar-item-text-color: var(--vt-c-text-light-1)!important;
+  --van-button-default-background: var(--van-primary-color)!important;
+  --van-button-inactive-background: #9CA3AF;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
+/* @media (prefers-color-scheme: dark) { */
+  /* :root,  */
+  .dark{
     --color-background: var(--vt-c-black);
     --color-background-soft: var(--vt-c-black-soft);
     --color-background-mute: var(--vt-c-black-mute);
@@ -47,8 +59,22 @@
 
     --color-heading: var(--vt-c-text-dark-1);
     --color-text: var(--vt-c-text-dark-2);
+
+    --van-nav-bar-background: var(--vt-c-black)!important;
+    --van-search-background: var(--vt-c-black)!important;
+    --van-search-content-background:  var(--vt-c-black-soft)!important;
+    --van-tabbar-background: var(--vt-c-black)!important;
+    --van-tabbar-item-active-background: var(--vt-c-black)!important;
+    --van-tabbar-item-text-color: var(--vt-c-text-dark-2)!important;
+    --van-primary-color: var(--van-primary-color-dark)!important;
+    --van-button-default-background: var(--van-primary-color-dark)!important;
+    --van-button-inactive-background: #9CA3AF;
+    
   }
-}
+  .dark .dark-logo {
+   filter: invert(100%);   
+  }
+/* } */
 
 *,
 *::before,

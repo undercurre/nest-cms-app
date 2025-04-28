@@ -2,11 +2,11 @@
 import { onBeforeMount, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
-import { useProductStore } from '@/stores/product'
-import { useAppStore } from '@/stores/app'
-import TabList from '@/components/diet/TabList.vue'
-import DietCard from '@/components/diet/DietCard.vue'
 import { getCategoryList, searchDiet, type Diet } from '@/api/modules/diet'
+import DietCard from '@/components/diet/DietCard.vue'
+import TabList from '@/components/diet/TabList.vue'
+import { useAppStore } from '@/stores/app'
+import { useProductStore } from '@/stores/product'
 import { getUrlConcat } from '@/utils'
 
 const productStore = useProductStore()

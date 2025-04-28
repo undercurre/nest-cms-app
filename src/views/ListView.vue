@@ -16,6 +16,7 @@
             class="w-full rounded-8px shadow-md flex flex-col"
             v-for="item in deviceList"
             :key="item.id"
+            @click="go2Detail(item.id)"
           >
             <img class="w-full h-100px rounded-t-8px" :src="getUrlConcat(item.imageOssUrl)" />
             <div class="px-6px pt-4px text-12px font-bold truncate w-full">
@@ -26,18 +27,25 @@
             </div>
           </div>
         </div>
+
+        <div v-if="deviceList.length === 0">
+          <div class="w-full h-300px flex justify-center items-center">
+            <span>{{ $t('common.noData') }}</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { ref, onBeforeMount } from 'vue'
 import { getDeviceListByUid } from '@/api/modules/list'
-import { useRoute } from 'vue-router'
-import { useAppStore } from '@/stores/app'
 import type { Product } from '@/api/modules/product'
+import router from '@/router'
+import { useAppStore } from '@/stores/app'
 import { getUrlConcat } from '@/utils'
+import { onBeforeMount, ref } from 'vue'
+import { useRoute } from 'vue-router'
 
 const route = useRoute()
 const token = typeof route.query.token === 'string' ? decodeURIComponent(route.query.token) : '' // 类型断言
@@ -47,6 +55,10 @@ if (token) {
   appStore.token = token
 }
 const deviceList = ref<Product[]>([])
+
+const go2Detail = (id: number) => {
+  router.push(`/product/${id}`)
+}
 
 onBeforeMount(async () => {
   const res = await getDeviceListByUid()

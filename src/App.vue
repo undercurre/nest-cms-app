@@ -1,22 +1,13 @@
 <script setup lang="ts">
-import { RouterView, useRoute } from 'vue-router'
 import { Icon } from '@iconify/vue'
+import { RouterView, useRoute } from 'vue-router'
 
-import DietActiveIcon from '@/assets/images/app/diet_active.png'
-import DietInActiveIcon from '@/assets/images/app/diet_inactive.png'
-import ProductActiveIcon from '@/assets/images/app/product_active.png'
-import ProductInActiveIcon from '@/assets/images/app/product_inactive.png'
-import GuideActiveIcon from '@/assets/images/app/guide_active.png'
-import GuideInActiveIcon from '@/assets/images/app/guide_inactive.png'
-import StatisticsActiveIcon from '@/assets/images/app/statistics_active.png'
-import StatisticsInActiveIcon from '@/assets/images/app/statistics_inactive.png'
-import { useProductStore } from '@/stores/product'
 import { useAppStore } from '@/stores/app'
+import { useProductStore } from '@/stores/product'
 import router from './router'
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { computed, onMounted, ref, nextTick } from 'vue'
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { goBack2Native } from './api/modules/native'
+
+import { computed, onMounted, ref } from 'vue'
+
 import { useI18n } from 'vue-i18n'
 
 const { locale } = useI18n()
@@ -25,6 +16,9 @@ const route = useRoute()
 
 // 检查当前路由是否为 list
 const isListRoute = computed(() => route.name === 'list')
+const isHomeRoute = computed(
+  () => route.name === 'product' || route.name === 'guide' || route.name === 'diet',
+)
 
 const productStore = useProductStore()
 const appStore = useAppStore()
@@ -33,12 +27,14 @@ const couponShow = ref(false)
 
 // NavBar
 function onClickLeft() {
-  if (window.history.length <= 1) {
+  console.log(window.history)
+  if (isHomeRoute.value || isListRoute.value) {
     // 无法后退时的处理
     console.log('无法后退')
     // 跳到原生
     // goBack2Native()
-    window.flutter_inappwebview?.callHandler('jsHandler', 'goBack').then(() => {
+    const dataStr = JSON.stringify({ goBack: true })
+    window.flutter_inappwebview?.callHandler('jsHandler', dataStr).then(() => {
       console.log('goBack 调用成功')
     })
   } else {
@@ -56,11 +52,35 @@ function getLanguage() {
     const lang = typeof route.query.lang === 'string' ? route.query.lang : 'en'
     localStorage.setItem('locale', lang)
   }
+  console.log(route.query.lang)
   locale.value =
     (Array.isArray(route.query.lang) ? route.query.lang[0] : route.query.lang) ||
     localStorage.getItem('locale') ||
     'en'
   console.log('当前语言:', locale.value)
+}
+
+// 获取系统色系
+const themeMode = ref('light')
+function getThemeMode() {
+  if (!localStorage.getItem('themeMode')) {
+    const themeMode = typeof route.query.themeMode === 'string' ? route.query.themeMode : 'dark'
+    localStorage.setItem('themeMode', themeMode)
+  }
+  themeMode.value =
+    (Array.isArray(route.query.themeMode) ? route.query.themeMode[0] : route.query.themeMode) ||
+    localStorage.getItem('themeMode') ||
+    'dark'
+  toggleMode(themeMode.value === 'dark')
+  console.log('当前主题:', themeMode.value)
+}
+
+function toggleMode(flag: boolean) {
+  if (flag) {
+    document.documentElement.classList.add('dark')
+  } else {
+    document.documentElement.classList.remove('dark')
+  }
 }
 
 onMounted(() => {
@@ -69,7 +89,8 @@ onMounted(() => {
   }, 1000)
   setTimeout(() => {
     getLanguage()
-  }, 0)
+    getThemeMode()
+  }, 300)
 })
 </script>
 
@@ -78,9 +99,11 @@ onMounted(() => {
     <van-nav-bar :safe-area-inset-top="true" :border="true" :fixed="true" title="">
       <template #left>
         <div class="flex items-center">
-          <img
-            class="w-14px h-14px mr-10px"
-            src="@/assets/images/app/left-arrow.png"
+          <Icon
+            icon="material-symbols:arrow-back-ios-new-rounded"
+            width="14"
+            height="14"
+            class="mr-10px"
             @click="onClickLeft"
           />
           <span class="w-full font-bold leading-28px text-18px">{{
@@ -89,7 +112,7 @@ onMounted(() => {
         </div>
       </template>
       <template #right>
-        <img v-if="!isListRoute" class="h-150%" src="@/assets/images/app/logo.png" />
+        <img v-if="!isListRoute" class="h-150% dark-logo" src="@/assets/images/app/logo.png" />
         <!-- @click="go2AI" -->
       </template>
     </van-nav-bar>
@@ -108,8 +131,6 @@ onMounted(() => {
         :fixed="false"
         :safe-area-inset-bottom="true"
         v-model="appStore.tabbarActive"
-        active-color="#000000"
-        inactive-color="#000000"
       >
         <van-tabbar-item name="guide" replace :to="`/guide/${productStore.id}`">
           <div class="w-full text-center">{{ $t('common.operationInstructions') }}</div>
@@ -137,13 +158,7 @@ onMounted(() => {
         </van-tabbar-item>
       </van-tabbar>
     </div>
-    <van-tabbar
-      v-if="!isListRoute"
-      :safe-area-inset-bottom="false"
-      v-model="appStore.tabbarActive"
-      active-color="#2296f3"
-      inactive-color="#000000"
-    >
+    <van-tabbar v-if="!isListRoute" :safe-area-inset-bottom="false" v-model="appStore.tabbarActive">
       <van-tabbar-item name="guide" replace :to="`/guide/${productStore.id}`">
         <div class="w-full text-center">{{ $t('common.operationInstructions') }}</div>
         <template #icon="props">

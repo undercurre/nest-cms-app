@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import { ref, onMounted, watchEffect } from 'vue'
-import { Icon } from '@iconify/vue'
 import { type Guide } from '@/api/modules/guide'
+import { Icon } from '@iconify/vue'
+import { ref, watchEffect } from 'vue'
 const props = withDefaults(defineProps<{ list: Guide[] }>(), {
   list: [],
 })
@@ -58,9 +58,11 @@ function formatDuration(seconds: number) {
       :class="[
         'border',
         'border-solid',
-        index === currentIndex ? 'border-[#e6edf6]' : 'border-[#f3f3f3]',
+        index === currentIndex ? 'border-[#e6edf6]' : 'border-[#f3f3f3] dark:border-[#f3f3f3]/80%',
         'rounded-6px',
-        index === currentIndex ? 'bg-#eff6ff' : 'bg-#fff',
+        index === currentIndex
+          ? 'bg-#eff6ff dark:bg-[--vt-c-indigo]'
+          : 'bg-#fff dark:bg-[--color-background-mute]',
         'p-8px',
         'mt-12px',
         'flex',
@@ -88,7 +90,9 @@ function formatDuration(seconds: number) {
         </div>
         <div class="ml-8px flex-1">
           <div class="flex items-center justify-between">
-            <div class="text-14px text-#000 font-bold">{{ item.title }}</div>
+            <div class="text-14px text-#000 dark:text-[--color-text] font-bold">
+              {{ item.title }}
+            </div>
             <div class="text-12px text-#808182">{{ item.duration }}</div>
           </div>
           <div
