@@ -10,11 +10,11 @@
       <div class="flex text-12px">
         <div class="flex items-center mr-8px">
           <img class="w-15px h-15px mr-2px" src="@/assets/images/app/time.png" />
-          <span>{{ time }}分钟</span>
+          <span class="text-[--vt-c-text-light-2]">{{ time }}分钟</span>
         </div>
         <div class="flex items-center">
           <img class="w-15px h-15px mr-2px" src="@/assets/images/app/difficulty.png" />
-          <span>{{ formatDifficulty(difficulty) }}</span>
+          <span class="text-[--vt-c-text-light-2]">{{ formatDifficulty(difficulty) }}</span>
         </div>
       </div>
     </div>

@@ -3,19 +3,18 @@ import { RouterView, useRoute } from 'vue-router'
 
 import DietActiveIcon from '@/assets/images/app/diet_active.png'
 import DietInActiveIcon from '@/assets/images/app/diet_inactive.png'
-import ProductActiveIcon from '@/assets/images/app/product_active.png'
-import ProductInActiveIcon from '@/assets/images/app/product_inactive.png'
 import GuideActiveIcon from '@/assets/images/app/guide_active.png'
 import GuideInActiveIcon from '@/assets/images/app/guide_inactive.png'
+import ProductActiveIcon from '@/assets/images/app/product_active.png'
+import ProductInActiveIcon from '@/assets/images/app/product_inactive.png'
 import StatisticsActiveIcon from '@/assets/images/app/statistics_active.png'
 import StatisticsInActiveIcon from '@/assets/images/app/statistics_inactive.png'
-import { useProductStore } from '@/stores/product'
 import { useAppStore } from '@/stores/app'
+import { useProductStore } from '@/stores/product'
 import router from './router'
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { computed, onMounted, ref, nextTick } from 'vue'
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { goBack2Native } from './api/modules/native'
+
+import { computed, onMounted, ref } from 'vue'
+
 import { useI18n } from 'vue-i18n'
 
 const { locale } = useI18n()
@@ -68,12 +67,36 @@ function getLanguage() {
   console.log('当前语言:', locale.value)
 }
 
+// 获取系统色系
+const themeMode = ref('light')
+function getThemeMode() {
+  if (!localStorage.getItem('themeMode')) {
+    const themeMode = typeof route.query.themeMode === 'string' ? route.query.themeMode : 'dark'
+    localStorage.setItem('themeMode', themeMode)
+  }
+  themeMode.value =
+    (Array.isArray(route.query.themeMode) ? route.query.themeMode[0] : route.query.themeMode) ||
+    localStorage.getItem('themeMode') ||
+    'dark'
+  toggleMode(themeMode.value === 'dark')
+  console.log('当前主题:', themeMode.value)
+}
+
+function toggleMode(flag: boolean) {
+  if (flag) {
+    document.documentElement.classList.add('dark')
+  } else {
+    document.documentElement.classList.remove('dark')
+  }
+}
+
 onMounted(() => {
   setTimeout(() => {
     couponShow.value = true
   }, 1000)
   setTimeout(() => {
     getLanguage()
+    getThemeMode()
   }, 300)
 })
 </script>
@@ -84,7 +107,7 @@ onMounted(() => {
       <template #left>
         <div class="flex items-center">
           <img
-            class="w-14px h-14px mr-10px"
+            class="w-14px h-14px mr-10px dark-logo"
             src="@/assets/images/app/left-arrow.png"
             @click="onClickLeft"
           />
@@ -94,7 +117,7 @@ onMounted(() => {
         </div>
       </template>
       <template #right>
-        <img v-if="!isListRoute" class="h-150%" src="@/assets/images/app/logo.png" />
+        <img v-if="!isListRoute" class="h-150% dark-logo" src="@/assets/images/app/logo.png" />
         <!-- @click="go2AI" -->
       </template>
     </van-nav-bar>
@@ -113,8 +136,8 @@ onMounted(() => {
         :fixed="false"
         :safe-area-inset-bottom="true"
         v-model="appStore.tabbarActive"
-        active-color="#000000"
-        inactive-color="#000000"
+        :active-color="themeMode === 'dark' ? '#ffffff' : '#000000'"
+        :inactive-color="themeMode === 'dark' ? '#ffffff' : '#000000'"
       >
         <van-tabbar-item name="guide" replace :to="`/guide/${productStore.id}`">
           <span>{{ $t('common.operationInstructions') }}</span>
@@ -155,8 +178,8 @@ onMounted(() => {
       v-if="!isListRoute"
       :safe-area-inset-bottom="false"
       v-model="appStore.tabbarActive"
-      active-color="#000000"
-      inactive-color="#000000"
+      :active-color="themeMode === 'dark' ? '#ffffff' : '#000000'"
+      :inactive-color="themeMode === 'dark' ? '#ffffff' : '#000000'"
     >
       <van-tabbar-item name="guide" replace :to="`/guide/${productStore.id}`">
         <span>{{ $t('common.operationInstructions') }}</span>

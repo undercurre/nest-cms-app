@@ -3,9 +3,10 @@
     <img class="w-full" :src="diet?.image" />
     <div class="flex flex-col items-center justify-center mt-20px">
       <p class="text-center font-bold text-20px my-10px">{{ getI18NDietName() }}</p>
-      <span class="text-12px bg-#ddd leading-12px rounded-20px font-bold p-10px">{{
-        $t(`cookbook.${diet?.category}`)
-      }}</span>
+      <span
+        class="text-12px bg-#ddd leading-12px rounded-20px font-bold p-10px text-[--vt-c-text-light-2]"
+        >{{ $t(`cookbook.${diet?.category}`) }}</span
+      >
     </div>
     <div class="flex flex-col mt-20px">
       <span class="font-bold text-18px px-10px">{{ $t('diet.introduction') }}</span>

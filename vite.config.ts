@@ -1,12 +1,12 @@
 import { fileURLToPath, URL } from 'node:url'
 
-import { defineConfig } from 'vite'
+import { VantResolver } from '@vant/auto-import-resolver'
 import vue from '@vitejs/plugin-vue'
-import vueDevTools from 'vite-plugin-vue-devtools'
+import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
-import { VantResolver } from '@vant/auto-import-resolver'
-import UnoCSS from 'unocss/vite'
+import { defineConfig } from 'vite'
+import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
@@ -41,7 +41,7 @@ export default defineConfig(({ mode }) => {
       proxy: {
         // 将 /api 开头的请求代理到目标服务器
         '/mova-cms': {
-          target: 'http://172.26.228.72:4000', // 目标服务器
+          target: 'http://172.26.224.136:30343', // 目标服务器
           changeOrigin: true, // 是否修改请求的源
           configure: (proxy, options) => {
             proxy.on('proxyReq', (proxyReq, req, res) => {
@@ -56,7 +56,7 @@ export default defineConfig(({ mode }) => {
           },
         },
         '/device-api': {
-          target: 'http://172.26.224.136:30850', // 目标服务器地址
+          target: 'http://172.26.224.136:30343', // 目标服务器地址
           changeOrigin: true, // 修改请求头中的 Host
           rewrite: (path) => path.replace(/^\/web\/cms/, ''), // 移除 `/web/cms` 前缀
         },
