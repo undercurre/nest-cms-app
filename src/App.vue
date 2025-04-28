@@ -64,13 +64,13 @@ function getLanguage() {
 const themeMode = ref('light')
 function getThemeMode() {
   if (!localStorage.getItem('themeMode')) {
-    const themeMode = typeof route.query.themeMode === 'string' ? route.query.themeMode : 'dark'
+    const themeMode = typeof route.query.themeMode === 'string' ? route.query.themeMode : 'light'
     localStorage.setItem('themeMode', themeMode)
   }
   themeMode.value =
     (Array.isArray(route.query.themeMode) ? route.query.themeMode[0] : route.query.themeMode) ||
     localStorage.getItem('themeMode') ||
-    'dark'
+    'light'
   toggleMode(themeMode.value === 'dark')
   console.log('当前主题:', themeMode.value)
 }
