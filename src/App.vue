@@ -138,24 +138,32 @@ onMounted(() => {
             <Icon icon="nrk:media-programguide" width="18" height="18" />
           </template>
         </van-tabbar-item>
-        <van-tabbar-item name="product" replace :to="`/product/${productStore.id}`">
-          <div class="w-full text-center">{{ $t('common.productDescription') }}</div>
+        <van-tabbar-item name="product" replace :to="`/product/${productStore.id}`"
+          ><div class="w-full text-center">{{ $t('common.productDescription') }}</div>
           <template #icon="props">
-            <Icon icon="akar-icons:question" width="18" height="18" />
+            <Icon icon="icon-park-outline:ad-product" width="18" height="18" />
           </template>
         </van-tabbar-item>
-        <van-tabbar-item name="diet" replace :to="`/diet/${productStore.id}`">
-          <div class="w-full text-center">{{ $t('common.completeRecipeCollection') }}</div>
+        <van-tabbar-item name="diet" replace :to="`/diet/${productStore.id}`"
+          ><div class="w-full text-center">{{ $t('common.completeRecipeCollection') }}</div>
           <template #icon="props">
             <Icon icon="icon-park-outline:knife-fork" width="18" height="18" />
           </template>
         </van-tabbar-item>
-        <van-tabbar-item name="statistics" replace :to="`/statistics`"
-          ><div class="w-full text-center">{{ $t('common.smartAnalysis') }}</div>
-          <template #icon="props">
-            <Icon icon="akar-icons:statistic-up" width="18" height="18" />
-          </template>
-        </van-tabbar-item>
+        <!-- <van-tabbar-item name="ai" replace :to="`/ai`"
+        ><div class="w-full text-center">{{ $t('common.AI') }}</div>
+        <template #icon="props">
+          <Icon icon="hugeicons:ai-mail" width="18" height="18" />
+        </template>
+      </van-tabbar-item> -->
+        <!-- <van-tabbar-item name="statistics" replace :to="`/statistics`"
+        ><span>智能分析</span>
+        <template #icon="props">
+          <img
+            class="w-15px h-15px pb-8px"
+            :src="props.active ? StatisticsActiveIcon : StatisticsInActiveIcon"
+          /> </template
+      ></van-tabbar-item> -->
       </van-tabbar>
     </div>
     <van-tabbar v-if="!isListRoute" :safe-area-inset-bottom="false" v-model="appStore.tabbarActive">
