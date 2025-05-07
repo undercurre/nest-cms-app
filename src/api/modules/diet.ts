@@ -24,6 +24,7 @@ export interface Diet {
   description: string
   description_en: string
   createdAt: string
+  nutrition_info?: string[]
 }
 
 export type Category = string

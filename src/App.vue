@@ -134,19 +134,19 @@ onMounted(() => {
       >
         <van-tabbar-item name="guide" replace :to="`/guide/${productStore.id}`">
           <div class="w-full text-center">{{ $t('common.operationInstructions') }}</div>
-          <template #icon="props">
+          <template #icon>
             <Icon icon="nrk:media-programguide" width="18" height="18" />
           </template>
         </van-tabbar-item>
         <van-tabbar-item name="product" replace :to="`/product/${productStore.id}`"
           ><div class="w-full text-center">{{ $t('common.productDescription') }}</div>
-          <template #icon="props">
+          <template #icon>
             <Icon icon="icon-park-outline:ad-product" width="18" height="18" />
           </template>
         </van-tabbar-item>
         <van-tabbar-item name="diet" replace :to="`/diet/${productStore.id}`"
           ><div class="w-full text-center">{{ $t('common.completeRecipeCollection') }}</div>
-          <template #icon="props">
+          <template #icon>
             <Icon icon="icon-park-outline:knife-fork" width="18" height="18" />
           </template>
         </van-tabbar-item>
@@ -169,19 +169,19 @@ onMounted(() => {
     <van-tabbar v-if="!isListRoute" :safe-area-inset-bottom="false" v-model="appStore.tabbarActive">
       <van-tabbar-item name="guide" replace :to="`/guide/${productStore.id}`">
         <div class="w-full text-center">{{ $t('common.operationInstructions') }}</div>
-        <template #icon="props">
+        <template #icon>
           <Icon icon="nrk:media-programguide" width="18" height="18" />
         </template>
       </van-tabbar-item>
       <van-tabbar-item name="product" replace :to="`/product/${productStore.id}`"
         ><div class="w-full text-center">{{ $t('common.productDescription') }}</div>
-        <template #icon="props">
+        <template #icon>
           <Icon icon="icon-park-outline:ad-product" width="18" height="18" />
         </template>
       </van-tabbar-item>
       <van-tabbar-item name="diet" replace :to="`/diet/${productStore.id}`"
         ><div class="w-full text-center">{{ $t('common.completeRecipeCollection') }}</div>
-        <template #icon="props">
+        <template #icon>
           <Icon icon="icon-park-outline:knife-fork" width="18" height="18" />
         </template>
       </van-tabbar-item>

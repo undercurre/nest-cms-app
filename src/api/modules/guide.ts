@@ -21,6 +21,7 @@ export interface Guide {
   description: string
   description_en: string
   createdAt: string
+  duration?: string
 }
 
 /**

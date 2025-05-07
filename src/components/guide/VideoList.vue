@@ -3,7 +3,7 @@ import { type Guide } from '@/api/modules/guide'
 import { Icon } from '@iconify/vue'
 import { ref, watchEffect } from 'vue'
 const props = withDefaults(defineProps<{ list: Guide[] }>(), {
-  list: [],
+  list: () => [],
 })
 const emit = defineEmits(['play'])
 const currentIndex = ref(0)
@@ -13,8 +13,8 @@ const playVideo = (index) => {
 }
 
 // 处理获取视频时长（秒）
-function getVideoDuration(url) {
-  return new Promise((resolve, reject) => {
+function getVideoDuration(url): Promise<number | null> {
+  return new Promise<number | null>((resolve) => {
     const video = document.createElement('video')
     video.src = url
     video.addEventListener('loadedmetadata', () => {
@@ -35,7 +35,7 @@ watchEffect(() => {
       if (duration) {
         item.duration = formatDuration(duration)
       } else {
-        item.duration = 0
+        item.duration = '00:00'
       }
     })
   })

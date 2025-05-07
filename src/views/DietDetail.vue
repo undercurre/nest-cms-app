@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col color-#000 mb-12px">
     <div class="relative">
-      <img class="w-full" :src="getUrlConcat(diet?.image)" @error="imgError" />
+      <img class="w-full" :src="getUrlConcat(diet?.image ?? '')" @error="imgError" />
       <div
         class="absolute bottom-4px left-0 w-full flex px-10px py-14px text-12px mt-4px shadow-box"
       >
@@ -15,7 +15,7 @@
         </div>
         <div class="flex items-center mr-8px text-#fff ml-6px">
           <Icon icon="carbon:skill-level-advanced" width="16" height="16" />
-          <span class="text-12px ml-4px">{{ formatDifficulty(diet?.difficulty) }}</span>
+          <span class="text-12px ml-4px">{{ formatDifficulty(diet?.difficulty ?? 0) }}</span>
         </div>
         <div class="flex items-center mr-8px text-#fff ml-6px">
           <Icon icon="fluent-color:star-16" width="16" height="16" />
@@ -96,8 +96,14 @@
 </template>
 
 <script lang="ts" setup>
-import type { Ingredients, Steps } from '@/api/modules/diet'
-import { getDietById, getIngredients, getSteps, type Diet } from '@/api/modules/diet'
+import {
+  getDietById,
+  getIngredients,
+  getSteps,
+  type Diet,
+  type Ingredients,
+  type Steps,
+} from '@/api/modules/diet'
 import defaultImg from '@/assets/images/app/default-food.png'
 import { useAppStore } from '@/stores/app'
 import { getUrlConcat } from '@/utils'

@@ -22,6 +22,7 @@ import { useI18n } from 'vue-i18n'
 interface Props {
   level: number
 }
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const props = withDefaults(defineProps<Props>(), {
   level: 1,
 })

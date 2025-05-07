@@ -12,16 +12,13 @@
 </template>
 
 <script setup lang="ts">
-import { getGuideById, type Guide } from '@/api/modules/guide'
-import { onBeforeMount, reactive, ref, watchEffect } from 'vue'
-import { useRoute } from 'vue-router'
+import { reactive, watchEffect } from 'vue'
 import 'vue3-video-play/dist/style.css'
 import { videoPlay } from 'vue3-video-play/lib/index.js'
 
 const props = withDefaults(defineProps<{ url: string }>(), {
   url: '',
 })
-const route = useRoute()
 
 const options = reactive({
   height: '215px',
@@ -53,7 +50,6 @@ const onCanplay = (ev: unknown) => {
   console.log(ev, '可以播放')
 }
 
-const guide = ref<Guide>()
 watchEffect(() => {
   options.src = props.url || ''
 })

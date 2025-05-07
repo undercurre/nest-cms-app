@@ -6,6 +6,7 @@ import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { defineConfig } from 'vite'
+import eslint from 'vite-plugin-eslint'
 import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
@@ -18,6 +19,7 @@ export default defineConfig(({ mode }) => {
       UnoCSS({
         configFile: '../uno.config.ts',
       }),
+      eslint({ cache: false }),
       AutoImport({
         imports: [
           'vue',
@@ -44,13 +46,13 @@ export default defineConfig(({ mode }) => {
           target: 'http://172.26.224.136:30343', // 目标服务器
           changeOrigin: true, // 是否修改请求的源
           configure: (proxy, options) => {
-            proxy.on('proxyReq', (proxyReq, req, res) => {
+            proxy.on('proxyReq', (proxyReq, req) => {
               console.log(`[PROXY REQ] ${req.method} ${req.url} => ${options.target}${req.url}`)
             })
-            proxy.on('proxyRes', (proxyRes, req, res) => {
+            proxy.on('proxyRes', (proxyRes, req) => {
               console.log(`[PROXY RES] ${req.method} ${req.url} => ${proxyRes.statusCode}`)
             })
-            proxy.on('error', (err, req, res) => {
+            proxy.on('error', (err, req) => {
               console.error(`[PROXY ERROR] ${req.method} ${req.url}:`, err)
             })
           },
