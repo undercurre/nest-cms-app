@@ -1,4 +1,4 @@
-import axios, { type AxiosRequestConfig, type AxiosResponse } from 'axios'
+import axios, { type AxiosRequestConfig } from 'axios'
 
 interface RequestOptions extends AxiosRequestConfig {
   loading?: boolean // 是否显示 loading
@@ -64,7 +64,7 @@ class RequestService {
 
   // 通用请求方法
   private request<T>(config: RequestOptions): Promise<T> {
-    return this.instance.request<T, AxiosResponse<T>>(config).then((res) => res.data)
+    return this.instance.request(config).then((res) => res.data as T)
   }
 }
 
