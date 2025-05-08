@@ -70,11 +70,11 @@ class RequestService {
 
 // 创建不同服务的实例
 const cmsService = new RequestService({
-  baseURL: import.meta.env.MODE === 'production' ? '/' : '/',
+  baseURL: import.meta.env.MODE === 'production' ? '/kitchen/offlinedevice/' : '/',
 })
 
 const userService = new RequestService({
-  baseURL: import.meta.env.MODE === 'production' ? '/' : '/',
+  baseURL: import.meta.env.MODE === 'production' ? '/kitchen/offlinedevice/' : '/',
   timeout: 30000, // 自定义超时时间
   headers: {
     'X-Custom-Header': 'value', // 自定义 headers
@@ -82,3 +82,4 @@ const userService = new RequestService({
 })
 
 export { cmsService, userService }
+

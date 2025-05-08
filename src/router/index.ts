@@ -1,15 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import ProductView from '../views/ProductView.vue'
-import DietView from '../views/DietView.vue'
-import GuideView from '../views/GuideView.vue'
-import GuideDetail from '../views/GuideDetail.vue'
-import DietDetail from '../views/DietDetail.vue'
 import AIView from '../views/AIView.vue'
+import DietDetail from '../views/DietDetail.vue'
+import DietView from '../views/DietView.vue'
+import GuideDetail from '../views/GuideDetail.vue'
+import GuideView from '../views/GuideView.vue'
+import ProductView from '../views/ProductView.vue'
 import SaleApp from '../views/SaleApp.vue'
 import StatisticsView from '../views/StatisticsView.vue'
-
 const router = createRouter({
-  history: createWebHistory('web/cms/markH5/'),
+  history: createWebHistory(`${import.meta.env.MODE === 'production' ? 'kitchen/offlinedevice/' : ''}web/cms/markH5/`),
   routes: [
     {
       path: '/',

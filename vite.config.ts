@@ -12,7 +12,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
   return {
-    base: mode === 'development' ? './' : '/web/cms/markH5/',
+    base: mode === 'development' ? './' : mode === 'uat' ? '/web/cms/markH5/' : '/kitchen/offlinedevice/web/cms/markH5/',
     plugins: [
       vue(),
       vueDevTools(),
