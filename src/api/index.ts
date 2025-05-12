@@ -71,7 +71,7 @@ class RequestService {
 
 // 创建不同服务的实例
 const cmsService = new RequestService({
-  baseURL: import.meta.env.MODE === 'production' ? '/kitchen/offlinedevice/' : import.meta.env.MODE === 'uat' ? '/api/' : '/',
+  baseURL: import.meta.env.MODE === 'production' ? '/kitchen/offlinedevice/' : import.meta.env.MODE === 'uat' ? '/' : '/',
 })
 
 const userService = new RequestService({
