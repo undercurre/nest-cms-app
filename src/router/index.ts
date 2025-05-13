@@ -8,7 +8,7 @@ import ProductView from '../views/ProductView.vue'
 import SaleApp from '../views/SaleApp.vue'
 import StatisticsView from '../views/StatisticsView.vue'
 const router = createRouter({
-  history: createWebHistory(`${import.meta.env.MODE === 'production' ? 'kitchen/offlinedevice/' : ''}web/cms/markH5/`),
+  history: createWebHistory(`${import.meta.env.MODE === 'production' ? 'kitchen/offlinedevice/' : 'kitchen/offlinedevice/'}web/cms/markH5/`),
   routes: [
     {
       path: '/',

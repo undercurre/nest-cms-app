@@ -1,4 +1,4 @@
-import { cmsService } from '..'
+import { userService } from '..'
 
 const PORT1 = 'device-api/h5'
 
@@ -33,5 +33,5 @@ export interface Product {
  * @name 查询产品列表
  */
 export const getProductInfo = (id: number) => {
-  return cmsService.get<ResultData<Product>>(PORT1 + `/products/${id}`)
+  return userService.get<ResultData<Product>>(PORT1 + `/products/${id}`)
 }
