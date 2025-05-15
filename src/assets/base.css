@@ -60,6 +60,10 @@
     --van-search-content-background:  var(--vt-c-black-soft)!important;
     --van-tabbar-background: var(--vt-c-black)!important;
     --van-tabbar-item-active-background: var(--vt-c-black)!important;
+    --van-dropdown-menu-background: var(--vt-c-black)!important;
+    --van-dropdown-menu-title-text-color: var(--vt-c-text-dark-1)!important;
+    --van-cell-background: var(--vt-c-black)!important; 
+    --van-cell-text-color: var(--vt-c-text-dark-1)!important; 
   }
   .dark .dark-logo {
    filter: invert(100%);   

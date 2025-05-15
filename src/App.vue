@@ -9,15 +9,15 @@ import ProductActiveIcon from '@/assets/images/app/product_active.png'
 import ProductInActiveIcon from '@/assets/images/app/product_inactive.png'
 import StatisticsActiveIcon from '@/assets/images/app/statistics_active.png'
 import StatisticsInActiveIcon from '@/assets/images/app/statistics_inactive.png'
+import router from '@/router'
 import { useAppStore } from '@/stores/app'
 import { useProductStore } from '@/stores/product'
-import router from './router'
 
+import { useLanguage } from '@/hooks/useLanguage'
+import { useThemeMode } from '@/hooks/useThemeMode'
 import { computed, onMounted, ref } from 'vue'
 
-import { useI18n } from 'vue-i18n'
-
-const { locale } = useI18n()
+// const { locale } = useI18n()
 
 const route = useRoute()
 
@@ -53,49 +53,17 @@ function onClickLeft() {
 //   router.push('/ai')
 // }
 
-// 获取系统语言
-function getLanguage() {
-  if (!localStorage.getItem('locale')) {
-    const lang = typeof route.query.lang === 'string' ? route.query.lang : 'en'
-    localStorage.setItem('locale', lang)
-  }
-  console.log(route.query.lang)
-  locale.value =
-    (Array.isArray(route.query.lang) ? route.query.lang[0] : route.query.lang) ||
-    localStorage.getItem('locale') ||
-    'en'
-  console.log('当前语言:', locale.value)
-}
+const { setLanguage } = useLanguage()
 
 // 获取系统色系
-const themeMode = ref('light')
-function getThemeMode() {
-  if (!localStorage.getItem('themeMode')) {
-    const themeMode = typeof route.query.themeMode === 'string' ? route.query.themeMode : 'light'
-    localStorage.setItem('themeMode', themeMode)
-  }
-  themeMode.value =
-    (Array.isArray(route.query.themeMode) ? route.query.themeMode[0] : route.query.themeMode) ||
-    localStorage.getItem('themeMode') ||
-    'light'
-  toggleMode(themeMode.value === 'dark')
-  console.log('当前主题:', themeMode.value)
-}
-
-function toggleMode(flag: boolean) {
-  if (flag) {
-    document.documentElement.classList.add('dark')
-  } else {
-    document.documentElement.classList.remove('dark')
-  }
-}
+const { getThemeMode, themeMode } = useThemeMode()
 
 onMounted(() => {
   setTimeout(() => {
     couponShow.value = true
   }, 1000)
   setTimeout(() => {
-    getLanguage()
+    setLanguage()
     getThemeMode()
   }, 300)
 })

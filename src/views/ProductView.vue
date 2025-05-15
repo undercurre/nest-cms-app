@@ -1,12 +1,12 @@
 <script setup lang="ts">
+import { getProductInfo, type Product } from '@/api/modules/product'
 import { onBeforeMount, ref } from 'vue'
 import { useRoute } from 'vue-router'
-import { getProductInfo, type Product } from '@/api/modules/product'
 
-import { useProductStore } from '@/stores/product'
-import { useAppStore } from '@/stores/app'
-import router from '@/router'
 import { collectProduct } from '@/api/modules/list'
+import router from '@/router'
+import { useAppStore } from '@/stores/app'
+import { useProductStore } from '@/stores/product'
 import { showSuccessToast } from 'vant'
 import { useI18n } from 'vue-i18n'
 
@@ -36,20 +36,20 @@ const downloadManual = () => {
   if (window.flutter_inappwebview) {
     const dataStr = JSON.stringify({
       title: curProduct.value.productModel,
-      pdfUrl: curProduct.value.manualOssUrl,
+      pdfUrl: curProduct.value?.productMultiLanguageObj?.[locale.value]?.manualOssUrl,
     })
     window.flutter_inappwebview.callHandler('jsHandler', dataStr)
     return
   }
   const a = document.createElement('a')
-  a.href = getUrlConcat(curProduct.value.manualOssUrl)
-  a.download = `${curProduct.value.productModel}-${curProduct.value.productName}说明书.pdf`
+  a.href = getUrlConcat(curProduct.value?.productMultiLanguageObj?.[locale.value]?.manualOssUrl)
+  a.download = `${curProduct.value.productModel}-${curProduct.value?.productMultiLanguageObj?.[locale.value]?.productName}说明书.pdf`
   document.body.appendChild(a)
   a.click()
   document.body.removeChild(a)
 }
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const add2my = async () => {
   const res = await collectProduct(Number(productId))
   console.log(res)
@@ -65,38 +65,36 @@ const getUrlConcat = (url: string) => {
   return `${window.location.protocol}//${url}`
 }
 
-const { locale } = useI18n()
-
 const getI18NProductName = () => {
-  if (curProduct.value) {
-    if (locale.value === 'zh-CN') {
-      return curProduct.value.productName
-    } else {
-      return curProduct.value.productName_en
-    }
-  }
+  return curProduct.value?.productMultiLanguageObj?.[locale.value]?.productName
 }
 
 const getI18NDescription = () => {
-  if (curProduct.value) {
-    if (locale.value === 'zh-CN') {
-      return curProduct.value.description
-    } else {
-      return curProduct.value.description_en
-    }
-  }
+  return curProduct.value?.productMultiLanguageObj?.[locale.value]?.description
 }
 
 onBeforeMount(async () => {
   const res = await getProductInfo(Number(productId))
-  curProduct.value = res.data
+  curProduct.value = { ...res.data, productMultiLanguageObj: {} }
+  curProduct.value.productLanguageDtoList?.forEach((item) => {
+    if (item.languageCode === 'zh') {
+      item.languageCode = 'zh-CN'
+    }
+  })
+  curProduct.value.productMultiLanguageObj = curProduct.value?.productLanguageDtoList?.reduce(
+    (acc, curr) => {
+      acc[curr.languageCode] = curr
+      return acc
+    },
+    {},
+  )
 })
 </script>
 
 <template>
   <div class="px-20px flex flex-col justify-around items-center">
     <img class="w-full my-10px rounded-8px" :src="getUrlConcat(curProduct?.imageOssUrl ?? '')" />
-
+    <LanguageSwitcher />
     <p class="font-bold text-20px w-full leading-30px py-10px">
       <span class="mr-8px">{{ curProduct?.productModel }}</span>
       <span>{{ getI18NProductName() }}</span>

@@ -1,0 +1,374 @@
+[
+  {
+    "languageCode": "ann",
+    "displayLanguage": "奥博洛语"
+  },
+  {
+    "languageCode": "dsb",
+    "displayLanguage": "下索布语"
+  },
+  {
+    "languageCode": "nus",
+    "displayLanguage": "努埃尔语"
+  },
+  {
+    "languageCode": "smn",
+    "displayLanguage": "伊纳里萨米语"
+  },
+  {
+    "languageCode": "khq",
+    "displayLanguage": "西桑海语"
+  },
+  {
+    "languageCode": "agq",
+    "displayLanguage": "亚罕语"
+  },
+  {
+    "languageCode": "mdf",
+    "displayLanguage": "莫克沙语"
+  },
+  {
+    "languageCode": "raj",
+    "displayLanguage": "拉贾斯坦语"
+  },
+  {
+    "languageCode": "dje",
+    "displayLanguage": "哲尔马语"
+  },
+  {
+    "languageCode": "tok",
+    "displayLanguage": "道本语"
+  },
+  {
+    "languageCode": "teo",
+    "displayLanguage": "特索语"
+  },
+  {
+    "languageCode": "nd",
+    "displayLanguage": "北恩德贝勒语"
+  },
+  {
+    "languageCode": "ksb",
+    "displayLanguage": "香巴拉语"
+  },
+  {
+    "languageCode": "nnh",
+    "displayLanguage": "恩甘澎语"
+  },
+  {
+    "languageCode": "mgh",
+    "displayLanguage": "马库阿语"
+  },
+  {
+    "languageCode": "bgc",
+    "displayLanguage": "bgc"
+  },
+  {
+    "languageCode": "or",
+    "displayLanguage": "奥里亚语"
+  },
+  {
+    "languageCode": "oc",
+    "displayLanguage": "奥克语"
+  },
+  {
+    "languageCode": "lag",
+    "displayLanguage": "朗吉语"
+  },
+  {
+    "languageCode": "ksf",
+    "displayLanguage": "巴菲亚语"
+  },
+  {
+    "languageCode": "kln",
+    "displayLanguage": "卡伦金语"
+  },
+  {
+    "languageCode": "bez",
+    "displayLanguage": "贝纳语"
+  },
+  {
+    "languageCode": "ast",
+    "displayLanguage": "阿斯图里亚斯语"
+  },
+  {
+    "languageCode": "ak",
+    "displayLanguage": "阿肯语"
+  },
+  {
+    "languageCode": "sc",
+    "displayLanguage": "萨丁语"
+  },
+  {
+    "languageCode": "mua",
+    "displayLanguage": "蒙当语"
+  },
+  {
+    "languageCode": "sn",
+    "displayLanguage": "绍纳语"
+  },
+  {
+    "languageCode": "zgh",
+    "displayLanguage": "标准摩洛哥塔马塞特语"
+  },
+  {
+    "languageCode": "jgo",
+    "displayLanguage": "恩艮巴语"
+  },
+  {
+    "languageCode": "gsw",
+    "displayLanguage": "瑞士德语"
+  },
+  {
+    "languageCode": "wae",
+    "displayLanguage": "瓦尔瑟语"
+  },
+  {
+    "languageCode": "pcm",
+    "displayLanguage": "尼日利亚皮钦语"
+  },
+  {
+    "languageCode": "guz",
+    "displayLanguage": "古西语"
+  },
+  {
+    "languageCode": "lrc",
+    "displayLanguage": "北卢尔语"
+  },
+  {
+    "languageCode": "sbp",
+    "displayLanguage": "桑古语"
+  },
+  {
+    "languageCode": "nmg",
+    "displayLanguage": "夸西奥语"
+  },
+  {
+    "languageCode": "dua",
+    "displayLanguage": "杜阿拉语"
+  },
+  {
+    "languageCode": "vai",
+    "displayLanguage": "瓦伊语"
+  },
+  {
+    "languageCode": "vun",
+    "displayLanguage": "温旧语"
+  },
+  {
+    "languageCode": "jmc",
+    "displayLanguage": "马切姆语"
+  },
+  {
+    "languageCode": "mg",
+    "displayLanguage": "马拉加斯语"
+  },
+  {
+    "languageCode": "lu",
+    "displayLanguage": "鲁巴加丹加语"
+  },
+  {
+    "languageCode": "dyo",
+    "displayLanguage": "朱拉语"
+  },
+  {
+    "languageCode": "ki",
+    "displayLanguage": "吉库尤语"
+  },
+  {
+    "languageCode": "ia",
+    "displayLanguage": "国际语"
+  },
+  {
+    "languageCode": "brx",
+    "displayLanguage": "博多语"
+  },
+  {
+    "languageCode": "gv",
+    "displayLanguage": "马恩语"
+  },
+  {
+    "languageCode": "kw",
+    "displayLanguage": "康沃尔语"
+  },
+  {
+    "languageCode": "yav",
+    "displayLanguage": "洋卞语"
+  },
+  {
+    "languageCode": "dav",
+    "displayLanguage": "台塔语"
+  },
+  {
+    "languageCode": "ses",
+    "displayLanguage": "东桑海语"
+  },
+  {
+    "languageCode": "mer",
+    "displayLanguage": "梅鲁语"
+  },
+  {
+    "languageCode": "seh",
+    "displayLanguage": "塞纳语"
+  },
+  {
+    "languageCode": "kea",
+    "displayLanguage": "卡布佛得鲁语"
+  },
+  {
+    "languageCode": "mgo",
+    "displayLanguage": "梅塔语"
+  },
+  {
+    "languageCode": "kgp",
+    "displayLanguage": "坎刚语"
+  },
+  {
+    "languageCode": "mfe",
+    "displayLanguage": "毛里求斯克里奥尔语"
+  },
+  {
+    "languageCode": "ccp",
+    "displayLanguage": "查克玛语"
+  },
+  {
+    "languageCode": "ks",
+    "displayLanguage": "克什米尔语"
+  },
+  {
+    "languageCode": "nyn",
+    "displayLanguage": "尼昂科勒语"
+  },
+  {
+    "languageCode": "sms",
+    "displayLanguage": "斯科特萨米语"
+  },
+  {
+    "languageCode": "ksh",
+    "displayLanguage": "科隆语"
+  },
+  {
+    "languageCode": "rm",
+    "displayLanguage": "罗曼什语"
+  },
+  {
+    "languageCode": "pis",
+    "displayLanguage": "皮京语"
+  },
+  {
+    "languageCode": "kab",
+    "displayLanguage": "卡拜尔语"
+  },
+  {
+    "languageCode": "nn",
+    "displayLanguage": "挪威尼诺斯克语"
+  },
+  {
+    "languageCode": "kam",
+    "displayLanguage": "卡姆巴语"
+  },
+  {
+    "languageCode": "chr",
+    "displayLanguage": "切罗基语"
+  },
+  {
+    "languageCode": "rof",
+    "displayLanguage": "兰博语"
+  },
+  {
+    "languageCode": "ii",
+    "displayLanguage": "四川彝语"
+  },
+  {
+    "languageCode": "mzn",
+    "displayLanguage": "马赞德兰语"
+  },
+  {
+    "languageCode": "naq",
+    "displayLanguage": "纳马语"
+  },
+  {
+    "languageCode": "asa",
+    "displayLanguage": "帕雷语"
+  },
+  {
+    "languageCode": "bas",
+    "displayLanguage": "巴萨语"
+  },
+  {
+    "languageCode": "shi",
+    "displayLanguage": "希尔哈语"
+  },
+  {
+    "languageCode": "sah",
+    "displayLanguage": "萨哈语"
+  },
+  {
+    "languageCode": "mas",
+    "displayLanguage": "马赛语"
+  },
+  {
+    "languageCode": "ckb",
+    "displayLanguage": "中库尔德语"
+  },
+  {
+    "languageCode": "bem",
+    "displayLanguage": "本巴语"
+  },
+  {
+    "languageCode": "ky",
+    "displayLanguage": "柯尔克孜语"
+  },
+  {
+    "languageCode": "kok",
+    "displayLanguage": "孔卡尼语"
+  },
+  {
+    "languageCode": "ewo",
+    "displayLanguage": "埃翁多语"
+  },
+  {
+    "languageCode": "frr",
+    "displayLanguage": "北弗里西亚语"
+  },
+  {
+    "languageCode": "hsb",
+    "displayLanguage": "上索布语"
+  },
+  {
+    "languageCode": "kde",
+    "displayLanguage": "马孔德语"
+  },
+  {
+    "languageCode": "rwk",
+    "displayLanguage": "罗瓦语"
+  },
+  {
+    "languageCode": "lkt",
+    "displayLanguage": "拉科塔语"
+  },
+  {
+    "languageCode": "ebu",
+    "displayLanguage": "恩布语"
+  },
+  {
+    "languageCode": "twq",
+    "displayLanguage": "北桑海语"
+  },
+  {
+    "languageCode": "luy",
+    "displayLanguage": "卢雅语"
+  },
+  {
+    "languageCode": "id",
+    "displayLanguage": "印度尼西亚语"
+  },
+  {
+    "languageCode": "saq",
+    "displayLanguage": "桑布鲁语"
+  },
+  {
+    "languageCode": "xog",
+    "displayLanguage": "索加语"
+  }
+]

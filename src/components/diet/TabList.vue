@@ -10,14 +10,16 @@
       }"
       @click="handleSelect(item.value)"
     >
-      <span class="text-14px">{{ $t(`cookbook.${item.label}`) }}</span>
+      <span class="text-14px">{{
+        item.value === 'all' ? item.label : $t(`cookbook.${item.label}`)
+      }}</span>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { useI18n } from 'vue-i18n'
 import { computed, ref, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 interface Props {
   list: { label: string; value: string }[]

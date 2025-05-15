@@ -1,17 +1,23 @@
-import en from '@/lang/en'
-import zh from '@/lang/zh'
+// src/lang/locales.ts
+const messages = {}
 
-const messages = {
-  en,
-  'zh-CN': zh,
+// 动态导入所有语言文件
+const languageFiles: Record<string, { default: Record<string, string> }> = import.meta.glob('@/lang/files/*.ts', { eager: true })
+
+for (const path in languageFiles) {
+  // 从文件名中提取语言代码
+  const langCodeMatch = path.match(/\/([^/]+)\.ts$/)
+  if (!langCodeMatch) continue
+  const langCode = langCodeMatch[1]
+  messages[langCode] = languageFiles?.[path]?.default
 }
 
-const i18nOptions = {
-  locale: 'en',
-  fallbackLocale: 'en',
-  messages,
-  legacy: false, // Use Composition API
-  globalInjection: true,
+const il8nOptions = {
+    locale: 'en',
+    fallbackLocale: 'en',
+    messages,
+    legacy: false,
+    globalInjection: true,
 }
 
-export default i18nOptions
+export default il8nOptions

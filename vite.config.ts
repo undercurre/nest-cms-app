@@ -58,7 +58,7 @@ export default defineConfig(({ mode }) => {
           },
         },
         '/device-api': {
-          target: 'http://172.26.224.136:30343', // 目标服务器地址
+          target: 'http://172.27.64.144:20010', // 目标服务器地址
           changeOrigin: true, // 修改请求头中的 Host
           rewrite: (path) => path.replace(/^\/web\/cms/, ''), // 移除 `/web/cms` 前缀
         },
