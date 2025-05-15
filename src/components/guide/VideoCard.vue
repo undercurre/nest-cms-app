@@ -47,6 +47,7 @@
 
 <script lang="ts" setup>
 import type { Guide } from '@/api/modules/guide'
+import guideDefaultImage from '@/assets/images/app/guide-default.png'
 import router from '@/router'
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
@@ -89,14 +90,19 @@ const onVideoLoaded = () => {
   video.value.pause()
 
   // 使用 canvas 绘制第一帧
-  video.value.addEventListener('canplay', () => {
-    if (context && video.value) {
-      context.drawImage(video.value, 0, 0, canvas.width, canvas.height) // 将视频帧绘制到 canvas 上
-      // 将 canvas 转换为图片并设置为 img 的 src
-      firstFrameImage.value = canvas.toDataURL('image/png') // 将第一帧转为 base64 格式的图片
-      duration.value = video.value.duration
-    }
-  })
+  try {
+    video.value.addEventListener('canplay', () => {
+      if (context && video.value) {
+        context.drawImage(video.value, 0, 0, canvas.width, canvas.height) // 将视频帧绘制到 canvas 上
+        // 将 canvas 转换为图片并设置为 img 的 src
+        firstFrameImage.value = canvas.toDataURL('image/png') // 将第一帧转为 base64 格式的图片
+        duration.value = video.value.duration
+      }
+    })
+  } catch (e) {
+    firstFrameImage.value = guideDefaultImage
+    console.log(e)
+  }
 }
 
 function formatDuration(seconds: number) {

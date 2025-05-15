@@ -21,7 +21,9 @@
             <img class="w-full h-200px" :src="getUrlConcat(item.imageOssUrl)" />
             <div class="w-full">
               <div class="w-full truncate text-14px">
-                {{ $t('device.deviceName') }}：{{ item.productName }}
+                {{ $t('device.deviceName') }}：{{
+                  item?.productMultiLanguageObj?.[locale]?.productName
+                }}
               </div>
               <div class="w-full truncate text-14px">
                 {{ $t('device.deviceModel') }}：{{ item.productModel }}
@@ -41,14 +43,16 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, onBeforeMount } from 'vue'
 import { getDeviceListByUid } from '@/api/modules/list'
-import { useRoute } from 'vue-router'
-import { useAppStore } from '@/stores/app'
 import type { Product } from '@/api/modules/product'
 import router from '@/router'
+import { useAppStore } from '@/stores/app'
+import { onBeforeMount, ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { useRoute } from 'vue-router'
 
 const route = useRoute()
+const { locale } = useI18n()
 const token = typeof route.query.token === 'string' ? decodeURIComponent(route.query.token) : '' // 类型断言
 const appStore = useAppStore()
 if (token) {
@@ -72,8 +76,13 @@ const go2Detail = (id: number) => {
 
 onBeforeMount(async () => {
   const res = await getDeviceListByUid()
-  console.log(res.data)
   deviceList.value = res.data
+  deviceList.value.forEach((item) => {
+    item.productMultiLanguageObj = item.productLanguageDtoList?.reduce((acc, curr) => {
+      acc[curr.languageCode] = curr
+      return acc
+    }, {})
+  })
 })
 </script>
 
