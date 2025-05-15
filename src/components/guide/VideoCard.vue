@@ -4,6 +4,8 @@
     <video
       class="w-full"
       ref="video"
+      webkit-playsinline="true"
+      playsinline="true"
       preload="metadata"
       :src="videoUrl"
       crossorigin="anonymous"
@@ -47,8 +49,9 @@
 
 <script lang="ts" setup>
 import type { Guide } from '@/api/modules/guide'
+import guideDefaultImage from '@/assets/images/app/guide-default.png'
 import router from '@/router'
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 interface Props {
@@ -74,27 +77,47 @@ const video = ref<HTMLVideoElement | null>(null)
 const videoUrl = props.resource.video // 视频的 URL 地址
 const firstFrameImage = ref<string | null>(null) // 用来存储提取的第一帧图片数据
 const duration = ref(0)
-
-// 处理视频加载完成事件
-const onVideoLoaded = () => {
-  const canvas = document.createElement('canvas') // 创建一个 canvas 元素
-  const context = canvas.getContext('2d') // 获取 2D 渲染上下文
+const onVideoLoaded = () => {}
+onMounted(() => {
+  getFirstImg(videoUrl)
+})
+const getFirstImg = (url) => {
   if (!video.value) return
-  // 设置 canvas 的宽高为视频的宽高
-  canvas.width = video.value.videoWidth
-  canvas.height = video.value.videoHeight
+  video.value.crossOrigin = 'anonymous' // 允许url跨域
+  video.value.autoplay = true // 自动播放
+  video.value.muted = false // 静音
+  video.value.src = url
 
-  // 等待视频的元数据加载完成后，暂停播放并绘制第一帧
-  video.value.currentTime = 0 // 跳到视频的第 0 秒
-  video.value.pause()
-
-  // 使用 canvas 绘制第一帧
-  video.value.addEventListener('canplay', () => {
-    if (context && video.value) {
-      context.drawImage(video.value, 0, 0, canvas.width, canvas.height) // 将视频帧绘制到 canvas 上
-      // 将 canvas 转换为图片并设置为 img 的 src
-      firstFrameImage.value = canvas.toDataURL('image/png') // 将第一帧转为 base64 格式的图片
-      duration.value = video.value.duration
+  return new Promise((resolve, reject) => {
+    try {
+      if (!video.value) return
+      video.value.addEventListener(
+        'loadedmetadata',
+        () => {
+          if (!video.value) return
+          console.log('loadedmetadata')
+          video.value.currentTime = 2
+          const canvas = document.createElement('canvas')
+          video.value.addEventListener('canplaythrough', () => {
+            console.log('canplaythrough')
+            if (!video.value) return
+            canvas.width = video.value.videoWidth
+            canvas.height = video.value.videoHeight
+            canvas.getContext('2d')?.drawImage(video.value, 0, 0, canvas.width, canvas.height)
+            const firstFrame = canvas.toDataURL()
+            firstFrameImage.value = firstFrame
+            duration.value = video.value.duration
+            video.value.pause()
+            // console.log(firstFrame); // 输出第一帧画面的Base64编码字符串
+            resolve(firstFrame)
+          })
+        },
+        { once: true },
+      )
+    } catch (err) {
+      console.error(err)
+      firstFrameImage.value = guideDefaultImage
+      reject('')
     }
   })
 }
