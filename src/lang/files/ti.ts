@@ -1,5 +1,5 @@
-// ti.ts (ትግርኛ)
-const ti = {
+// zh_CN.ts (ትግርኛ)
+const zh_CN = {
   common: {
     equipmentList: 'ዝርዝር መሳርያ',
     smartKitchenAssistant: 'ምሁር ኣብያተ ምግቢ ሓጋዚ',
@@ -70,5 +70,6 @@ const ti = {
     Herbal: "ሕምሻዊ",
     ComplexSeasoning: "ዝተሓዋወሰ መዓር"
   },
+
 }
-export default ti
+export default zh_CN
