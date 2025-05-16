@@ -14,6 +14,7 @@ import { useAppStore } from '@/stores/app'
 import { useProductStore } from '@/stores/product'
 
 import { useLanguage } from '@/hooks/useLanguage'
+import { useLocation } from '@/hooks/useLocation'
 import { useThemeMode } from '@/hooks/useThemeMode'
 import { computed, onMounted, ref } from 'vue'
 
@@ -54,6 +55,9 @@ function onClickLeft() {
 // }
 
 const { setLanguage } = useLanguage()
+
+const { language } = useLocation()
+console.log('language: ', language)
 
 // 获取系统色系
 const { getThemeMode, themeMode } = useThemeMode()
