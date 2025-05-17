@@ -5,8 +5,8 @@ export const useLanguage = () => {
   const { locale } = useI18n()
   const route = useRoute()
   // 获取系统语言
-  function setLanguage(locationLanguages) {
-    const lang = locationLanguages || (typeof route.query.lang === 'string' ? route.query.lang : 'en')
+  function setLanguage(locationLanguages?: string) {
+    const lang = locationLanguages || (typeof route.query.lang === 'string' ? route.query.lang : localStorage.getItem('locale')) || 'en'
     localStorage.setItem('locale', lang)
     locale.value = lang
   }
