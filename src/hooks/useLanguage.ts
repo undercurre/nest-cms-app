@@ -5,13 +5,10 @@ export const useLanguage = () => {
   const { locale } = useI18n()
   const route = useRoute()
   // 获取系统语言
-  function setLanguage() {
-    if (!localStorage.getItem('locale')) {
-      const lang = typeof route.query.lang === 'string' ? route.query.lang : 'en'
-      localStorage.setItem('locale', lang)
-    }
-    locale.value = localStorage.getItem('locale') || (Array.isArray(route.query.lang) ? route.query.lang[0] : route.query.lang) || 'en'
-    localStorage.setItem('locale', locale.value)
+  function setLanguage(locationLanguages) {
+    const lang = locationLanguages || (typeof route.query.lang === 'string' ? route.query.lang : 'en')
+    localStorage.setItem('locale', lang)
+    locale.value = lang
   }
   function getLanguage() {
     return localStorage.getItem('locale') || 'en'

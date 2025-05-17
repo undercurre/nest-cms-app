@@ -16,7 +16,7 @@ import { useProductStore } from '@/stores/product'
 import { useLanguage } from '@/hooks/useLanguage'
 import { useLocation } from '@/hooks/useLocation'
 import { useThemeMode } from '@/hooks/useThemeMode'
-import { computed, onMounted, ref } from 'vue'
+import { computed, onMounted, ref, watch } from 'vue'
 
 // const { locale } = useI18n()
 
@@ -57,6 +57,9 @@ function onClickLeft() {
 const { setLanguage } = useLanguage()
 
 const { language } = useLocation()
+watch(() => language, (newVal) => {
+  setLanguage(newVal)
+})
 console.log('language: ', language)
 
 // 获取系统色系
@@ -67,7 +70,6 @@ onMounted(() => {
     couponShow.value = true
   }, 1000)
   setTimeout(() => {
-    setLanguage()
     getThemeMode()
   }, 300)
 })

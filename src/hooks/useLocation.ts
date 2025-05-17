@@ -1,15 +1,17 @@
 import axios from 'axios'
-import { countries } from 'iso-3166-1-alpha-2'
-import { onMounted, ref } from 'vue'
-console.log('countries: ', countries)
+import { onMounted, ref, watch } from 'vue'
+import { getCountryLanguages } from 'country-language';
+import reverse from 'reverse-geocode'
+// import { getCountryCode } from '@/utils/amap'
+import { getISOCountryCode } from '@/utils/ggmap'
 
-// import { useI18n } from 'vue-i18n'
 
 export const useLocation = () => {
-  // const { t, locale } = useI18n()
-  const location = ref()
+  console.log(reverse.lookup(39.9, 116.4, 'CN'))
 
-  const getLocation = () => {
+  const getLocation = async () => {
+    // getCountryCode(40.7128, -74.0060)
+    console.log(await getISOCountryCode(40.7128, -74.0060))
     navigator.geolocation.getCurrentPosition(
       (position) => {
         const coords = {
@@ -24,12 +26,13 @@ export const useLocation = () => {
       },
       (error) => {
         console.error(`定位失败：${error.code}-${error.message}`)
-        // this.fallbackIPLocation(); // 降级使用IP定位
+        countryCode.value = ''
+        // getLocationByIP()
       },
       { enableHighAccuracy: true, timeout: 10000 },
     )
   }
-  const countryCode = ref('')
+  const countryCode = ref('CN')
   // 反向地理编码，将坐标转换为地址信息
   function reverseGeocode(lat, lng) {
     // 使用Nominatim OpenStreetMap的API
@@ -42,7 +45,7 @@ export const useLocation = () => {
       })
       .catch((error) => {
         console.log('error: ', error)
-        countryCode.value = 'US'
+        countryCode.value = ''
         // 反向地理编码失败，降级使用IP定位
         // getLocationByIP()
       })
@@ -65,21 +68,19 @@ export const useLocation = () => {
   //       // resultDiv.innerHTML += `<br>IP定位请求失败: ${error.message}`;
   //     })
   // }
-
-  const setLocation = (newLocation) => {
-    location.value = newLocation
-  }
+  watch(() => countryCode.value, (newVal) => {
+    const locationLanguages = getCountryLanguages(newVal);
+    setLocationLanguage(locationLanguages?.[0]?.iso639_1 ?? '')
+  })
   const language = ref('en')
-  const setLanguage = (newLanguage) => {
+  const setLocationLanguage = (newLanguage) => {
     language.value = newLanguage
   }
   onMounted(() => {
     getLocation()
   })
   return {
-    location,
-    setLocation,
     language,
-    setLanguage,
+    setLocationLanguage,
   }
 }
