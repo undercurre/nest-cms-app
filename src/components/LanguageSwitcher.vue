@@ -7,6 +7,7 @@
 <script lang="ts" setup>
 import { getProductLanguageList, type LangItem } from '@/api/modules/product'
 import { useLanguage } from '@/hooks/useLanguage'
+import { useLocation } from '@/hooks/useLocation'
 import { onMounted, onUnmounted, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 
@@ -43,7 +44,17 @@ watch(
     })
   },
 )
-const { getLanguage } = useLanguage()
+const { getLanguage, setLanguage } = useLanguage()
+const { language } = useLocation()
+watch(
+  () => language.value,
+  (newVal) => {
+    setLanguage(newVal)
+    getLanguageList()
+    currentLocale.value = getLanguage()
+  },
+)
+
 onMounted(() => {
   getLanguageList()
   currentLocale.value = getLanguage()

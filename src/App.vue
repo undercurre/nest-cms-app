@@ -57,9 +57,12 @@ function onClickLeft() {
 const { setLanguage } = useLanguage()
 
 const { language } = useLocation()
-watch(() => language.value, (newVal) => {
-  setLanguage(newVal)
-})
+watch(
+  () => language.value,
+  (newVal) => {
+    setLanguage(newVal)
+  },
+)
 
 // 获取系统色系
 const { getThemeMode, themeMode } = useThemeMode()
@@ -70,7 +73,6 @@ onMounted(() => {
   }, 1000)
   setTimeout(() => {
     getThemeMode()
-    setLanguage()
   }, 300)
 })
 </script>
