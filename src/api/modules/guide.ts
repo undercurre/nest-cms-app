@@ -26,8 +26,8 @@ export interface Guide {
 /**
  * @name 获取列表
  */
-export const getGuideList = () => {
-  return cmsService.get<ResultData<Guide[]>>(PORT1)
+export const getGuideList = (params: { id: number }) => {
+  return cmsService.get<ResultData<Guide[]>>(PORT1, params)
 }
 
 /**

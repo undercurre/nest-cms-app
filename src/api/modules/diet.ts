@@ -52,6 +52,7 @@ export const searchDiet = (params: {
   difficulty?: number
   name?: string
   category?: string
+  id: number
 }) => {
   return cmsService.get<ResultData<Diet[]>>(PORT1 + '/cookbooks/search/condition', params)
 }

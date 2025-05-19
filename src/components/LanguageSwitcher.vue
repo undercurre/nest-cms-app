@@ -8,7 +8,7 @@
 import { getProductLanguageList, type LangItem } from '@/api/modules/product'
 import { useLanguage } from '@/hooks/useLanguage'
 import { useLocation } from '@/hooks/useLocation'
-import { onMounted, onUnmounted, ref, watch } from 'vue'
+import { onUnmounted, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 const { t, locale } = useI18n()
@@ -55,10 +55,6 @@ watch(
   },
 )
 
-onMounted(() => {
-  getLanguageList()
-  currentLocale.value = getLanguage()
-})
 onUnmounted(() => {
   localStorage.removeItem('languageList')
 })

@@ -1,10 +1,10 @@
 <script setup lang="ts">
+import { getGuideList, type Guide } from '@/api/modules/guide'
+import VideoCard from '@/components/guide/VideoCard.vue'
+import { useAppStore } from '@/stores/app'
+import { useProductStore } from '@/stores/product'
 import { onBeforeMount, ref } from 'vue'
 import { useRoute } from 'vue-router'
-import { useProductStore } from '@/stores/product'
-import { useAppStore } from '@/stores/app'
-import VideoCard from '@/components/guide/VideoCard.vue'
-import { getGuideList, type Guide } from '@/api/modules/guide'
 
 const productStore = useProductStore()
 const appStore = useAppStore()
@@ -17,7 +17,7 @@ appStore.tabbarActive = route.name as string
 const guides = ref<Guide[]>()
 
 onBeforeMount(async () => {
-  const res = await getGuideList()
+  const res = await getGuideList({ id: productStore.id })
   guides.value = res.data
 })
 </script>

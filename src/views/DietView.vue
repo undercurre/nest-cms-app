@@ -2,11 +2,11 @@
 import { onBeforeMount, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
-import { useProductStore } from '@/stores/product'
-import { useAppStore } from '@/stores/app'
-import TabList from '@/components/diet/TabList.vue'
-import DietCard from '@/components/diet/DietCard.vue'
 import { getCategoryList, searchDiet, type Diet } from '@/api/modules/diet'
+import DietCard from '@/components/diet/DietCard.vue'
+import TabList from '@/components/diet/TabList.vue'
+import { useAppStore } from '@/stores/app'
+import { useProductStore } from '@/stores/product'
 
 const productStore = useProductStore()
 const appStore = useAppStore()
@@ -25,18 +25,18 @@ const diet = ref<Diet[]>([])
 watch(
   () => keyword.value,
   async () => {
-    const dietRes = await searchDiet({ name: keyword.value })
+    const dietRes = await searchDiet({ name: keyword.value, id: productStore.id })
     diet.value = dietRes.data
   },
 )
 
 async function handleCategoryChange(key: string) {
   if (key === 'all') {
-    const dietRes = await searchDiet({})
+    const dietRes = await searchDiet({ id: productStore.id })
     diet.value = dietRes.data
     return
   }
-  const dietRes = await searchDiet({ category: key })
+  const dietRes = await searchDiet({ category: key, id: productStore.id })
   diet.value = dietRes.data
 }
 
@@ -53,7 +53,7 @@ onBeforeMount(async () => {
   category.value = categoryListRes.data.map((item) => {
     return { label: item, value: item }
   })
-  const dietRes = await searchDiet({})
+  const dietRes = await searchDiet({ id: productStore.id })
   diet.value = dietRes.data
 })
 </script>
