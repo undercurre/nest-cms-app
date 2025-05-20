@@ -11,6 +11,7 @@ import { onMounted, onUnmounted, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 const { t, locale } = useI18n()
+const { getLanguage } = useLanguage()
 
 const currentLocale = ref<string>(locale.value)
 
@@ -41,12 +42,11 @@ watch(
         value: item.languageCode === 'zh' ? 'zh-CN' : (item.languageCode ?? ''),
       }
     })
+    currentLocale.value = getLanguage()
   },
 )
-const { getLanguage } = useLanguage()
 onMounted(() => {
   getLanguageList()
-  currentLocale.value = getLanguage()
 })
 onUnmounted(() => {
   localStorage.removeItem('languageList')
