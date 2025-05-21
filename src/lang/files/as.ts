@@ -301,6 +301,7 @@ const zh_CN = {
   list: {
     collectPrefix: 'আপুনি সংগ্ৰহ কৰিছে',
     collectSuffix: 'এটা ডিভাইচ',
+    myCollection: 'মোৰ সংগ্ৰহ',
   },
 }
 export default zh_CN

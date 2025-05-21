@@ -301,6 +301,7 @@ const zh_CN = {
   list: {
     collectPrefix: 'You have bookmarked',
     collectSuffix: 'device',
+    myCollection: 'my collection',
   },
 }
 export default zh_CN

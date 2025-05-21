@@ -301,6 +301,7 @@ const zh_CN = {
   list: {
     collectPrefix: 'እርስዎ ተሰብስበዋል',
     collectSuffix: 'መሣሪያ',
+    myCollection: 'የኔ ስብስብ',
   },
 }
 export default zh_CN

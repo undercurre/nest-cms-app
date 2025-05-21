@@ -301,6 +301,7 @@ const zh_CN = {
   list: {
     collectPrefix: 'لديك مجموعة',
     collectSuffix: 'معدات',
+    myCollection: 'مجموعتي',
   },
 }
 export default zh_CN

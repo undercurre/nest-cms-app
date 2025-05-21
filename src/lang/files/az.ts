@@ -301,6 +301,7 @@ const zh_CN = {
   list: {
     collectPrefix: 'Kolleksiyasınız var',
     collectSuffix: 'Cihaz',
+    myCollection: 'Mənim kolleksiyam',
   },
 }
 export default zh_CN

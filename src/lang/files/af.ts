@@ -301,6 +301,7 @@ const zh_CN = {
   list: {
     collectPrefix: 'Jy het boekmerk',
     collectSuffix: 'n Toestel',
+    myCollection: 'Mijn boekmerk',
   },
 }
 export default zh_CN

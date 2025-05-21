@@ -301,6 +301,7 @@ const zh_CN = {
   list: {
     collectPrefix: '您已收藏',
     collectSuffix: '个设备',
+    myCollection: '我的收藏',
   },
 }
 export default zh_CN
