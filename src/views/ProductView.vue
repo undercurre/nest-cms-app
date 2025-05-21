@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { getProductInfo, type Product } from '@/api/modules/product'
 import { getUrlConcat } from '@/utils/index'
-import { onBeforeMount, ref } from 'vue'
+import { computed, onBeforeMount, ref } from 'vue'
 import { useRoute } from 'vue-router'
 
-import { collectProduct } from '@/api/modules/list'
+import { collectProduct, getDeviceListByUid } from '@/api/modules/list'
 import router from '@/router'
 import { useAppStore } from '@/stores/app'
 import { useProductStore } from '@/stores/product'
@@ -52,20 +52,28 @@ const downloadManual = () => {
 
 const { t, locale } = useI18n()
 const add2my = async () => {
-  const res = await collectProduct(Number(productId))
-  console.log(res)
-  showSuccessToast(t('product.successfullyAdded'))
+  if (!isCollected.value) {
+    await collectProduct(Number(productId))
+    showSuccessToast(t('product.successfullyAdded'))
+  }
   router.push('/list')
 }
 
 const getI18NProductName = () => {
-  return curProduct.value?.productMultiLanguageObj?.[locale.value]?.productName
+  return curProduct.value?.productMultiLanguageObj?.[locale.value]
+    ? curProduct.value?.productMultiLanguageObj?.[locale.value]?.productName
+    : curProduct.value?.productMultiLanguageObj?.['en']?.productName
 }
 
 const getI18NDescription = () => {
-  return curProduct.value?.productMultiLanguageObj?.[locale.value]?.description
+  return curProduct.value?.productMultiLanguageObj?.[locale.value]
+    ? curProduct.value?.productMultiLanguageObj?.[locale.value]?.description
+    : curProduct.value?.productMultiLanguageObj?.['en']?.description
 }
-
+const deviceList = ref<Product[]>([])
+const isCollected = computed(() => {
+  return deviceList.value.some((item) => item.id === Number(productId))
+})
 onBeforeMount(async () => {
   const res = await getProductInfo(Number(productId))
   curProduct.value = { ...res.data, productMultiLanguageObj: {} }
@@ -82,6 +90,8 @@ onBeforeMount(async () => {
     },
     {},
   )
+  const deviceListRes = await getDeviceListByUid()
+  deviceList.value = deviceListRes.data
 })
 </script>
 
@@ -99,11 +109,11 @@ onBeforeMount(async () => {
     <van-button
       v-if="token"
       class="w-full mt-20px mb-10px"
-      icon="plus"
+      :icon="isCollected ? 'like' : 'plus'"
       color="#FF6B6B"
       type="danger"
       @click="add2my"
-      >{{ $t('product.addToMyDevices') }}</van-button
+      >{{ isCollected ? $t('list.myCollection') : $t('product.addToMyDevices') }}</van-button
     >
     <van-button
       class="w-full"

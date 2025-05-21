@@ -307,5 +307,10 @@ const zh_CN = {
     xog: '索加语',
     haw: '夏威夷语',
   },
+  list: {
+    collectPrefix: '您已收藏',
+    collectSuffix: '个设备',
+    myCollection: '我的收藏',
+  },
 }
 export default zh_CN

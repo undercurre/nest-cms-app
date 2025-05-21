@@ -8,10 +8,12 @@
 import { getProductLanguageList, type LangItem } from '@/api/modules/product'
 import { useLanguage } from '@/hooks/useLanguage'
 import { useLocation } from '@/hooks/useLocation'
-import { onUnmounted, ref, watch } from 'vue'
+import { onMounted, onUnmounted, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 const { t, locale } = useI18n()
+const { getLanguage, setLanguage } = useLanguage()
+const { language } = useLocation()
 
 const currentLocale = ref<string>(locale.value)
 
@@ -42,10 +44,9 @@ watch(
         value: item.languageCode === 'zh' ? 'zh-CN' : (item.languageCode ?? ''),
       }
     })
+    currentLocale.value = getLanguage()
   },
 )
-const { getLanguage, setLanguage } = useLanguage()
-const { language } = useLocation()
 watch(
   () => language.value,
   (newVal) => {
@@ -55,6 +56,9 @@ watch(
   },
 )
 
+onMounted(() => {
+  getLanguageList()
+})
 onUnmounted(() => {
   localStorage.removeItem('languageList')
 })

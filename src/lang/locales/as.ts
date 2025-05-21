@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'ছোগা ভাষা',
     haw: 'হাৱাইয়ান ভাষা',
   },
+  list: {
+    collectPrefix: 'আপুনি সংগ্ৰহ কৰিছে',
+    collectSuffix: 'এটা ডিভাইচ',
+    myCollection: 'মোৰ সংগ্ৰহ',
+  },
 }
 export default zh_CN

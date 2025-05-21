@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'ሶጋ',
     haw: 'ሐዋያን',
   },
+  list: {
+    collectPrefix: 'እርስዎ ተሰብስበዋል',
+    collectSuffix: 'መሣሪያ',
+    myCollection: 'የኔ ስብስብ',
+  },
 }
 export default zh_CN
