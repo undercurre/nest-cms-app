@@ -11,22 +11,31 @@
           </template>
         </el-card>
 
-        <div class="w-full grid grid-cols-2 gap-10px place-items-center">
+        <div class="my-20px pl-10px">
+          <p>
+            <span class="font-semibold">{{ $t('list.collectPrefix') }}</span>
+            <span class="font-black p-16px">{{ deviceList.length }}</span>
+            <span class="font-semibold">{{ $t('list.collectSuffix') }}</span>
+          </p>
+        </div>
+
+        <div class="w-full grid grid-cols-3 gap-10px place-items-center">
           <div
-            class="w-full h-300px flex flex-col justify-center"
+            class="w-full h-200px flex flex-col justify-center shadow-2xl rounded-20px overflow-hidden border-1px border-solid border-[#434343]/10 cursor-pointer"
             v-for="item in deviceList"
             :key="item.id"
             @click="go2Detail(item.id)"
           >
-            <img class="w-full h-200px" :src="getUrlConcat(item.imageOssUrl)" />
+            <img
+              class="w-full h-full object-cover shadow-md"
+              :src="getUrlConcat(item.imageOssUrl)"
+            />
             <div class="w-full">
-              <div class="w-full truncate text-14px">
-                {{ $t('device.deviceName') }}：{{
-                  item?.productMultiLanguageObj?.[locale]?.productName
-                }}
+              <div class="w-full text-center truncate text-12px leading-15px mt-4px">
+                {{ handleProductName(item) }}
               </div>
-              <div class="w-full truncate text-14px">
-                {{ $t('device.deviceModel') }}：{{ item.productModel }}
+              <div class="w-full text-center truncate text-12px leading-15px mb-4px">
+                {{ item.productModel }}
               </div>
             </div>
           </div>
@@ -72,6 +81,16 @@ const getUrlConcat = (url: string) => {
 
 const go2Detail = (id: number) => {
   router.push(`/product/${id}`)
+}
+
+const handleProductName = (item) => {
+  return item?.productMultiLanguageObj?.[handleLocaleIndex()]
+    ? item?.productMultiLanguageObj?.[handleLocaleIndex()]?.productName
+    : item?.productMultiLanguageObj?.['en']?.productName
+}
+
+const handleLocaleIndex = () => {
+  return locale.value === 'zh-CN' ? 'zh' : locale.value
 }
 
 onBeforeMount(async () => {

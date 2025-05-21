@@ -50,6 +50,7 @@ const downloadManual = () => {
 }
 
 const { t, locale } = useI18n()
+console.log(locale.value)
 const add2my = async () => {
   const res = await collectProduct(Number(productId))
   console.log(res)
@@ -66,11 +67,15 @@ const getUrlConcat = (url: string) => {
 }
 
 const getI18NProductName = () => {
-  return curProduct.value?.productMultiLanguageObj?.[locale.value]?.productName
+  return curProduct.value?.productMultiLanguageObj?.[locale.value]
+    ? curProduct.value?.productMultiLanguageObj?.[locale.value]?.productName
+    : curProduct.value?.productMultiLanguageObj?.['en']?.productName
 }
 
 const getI18NDescription = () => {
-  return curProduct.value?.productMultiLanguageObj?.[locale.value]?.description
+  return curProduct.value?.productMultiLanguageObj?.[locale.value]
+    ? curProduct.value?.productMultiLanguageObj?.[locale.value]?.description
+    : curProduct.value?.productMultiLanguageObj?.['en']?.description
 }
 
 onBeforeMount(async () => {
