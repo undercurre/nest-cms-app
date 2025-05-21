@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'ဆိုဂါ',
     haw: 'ဟာဝိုင်အီ',
   },
+  list: {
+    collectPrefix: 'သင်ဖြည့်ဆည်းခဲ့ပါ',
+    collectSuffix: 'ကိရိယာယန္တ्र',
+    myCollection: 'ကျွန်တော့်စုဆောင်းမှု',
+  },
 }
 export default zh_CN

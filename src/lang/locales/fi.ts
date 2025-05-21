@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'Soga',
     haw: 'Havaiji',
   },
+  list: {
+    collectPrefix: 'Sinulla on',
+    collectSuffix: 'laitteita',
+    myCollection: 'Minun laitteistoluni',
+  },
 }
 export default zh_CN

@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'Soga',
     haw: 'Hawaiiaidd',
   },
+  list: {
+    collectPrefix: 'Rydych wedi cyfrannu',
+    collectSuffix: 'fformat',
+    myCollection: 'Fy myfyrwyr',
+  },
 }
 export default zh_CN

@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'Sóga',
     haw: 'havajský',
   },
+  list: {
+    collectPrefix: 'Jste shromáždil',
+    collectSuffix: 'zařízení',
+    myCollection: 'Moje shromáždění',
+  },
 }
 export default zh_CN

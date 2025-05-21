@@ -259,6 +259,11 @@ const zh_CN = {
     ro: 'ರೊಮೇನಿಯನ್',
     eo: 'ಎಸ್ಪೆರಾಂಟೊ',
   },
+  list: {
+    collectPrefix: 'ನೀವು ಸೇರಿಸಿದ್ದೀರಿ',
+    collectSuffix: 'ಸಾಧನಗಳು',
+    myCollection: 'ನನ್ನ ಸೇರಿಸಿದ ಸಾಧನಗಳು',
+  },
 }
 
 export default zh_CN

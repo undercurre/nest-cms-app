@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'Tiếng Soga',
     haw: 'Tiếng Hawaii',
   },
+  list: {
+    collectPrefix: 'Bạn đã thu thập',
+    collectSuffix: 'cụm thiết bị',
+    myCollection: 'Tập hợp của tôi',
+  },
 }
 export default zh_CN

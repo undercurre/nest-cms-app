@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'Șogă',
     haw: 'Hawaiiană',
   },
+  list: {
+    collectPrefix: 'Ai colecționat',
+    collectSuffix: ' dispozitive',
+    myCollection: 'Colecția mea',
+  },
 }
 export default zh_CN

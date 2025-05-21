@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'Սոգա',
     haw: 'հավայական',
   },
+  list: {
+    collectPrefix: 'Ձեր ունեք',
+    collectSuffix: 'սարքեր',
+    myCollection: 'Ձեր գույնը',
+  },
 }
 export default zh_CN

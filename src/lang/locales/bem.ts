@@ -306,5 +306,10 @@ const zh_CN = {
     xog: 'Chisoga',
     haw: 'Chihawaii',
   },
+  list: {
+    collectPrefix: 'Mulefwaya',
+    collectSuffix: 'bakushisya',
+    myCollection: 'Bakushisya bandi',
+  },
 }
 export default zh_CN

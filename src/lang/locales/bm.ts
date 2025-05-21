@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'Soga',
     haw: 'Hawayikan na',
   },
+  list: {
+    collectPrefix: 'Aw ye a sɛbɛn',
+    collectSuffix: 'minɛnw',
+    myCollection: 'N ka sɛbɛnw',
+  },
 }
 export default zh_CN

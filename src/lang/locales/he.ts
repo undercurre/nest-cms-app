@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'סוגה',
     haw: 'הוואי',
   },
+  list: {
+    collectPrefix: 'יש לך',
+    collectSuffix: 'מכשירים',
+    myCollection: 'אוסף שלי',
+  },
 }
 export default zh_CN

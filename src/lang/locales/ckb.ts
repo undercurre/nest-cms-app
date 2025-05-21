@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'سوگای',
     haw: 'هایوایی',
   },
+  list: {
+    collectPrefix: 'داتاکەی پەیوەندی',
+    collectSuffix: 'داتاکە',
+    myCollection: 'داتاکەی من',
+  },
 }
 export default zh_CN

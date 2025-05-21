@@ -1,5 +1,5 @@
 // 加泰罗尼亚语
-const ca = {
+const zh_CN = {
   common: {
     equipmentList: "Llista d'equips",
     smartKitchenAssistant: 'Assistent de cuina intel·ligent',
@@ -307,5 +307,10 @@ const ca = {
     xog: 'Soga',
     haw: 'Hawaiano',
   },
+  list: {
+    collectPrefix: 'Col·lecció',
+    collectSuffix: 'dispositius',
+    myCollection: 'La meva col·lecció',
+  },
 }
-export default ca
+export default zh_CN
