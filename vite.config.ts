@@ -12,7 +12,12 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
   return {
-    base: mode === 'development' ? './' : mode === 'uat' ? '/kitchen/offlinedevice/web/cms/markH5/' : '/kitchen/offlinedevice/web/cms/markH5/',
+    base:
+      mode === 'development'
+        ? './'
+        : mode === 'uat'
+          ? '/kitchen/offlinedevice/web/cms/markH5/'
+          : '/kitchen/offlinedevice/web/cms/markH5/',
     plugins: [
       vue(),
       vueDevTools(),
@@ -58,7 +63,7 @@ export default defineConfig(({ mode }) => {
           },
         },
         '/device-api': {
-          target: 'http://172.27.64.144:20010', // 目标服务器地址
+          target: 'https://mova-common.mova-tech.com/kitchen/offlinedevice', // 目标服务器地址
           changeOrigin: true, // 修改请求头中的 Host
           rewrite: (path) => path.replace(/^\/web\/cms/, ''), // 移除 `/web/cms` 前缀
         },

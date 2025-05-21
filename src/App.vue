@@ -7,8 +7,6 @@ import GuideActiveIcon from '@/assets/images/app/guide_active.png'
 import GuideInActiveIcon from '@/assets/images/app/guide_inactive.png'
 import ProductActiveIcon from '@/assets/images/app/product_active.png'
 import ProductInActiveIcon from '@/assets/images/app/product_inactive.png'
-import StatisticsActiveIcon from '@/assets/images/app/statistics_active.png'
-import StatisticsInActiveIcon from '@/assets/images/app/statistics_inactive.png'
 import router from '@/router'
 import { useAppStore } from '@/stores/app'
 import { useProductStore } from '@/stores/product'
@@ -107,7 +105,7 @@ onMounted(() => {
         :active-color="themeMode === 'dark' ? '#ffffff' : '#000000'"
         :inactive-color="themeMode === 'dark' ? '#ffffff' : '#000000'"
       >
-        <van-tabbar-item name="guide" replace :to="`/guide/${productStore.id}`">
+        <!-- <van-tabbar-item name="guide" replace :to="`/guide/${productStore.id}`">
           <span>{{ $t('common.operationInstructions') }}</span>
           <template #icon="props">
             <img
@@ -139,7 +137,7 @@ onMounted(() => {
               class="w-15px h-15px pb-8px"
               :src="props.active ? StatisticsActiveIcon : StatisticsInActiveIcon"
             /> </template
-        ></van-tabbar-item>
+        ></van-tabbar-item> -->
       </van-tabbar>
     </div>
     <van-tabbar

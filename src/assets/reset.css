@@ -138,3 +138,9 @@ body,
 :-webkit-any(article, aside, nav, section) h1 {
   font-size: 2em;
 }
+body {
+  -webkit-user-select: none;  /* Chrome/Safari */
+  -moz-user-select: none;     /* Firefox */
+  -ms-user-select: none;      /* IE/Edge */
+  user-select: none;          /* 标准语法*/
+}
