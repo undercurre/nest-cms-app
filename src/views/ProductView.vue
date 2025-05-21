@@ -18,7 +18,7 @@ const productId = route.params.id // 获取路径参数
 productStore.id = Number(productId || 0)
 appStore.tabbarActive = route.name as string
 
-let token = typeof route.query.token === 'string' ? route.query.token.replace(/ /g, '+') : '' // 类型断言
+let token = typeof route.query.token === 'string' ? route.query.token : '' // 类型断言
 if (token) {
   localStorage.setItem('token', token)
   appStore.token = token
