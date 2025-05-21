@@ -52,6 +52,7 @@ function onClickLeft() {
 // }
 
 const { setLanguage } = useLanguage()
+console.log('setLanguage: ', setLanguage)
 
 // 获取系统色系
 const { getThemeMode, themeMode } = useThemeMode()
@@ -60,8 +61,8 @@ onMounted(() => {
   setTimeout(() => {
     couponShow.value = true
   }, 1000)
+  // setLanguage()
   setTimeout(() => {
-    setLanguage()
     getThemeMode()
   }, 300)
 })
