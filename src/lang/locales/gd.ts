@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'Sòga',
     haw: 'Hawaiianach',
   },
+  list: {
+    collectPrefix: 'Chaidh tú a chur ris',
+    collectSuffix: 'aidh',
+    myCollection: 'An t-ainm mo',
+  },
 }
 export default zh_CN

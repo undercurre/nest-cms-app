@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'सोगा',
     haw: 'हवाई',
   },
+  list: {
+    collectPrefix: 'त्वम् संग्रहितम् अकर्ष',
+    collectSuffix: 'यन्त्राणि',
+    myCollection: 'मम संग्रह',
+  },
 }
 export default zh_CN

@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'សូហ្គា',
     haw: 'ហាវ៉ៃ',
   },
+  list: {
+    collectPrefix: 'អ្នកបានទទួលបាន',
+    collectSuffix: 'វិទ្យាស្ថាន',
+    myCollection: 'បន្ទប់របស់ខ្ញុំ',
+  },
 }
 export default zh_CN

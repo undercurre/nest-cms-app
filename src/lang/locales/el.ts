@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'Σόγκα',
     haw: 'Χαβανέζικη',
   },
+  list: {
+    collectPrefix: 'Έχετε συλλέξει',
+    collectSuffix: 'συσκευές',
+    myCollection: 'Η συλλογή μου',
+  },
 }
 export default zh_CN

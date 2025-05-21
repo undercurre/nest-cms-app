@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'Soga',
     haw: 'Havaian',
   },
+  list: {
+    collectPrefix: 'Mballë kthyer',
+    collectSuffix: 'përkatese',
+    myCollection: 'Kolleksioni im',
+  },
 }
 export default zh_CN

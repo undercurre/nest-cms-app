@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'სოგა',
     haw: 'ჰავაიური',
   },
+  list: {
+    collectPrefix: 'თქვენ đã შენახეთ',
+    collectSuffix: ' thiết bịი',
+    myCollection: ' ჩემი შენახული',
+  },
 }
 export default zh_CN

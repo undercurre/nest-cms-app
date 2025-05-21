@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'ภาษาซอกา',
     haw: 'ภาษาฮาวาย',
   },
+  list: {
+    collectPrefix: 'คุณได้รวบรวม',
+    collectSuffix: 'อุปกรณ์',
+    myCollection: 'ชุดของฉัน',
+  },
 }
 export default zh_CN

@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'Orusoga',
     haw: 'Oruhawaii',
   },
+  list: {
+    collectPrefix: 'Orukusanyo',
+    collectSuffix: 'dispositi',
+    myCollection: 'Orukusanyo wange',
+  },
 }
 export default zh_CN

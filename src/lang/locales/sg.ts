@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'Soga',
     haw: 'Azo ti Hawaii',
   },
+  list: {
+    collectPrefix: 'Na kolekte',
+    collectSuffix: 'dispositif',
+    myCollection: 'Koleksyon mwa',
+  },
 }
 export default zh_CN

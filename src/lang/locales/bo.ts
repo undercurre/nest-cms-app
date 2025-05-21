@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'སོ་ག།',
     haw: 'ཧ་ཝ་ཡི།',
   },
+  list: {
+    collectPrefix: 'ཁྱེད་ཀྱིས་བསྡུས་ཟིན་པ།',
+    collectSuffix: 'ཡོ་ཆས།',
+    myCollection: 'ངའི་བསྡུས་རུབ།',
+  },
 }
 export default zh_CN

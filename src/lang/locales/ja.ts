@@ -307,5 +307,10 @@ const zh_CN = {
     xog: '曽我',
     haw: 'ハワイアン',
   },
+  list: {
+    collectPrefix: 'あなたは収集しました',
+    collectSuffix: 'デバイス',
+    myCollection: '私のコレクション',
+  },
 }
 export default zh_CN

@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'Soga',
     haw: 'Hawaiyî',
   },
+  list: {
+    collectPrefix: 'Ew qebûl kirî',
+    collectSuffix: 'gerêk',
+    myCollection: 'Colekî ye min',
+  },
 }
 export default zh_CN

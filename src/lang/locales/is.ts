@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'Sóga',
     haw: 'Havaíska',
   },
+  list: {
+    collectPrefix: 'þú hefur safnað',
+    collectSuffix: 'tækjum',
+    myCollection: 'Mitt safn',
+  },
 }
 export default zh_CN

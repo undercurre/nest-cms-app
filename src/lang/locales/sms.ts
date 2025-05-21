@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'Sauga',
     haw: 'Hawaiian',
   },
+  list: {
+    collectPrefix: 'Du lät gieldi',
+    collectSuffix: 'viggka',
+    myCollection: 'Mõõ gieldi',
+  },
 }
 export default zh_CN

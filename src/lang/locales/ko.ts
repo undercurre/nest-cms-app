@@ -307,5 +307,10 @@ const zh_CN = {
     xog: '소가',
     haw: '하와이안',
   },
+  list: {
+    collectPrefix: '당신은 수집했습니다',
+    collectSuffix: '장치',
+    myCollection: '내 수집',
+  },
 }
 export default zh_CN

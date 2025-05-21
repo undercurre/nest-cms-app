@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'Szoga',
     haw: 'Hawaii',
   },
+  list: {
+    collectPrefix: 'Összegyűjtöttél',
+    collectSuffix: 'eszközt',
+    myCollection: 'Összegyűjtött eszközök',
+  },
 }
 export default zh_CN

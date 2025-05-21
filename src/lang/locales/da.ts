@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'Soga',
     haw: 'Hawaiiansk',
   },
+  list: {
+    collectPrefix: 'Du har indsamlet',
+    collectSuffix: 'enheder',
+    myCollection: 'Min indsamling',
+  },
 }
 export default zh_CN

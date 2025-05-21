@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'Soga tili',
     haw: 'Gavayi tili',
   },
+  list: {
+    collectPrefix: "Siz to'pladingiz",
+    collectSuffix: 'quvvatlashtiruvchilar',
+    myCollection: "Mening to'plamim",
+  },
 }
 export default zh_CN

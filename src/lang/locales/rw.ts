@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'Soga',
     haw: 'Hawayi',
   },
+  list: {
+    collectPrefix: 'Ukorere',
+    collectSuffix: 'vifaa',
+    myCollection: 'Inkorerekano cyange',
+  },
 }
 export default zh_CN

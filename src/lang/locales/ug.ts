@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'سوگاچە',
     haw: 'ھاۋايچە',
   },
+  list: {
+    collectPrefix: 'سىز تەخسىس قىلغان',
+    collectSuffix: 'ئاچ喨لار',
+    myCollection: 'مەنىڭ تەخسىسىم',
+  },
 }
 export default zh_CN

@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'ໂຊກາ',
     haw: 'ຮາວາຍ',
   },
+  list: {
+    collectPrefix: 'ທ່ານໄດ້ສະ喥ຸດ',
+    collectSuffix: 'ອຸດົມສິນຍາ',
+    myCollection: 'ສະ喥ຸດຂອງຂ້ອຍ',
+  },
 }
 export default zh_CN

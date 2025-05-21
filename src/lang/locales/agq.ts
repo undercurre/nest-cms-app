@@ -308,9 +308,9 @@ const zh_CN = {
     haw: 'Hawaiian',
   },
   list: {
-    collectPrefix: '您已收藏',
-    collectSuffix: '个设备',
-    myCollection: '我的收藏',
+    collectPrefix: 'wú á kólékt',
+    collectSuffix: 'áwà',
+    myCollection: 'kóléksyon máy',
   },
 }
 export default zh_CN

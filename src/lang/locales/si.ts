@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'සොගා',
     haw: 'හවායි',
   },
+  list: {
+    collectPrefix: 'ඔබ.collect කੀਤා ඇත',
+    collectSuffix: 'ඇපරATUS්',
+    myCollection: 'මගේ.COLLECTION',
+  },
 }
 export default zh_CN

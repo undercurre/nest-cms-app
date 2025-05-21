@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'Soga',
     haw: 'Hawajski',
   },
+  list: {
+    collectPrefix: 'Zebrano przez ciebie',
+    collectSuffix: 'urządzenia',
+    myCollection: 'Moja kolekcja',
+  },
 }
 export default zh_CN

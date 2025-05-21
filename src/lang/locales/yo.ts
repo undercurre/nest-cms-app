@@ -307,5 +307,10 @@ const zh_CN = {
     xog: 'Èdè Soga',
     haw: 'Èdè Hawaii',
   },
+  list: {
+    collectPrefix: 'O ti pin',
+    collectSuffix: 'awọn ẹrọ',
+    myCollection: 'Eri mi',
+  },
 }
 export default zh_CN
