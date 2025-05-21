@@ -47,6 +47,7 @@ import { getDeviceListByUid } from '@/api/modules/list'
 import type { Product } from '@/api/modules/product'
 import router from '@/router'
 import { useAppStore } from '@/stores/app'
+import { getUrlConcat } from '@/utils/index'
 import { onBeforeMount, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
@@ -60,15 +61,6 @@ if (token) {
   appStore.token = token
 }
 const deviceList = ref<Product[]>([])
-
-// url加http前缀
-const getUrlConcat = (url: string) => {
-  if (!url) {
-    return ''
-  }
-  if (url.startsWith('http')) return url
-  return `${window.location.protocol}//${url}`
-}
 
 const go2Detail = (id: number) => {
   router.push(`/product/${id}`)

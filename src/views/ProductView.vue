@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { getProductInfo, type Product } from '@/api/modules/product'
+import { getUrlConcat } from '@/utils/index'
 import { onBeforeMount, ref } from 'vue'
 import { useRoute } from 'vue-router'
 
@@ -18,7 +19,7 @@ const productId = route.params.id // 获取路径参数
 productStore.id = Number(productId || 0)
 appStore.tabbarActive = route.name as string
 
-let token = typeof route.query.token === 'string' ? decodeURIComponent(route.query.token) : '' // 类型断言
+let token = typeof route.query.token === 'string' ? route.query.token.replace(/ /g, '+') : '' // 类型断言
 if (token) {
   localStorage.setItem('token', token)
   appStore.token = token
@@ -56,14 +57,6 @@ const add2my = async () => {
   showSuccessToast(t('product.successfullyAdded'))
   router.push('/list')
 }
-// url加http前缀
-const getUrlConcat = (url: string) => {
-  if (!url) {
-    return ''
-  }
-  if (url.startsWith('http')) return url
-  return `${window.location.protocol}//${url}`
-}
 
 const getI18NProductName = () => {
   return curProduct.value?.productMultiLanguageObj?.[locale.value]?.productName
@@ -76,6 +69,7 @@ const getI18NDescription = () => {
 onBeforeMount(async () => {
   const res = await getProductInfo(Number(productId))
   curProduct.value = { ...res.data, productMultiLanguageObj: {} }
+  productStore.productModel = res.data?.productModel
   curProduct.value.productLanguageDtoList?.forEach((item) => {
     if (item.languageCode === 'zh') {
       item.languageCode = 'zh-CN'

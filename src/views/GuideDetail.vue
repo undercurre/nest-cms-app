@@ -17,14 +17,16 @@
 </template>
 
 <script setup lang="ts">
-import { getGuideById, type Guide } from '@/api/modules/guide'
-import { onBeforeMount, reactive, ref } from 'vue'
+import { type Guide } from '@/api/modules/guide'
+import { useAppStore } from '@/stores/app'
+import { useGuideStore } from '@/stores/guide'
+import { getUrlConcat } from '@/utils/index'
+import { reactive, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { useRoute } from 'vue-router'
 import 'vue3-video-play/dist/style.css'
 import { videoPlay } from 'vue3-video-play/lib/index.js'
-
-const route = useRoute()
+const appStore = useAppStore()
+appStore.tabbarActive = 'guide'
 
 const options = reactive({
   color: '#fff', //主题色
@@ -55,33 +57,20 @@ const onCanplay = (ev: unknown) => {
   console.log(ev, '可以播放')
 }
 
-const guide = ref<Guide>()
-
+const guideStore = useGuideStore()
 const { locale } = useI18n()
 
+const guide = ref<Guide>()
+guide.value = guideStore.guide as Guide
+options.src = getUrlConcat(guide.value?.guideMultiLanguageObj?.[locale.value]?.videoUrl)
+
 const getI18NTitle = () => {
-  if (guide.value) {
-    if (locale.value === 'zh-CN') {
-      return guide.value.title
-    } else {
-      return guide.value.title_en
-    }
-  }
+  return guide.value?.guideMultiLanguageObj?.[locale.value]?.title
 }
 
 const getI18NDescription = () => {
   if (guide.value) {
-    if (locale.value === 'zh-CN') {
-      return guide.value.description
-    } else {
-      return guide.value.description_en
-    }
+    return guide.value?.guideMultiLanguageObj?.[locale.value]?.description
   }
 }
-
-onBeforeMount(async () => {
-  const res = await getGuideById({ id: Number(route.params.id as string) })
-  guide.value = res.data
-  options.src = res.data.video
-})
 </script>

@@ -12,7 +12,12 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
   return {
-    base: mode === 'development' ? './' : mode === 'uat' ? '/kitchen/offlinedevice/web/cms/markH5/' : '/kitchen/offlinedevice/web/cms/markH5/',
+    base:
+      mode === 'development'
+        ? './'
+        : mode === 'uat'
+          ? '/kitchen/offlinedevice/web/cms/markH5/'
+          : '/kitchen/offlinedevice/web/cms/markH5/',
     plugins: [
       vue(),
       vueDevTools(),
@@ -42,7 +47,7 @@ export default defineConfig(({ mode }) => {
       port: 5173, // 保持端口不变
       proxy: {
         // 将 /api 开头的请求代理到目标服务器
-        '/mova-cms': {
+        '/kitchen-service': {
           target: 'https://mova-common.mova-tech.com/kitchen/offlinedevice', // 目标服务器
           changeOrigin: true, // 是否修改请求的源
           configure: (proxy, options) => {

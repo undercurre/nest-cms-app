@@ -1,6 +1,6 @@
 import { cmsService } from '..'
 
-const PORT1 = '/mova-cms'
+const PORT1 = '/kitchen-service'
 
 // 请求响应参数（不包含data）
 export interface Result {
@@ -13,35 +13,56 @@ export interface ResultData<T = unknown> extends Result {
   data: T
 }
 
-export interface Diet {
-  id: number
-  image: string
-  time: number
-  difficulty: number
-  name: string
-  name_en: string
+export interface ProductModel {
+  productId: number
+  productModel: string
+}
+export interface CookbookNutrition {
+  id?: number
   category: string
-  description: string
-  description_en: string
-  createdAt: string
+  quantity: string
 }
 
+export interface Diet {
+  id: number
+  cookingTime: number
+  difficultyLevel: number
+  taste: string
+  category: string
+  image_url: string
+  productModelIdList?: ProductModel[]
+  cookbookNutritionList: CookbookNutrition[]
+  cookbookMultiLanguageList: CookBookMultiLanguage[]
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  dietMultiLanguageObj?: any
+}
+
+export interface MultiLanguage {
+  languageId: number
+  languageCode: string
+  displayLanguage: string
+}
+
+export interface CookBookMultiLanguage extends MultiLanguage {
+  id: number
+  cookbookName: string
+  description: string
+  cookbookIngredientList: Ingredients[]
+  cookbookStepList: Steps[]
+}
 export type Category = string
 
 export interface Ingredients {
   id: number
-  name: string
-  name_en: string
+  ingredientName: string
   quantity: string
   unit: string
 }
 
 export interface Steps {
   id: number
-  step_number: number
+  stepNum: number
   description: string
-  description_en: string
-  image_url: null | string
 }
 
 /**
@@ -52,37 +73,28 @@ export const searchDiet = (params: {
   difficulty?: number
   name?: string
   category?: string
-  id: number
+  pageNo: number
+  pageSize: number
+  productModel?: string
 }) => {
-  return cmsService.get<ResultData<Diet[]>>(PORT1 + '/cookbooks/search/condition', params)
+  return cmsService.get<ResultData<{ cookbookList: Diet[]; total: number }>>(
+    PORT1 + '/web/cookbook/list',
+    params,
+  )
 }
 
 /**
  * @name 查询品类列表
  */
 export const getCategoryList = () => {
-  return cmsService.get<ResultData<Category[]>>(PORT1 + '/cookbooks/list/categories')
-}
-
-/**
- * @name 查询材料列表
- */
-export const getIngredients = (id: number) => {
-  return cmsService.get<ResultData<Ingredients[]>>(PORT1 + `/ingredients/recipe/${id}`)
-}
-
-/**
- * @name 查询步骤列表
- */
-export const getSteps = (id: number) => {
-  return cmsService.get<ResultData<Steps[]>>(PORT1 + `/steps/recipe/${id}`)
+  return cmsService.get<ResultData<Category[]>>(PORT1 + '/web/cookbook/category/list')
 }
 
 /**
  * @name 获取id的diet
  */
 export const getDietById = (params: { id: number }) => {
-  return cmsService.get<ResultData<Diet>>(`${PORT1}/cookbooks/${params.id}`)
+  return cmsService.get<ResultData<Diet>>(`${PORT1}/web/cookbook/${params.id}`)
 }
 
 /**

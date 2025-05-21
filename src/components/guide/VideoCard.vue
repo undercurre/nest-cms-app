@@ -51,6 +51,8 @@
 import type { Guide } from '@/api/modules/guide'
 import guideDefaultImage from '@/assets/images/app/guide-default.png'
 import router from '@/router'
+import { useGuideStore } from '@/stores/guide'
+import { getUrlConcat } from '@/utils/index'
 import { onMounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 
@@ -72,9 +74,10 @@ const props = withDefaults(defineProps<Props>(), {
   },
 })
 
+const { locale } = useI18n()
 const video = ref<HTMLVideoElement | null>(null)
 
-const videoUrl = props.resource.video // 视频的 URL 地址
+const videoUrl = getUrlConcat(props.resource?.guideMultiLanguageObj?.[locale.value]?.videoUrl) // 视频的 URL 地址
 const firstFrameImage = ref<string | null>(null) // 用来存储提取的第一帧图片数据
 const duration = ref(0)
 const onVideoLoaded = () => {}
@@ -132,26 +135,17 @@ function formatDuration(seconds: number) {
 
   return minute + ':' + second
 }
-
+const guideStore = useGuideStore()
 function handlePlay() {
-  router.push({ name: 'guideDetail', params: { id: props.resource.id } })
+  router.push({ name: 'guideDetail' })
+  guideStore.guide = props.resource
 }
 
-const { locale } = useI18n()
-
 const getI18NTitle = () => {
-  if (locale.value === 'zh-CN') {
-    return props.resource.title
-  } else {
-    return props.resource.title_en
-  }
+  return props.resource?.guideMultiLanguageObj?.[locale.value]?.title
 }
 
 const getI18NDescription = () => {
-  if (locale.value === 'zh-CN') {
-    return props.resource.description
-  } else {
-    return props.resource.description_en
-  }
+  return props.resource?.guideMultiLanguageObj?.[locale.value]?.description
 }
 </script>

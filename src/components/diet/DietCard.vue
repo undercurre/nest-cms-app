@@ -10,7 +10,7 @@
       <div class="flex text-12px">
         <div class="flex items-center mr-8px">
           <img class="w-15px h-15px mr-2px" src="@/assets/images/app/time.png" />
-          <span class="text-[--vt-c-text-light-2]">{{ time }}分钟</span>
+          <span class="text-[--vt-c-text-light-2]">{{ time }}{{ t('cookbook.minute') }}</span>
         </div>
         <div class="flex items-center">
           <img class="w-15px h-15px mr-2px" src="@/assets/images/app/difficulty.png" />
@@ -23,6 +23,8 @@
 
 <script lang="ts" setup>
 import router from '@/router'
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
 
 interface Props {
   id: number
@@ -39,14 +41,14 @@ const props = withDefaults(defineProps<Props>(), {
   difficulty: 0,
 })
 
-function formatDifficulty(level: number) {
-  const map: Record<number, string> = {
-    1: '简单',
-    2: '普通',
-    3: '困难',
-  }
+const map: Record<number, string> = {
+  1: 'simple',
+  2: 'normal',
+  3: 'difficult',
+}
 
-  return map[level]
+function formatDifficulty(level: number) {
+  return t(`cookbook.${map[level]}`)
 }
 
 function handle2Detail() {

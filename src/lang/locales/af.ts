@@ -69,6 +69,15 @@ const zh_CN = {
     Fruity: 'Vrugtig',
     Herbal: 'Kruie',
     ComplexSeasoning: 'Saamgestelde geurmiddels',
+    minute: 'minuut',
+    simple: 'eenvoudig',
+    normal: 'normaal',
+    difficulty: 'moeilikheid',
+    nutrition: 'voedingswaarde',
+    calorie: 'kalorieë',
+    fat: 'vet',
+    protein: 'proteïen',
+    carbohydrate: 'koolhidrate',
   },
   lang: {
     he: 'Hebreeus',
@@ -298,5 +307,5 @@ const zh_CN = {
     xog: 'Soga',
     haw: 'Hawaïaans',
   },
-};
+}
 export default zh_CN
