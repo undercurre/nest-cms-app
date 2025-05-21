@@ -63,7 +63,7 @@ import { useRoute } from 'vue-router'
 
 const route = useRoute()
 const { locale } = useI18n()
-const token = typeof route.query.token === 'string' ? decodeURIComponent(route.query.token) : '' // 类型断言
+const token = typeof route.query.token === 'string' ? route.query.token : '' // 类型断言
 const appStore = useAppStore()
 if (token) {
   localStorage.setItem('token', token)

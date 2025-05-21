@@ -1,4 +1,4 @@
-import { watchEffect } from 'vue'
+import { watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 // 获取知识空间节点信息/获取工作表/获取多个工作表范围/获取单个工作表范围
@@ -18,9 +18,16 @@ export const useLanguage = () => {
     locale.value = langRes
   }
 
-  watchEffect(() => {
-    setLanguage()
-  })
+  watch(
+    () => route.query.lang,
+    () => {
+      setLanguage()
+    },
+    {
+      immediate: true,
+      deep: true,
+    },
+  )
   function getLanguage() {
     return localStorage.getItem('locale') || 'en'
   }
