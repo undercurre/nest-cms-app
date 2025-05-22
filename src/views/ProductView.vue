@@ -96,7 +96,7 @@ onBeforeMount(async () => {
 </script>
 
 <template>
-  <div class="px-20px flex flex-col justify-around items-center">
+  <div class="px-20px flex flex-col justify-around items-center pb-10px">
     <img class="w-full my-10px rounded-8px" :src="getUrlConcat(curProduct?.imageOssUrl ?? '')" />
     <LanguageSwitcher />
     <p class="font-bold text-20px w-full leading-30px py-10px">

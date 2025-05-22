@@ -35,8 +35,8 @@ interface Props {
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  url: 'https://raw.githubusercontent.com/undercurre/Image/refs/heads/main/cook-fish.jpeg',
-  title: '清蒸鲈鱼',
+  url: '',
+  title: '',
   time: 0,
   difficulty: 0,
 })

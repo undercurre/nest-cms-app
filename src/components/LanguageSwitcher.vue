@@ -6,14 +6,10 @@
 
 <script lang="ts" setup>
 import { getProductLanguageList, type LangItem } from '@/api/modules/product'
-import { useLanguage } from '@/hooks/useLanguage'
-import { useLocation } from '@/hooks/useLocation'
 import { onMounted, onUnmounted, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 const { t, locale } = useI18n()
-const { getLanguage, setLanguage } = useLanguage()
-const { language } = useLocation()
 
 const currentLocale = ref<string>(locale.value)
 
@@ -23,16 +19,18 @@ const getLanguageList = async () => {
   if (!localStorage.getItem('languageList')) {
     try {
       const res = await getProductLanguageList()
-      localStorage.setItem('languageList', JSON.stringify(res?.data?.languageInfoList ?? []))
+      localStorage.setItem('languageList', JSON.stringify(res?.data?.languageInfoList ?? ''))
     } catch (error) {
       console.log('error: ', error)
     }
   }
-  languageList.value = JSON.parse(localStorage.getItem('languageList') ?? '[]')
+  languageList.value = JSON.parse(localStorage.getItem('languageList') ?? '')
 }
 const changeLanguage = (e) => {
   locale.value = e
   localStorage.setItem('locale', locale.value)
+  // 手动切换后，页面刷新就取切换的语言
+  sessionStorage.setItem('isManualSwitch', 'true')
 }
 
 watch(
@@ -44,15 +42,7 @@ watch(
         value: item.languageCode === 'zh' ? 'zh-CN' : (item.languageCode ?? ''),
       }
     })
-    currentLocale.value = getLanguage()
-  },
-)
-watch(
-  () => language.value,
-  (newVal) => {
-    setLanguage(newVal)
-    getLanguageList()
-    currentLocale.value = getLanguage()
+    currentLocale.value = newVal?.[1]
   },
 )
 

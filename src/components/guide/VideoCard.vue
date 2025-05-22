@@ -77,7 +77,10 @@ const props = withDefaults(defineProps<Props>(), {
 const { locale } = useI18n()
 const video = ref<HTMLVideoElement | null>(null)
 
-const videoUrl = getUrlConcat(props.resource?.guideMultiLanguageObj?.[locale.value]?.videoUrl) // 视频的 URL 地址
+const videoUrl = getUrlConcat(
+  props.resource?.guideMultiLanguageObj?.[locale.value]?.videoUrl ??
+    props.resource?.guideMultiLanguageObj?.['en']?.videoUrl,
+) // 视频的 URL 地址
 const firstFrameImage = ref<string | null>(null) // 用来存储提取的第一帧图片数据
 const duration = ref(0)
 const onVideoLoaded = () => {}
@@ -142,10 +145,16 @@ function handlePlay() {
 }
 
 const getI18NTitle = () => {
-  return props.resource?.guideMultiLanguageObj?.[locale.value]?.title
+  return (
+    props.resource?.guideMultiLanguageObj?.[locale.value]?.title ??
+    props.resource?.guideMultiLanguageObj?.['en']?.title
+  )
 }
 
 const getI18NDescription = () => {
-  return props.resource?.guideMultiLanguageObj?.[locale.value]?.description
+  return (
+    props.resource?.guideMultiLanguageObj?.[locale.value]?.description ??
+    props.resource?.guideMultiLanguageObj?.['en']?.description
+  )
 }
 </script>

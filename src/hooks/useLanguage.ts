@@ -1,4 +1,3 @@
-import { watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 // 获取知识空间节点信息/获取工作表/获取多个工作表范围/获取单个工作表范围
@@ -7,27 +6,20 @@ export const useLanguage = () => {
   const route = useRoute()
   // 获取系统语言
   function setLanguage(locationLanguages?: string) {
-    console.log('locationLanguages: ', locationLanguages)
-    const lang =
+    let lang =
       locationLanguages ||
       (Array.isArray(route.query.lang) ? route.query.lang[0] : route.query.lang) ||
       localStorage.getItem('locale') ||
       'en'
-    const langRes = lang == 'zh' ? 'zh-CN' : lang
-    localStorage.setItem('locale', langRes)
-    locale.value = langRes
-  }
+    // 手动切换后，页面刷新就取切换的语言
+    if (sessionStorage.getItem('isManualSwitch') == 'true') {
+      lang = localStorage.getItem('locale') || 'en'
+    }
 
-  watch(
-    () => route.query.lang,
-    () => {
-      setLanguage()
-    },
-    {
-      immediate: true,
-      deep: true,
-    },
-  )
+    const langRes = lang == 'zh' ? 'zh-CN' : lang
+    localStorage.setItem('locale', langRes || 'en')
+    locale.value = langRes || 'en'
+  }
   function getLanguage() {
     return localStorage.getItem('locale') || 'en'
   }

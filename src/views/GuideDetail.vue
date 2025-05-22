@@ -62,15 +62,24 @@ const { locale } = useI18n()
 
 const guide = ref<Guide>()
 guide.value = guideStore.guide as Guide
-options.src = getUrlConcat(guide.value?.guideMultiLanguageObj?.[locale.value]?.videoUrl)
+options.src = getUrlConcat(
+  guide.value?.guideMultiLanguageObj?.[locale.value]?.videoUrl ??
+    guide.value?.guideMultiLanguageObj?.['en']?.videoUrl,
+)
 
 const getI18NTitle = () => {
-  return guide.value?.guideMultiLanguageObj?.[locale.value]?.title
+  return (
+    guide.value?.guideMultiLanguageObj?.[locale.value]?.title ??
+    guide.value?.guideMultiLanguageObj?.['en']?.title
+  )
 }
 
 const getI18NDescription = () => {
   if (guide.value) {
-    return guide.value?.guideMultiLanguageObj?.[locale.value]?.description
+    return (
+      guide.value?.guideMultiLanguageObj?.[locale.value]?.description ??
+      guide.value?.guideMultiLanguageObj?.['en']?.description
+    )
   }
 }
 </script>

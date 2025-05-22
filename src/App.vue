@@ -11,12 +11,9 @@ import router from '@/router'
 import { useAppStore } from '@/stores/app'
 import { useProductStore } from '@/stores/product'
 
-import { useLanguage } from '@/hooks/useLanguage'
-import { useLocation } from '@/hooks/useLocation'
 import { useThemeMode } from '@/hooks/useThemeMode'
-import { computed, onMounted, ref, watch } from 'vue'
-
-// const { locale } = useI18n()
+import { computed, onMounted, ref } from 'vue'
+import { useLocation } from './hooks/useLocation'
 
 const route = useRoute()
 
@@ -52,16 +49,7 @@ function onClickLeft() {
 //   router.push('/ai')
 // }
 
-const { setLanguage } = useLanguage()
-console.log('setLanguage: ', setLanguage)
-
-const { language } = useLocation()
-watch(
-  () => language.value,
-  (newVal) => {
-    setLanguage(newVal)
-  },
-)
+const { getLocation } = useLocation()
 
 // 获取系统色系
 const { getThemeMode, themeMode } = useThemeMode()
@@ -70,7 +58,7 @@ onMounted(() => {
   setTimeout(() => {
     couponShow.value = true
   }, 1000)
-  // setLanguage()
+  getLocation()
   setTimeout(() => {
     getThemeMode()
   }, 300)
@@ -79,7 +67,13 @@ onMounted(() => {
 
 <template>
   <div class="w-100vw h-100vh">
-    <van-nav-bar :safe-area-inset-top="true" :border="true" :fixed="true" title="">
+    <van-nav-bar
+      class="app-title-bar"
+      :safe-area-inset-top="true"
+      :border="true"
+      :fixed="true"
+      title=""
+    >
       <template #left>
         <div class="flex items-center">
           <img
@@ -87,7 +81,7 @@ onMounted(() => {
             src="@/assets/images/app/left-arrow.png"
             @click="onClickLeft"
           />
-          <span class="w-full font-bold leading-28px text-18px">{{
+          <span class="font-bold leading-28px text-18px truncate w-90%">{{
             isListRoute ? $t('common.equipmentList') : $t('common.smartKitchenAssistant')
           }}</span>
         </div>
@@ -201,7 +195,7 @@ onMounted(() => {
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="less">
 header {
   line-height: 1.5;
   max-height: 100vh;
@@ -261,6 +255,11 @@ nav a:first-of-type {
 
     padding: 1rem 0;
     margin-top: 1rem;
+  }
+}
+.app-title-bar {
+  .van-haptics-feedback:active {
+    opacity: 1 !important;
   }
 }
 </style>

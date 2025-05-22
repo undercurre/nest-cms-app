@@ -1,9 +1,11 @@
 import countryIso from 'country-iso'
 import getCountryISO2 from 'country-iso-3-to-2'
 import { getCountryLanguages } from 'country-language'
-import { onMounted, ref, watch } from 'vue'
+import { ref, watch } from 'vue'
+import { useLanguage } from './useLanguage'
 
 export const useLocation = () => {
+  const { setLanguage } = useLanguage()
   const getLocation = async () => {
     navigator.geolocation.getCurrentPosition(
       (position) => {
@@ -26,7 +28,7 @@ export const useLocation = () => {
     )
   }
   const countryCode = ref('US')
-  const language = ref('en')
+  const language = ref('')
   watch(
     () => countryCode.value,
     (newVal) => {
@@ -37,11 +39,21 @@ export const useLocation = () => {
   const setLocationLanguage = (newLanguage) => {
     language.value = newLanguage
   }
-  onMounted(() => {
-    getLocation()
-  })
+  watch(
+    () => language.value,
+    (newVal) => {
+      setTimeout(() => {
+        setLanguage(newVal)
+      })
+    },
+    {
+      immediate: true,
+      deep: true,
+    },
+  )
   return {
     language,
     setLocationLanguage,
+    getLocation,
   }
 }

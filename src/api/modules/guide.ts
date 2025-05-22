@@ -1,6 +1,6 @@
 import { cmsService } from '..'
 
-const PORT1 = '/kitchen-service'
+const PORT1 = '/kitchen-app-server'
 
 // 请求响应参数（不包含data）
 export interface Result {
@@ -44,7 +44,7 @@ export const getGuideList = (params: {
   pageNo: number
   pageSize: number
 }) => {
-  return cmsService.get<
+  return cmsService.post<
     ResultData<{
       guideList: Guide[]
       total: number

@@ -1,6 +1,6 @@
 import { cmsService } from '..'
 
-const PORT1 = '/kitchen-service'
+const PORT1 = '/kitchen-app-server'
 
 // 请求响应参数（不包含data）
 export interface Result {
@@ -29,7 +29,7 @@ export interface Diet {
   difficultyLevel: number
   taste: string
   category: string
-  image_url: string
+  imageUrl: string
   productModelIdList?: ProductModel[]
   cookbookNutritionList: CookbookNutrition[]
   cookbookMultiLanguageList: CookBookMultiLanguage[]
@@ -50,7 +50,9 @@ export interface CookBookMultiLanguage extends MultiLanguage {
   cookbookIngredientList: Ingredients[]
   cookbookStepList: Steps[]
 }
-export type Category = string
+export type Category = {
+  typeEn: string
+}
 
 export interface Ingredients {
   id: number
@@ -77,7 +79,7 @@ export const searchDiet = (params: {
   pageSize: number
   productModel?: string
 }) => {
-  return cmsService.get<ResultData<{ cookbookList: Diet[]; total: number }>>(
+  return cmsService.post<ResultData<{ cookbookList: Diet[]; total: number }>>(
     PORT1 + '/web/cookbook/list',
     params,
   )
@@ -87,7 +89,9 @@ export const searchDiet = (params: {
  * @name 查询品类列表
  */
 export const getCategoryList = () => {
-  return cmsService.get<ResultData<Category[]>>(PORT1 + '/web/cookbook/category/list')
+  return cmsService.get<ResultData<{ categoryList: Category[] }>>(
+    PORT1 + '/web/cookbook/category/list',
+  )
 }
 
 /**
