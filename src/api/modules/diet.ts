@@ -1,6 +1,6 @@
-import { cmsService } from '..'
+import { userService } from '..'
 
-const PORT1 = '/kitchen-app-server'
+const PORT1 = '/kitchen-api/kitchen-app-server'
 
 // 请求响应参数（不包含data）
 export interface Result {
@@ -79,7 +79,7 @@ export const searchDiet = (params: {
   pageSize: number
   productModel?: string
 }) => {
-  return cmsService.post<ResultData<{ cookbookList: Diet[]; total: number }>>(
+  return userService.post<ResultData<{ cookbookList: Diet[]; total: number }>>(
     PORT1 + '/web/cookbook/list',
     params,
   )
@@ -89,7 +89,7 @@ export const searchDiet = (params: {
  * @name 查询品类列表
  */
 export const getCategoryList = () => {
-  return cmsService.get<ResultData<{ categoryList: Category[] }>>(
+  return userService.get<ResultData<{ categoryList: Category[] }>>(
     PORT1 + '/web/cookbook/category/list',
   )
 }
@@ -98,7 +98,7 @@ export const getCategoryList = () => {
  * @name 获取id的diet
  */
 export const getDietById = (params: { id: number }) => {
-  return cmsService.get<ResultData<Diet>>(`${PORT1}/web/cookbook/${params.id}`)
+  return userService.get<ResultData<Diet>>(`${PORT1}/web/cookbook/${params.id}`)
 }
 
 /**
@@ -106,7 +106,7 @@ export const getDietById = (params: { id: number }) => {
  */
 
 export const getAIAnswer = (messages: { role: string; content: string }[]) => {
-  return cmsService.post<ResultData<string>>(`${PORT1}/deepseek/completion`, {
+  return userService.post<ResultData<string>>(`${PORT1}/deepseek/completion`, {
     json: JSON.stringify(messages),
   })
 }

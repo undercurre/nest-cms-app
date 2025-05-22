@@ -1,6 +1,6 @@
-import { cmsService } from '..'
+import { userService } from '..'
 
-const PORT1 = '/kitchen-app-server'
+const PORT1 = '/kitchen-api/kitchen-app-server'
 
 // 请求响应参数（不包含data）
 export interface Result {
@@ -44,7 +44,7 @@ export const getGuideList = (params: {
   pageNo: number
   pageSize: number
 }) => {
-  return cmsService.post<
+  return userService.post<
     ResultData<{
       guideList: Guide[]
       total: number
@@ -56,5 +56,5 @@ export const getGuideList = (params: {
  * @name 获取id的guide
  */
 export const getGuideById = (params: { id: number }) => {
-  return cmsService.get<ResultData<Guide>>(`${PORT1}/web/guide/${params.id}`)
+  return userService.get<ResultData<Guide>>(`${PORT1}/web/guide/${params.id}`)
 }

@@ -24,8 +24,8 @@ class RequestService {
         if (token) {
           config.headers.Authorization = `Bearer ${token?.replace(/ /g, '+')}`
         }
-        config.headers['mova-auth'] =
-          `bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJpc3N1ZXIiLCJhdWQiOlsiYXVkaWVuY2UiXSwicm9sZV9uYW1lIjoiZ3Vlc3QiLCJvYXV0aF9pZCI6IjE5MjA3NjI4NDc4NzExNDgwMzQiLCJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwiY2xpZW50X2lkIjoic3dvcmQiLCJleHAiOjE3NDczODYyMzgsIm5iZiI6MTc0Njc4MTQzOH0.fcVJrdP6P2XaDLPs5RY9qQhTWa6Q9UaoXaxfn-l9ywCcHcM2bYWG9fI3AYmFDZsjs9OL1XpkGdNRUNx19wfsag`
+        // config.headers['mova-auth'] =
+        //   `bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJpc3N1ZXIiLCJhdWQiOlsiYXVkaWVuY2UiXSwicm9sZV9uYW1lIjoiZ3Vlc3QiLCJvYXV0aF9pZCI6IjE5MjA3NjI4NDc4NzExNDgwMzQiLCJ0b2tlbl90eXBlIjoiYWNjZXNzX3Rva2VuIiwiY2xpZW50X2lkIjoic3dvcmQiLCJleHAiOjE3NDczODYyMzgsIm5iZiI6MTc0Njc4MTQzOH0.fcVJrdP6P2XaDLPs5RY9qQhTWa6Q9UaoXaxfn-l9ywCcHcM2bYWG9fI3AYmFDZsjs9OL1XpkGdNRUNx19wfsag`
         return config
       },
       (error) => {
@@ -70,16 +70,6 @@ class RequestService {
   }
 }
 
-// 创建不同服务的实例
-const cmsService = new RequestService({
-  baseURL:
-    import.meta.env.MODE === 'production'
-      ? '/kitchen/offlinedevice/'
-      : import.meta.env.MODE === 'uat'
-        ? '/kitchen/offlinedevice/'
-        : '/',
-})
-
 const userService = new RequestService({
   baseURL:
     import.meta.env.MODE === 'production'
@@ -93,4 +83,4 @@ const userService = new RequestService({
   },
 })
 
-export { cmsService, userService }
+export { userService }

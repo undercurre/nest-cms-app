@@ -1,6 +1,6 @@
 import { userService } from '..'
 
-const PORT1 = 'device-api/h5'
+const PORT1 = 'device-api/mova-device/h5'
 
 // 请求响应参数（不包含data）
 export interface Result {
@@ -14,12 +14,12 @@ export interface ResultData<T = unknown> extends Result {
 }
 
 export interface ProductMultiLanguage {
-  languageId: number;
-  languageCode: string;
-  displayLanguage: string;
-  productName: string;
-  description: string;
-  manualOssUrl: string;
+  languageId: number
+  languageCode: string
+  displayLanguage: string
+  productName: string
+  description: string
+  manualOssUrl: string
 }
 export interface Product {
   createTime: string
@@ -44,25 +44,29 @@ export const getProductInfo = (id: number) => {
 }
 
 export interface TabItem {
-  label: string;
-  name: string;
+  label: string
+  name: string
 }
 export interface LangItem {
-  createTime?: string;
-  deleted?: string;
-  displayLanguage?: string;
-  id?: string;
-  languageCode?: string;
-  updateTime?: string;
-  text?: string;
-  value?: string;
+  createTime?: string
+  deleted?: string
+  displayLanguage?: string
+  id?: string
+  languageCode?: string
+  updateTime?: string
+  text?: string
+  value?: string
 }
 export interface LangRes {
-  languageInfoList: LangItem[];
+  languageInfoList: LangItem[]
 }
 /**
  * @name 查询产品语言列表
  */
 export const getProductLanguageList = () => {
-  return userService.post<ResultData<LangRes>>(PORT1 + `/products/getLanguages`, {}, { loading: true });
-};
+  return userService.post<ResultData<LangRes>>(
+    PORT1 + `/products/getLanguages`,
+    {},
+    { loading: true },
+  )
+}

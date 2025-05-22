@@ -46,9 +46,11 @@ export default defineConfig(({ mode }) => {
       host: '0.0.0.0', // 监听所有网络接口
       port: 5173, // 保持端口不变
       proxy: {
-        // 将 /api 开头的请求代理到目标服务器
-        '/kitchen-app-server': {
-          target: 'http://172.27.64.144:20030', // 本地服务器
+        // 将 /kitchen-api 开头的请求代理到目标服务器
+        '/kitchen-api': {
+          target: 'http://172.27.65.66:20000', // 本地服务器
+          // target: 'http://172.27.64.144:20030', // 本地服务器
+          // target: 'https://uat-mova-common.mova-tech.com/api', // UAT服务器地址
           // target: 'https://mova-common.mova-tech.com/kitchen/offlinedevice', // 生产服务器
           changeOrigin: true, // 是否修改请求的源
           configure: (proxy, options) => {
@@ -62,12 +64,15 @@ export default defineConfig(({ mode }) => {
               console.error(`[PROXY ERROR] ${req.method} ${req.url}:`, err)
             })
           },
+          rewrite: (path) => path.replace(/^\/kitchen-api/, ''),
         },
         '/device-api': {
-          target: 'http://172.27.64.144:20010', // 本地服务器
+          target: 'http://172.27.65.66:20000', // 本地服务器
+          // target: 'http://172.27.64.144:20010', // 本地服务器
+          // target: 'https://uat-mova-common.mova-tech.com/api', // UAT服务器地址
           // target: 'https://mova-common.mova-tech.com/kitchen/offlinedevice', // 生产服务器地址
           changeOrigin: true, // 修改请求头中的 Host
-          rewrite: (path) => path.replace(/^\/web\/cms/, ''), // 移除 `/web/cms` 前缀
+          rewrite: (path) => path.replace(/^\/device-api/, ''),
         },
       },
     },
