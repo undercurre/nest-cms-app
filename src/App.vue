@@ -261,8 +261,6 @@ nav a:first-of-type {
   }
 }
 .app-title-bar {
-  .van-haptics-feedback:active {
-    opacity: 1 !important;
-  }
+  --van-active-opacity: 1;
 }
 </style>
