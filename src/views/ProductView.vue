@@ -108,7 +108,7 @@ onBeforeMount(async () => {
 
     <van-button
       v-if="token"
-      class="w-full mt-20px mb-10px"
+      class="w-full mt-20px! mb-10px"
       :icon="isCollected ? 'like' : 'plus'"
       color="#FF6B6B"
       type="danger"
@@ -116,8 +116,7 @@ onBeforeMount(async () => {
       >{{ isCollected ? $t('list.myCollection') : $t('product.addToMyDevices') }}</van-button
     >
     <van-button
-      class="w-full"
-      :style="{ marginTop: token ? 0 : '20px' }"
+      :class="['w-full', { 'mt-20px!': !!token }]"
       color="#d3d3d3"
       type="default"
       @click="downloadManual"
