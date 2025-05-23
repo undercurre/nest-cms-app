@@ -46,8 +46,8 @@ export default defineConfig(({ mode }) => {
       host: '0.0.0.0', // 监听所有网络接口
       port: 5173, // 保持端口不变
       proxy: {
-        // 将 /kitchen-api 开头的请求代理到目标服务器
-        '/kitchen-api': {
+        // 将 /kitchen-app-api 开头的请求代理到目标服务器
+        '/kitchen-app-api': {
           target: 'http://172.27.65.66:20000', // 本地服务器
           // target: 'http://172.27.64.144:20030', // 本地服务器
           // target: 'https://uat-mova-common.mova-tech.com/api', // UAT服务器地址
@@ -64,7 +64,7 @@ export default defineConfig(({ mode }) => {
               console.error(`[PROXY ERROR] ${req.method} ${req.url}:`, err)
             })
           },
-          rewrite: (path) => path.replace(/^\/kitchen-api/, ''),
+          rewrite: (path) => path.replace(/^\/kitchen-app-api/, ''),
         },
         '/device-api': {
           target: 'http://172.27.65.66:20000', // 本地服务器

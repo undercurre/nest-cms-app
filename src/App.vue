@@ -150,6 +150,7 @@ onMounted(() => {
       v-model="appStore.tabbarActive"
       :active-color="themeMode === 'dark' ? '#ffffff' : '#000000'"
       :inactive-color="themeMode === 'dark' ? '#ffffff' : '#000000'"
+      class="app-tab-bar"
     >
       <van-tabbar-item name="guide" replace :to="`/guide/${productStore.id}`">
         <span>{{ $t('common.operationInstructions') }}</span>
@@ -259,5 +260,10 @@ nav a:first-of-type {
 }
 .app-title-bar {
   --van-active-opacity: 1;
+}
+.app-tab-bar {
+  .van-tabbar-item {
+    text-align: center;
+  }
 }
 </style>
