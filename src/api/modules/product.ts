@@ -1,6 +1,6 @@
 import { userService } from '..'
 
-const PORT1 = 'device-api/mova-device/h5'
+const PORT1 = '/mova-device/h5'
 
 // 请求响应参数（不包含data）
 export interface Result {
