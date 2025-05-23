@@ -84,7 +84,7 @@ onMounted(() => {
             src="@/assets/images/app/left-arrow.png"
             @click="onClickLeft"
           />
-          <span class="font-bold leading-28px text-18px truncate w-90%">{{
+          <span class="font-bold leading-28px text-18px truncate w-67vw text-left">{{
             isListRoute ? $t('common.equipmentList') : $t('common.smartKitchenAssistant')
           }}</span>
         </div>
