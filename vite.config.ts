@@ -2,10 +2,12 @@ import { fileURLToPath, URL } from 'node:url'
 
 import { VantResolver } from '@vant/auto-import-resolver'
 import vue from '@vitejs/plugin-vue'
+// import { visualizer } from 'rollup-plugin-visualizer' // 添加构建分析工具
 import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { defineConfig } from 'vite'
+import viteCompression from 'vite-plugin-compression'
 import eslint from 'vite-plugin-eslint'
 import vueDevTools from 'vite-plugin-vue-devtools'
 
@@ -40,6 +42,19 @@ export default defineConfig(({ mode }) => {
       }),
       Components({
         resolvers: [VantResolver()],
+      }),
+      // 添加构建分析插件（仅在生产环境启用）
+      // visualizer({
+      //   open: true,
+      //   filename: 'stats.html',
+      //   gzipSize: true,
+      //   brotliSize: true,
+      // }),
+      viteCompression({
+        algorithm: 'gzip', // 压缩算法
+        ext: '.gz', // 生成的文件后缀
+        threshold: 10240, // 对大于 10KB 的文件压缩
+        deleteOriginFile: false, // 是否删除原始文件（建议保留）
       }),
     ],
     server: {

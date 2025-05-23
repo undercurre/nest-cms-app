@@ -1,14 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import AIView from '../views/AIView.vue'
-import DietDetail from '../views/DietDetail.vue'
-import DietView from '../views/DietView.vue'
-import GuideDetail from '../views/GuideDetail.vue'
-import GuideView from '../views/GuideView.vue'
-import ProductView from '../views/ProductView.vue'
-import SaleApp from '../views/SaleApp.vue'
-import StatisticsView from '../views/StatisticsView.vue'
 const router = createRouter({
-  history: createWebHistory(`${import.meta.env.MODE === 'production' ? 'kitchen/offlinedevice/' : 'kitchen/offlinedevice/'}web/cms/markH5/`),
+  history: createWebHistory(`kitchen/offlinedevice/web/cms/markH5/`),
   routes: [
     {
       path: '/',
@@ -25,32 +17,32 @@ const router = createRouter({
     {
       path: '/product/:id',
       name: 'product',
-      component: ProductView,
+      component: () => import('../views/ProductView.vue'),
     },
     {
       path: '/guide/:id',
       name: 'guide',
-      component: GuideView,
+      component: () => import('../views/GuideView.vue'),
     },
     {
       path: '/guide/detail/:id',
       name: 'guideDetail',
-      component: GuideDetail,
+      component: () => import('../views/GuideDetail.vue'),
     },
     {
       path: '/diet/:id',
       name: 'diet',
-      component: DietView,
+      component: () => import('../views/DietView.vue'),
     },
     {
       path: '/diet/detail/:id',
       name: 'dietDetail',
-      component: DietDetail,
+      component: () => import('../views/DietDetail.vue'),
     },
     {
       path: '/ai',
       name: 'ai',
-      component: AIView,
+      component: () => import('../views/AIView.vue'),
     },
     {
       path: '/about',
@@ -63,12 +55,12 @@ const router = createRouter({
     {
       path: '/sale',
       name: 'sale',
-      component: SaleApp,
+      component: () => import('../views/SaleApp.vue'),
     },
     {
       path: '/statistics',
       name: 'statistics',
-      component: StatisticsView,
+      component: () => import('../views/StatisticsView.vue'),
     },
   ],
 })
