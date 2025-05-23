@@ -14,12 +14,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
   return {
-    base:
-      mode === 'development'
-        ? './'
-        : mode === 'uat'
-          ? '/kitchen/offlinedevice/web/cms/markH5/'
-          : '/kitchen/offlinedevice/web/cms/markH5/',
+    base: mode === 'development' ? './' : '/kitchen/offlinedevice/web/cms/markH5/',
     plugins: [
       vue(),
       vueDevTools(),
@@ -63,10 +58,10 @@ export default defineConfig(({ mode }) => {
       proxy: {
         // 将 /kitchen-app-server 开头的请求代理到目标服务器
         '/kitchen-app-server': {
-          target: 'http://172.27.65.66:20000/kitchen-app-server', // 本地服务器
+          target: 'http://172.27.65.66:20000', // 本地服务器
           // target: 'http://172.27.64.144:20030/kitchen-app-server', // 本地服务器
           // target: 'https://uat-mova-common.mova-tech.com/api/kitchen-app-server', // UAT服务器地址
-          // target: 'https://mova-common.mova-tech.com/kitchen/offlinedevice/kitchen-app-server', // 生产服务器
+          // target: 'https://mova-common.mova-tech.com/api/kitchen-app-server', // 生产服务器
           changeOrigin: true, // 是否修改请求的源
           configure: (proxy, options) => {
             proxy.on('proxyReq', (proxyReq, req) => {
@@ -82,10 +77,10 @@ export default defineConfig(({ mode }) => {
           // rewrite: (path) => path.replace(/^\/kitchen-app-server/, ''),
         },
         '/mova-device': {
-          target: 'http://172.27.65.66:20000/mova-device', // 本地服务器
+          target: 'http://172.27.65.66:20000', // 本地服务器
           // target: 'http://172.27.64.144:20010/mova-device', // 本地服务器
           // target: 'https://uat-mova-common.mova-tech.com/api/mova-device', // UAT服务器地址
-          // target: 'https://mova-common.mova-tech.com/kitchen/offlinedevice/mova-device', // 生产服务器地址
+          // target: 'https://mova-common.mova-tech.com/api/mova-device', // 生产服务器地址
           changeOrigin: true, // 修改请求头中的 Host
           // rewrite: (path) => path.replace(/^\/mova-device/, ''),
         },

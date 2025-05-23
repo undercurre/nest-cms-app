@@ -71,12 +71,7 @@ class RequestService {
 }
 
 const userService = new RequestService({
-  baseURL:
-    import.meta.env.MODE === 'production'
-      ? '/kitchen/offlinedevice/'
-      : import.meta.env.MODE === 'uat'
-        ? '/api/'
-        : '/',
+  baseURL: import.meta.env.MODE === 'production' || import.meta.env.MODE === 'uat' ? '/api/' : '/',
   timeout: 30000, // 自定义超时时间
   headers: {
     'X-Custom-Header': 'value', // 自定义 headers
