@@ -104,7 +104,7 @@ onBeforeMount(async () => {
       <span>{{ getI18NProductName() }}</span>
     </p>
 
-    <p class="text-#4B5563">{{ getI18NDescription() }}</p>
+    <p class="text-#4B5563 pre-line-content">{{ getI18NDescription() }}</p>
 
     <van-button
       v-if="token"
@@ -116,7 +116,7 @@ onBeforeMount(async () => {
       >{{ isCollected ? $t('list.myCollection') : $t('product.addToMyDevices') }}</van-button
     >
     <van-button
-      :class="['w-full', { 'mt-20px!': !!token }]"
+      :class="['w-full', 'mt-20px!']"
       color="#d3d3d3"
       type="default"
       @click="downloadManual"
