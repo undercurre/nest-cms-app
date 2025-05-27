@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { getGuideList, type Guide } from '@/api/modules/guide'
-import VideoCard from '@/components/guide/VideoCard.vue'
 import { useAppStore } from '@/stores/app'
 import { useProductStore } from '@/stores/product'
+import { getUrlConcat } from '@/utils'
 import { onBeforeMount, ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 
 const productStore = useProductStore()
@@ -15,6 +16,8 @@ productStore.id = Number(productId || 0)
 appStore.tabbarActive = route.name as string
 
 const guides = ref<Guide[]>()
+const videoUrl = ref<string>('')
+const { locale } = useI18n()
 
 onBeforeMount(async () => {
   const res = await getGuideList({
@@ -35,11 +38,25 @@ onBeforeMount(async () => {
       return acc
     }, {})
   })
+  videoUrl.value = getUrlConcat(
+    guides.value?.[0]?.guideMultiLanguageObj?.[locale.value]?.videoUrl ??
+      guides.value?.[0]?.guideMultiLanguageObj?.['en']?.videoUrl,
+  )
 })
+// 切换视频
+const playVideo = (e: number) => {
+  videoUrl.value = getUrlConcat(
+    guides.value?.[e]?.guideMultiLanguageObj?.[locale.value]?.videoUrl ??
+      guides.value?.[e]?.guideMultiLanguageObj?.['en']?.videoUrl,
+  )
+}
 </script>
 
 <template>
-  <div class="px-20px flex flex-col justify-around items-center">
-    <VideoCard v-for="item in guides" :key="item.id" :resource="item"></VideoCard>
+  <div class="flex flex-col justify-around items-center">
+    <van-sticky v-show="guides?.length">
+      <VideoPlayerBox :url="videoUrl" />
+    </van-sticky>
+    <VideoList :list="guides" @play="playVideo" />
   </div>
 </template>

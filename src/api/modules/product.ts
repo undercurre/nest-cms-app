@@ -1,6 +1,5 @@
 import { userService } from '..'
-
-const PORT1 = '/mova-device/h5'
+import { PORT2 } from '../config/servicePort'
 
 // 请求响应参数（不包含data）
 export interface Result {
@@ -40,7 +39,7 @@ export interface Product {
  * @name 查询产品列表
  */
 export const getProductInfo = (id: number) => {
-  return userService.get<ResultData<Product>>(PORT1 + `/products/${id}`)
+  return userService.get<ResultData<Product>>(PORT2 + `/h5/products/${id}`)
 }
 
 export interface TabItem {
@@ -65,7 +64,7 @@ export interface LangRes {
  */
 export const getProductLanguageList = () => {
   return userService.post<ResultData<LangRes>>(
-    PORT1 + `/products/getLanguages`,
+    PORT2 + `/h5/products/getLanguages`,
     {},
     { loading: true },
   )

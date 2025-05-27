@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: '产品说明',
     completeRecipeCollection: '食谱大全',
     smartAnalysis: '智能分析',
+    qa: 'Q&A',
+    poster: '海报',
     all: '全部',
     noData: '暂无数据',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: '您已收藏',
     collectSuffix: '个设备',
     myCollection: '我的收藏',
+  },
+  qa: {
+    search: '搜索问题',
   },
 }
 export default zh_CN

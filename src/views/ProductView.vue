@@ -77,7 +77,10 @@ const isCollected = computed(() => {
 onBeforeMount(async () => {
   const res = await getProductInfo(Number(productId))
   curProduct.value = { ...res.data, productMultiLanguageObj: {} }
-  productStore.productModel = res.data?.productModel
+  productStore.productModel = curProduct.value?.productModel
+  productStore.posters = curProduct.value?.productMultiLanguageObj?.[locale.value]
+    ? curProduct.value?.productMultiLanguageObj?.[locale.value]?.posters
+    : curProduct.value?.productMultiLanguageObj?.['en']?.posters
   curProduct.value.productLanguageDtoList?.forEach((item) => {
     if (item.languageCode === 'zh') {
       item.languageCode = 'zh-CN'

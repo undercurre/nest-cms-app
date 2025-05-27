@@ -1,14 +1,7 @@
 <script setup lang="ts">
 import { RouterView, useRoute } from 'vue-router'
 
-import DietActiveIcon from '@/assets/images/app/diet_active.png'
-import DietInActiveIcon from '@/assets/images/app/diet_inactive.png'
-import GuideActiveIcon from '@/assets/images/app/guide_active.png'
-import GuideInActiveIcon from '@/assets/images/app/guide_inactive.png'
-import ProductActiveIcon from '@/assets/images/app/product_active.png'
-import ProductInActiveIcon from '@/assets/images/app/product_inactive.png'
 import router from '@/router'
-import { useAppStore } from '@/stores/app'
 import { useProductStore } from '@/stores/product'
 
 import { useThemeMode } from '@/hooks/useThemeMode'
@@ -24,10 +17,43 @@ const isHomeRoute = computed(
 )
 
 const productStore = useProductStore()
-const appStore = useAppStore()
 
 const couponShow = ref(false)
 
+const tabList = ref([
+  {
+    name: 'guide',
+    icon: 'nrk:media-programguide',
+    path: `/guide/${productStore.id}`,
+    text: 'common.operationInstructions',
+  },
+  {
+    name: 'product',
+    icon: 'icon-park-outline:ad-product',
+    path: `/product/${productStore.id}`,
+    text: 'common.productDescription',
+  },
+  {
+    name: 'poster',
+    icon: 'material-symbols:imagesmode-outline',
+    path: `/poster/${productStore.id}`,
+    text: 'common.poster',
+    hidden: !productStore.posters?.length,
+  },
+  {
+    name: 'diet',
+    icon: 'icon-park-outline:knife-fork',
+    path: `/diet/${productStore.id}`,
+    text: 'common.completeRecipeCollection',
+  },
+  {
+    name: 'qa',
+    icon: 'material-symbols:help',
+    path: `/qa/${productStore.id}`,
+    text: 'common.qa',
+  },
+])
+console.log('tabList: ', tabList)
 // NavBar
 function onClickLeft() {
   console.log(window.history)
@@ -44,10 +70,6 @@ function onClickLeft() {
     router.back()
   }
 }
-
-// function go2AI() {
-//   router.push('/ai')
-// }
 
 const { getLocation } = useLocation()
 
@@ -91,7 +113,7 @@ onMounted(() => {
         <!-- @click="go2AI" -->
       </template>
     </van-nav-bar>
-    <div class="flex flex-col h-full">
+    <div class="flex flex-col h-full p-b-50px">
       <div class="shadow-md w-full h-46px"></div>
 
       <div class="w-full flex-1 overflow-hidden">
@@ -99,100 +121,12 @@ onMounted(() => {
           <RouterView />
         </div>
       </div>
-
-      <van-tabbar
-        v-if="!isListRoute"
-        class="shrink-0"
-        :fixed="false"
-        :safe-area-inset-bottom="true"
-        v-model="appStore.tabbarActive"
-        :active-color="themeMode === 'dark' ? '#ffffff' : '#000000'"
-        :inactive-color="themeMode === 'dark' ? '#ffffff' : '#000000'"
-      >
-        <!-- <van-tabbar-item name="guide" replace :to="`/guide/${productStore.id}`">
-          <span>{{ $t('common.operationInstructions') }}</span>
-          <template #icon="props">
-            <img
-              class="w-15px h-15px pb-8px"
-              :src="props.active ? GuideActiveIcon : GuideInActiveIcon"
-            />
-          </template>
-        </van-tabbar-item>
-        <van-tabbar-item name="product" replace :to="`/product/${productStore.id}`"
-          ><span>{{ $t('common.productDescription') }}</span>
-          <template #icon="props">
-            <img
-              class="w-15px h-15px pb-8px"
-              :src="props.active ? ProductActiveIcon : ProductInActiveIcon"
-            /> </template
-        ></van-tabbar-item>
-        <van-tabbar-item name="diet" replace :to="`/diet/${productStore.id}`"
-          ><span>{{ $t('common.completeRecipeCollection') }}</span>
-          <template #icon="props">
-            <img
-              class="w-15px h-15px pb-8px"
-              :src="props.active ? DietActiveIcon : DietInActiveIcon"
-            /> </template
-        ></van-tabbar-item>
-        <van-tabbar-item name="statistics" replace :to="`/statistics`"
-          ><span>{{ $t('common.smartAnalysis') }}</span>
-          <template #icon="props">
-            <img
-              class="w-15px h-15px pb-8px"
-              :src="props.active ? StatisticsActiveIcon : StatisticsInActiveIcon"
-            /> </template
-        ></van-tabbar-item> -->
-      </van-tabbar>
     </div>
-    <van-tabbar
-      v-if="!isListRoute"
-      :safe-area-inset-bottom="false"
-      v-model="appStore.tabbarActive"
-      :active-color="themeMode === 'dark' ? '#ffffff' : '#000000'"
-      :inactive-color="themeMode === 'dark' ? '#ffffff' : '#000000'"
-      class="app-tab-bar"
-    >
-      <van-tabbar-item name="guide" replace :to="`/guide/${productStore.id}`">
-        <span>{{ $t('common.operationInstructions') }}</span>
-        <template #icon="props">
-          <img
-            class="w-15px h-15px pb-8px"
-            :src="props.active ? GuideActiveIcon : GuideInActiveIcon"
-          />
-        </template>
-      </van-tabbar-item>
-      <van-tabbar-item name="product" replace :to="`/product/${productStore.id}`"
-        ><span>{{ $t('common.productDescription') }}</span>
-        <template #icon="props">
-          <img
-            class="w-15px h-15px pb-8px"
-            :src="props.active ? ProductActiveIcon : ProductInActiveIcon"
-          /> </template
-      ></van-tabbar-item>
-      <van-tabbar-item name="diet" replace :to="`/diet/${productStore.id}`"
-        ><span>{{ $t('common.completeRecipeCollection') }}</span>
-        <template #icon="props">
-          <img
-            class="w-15px h-15px pb-8px"
-            :src="props.active ? DietActiveIcon : DietInActiveIcon"
-          /> </template
-      ></van-tabbar-item>
-      <!-- <van-tabbar-item name="statistics" replace :to="`/statistics`"
-        ><span>智能分析</span>
-        <template #icon="props">
-          <img
-            class="w-15px h-15px pb-8px"
-            :src="props.active ? StatisticsActiveIcon : StatisticsInActiveIcon"
-          /> </template
-      ></van-tabbar-item> -->
-    </van-tabbar>
-    <!-- <van-overlay :show="couponShow" @click="couponShow = false" />
-    <img
-      v-if="couponShow"
-      class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-999"
-      src="./assets//images/app/coupon.png"
-      @click="go2SaleApp"
-    /> -->
+    <TabBar
+      :tabList="tabList"
+      :defaultColor="themeMode === 'dark' ? '#ffffff' : '#9ca3af'"
+      :activeColor="themeMode === 'dark' ? 'rgba(255, 107, 107, 0.8)' : '#ff6b6b'"
+    />
   </div>
 </template>
 

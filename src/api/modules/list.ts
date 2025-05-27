@@ -1,7 +1,6 @@
 import { userService } from '..'
+import { PORT2 } from '../config/servicePort'
 import type { Product } from './product'
-
-const PORT1 = '/mova-device/h5/products'
 
 // 请求响应参数（不包含data）
 export interface Result {
@@ -22,14 +21,14 @@ export interface Device {
  * @name 查询我的设备列表
  */
 export const getDeviceListByUid = () => {
-  return userService.get<ResultData<Array<Product>>>(PORT1 + '/my')
+  return userService.get<ResultData<Array<Product>>>(PORT2 + '/h5/products/my')
 }
 
 /**
  * @name 收藏设备
  */
 export const collectProduct = (productId: number) => {
-  return userService.post<ResultData<Array<Device>>>(PORT1 + '/collect', {
+  return userService.post<ResultData<Array<Device>>>(PORT2 + '/h5/products/collect', {
     productId,
   })
 }

@@ -1,6 +1,5 @@
 import { userService } from '..'
-
-const PORT1 = '/kitchen-app-server'
+import { PORT1 } from '../config/servicePort'
 
 // 请求响应参数（不包含data）
 export interface Result {
