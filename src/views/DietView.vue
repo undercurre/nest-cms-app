@@ -30,7 +30,7 @@ watch(
   async () => {
     const dietRes = await searchDiet({
       name: keyword.value,
-      productModel: encodeURIComponent(productStore.productModel),
+      productModel: productStore.productModel,
       pageNo: 1,
       pageSize: 9999999,
     })
@@ -41,7 +41,7 @@ watch(
 async function handleCategoryChange(key: string) {
   if (key === 'all') {
     const dietRes = await searchDiet({
-      productModel: encodeURIComponent(productStore.productModel),
+      productModel: productStore.productModel,
       pageNo: 1,
       pageSize: 9999999,
     })
@@ -50,7 +50,7 @@ async function handleCategoryChange(key: string) {
   }
   const dietRes = await searchDiet({
     category: key,
-    productModel: encodeURIComponent(productStore.productModel),
+    productModel: productStore.productModel,
     pageNo: 1,
     pageSize: 9999999,
   })
@@ -66,7 +66,7 @@ onBeforeMount(async () => {
     }
   })
   const dietRes = await searchDiet({
-    productModel: encodeURIComponent(productStore.productModel),
+    productModel: productStore.productModel,
     pageNo: 1,
     pageSize: 9999999,
   })

@@ -21,7 +21,7 @@ const { locale } = useI18n()
 
 onBeforeMount(async () => {
   const res = await getGuideList({
-    productModel: encodeURIComponent(productStore.productModel),
+    productModel: productStore.productModel,
     pageNo: 1,
     pageSize: 9999999,
   })

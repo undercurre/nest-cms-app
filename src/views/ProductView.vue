@@ -100,14 +100,16 @@ onBeforeMount(async () => {
 
 <template>
   <div class="px-20px flex flex-col justify-around items-center pb-10px">
-    <img class="w-full my-10px rounded-8px" :src="getUrlConcat(curProduct?.imageOssUrl ?? '')" />
+    <div class="p-t-22px p-b-10px">
+      <img class="w-full rounded-8px" :src="getUrlConcat(curProduct?.imageOssUrl ?? '')" />
+    </div>
     <LanguageSwitcher />
     <p class="font-bold text-20px w-full leading-30px py-10px">
       <span class="mr-8px">{{ curProduct?.productModel }}</span>
       <span>{{ getI18NProductName() }}</span>
     </p>
 
-    <p class="text-#4B5563">{{ getI18NDescription() }}</p>
+    <p class="text-#4B5563 pre-line-content">{{ getI18NDescription() }}</p>
 
     <van-button
       v-if="token"
@@ -119,7 +121,7 @@ onBeforeMount(async () => {
       >{{ isCollected ? $t('list.myCollection') : $t('product.addToMyDevices') }}</van-button
     >
     <van-button
-      :class="['w-full', { 'mt-20px!': !!token }]"
+      :class="['w-full', 'mt-20px!']"
       color="#d3d3d3"
       type="default"
       @click="downloadManual"
