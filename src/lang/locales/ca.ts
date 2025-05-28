@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Descripció del producte',
     completeRecipeCollection: 'Col·lecció de receptes',
     smartAnalysis: 'Anàlisi intel·ligent',
+    qa: 'Centre d’ajuda',
+    poster: 'Cartell',
     all: 'tot',
     noData: 'Encara no hi ha dades',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Col·lecció',
     collectSuffix: 'dispositius',
     myCollection: 'La meva col·lecció',
+  },
+  qa: {
+    search: 'Cerca preguntes',
   },
 }
 export default zh_CN

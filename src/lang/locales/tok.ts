@@ -1,14 +1,16 @@
 // 道本语
 const zh_CN = {
   common: {
-    equipmentList: 'Equipment List',
-    smartKitchenAssistant: 'Smart Kitchen Assistant',
-    operationInstructions: 'Operation Guide',
-    productDescription: 'Product Description',
-    completeRecipeCollection: 'Complete Recipe Collection',
-    smartAnalysis: 'Smart Analysis',
-    all: 'All',
-    noData: 'No data available',
+    equipmentList: 'ilo pi tomo moku',
+    smartKitchenAssistant: 'jan pi sona tomo moku',
+    operationInstructions: 'nasin pali',
+    productDescription: 'toki pi ijo',
+    completeRecipeCollection: 'poki pi toki moku ale',
+    smartAnalysis: 'sona pi pona',
+    qa: 'tomo pana sona', // 帮助中心
+    poster: 'sitelen suli', // 海报
+    all: 'ale',
+    noData: 'ala data',
   },
   product: {
     successfullyAdded: 'Successfully added',
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Sina lon sewi',
     collectSuffix: 'ilo',
     myCollection: 'mi lon sewi',
+  },
+  qa: {
+    search: 'alasa nimi pi toki', // 搜索问题
   },
 }
 export default zh_CN

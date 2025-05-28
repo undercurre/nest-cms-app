@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Termékleírás',
     completeRecipeCollection: 'Receptgyűjtemény',
     smartAnalysis: 'Intelligens elemzés',
+    qa: 'Súgóközpont',
+    poster: 'Plakát',
     all: 'minden',
     noData: 'Még nincsenek adatok',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Összegyűjtöttél',
     collectSuffix: 'eszközt',
     myCollection: 'Összegyűjtött eszközök',
+  },
+  qa: {
+    search: 'Problémakeresés',
   },
 }
 export default zh_CN

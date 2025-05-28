@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Описание на продукта',
     completeRecipeCollection: 'Колекция от рецепти',
     smartAnalysis: 'Интелигентен анализ',
+    qa: 'Център за помощ',
+    poster: 'плакат',
     all: 'всички',
     noData: 'Все още няма данни',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Вие събрахте',
     collectSuffix: 'устройства',
     myCollection: 'Моята колекция',
+  },
+  qa: {
+    search: 'Търсене на въпроси',
   },
 }
 export default zh_CN

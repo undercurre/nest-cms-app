@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Ապրանքի նկարագրություն',
     completeRecipeCollection: 'Բաղադրատոմսերի հավաքածու',
     smartAnalysis: 'Խելացի վերլուծություն',
+    qa: 'Օգնության Կենտրոն',
+    poster: 'Աֆիշա',
     all: 'բոլորը',
     noData: 'Դեռևս տվյալներ չկան',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Ձեր ունեք',
     collectSuffix: 'սարքեր',
     myCollection: 'Ձեր գույնը',
+  },
+  qa: {
+    search: 'Խնդիրների Որոնում',
   },
 }
 export default zh_CN

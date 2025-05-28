@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Опис на производот',
     completeRecipeCollection: 'Колекција рецепти',
     smartAnalysis: 'Паметна анализа',
+    qa: 'Центар за Помош',
+    poster: 'Плакат',
     all: 'сите',
     noData: 'Сè уште нема податоци',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Ве сакувате',
     collectSuffix: 'уредови',
     myCollection: 'Моја колекција',
+  },
+  qa: {
+    search: 'Пребарување Проблеми',
   },
 }
 export default zh_CN

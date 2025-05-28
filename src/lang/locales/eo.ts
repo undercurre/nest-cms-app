@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Produkta Priskribo',
     completeRecipeCollection: 'Recepto-Kolekto',
     smartAnalysis: 'Inteligenta Analizo',
+    qa: 'Helpcentro',
+    poster: 'Afgardo',
     all: 'ĉio',
     noData: 'Ankoraŭ neniuj datumoj',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Vi havas kolekti',
     collectSuffix: ' aparatoj',
     myCollection: 'Mia kolekto',
+  },
+  qa: {
+    search: 'Serĉi demandojn',
   },
 }
 export default zh_CN

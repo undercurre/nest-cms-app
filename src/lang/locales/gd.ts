@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Tuairisgeul an toraidh',
     completeRecipeCollection: 'Cruinneachadh reasabaidhean',
     smartAnalysis: 'Mion-sgrùdadh Glic',
+    qa: 'Ionad Cobhair', // 帮助中心
+    poster: 'Póstaer', // 海报
     all: 'uile',
     noData: 'Gun dàta fhathast',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Chaidh tú a chur ris',
     collectSuffix: 'aidh',
     myCollection: 'An t-ainm mo',
+  },
+  qa: {
+    search: 'Lorg Cheistean', // 搜索问题
   },
 }
 export default zh_CN

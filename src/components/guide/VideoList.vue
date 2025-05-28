@@ -139,6 +139,7 @@ function formatDuration(seconds: number) {
               'text-12px',
               'text-#808182',
               getI18NDescription(item) && index === currentIndex ? 'mt-6px' : 'mt-0',
+              'pre-line-content',
             ]"
             v-if="index === currentIndex"
           >

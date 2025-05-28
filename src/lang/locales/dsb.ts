@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Product Description',
     completeRecipeCollection: 'Complete Recipe Collection',
     smartAnalysis: 'Smart Analysis',
+    qa: 'Pomocny centrum', // 帮助中心
+    poster: 'Plakat', // 海报
     all: 'All',
     noData: 'No data available',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Zbierasz',
     collectSuffix: ' urządów',
     myCollection: 'Móje zbieranje',
+  },
+  qa: {
+    search: 'Pytańka pytaś', // 搜索问题
   },
 }
 export default zh_CN

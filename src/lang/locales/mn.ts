@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Бүтээгдэхүүний тодорхойлолт',
     completeRecipeCollection: 'Жорны цуглуулга',
     smartAnalysis: 'Ухаалаг шинжилгээ',
+    qa: 'Тусламжийн Төв',
+    poster: 'Постер',
     all: 'бүгд',
     noData: 'Одоогоор өгөгдөл алга',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'та хадгалагдсан',
     collectSuffix: 'удирдлага',
     myCollection: ' minuу хадгалга',
+  },
+  qa: {
+    search: 'Асуудлын Хайлт',
   },
 }
 export default zh_CN

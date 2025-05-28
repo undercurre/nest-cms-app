@@ -1,14 +1,16 @@
 // 北桑海语
 const zh_CN = {
   common: {
-    equipmentList: 'Equipment List',
-    smartKitchenAssistant: 'Smart Kitchen Assistant',
-    operationInstructions: 'Operation Guide',
-    productDescription: 'Product Description',
-    completeRecipeCollection: 'Complete Recipe Collection',
-    smartAnalysis: 'Smart Analysis',
-    all: 'All',
-    noData: 'No data available',
+    equipmentList: 'An teŋi kayayu',
+    smartKitchenAssistant: 'Kayna kayna n dafa',
+    operationInstructions: 'Tawri kayna',
+    productDescription: 'Kayna boro',
+    completeRecipeCollection: 'Kayna kayna teŋi',
+    smartAnalysis: 'Kayna kayna furu',
+    qa: 'Sariya kayna', // 帮助中心
+    poster: 'Pasta', // 海报
+    all: 'Boro',
+    noData: 'Kayna ga ba',
   },
   product: {
     successfullyAdded: 'Successfully added',
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'An teŋi',
     collectSuffix: 'kayayu',
     myCollection: 'Nay teŋi',
+  },
+  qa: {
+    search: 'Kayna furu', // 搜索问题
   },
 }
 export default zh_CN

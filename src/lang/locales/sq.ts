@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Përshkrimi i Produktit',
     completeRecipeCollection: 'Koleksion Recetash',
     smartAnalysis: 'Analizë e zgjuar',
+    qa: 'Qendra e Ndihmës', // 帮助中心
+    poster: 'Poster', // 海报
     all: 'të gjithë',
     noData: 'Nuk ka ende të dhëna',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Mballë kthyer',
     collectSuffix: 'përkatese',
     myCollection: 'Kolleksioni im',
+  },
+  qa: {
+    search: 'Kërko pyetje', // 搜索问题
   },
 }
 export default zh_CN

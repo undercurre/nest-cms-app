@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: "Ennyonnyola y'ebintu",
     completeRecipeCollection: "Okukunganya enkola y'emmere",
     smartAnalysis: 'Okwekenenya okw’amagezi',
+    qa: "Kituu ky'Obuyambi",
+    poster: 'Posita',
     all: '-onna',
     noData: "Tewali data yonna n'okutuusa kati",
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Oli kunganyidde',
     collectSuffix: 'ebyuma',
     myCollection: 'Ebyuma Byange',
+  },
+  qa: {
+    search: 'Okunoonya Ebizibu',
   },
 }
 export default zh_CN

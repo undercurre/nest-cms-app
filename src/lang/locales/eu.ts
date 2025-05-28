@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Produktuaren deskribapena',
     completeRecipeCollection: 'Errezeta bilduma',
     smartAnalysis: 'Analisi Adimenduna',
+    qa: 'Laguntza Zentroa',
+    poster: 'Poster',
     all: 'guztiak',
     noData: 'Daturik ez oraindik',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Eragiketa egin duzu',
     collectSuffix: 'gailu',
     myCollection: 'Nire gailu kolekzioa',
+  },
+  qa: {
+    search: 'Aholkuak bilatu',
   },
 }
 export default zh_CN

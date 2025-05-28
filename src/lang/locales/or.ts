@@ -1,14 +1,16 @@
 // 奥里亚语
 const zh_CN = {
   common: {
-    equipmentList: 'Equipment List',
-    smartKitchenAssistant: 'Smart Kitchen Assistant',
-    operationInstructions: 'Operation Guide',
-    productDescription: 'Product Description',
-    completeRecipeCollection: 'Complete Recipe Collection',
-    smartAnalysis: 'Smart Analysis',
-    all: 'All',
-    noData: 'No data available',
+    equipmentList: 'ଉପକରଣ ତାଲିକା',
+    smartKitchenAssistant: 'ସ୍ମାର୍ଟ କିଚେନ୍ ସହାୟକ',
+    operationInstructions: 'ଚାଳନା ନିର୍ଦ୍ଦେଶାବଳୀ',
+    productDescription: 'ଉତ୍ପାଦ ବିବରଣୀ',
+    completeRecipeCollection: 'ସମ୍ପୂର୍ଣ୍ଣ ପାକପଦ୍ଧତି ସଂଗ୍ରହ',
+    smartAnalysis: 'ସ୍ମାର୍ଟ ବିଶ୍ଲେଷଣ',
+    qa: 'ସହାୟତା କେନ୍ଦ୍ର', // 帮助中心
+    poster: 'ପୋଷ୍ଟର୍', // 海报
+    all: 'ସମସ୍ତ',
+    noData: 'ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ତଥ୍ୟ ନାହିଁ',
   },
   product: {
     successfullyAdded: 'Successfully added',
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'You have bookmarked',
     collectSuffix: 'device',
     myCollection: 'my collection',
+  },
+  qa: {
+    search: 'ପ୍ରଶ୍ନଗୁଡିକୁ ଖୋଜନ୍ତୁ', // 搜索问题
   },
 }
 export default zh_CN

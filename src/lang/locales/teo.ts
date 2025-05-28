@@ -1,14 +1,16 @@
 // 特索语
 const zh_CN = {
   common: {
-    equipmentList: 'Equipment List',
-    smartKitchenAssistant: 'Smart Kitchen Assistant',
-    operationInstructions: 'Operation Guide',
-    productDescription: 'Product Description',
-    completeRecipeCollection: 'Complete Recipe Collection',
-    smartAnalysis: 'Smart Analysis',
-    all: 'All',
-    noData: 'No data available',
+    equipmentList: 'Nying ma nyonyo',
+    smartKitchenAssistant: 'Kijasi kicel kucheni',
+    operationInstructions: 'Kitabo me tic',
+    productDescription: 'Lok me nyonyo',
+    completeRecipeCollection: 'Kitabo me lutu',
+    smartAnalysis: 'Nyo me tic',
+    qa: 'Kicel me lagam', // 帮助中心
+    poster: 'Picha', // 海报
+    all: 'Weng',
+    noData: 'Pe tye data',
   },
   product: {
     successfullyAdded: 'Successfully added',
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Umekosha',
     collectSuffix: 'vifaa',
     myCollection: 'Kolesi yangu',
+  },
+  qa: {
+    search: 'Yeny penyi', // 搜索问题
   },
 }
 export default zh_CN

@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Produkt reak’ Bibọrnọn',
     completeRecipeCollection: 'Recipe jạmạu',
     smartAnalysis: 'Smart Biniḍạo',
+    qa: 'ᱜᱚᱸᱲᱚᱡ ᱛᱟᱞᱢᱟ',
+    poster: 'ᱯᱚᱥᱴᱚᱨ',
     all: 'Jo̱to̱',
     noData: 'Nit hạbic̕ data bạnuk̕a',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Tumne sangrah kiya',
     collectSuffix: 'upakarana',
     myCollection: 'Mera sangrah',
+  },
+  qa: {
+    search: 'ᱟᱸᱡᱽ ᱥᱮᱸᱫᱽᱨᱟ',
   },
 }
 export default zh_CN

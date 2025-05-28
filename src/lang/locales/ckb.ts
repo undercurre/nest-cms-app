@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'پیشیانەک پ্রۆدەکت',
     completeRecipeCollection: 'جامێی ڕێسپیسەکانی',
     smartAnalysis: 'پیشخênیاری بەخبره‌نام',
+    qa: 'ناوەندی یارمەتی', // 帮助中心
+    poster: 'پۆستەر', // 海报
     all: 'هەموو',
     noData: 'نەداتای داتا',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'داتاکەی پەیوەندی',
     collectSuffix: 'داتاکە',
     myCollection: 'داتاکەی من',
+  },
+  qa: {
+    search: 'گەڕان بۆ پرسیار', // 搜索问题
   },
 }
 export default zh_CN

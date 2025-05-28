@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Product Description',
     completeRecipeCollection: 'Complete Recipe Collection',
     smartAnalysis: 'Smart Analysis',
+    qa: 'Ókiye Owáyawa',
+    poster: 'Óowapi Waŋyáŋka',
     all: 'All',
     noData: 'No data available',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Táku wičhóniŋhaŋ',
     collectSuffix: 'thókša',
     myCollection: 'Mníčhóniŋ',
+  },
+  qa: {
+    search: 'Ihúŋkeyaŋka',
   },
 }
 export default zh_CN

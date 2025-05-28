@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Produktbeschrieven',
     completeRecipeCollection: 'Vull Rezeptsammlung',
     smartAnalysis: 'Smart Analyse',
+    qa: 'Hülpzentrum',
+    poster: 'Plakaa',
     all: 'All',
     noData: 'Keen Daten',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Du hast gesammelt',
     collectSuffix: 'Apparaten',
     myCollection: 'Meine Sammlung',
+  },
+  qa: {
+    search: 'Probleemsöök',
   },
 }
 export default zh_CN

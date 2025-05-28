@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'وصف المنتج',
     completeRecipeCollection: 'مجموعة الوصفات',
     smartAnalysis: 'التحليل الذكي',
+    qa: 'مركز المساعدة',
+    poster: 'ملصق',
     all: 'الجميع',
     noData: 'لا توجد بيانات حتى الآن',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'لديك مجموعة',
     collectSuffix: 'معدات',
     myCollection: 'مجموعتي',
+  },
+  qa: {
+    search: 'بحث عن سؤال',
   },
 }
 export default zh_CN

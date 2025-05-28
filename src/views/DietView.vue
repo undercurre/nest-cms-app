@@ -98,6 +98,7 @@ onBeforeMount(async () => {
     <TabList :list="category" @change="handleCategoryChange"></TabList>
     <div
       class="w-full grid grid-cols-2 grid-rows-[repeat(2,_minmax(100px,_209px))] gap-20px p-12px flex-1 box-border overflow-scroll"
+      v-if="diet?.length"
     >
       <DietCard
         v-for="item in diet"
@@ -112,6 +113,8 @@ onBeforeMount(async () => {
         :difficulty="item.difficultyLevel"
       ></DietCard>
     </div>
+
+    <EmptyData v-else />
     <!-- <div class="mb-50px">
       <p class="text-#8B0000">下载APP查看更多菜谱 >>></p>
     </div> -->

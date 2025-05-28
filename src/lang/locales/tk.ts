@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Haryt düşündirişi',
     completeRecipeCollection: 'Doly tagamlar ýygyndysy',
     smartAnalysis: 'Akylly analiz',
+    qa: 'Kömek merkezi', // 帮助中心
+    poster: 'Plakat', // 海报
     all: 'Hemmesi',
     noData: 'Maglumat ýok',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Siz toplaydyňyz',
     collectSuffix: 'abyzlar',
     myCollection: 'Meniñ toplayşym',
+  },
+  qa: {
+    search: 'Soraglary gözle', // 搜索问题
   },
 }
 export default zh_CN

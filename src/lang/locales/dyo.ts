@@ -1,4 +1,4 @@
-// 朱拉语
+// 埃翁多语
 const zh_CN = {
   common: {
     equipmentList: 'Equipment List',
@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Product Description',
     completeRecipeCollection: 'Complete Recipe Collection',
     smartAnalysis: 'Smart Analysis',
+    qa: 'Help Center',
+    poster: 'Poster',
     all: 'All',
     noData: 'No data available',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'You have collected',
     collectSuffix: 'devices',
     myCollection: 'My Collection',
+  },
+  qa: {
+    search: 'Search Questions',
   },
 }
 export default zh_CN

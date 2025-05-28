@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'مەھسۇلات چۈشەندۈرۈشى',
     completeRecipeCollection: 'رېتسېپ توپلىمى',
     smartAnalysis: 'ئەقلىي تەھلىل',
+    qa: 'ياردەم مەركىزى', // 帮助中心
+    poster: 'پوسىتېر', // 海报
     all: 'ھەممىسى',
     noData: 'ھازىرچە ھېچقانداق سانلىق مەلۇمات يوق',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'سىز تەخسىس قىلغان',
     collectSuffix: 'ئاچ喨لار',
     myCollection: 'مەنىڭ تەخسىسىم',
+  },
+  qa: {
+    search: 'سوئال ئىزدەش', // 搜索问题
   },
 }
 export default zh_CN

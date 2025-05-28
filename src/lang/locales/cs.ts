@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Popis produktu',
     completeRecipeCollection: 'Sbírka receptů',
     smartAnalysis: 'Inteligentní analýza',
+    qa: 'Centrum nápovědy', // 帮助中心
+    poster: 'Plakát', // 海报
     all: 'vše',
     noData: 'Zatím žádná data',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Jste shromáždil',
     collectSuffix: 'zařízení',
     myCollection: 'Moje shromáždění',
+  },
+  qa: {
+    search: 'Hledat otázky', // 搜索问题
   },
 }
 export default zh_CN

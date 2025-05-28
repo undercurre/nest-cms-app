@@ -11,7 +11,7 @@
     </div>
     <div class="flex flex-col mt-20px">
       <span class="font-bold text-18px px-10px">{{ $t('diet.introduction') }}</span>
-      <p class="text-14px my-10px px-10px">{{ getI18NDescription() }}</p>
+      <p class="text-14px my-10px px-10px pre-line-content">{{ getI18NDescription() }}</p>
     </div>
     <div class="flex flex-col mt-20px">
       <span class="font-bold text-18px px-10px">{{ $t('cookbook.nutrition') }}</span>

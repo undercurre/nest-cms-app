@@ -1,12 +1,14 @@
 // 约鲁巴语
 const zh_CN = {
   common: {
-    equipmentList: 'Equipment Akojọ',
-    smartKitchenAssistant: 'Smart idana Iranlọwọ',
+    equipmentList: 'Akojọ Ẹrọ',
+    smartKitchenAssistant: 'Iranlọwọ ibi idana ọlọgbọn',
     operationInstructions: 'Itọsọna isẹ',
-    productDescription: 'ọja Apejuwe',
-    completeRecipeCollection: 'Ohunelo Gbigba',
-    smartAnalysis: 'Smart Analysis',
+    productDescription: 'Apejuwe ọja',
+    completeRecipeCollection: 'Akojọpọ ohunelo pipe',
+    smartAnalysis: 'Onínọmbà ọlọgbọn',
+    qa: 'Ile-iṣẹ Iranlọwọ', // 帮助中心
+    poster: 'Fíto', // 海报
     all: 'gbogbo',
     noData: 'Ko si data sibẹsibẹ',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'O ti pin',
     collectSuffix: 'awọn ẹrọ',
     myCollection: 'Eri mi',
+  },
+  qa: {
+    search: 'Wa ibeere', // 搜索问题
   },
 }
 export default zh_CN

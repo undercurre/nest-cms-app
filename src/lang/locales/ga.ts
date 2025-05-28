@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Cur Síos ar an Táirge',
     completeRecipeCollection: 'Bailiúchán Oidis',
     smartAnalysis: 'Anailís Chliste',
+    qa: 'Ionad Cabhrach', // 帮助中心
+    poster: 'Póstaer', // 海报
     all: 'uile',
     noData: 'Gan aon sonraí fós',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Tá tú ag cur',
     collectSuffix: 'réamh',
     myCollection: 'Réamh mo',
+  },
+  qa: {
+    search: 'Cuardaigh Ceisteanna', // 搜索问题
   },
 }
 export default zh_CN

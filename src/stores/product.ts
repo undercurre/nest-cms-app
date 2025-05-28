@@ -6,9 +6,9 @@ export const useProductStore = defineStore(
   () => {
     const id = ref(1)
     const productModel = ref('')
-    const posters = ref<string[]>([])
+    const posterImageUrls = ref<string[]>([])
 
-    return { id, productModel, posters }
+    return { id, productModel, posterImageUrls }
   },
   {
     persist: true,

@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Mbaé resá',
     completeRecipeCollection: 'Tupã resá yepé',
     smartAnalysis: 'Puranga resá',
+    qa: 'Centro de ajuda', // 帮助中心
+    poster: 'Cartaz', // 海报
     all: 'Yepé',
     noData: 'Nã i resá',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'You have collected',
     collectSuffix: 'equipment',
     myCollection: 'My collection',
+  },
+  qa: {
+    search: 'Mbaé resá atã', // 搜索问题
   },
 }
 export default zh_CN

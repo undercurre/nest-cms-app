@@ -28,11 +28,10 @@ export interface QAResPage<T> {
 }
 
 export interface Entity {
-  id: number
-  createdAt?: string
-  productModelList?: ProductModel[]
-  qaLanguageRelationList?: QAMultiLanguage[]
-  qaMultiLanguageObj?: any
+  qaId: string
+  languageCode: string
+  question: string
+  answer: string
 }
 
 export interface QAMultiLanguage extends MultiLanguage {
@@ -65,14 +64,12 @@ export interface BatchCreateParams {
  */
 export const getQAList = (params: {
   productModel: string
-  pageNo: number
+  pageIndex: number
   pageSize: number
   keyword?: string
+  question?: string
+  answer?: string
+  languageCodes?: string[]
 }) => {
-  return userService.post<
-    ResultData<{
-      qaList: Entity[]
-      total: number
-    }>
-  >(`${PORT1}/web/qa/list`, params)
+  return userService.post<ResultData<Entity[]>>(`${PORT1}/web/qa/page`, params)
 }

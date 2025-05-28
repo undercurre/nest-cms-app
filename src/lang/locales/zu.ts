@@ -6,7 +6,9 @@ const zh_CN = {
     operationInstructions: 'Umhlahlandlela Wokusebenza',
     productDescription: 'Incazelo Yomkhiqizo',
     completeRecipeCollection: 'Iqoqo Leresiphi',
-    smartAnalysis: 'Smart Analysis',
+    smartAnalysis: 'Ukuhlaziywa okuhlakaniphile',
+    qa: 'Isikhungo Sosizo', // 帮助中心
+    poster: 'Iphosta', // 海报
     all: 'konke',
     noData: 'Ayikho idatha okwamanje',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Uqokelela',
     collectSuffix: 'izixhobo',
     myCollection: 'Isicoco sami',
+  },
+  qa: {
+    search: 'Sesha imibuzo', // 搜索问题
   },
 }
 export default zh_CN

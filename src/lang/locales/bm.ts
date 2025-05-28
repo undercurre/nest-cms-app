@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Fɛn dilannenw ɲɛfɔli',
     completeRecipeCollection: 'Recipe Koleksi',
     smartAnalysis: 'Sɛgɛsɛgɛli hakilitigi',
+    qa: 'Dɛmɛba kɛnɛfɛ', // 帮助中心
+    poster: 'Fɔlɔ', // 海报
     all: 'bɛɛ',
     noData: 'Donan si ma sɔrɔ fɔlɔ',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Aw ye a sɛbɛn',
     collectSuffix: 'minɛnw',
     myCollection: 'N ka sɛbɛnw',
+  },
+  qa: {
+    search: 'Misebaya ɲini',
   },
 }
 export default zh_CN

@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Өнім сипаттамасы',
     completeRecipeCollection: 'Рецепттер жинағы',
     smartAnalysis: 'Ақылды талдау',
+    qa: 'Көмек Орталығы',
+    poster: 'Плакат',
     all: 'барлығы',
     noData: 'Әзірге деректер жоқ',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Сіз қосып алған',
     collectSuffix: 'тауар',
     myCollection: 'Менің қосымшаым',
+  },
+  qa: {
+    search: 'Мәселелерді Іздеу',
   },
 }
 export default zh_CN

@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'פּראָדוקט באַשרייַבונג',
     completeRecipeCollection: 'רעצעפּט זאַמלונג',
     smartAnalysis: 'קלוגע אנאליז',
+    qa: 'הילף צענטער', // 帮助中心
+    poster: 'פּאָסטער', // 海报
     all: 'אַלע',
     noData: 'קיין דאַטן נאָך נישט',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Du hob gesammelt',
     collectSuffix: 'אַפּאַראַטז',
     myCollection: 'Mayn sammlung',
+  },
+  qa: {
+    search: 'זוך פֿראגן', // 搜索问题
   },
 }
 export default zh_CN

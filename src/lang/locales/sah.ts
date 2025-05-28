@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Бу продукт туһунан',
     completeRecipeCollection: 'Аһылык рецептара',
     smartAnalysis: 'Умнаах анализ',
+    qa: 'Көмө Центра',
+    poster: 'Плакат',
     all: 'Барыта',
     noData: 'Билигин дааннайдара суох',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Сыҥ аалыырылган',
     collectSuffix: 'устройствалар',
     myCollection: 'Миньи с集韻лэрин',
+  },
+  qa: {
+    search: 'Мэһээйи Тылааһын',
   },
 }
 export default zh_CN

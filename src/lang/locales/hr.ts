@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Opis proizvoda',
     completeRecipeCollection: 'Zbirka recepata',
     smartAnalysis: 'Pametna analiza',
+    qa: 'Centar za pomoć',
+    poster: 'Plakat',
     all: 'sve',
     noData: 'Još nema podataka',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'imate',
     collectSuffix: 'uređaja',
     myCollection: 'Moja kolekcija',
+  },
+  qa: {
+    search: 'Pretraživanje problema',
   },
 }
 export default zh_CN

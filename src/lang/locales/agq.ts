@@ -7,8 +7,10 @@ const zh_CN = {
     productDescription: 'dísíkrípshón ya pródúkt',
     completeRecipeCollection: 'kóléksyon kúmplít ya rísípi',
     smartAnalysis: 'análís éésísánt',
+    qa: 'Mə́ndə́ŋ mə́ kə́bɛ́',
+    poster: 'Pósta',
     all: 'túmbí',
-    noData: 'nó dátu',
+    noData: 'dátu mə́ yə́',
   },
   product: {
     successfullyAdded: 'áddéd síksésfúlí',
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'wú á kólékt',
     collectSuffix: 'áwà',
     myCollection: 'kóléksyon máy',
+  },
+  qa: {
+    search: 'Fə́ŋ mə́ndə́ŋ',
   },
 }
 export default zh_CN

@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Produktuaren Deskribapena',
     completeRecipeCollection: 'Osoko Oinarrizko Kolekzioa',
     smartAnalysis: 'Analisia Inteligentua',
+    qa: 'Galderak eta Erantzunak',
+    poster: 'Afitxa',
     all: 'Guztiak',
     noData: 'Ez dago Datuik',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Bildutako',
     collectSuffix: 'gailu',
     myCollection: 'Nire Bildumak',
+  },
+  qa: {
+    search: 'Galderak bilatu',
   },
 }
 

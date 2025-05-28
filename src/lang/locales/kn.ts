@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'ಉತ್ಪನ್ನ ವಿವರಣೆ',
     completeRecipeCollection: 'ಪಾಕವಿಧಾನ ಸಂಗ್ರಹ',
     smartAnalysis: 'ಸ್ಮಾರ್ಟ್ ವಿಶ್ಲೇಷಣೆ',
+    qa: 'ಸಹಾಯ ಕೇಂದ್ರ', // 帮助中心
+    poster: 'ಪೋಸ್ಟರ್', // 海报
     all: 'ಎಲ್ಲಾ',
     noData: 'ಇನ್ನೂ ಯಾವುದೇ ಡೇಟಾ ಇಲ್ಲ.',
   },
@@ -263,6 +265,9 @@ const zh_CN = {
     collectPrefix: 'ನೀವು ಸೇರಿಸಿದ್ದೀರಿ',
     collectSuffix: 'ಸಾಧನಗಳು',
     myCollection: 'ನನ್ನ ಸೇರಿಸಿದ ಸಾಧನಗಳು',
+  },
+  qa: {
+    search: 'ಪ್ರಶ್ನೆಗಳನ್ನು ಹುಡುಕಿ', // 搜索问题
   },
 }
 

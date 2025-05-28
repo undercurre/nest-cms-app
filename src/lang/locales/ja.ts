@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: '製品説明',
     completeRecipeCollection: 'レシピ集',
     smartAnalysis: 'スマート分析',
+    qa: 'ヘルプセンター',
+    poster: 'ポスター',
     all: '全て',
     noData: 'まだデータはありません',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'あなたは収集しました',
     collectSuffix: 'デバイス',
     myCollection: '私のコレクション',
+  },
+  qa: {
+    search: '問題検索',
   },
 }
 export default zh_CN

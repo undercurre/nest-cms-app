@@ -1,14 +1,16 @@
 // 温旧语
 const zh_CN = {
   common: {
-    equipmentList: 'Equipment List',
-    smartKitchenAssistant: 'Smart Kitchen Assistant',
-    operationInstructions: 'Operation Guide',
-    productDescription: 'Product Description',
-    completeRecipeCollection: 'Complete Recipe Collection',
-    smartAnalysis: 'Smart Analysis',
-    all: 'All',
-    noData: 'No data available',
+    equipmentList: 'Lusulilo lwa vyuma',
+    smartKitchenAssistant: 'Msaidizi wa jiko wa kisasa',
+    operationInstructions: 'Malagizo ga utendaji',
+    productDescription: 'Maelezo ga chihunda',
+    completeRecipeCollection: 'Mkusanyiko wa mapishi',
+    smartAnalysis: 'Uchambuzi wa kisasa',
+    qa: 'Kituo cha msaada', // 帮助中心
+    poster: 'Picha', // 海报
+    all: 'Vyose',
+    noData: 'Hakuna data',
   },
   product: {
     successfullyAdded: 'Successfully added',
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'You have bookmarked',
     collectSuffix: 'device',
     myCollection: 'my collection',
+  },
+  qa: {
+    search: 'Tafuta maswali', // 搜索问题
   },
 }
 export default zh_CN

@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Description du produit',
     completeRecipeCollection: 'Collection de recettes',
     smartAnalysis: 'Analyse intelligente',
+    qa: "Centre d'aide",
+    poster: 'Affiche',
     all: 'tous',
     noData: 'Aucune donnée pour le moment',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Vous avez collecté',
     collectSuffix: 'appareils',
     myCollection: 'Ma collection',
+  },
+  qa: {
+    search: 'Rechercher des questions',
   },
 }
 export default zh_CN

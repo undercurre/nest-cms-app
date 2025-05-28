@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'የምርት መግለጫ',
     completeRecipeCollection: 'የምግብ አዘገጃጀት ስብስብ',
     smartAnalysis: 'ብልጥ ትንተና',
+    qa: 'ማርፍያ ማድረسة',
+    poster: 'ፕስቴር',
     all: 'ሁሉም',
     noData: 'እስካሁን ምንም ውሂብ የለም።',
   },
@@ -312,5 +314,6 @@ const zh_CN = {
     collectSuffix: 'መሣሪያ',
     myCollection: 'የኔ ስብስብ',
   },
+  qa: { search: 'የፈልጉ ስያጭቶች' },
 }
 export default zh_CN

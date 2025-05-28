@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Descrizione del prodotto',
     completeRecipeCollection: 'Raccolta di ricette',
     smartAnalysis: 'Analisi intelligente',
+    qa: 'Centro Assistenza',
+    poster: 'Poster',
     all: 'Tutto',
     noData: 'Nessun dato ancora',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'haii',
     collectSuffix: 'dispositivi',
     myCollection: 'Mia collezione',
+  },
+  qa: {
+    search: 'Ricerca Problemi',
   },
 }
 export default zh_CN

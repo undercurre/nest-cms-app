@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: "Insobanuro y'igicuruzwa",
     completeRecipeCollection: "Ikoraniro ry'amaresipe",
     smartAnalysis: "Isesengura ry'ubwenge",
+    qa: "Ikirimba c'Ubufasha",
+    poster: 'Afiche',
     all: 'vyose',
     noData: 'Nta makuru aracariho',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Ukorera',
     collectSuffix: 'vifaa',
     myCollection: 'Koresi yangu',
+  },
+  qa: {
+    search: 'Gushakisha Ibibazo',
   },
 }
 export default zh_CN

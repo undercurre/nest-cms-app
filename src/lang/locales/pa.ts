@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'ਉਤਪਾਦ ਵੇਰਵਾ',
     completeRecipeCollection: 'ਵਿਅੰਜਨ ਸੰਗ੍ਰਹਿ',
     smartAnalysis: 'ਸਮਾਰਟ ਵਿਸ਼ਲੇਸ਼ਣ',
+    qa: 'ਮਦਦ ਕੇਂਦਰ', // 帮助中心
+    poster: 'ਪੋਸਟਰ', // 海报
     all: 'ਸਾਰੇ',
     noData: 'ਹਾਲੇ ਕੋਈ ਡਾਟਾ ਨਹੀਂ',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'ਤੁਹਾਡਾ সংਗ੍ਰਹ ਹੋਇਆ ਹੈ',
     collectSuffix: 'ਉਪਕਰਣ',
     myCollection: 'ਮੇਰਾ ਸੰਗ੍ਰਹ',
+  },
+  qa: {
+    search: 'ਸਵਾਲ ਖੋਜੋ', // 搜索问题
   },
 }
 export default zh_CN

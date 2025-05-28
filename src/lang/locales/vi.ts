@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Mô tả sản phẩm',
     completeRecipeCollection: 'Bộ sưu tập công thức',
     smartAnalysis: 'Phân tích thông minh',
+    qa: 'Trung tâm trợ giúp', // 帮助中心
+    poster: 'Áp phích', // 海报
     all: 'tất cả',
     noData: 'Chưa có dữ liệu',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Bạn đã thu thập',
     collectSuffix: 'cụm thiết bị',
     myCollection: 'Tập hợp của tôi',
+  },
+  qa: {
+    search: 'Tìm kiếm câu hỏi', // 搜索问题
   },
 }
 export default zh_CN

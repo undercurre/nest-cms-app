@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'ⴰⵙⴻⴼⵀⴻⵎ ⵏ ⵓⴼⴰⵔⵉⵙ',
     completeRecipeCollection: 'ⴰⵊⵎⴰⵄ ⵏ Tesmelt',
     smartAnalysis: 'ⴰⵙⴽⴰⵙⵉ Ameqran',
+    qa: 'ⴰⴳⴰⵔⴰⴹ ⵏ ⵜⴰⵙⵙⴰⵏⵜ', // 帮助中心
+    poster: 'ⴰⵙⵉⵜⴻⵍ', // 海报
     all: 'ⴰⴽⴽ',
     noData: 'ⵎⴰⵣⴰⵍ ⵓⵍⴰⵛ ⵉⵙⴻⴼⴽⴰ',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'ⵉⴳⴰ ⵙⴰⵏⴳⵔⴰⵃ',
     collectSuffix: 'ⵉⴳⴰⵡⴰⵢⵢⵓⵔ',
     myCollection: 'ⵙⴰⵏⴳⴰⵔ ⵏⵉ',
+  },
+  qa: {
+    search: 'Afella n usawal', // 搜索问题
   },
 }
 export default zh_CN

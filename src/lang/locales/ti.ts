@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'መግለጺ ፍርያት',
     completeRecipeCollection: 'ምሉእ ዝርዝር ግዕ',
     smartAnalysis: 'ምሁር ትንተና',
+    qa: 'ዓይነት ሓጋዚ', // 帮助中心
+    poster: 'ፖስተር', // 海报
     all: 'ኩሉ',
     noData: 'ዳታ የለን',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'እናት ስብርእ',
     collectSuffix: 'ጤዛቶች',
     myCollection: 'ስብርኝ',
+  },
+  qa: {
+    search: 'ጥያቄታት ድለ', // 搜索问题
   },
 }
 export default zh_CN

@@ -1,14 +1,16 @@
 // 奥克语
 const zh_CN = {
   common: {
-    equipmentList: 'Equipment List',
-    smartKitchenAssistant: 'Smart Kitchen Assistant',
-    operationInstructions: 'Operation Guide',
-    productDescription: 'Product Description',
-    completeRecipeCollection: 'Complete Recipe Collection',
-    smartAnalysis: 'Smart Analysis',
-    all: 'All',
-    noData: 'No data available',
+    equipmentList: 'Lista d’equipaments',
+    smartKitchenAssistant: 'Assistent de cosina intelligent',
+    operationInstructions: 'Guida d’operacion',
+    productDescription: 'Descripcion del produch',
+    completeRecipeCollection: 'Colleccion completa de recèptas',
+    smartAnalysis: 'Analisi intelligenta',
+    qa: 'Centre d’ajuda', // 帮助中心
+    poster: 'Aficha', // 海报
+    all: 'Tot',
+    noData: 'Pas encara de donadas',
   },
   product: {
     successfullyAdded: 'Successfully added',
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'You have bookmarked',
     collectSuffix: 'device',
     myCollection: 'my collection',
+  },
+  qa: {
+    search: 'Recercar questions', // 搜索问题
   },
 }
 export default zh_CN

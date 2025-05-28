@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Enshoboorora aha kintu',
     completeRecipeCollection: "Okuteerana eby'okurya",
     smartAnalysis: "Okushwijuma kw'obwengye",
+    qa: "Ekizibu ky'ebyokuyamba", // 帮助中心
+    poster: 'Ekibaho', // 海报
     all: 'byona',
     noData: 'Tihariho data hati',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Orukusanyo',
     collectSuffix: 'dispositi',
     myCollection: 'Orukusanyo wange',
+  },
+  qa: {
+    search: 'Kishakure ebibuuzo', // 搜索问题
   },
 }
 export default zh_CN

@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Product Description',
     completeRecipeCollection: 'Complete Recipe Collection',
     smartAnalysis: 'Smart Analysis',
+    qa: 'मदद केंद्र',
+    poster: 'पोस्टर',
     all: 'All',
     noData: 'No data available',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'You have bookmarked',
     collectSuffix: 'device',
     myCollection: 'my collection',
+  },
+  qa: {
+    search: 'समस्या खोज',
   },
 }
 export default zh_CN

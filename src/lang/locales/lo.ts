@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'ລາຍ​ລະ​ອຽດ​ຜະ​ລິດ​ຕະ​ພັນ',
     completeRecipeCollection: 'ການເກັບສູດ',
     smartAnalysis: 'ການວິເຄາະອັດສະລິຍະ',
+    qa: 'ສູນຊ່ວຍເຫຼືອ',
+    poster: 'ປ້າງປະກາດ',
     all: 'ທັງໝົດ',
     noData: 'ບໍ່ມີຂໍ້ມູນເທື່ອ',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'ທ່ານໄດ້ສະ喥ຸດ',
     collectSuffix: 'ອຸດົມສິນຍາ',
     myCollection: 'ສະ喥ຸດຂອງຂ້ອຍ',
+  },
+  qa: {
+    search: 'ຄົ້ນຫາບັນຫາ',
   },
 }
 export default zh_CN

@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Deskripsyon sa Produkto',
     completeRecipeCollection: 'Koleksyon sa Resipe',
     smartAnalysis: 'Maalamon nga Pagtuki',
+    qa: 'Sentro sa Tabang', // 帮助中心
+    poster: 'Poster', // 海报
     all: 'tanan',
     noData: 'Wala pay datos',
   },
@@ -312,5 +314,8 @@ const zh_CN = {
     collectSuffix: 'dispositibo',
     myCollection: 'Akong koleksyon',
   },
+  qa: {
+    search: 'Pangitaa ang mga pangutana',
+  }, // 搜索问题
 }
 export default zh_CN

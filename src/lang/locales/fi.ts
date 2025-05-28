@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Tuotekuvaus',
     completeRecipeCollection: 'Reseptikokoelma',
     smartAnalysis: 'Älykäs analyysi',
+    qa: 'Apukeskus',
+    poster: 'Plakkaatti',
     all: 'kaikki',
     noData: 'Ei vielä tietoja',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Sinulla on',
     collectSuffix: 'laitteita',
     myCollection: 'Minun laitteistoluni',
+  },
+  qa: {
+    search: 'Haella ongelmia',
   },
 }
 export default zh_CN

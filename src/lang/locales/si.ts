@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'නිෂ්පාදනය විස්තරය',
     completeRecipeCollection: 'වට්ටෝරු එකතුව',
     smartAnalysis: 'ස්මාර්ට් විශ්ලේෂණය',
+    qa: 'උදව් මධ්‍යස්ථානය', // 帮助中心
+    poster: 'පෝස්ටරය', // 海报
     all: 'සියල්ල',
     noData: 'තවමත් දත්ත නොමැත.',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'ඔබ.collect කੀਤා ඇත',
     collectSuffix: 'ඇපරATUS්',
     myCollection: 'මගේ.COLLECTION',
+  },
+  qa: {
+    search: 'ප්‍රශ්න සොයන්න', // 搜索问题
   },
 }
 export default zh_CN

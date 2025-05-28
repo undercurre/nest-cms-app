@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Sharaxaada Alaabta',
     completeRecipeCollection: 'Ururinta karinta',
     smartAnalysis: 'Falanqaynta Wacan',
+    qa: 'Xarunta Caawinta', // 帮助中心
+    poster: 'Boorsada', // 海报
     all: 'dhammaan',
     noData: 'Wali xog malaha',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Waa aad ururiyey',
     collectSuffix: 'naalad',
     myCollection: 'Ururayaya',
+  },
+  qa: {
+    search: 'Raadi Su’aalaha', // 搜索问题
   },
 }
 export default zh_CN

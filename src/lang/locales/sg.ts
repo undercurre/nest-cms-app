@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Fango nda ti ye ni',
     completeRecipeCollection: 'Abungbi ti arecette',
     smartAnalysis: 'Analyse ti ndara',
+    qa: 'Bêndo tî Kua',
+    poster: 'Afiche',
     all: 'kwe',
     noData: 'A yeke wara pëpe mbeni données .',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Na kolekte',
     collectSuffix: 'dispositif',
     myCollection: 'Koleksyon mwa',
+  },
+  qa: {
+    search: 'Gi Lütï',
   },
 }
 export default zh_CN

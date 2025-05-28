@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Mahsulot tavsifi',
     completeRecipeCollection: "Retseptlar to'plami",
     smartAnalysis: 'Aqlli tahlil',
+    qa: 'Yordam markazi', // 帮助中心
+    poster: 'Poster', // 海报
     all: 'hammasi',
     noData: 'Hozircha maʼlumot yoʻq',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: "Siz to'pladingiz",
     collectSuffix: 'quvvatlashtiruvchilar',
     myCollection: "Mening to'plamim",
+  },
+  qa: {
+    search: 'Savollarni qidirish', // 搜索问题
   },
 }
 export default zh_CN

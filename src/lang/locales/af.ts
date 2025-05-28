@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Produkbeskrywing',
     completeRecipeCollection: 'Resepversameling',
     smartAnalysis: 'Slim Analise',
+    qa: 'Vraag en Antwoord',
+    poster: 'Plakkaat',
     all: 'almal',
     noData: 'Geen data nog nie',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Jy het boekmerk',
     collectSuffix: 'n Toestel',
     myCollection: 'Mijn boekmerk',
+  },
+  qa: {
+    search: 'Soek vrae',
   },
 }
 export default zh_CN

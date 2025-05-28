@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Rurumanta Willakuy',
     completeRecipeCollection: 'Receta Huñusqa',
     smartAnalysis: 'Análisis Inteligente nisqa',
+    qa: 'Yanapakuy Wasin',
+    poster: 'Unancha',
     all: 'llapan',
     noData: 'Manaraqmi datukuna kanchu',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Mikichisqa',
     collectSuffix: 'yantrakuna',
     myCollection: 'Nunki mikhina',
+  },
+  qa: {
+    search: 'Sasachakuy Maskay',
   },
 }
 export default zh_CN

@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Deskripsyon Produi',
     completeRecipeCollection: 'Koleksyon Resip Konplet',
     smartAnalysis: 'Analiz Entelizan',
+    qa: 'Sant Ed',
+    poster: 'Poster',
     all: 'Tou',
     noData: 'Pa gen done',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Ou ti collect',
     collectSuffix: 'aparèy',
     myCollection: 'Collection mo',
+  },
+  qa: {
+    search: 'Rod Problem',
   },
 }
 export default zh_CN

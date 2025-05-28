@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Descrição di produto',
     completeRecipeCollection: 'Coleção completa di receitas',
     smartAnalysis: 'Análise inteligente',
+    qa: 'Ụlọ enyemaka',
+    poster: 'Akwụkwọ mgbasa ozi',
     all: 'Tudu',
     noData: 'Nada di dados',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Bo já coleta',
     collectSuffix: 'dispositivos',
     myCollection: 'Minha coleção',
+  },
+  qa: {
+    search: 'Barbaadi gaaffii',
   },
 }
 export default zh_CN

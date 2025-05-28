@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Disgrifiad Cynnyrch',
     completeRecipeCollection: 'Casgliad Ryseitiau',
     smartAnalysis: 'Dadansoddiad Clyfar',
+    qa: 'Canolfan Cymorth', // 帮助中心
+    poster: 'Posteri', // 海报
     all: 'pob un',
     noData: 'Dim data eto',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Rydych wedi cyfrannu',
     collectSuffix: 'fformat',
     myCollection: 'Fy myfyrwyr',
+  },
+  qa: {
+    search: 'Chwilio cwestiynau', // 搜索问题
   },
 }
 export default zh_CN

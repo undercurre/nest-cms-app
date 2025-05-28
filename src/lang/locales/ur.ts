@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'مصنوعات کی تفصیل',
     completeRecipeCollection: 'ترکیب مجموعہ',
     smartAnalysis: 'سمارٹ تجزیہ',
+    qa: 'مدد مرکز', // 帮助中心
+    poster: 'پوسٹر', // 海报
     all: 'تمام',
     noData: 'ابھی تک کوئی ڈیٹا نہیں ہے۔',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'آپ نےCOLLECT کیا ہے',
     collectSuffix: ' thiết bị',
     myCollection: 'میراCOLLECTION',
+  },
+  qa: {
+    search: 'سوال تلاش کریں', // 搜索问题
   },
 }
 export default zh_CN

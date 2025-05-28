@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'প্রোডাক্ট বিবরণ',
     completeRecipeCollection: 'সম্পূর্ণ রেসিপি সংগ্রহ',
     smartAnalysis: 'বुद্ধিমান বিশ্লেষণ',
+    qa: 'সহায়তা কেন্দ্র',
+    poster: 'পোস্টার',
     all: 'সব',
     noData: 'তথ্য নাই',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'আপুনি সংগ্ৰহ কৰিছে',
     collectSuffix: 'ডিভাইচ',
     myCollection: 'মোৰ সংগ্ৰহ',
+  },
+  qa: {
+    search: 'প্রশ্ন খোঁজা',
   },
 }
 

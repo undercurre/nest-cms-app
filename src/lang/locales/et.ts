@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Toote kirjeldus',
     completeRecipeCollection: 'Retseptide kogu',
     smartAnalysis: 'Nutikas analüüs',
+    qa: 'Abi keskus',
+    poster: 'Plakaat',
     all: 'kõik',
     noData: 'Andmeid pole veel',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Kogutud',
     collectSuffix: 'seadet',
     myCollection: 'Minu kogumik',
+  },
+  qa: {
+    search: 'Probleeme otsima',
   },
 }
 export default zh_CN

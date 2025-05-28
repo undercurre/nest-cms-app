@@ -6,7 +6,9 @@ const zh_CN = {
     operationInstructions: 'စစ်ဆင်ရေးလမ်းညွှန်',
     productDescription: 'ကုန်ပစ္စည်းအကြောင်းအရာ',
     completeRecipeCollection: 'ကြော်နည်း စုစည်းမှု',
-    smartAnalysis: 'Smart Analysis',
+    smartAnalysis: 'စမတ်ခန့်မှန်းချက်',
+    qa: 'အကူအညီစင်တာ', // 帮助中心
+    poster: 'ပိုစတာ', // 海报
     all: 'အားလုံး',
     noData: 'အချက်အလက်မရှိသေးပါ။',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'သင်ဖြည့်ဆည်းခဲ့ပါ',
     collectSuffix: 'ကိရိယာယန္တ्र',
     myCollection: 'ကျွန်တော့်စုဆောင်းမှု',
+  },
+  qa: {
+    search: 'မေးခွန်းများ ရှာဖွေပါ', // 搜索问题
   },
 }
 export default zh_CN

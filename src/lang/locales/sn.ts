@@ -1,14 +1,16 @@
 // 绍纳语
 const zh_CN = {
   common: {
-    equipmentList: 'Equipment List',
-    smartKitchenAssistant: 'Smart Kitchen Assistant',
-    operationInstructions: 'Operation Guide',
-    productDescription: 'Product Description',
-    completeRecipeCollection: 'Complete Recipe Collection',
-    smartAnalysis: 'Smart Analysis',
-    all: 'All',
-    noData: 'No data available',
+    equipmentList: 'Rondedzero yeMidziyo',
+    smartKitchenAssistant: 'Mubatsiri weKicheni Akangwara',
+    operationInstructions: 'Gwaro reMashandiro',
+    productDescription: 'Tsananguro yeChigadzirwa',
+    completeRecipeCollection: 'Muunganidzwa weMabikirwo',
+    smartAnalysis: 'Ongororo Yakangwara',
+    qa: 'Nzvimbo Yebetsero', // 帮助中心
+    poster: 'Poster', // 海报
+    all: 'Zvose',
+    noData: 'Hapana data parizvino',
   },
   product: {
     successfullyAdded: 'Successfully added',
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Iwe wacollect',
     collectSuffix: 'vifaa',
     myCollection: 'Collection yangu',
+  },
+  qa: {
+    search: 'Tsvaga mibvunzo', // 搜索问题
   },
 }
 export default zh_CN

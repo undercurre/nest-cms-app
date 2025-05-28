@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Ibsa Omishaa',
     completeRecipeCollection: 'Walitti qabama qophii nyaataa',
     smartAnalysis: 'Xiinxala Ismaartii',
+    qa: 'Gargaarsa Guddaa', // 帮助中心
+    poster: 'Poostara', // 海报
     all: 'hunda',
     noData: 'Hanga ammaatti daataa hin jiru',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Kaasitti qabtay',
     collectSuffix: 'xidhaado',
     myCollection: 'Qabtii fiiri',
+  },
+  qa: {
+    search: 'Gaaffilee barbaadi', // 搜索问题
   },
 }
 export default zh_CN

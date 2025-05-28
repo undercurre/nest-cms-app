@@ -14,7 +14,7 @@ appStore.tabbarActive = route.name as string
 <template>
   <div class="w-full">
     <img
-      v-for="(item, index) in productStore.posters"
+      v-for="(item, index) in productStore.posterImageUrls"
       :src="item"
       :key="'poster' + index"
       class="w-full block"

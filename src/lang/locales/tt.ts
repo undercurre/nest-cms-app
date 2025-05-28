@@ -1,12 +1,14 @@
 // 鞑靼语
 const zh_CN = {
   common: {
-    equipmentList: 'Equipmentиһазлар исемлеге',
+    equipmentList: 'Җиһазлар исемлеге',
     smartKitchenAssistant: 'Акыллы кухня ярдәмчесе',
     operationInstructions: 'Операция өчен кулланма',
     productDescription: 'Продукция тасвирламасы',
     completeRecipeCollection: 'Рецепт коллекциясе',
     smartAnalysis: 'Акыллы анализ',
+    qa: 'Ярдәм үзәге', // 帮助中心
+    poster: 'Плакат', // 海报
     all: 'Барысы да',
     noData: 'Әлегә мәгълүмат юк',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Сіз сакладыңыз',
     collectSuffix: 'устройствалар',
     myCollection: 'Мин嘅 сакламаларым',
+  },
+  qa: {
+    search: 'Сорауларны эзләү', // 搜索问题
   },
 }
 export default zh_CN

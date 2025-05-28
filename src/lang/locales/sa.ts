@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'उत्पाद विवरण',
     completeRecipeCollection: 'नुस्खा संग्रह',
     smartAnalysis: 'स्मार्ट एनालिसिस',
+    qa: 'सहाय्यकेन्द्रम्',
+    poster: 'पोस्टर',
     all: 'सर्वे',
     noData: 'अद्यापि कोऽपि दत्तांशः नास्ति',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'त्वम् संग्रहितम् अकर्ष',
     collectSuffix: 'यन्त्राणि',
     myCollection: 'मम संग्रह',
+  },
+  qa: {
+    search: 'समस्यान्वेषणम्',
   },
 }
 export default zh_CN

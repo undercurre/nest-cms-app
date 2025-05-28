@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Товаран описание',
     completeRecipeCollection: 'Рецептийн гулар .',
     smartAnalysis: 'Хьекъале анализ яр',
+    qa: 'ЦӀахьа цӀенц', // 帮助中心
+    poster: 'Постер', // 海报
     all: 'дерриг',
     noData: 'Цкъачунна даннаш дац',
   },
@@ -312,5 +314,8 @@ const zh_CN = {
     collectSuffix: 'дафар',
     myCollection: 'Ма дastumad',
   },
+  qa: {
+    search: 'Суал лаха',
+  }, // 搜索问题
 }
 export default zh_CN

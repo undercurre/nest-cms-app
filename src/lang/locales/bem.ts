@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Inkumbo yacitundu',
     completeRecipeCollection: 'Ukusanganisya ubucushi bwonse',
     smartAnalysis: 'Ukulolesha ubwikoshi',
+    qa: 'Maswali na majibu',
+    poster: 'Bango',
     all: 'Bonse',
     noData: 'Tapali data',
   },
@@ -310,6 +312,9 @@ const zh_CN = {
     collectPrefix: 'Mulefwaya',
     collectSuffix: 'bakushisya',
     myCollection: 'Bakushisya bandi',
+  },
+  qa: {
+    search: 'Fwaya maswali',
   },
 }
 export default zh_CN

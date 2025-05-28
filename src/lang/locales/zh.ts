@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: '产品说明',
     completeRecipeCollection: '食谱大全',
     smartAnalysis: '智能分析',
-    qa: 'Q&A',
+    qa: '帮助中心',
     poster: '海报',
     all: '全部',
     noData: '暂无数据',

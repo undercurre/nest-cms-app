@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Ürün Açıklaması',
     completeRecipeCollection: 'Tarif Koleksiyonu',
     smartAnalysis: 'Akıllı Analiz',
+    qa: 'Yardım Merkezi', // 帮助中心
+    poster: 'Poster', // 海报
     all: 'Tümü',
     noData: 'Henüz veri yok',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Kaydetmişsiniz',
     collectSuffix: 'cihazlar',
     myCollection: 'Koleksiyonum',
+  },
+  qa: {
+    search: 'Soruları Ara', // 搜索问题
   },
 }
 export default zh_CN

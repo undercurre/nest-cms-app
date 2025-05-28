@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Product Description',
     completeRecipeCollection: 'Complete Recipe Collection',
     smartAnalysis: 'Smart Analysis',
+    qa: 'Ivontoerana Fanampiana',
+    poster: 'Afisy',
     all: 'All',
     noData: 'No data available',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Ianao no nanangona',
     collectSuffix: 'fitaovana',
     myCollection: 'Fandaharako',
+  },
+  qa: {
+    search: 'Fikarohana Olana',
   },
 }
 export default zh_CN

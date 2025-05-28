@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Περιγραφή προϊόντος',
     completeRecipeCollection: 'Συλλογή Συνταγών',
     smartAnalysis: 'Έξυπνη Ανάλυση',
+    qa: 'Κέντρο βοήθειας',
+    poster: 'Παραπτήρι',
     all: 'όλοι',
     noData: 'Δεν υπάρχουν ακόμη δεδομένα',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Έχετε συλλέξει',
     collectSuffix: 'συσκευές',
     myCollection: 'Η συλλογή μου',
+  },
+  qa: {
+    search: 'Αναζήτηση προβλημάτων',
   },
 }
 export default zh_CN

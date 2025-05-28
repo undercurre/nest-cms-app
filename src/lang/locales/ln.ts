@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Bolimbisi ya biloko',
     completeRecipeCollection: 'Collection ya ba recettes',
     smartAnalysis: 'Analyse ya mayele',
+    qa: 'Centre ya Lisalisi',
+    poster: 'Affiche',
     all: 'nyonso',
     noData: 'Ba données moko te nanu',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Woye kolesa',
     collectSuffix: 'zintebis',
     myCollection: 'Kolesi ya mwen',
+  },
+  qa: {
+    search: 'Boluki ya Makambo',
   },
 }
 export default zh_CN

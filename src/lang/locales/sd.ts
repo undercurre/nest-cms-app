@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'پيداوار جي وضاحت',
     completeRecipeCollection: 'ترڪيب جو مجموعو',
     smartAnalysis: 'سمارٽ تجزيو',
+    qa: 'مدد گاه',
+    poster: 'پوسٽر',
     all: 'سڀ',
     noData: 'اڃا تائين ڪو به ڊيٽا ناهي',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'تinhoņ sangraha kara',
     collectSuffix: 'ūpakaraņa',
     myCollection: 'mera sangraha',
+  },
+  qa: {
+    search: 'مسئلا ڳولڻ',
   },
 }
 export default zh_CN

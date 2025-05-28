@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Fakamatala ki he Koloa',
     completeRecipeCollection: 'Ko e Tānakiʻanga ʻo e Ngaahi Founga Meʻakaí',
     smartAnalysis: "'Analaiso 'atamai",
+    qa: 'Senita tokoni', // 帮助中心
+    poster: 'Pōsitā', // 海报
     all: 'kotoa',
     noData: "Te'eki ke 'iai ha fakamatala",
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Ko e ʻoe na faʻapopoki',
     collectSuffix: 'mea faʻapitoa',
     myCollection: 'Okuʻu popoki',
+  },
+  qa: {
+    search: 'Kumi ngaahi fehuʻi', // 搜索问题
   },
 }
 export default zh_CN

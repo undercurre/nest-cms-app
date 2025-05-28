@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Produkto aprašymas',
     completeRecipeCollection: 'Receptų rinkinys',
     smartAnalysis: 'Išmanioji analizė',
+    qa: 'Pagalbos centras', // 帮助中心
+    poster: 'Plakatas', // 海报
     all: 'visi',
     noData: 'Dar nėra duomenų',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Jūs įsigojote',
     collectSuffix: ' įrenginiai',
     myCollection: 'Mano kolekcija',
+  },
+  qa: {
+    search: 'Ieškoti klausimų', // 搜索问题
   },
 }
 export default zh_CN

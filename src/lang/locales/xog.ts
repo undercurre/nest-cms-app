@@ -1,14 +1,16 @@
 // 索加语
 const zh_CN = {
   common: {
-    equipmentList: 'Equipment List',
-    smartKitchenAssistant: 'Smart Kitchen Assistant',
-    operationInstructions: 'Operation Guide',
-    productDescription: 'Product Description',
-    completeRecipeCollection: 'Complete Recipe Collection',
-    smartAnalysis: 'Smart Analysis',
-    all: 'All',
-    noData: 'No data available',
+    equipmentList: 'Olukalala lw’ebikozesebwa',
+    smartKitchenAssistant: 'Omuyambi wa kkitchen ow’amagezi',
+    operationInstructions: 'Ebiragiro by’okukozesa',
+    productDescription: 'Okulambulula ekintu',
+    completeRecipeCollection: 'Enkuŋŋaana y’ebirungo byonna',
+    smartAnalysis: 'Okunoonyereza okw’amagezi',
+    qa: 'Kitundu ky’obuyambi', // 帮助中心
+    poster: 'Ekifananyi', // 海报
+    all: 'Byonna',
+    noData: 'Tewali data',
   },
   product: {
     successfullyAdded: 'Successfully added',
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'You have collected',
     collectSuffix: 'equipment',
     myCollection: 'My collection',
+  },
+  qa: {
+    search: 'Noonya ebibuuzo', // 搜索问题
   },
 }
 export default zh_CN

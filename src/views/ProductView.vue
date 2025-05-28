@@ -78,9 +78,6 @@ onBeforeMount(async () => {
   const res = await getProductInfo(Number(productId))
   curProduct.value = { ...res.data, productMultiLanguageObj: {} }
   productStore.productModel = curProduct.value?.productModel
-  productStore.posters = curProduct.value?.productMultiLanguageObj?.[locale.value]
-    ? curProduct.value?.productMultiLanguageObj?.[locale.value]?.posters
-    : curProduct.value?.productMultiLanguageObj?.['en']?.posters
   curProduct.value.productLanguageDtoList?.forEach((item) => {
     if (item.languageCode === 'zh') {
       item.languageCode = 'zh-CN'
@@ -93,6 +90,9 @@ onBeforeMount(async () => {
     },
     {},
   )
+  productStore.posterImageUrls = curProduct.value?.productMultiLanguageObj?.[locale.value]
+    ? curProduct.value?.productMultiLanguageObj?.[locale.value]?.posterImageUrls
+    : curProduct.value?.productMultiLanguageObj?.['en']?.posterImageUrls
   const deviceListRes = await getDeviceListByUid()
   deviceList.value = deviceListRes.data
 })

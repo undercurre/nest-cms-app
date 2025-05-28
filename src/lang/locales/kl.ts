@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Nioqqutissap nassuiaataa',
     completeRecipeCollection: 'Receptinik katersuineq',
     smartAnalysis: 'Smart Analyse',
+    qa: 'Ikiuinerit Qinersuut',
+    poster: 'Plakati',
     all: 'tamaasa',
     noData: 'Suli paasissutissaqanngilaq',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'ilanngeeqqippit',
     collectSuffix: 'atortup',
     myCollection: 'Atortut angusarfiga',
+  },
+  qa: {
+    search: 'Pilersaarut Peqatigiiffiit',
   },
 }
 export default zh_CN

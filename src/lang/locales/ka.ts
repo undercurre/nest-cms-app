@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'პროდუქტის აღწერა',
     completeRecipeCollection: 'რეცეპტების კოლექცია',
     smartAnalysis: 'ჭკვიანი ანალიზი',
+    qa: 'დახმარების ცენტრი',
+    poster: 'პოსტერი',
     all: 'ყველა',
     noData: 'მონაცემები ჯერ არ არის',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'თქვენ đã შენახეთ',
     collectSuffix: ' thiết bịი',
     myCollection: ' ჩემი შენახული',
+  },
+  qa: {
+    search: 'პრობლემების ძებნა',
   },
 }
 export default zh_CN

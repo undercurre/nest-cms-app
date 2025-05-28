@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'ཐོན་རྫས་ཀྱི་འགྲེལ་བཤད།',
     completeRecipeCollection: 'བཟོ་ཐབས་བསྡུ་རུབ།',
     smartAnalysis: 'རིག་པ་ཅན་གྱི་དབྱེ་ཞིབ།',
+    qa: 'རོགས་རམ་ཁང་།',
+    poster: 'པོས་ཊར།',
     all: 'ཚང་མ',
     noData: 'ད་དུང་གྲངས་ཐོ་མེད།',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'ཁྱེད་ཀྱིས་བསྡུས་ཟིན་པ།',
     collectSuffix: 'ཡོ་ཆས།',
     myCollection: 'ངའི་བསྡུས་རུབ།',
+  },
+  qa: {
+    search: 'དྲི་བ་འཚོལ།',
   },
 }
 export default zh_CN

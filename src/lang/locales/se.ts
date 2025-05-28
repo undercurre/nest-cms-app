@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Produkta dadjan',
     completeRecipeCollection: 'Olles receptaklár',
     smartAnalysis: 'Fánaš analyysa',
+    qa: 'Veahkkinálli',
+    poster: 'Plakáhtta',
     all: 'Buot',
     noData: 'Ii dátu',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'You have bookmarked',
     collectSuffix: 'device',
     myCollection: 'my collection',
+  },
+  qa: {
+    search: 'Váttisvuođa Ohcan',
   },
 }
 export default zh_CN

@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Nkolo ya produit',
     completeRecipeCollection: 'Biloko binene ya cuisine',
     smartAnalysis: 'Bokambi ya ngando',
+    qa: 'Centre d’aide', // 帮助中心
+    poster: 'Affiche', // 海报
     all: 'Nyonso',
     noData: 'Data te okokani',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Koleksyon',
     collectSuffix: 'dispositivi',
     myCollection: 'Akong koleksyon',
+  },
+  qa: {
+    search: 'Longa mituna', // 搜索问题
   },
 }
 export default zh_CN

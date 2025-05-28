@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Incazelo yomkhiqizo',
     completeRecipeCollection: 'Amaqhinga okupheka aphelele',
     smartAnalysis: 'Ukuhlaziya okuhlakaniphile',
+    qa: 'Indawo Yokulekelela',
+    poster: 'Iposi',
     all: 'Konke',
     noData: 'Ayikho idatha okwamanje',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Uqokelela',
     collectSuffix: 'izixhobo',
     myCollection: 'Isicoco som',
+  },
+  qa: {
+    search: 'Ukufuna Izinkinga',
   },
 }
 export default zh_CN

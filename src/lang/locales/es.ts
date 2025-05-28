@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Descripción del Producto',
     completeRecipeCollection: 'Colección de recetas',
     smartAnalysis: 'Análisis inteligente',
+    qa: 'Centro de ayuda', // 帮助中心
+    poster: 'Cartel', // 海报
     all: 'todo',
     noData: 'Aún no hay datos',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Has coleccionado',
     collectSuffix: 'dispositivos',
     myCollection: 'Mi colección',
+  },
+  qa: {
+    search: 'Buscar preguntas', // 搜索问题
   },
 }
 export default zh_CN

@@ -1,14 +1,16 @@
 // 泰米尔语
 const zh_CN = {
   common: {
-    equipmentList: 'கருவிகள் பட்டியல்',
-    smartKitchenAssistant: 'ஸ்மார்ட் சமையலறை உதவியாளர்',
-    operationInstructions: 'இயக்க வழிமுறைகள்',
-    productDescription: 'தயாரிப்பு விளக்கம்',
-    completeRecipeCollection: 'முழு செய்முறை தொகுப்பு',
-    smartAnalysis: 'ஸ்மார்ட் பகுப்பாய்வு',
-    all: 'அனைத்தும்',
-    noData: 'தரவு இல்லை',
+    equipmentList: 'సామగ్రి జాబితా',
+    smartKitchenAssistant: 'స్మార్ట్ కిచెన్ అసిస్టెంట్',
+    operationInstructions: 'ఆపరేషన్ గైడ్',
+    productDescription: 'ఉత్పత్తి వివరణ',
+    completeRecipeCollection: 'వంటకాల సేకరణ',
+    smartAnalysis: 'స్మార్ట్ విశ్లేషణ',
+    qa: 'సహాయ కేంద్రం', // 帮助中心
+    poster: 'పోస్టర్', // 海报
+    all: 'అన్నీ',
+    noData: 'ఇంకా డేటా లేదు',
   },
   product: {
     successfullyAdded: 'வெற்றிகரமாக சேர்க்கப்பட்டது',
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'நீங்கள் சேகரித்துள்ளீர்கள்',
     collectSuffix: 'உட்டும்பLEMENT்',
     myCollection: 'என் சேகரிப்பு',
+  },
+  qa: {
+    search: 'ప్రశ్నలను శోధించు', // 搜索问题
   },
 }
 export default zh_CN

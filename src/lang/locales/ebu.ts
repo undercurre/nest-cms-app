@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Product Description',
     completeRecipeCollection: 'Complete Recipe Collection',
     smartAnalysis: 'Smart Analysis',
+    qa: 'Help Center',
+    poster: 'Poster',
     all: 'All',
     noData: 'No data available',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Umecollect',
     collectSuffix: ' vifaa',
     myCollection: 'Collection yangu',
+  },
+  qa: {
+    search: 'Search Questions',
   },
 }
 export default zh_CN

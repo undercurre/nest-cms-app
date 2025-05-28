@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Adzɔnuwo Ŋuti Numeɖeɖe',
     completeRecipeCollection: 'Nuɖaɖa Ŋuti Nuƒoƒoƒu',
     smartAnalysis: 'Nunya ƒe ƒoƒoƒo',
+    qa: 'Kpodzi Woɔ Center',
+    poster: 'Mawuɣli',
     all: 'katã',
     noData: 'Nyatakaka aɖeke meli haɖe o',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Wòɖe ŋu',
     collectSuffix: 'mɔ̃wo',
     myCollection: 'Nye ŋuɖeɖe',
+  },
+  qa: {
+    search: 'Mawuɛ dzigba',
   },
 }
 export default zh_CN

@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Тавар ҫинчен ҫырса кӑтартни',
     completeRecipeCollection: 'Рецептсен пуххи',
     smartAnalysis: 'Ӑслӑ анализ',
+    qa: 'Пулӑшкан центрӗ', // 帮助中心
+    poster: 'Плакат', // 海报
     all: 'пурте',
     noData: 'Хальлӗхе даннӑйсем ҫук',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Вы собрали',
     collectSuffix: 'устройства',
     myCollection: 'Моя коллекция',
+  },
+  qa: {
+    search: 'Суравсемне шыраса тупӑр', // 搜索问题
   },
 }
 export default zh_CN

@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Product Description',
     completeRecipeCollection: 'Complete Recipe Collection',
     smartAnalysis: 'Smart Analysis',
+    qa: 'Лезксонь Центр',
+    poster: 'Плакат',
     all: 'All',
     noData: 'No data available',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Ты съхранił',
     collectSuffix: 'устройства',
     myCollection: 'Мой сборник',
+  },
+  qa: {
+    search: 'Проблемань Вешкома',
   },
 }
 export default zh_CN

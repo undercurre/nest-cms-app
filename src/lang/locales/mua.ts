@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Product Description',
     completeRecipeCollection: 'Complete Recipe Collection',
     smartAnalysis: 'Smart Analysis',
+    qa: 'Diŋgol Koot',
+    poster: 'Pose',
     all: 'All',
     noData: 'No data available',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Bạn đã thu thập',
     collectSuffix: ' Thiết bị',
     myCollection: 'Tập hợp của tôi',
+  },
+  qa: {
+    search: "So'o Mba'",
   },
 }
 export default zh_CN

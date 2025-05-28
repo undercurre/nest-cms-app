@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Diskrison di Produtu',
     completeRecipeCollection: 'Kolekson Kompletu di Reseitas',
     smartAnalysis: 'Analizi Inteligenti',
+    qa: 'Sentru di Ajuda', // 帮助中心
+    poster: 'Karta', // 海报
     all: 'Tudu',
     noData: 'Dadu indispovivel',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Tu xa koleitu',
     collectSuffix: 'dispositivos',
     myCollection: 'Koleção di mim',
+  },
+  qa: {
+    search: 'Busca perguntas', // 搜索问题
   },
 }
 export default zh_CN

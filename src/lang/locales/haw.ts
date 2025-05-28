@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Hōʻike huahana',
     completeRecipeCollection: 'ʻOhi meaʻai',
     smartAnalysis: 'ʻIkena akamai',
+    qa: 'Kapu Hale Kōkua',
+    poster: 'Palapala Hōʻike',
     all: 'pau loa',
     noData: 'ʻAʻohe ʻikepili i kēia manawa',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'ua hōʻiliʻili ʻoe i',
     collectSuffix: 'nā mea hana',
     myCollection: 'Kaʻu Hōʻiliʻili',
+  },
+  qa: {
+    search: 'Kimi Nīnau',
   },
 }
 export default zh_CN

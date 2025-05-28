@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Deskrizzjoni tal-Prodott',
     completeRecipeCollection: "Kollezzjoni ta' Riċetti",
     smartAnalysis: 'Analiżi Intelliġenti',
+    qa: "Ċentru ta' Għajnuna",
+    poster: 'Poster',
     all: 'kollha',
     noData: "Għad m'hemm l-ebda dejta",
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Indehba tiegħek',
     collectSuffix: 'apparat',
     myCollection: 'Ħażna tiegħi',
+  },
+  qa: {
+    search: 'Fittex Problemi',
   },
 }
 export default zh_CN

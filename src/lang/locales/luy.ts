@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Encholo yeshindu',
     completeRecipeCollection: 'Ebiakulia biosi',
     smartAnalysis: 'Okhuchela kolwongo',
+    qa: 'Tsindikho Tsya Khuwulila',
+    poster: 'Posta',
     all: 'Biosi',
     noData: 'Tsindanyo tsiaburiho',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Umekosha',
     collectSuffix: 'vifaa',
     myCollection: 'Kolesi yangu',
+  },
+  qa: {
+    search: "Khukhung'ania Ebindu",
   },
 }
 export default zh_CN

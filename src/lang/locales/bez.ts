@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Maelezo ya Bidhaa',
     completeRecipeCollection: 'Mkusanyiko wa Mapishi Kamili',
     smartAnalysis: 'Uchambuzi wa Smart',
+    qa: 'Hagere Tsomay',
+    poster: 'Shikoye',
     all: 'Zote',
     noData: 'Hakuna data kwa sasa',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Umekusanya',
     collectSuffix: 'vifaa',
     myCollection: 'Mkusanyiko Wangu',
+  },
+  qa: {
+    search: 'Tsomay Sual',
   },
 }
 export default zh_CN

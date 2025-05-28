@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Lero mar mwandu',
     completeRecipeCollection: 'Choko yore mag chiemo',
     smartAnalysis: 'Nonro mariek',
+    qa: 'Kendni Kony',
+    poster: 'Posta',
     all: 'duto',
     noData: 'Onge data nyaka sani',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Unahitaji',
     collectSuffix: 'vifaa',
     myCollection: 'Kolekshini yangu',
+  },
+  qa: {
+    search: 'Yieny Weche',
   },
 }
 export default zh_CN

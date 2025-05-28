@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Danasîna Berhemê',
     completeRecipeCollection: 'Berhevkirina Reçeteyan',
     smartAnalysis: 'Analîza Jîr',
+    qa: 'Navenda Alîkarî',
+    poster: 'Poster',
     all: 'gişt',
     noData: 'Hîn daneyên tune ne',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Ew qebûl kirî',
     collectSuffix: 'gerêk',
     myCollection: 'Colekî ye min',
+  },
+  qa: {
+    search: 'Lêgerîna Pirsgirêkan',
   },
 }
 export default zh_CN

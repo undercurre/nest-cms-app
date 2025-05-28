@@ -1,3 +1,4 @@
+// bgc
 const zh_CN = {
   common: {
     equipmentList: 'lisiti ya vifaa',
@@ -6,6 +7,8 @@ const zh_CN = {
     productDescription: 'maelezo ya bidhaa',
     completeRecipeCollection: 'mchakato wa jinsi zote',
     smartAnalysis: 'uchambuzi wa akili',
+    qa: 'Център за помощ',
+    poster: 'Постер',
     all: 'wote',
     noData: 'hakuna data',
   },
@@ -310,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'umekusanya',
     collectSuffix: 'vifaa',
     myCollection: 'makusanyo yangu',
+  },
+  qa: {
+    search: 'Търсене на въпроси',
   },
 }
 

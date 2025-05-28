@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Description du produit',
     completeRecipeCollection: 'Collection complète de recettes',
     smartAnalysis: 'Analyse intelligente',
+    qa: 'Hep Sentah',
+    poster: 'Posda',
     all: 'Tout',
     noData: 'Pas de données',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Сіз қосып алған',
     collectSuffix: 'тауар',
     myCollection: 'Менің қосымшаым',
+  },
+  qa: {
+    search: 'Painim Problem',
   },
 }
 export default zh_CN

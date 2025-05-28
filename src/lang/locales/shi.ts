@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Product Description',
     completeRecipeCollection: 'Complete Recipe Collection',
     smartAnalysis: 'Smart Analysis',
+    qa: 'ⵜⴰⵏⴻⵍⵍⵉ ⵏ ⵜⵉⵡⵙⵉ',
+    poster: 'ⴰⴼⵉⵛ',
     all: 'All',
     noData: 'No data available',
   },
@@ -307,10 +309,13 @@ const zh_CN = {
     xog: 'Sauga',
     haw: 'Hawaiian',
   },
-  list:{
-  "collectPrefix": "Igâ sangraħ",  
-  "collectSuffix": "igâwayyur",  
-  "myCollection": "Sangraħ ni"  
-}
+  list: {
+    collectPrefix: 'Igâ sangraħ',
+    collectSuffix: 'igâwayyur',
+    myCollection: 'Sangraħ ni',
+  },
+  qa: {
+    search: 'ⵔⵢⵉ ⵜⵉⵙⵏⴰⴼⵜⵉⵏ',
+  },
 }
 export default zh_CN

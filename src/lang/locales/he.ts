@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'תיאור המוצר',
     completeRecipeCollection: 'אוסף מתכונים מלא',
     smartAnalysis: 'ניתוח חכם',
+    qa: 'מרכז עזרה',
+    poster: 'פוסטר',
     all: 'הכל',
     noData: 'אין נתונים',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'יש לך',
     collectSuffix: 'מכשירים',
     myCollection: 'אוסף שלי',
+  },
+  qa: {
+    search: 'חיפוש בעיות',
   },
 }
 export default zh_CN

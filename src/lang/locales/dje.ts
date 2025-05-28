@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Bayanin Samfur',
     completeRecipeCollection: 'Janarewar Miyan',
     smartAnalysis: 'Nazarin Mairaka',
+    qa: 'Help Center', // 帮助中心
+    poster: 'Poster', // 海报
     all: 'Duka',
     noData: 'Babu Bayani',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Kun tattara',
     collectSuffix: 'na waƙaƙi',
     myCollection: 'Waƙaƙina',
+  },
+  qa: {
+    search: 'Search Questions', // 搜索问题
   },
 }
 export default zh_CN

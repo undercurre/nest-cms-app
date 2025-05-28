@@ -1,14 +1,16 @@
 // 鲁巴加丹加语
 const zh_CN = {
   common: {
-    equipmentList: 'Equipment List',
-    smartKitchenAssistant: 'Smart Kitchen Assistant',
-    operationInstructions: 'Operation Guide',
-    productDescription: 'Product Description',
-    completeRecipeCollection: 'Complete Recipe Collection',
-    smartAnalysis: 'Smart Analysis',
-    all: 'All',
-    noData: 'No data available',
+    equipmentList: 'Lisitini ya bikuma',
+    smartKitchenAssistant: 'Musaidi wa kyumba ya bilembwe',
+    operationInstructions: 'Mitindo ya misala',
+    productDescription: 'Malongi ma bidya',
+    completeRecipeCollection: 'Lisitini ya bilembwe bionso',
+    smartAnalysis: 'Disolo ya mayele',
+    qa: 'Kisika kya musungi', // 帮助中心
+    poster: 'Panseli', // 海报
+    all: 'Bionso',
+    noData: 'Doni kayi',
   },
   product: {
     successfullyAdded: 'Successfully added',
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Woye akolesa',
     collectSuffix: 'zintu',
     myCollection: 'Kolesi ya mwen',
+  },
+  qa: {
+    search: 'Luka mituna', // 搜索问题
   },
 }
 export default zh_CN

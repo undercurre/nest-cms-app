@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Vörulýsing',
     completeRecipeCollection: 'Uppskriftasafn',
     smartAnalysis: 'Snjallgreining',
+    qa: 'Aðstoðarmiðstöð',
+    poster: 'Vefspjald',
     all: 'allt',
     noData: 'Engin gögn ennþá',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'þú hefur safnað',
     collectSuffix: 'tækjum',
     myCollection: 'Mitt safn',
+  },
+  qa: {
+    search: 'Leit að vandamálum',
   },
 }
 export default zh_CN

@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Nkọwa ngwaahịa',
     completeRecipeCollection: 'Nchịkọta nri',
     smartAnalysis: 'Nyocha Smart',
+    qa: 'Ụlọ enyemaka', // 帮助中心
+    poster: 'Mgbasa ozi', // 海报
     all: 'niile',
     noData: 'Enweghị data ma',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Ogechi',
     collectSuffix: ' ngwaahịa',
     myCollection: 'Ngwakọta m',
+  },
+  qa: {
+    search: 'Chọọ ajụjụ', // 搜索问题
   },
 }
 export default zh_CN

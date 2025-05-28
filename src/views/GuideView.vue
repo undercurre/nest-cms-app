@@ -58,5 +58,6 @@ const playVideo = (e: number) => {
       <VideoPlayerBox :url="videoUrl" />
     </van-sticky>
     <VideoList :list="guides" @play="playVideo" />
+    <EmptyData v-if="!guides?.length" />
   </div>
 </template>

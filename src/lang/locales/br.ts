@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Deskrivadur ar produ',
     completeRecipeCollection: 'Dastumad rekipeoù',
     smartAnalysis: 'Dielfennadur speredek',
+    qa: 'Kreiz skoazell',
+    poster: 'Afenner',
     all: 'holl',
     noData: "Roadenn ebet c'hoazh",
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Kemeret ho peus',
     collectSuffix: 'dafar',
     myCollection: 'Ma dastumad',
+  },
+  qa: {
+    search: 'Klask',
   },
 }
 export default zh_CN

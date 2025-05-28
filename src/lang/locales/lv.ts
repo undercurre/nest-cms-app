@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Produkta apraksts',
     completeRecipeCollection: 'Pilnīga receptu kolekcija',
     smartAnalysis: 'Gudrā analīze',
+    qa: 'Palīdzības Centrs',
+    poster: 'Plakāts',
     all: 'Viss',
     noData: 'Nav datu',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Jūs ieguva',
     collectSuffix: ' ierīces',
     myCollection: 'Mana kolekcija',
+  },
+  qa: {
+    search: 'Problēmu Meklēšana',
   },
 }
 export default zh_CN

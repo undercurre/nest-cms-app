@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Product Description',
     completeRecipeCollection: 'Complete Recipe Collection',
     smartAnalysis: 'Smart Analysis',
+    qa: 'Githungu Kia Kwenda',
+    poster: 'Posta',
     all: 'All',
     noData: 'No data available',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Umekosha',
     collectSuffix: 'vifaa',
     myCollection: 'Kolesi yangu',
+  },
+  qa: {
+    search: 'Gucaria Mathina',
   },
 }
 export default zh_CN

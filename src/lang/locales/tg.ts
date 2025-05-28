@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Тавсифи Маҳсулот',
     completeRecipeCollection: 'Маҷмӯаи рецептҳо',
     smartAnalysis: 'Таҳлили оқилона',
+    qa: 'Маркази кӯмак', // 帮助中心
+    poster: 'Плакат', // 海报
     all: 'ҳама',
     noData: 'Ҳанӯз маълумот нест',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Сиз дохлад',
     collectSuffix: 'устроиства',
     myCollection: 'Куллекцияи ман',
+  },
+  qa: {
+    search: 'Ҷустуҷӯи саволҳо', // 搜索问题
   },
 }
 export default zh_CN

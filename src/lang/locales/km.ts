@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'ការពិពណ៌នាផលិតផល',
     completeRecipeCollection: 'ការប្រមូលរូបមន្ត',
     smartAnalysis: 'ការវិភាគឆ្លាតវៃ',
+    qa: 'មជ្ឈមណ្ឌលជំនួយ',
+    poster: 'ប៉ុស្តិ៍',
     all: 'ទាំងអស់។',
     noData: 'មិនមានទិន្នន័យនៅឡើយទេ',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'អ្នកបានទទួលបាន',
     collectSuffix: 'វិទ្យាស្ថាន',
     myCollection: 'បន្ទប់របស់ខ្ញុំ',
+  },
+  qa: {
+    search: 'ការស្វែងរកបញ្ហា',
   },
 }
 export default zh_CN

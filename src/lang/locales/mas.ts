@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Product Description',
     completeRecipeCollection: 'Complete Recipe Collection',
     smartAnalysis: 'Smart Analysis',
+    qa: 'Enkang Olchani',
+    poster: 'Eserata',
     all: 'All',
     noData: 'No data available',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Umechunguza',
     collectSuffix: 'vifaa',
     myCollection: 'Kolekshini yangu',
+  },
+  qa: {
+    search: 'Aanyun Enkitu',
   },
 }
 export default zh_CN

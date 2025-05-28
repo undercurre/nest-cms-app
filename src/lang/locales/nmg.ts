@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Product Description',
     completeRecipeCollection: 'Complete Recipe Collection',
     smartAnalysis: 'Smart Analysis',
+    qa: 'Help Senta',
+    poster: 'Posta',
     all: 'All',
     noData: 'No data available',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Umejipatia',
     collectSuffix: 'vifaa',
     myCollection: 'Kolekshini yangu',
+  },
+  qa: {
+    search: 'Painim Problem',
   },
 }
 export default zh_CN

@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Tegtal produit bi',
     completeRecipeCollection: 'Dajale rëset',
     smartAnalysis: 'Càmbaru Smart',
+    qa: 'Centro de ayuda', // 帮助中心
+    poster: 'Poster', // 海报
     all: 'lépp',
     noData: 'Ba tay amul ay done',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Na def',
     collectSuffix: 'dispositif',
     myCollection: 'Def mi',
+  },
+  qa: {
+    search: 'Seetal laaj yi', // 搜索问题
   },
 }
 export default zh_CN

@@ -7,6 +7,8 @@ const zh_CN = {
     productDescription: 'Deskripsi Produk',
     completeRecipeCollection: 'Koleksi Resep Lengkap',
     smartAnalysis: 'Analisis Pintar',
+    qa: 'Pusat Bantuan',
+    poster: 'Poster',
     all: 'Semua',
     noData: 'Tidak Ada Data',
   },
@@ -311,6 +313,9 @@ const zh_CN = {
     collectPrefix: 'Anda telah mengumpulkan',
     collectSuffix: 'perangkat',
     myCollection: 'Koleksi Saya',
+  },
+  qa: {
+    search: 'Pencarian Masalah',
   },
 }
 export default zh_CN
