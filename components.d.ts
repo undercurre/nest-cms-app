@@ -35,8 +35,6 @@ declare module 'vue' {
     VanNavBar: typeof import('vant/es')['NavBar']
     VanSearch: typeof import('vant/es')['Search']
     VanSticky: typeof import('vant/es')['Sticky']
-    VanTabbar: typeof import('vant/es')['Tabbar']
-    VanTabbarItem: typeof import('vant/es')['TabbarItem']
     VideoCard: typeof import('./src/components/guide/VideoCard.vue')['default']
     VideoList: typeof import('./src/components/guide/VideoList.vue')['default']
     VideoPlayerBox: typeof import('./src/components/guide/VideoPlayerBox.vue')['default']

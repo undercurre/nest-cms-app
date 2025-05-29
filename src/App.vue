@@ -4,11 +4,13 @@ import { RouterView, useRoute } from 'vue-router'
 import router from '@/router'
 import { useProductStore } from '@/stores/product'
 
+import { useLocation } from '@/hooks/useLocation'
 import { useThemeMode } from '@/hooks/useThemeMode'
+import { useAppStore } from '@/stores/app'
 import { computed, onMounted, ref } from 'vue'
-import { useLocation } from './hooks/useLocation'
 
 const route = useRoute()
+const appStore = useAppStore()
 
 // 检查当前路由是否为 list
 const isListRoute = computed(() => route.name === 'list')
@@ -150,7 +152,6 @@ onMounted(() => {
     </van-nav-bar>
     <div class="flex flex-col h-full main-content">
       <div class="shadow-md w-full h-46px"></div>
-
       <div class="w-full flex-1 overflow-hidden">
         <div class="h-full overflow-scroll router-container">
           <Transition :css="false" @enter="enter" @leave="leave">
@@ -164,6 +165,7 @@ onMounted(() => {
       :defaultColor="themeMode === 'dark' ? '#ffffff' : '#9ca3af'"
       :activeColor="themeMode === 'dark' ? 'rgba(255, 107, 107, 0.8)' : '#ff6b6b'"
     />
+    <LanguageSwitcher v-if="appStore.tabbarActive == 'product'" />
     <TipIcon v-if="productStore.posterImageUrls?.length" />
   </div>
 </template>

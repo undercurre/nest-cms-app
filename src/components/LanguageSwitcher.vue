@@ -1,5 +1,5 @@
 <template>
-  <van-dropdown-menu ref="menuRef" class="dropdown-cus absolute top-24px right-24px">
+  <van-dropdown-menu ref="menuRef" class="dropdown-cus absolute top-60px right-24px z-999">
     <van-dropdown-item v-model="currentLocale" :options="options" @change="changeLanguage" />
   </van-dropdown-menu>
 </template>
