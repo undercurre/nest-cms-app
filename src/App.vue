@@ -129,7 +129,7 @@ onMounted(() => {
       :defaultColor="themeMode === 'dark' ? '#ffffff' : '#9ca3af'"
       :activeColor="themeMode === 'dark' ? 'rgba(255, 107, 107, 0.8)' : '#ff6b6b'"
     />
-    <TipIcon />
+    <TipIcon v-if="productStore.posterImageUrls?.length" />
   </div>
 </template>
 
