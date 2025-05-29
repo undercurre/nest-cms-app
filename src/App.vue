@@ -23,6 +23,13 @@ const couponShow = ref(false)
 const tabList = computed(() => {
   return [
     {
+      name: 'poster',
+      icon: 'material-symbols:imagesmode-outline',
+      path: `/poster/${productStore.id}`,
+      text: 'common.poster',
+      hidden: !productStore.posterImageUrls?.length,
+    },
+    {
       name: 'guide',
       icon: 'nrk:media-programguide',
       path: `/guide/${productStore.id}`,
@@ -33,13 +40,6 @@ const tabList = computed(() => {
       icon: 'icon-park-outline:ad-product',
       path: `/product/${productStore.id}`,
       text: 'common.productDescription',
-    },
-    {
-      name: 'poster',
-      icon: 'material-symbols:imagesmode-outline',
-      path: `/poster/${productStore.id}`,
-      text: 'common.poster',
-      hidden: !productStore.posterImageUrls?.length,
     },
     {
       name: 'diet',
@@ -90,7 +90,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="w-100vw h-100vh">
+  <div class="w-100vw h-100vh relative">
     <van-nav-bar
       class="app-title-bar"
       :safe-area-inset-top="true"
@@ -129,6 +129,7 @@ onMounted(() => {
       :defaultColor="themeMode === 'dark' ? '#ffffff' : '#9ca3af'"
       :activeColor="themeMode === 'dark' ? 'rgba(255, 107, 107, 0.8)' : '#ff6b6b'"
     />
+    <TipIcon />
   </div>
 </template>
 

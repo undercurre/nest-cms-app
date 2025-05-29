@@ -22,6 +22,7 @@ declare module 'vue' {
     TabBar: typeof import('./src/components/TabBar.vue')['default']
     TabList: typeof import('./src/components/diet/TabList.vue')['default']
     TheWelcome: typeof import('./src/components/TheWelcome.vue')['default']
+    TipIcon: typeof import('./src/components/TipIcon.vue')['default']
     VanButton: typeof import('vant/es')['Button']
     VanCellGroup: typeof import('vant/es')['CellGroup']
     VanCollapse: typeof import('vant/es')['Collapse']
