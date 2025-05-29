@@ -98,13 +98,13 @@ const enter = (el, done) => {
       'transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.8s ease'
     el.style.transform = 'translate3d(0, 0, 0)'
     el.style.opacity = '1'
-  }, 500)
+  }, 300)
 
   // 动画完成
   setTimeout(() => {
     done()
     el.style.transition = ''
-  }, 1100)
+  }, 800)
 }
 
 // 离开动画

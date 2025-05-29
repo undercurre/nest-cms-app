@@ -90,6 +90,9 @@ onBeforeMount(async () => {
     },
     {},
   )
+  productStore.posterImageUrls = curProduct.value?.productMultiLanguageObj?.[locale.value]
+    ? curProduct.value?.productMultiLanguageObj?.[locale.value]?.posterImageUrls
+    : curProduct.value?.productMultiLanguageObj?.['en']?.posterImageUrls
   const deviceListRes = await getDeviceListByUid()
   deviceList.value = deviceListRes.data
 })
