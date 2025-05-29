@@ -36,7 +36,7 @@ const handleTabClick = (item: {
 
 <template>
   <ul
-    class="tab-bar text-12px fixed bottom-0 left-0 w-full border-t-1 border-solid border-#f5f6f7 bg-white h-50px flex justify-around items-center"
+    class="tab-bar text-12px fixed left-0 w-full border-t-1 border-solid border-#f5f6f7 bg-white h-50px flex justify-around items-center"
   >
     <template v-for="item in tabList" :key="item.name">
       <li
@@ -62,4 +62,9 @@ const handleTabClick = (item: {
   </ul>
 </template>
 
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+.tab-bar {
+  bottom: calc(constant(safe-area-inset-bottom) + 0px); /* 兼容 iOS < 11.2 */
+  bottom: calc(env(safe-area-inset-bottom) + 0px); /* 兼容 iOS >= 11.2 */
+}
+</style>

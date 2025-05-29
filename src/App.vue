@@ -115,7 +115,7 @@ onMounted(() => {
         <!-- @click="go2AI" -->
       </template>
     </van-nav-bar>
-    <div class="flex flex-col h-full p-b-50px">
+    <div class="flex flex-col h-full main-content">
       <div class="shadow-md w-full h-46px"></div>
 
       <div class="w-full flex-1 overflow-hidden">
@@ -202,5 +202,9 @@ nav a:first-of-type {
   .van-tabbar-item {
     text-align: center;
   }
+}
+.main-content {
+  padding-bottom: calc(constant(safe-area-inset-bottom) + 50px); /* 兼容 iOS < 11.2 */
+  padding-bottom: calc(env(safe-area-inset-bottom) + 50px); /* 兼容 iOS >= 11.2 */
 }
 </style>
