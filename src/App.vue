@@ -77,7 +77,40 @@ const { getLocation } = useLocation()
 
 // 获取系统色系
 const { getThemeMode, themeMode } = useThemeMode()
+// 进入动画
+const enter = (el, done) => {
+  // 初始状态：页面在屏幕后方（Z轴负方向）
+  el.style.transform = 'translate3d(0, 0, -300px)'
+  el.style.opacity = '0'
 
+  // 动画1：向后移动（远离用户）
+  setTimeout(() => {
+    el.style.transition = 'transform 0.5s ease, opacity 0.5s ease'
+    el.style.transform = 'translate3d(0, 0, -600px)'
+    el.style.opacity = '0.3'
+  }, 10)
+
+  // 动画2：向前移动到屏幕（带反弹效果）
+  setTimeout(() => {
+    el.style.transition =
+      'transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.8s ease'
+    el.style.transform = 'translate3d(0, 0, 0)'
+    el.style.opacity = '1'
+  }, 500)
+
+  // 动画完成
+  setTimeout(() => {
+    done()
+    el.style.transition = ''
+  }, 1100)
+}
+
+// 离开动画
+const leave = (el, done) => {
+  // 直接隐藏页面（可根据需要添加反向动画）
+  el.style.opacity = '0'
+  setTimeout(done, 500)
+}
 onMounted(() => {
   setTimeout(() => {
     couponShow.value = true
@@ -119,8 +152,10 @@ onMounted(() => {
       <div class="shadow-md w-full h-46px"></div>
 
       <div class="w-full flex-1 overflow-hidden">
-        <div class="h-full overflow-scroll">
-          <RouterView />
+        <div class="h-full overflow-scroll router-container">
+          <Transition :css="false" @enter="enter" @leave="leave">
+            <RouterView class="router-view" />
+          </Transition>
         </div>
       </div>
     </div>
@@ -206,5 +241,18 @@ nav a:first-of-type {
 .main-content {
   padding-bottom: calc(constant(safe-area-inset-bottom) + 50px); /* 兼容 iOS < 11.2 */
   padding-bottom: calc(env(safe-area-inset-bottom) + 50px); /* 兼容 iOS >= 11.2 */
+}
+
+.router-container {
+  position: relative;
+  height: 100%;
+  perspective: 1200px; /* 透视强度 */
+  overflow-x: hidden;
+}
+
+.router-view {
+  box-sizing: border-box;
+  backface-visibility: hidden; /* 优化3D渲染 */
+  transform-style: preserve-3d;
 }
 </style>

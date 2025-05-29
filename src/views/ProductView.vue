@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { getProductInfo, type Product } from '@/api/modules/product'
 import { getUrlConcat } from '@/utils/index'
-import { computed, onBeforeMount, ref } from 'vue'
+import { computed, onBeforeMount, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
 import { collectProduct, getDeviceListByUid } from '@/api/modules/list'
@@ -90,12 +90,18 @@ onBeforeMount(async () => {
     },
     {},
   )
-  productStore.posterImageUrls = curProduct.value?.productMultiLanguageObj?.[locale.value]
-    ? curProduct.value?.productMultiLanguageObj?.[locale.value]?.posterImageUrls
-    : curProduct.value?.productMultiLanguageObj?.['en']?.posterImageUrls
   const deviceListRes = await getDeviceListByUid()
   deviceList.value = deviceListRes.data
 })
+
+watch(
+  () => locale.value,
+  () => {
+    productStore.posterImageUrls = curProduct.value?.productMultiLanguageObj?.[locale.value]
+      ? curProduct.value?.productMultiLanguageObj?.[locale.value]?.posterImageUrls
+      : curProduct.value?.productMultiLanguageObj?.['en']?.posterImageUrls
+  },
+)
 </script>
 
 <template>

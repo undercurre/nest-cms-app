@@ -40,29 +40,31 @@ onMounted(() => {
 })
 </script>
 <template>
-  <van-sticky offset-top="46px">
-    <van-search
-      class="w-full qa-search"
-      v-model="keyword"
-      :placeholder="$t('qa.search')"
-      @search="getData"
-      @blur="getData"
-    />
-  </van-sticky>
-  <div class="bg-#f6f6f6 p-t-12px qa-page" v-if="qaList?.length">
-    <van-collapse v-model="activeName" accordion>
-      <van-collapse-item
-        :border="false"
-        :title="item.question"
-        v-for="(item, index) in qaList"
-        :name="`qa-${index}`"
-        :key="index"
-      >
-        <span class="pre-line-content">{{ item.answer }}</span>
-      </van-collapse-item>
-    </van-collapse>
+  <div>
+    <van-sticky offset-top="46px">
+      <van-search
+        class="w-full qa-search"
+        v-model="keyword"
+        :placeholder="$t('qa.search')"
+        @search="getData"
+        @blur="getData"
+      />
+    </van-sticky>
+    <div class="bg-#f6f6f6 p-t-12px qa-page" v-if="qaList?.length">
+      <van-collapse v-model="activeName" accordion>
+        <van-collapse-item
+          :border="false"
+          :title="item.question"
+          v-for="(item, index) in qaList"
+          :name="`qa-${index}`"
+          :key="index"
+        >
+          <span class="pre-line-content">{{ item.answer }}</span>
+        </van-collapse-item>
+      </van-collapse>
+    </div>
+    <EmptyData v-else />
   </div>
-  <EmptyData v-else />
 </template>
 <style lang="less">
 .qa-page {
