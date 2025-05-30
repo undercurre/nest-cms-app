@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Apejuwe ọja',
     completeRecipeCollection: 'Akojọpọ ohunelo pipe',
     smartAnalysis: 'Onínọmbà ọlọgbọn',
-    qa: 'Ile-iṣẹ Iranlọwọ', // 帮助中心
+    qa: 'Ile-iṣẹ Iranlọwọ',
     poster: 'Fíto', // 海报
     all: 'gbogbo',
     noData: 'Ko si data sibẹsibẹ',

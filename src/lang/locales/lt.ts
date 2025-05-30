@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Produkto aprašymas',
     completeRecipeCollection: 'Receptų rinkinys',
     smartAnalysis: 'Išmanioji analizė',
-    qa: 'Pagalbos centras', // 帮助中心
+    qa: 'Pagalbos centras',
     poster: 'Plakatas', // 海报
     all: 'visi',
     noData: 'Dar nėra duomenų',

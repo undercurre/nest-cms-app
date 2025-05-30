@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Vørulýsing',
     completeRecipeCollection: 'Uppskriftsavn',
     smartAnalysis: 'Snild greining',
-    qa: 'Hjálparmiðstøðin', // 帮助中心
+    qa: 'Hjálparmiðstøðin',
     poster: 'Plakat', // 海报
     all: 'altíð',
     noData: 'Ongar dátur enn',

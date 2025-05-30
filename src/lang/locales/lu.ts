@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Malongi ma bidya',
     completeRecipeCollection: 'Lisitini ya bilembwe bionso',
     smartAnalysis: 'Disolo ya mayele',
-    qa: 'Kisika kya musungi', // 帮助中心
+    qa: 'Kisika kya musungi',
     poster: 'Panseli', // 海报
     all: 'Bionso',
     noData: 'Doni kayi',

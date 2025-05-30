@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Sharaxaada Alaabta',
     completeRecipeCollection: 'Ururinta karinta',
     smartAnalysis: 'Falanqaynta Wacan',
-    qa: 'Xarunta Caawinta', // 帮助中心
+    qa: 'Xarunta Caawinta',
     poster: 'Boorsada', // 海报
     all: 'dhammaan',
     noData: 'Wali xog malaha',

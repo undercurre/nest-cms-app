@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Продукты нывæзт',
     completeRecipeCollection: 'Рецептты æмбырдгонд',
     smartAnalysis: 'Зондджын анализ',
-    qa: 'Æххуысоны центр', // 帮助中心
+    qa: 'Æххуысоны центр',
     poster: 'Плакат', // 海报
     all: 'иууылдæр',
     noData: 'Бæрæггæнæнтæ нырма нæй',

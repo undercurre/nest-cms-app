@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Haryt düşündirişi',
     completeRecipeCollection: 'Doly tagamlar ýygyndysy',
     smartAnalysis: 'Akylly analiz',
-    qa: 'Kömek merkezi', // 帮助中心
+    qa: 'Kömek merkezi',
     poster: 'Plakat', // 海报
     all: 'Hemmesi',
     noData: 'Maglumat ýok',

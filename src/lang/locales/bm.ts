@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Fɛn dilannenw ɲɛfɔli',
     completeRecipeCollection: 'Recipe Koleksi',
     smartAnalysis: 'Sɛgɛsɛgɛli hakilitigi',
-    qa: 'Dɛmɛba kɛnɛfɛ', // 帮助中心
+    qa: 'Dɛmɛba kɛnɛfɛ',
     poster: 'Fɔlɔ', // 海报
     all: 'bɛɛ',
     noData: 'Donan si ma sɔrɔ fɔlɔ',

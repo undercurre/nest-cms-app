@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Опис производа',
     completeRecipeCollection: 'Колекција рецепата',
     smartAnalysis: 'Паметна анализа',
-    qa: 'Центар за помоћ', // 帮助中心
+    qa: 'Центар за помоћ',
     poster: 'Плакат', // 海报
     all: 'све',
     noData: 'Још нема података',

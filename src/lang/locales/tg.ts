@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Тавсифи Маҳсулот',
     completeRecipeCollection: 'Маҷмӯаи рецептҳо',
     smartAnalysis: 'Таҳлили оқилона',
-    qa: 'Маркази кӯмак', // 帮助中心
+    qa: 'Маркази кӯмак',
     poster: 'Плакат', // 海报
     all: 'ҳама',
     noData: 'Ҳанӯз маълумот нест',

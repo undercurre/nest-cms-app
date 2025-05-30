@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'مەھسۇلات چۈشەندۈرۈشى',
     completeRecipeCollection: 'رېتسېپ توپلىمى',
     smartAnalysis: 'ئەقلىي تەھلىل',
-    qa: 'ياردەم مەركىزى', // 帮助中心
+    qa: 'ياردەم مەركىزى',
     poster: 'پوسىتېر', // 海报
     all: 'ھەممىسى',
     noData: 'ھازىرچە ھېچقانداق سانلىق مەلۇمات يوق',

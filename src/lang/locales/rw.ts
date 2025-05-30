@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Ibisobanuro ku bicuruzwa',
     completeRecipeCollection: 'Icyegeranyo',
     smartAnalysis: 'Isesengura ryubwenge',
-    qa: "Ikigo cy'ubufasha", // 帮助中心
+    qa: "Ikigo cy'ubufasha",
     poster: 'Ifishi', // 海报
     all: 'byose',
     noData: 'Nta makuru',

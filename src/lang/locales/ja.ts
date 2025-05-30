@@ -2,10 +2,10 @@
 const zh_CN = {
   common: {
     equipmentList: '装備リスト',
-    smartKitchenAssistant: 'スマートキッチンアシスタント',
-    operationInstructions: '操作ガイド',
-    productDescription: '製品説明',
-    completeRecipeCollection: 'レシピ集',
+    smartKitchenAssistant: 'スマートアシスタント',
+    operationInstructions: 'ガイド',
+    productDescription: '製品',
+    completeRecipeCollection: 'メニュー',
     smartAnalysis: 'スマート分析',
     qa: 'ヘルプセンター',
     poster: 'ポスター',

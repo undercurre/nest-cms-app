@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Maelezo ga chihunda',
     completeRecipeCollection: 'Mkusanyiko wa mapishi',
     smartAnalysis: 'Uchambuzi wa kisasa',
-    qa: 'Kituo cha msaada', // 帮助中心
+    qa: 'Kituo cha msaada',
     poster: 'Picha', // 海报
     all: 'Vyose',
     noData: 'Hakuna data',

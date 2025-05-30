@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'उत्पाद के विवरण बा',
     completeRecipeCollection: 'रेसिपी के संग्रह बा',
     smartAnalysis: 'स्मार्ट एनालिसिस के बा',
-    qa: 'मदद केंद्र', // 帮助中心
+    qa: 'मदद केंद्र',
     poster: 'पोस्टर', // 海报
     all: 'कुल्हि',
     noData: 'अबहीं ले कवनो डाटा नइखे',

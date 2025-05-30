@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'รายละเอียดสินค้า',
     completeRecipeCollection: 'รวมสูตรอาหารครบถ้วน',
     smartAnalysis: 'การวิเคราะห์อัจฉริยะ',
-    qa: 'ศูนย์ช่วยเหลือ', // 帮助中心
+    qa: 'ศูนย์ช่วยเหลือ',
     poster: 'โปสเตอร์', // 海报
     all: 'ทั้งหมด',
     noData: 'ไม่มีข้อมูล',

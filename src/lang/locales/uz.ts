@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Mahsulot tavsifi',
     completeRecipeCollection: "Retseptlar to'plami",
     smartAnalysis: 'Aqlli tahlil',
-    qa: 'Yordam markazi', // 帮助中心
+    qa: 'Yordam markazi',
     poster: 'Poster', // 海报
     all: 'hammasi',
     noData: 'Hozircha maʼlumot yoʻq',

@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Ürün Açıklaması',
     completeRecipeCollection: 'Tarif Koleksiyonu',
     smartAnalysis: 'Akıllı Analiz',
-    qa: 'Yardım Merkezi', // 帮助中心
+    qa: 'Yardım Merkezi',
     poster: 'Poster', // 海报
     all: 'Tümü',
     noData: 'Henüz veri yok',

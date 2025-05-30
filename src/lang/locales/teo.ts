@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Lok me nyonyo',
     completeRecipeCollection: 'Kitabo me lutu',
     smartAnalysis: 'Nyo me tic',
-    qa: 'Kicel me lagam', // 帮助中心
+    qa: 'Kicel me lagam',
     poster: 'Picha', // 海报
     all: 'Weng',
     noData: 'Pe tye data',

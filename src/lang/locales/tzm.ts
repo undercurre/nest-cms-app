@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'ⴰⵙⴻⴼⵀⴻⵎ ⵏ ⵓⴼⴰⵔⵉⵙ',
     completeRecipeCollection: 'ⴰⵊⵎⴰⵄ ⵏ Tesmelt',
     smartAnalysis: 'ⴰⵙⴽⴰⵙⵉ Ameqran',
-    qa: 'ⴰⴳⴰⵔⴰⴹ ⵏ ⵜⴰⵙⵙⴰⵏⵜ', // 帮助中心
+    qa: 'ⴰⴳⴰⵔⴰⴹ ⵏ ⵜⴰⵙⵙⴰⵏⵜ',
     poster: 'ⴰⵙⵉⵜⴻⵍ', // 海报
     all: 'ⴰⴽⴽ',
     noData: 'ⵎⴰⵣⴰⵍ ⵓⵍⴰⵛ ⵉⵙⴻⴼⴽⴰ',

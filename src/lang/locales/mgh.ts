@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Maelezo ya bidhaa',
     completeRecipeCollection: 'Mkusanyiko wa mapishi kamili',
     smartAnalysis: 'Uchambuzi wa kisasa',
-    qa: 'Kituo cha msaada', // 帮助中心
+    qa: 'Kituo cha msaada',
     poster: 'Pangazio', // 海报
     all: 'Zote',
     noData: 'Hakuna data bado',

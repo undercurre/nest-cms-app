@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Mbaé resá',
     completeRecipeCollection: 'Tupã resá yepé',
     smartAnalysis: 'Puranga resá',
-    qa: 'Centro de ajuda', // 帮助中心
+    qa: 'Centro de ajuda',
     poster: 'Cartaz', // 海报
     all: 'Yepé',
     noData: 'Nã i resá',

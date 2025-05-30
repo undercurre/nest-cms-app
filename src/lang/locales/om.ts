@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Ibsa Omishaa',
     completeRecipeCollection: 'Walitti qabama qophii nyaataa',
     smartAnalysis: 'Xiinxala Ismaartii',
-    qa: 'Gargaarsa Guddaa', // 帮助中心
+    qa: 'Gargaarsa Guddaa',
     poster: 'Poostara', // 海报
     all: 'hunda',
     noData: 'Hanga ammaatti daataa hin jiru',

@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Тавар ҫинчен ҫырса кӑтартни',
     completeRecipeCollection: 'Рецептсен пуххи',
     smartAnalysis: 'Ӑслӑ анализ',
-    qa: 'Пулӑшкан центрӗ', // 帮助中心
+    qa: 'Пулӑшкан центрӗ',
     poster: 'Плакат', // 海报
     all: 'пурте',
     noData: 'Хальлӗхе даннӑйсем ҫук',

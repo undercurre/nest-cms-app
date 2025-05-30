@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Ingcaciso yeMveliso',
     completeRecipeCollection: 'Ukuqokelelwa kweresiphi',
     smartAnalysis: 'Uhlalutyo oluhlakaniphile',
-    qa: 'Iziko loncedo', // 帮助中心
+    qa: 'Iziko loncedo',
     poster: 'Ipowusta', // 海报
     all: 'zonke',
     noData: 'Akukho datha okwangoku',

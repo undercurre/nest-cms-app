@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Kayna boro',
     completeRecipeCollection: 'Kayna kayna teŋi',
     smartAnalysis: 'Kayna kayna furu',
-    qa: 'Sariya kayna', // 帮助中心
+    qa: 'Sariya kayna',
     poster: 'Pasta', // 海报
     all: 'Boro',
     noData: 'Kayna ga ba',

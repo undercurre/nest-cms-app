@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'መግለጺ ፍርያት',
     completeRecipeCollection: 'ምሉእ ዝርዝር ግዕ',
     smartAnalysis: 'ምሁር ትንተና',
-    qa: 'ዓይነት ሓጋዚ', // 帮助中心
+    qa: 'ዓይነት ሓጋዚ',
     poster: 'ፖስተር', // 海报
     all: 'ኩሉ',
     noData: 'ዳታ የለን',

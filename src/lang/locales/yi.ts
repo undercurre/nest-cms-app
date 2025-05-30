@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'פּראָדוקט באַשרייַבונג',
     completeRecipeCollection: 'רעצעפּט זאַמלונג',
     smartAnalysis: 'קלוגע אנאליז',
-    qa: 'הילף צענטער', // 帮助中心
+    qa: 'הילף צענטער',
     poster: 'פּאָסטער', // 海报
     all: 'אַלע',
     noData: 'קיין דאַטן נאָך נישט',

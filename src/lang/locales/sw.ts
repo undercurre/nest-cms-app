@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Maelezo ya Bidhaa',
     completeRecipeCollection: 'Mkusanyiko Kamili wa Mapishi',
     smartAnalysis: 'Uchambuzi wa Akili',
-    qa: 'Kituo cha Msaada', // 帮助中心
+    qa: 'Kituo cha Msaada',
     poster: 'Picha', // 海报
     all: 'Zote',
     noData: 'Hakuna data bado',

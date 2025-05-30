@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'toki pi ijo',
     completeRecipeCollection: 'poki pi toki moku ale',
     smartAnalysis: 'sona pi pona',
-    qa: 'tomo pana sona', // 帮助中心
+    qa: 'tomo pana sona',
     poster: 'sitelen suli', // 海报
     all: 'ale',
     noData: 'ala data',

@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'توضیحات محصول',
     completeRecipeCollection: 'مجموعه دستور پخت‌ها',
     smartAnalysis: 'تحلیل هوشمند',
-    qa: 'مرکز راهنما', // 帮助中心
+    qa: 'مرکز راهنما',
     poster: 'پوستر', // 海报
     all: 'همه',
     noData: 'هنوز داده‌ای وجود ندارد',

@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Tuairisgeul an toraidh',
     completeRecipeCollection: 'Cruinneachadh reasabaidhean',
     smartAnalysis: 'Mion-sgrùdadh Glic',
-    qa: 'Ionad Cobhair', // 帮助中心
+    qa: 'Ionad Cobhair',
     poster: 'Póstaer', // 海报
     all: 'uile',
     noData: 'Gun dàta fhathast',

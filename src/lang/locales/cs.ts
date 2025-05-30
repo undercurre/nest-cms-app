@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Popis produktu',
     completeRecipeCollection: 'Sbírka receptů',
     smartAnalysis: 'Inteligentní analýza',
-    qa: 'Centrum nápovědy', // 帮助中心
+    qa: 'Centrum nápovědy',
     poster: 'Plakát', // 海报
     all: 'vše',
     noData: 'Zatím žádná data',

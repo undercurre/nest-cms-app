@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Përshkrimi i Produktit',
     completeRecipeCollection: 'Koleksion Recetash',
     smartAnalysis: 'Analizë e zgjuar',
-    qa: 'Qendra e Ndihmës', // 帮助中心
+    qa: 'Qendra e Ndihmës',
     poster: 'Poster', // 海报
     all: 'të gjithë',
     noData: 'Nuk ka ende të dhëna',

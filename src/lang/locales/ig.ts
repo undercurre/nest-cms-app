@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Nkọwa ngwaahịa',
     completeRecipeCollection: 'Nchịkọta nri',
     smartAnalysis: 'Nyocha Smart',
-    qa: 'Ụlọ enyemaka', // 帮助中心
+    qa: 'Ụlọ enyemaka',
     poster: 'Mgbasa ozi', // 海报
     all: 'niile',
     noData: 'Enweghị data ma',

@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Tsananguro yeChigadzirwa',
     completeRecipeCollection: 'Muunganidzwa weMabikirwo',
     smartAnalysis: 'Ongororo Yakangwara',
-    qa: 'Nzvimbo Yebetsero', // 帮助中心
+    qa: 'Nzvimbo Yebetsero',
     poster: 'Poster', // 海报
     all: 'Zvose',
     noData: 'Hapana data parizvino',

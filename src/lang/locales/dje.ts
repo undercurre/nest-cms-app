@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Bayanin Samfur',
     completeRecipeCollection: 'Janarewar Miyan',
     smartAnalysis: 'Nazarin Mairaka',
-    qa: 'Help Center', // 帮助中心
+    qa: 'Q&A',
     poster: 'Poster', // 海报
     all: 'Duka',
     noData: 'Babu Bayani',

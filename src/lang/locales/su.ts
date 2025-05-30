@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Panjelasan Produk',
     completeRecipeCollection: 'Kumpulan Resep',
     smartAnalysis: 'Analisis pinter',
-    qa: 'Puseur Pitulung', // 帮助中心
+    qa: 'Puseur Pitulung',
     poster: 'Poster', // 海报
     all: 'sadayana',
     noData: 'Taya data acan',

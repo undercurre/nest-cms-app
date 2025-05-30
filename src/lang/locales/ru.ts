@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Описание продукта',
     completeRecipeCollection: 'Коллекция рецептов',
     smartAnalysis: 'Умный анализ',
-    qa: 'Центр помощи', // 帮助中心
+    qa: 'Центр помощи',
     poster: 'Плакат', // 海报
     all: 'все',
     noData: 'Пока нет данных',

@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Cur Síos ar an Táirge',
     completeRecipeCollection: 'Bailiúchán Oidis',
     smartAnalysis: 'Anailís Chliste',
-    qa: 'Ionad Cabhrach', // 帮助中心
+    qa: 'Ionad Cabhrach',
     poster: 'Póstaer', // 海报
     all: 'uile',
     noData: 'Gan aon sonraí fós',

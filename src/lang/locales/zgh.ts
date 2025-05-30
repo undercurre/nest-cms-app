@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'ⵜⴰⵙⵏⴰⵙⵍⵜ ⵏ ⵓⵙⵙⵏⵏⵓⵙ',
     completeRecipeCollection: 'ⵜⴰⵎⵙⵙⵓⵜⵜ ⵏ ⵉⵎⵔⴰⵢⵏ ⵏ ⵓⵙⵙⵏⵏⵓⵙ',
     smartAnalysis: 'ⵜⴰⵙⵏⴰⵙⵍⵜ ⵏ ⵓⵙⵙⵏⵏⵓⵙ',
-    qa: 'ⴰⴳⴰⵔⴰⴹ ⵏ ⵜⴰⵙⵙⴰⵏⵜ', // 帮助中心
+    qa: 'ⴰⴳⴰⵔⴰⴹ ⵏ ⵜⴰⵙⵙⴰⵏⵜ',
     poster: 'ⴰⵙⵉⵜⴻⵍ', // 海报
     all: 'ⴰⴽⴽⵯ',
     noData: 'ⵓⵍⴰ ⵜⵉⵍⵉ ⵜⵓⵔⵜⵜⵉⵏ',

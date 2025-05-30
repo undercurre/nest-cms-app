@@ -35,6 +35,24 @@ watch(
       pageSize: 9999999,
     })
     diet.value = dietRes.data.cookbookList
+    diet.value?.forEach((item) => {
+      item.dietMultiLanguageObj = {}
+      item.cookbookMultiLanguageList?.forEach((row) => {
+        if (row.languageCode === 'zh') {
+          row.languageCode = 'zh-CN'
+        }
+      })
+      item.dietMultiLanguageObj = item?.cookbookMultiLanguageList?.reduce((acc, curr) => {
+        acc[curr.languageCode] = curr
+        return acc
+      }, {})
+      if (!Object.keys(item.dietMultiLanguageObj).length) {
+        item.dietMultiLanguageObj = {
+          zh: {},
+          en: {},
+        }
+      }
+    })
   },
 )
 
@@ -46,6 +64,24 @@ async function handleCategoryChange(key: string) {
       pageSize: 9999999,
     })
     diet.value = dietRes.data.cookbookList
+    diet.value?.forEach((item) => {
+      item.dietMultiLanguageObj = {}
+      item.cookbookMultiLanguageList?.forEach((row) => {
+        if (row.languageCode === 'zh') {
+          row.languageCode = 'zh-CN'
+        }
+      })
+      item.dietMultiLanguageObj = item?.cookbookMultiLanguageList?.reduce((acc, curr) => {
+        acc[curr.languageCode] = curr
+        return acc
+      }, {})
+      if (!Object.keys(item.dietMultiLanguageObj).length) {
+        item.dietMultiLanguageObj = {
+          zh: {},
+          en: {},
+        }
+      }
+    })
     return
   }
   const dietRes = await searchDiet({
@@ -55,6 +91,24 @@ async function handleCategoryChange(key: string) {
     pageSize: 9999999,
   })
   diet.value = dietRes.data.cookbookList
+  diet.value?.forEach((item) => {
+    item.dietMultiLanguageObj = {}
+    item.cookbookMultiLanguageList?.forEach((row) => {
+      if (row.languageCode === 'zh') {
+        row.languageCode = 'zh-CN'
+      }
+    })
+    item.dietMultiLanguageObj = item?.cookbookMultiLanguageList?.reduce((acc, curr) => {
+      acc[curr.languageCode] = curr
+      return acc
+    }, {})
+    if (!Object.keys(item.dietMultiLanguageObj).length) {
+      item.dietMultiLanguageObj = {
+        zh: {},
+        en: {},
+      }
+    }
+  })
 }
 
 onBeforeMount(async () => {

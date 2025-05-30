@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Okulambulula ekintu',
     completeRecipeCollection: 'Enkuŋŋaana y’ebirungo byonna',
     smartAnalysis: 'Okunoonyereza okw’amagezi',
-    qa: 'Kitundu ky’obuyambi', // 帮助中心
+    qa: 'Kitundu ky’obuyambi',
     poster: 'Ekifananyi', // 海报
     all: 'Byonna',
     noData: 'Tewali data',

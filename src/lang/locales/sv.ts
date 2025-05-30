@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Produktbeskrivning',
     completeRecipeCollection: 'Receptsamling',
     smartAnalysis: 'Smart analys',
-    qa: 'Hjälpcenter', // 帮助中心
+    qa: 'Hjälpcenter',
     poster: 'Affisch', // 海报
     all: 'alla',
     noData: 'Inga data ännu',

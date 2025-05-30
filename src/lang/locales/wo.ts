@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Tegtal produit bi',
     completeRecipeCollection: 'Dajale rëset',
     smartAnalysis: 'Càmbaru Smart',
-    qa: 'Centro de ayuda', // 帮助中心
+    qa: 'Centro de ayuda',
     poster: 'Poster', // 海报
     all: 'lépp',
     noData: 'Ba tay amul ay done',

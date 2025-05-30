@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Продукция тасвирламасы',
     completeRecipeCollection: 'Рецепт коллекциясе',
     smartAnalysis: 'Акыллы анализ',
-    qa: 'Ярдәм үзәге', // 帮助中心
+    qa: 'Ярдәм үзәге',
     poster: 'Плакат', // 海报
     all: 'Барысы да',
     noData: 'Әлегә мәгълүмат юк',

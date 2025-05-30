@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'پیشیانەک پ্রۆدەکت',
     completeRecipeCollection: 'جامێی ڕێسپیسەکانی',
     smartAnalysis: 'پیشخênیاری بەخبره‌نام',
-    qa: 'ناوەندی یارمەتی', // 帮助中心
+    qa: 'ناوەندی یارمەتی',
     poster: 'پۆستەر', // 海报
     all: 'هەموو',
     noData: 'نەداتای داتا',

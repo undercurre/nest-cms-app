@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Fakamatala ki he Koloa',
     completeRecipeCollection: 'Ko e Tānakiʻanga ʻo e Ngaahi Founga Meʻakaí',
     smartAnalysis: "'Analaiso 'atamai",
-    qa: 'Senita tokoni', // 帮助中心
+    qa: 'Senita tokoni',
     poster: 'Pōsitā', // 海报
     all: 'kotoa',
     noData: "Te'eki ke 'iai ha fakamatala",

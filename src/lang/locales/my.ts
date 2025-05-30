@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'ကုန်ပစ္စည်းအကြောင်းအရာ',
     completeRecipeCollection: 'ကြော်နည်း စုစည်းမှု',
     smartAnalysis: 'စမတ်ခန့်မှန်းချက်',
-    qa: 'အကူအညီစင်တာ', // 帮助中心
+    qa: 'အကူအညီစင်တာ',
     poster: 'ပိုစတာ', // 海报
     all: 'အားလုံး',
     noData: 'အချက်အလက်မရှိသေးပါ။',

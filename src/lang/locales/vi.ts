@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Mô tả sản phẩm',
     completeRecipeCollection: 'Bộ sưu tập công thức',
     smartAnalysis: 'Phân tích thông minh',
-    qa: 'Trung tâm trợ giúp', // 帮助中心
+    qa: 'Trung tâm trợ giúp',
     poster: 'Áp phích', // 海报
     all: 'tất cả',
     noData: 'Chưa có dữ liệu',

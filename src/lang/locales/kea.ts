@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Diskrison di Produtu',
     completeRecipeCollection: 'Kolekson Kompletu di Reseitas',
     smartAnalysis: 'Analizi Inteligenti',
-    qa: 'Sentru di Ajuda', // 帮助中心
+    qa: 'Sentru di Ajuda',
     poster: 'Karta', // 海报
     all: 'Tudu',
     noData: 'Dadu indispovivel',

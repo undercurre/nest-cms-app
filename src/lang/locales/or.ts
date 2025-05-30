@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'ଉତ୍ପାଦ ବିବରଣୀ',
     completeRecipeCollection: 'ସମ୍ପୂର୍ଣ୍ଣ ପାକପଦ୍ଧତି ସଂଗ୍ରହ',
     smartAnalysis: 'ସ୍ମାର୍ଟ ବିଶ୍ଲେଷଣ',
-    qa: 'ସହାୟତା କେନ୍ଦ୍ର', // 帮助中心
+    qa: 'ସହାୟତା କେନ୍ଦ୍ର',
     poster: 'ପୋଷ୍ଟର୍', // 海报
     all: 'ସମସ୍ତ',
     noData: 'ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ତଥ୍ୟ ନାହିଁ',

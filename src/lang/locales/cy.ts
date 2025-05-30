@@ -7,7 +7,7 @@ const zh_CN = {
     productDescription: 'Disgrifiad Cynnyrch',
     completeRecipeCollection: 'Casgliad Ryseitiau',
     smartAnalysis: 'Dadansoddiad Clyfar',
-    qa: 'Canolfan Cymorth', // 帮助中心
+    qa: 'Canolfan Cymorth',
     poster: 'Posteri', // 海报
     all: 'pob un',
     noData: 'Dim data eto',
