@@ -117,9 +117,13 @@ onMounted(() => {
   setTimeout(() => {
     couponShow.value = true
   }, 1000)
-  getLocation()
   setTimeout(() => {
     getThemeMode()
+  }, 300)
+})
+onMounted(() => {
+  setTimeout(() => {
+    getLocation()
   }, 300)
 })
 </script>

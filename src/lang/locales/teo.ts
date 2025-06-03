@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Nying ma nyonyo',
-    smartKitchenAssistant: 'Kijasi kicel kucheni',
-    operationInstructions: 'Kitabo me tic',
-    productDescription: 'Lok me nyonyo',
-    completeRecipeCollection: 'Kitabo me lutu',
+    smartKitchenAssistant: 'Akello {appName} Otim',
+    operationInstructions: 'Liro',
+    productDescription: 'Obwera',
+    completeRecipeCollection: 'Echwe',
     smartAnalysis: 'Nyo me tic',
-    qa: 'Kicel me lagam',
-    poster: 'Picha', // 海报
+    qa: 'Q&A',
+    poster: 'Picha',
     all: 'Weng',
     noData: 'Pe tye data',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Kolesi yangu',
   },
   qa: {
-    search: 'Yeny penyi', // 搜索问题
+    search: 'Yeny penyi',
   },
 }
 export default zh_CN

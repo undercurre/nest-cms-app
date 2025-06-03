@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Senarai Peralatan',
-    smartKitchenAssistant: 'Pembantu dapur pintar',
-    operationInstructions: 'Panduan Operasi',
-    productDescription: 'Penerangan Produk',
-    completeRecipeCollection: 'Koleksi Resipi',
+    smartKitchenAssistant: 'pintar {appName} pembantu',
+    operationInstructions: 'Panduan',
+    productDescription: 'produk',
+    completeRecipeCollection: 'menu',
     smartAnalysis: 'Analisis Pintar',
-    qa: 'Pusat Bantuan',
+    qa: 'Q&A',
     poster: 'Poser',
     all: 'semua',
     noData: 'Tiada data lagi',

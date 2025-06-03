@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'نێوی کاتێکانی',
-    smartKitchenAssistant: 'نامایندەک کۆرکەوەی بەخبره‌نام',
-    operationInstructions: 'نێودەراجەی کاریکردن',
-    productDescription: 'پیشیانەک پ্রۆدەکت',
-    completeRecipeCollection: 'جامێی ڕێسپیسەکانی',
+    smartKitchenAssistant: 'یارمەتی زیرەکی {appName}',
+    operationInstructions: 'ڕێنمایی',
+    productDescription: 'بەرهەم',
+    completeRecipeCollection: 'مینوو',
     smartAnalysis: 'پیشخênیاری بەخبره‌نام',
-    qa: 'ناوەندی یارمەتی',
-    poster: 'پۆستەر', // 海报
+    qa: 'Q&A',
+    poster: 'پۆستەر',
     all: 'هەموو',
     noData: 'نەداتای داتا',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'داتاکەی من',
   },
   qa: {
-    search: 'گەڕان بۆ پرسیار', // 搜索问题
+    search: 'گەڕان بۆ پرسیار',
   },
 }
 export default zh_CN

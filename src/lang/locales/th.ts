@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'รายการอุปกรณ์',
-    smartKitchenAssistant: 'ผู้ช่วยครัวอัจฉริยะ',
-    operationInstructions: 'คู่มือการใช้งาน',
-    productDescription: 'รายละเอียดสินค้า',
-    completeRecipeCollection: 'รวมสูตรอาหารครบถ้วน',
+    smartKitchenAssistant: 'ฉลาด {appName} ผู้ช่วย',
+    operationInstructions: 'คำแนะนำ',
+    productDescription: 'ผลิตภัณฑ์',
+    completeRecipeCollection: 'เมนู',
     smartAnalysis: 'การวิเคราะห์อัจฉริยะ',
-    qa: 'ศูนย์ช่วยเหลือ',
-    poster: 'โปสเตอร์', // 海报
+    qa: 'Q&A',
+    poster: 'โปสเตอร์',
     all: 'ทั้งหมด',
     noData: 'ไม่มีข้อมูล',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'ชุดของฉัน',
   },
   qa: {
-    search: 'ค้นหาคำถาม', // 搜索问题
+    search: 'ค้นหาคำถาม',
   },
 }
 export default zh_CN

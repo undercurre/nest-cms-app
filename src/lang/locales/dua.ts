@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Lisiti ya bilanga',
-    smartKitchenAssistant: 'Mosisi ya cuisine ya ngando',
-    operationInstructions: 'Malako ma kosala',
-    productDescription: 'Nkolo ya produit',
-    completeRecipeCollection: 'Biloko binene ya cuisine',
+    smartKitchenAssistant: 'Ngang a {appName} mwandi',
+    operationInstructions: 'Ma mwambo',
+    productDescription: 'Ebom',
+    completeRecipeCollection: 'Lisanga ya bilanga',
     smartAnalysis: 'Bokambi ya ngando',
-    qa: 'Centre d’aide',
-    poster: 'Affiche', // 海报
+    qa: 'Q&A',
+    poster: 'Affiche',
     all: 'Nyonso',
     noData: 'Data te okokani',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Akong koleksyon',
   },
   qa: {
-    search: 'Longa mituna', // 搜索问题
+    search: 'Longa mituna',
   },
 }
 export default zh_CN

@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'උපකරණ ලැයිස්තුව',
-    smartKitchenAssistant: 'ස්මාර්ට් මුළුතැන්ගෙයි සහායක',
-    operationInstructions: 'මෙහෙයුම් මාර්ගෝපදේශය',
-    productDescription: 'නිෂ්පාදනය විස්තරය',
-    completeRecipeCollection: 'වට්ටෝරු එකතුව',
+    smartKitchenAssistant: 'ස්මාර්ට් {appName} සහායකයා',
+    operationInstructions: 'ඉඟි',
+    productDescription: 'නිෂ්පාදනය',
+    completeRecipeCollection: 'මෙනු',
     smartAnalysis: 'ස්මාර්ට් විශ්ලේෂණය',
-    qa: 'උදව් මධ්‍යස්ථානය',
-    poster: 'පෝස්ටරය', // 海报
+    qa: 'Q&A',
+    poster: 'පෝස්ටරය',
     all: 'සියල්ල',
     noData: 'තවමත් දත්ත නොමැත.',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'මගේ.COLLECTION',
   },
   qa: {
-    search: 'ප්‍රශ්න සොයන්න', // 搜索问题
+    search: 'ප්‍රශ්න සොයන්න',
   },
 }
 export default zh_CN

@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Saman reak̕ suci',
-    smartKitchenAssistant: 'Smart ran oṛaḱ reaḱ goṛoic̕',
-    operationInstructions: 'O̠pe̠re̠sn gạid',
-    productDescription: 'Produkt reak’ Bibọrnọn',
-    completeRecipeCollection: 'Recipe jạmạu',
+    smartKitchenAssistant: 'Smart {appName} gọpọṛọic’',
+    operationInstructions: 'Sopohot̕',
+    productDescription: 'Utpatkọ',
+    completeRecipeCollection: 'Menu',
     smartAnalysis: 'Smart Biniḍạo',
-    qa: 'ᱜᱚᱸᱲᱚᱡ ᱛᱟᱞᱢᱟ',
+    qa: 'Q&A',
     poster: 'ᱯᱚᱥᱴᱚᱨ',
     all: 'Jo̱to̱',
     noData: 'Nit hạbic̕ data bạnuk̕a',

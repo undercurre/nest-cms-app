@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Liosta Uidheam',
-    smartKitchenAssistant: 'Neach-cuideachaidh cidsin snasail',
-    operationInstructions: 'Stiùireadh Obrachaidh',
-    productDescription: 'Tuairisgeul an toraidh',
-    completeRecipeCollection: 'Cruinneachadh reasabaidhean',
+    smartKitchenAssistant: 'tuigsiche {appName} Neach-taic',
+    operationInstructions: 'Stiùireadh',
+    productDescription: 'toradh',
+    completeRecipeCollection: 'Clàr-taice',
     smartAnalysis: 'Mion-sgrùdadh Glic',
-    qa: 'Ionad Cobhair',
-    poster: 'Póstaer', // 海报
+    qa: 'Q&A',
+    poster: 'Póstaer',
     all: 'uile',
     noData: 'Gun dàta fhathast',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'An t-ainm mo',
   },
   qa: {
-    search: 'Lorg Cheistean', // 搜索问题
+    search: 'Lorg Cheistean',
   },
 }
 export default zh_CN

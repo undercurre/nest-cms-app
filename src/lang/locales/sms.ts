@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Equipment List',
-    smartKitchenAssistant: 'Smart {appName} assistant',
-    operationInstructions: 'Guide',
-    productDescription: 'Product',
+    smartKitchenAssistant: 'intelligent {appName} assistant',
+    operationInstructions: 'Guidance',
+    productDescription: 'product',
     completeRecipeCollection: 'menu',
     smartAnalysis: 'Smart Analysis',
     qa: 'Q&A',
-    poster: 'Poster', // 海报
+    poster: 'Poster',
     all: 'All',
     noData: 'No data available',
   },
@@ -310,12 +310,12 @@ const zh_CN = {
     haw: 'Hawaiian',
   },
   list: {
-    collectPrefix: 'Du lät gieldi',
-    collectSuffix: 'viggka',
-    myCollection: 'Mõõ gieldi',
+    collectPrefix: 'You have bookmarked',
+    collectSuffix: 'device',
+    myCollection: 'my collection',
   },
   qa: {
-    search: 'Search Questions', // 搜索问题
+    search: 'Search for questions',
   },
 }
 export default zh_CN

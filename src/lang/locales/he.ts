@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'רשימת ציוד',
-    smartKitchenAssistant: 'עוזר מטבח חכם',
-    operationInstructions: 'הוראות הפעלה',
-    productDescription: 'תיאור המוצר',
-    completeRecipeCollection: 'אוסף מתכונים מלא',
+    smartKitchenAssistant: 'אִינְטֶלִיגֶנְטִי {appName} עוֹזֵר',
+    operationInstructions: 'הַדְרָכָה',
+    productDescription: 'מוּצָר',
+    completeRecipeCollection: 'תַפרִיט',
     smartAnalysis: 'ניתוח חכם',
-    qa: 'מרכז עזרה',
+    qa: 'Q&A',
     poster: 'פוסטר',
     all: 'הכל',
     noData: 'אין נתונים',

@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Lista di ekipamentu',
-    smartKitchenAssistant: 'Asistenti Inteligenti di Kizinha',
-    operationInstructions: 'Instruçons di Operason',
-    productDescription: 'Diskrison di Produtu',
-    completeRecipeCollection: 'Kolekson Kompletu di Reseitas',
+    smartKitchenAssistant: 'Asistenti inteligenti {appName}',
+    operationInstructions: 'Instruson',
+    productDescription: 'Diskrison di produtu',
+    completeRecipeCollection: 'Koleçon di menu',
     smartAnalysis: 'Analizi Inteligenti',
-    qa: 'Sentru di Ajuda',
-    poster: 'Karta', // 海报
+    qa: 'Q&A',
+    poster: 'Karta',
     all: 'Tudu',
     noData: 'Dadu indispovivel',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Koleção di mim',
   },
   qa: {
-    search: 'Busca perguntas', // 搜索问题
+    search: 'Busca perguntas',
   },
 }
 export default zh_CN

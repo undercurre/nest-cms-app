@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Спіс абсталявання',
-    smartKitchenAssistant: 'Разумны кухонны памочнік',
-    operationInstructions: 'Кіраўніцтва па эксплуатацыі',
-    productDescription: 'Апісанне прадукту',
-    completeRecipeCollection: 'Калекцыя рэцэптаў',
+    smartKitchenAssistant: 'разумны {appName} памочнік',
+    operationInstructions: 'Кіраванне',
+    productDescription: 'прадукт',
+    completeRecipeCollection: 'меню',
     smartAnalysis: 'Разумны аналіз',
-    qa: 'Центр дапамогі',
+    qa: 'Q&A',
     poster: 'плакат',
     all: 'усе',
     noData: 'Пакуль няма дадзеных',

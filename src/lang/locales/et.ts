@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Varustuse nimekiri',
-    smartKitchenAssistant: 'Nutikas köögiassistent',
-    operationInstructions: 'Kasutusjuhend',
-    productDescription: 'Toote kirjeldus',
-    completeRecipeCollection: 'Retseptide kogu',
+    smartKitchenAssistant: 'arukas {appName} assistent',
+    operationInstructions: 'Juhendamine',
+    productDescription: 'toode',
+    completeRecipeCollection: 'menüü',
     smartAnalysis: 'Nutikas analüüs',
-    qa: 'Abi keskus',
+    qa: 'Q&A',
     poster: 'Plakaat',
     all: 'kõik',
     noData: 'Andmeid pole veel',

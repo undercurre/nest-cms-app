@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Lista d’equipaments',
-    smartKitchenAssistant: 'Assistent de cosina intelligent',
-    operationInstructions: 'Guida d’operacion',
-    productDescription: 'Descripcion del produch',
-    completeRecipeCollection: 'Colleccion completa de recèptas',
+    smartKitchenAssistant: 'Assistent de cosina inteligent {appName}',
+    operationInstructions: 'Instrucions d’utilizacion',
+    productDescription: 'Descripcion dau produit',
+    completeRecipeCollection: 'Colleccion de recèptas',
     smartAnalysis: 'Analisi intelligenta',
-    qa: 'Centre d’ajuda',
-    poster: 'Aficha', // 海报
+    qa: 'Q&A',
+    poster: 'Aficha',
     all: 'Tot',
     noData: 'Pas encara de donadas',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'my collection',
   },
   qa: {
-    search: 'Recercar questions', // 搜索问题
+    search: 'Recercar questions',
   },
 }
 export default zh_CN

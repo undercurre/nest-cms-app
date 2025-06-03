@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'སྒྲིག་ཆས་ཐོ་གཞུང་།',
-    smartKitchenAssistant: 'ཐབ་ཚང་གི་ལས་རོགས་རིག་པ་ཅན།',
-    operationInstructions: 'བཀོལ་སྤྱོད་ལམ་སྟོན།',
-    productDescription: 'ཐོན་རྫས་ཀྱི་འགྲེལ་བཤད།',
-    completeRecipeCollection: 'བཟོ་ཐབས་བསྡུ་རུབ།',
+    smartKitchenAssistant: 'ཤེས་རིག {appName} རོགས་པ།',
+    operationInstructions: 'བཀོད་སྟངས།',
+    productDescription: 'འགྲེམས་བཤད།',
+    completeRecipeCollection: 'དཀར་ཆག',
     smartAnalysis: 'རིག་པ་ཅན་གྱི་དབྱེ་ཞིབ།',
-    qa: 'རོགས་རམ་ཁང་།',
+    qa: 'Q&A',
     poster: 'པོས་ཊར།',
     all: 'ཚང་མ',
     noData: 'ད་དུང་གྲངས་ཐོ་མེད།',

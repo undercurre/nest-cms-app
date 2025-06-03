@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'సామగ్రి జాబితా',
-    smartKitchenAssistant: 'స్మార్ట్ కిచెన్ అసిస్టెంట్',
-    operationInstructions: 'ఆపరేషన్ గైడ్',
-    productDescription: 'ఉత్పత్తి వివరణ',
-    completeRecipeCollection: 'వంటకాల సేకరణ',
+    smartKitchenAssistant: 'புத்திசாலி {appName} உதவியாளர்',
+    operationInstructions: 'வழிகாட்டுதல்',
+    productDescription: 'தயாரிப்பு',
+    completeRecipeCollection: 'பட்டி',
     smartAnalysis: 'స్మార్ట్ విశ్లేషణ',
-    qa: 'సహాయ కేంద్రం',
-    poster: 'పోస్టర్', // 海报
+    qa: 'Q&A',
+    poster: 'పోస్టర్',
     all: 'అన్నీ',
     noData: 'ఇంకా డేటా లేదు',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'என் சேகரிப்பு',
   },
   qa: {
-    search: 'ప్రశ్నలను శోధించు', // 搜索问题
+    search: 'ప్రశ్నలను శోధించు',
   },
 }
 export default zh_CN

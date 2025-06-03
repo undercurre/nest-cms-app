@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'সাধনৰ তালিকা',
-    smartKitchenAssistant: 'বुद্ধিমান কিচেন সহায়ক',
-    operationInstructions: 'অপারেশন নिर্দেশনা',
-    productDescription: 'প্রোডাক্ট বিবরণ',
-    completeRecipeCollection: 'সম্পূর্ণ রেসিপি সংগ্রহ',
+    smartKitchenAssistant: 'বুদ্ধিমান {appName} সহায়ক',
+    operationInstructions: 'নির্দেশনা',
+    productDescription: 'পণ্য',
+    completeRecipeCollection: 'তালিকা',
     smartAnalysis: 'বुद্ধিমান বিশ্লেষণ',
-    qa: 'সহায়তা কেন্দ্র',
+    qa: 'Q&A',
     poster: 'পোস্টার',
     all: 'সব',
     noData: 'তথ্য নাই',

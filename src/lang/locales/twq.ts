@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'An teŋi kayayu',
-    smartKitchenAssistant: 'Kayna kayna n dafa',
-    operationInstructions: 'Tawri kayna',
-    productDescription: 'Kayna boro',
-    completeRecipeCollection: 'Kayna kayna teŋi',
+    smartKitchenAssistant: 'Iskilim {appName} Tungar',
+    operationInstructions: 'Dawuda',
+    productDescription: 'Tiyara',
+    completeRecipeCollection: 'Gangar',
     smartAnalysis: 'Kayna kayna furu',
-    qa: 'Sariya kayna',
-    poster: 'Pasta', // 海报
+    qa: 'Q&A',
+    poster: 'Pasta',
     all: 'Boro',
     noData: 'Kayna ga ba',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Nay teŋi',
   },
   qa: {
-    search: 'Kayna furu', // 搜索问题
+    search: 'Kayna furu',
   },
 }
 export default zh_CN

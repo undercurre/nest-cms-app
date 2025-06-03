@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Кусæнгæрзты номхыгъд',
-    smartKitchenAssistant: 'Зондджын къæбицы æххуысгæнæг',
-    operationInstructions: 'Операцийы фæндагамонæг',
-    productDescription: 'Продукты нывæзт',
+    smartKitchenAssistant: 'Зондджын {appName} æххуысгæнæг',
+    operationInstructions: 'Амындтытæ',
+    productDescription: 'Продукты æрфыст',
     completeRecipeCollection: 'Рецептты æмбырдгонд',
     smartAnalysis: 'Зондджын анализ',
-    qa: 'Æххуысоны центр',
-    poster: 'Плакат', // 海报
+    qa: 'Q&A',
+    poster: 'Плакат',
     all: 'иууылдæр',
     noData: 'Бæрæггæнæнтæ нырма нæй',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Мой сбор',
   },
   qa: {
-    search: 'Æххуысон фæрсыд', // 搜索问题
+    search: 'Æххуысон фæрсыд',
   },
 }
 export default zh_CN

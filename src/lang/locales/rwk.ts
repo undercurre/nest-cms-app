@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Lisitilu ya vilongo',
-    smartKitchenAssistant: 'Msaidizi wa jikoni wa kisasa',
-    operationInstructions: 'Malagizo ya utendaji',
-    productDescription: 'Maelezo ya bidhaa',
-    completeRecipeCollection: 'Mkusanyiko kamili wa mapishi',
+    smartKitchenAssistant: 'Soma {appName} Asistan',
+    operationInstructions: 'Miongozo',
+    productDescription: 'Maisha',
+    completeRecipeCollection: 'Mibambo',
     smartAnalysis: 'Uchambuzi wa kisasa',
-    qa: 'Kituo cha msaada',
-    poster: 'Pangazio', // 海报
+    qa: 'Q&A',
+    poster: 'Pangazio',
     all: 'Vyose',
     noData: 'Hakuna data',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'my collection',
   },
   qa: {
-    search: 'Tafuta maswali', // 搜索问题
+    search: 'Tafuta maswali',
   },
 }
 export default zh_CN

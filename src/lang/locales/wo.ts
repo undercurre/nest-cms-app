@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Limu jumtukaay yi',
-    smartKitchenAssistant: 'Jàppalekatu waañ bu am xel',
-    operationInstructions: 'Guide de fonctionnement',
-    productDescription: 'Tegtal produit bi',
-    completeRecipeCollection: 'Dajale rëset',
+    smartKitchenAssistant: 'Jàppalekat {appName} bu xarañ',
+    operationInstructions: 'Njiit jiite',
+    productDescription: 'ay produit',
+    completeRecipeCollection: 'Menu',
     smartAnalysis: 'Càmbaru Smart',
-    qa: 'Centro de ayuda',
-    poster: 'Poster', // 海报
+    qa: 'Q&A',
+    poster: 'Poster',
     all: 'lépp',
     noData: 'Ba tay amul ay done',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Def mi',
   },
   qa: {
-    search: 'Seetal laaj yi', // 搜索问题
+    search: 'Seetal laaj yi',
   },
 }
 export default zh_CN

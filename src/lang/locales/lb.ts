@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Ausrüstungslëscht',
-    smartKitchenAssistant: 'Smart Kichenassistent',
-    operationInstructions: 'Operatiounsguide',
-    productDescription: 'Produktbeschreiwung',
-    completeRecipeCollection: 'Rezeptsammlung',
+    smartKitchenAssistant: 'intelligent {appName} entehand',
+    operationInstructions: 'Awëllegung Lidance',
+    productDescription: 'Produktenzelel',
+    completeRecipeCollection: 'CENUER ASB',
     smartAnalysis: 'Smart Analyse',
-    qa: 'Hëllefzentrum',
+    qa: 'Q&A',
     poster: 'Plakat',
     all: 'all',
     noData: 'Nach keng Donnéeën',

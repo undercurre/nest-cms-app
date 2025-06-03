@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'የመሳሪያዎች ዝርዝር',
-    smartKitchenAssistant: 'ብልጥ ወጥ ቤት ረዳት',
-    operationInstructions: 'የአሠራር መመሪያ',
-    productDescription: 'የምርት መግለጫ',
-    completeRecipeCollection: 'የምግብ አዘገጃጀት ስብስብ',
+    smartKitchenAssistant: 'ብልህ {appName} ረዳት',
+    operationInstructions: 'መመሪያ',
+    productDescription: 'ምርት',
+    completeRecipeCollection: 'ምናሌ',
     smartAnalysis: 'ብልጥ ትንተና',
-    qa: 'ማርፍያ ማድረسة',
+    qa: 'Q&A',
     poster: 'ፕስቴር',
     all: 'ሁሉም',
     noData: 'እስካሁን ምንም ውሂብ የለም።',

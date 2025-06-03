@@ -2,9 +2,9 @@
 const zh_CN = {
   common: {
     equipmentList: 'Equipment List',
-    smartKitchenAssistant: 'Smart {appName} assistant',
-    operationInstructions: 'Guide',
-    productDescription: 'Product',
+    smartKitchenAssistant: 'intelligent {appName} assistant',
+    operationInstructions: 'Guidance',
+    productDescription: 'product',
     completeRecipeCollection: 'menu',
     smartAnalysis: 'Smart Analysis',
     qa: 'Q&A',
@@ -310,12 +310,12 @@ const zh_CN = {
     haw: 'Hawaiian',
   },
   list: {
-    collectPrefix: 'Umecollect',
-    collectSuffix: ' vifaa',
-    myCollection: 'Collection yangu',
+    collectPrefix: 'You have bookmarked',
+    collectSuffix: 'device',
+    myCollection: 'my collection',
   },
   qa: {
-    search: 'Search Questions',
+    search: 'Search for questions',
   },
 }
 export default zh_CN

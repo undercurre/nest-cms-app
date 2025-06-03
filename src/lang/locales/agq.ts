@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'lísti ya áwà',
-    smartKitchenAssistant: 'ésísánti kítín ásístánt',
-    operationInstructions: 'ínsúkúshóns ya opérésíon',
-    productDescription: 'dísíkrípshón ya pródúkt',
-    completeRecipeCollection: 'kóléksyon kúmplít ya rísípi',
+    smartKitchenAssistant: 'áwà {appName} éésínt',
+    operationInstructions: 'mbéndí',
+    productDescription: 'mbéndí àká',
+    completeRecipeCollection: 'lísti yà mbéndí',
     smartAnalysis: 'análís éésísánt',
-    qa: 'Mə́ndə́ŋ mə́ kə́bɛ́',
+    qa: 'Q&A',
     poster: 'Pósta',
     all: 'túmbí',
     noData: 'dátu mə́ yə́',

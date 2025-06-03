@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Spisak opreme',
-    smartKitchenAssistant: 'Pametni kuhinjski asistent',
-    operationInstructions: 'Vodič za upotrebu',
-    productDescription: 'Opis proizvoda',
-    completeRecipeCollection: 'Kolekcija recepata',
+    smartKitchenAssistant: 'inteligentan {appName} asistent',
+    operationInstructions: 'Vođenje',
+    productDescription: 'proizvod',
+    completeRecipeCollection: 'meni',
     smartAnalysis: 'Pametna analiza',
-    qa: 'Centar za pomoć',
+    qa: 'Q&A',
     poster: 'Poster',
     all: 'sve',
     noData: 'Još nema podataka',

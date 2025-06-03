@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'ꯈꯨꯠꯂꯥꯌꯁꯤꯡꯒꯤ ꯂꯤꯁ꯭ꯠ꯫',
-    smartKitchenAssistant: 'ꯁ꯭ꯃꯥꯔꯠ ꯀꯤꯆꯦꯟ ꯑꯦꯁꯤꯁ꯭ꯇꯦꯟꯇ ꯑꯣꯏꯅꯥ ꯊꯕꯛ ꯇꯧꯕꯥ꯫',
-    operationInstructions: 'ꯑꯣꯄꯔꯦꯁꯟ ꯒꯥꯏꯗꯂꯥꯏꯟ꯫',
-    productDescription: 'ꯄ꯭ꯔꯗꯛꯇ ꯗꯤꯁ꯭ꯛꯔꯤꯄꯁꯟ꯫',
-    completeRecipeCollection: 'ꯔꯦꯁꯤꯄꯤ ꯀꯂꯦꯛꯁꯟ ꯇꯧꯕꯥ꯫',
+    smartKitchenAssistant: 'ꯁ꯭ꯃꯥꯔꯠ {appName} ꯁꯍꯥꯏꯀꯅꯤꯡ',
+    operationInstructions: 'ꯑꯦꯁꯤꯡ ꯇꯧꯕꯥ',
+    productDescription: 'ꯑꯦꯁꯤꯡ ꯑꯃꯁꯨꯡ',
+    completeRecipeCollection: 'ꯁ꯭ꯔꯦꯁꯤꯄ ꯑꯃꯁꯨꯡ',
     smartAnalysis: 'ꯁ꯭ꯃꯥꯔꯠ ꯑꯦꯅꯥꯂꯥꯏꯁꯤꯁ ꯇꯧꯕꯥ꯫',
-    qa: 'ꯃꯇꯦꯡ ꯂꯩꯕ ꯆꯪꯁꯤꯟ',
+    qa: 'Q&A',
     poster: 'ꯄꯣꯁꯇꯔ',
     all: 'ꯄꯨꯝꯅꯃꯛ',
     noData: 'ꯍꯧꯖꯤꯛ ꯐꯥꯑꯣꯕꯥ ꯗꯦꯇꯥ ꯑꯃꯠꯇꯥ ꯂꯩꯇꯦ꯫',

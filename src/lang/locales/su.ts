@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Daptar parabot',
-    smartKitchenAssistant: 'Asisten dapur pinter',
-    operationInstructions: 'Guide Operasi',
-    productDescription: 'Panjelasan Produk',
-    completeRecipeCollection: 'Kumpulan Resep',
+    smartKitchenAssistant: 'calakan {appName} asisten',
+    operationInstructions: 'Pitunjuk',
+    productDescription: 'produk',
+    completeRecipeCollection: 'menu',
     smartAnalysis: 'Analisis pinter',
-    qa: 'Puseur Pitulung',
-    poster: 'Poster', // 海报
+    qa: 'Q&A',
+    poster: 'Poster',
     all: 'sadayana',
     noData: 'Taya data acan',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Koleksi abdi',
   },
   qa: {
-    search: 'Pilarian patarosan', // 搜索问题
+    search: 'Pilarian patarosan',
   },
 }
 export default zh_CN

@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'ລາຍການອຸປະກອນ',
-    smartKitchenAssistant: 'ຜູ້ຊ່ວຍເຮືອນຄົວອັດສະລິຍະ',
-    operationInstructions: 'ຄູ່ມືການດໍາເນີນງານ',
-    productDescription: 'ລາຍ​ລະ​ອຽດ​ຜະ​ລິດ​ຕະ​ພັນ',
-    completeRecipeCollection: 'ການເກັບສູດ',
+    smartKitchenAssistant: 'ສະຫຼາດ {appName} ຜູ້ຊ່ວຍ',
+    operationInstructions: 'ການຊີ້ນໍາ',
+    productDescription: 'ຜະລິດຕະພັນ',
+    completeRecipeCollection: 'ເມນູ',
     smartAnalysis: 'ການວິເຄາະອັດສະລິຍະ',
-    qa: 'ສູນຊ່ວຍເຫຼືອ',
+    qa: 'Q&A',
     poster: 'ປ້າງປະກາດ',
     all: 'ທັງໝົດ',
     noData: 'ບໍ່ມີຂໍ້ມູນເທື່ອ',

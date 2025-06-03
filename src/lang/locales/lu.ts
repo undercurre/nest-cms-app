@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Lisitini ya bikuma',
-    smartKitchenAssistant: 'Musaidi wa kyumba ya bilembwe',
-    operationInstructions: 'Mitindo ya misala',
-    productDescription: 'Malongi ma bidya',
-    completeRecipeCollection: 'Lisitini ya bilembwe bionso',
+    smartKitchenAssistant: 'Muyambi wa {appName} wa mayele',
+    operationInstructions: 'Mitindo ya kusolola',
+    productDescription: 'Maloba ya kikosa',
+    completeRecipeCollection: 'Lisolo lya menu',
     smartAnalysis: 'Disolo ya mayele',
-    qa: 'Kisika kya musungi',
-    poster: 'Panseli', // 海报
+    qa: 'Q&A',
+    poster: 'Panseli',
     all: 'Bionso',
     noData: 'Doni kayi',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Kolesi ya mwen',
   },
   qa: {
-    search: 'Luka mituna', // 搜索问题
+    search: 'Luka mituna',
   },
 }
 export default zh_CN

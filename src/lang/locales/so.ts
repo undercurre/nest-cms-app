@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Liiska Qalabka',
-    smartKitchenAssistant: 'Kaaliyaha jikada smart',
-    operationInstructions: 'Hagaha Hawlgalka',
-    productDescription: 'Sharaxaada Alaabta',
-    completeRecipeCollection: 'Ururinta karinta',
+    smartKitchenAssistant: 'maskax badan ah {appName} naag caawiye ah',
+    operationInstructions: 'Hagis',
+    productDescription: 'badeeco',
+    completeRecipeCollection: 'warqad qiimo',
     smartAnalysis: 'Falanqaynta Wacan',
-    qa: 'Xarunta Caawinta',
-    poster: 'Boorsada', // 海报
+    qa: 'Q&A',
+    poster: 'Boorsada',
     all: 'dhammaan',
     noData: 'Wali xog malaha',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Ururayaya',
   },
   qa: {
-    search: 'Raadi Su’aalaha', // 搜索问题
+    search: 'Raadi Su’aalaha',
   },
 }
 export default zh_CN

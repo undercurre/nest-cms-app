@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Тоног төхөөрөмжийн жагсаалт',
-    smartKitchenAssistant: 'Гал тогооны ухаалаг туслах',
-    operationInstructions: 'Үйлдлийн гарын авлага',
-    productDescription: 'Бүтээгдэхүүний тодорхойлолт',
-    completeRecipeCollection: 'Жорны цуглуулга',
+    smartKitchenAssistant: 'ухаантай {appName} туслах ажилтан',
+    operationInstructions: 'Удирдлага',
+    productDescription: 'үр дун',
+    completeRecipeCollection: 'хоолны нэрс',
     smartAnalysis: 'Ухаалаг шинжилгээ',
-    qa: 'Тусламжийн Төв',
+    qa: 'Q&A',
     poster: 'Постер',
     all: 'бүгд',
     noData: 'Одоогоор өгөгдөл алга',

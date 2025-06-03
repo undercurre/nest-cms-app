@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: '장비 목록',
-    smartKitchenAssistant: '스마트 주방 보조',
-    operationInstructions: '작동 가이드',
-    productDescription: '제품 설명',
-    completeRecipeCollection: '레시피 모음',
+    smartKitchenAssistant: '지능적인 {appName} 어시스턴트',
+    operationInstructions: '안내',
+    productDescription: '제품',
+    completeRecipeCollection: '메뉴',
     smartAnalysis: '스마트 분석',
-    qa: '고객센터',
+    qa: 'Q&A',
     poster: '포스터',
     all: '모두',
     noData: '아직 데이터가 없습니다',

@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Minɛnw lisɛli',
-    smartKitchenAssistant: 'Smart cuisini dɛmɛbaga',
-    operationInstructions: 'Gafe min bɛ baara kɛ ni baarakɛcogo ye',
-    productDescription: 'Fɛn dilannenw ɲɛfɔli',
-    completeRecipeCollection: 'Recipe Koleksi',
+    smartKitchenAssistant: 'Sɛgɛsɛgɛli {appName} dɛmɛ',
+    operationInstructions: 'Ladilikan',
+    productDescription: 'Dɔɔni',
+    completeRecipeCollection: 'Mɛnu',
     smartAnalysis: 'Sɛgɛsɛgɛli hakilitigi',
-    qa: 'Dɛmɛba kɛnɛfɛ',
-    poster: 'Fɔlɔ', // 海报
+    qa: 'Q&A',
+    poster: 'Fɔlɔ',
     all: 'bɛɛ',
     noData: 'Donan si ma sɔrɔ fɔlɔ',
   },

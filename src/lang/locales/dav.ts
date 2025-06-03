@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Equipment List',
-    smartKitchenAssistant: 'Smart {appName} assistant',
-    operationInstructions: 'Guide',
+    smartKitchenAssistant: 'Smart {appName} Assistant',
+    operationInstructions: 'Instructions',
     productDescription: 'Product',
-    completeRecipeCollection: 'menu',
+    completeRecipeCollection: 'Menu',
     smartAnalysis: 'Smart Analysis',
     qa: 'Q&A',
-    poster: 'Poster', // 海报
+    poster: 'Poster',
     all: 'All',
     noData: 'No data available',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Akong mga koleksyon',
   },
   qa: {
-    search: 'Search Questions', // 搜索问题
+    search: 'Search Questions',
   },
 }
 export default zh_CN

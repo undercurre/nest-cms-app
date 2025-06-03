@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Aparatuen Zerrenda',
-    smartKitchenAssistant: 'Sagardotzaile Inteligentu Etxeetako',
-    operationInstructions: 'Ekintza Oharra',
-    productDescription: 'Produktuaren Deskribapena',
-    completeRecipeCollection: 'Osoko Oinarrizko Kolekzioa',
+    smartKitchenAssistant: 'Asistenti ya kicheni smart {appName}',
+    operationInstructions: 'Mbuya xeray',
+    productDescription: 'Xeray ya product',
+    completeRecipeCollection: 'Kolisi yon mapishi',
     smartAnalysis: 'Analisia Inteligentua',
-    qa: 'Galderak eta Erantzunak',
+    qa: 'Q&A',
     poster: 'Afitxa',
     all: 'Guztiak',
     noData: 'Ez dago Datuik',

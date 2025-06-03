@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Utrustningslista',
-    smartKitchenAssistant: 'Smart köksassistent',
-    operationInstructions: 'Bruksanvisning',
-    productDescription: 'Produktbeskrivning',
-    completeRecipeCollection: 'Receptsamling',
+    smartKitchenAssistant: 'calakan {appName} assistent',
+    operationInstructions: 'Pitunjuk',
+    productDescription: 'produk',
+    completeRecipeCollection: 'menu',
     smartAnalysis: 'Smart analys',
-    qa: 'Hjälpcenter',
-    poster: 'Affisch', // 海报
+    qa: 'Q&A',
+    poster: 'Affisch',
     all: 'alla',
     noData: 'Inga data ännu',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Min samling',
   },
   qa: {
-    search: 'Sök frågor', // 搜索问题
+    search: 'Sök frågor',
   },
 }
 export default zh_CN

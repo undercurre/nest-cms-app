@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Lisi ʻo e Ngaahi Meʻangāué',
-    smartKitchenAssistant: "Tokoni 'atamai 'o e 'ai'angakai 'o e manu",
-    operationInstructions: 'Fakahinohino ki he Ngaue',
-    productDescription: 'Fakamatala ki he Koloa',
-    completeRecipeCollection: 'Ko e Tānakiʻanga ʻo e Ngaahi Founga Meʻakaí',
+    smartKitchenAssistant: 'Tokoni poto {appName}',
+    operationInstructions: 'Fakahinohino',
+    productDescription: 'Ngaahi koloa',
+    completeRecipeCollection: 'Menu',
     smartAnalysis: "'Analaiso 'atamai",
-    qa: 'Senita tokoni',
-    poster: 'Pōsitā', // 海报
+    qa: 'Q&A',
+    poster: 'Pōsitā',
     all: 'kotoa',
     noData: "Te'eki ke 'iai ha fakamatala",
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Okuʻu popoki',
   },
   qa: {
-    search: 'Kumi ngaahi fehuʻi', // 搜索问题
+    search: 'Kumi ngaahi fehuʻi',
   },
 }
 export default zh_CN

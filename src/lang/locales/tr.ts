@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Ekipman Listesi',
-    smartKitchenAssistant: 'Akıllı mutfak asistanı',
-    operationInstructions: 'Operasyon Kılavuzu',
-    productDescription: 'Ürün Açıklaması',
-    completeRecipeCollection: 'Tarif Koleksiyonu',
+    smartKitchenAssistant: 'zeki {appName} asistan',
+    operationInstructions: 'Rehberlik',
+    productDescription: 'ürün',
+    completeRecipeCollection: 'menü',
     smartAnalysis: 'Akıllı Analiz',
-    qa: 'Yardım Merkezi',
-    poster: 'Poster', // 海报
+    qa: 'Q&A',
+    poster: 'Poster',
     all: 'Tümü',
     noData: 'Henüz veri yok',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Koleksiyonum',
   },
   qa: {
-    search: 'Soruları Ara', // 搜索问题
+    search: 'Soruları Ara',
   },
 }
 export default zh_CN

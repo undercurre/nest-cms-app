@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Lista de apetá',
-    smartKitchenAssistant: 'Apetá puranga umunhã',
-    operationInstructions: 'Mbaé puranga resá',
-    productDescription: 'Mbaé resá',
-    completeRecipeCollection: 'Tupã resá yepé',
+    smartKitchenAssistant: 'Yandé {appName} apesã',
+    operationInstructions: 'Mba’éreko rembiapo',
+    productDescription: 'Mba’éreko rembikuaa',
+    completeRecipeCollection: 'Tembi’u rembiapo aty',
     smartAnalysis: 'Puranga resá',
-    qa: 'Centro de ajuda',
-    poster: 'Cartaz', // 海报
+    qa: 'Q&A',
+    poster: 'Cartaz',
     all: 'Yepé',
     noData: 'Nã i resá',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'My collection',
   },
   qa: {
-    search: 'Mbaé resá atã', // 搜索问题
+    search: 'Mbaé resá atã',
   },
 }
 export default zh_CN

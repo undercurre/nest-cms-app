@@ -2,9 +2,9 @@
 const zh_CN = {
   common: {
     equipmentList: 'Equipment List',
-    smartKitchenAssistant: 'Smart {appName} assistant',
-    operationInstructions: 'Guide',
-    productDescription: 'Product',
+    smartKitchenAssistant: 'intelligent {appName} assistant',
+    operationInstructions: 'Guidance',
+    productDescription: 'product',
     completeRecipeCollection: 'menu',
     smartAnalysis: 'Smart Analysis',
     qa: 'Q&A',

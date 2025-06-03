@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Avadanlıq Siyahısı',
-    smartKitchenAssistant: 'Ağıllı mətbəx köməkçisi',
-    operationInstructions: 'Əməliyyat təlimatı',
-    productDescription: 'Məhsul təsviri',
-    completeRecipeCollection: 'Reseptlər Kolleksiyası',
+    smartKitchenAssistant: 'ağıllı {appName} köməkçi',
+    operationInstructions: 'Rəhbərlik',
+    productDescription: 'məhsul',
+    completeRecipeCollection: 'menyu',
     smartAnalysis: 'Ağıllı Analiz',
-    qa: 'Yardım Mərkəzi',
+    qa: 'Q&A',
     poster: 'afiş',
     all: 'hamısı',
     noData: 'Hələ məlumat yoxdur',

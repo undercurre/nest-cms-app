@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Akanfoɔ adeɛ ahorow',
-    smartKitchenAssistant: 'Nimdeeɛ Fie Aduanboafoɔ',
-    operationInstructions: 'Nkyerɛkyerɛ a wɔde di dwuma',
-    productDescription: 'Aduan ho nsɛm',
-    completeRecipeCollection: 'Aduan ahorow nyinaa',
+    smartKitchenAssistant: 'Smart {appName} boafoɔ',
+    operationInstructions: 'Nkyerɛkyerɛ',
+    productDescription: 'Adeɛ ho nkyerɛmu',
+    completeRecipeCollection: 'Aduan nhyehyɛeɛ',
     smartAnalysis: 'Nimdeeɛ Nhwehwɛmu',
-    qa: 'Mmoa Fie',
+    qa: 'Q&A',
     poster: 'Poster',
     all: 'Nyinaa',
     noData: 'Nni hwee',

@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'ئۈسكۈنىلەر تىزىملىكى',
-    smartKitchenAssistant: 'ئەقلىي ئىقتىدارلىق ئاشخانا ياردەمچىسى',
-    operationInstructions: 'مەشغۇلات قوللانمىسى',
-    productDescription: 'مەھسۇلات چۈشەندۈرۈشى',
-    completeRecipeCollection: 'رېتسېپ توپلىمى',
+    smartKitchenAssistant: 'ئەقىللىق {appName} ياردەمچى',
+    operationInstructions: 'يېتەكلەش',
+    productDescription: 'مەھسۇلات',
+    completeRecipeCollection: 'تىزىملىك',
     smartAnalysis: 'ئەقلىي تەھلىل',
-    qa: 'ياردەم مەركىزى',
-    poster: 'پوسىتېر', // 海报
+    qa: 'Q&A',
+    poster: 'پوسىتېر',
     all: 'ھەممىسى',
     noData: 'ھازىرچە ھېچقانداق سانلىق مەلۇمات يوق',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'مەنىڭ تەخسىسىم',
   },
   qa: {
-    search: 'سوئال ئىزدەش', // 搜索问题
+    search: 'سوئال ئىزدەش',
   },
 }
 export default zh_CN

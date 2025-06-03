@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Utstyrsliste',
-    smartKitchenAssistant: 'Smart kjøkkenassistent',
-    operationInstructions: 'Bruksanvisning',
-    productDescription: 'Produktbeskrivelse',
-    completeRecipeCollection: 'Oppskriftsamling',
+    smartKitchenAssistant: 'intelligent {appName} assistent',
+    operationInstructions: 'Veiledning',
+    productDescription: 'produkt',
+    completeRecipeCollection: 'meny',
     smartAnalysis: 'Smart analyse',
-    qa: 'Hjelpesenter',
+    qa: 'Q&A',
     poster: 'Plakat',
     all: 'alle',
     noData: 'Ingen data ennå',

@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Izinto ezisetshenziswayo',
-    smartKitchenAssistant: 'Umhlahlandlela wekhishi ehlakaniphile',
-    operationInstructions: 'Imiyalo yokusebenza',
+    smartKitchenAssistant: 'Umncedisi wekhishi ohlakaniphile {appName}',
+    operationInstructions: 'Imiyalelo yokusebenza',
     productDescription: 'Incazelo yomkhiqizo',
-    completeRecipeCollection: 'Amaqhinga okupheka aphelele',
+    completeRecipeCollection: 'Iqoqo lezindlela zokupheka',
     smartAnalysis: 'Ukuhlaziya okuhlakaniphile',
-    qa: 'Indawo Yokulekelela',
+    qa: 'Q&A',
     poster: 'Iposi',
     all: 'Konke',
     noData: 'Ayikho idatha okwamanje',

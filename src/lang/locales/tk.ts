@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Enjamlar sanawy',
-    smartKitchenAssistant: 'Akylly kuhna kömeği',
-    operationInstructions: 'Işleýş düzgünleri',
-    productDescription: 'Haryt düşündirişi',
-    completeRecipeCollection: 'Doly tagamlar ýygyndysy',
+    smartKitchenAssistant: 'akylly {appName} kömekçisi',
+    operationInstructions: 'Ýol görkezmek',
+    productDescription: 'Haryt',
+    completeRecipeCollection: 'menýu',
     smartAnalysis: 'Akylly analiz',
-    qa: 'Kömek merkezi',
-    poster: 'Plakat', // 海报
+    qa: 'Q&A',
+    poster: 'Plakat',
     all: 'Hemmesi',
     noData: 'Maglumat ýok',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Meniñ toplayşym',
   },
   qa: {
-    search: 'Soraglary gözle', // 搜索问题
+    search: 'Soraglary gözle',
   },
 }
 export default zh_CN

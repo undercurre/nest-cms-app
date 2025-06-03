@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'აღჭურვილობის სია',
-    smartKitchenAssistant: 'ჭკვიანი სამზარეულოს ასისტენტი',
-    operationInstructions: 'ოპერაციის სახელმძღვანელო',
-    productDescription: 'პროდუქტის აღწერა',
-    completeRecipeCollection: 'რეცეპტების კოლექცია',
+    smartKitchenAssistant: 'გონიერი {appName} ასისტენტი',
+    operationInstructions: 'ხელმძღვანელობა',
+    productDescription: 'პროდუქტი',
+    completeRecipeCollection: 'მენიუ',
     smartAnalysis: 'ჭკვიანი ანალიზი',
-    qa: 'დახმარების ცენტრი',
+    qa: 'Q&A',
     poster: 'პოსტერი',
     all: 'ყველა',
     noData: 'მონაცემები ჯერ არ არის',

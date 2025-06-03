@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Tsinyimbo tsiebisiro',
-    smartKitchenAssistant: 'Omuyambi owamachesi mwikicheni',
-    operationInstructions: 'Amachelo okhukhola',
-    productDescription: 'Encholo yeshindu',
-    completeRecipeCollection: 'Ebiakulia biosi',
+    smartKitchenAssistant: 'Muyambi wa {appName} wa mayiele',
+    operationInstructions: 'Amachelo',
+    productDescription: 'Ebisole',
+    completeRecipeCollection: 'Ebiakulia',
     smartAnalysis: 'Okhuchela kolwongo',
-    qa: 'Tsindikho Tsya Khuwulila',
+    qa: 'Q&A',
     poster: 'Posta',
     all: 'Biosi',
     noData: 'Tsindanyo tsiaburiho',

@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Útgerðarlisti',
-    smartKitchenAssistant: 'Snild køkshjálpari',
-    operationInstructions: 'Rakstrarvegleiðing',
+    smartKitchenAssistant: 'Snildur {appName} hjálpari',
+    operationInstructions: 'Vegleiðing',
     productDescription: 'Vørulýsing',
-    completeRecipeCollection: 'Uppskriftsavn',
+    completeRecipeCollection: 'Matskrá',
     smartAnalysis: 'Snild greining',
-    qa: 'Hjálparmiðstøðin',
-    poster: 'Plakat', // 海报
+    qa: 'Q&A',
+    poster: 'Plakat',
     all: 'altíð',
     noData: 'Ongar dátur enn',
   },

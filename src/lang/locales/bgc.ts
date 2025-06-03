@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'lisiti ya vifaa',
-    smartKitchenAssistant: 'msaahizi wa kitchen wa akili',
-    operationInstructions: 'maelekezo ya uhalifu',
-    productDescription: 'maelezo ya bidhaa',
-    completeRecipeCollection: 'mchakato wa jinsi zote',
+    smartKitchenAssistant: 'Интелектуален асистент {appName}',
+    operationInstructions: 'Инструкции',
+    productDescription: 'Продукт',
+    completeRecipeCollection: 'Меню',
     smartAnalysis: 'uchambuzi wa akili',
-    qa: 'Център за помощ',
+    qa: 'Q&A',
     poster: 'Постер',
     all: 'wote',
     noData: 'hakuna data',

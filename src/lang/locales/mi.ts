@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Rarangi Taputapu',
-    smartKitchenAssistant: 'Kaiāwhina kīhini atamai',
-    operationInstructions: 'Aratohu Mahi',
-    productDescription: 'Whakaahuatanga Hua',
-    completeRecipeCollection: 'Kohinga Recipe',
+    smartKitchenAssistant: 'atamai {appName} kaiāwhina',
+    operationInstructions: 'Ārahitanga',
+    productDescription: 'hua',
+    completeRecipeCollection: 'rārangi kai',
     smartAnalysis: 'Tātari Maamaa',
-    qa: 'Pokapū Āwhina',
+    qa: 'Q&A',
     poster: 'Pānui',
     all: 'katoa',
     noData: 'Kaore ano he raraunga',

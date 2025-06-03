@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Orodha ya vifaa',
-    smartKitchenAssistant: 'Msaidizi wa jikoni wa kisasa',
-    operationInstructions: 'Maelekezo ya uendeshaji',
+    smartKitchenAssistant: 'Sakafya ya kianga {appName}',
+    operationInstructions: 'Maelezo ya kufanya',
     productDescription: 'Maelezo ya bidhaa',
-    completeRecipeCollection: 'Mkusanyiko wa mapishi',
+    completeRecipeCollection: 'Hifadhi ya mapishi',
     smartAnalysis: 'Uchambuzi wa kisasa',
-    qa: 'Maswali na majibu',
+    qa: 'Q&A',
     poster: 'Bango',
     all: 'Yote',
     noData: 'Hakuna data',
@@ -82,7 +82,6 @@ const zh_CN = {
     carbohydrate: 'Kabohaidreti',
   },
   lang: {
-    // 保留语言名称的英文代码，但翻译显示名称
     he: 'Kiebrania',
     th: 'Kithai',
     nds: 'Kijerumani cha chini',

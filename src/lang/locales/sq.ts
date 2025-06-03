@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Lista e Pajisjeve',
-    smartKitchenAssistant: 'Asistent i zgjuar në kuzhinë',
-    operationInstructions: 'Udhëzuesi i Operacionit',
-    productDescription: 'Përshkrimi i Produktit',
-    completeRecipeCollection: 'Koleksion Recetash',
+    smartKitchenAssistant: 'inteligjent {appName} ndihmës',
+    operationInstructions: 'Udhëzim',
+    productDescription: 'produkt',
+    completeRecipeCollection: 'menu',
     smartAnalysis: 'Analizë e zgjuar',
-    qa: 'Qendra e Ndihmës',
-    poster: 'Poster', // 海报
+    qa: 'Q&A',
+    poster: 'Poster',
     all: 'të gjithë',
     noData: 'Nuk ka ende të dhëna',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Kolleksioni im',
   },
   qa: {
-    search: 'Kërko pyetje', // 搜索问题
+    search: 'Kërko pyetje',
   },
 }
 export default zh_CN

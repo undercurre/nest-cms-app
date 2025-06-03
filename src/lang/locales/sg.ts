@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Molongo ti aye ti kua',
-    smartKitchenAssistant: 'Assistant ti cuisine so ayeke na ndara',
-    operationInstructions: 'Guide ti kusala',
-    productDescription: 'Fango nda ti ye ni',
-    completeRecipeCollection: 'Abungbi ti arecette',
+    smartKitchenAssistant: 'Wamungo maboko ti {appName} so ayeke na ndara',
+    operationInstructions: 'Fa lege',
+    productDescription: 'Aye ti vongo ni',
+    completeRecipeCollection: 'Menu',
     smartAnalysis: 'Analyse ti ndara',
-    qa: 'Bêndo tî Kua',
+    qa: 'Q&A',
     poster: 'Afiche',
     all: 'kwe',
     noData: 'A yeke wara pëpe mbeni données .',

@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'စက်ပစ္စည်းစာရင်း',
-    smartKitchenAssistant: 'စမတ်မီးဖိုချောင်အကူ',
-    operationInstructions: 'စစ်ဆင်ရေးလမ်းညွှန်',
-    productDescription: 'ကုန်ပစ္စည်းအကြောင်းအရာ',
-    completeRecipeCollection: 'ကြော်နည်း စုစည်းမှု',
+    smartKitchenAssistant: 'ဉာဏ်ကောင်းသော {appName} ထောက်ပံ့သူမ',
+    operationInstructions: 'လမ်းညွှန်ခြင်း',
+    productDescription: 'အထွက်ပစ္စည်းများ',
+    completeRecipeCollection: 'အစားအသောက်စာရင်း',
     smartAnalysis: 'စမတ်ခန့်မှန်းချက်',
-    qa: 'အကူအညီစင်တာ',
-    poster: 'ပိုစတာ', // 海报
+    qa: 'Q&A',
+    poster: 'ပိုစတာ',
     all: 'အားလုံး',
     noData: 'အချက်အလက်မရှိသေးပါ။',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'ကျွန်တော့်စုဆောင်းမှု',
   },
   qa: {
-    search: 'မေးခွန်းများ ရှာဖွေပါ', // 搜索问题
+    search: 'မေးခွန်းများ ရှာဖွေပါ',
   },
 }
 export default zh_CN

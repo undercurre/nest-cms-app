@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'ⵓⵎⵓⵖ ⵏ ⵡⴰⵍⵍⴰⵍⴻⵏ',
-    smartKitchenAssistant: 'ⴰⵎⴰⵔⴰⴳ ⵏ ⵜⴽⵓⵥⵉⵜ ⴰⵎⴻⴳⵣⵓ',
-    operationInstructions: 'ⴰⵡⴰⵍ ⵏ ⵜⴻⵎⵀⴻⵍⵜ',
-    productDescription: 'ⴰⵙⴻⴼⵀⴻⵎ ⵏ ⵓⴼⴰⵔⵉⵙ',
-    completeRecipeCollection: 'ⴰⵊⵎⴰⵄ ⵏ Tesmelt',
+    smartKitchenAssistant: 'ⴰⵎⴰⵔⴰⴳ {appName} ⴰⵄⴻⵇⵍⵉ',
+    operationInstructions: 'ⵏⵀⴻⵔ',
+    productDescription: 'ⵉⴼⴰⵔⵉⵙⴻⵏ',
+    completeRecipeCollection: 'ⴰⵎⵓⵖ',
     smartAnalysis: 'ⴰⵙⴽⴰⵙⵉ Ameqran',
-    qa: 'ⴰⴳⴰⵔⴰⴹ ⵏ ⵜⴰⵙⵙⴰⵏⵜ',
-    poster: 'ⴰⵙⵉⵜⴻⵍ', // 海报
+    qa: 'Q&A',
+    poster: 'ⴰⵙⵉⵜⴻⵍ',
     all: 'ⴰⴽⴽ',
     noData: 'ⵎⴰⵣⴰⵍ ⵓⵍⴰⵛ ⵉⵙⴻⴼⴽⴰ',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'ⵙⴰⵏⴳⴰⵔ ⵏⵉ',
   },
   qa: {
-    search: 'Afella n usawal', // 搜索问题
+    search: 'Afella n usawal',
   },
 }
 export default zh_CN

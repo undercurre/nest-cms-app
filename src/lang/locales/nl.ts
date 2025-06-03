@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Uitrustingslijst',
-    smartKitchenAssistant: 'Slimme keukenassistent',
-    operationInstructions: 'Bedieningshandleiding',
-    productDescription: 'Productomschrijving',
-    completeRecipeCollection: 'Receptenverzameling',
+    smartKitchenAssistant: 'intelligent {appName} assistent',
+    operationInstructions: 'Begeleiding',
+    productDescription: 'product',
+    completeRecipeCollection: 'menu',
     smartAnalysis: 'Slimme analyse',
-    qa: 'Helpcentrum',
+    qa: 'Q&A',
     poster: 'Poster',
     all: 'alle',
     noData: 'Nog geen gegevens',

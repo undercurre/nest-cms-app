@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Jerin Awaka',
-    smartKitchenAssistant: 'Mairaka Tiyaɓi na Gidan Kiɗa',
-    operationInstructions: 'Jagorancin Aiki',
-    productDescription: 'Bayanin Samfur',
-    completeRecipeCollection: 'Janarewar Miyan',
+    smartKitchenAssistant: 'Mataimakin {appName} na Hankali',
+    operationInstructions: 'Umarni',
+    productDescription: 'Samfur',
+    completeRecipeCollection: 'Menu',
     smartAnalysis: 'Nazarin Mairaka',
     qa: 'Q&A',
-    poster: 'Poster', // 海报
+    poster: 'Poster',
     all: 'Duka',
     noData: 'Babu Bayani',
   },
@@ -125,7 +125,7 @@ const zh_CN = {
     is: 'Icelandic',
     so: 'Somali',
     hy: 'Armenian',
-    dje: 'Djeḍe', // 哲尔马语自身标识
+    dje: 'Djeḍe',
     fr: 'French',
     no: 'Norwegian',
     tok: 'Tok Pisin',
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Waƙaƙina',
   },
   qa: {
-    search: 'Search Questions', // 搜索问题
+    search: 'Search Questions',
   },
 }
 export default zh_CN

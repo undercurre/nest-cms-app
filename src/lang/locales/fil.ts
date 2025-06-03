@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Listahan ng Kagamitan',
-    smartKitchenAssistant: 'Matalinong katulong sa kusina',
-    operationInstructions: 'Gabay sa Operasyon',
-    productDescription: 'Paglalarawan ng Produkto',
-    completeRecipeCollection: 'Koleksyon ng Recipe',
+    smartKitchenAssistant: 'Matalinong {appName} katulong',
+    operationInstructions: 'Tagubilin sa operasyon',
+    productDescription: 'Paglalarawan ng produkto',
+    completeRecipeCollection: 'Koleksyon ng menu',
     smartAnalysis: 'Matalinong Pagsusuri',
-    qa: 'Sentro ng Tulong',
+    qa: 'Q&A',
     poster: 'Postre',
     all: 'lahat',
     noData: 'Wala pang data',

@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Seznam opreme',
-    smartKitchenAssistant: 'Pametni kuhinjski pomočnik',
-    operationInstructions: 'Vodnik za uporabo',
-    productDescription: 'Opis izdelka',
-    completeRecipeCollection: 'Zbirka receptov',
+    smartKitchenAssistant: 'Pametni {appName} pomočnik',
+    operationInstructions: 'Navodila za uporabo',
+    productDescription: 'Izdelek',
+    completeRecipeCollection: 'Meni',
     smartAnalysis: 'Pametna analiza',
-    qa: 'Center za pomoč',
-    poster: 'Poster', // 海报
+    qa: 'Q&A',
+    poster: 'Poster',
     all: 'vse',
     noData: 'Še ni podatkov',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Moja zbira',
   },
   qa: {
-    search: 'Iskanje vprašanj', // 搜索问题
+    search: 'Iskanje vprašanj',
   },
 }
 export default zh_CN

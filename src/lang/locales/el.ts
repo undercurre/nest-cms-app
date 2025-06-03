@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Λίστα εξοπλισμού',
-    smartKitchenAssistant: 'Έξυπνος βοηθός κουζίνας',
-    operationInstructions: 'Οδηγός Λειτουργίας',
-    productDescription: 'Περιγραφή προϊόντος',
-    completeRecipeCollection: 'Συλλογή Συνταγών',
+    smartKitchenAssistant: 'έξυπνος {appName} βοηθός',
+    operationInstructions: 'Οδηγία',
+    productDescription: 'προϊόν',
+    completeRecipeCollection: 'μενού',
     smartAnalysis: 'Έξυπνη Ανάλυση',
-    qa: 'Κέντρο βοήθειας',
+    qa: 'Q&A',
     poster: 'Παραπτήρι',
     all: 'όλοι',
     noData: 'Δεν υπάρχουν ακόμη δεδομένα',

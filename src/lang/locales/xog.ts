@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Olukalala lw’ebikozesebwa',
-    smartKitchenAssistant: 'Omuyambi wa kkitchen ow’amagezi',
-    operationInstructions: 'Ebiragiro by’okukozesa',
-    productDescription: 'Okulambulula ekintu',
-    completeRecipeCollection: 'Enkuŋŋaana y’ebirungo byonna',
+    smartKitchenAssistant: '{appName} omuyambi ow’amagezi mu ffumbiro',
+    operationInstructions: 'Amagezi g’okukozesa',
+    productDescription: 'Okulambulula ekikozesebwa',
+    completeRecipeCollection: 'Enkuŋŋaana y’ebirungo by’okufumba',
     smartAnalysis: 'Okunoonyereza okw’amagezi',
-    qa: 'Kitundu ky’obuyambi',
-    poster: 'Ekifananyi', // 海报
+    qa: 'Q&A',
+    poster: 'Ekifananyi',
     all: 'Byonna',
     noData: 'Tewali data',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'My collection',
   },
   qa: {
-    search: 'Noonya ebibuuzo', // 搜索问题
+    search: 'Noonya ebibuuzo',
   },
 }
 export default zh_CN

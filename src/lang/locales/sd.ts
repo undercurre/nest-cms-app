@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'سامان جي فهرست',
-    smartKitchenAssistant: 'سمارٽ باورچی خانه اسسٽنٽ',
-    operationInstructions: 'آپريشن گائيڊ',
-    productDescription: 'پيداوار جي وضاحت',
-    completeRecipeCollection: 'ترڪيب جو مجموعو',
+    smartKitchenAssistant: 'ذهين {appName} اسسٽانٽ',
+    operationInstructions: 'عزت',
+    productDescription: 'پر هڪ استعمالا',
+    completeRecipeCollection: 'مينيو',
     smartAnalysis: 'سمارٽ تجزيو',
-    qa: 'مدد گاه',
+    qa: 'Q&A',
     poster: 'پوسٽر',
     all: 'سڀ',
     noData: 'اڃا تائين ڪو به ڊيٽا ناهي',

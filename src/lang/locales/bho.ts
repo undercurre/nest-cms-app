@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'उपकरण के सूची बा',
-    smartKitchenAssistant: 'स्मार्ट किचन असिस्टेंट के बा',
-    operationInstructions: 'ऑपरेशन गाइड के बारे में बतावल गइल बा',
-    productDescription: 'उत्पाद के विवरण बा',
-    completeRecipeCollection: 'रेसिपी के संग्रह बा',
+    smartKitchenAssistant: 'সহায়ক {appName}',
+    operationInstructions: 'নির্দেশনা',
+    productDescription: 'পণ্য',
+    completeRecipeCollection: 'তালিকা',
     smartAnalysis: 'स्मार्ट एनालिसिस के बा',
-    qa: 'मदद केंद्र',
-    poster: 'पोस्टर', // 海报
+    qa: 'Q&A',
+    poster: 'पोस्टर',
     all: 'कुल्हि',
     noData: 'अबहीं ले कवनो डाटा नइखे',
   },

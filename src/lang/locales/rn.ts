@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: "Urutonde rw'ibikoresho",
-    smartKitchenAssistant: "Umufasha w'igikoni w'ubwenge",
-    operationInstructions: "Inyobora y'imikorere",
-    productDescription: "Insobanuro y'igicuruzwa",
-    completeRecipeCollection: "Ikoraniro ry'amaresipe",
+    smartKitchenAssistant: 'Ubwenge {appName} Umufasha',
+    operationInstructions: 'Ubuyobozi',
+    productDescription: 'Ibicuruzwa',
+    completeRecipeCollection: 'Ibikubiyemwo',
     smartAnalysis: "Isesengura ry'ubwenge",
-    qa: "Ikirimba c'Ubufasha",
+    qa: 'Q&A',
     poster: 'Afiche',
     all: 'vyose',
     noData: 'Nta makuru aracariho',

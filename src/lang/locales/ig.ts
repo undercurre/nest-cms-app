@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Ndepụta akụrụngwa',
-    smartKitchenAssistant: 'Onye enyemaka kichin Smart',
-    operationInstructions: 'Ntuziaka ọrụ',
-    productDescription: 'Nkọwa ngwaahịa',
-    completeRecipeCollection: 'Nchịkọta nri',
+    smartKitchenAssistant: 'keamamiihe {appName} onye mnyemeaka',
+    operationInstructions: 'Ndumoodu',
+    productDescription: 'ihe emeputara ohuru',
+    completeRecipeCollection: 'nri enwere',
     smartAnalysis: 'Nyocha Smart',
-    qa: 'Ụlọ enyemaka',
-    poster: 'Mgbasa ozi', // 海报
+    qa: 'Q&A',
+    poster: 'Mgbasa ozi',
     all: 'niile',
     noData: 'Enweghị data ma',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Ngwakọta m',
   },
   qa: {
-    search: 'Chọọ ajụjụ', // 搜索问题
+    search: 'Chọọ ajụjụ',
   },
 }
 export default zh_CN

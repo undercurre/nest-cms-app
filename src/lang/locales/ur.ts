@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'سامان کی فہرست',
-    smartKitchenAssistant: 'سمارٹ کچن اسسٹنٹ',
-    operationInstructions: 'آپریشن گائیڈ',
-    productDescription: 'مصنوعات کی تفصیل',
-    completeRecipeCollection: 'ترکیب مجموعہ',
+    smartKitchenAssistant: 'ذہین {appName} اسسٹنٹ',
+    operationInstructions: 'رہنمائی',
+    productDescription: 'مصنوعات',
+    completeRecipeCollection: 'مینو',
     smartAnalysis: 'سمارٹ تجزیہ',
-    qa: 'مدد مرکز',
-    poster: 'پوسٹر', // 海报
+    qa: 'Q&A',
+    poster: 'پوسٹر',
     all: 'تمام',
     noData: 'ابھی تک کوئی ڈیٹا نہیں ہے۔',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'میراCOLLECTION',
   },
   qa: {
-    search: 'سوال تلاش کریں', // 搜索问题
+    search: 'سوال تلاش کریں',
   },
 }
 export default zh_CN

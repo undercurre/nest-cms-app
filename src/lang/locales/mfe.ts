@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'List ekwipman',
-    smartKitchenAssistant: 'Asistan Kouzin Entelizan',
-    operationInstructions: 'Enstriksyon Operasyon',
-    productDescription: 'Deskripsyon Produi',
-    completeRecipeCollection: 'Koleksyon Resip Konplet',
+    smartKitchenAssistant: 'Asistan entelizan {appName}',
+    operationInstructions: 'Lindiksion',
+    productDescription: 'Deskripsyon prodwi',
+    completeRecipeCollection: 'Koleksyon resèt',
     smartAnalysis: 'Analiz Entelizan',
-    qa: 'Sant Ed',
+    qa: 'Q&A',
     poster: 'Poster',
     all: 'Tou',
     noData: 'Pa gen done',

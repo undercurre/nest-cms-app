@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: "Orukarara rw'ebikwato",
-    smartKitchenAssistant: "Omuhwezi w'omukiyungu w'obwengye",
-    operationInstructions: "Endagiiriro y'okukora",
-    productDescription: 'Enshoboorora aha kintu',
-    completeRecipeCollection: "Okuteerana eby'okurya",
+    smartKitchenAssistant: 'ჭკვიანი {appName} ასისტენტი',
+    operationInstructions: 'ინსტრუქცია',
+    productDescription: 'პროდუქტი',
+    completeRecipeCollection: 'მენიუ',
     smartAnalysis: "Okushwijuma kw'obwengye",
-    qa: "Ekizibu ky'ebyokuyamba",
-    poster: 'Ekibaho', // 海报
+    qa: 'Q&A',
+    poster: 'Ekibaho',
     all: 'byona',
     noData: 'Tihariho data hati',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Orukusanyo wange',
   },
   qa: {
-    search: 'Kishakure ebibuuzo', // 搜索问题
+    search: 'Kishakure ebibuuzo',
   },
 }
 export default zh_CN

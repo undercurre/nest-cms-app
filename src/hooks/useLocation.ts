@@ -2,11 +2,18 @@ import countryIso from 'country-iso'
 import getCountryISO2 from 'country-iso-3-to-2'
 import { getCountryLanguages } from 'country-language'
 import { ref, watch } from 'vue'
+import { useRoute } from 'vue-router'
 import { useLanguage } from './useLanguage'
 
 export const useLocation = () => {
   const { setLanguage } = useLanguage()
+  const route = useRoute()
   const getLocation = async () => {
+    if (route.query.lang) {
+      language.value = route.query.lang as string
+      console.log('language.value: ', language.value)
+      return
+    }
     navigator.geolocation.getCurrentPosition(
       (position) => {
         const coords = {

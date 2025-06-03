@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'ಸಲಕರಣೆಗಳ ಪಟ್ಟಿ',
-    smartKitchenAssistant: 'ಸ್ಮಾರ್ಟ್ ಅಡುಗೆ ಸಹಾಯಕ',
-    operationInstructions: 'ಕಾರ್ಯಾಚರಣೆ ಮಾರ್ಗದರ್ಶಿ',
-    productDescription: 'ಉತ್ಪನ್ನ ವಿವರಣೆ',
-    completeRecipeCollection: 'ಪಾಕವಿಧಾನ ಸಂಗ್ರಹ',
+    smartKitchenAssistant: 'ಬುದ್ಧಿಶಕ್ತಿ {appName} ಸಹಾಯಕ',
+    operationInstructions: 'ಮಾರ್ಗದರ್ಶನ',
+    productDescription: 'ಉತ್ಪನ್ನ',
+    completeRecipeCollection: 'ಮೆಳ್ಳಿ',
     smartAnalysis: 'ಸ್ಮಾರ್ಟ್ ವಿಶ್ಲೇಷಣೆ',
-    qa: 'ಸಹಾಯ ಕೇಂದ್ರ',
-    poster: 'ಪೋಸ್ಟರ್', // 海报
+    qa: 'Q&A',
+    poster: 'ಪೋಸ್ಟರ್',
     all: 'ಎಲ್ಲಾ',
     noData: 'ಇನ್ನೂ ಯಾವುದೇ ಡೇಟಾ ಇಲ್ಲ.',
   },
@@ -267,7 +267,7 @@ const zh_CN = {
     myCollection: 'ನನ್ನ ಸೇರಿಸಿದ ಸಾಧನಗಳು',
   },
   qa: {
-    search: 'ಪ್ರಶ್ನೆಗಳನ್ನು ಹುಡುಕಿ', // 搜索问题
+    search: 'ಪ್ರಶ್ನೆಗಳನ್ನು ಹುಡುಕಿ',
   },
 }
 

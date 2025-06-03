@@ -7,8 +7,8 @@ export const useLanguage = () => {
   // 获取系统语言
   function setLanguage(locationLanguages?: string) {
     let lang =
-      locationLanguages ||
       (Array.isArray(route.query.lang) ? route.query.lang[0] : route.query.lang) ||
+      locationLanguages ||
       localStorage.getItem('locale') ||
       'en'
     // 手动切换后，页面刷新就取切换的语言

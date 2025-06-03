@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Սարքավորումների ցանկ',
-    smartKitchenAssistant: 'Խելացի խոհանոցի օգնական',
-    operationInstructions: 'Գործողության ուղեցույց',
-    productDescription: 'Ապրանքի նկարագրություն',
-    completeRecipeCollection: 'Բաղադրատոմսերի հավաքածու',
+    smartKitchenAssistant: 'խելացի {appName} օգնական',
+    operationInstructions: 'Ղեկավարություն',
+    productDescription: 'ապրանքի',
+    completeRecipeCollection: 'մենյու',
     smartAnalysis: 'Խելացի վերլուծություն',
-    qa: 'Օգնության Կենտրոն',
+    qa: 'Q&A',
     poster: 'Աֆիշա',
     all: 'բոլորը',
     noData: 'Դեռևս տվյալներ չկան',

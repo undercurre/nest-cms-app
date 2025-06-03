@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Iekārtu saraksts',
-    smartKitchenAssistant: 'Gudrais virtuves asistents',
-    operationInstructions: 'Darbības instrukcijas',
-    productDescription: 'Produkta apraksts',
-    completeRecipeCollection: 'Pilnīga receptu kolekcija',
+    smartKitchenAssistant: 'saprātīgs {appName} asistents',
+    operationInstructions: 'Vadība',
+    productDescription: 'produkts',
+    completeRecipeCollection: 'ēdienkarte',
     smartAnalysis: 'Gudrā analīze',
-    qa: 'Palīdzības Centrs',
+    qa: 'Q&A',
     poster: 'Plakāts',
     all: 'Viss',
     noData: 'Nav datu',

@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'ГӀирсийн тептар',
-    smartKitchenAssistant: 'Хьекъале кухнин гӀоьнча',
-    operationInstructions: 'Операцин хьехам',
-    productDescription: 'Товаран описание',
-    completeRecipeCollection: 'Рецептийн гулар .',
+    smartKitchenAssistant: 'Интеллигент {appName} дӀаяр',
+    operationInstructions: 'Йоза хьо',
+    productDescription: 'Дуккха',
+    completeRecipeCollection: 'Меню',
     smartAnalysis: 'Хьекъале анализ яр',
-    qa: 'ЦӀахьа цӀенц',
-    poster: 'Постер', // 海报
+    qa: 'Q&A',
+    poster: 'Постер',
     all: 'дерриг',
     noData: 'Цкъачунна даннаш дац',
   },
@@ -316,6 +316,6 @@ const zh_CN = {
   },
   qa: {
     search: 'Суал лаха',
-  }, // 搜索问题
+  },
 }
 export default zh_CN

@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'د تجهیزاتو لیست',
-    smartKitchenAssistant: 'هوښیار پخلنځي مرستیال',
-    operationInstructions: 'د عملیاتو لارښود',
-    productDescription: 'د محصول معلومات',
-    completeRecipeCollection: 'د ترکیب ټولګه',
+    smartKitchenAssistant: 'هوښیاره {appName} معاون',
+    operationInstructions: 'لارښود',
+    productDescription: 'محصول',
+    completeRecipeCollection: 'مینو',
     smartAnalysis: 'هوښیار تحلیل',
-    qa: 'د مرستې مرکز',
+    qa: 'Q&A',
     poster: 'پوسټر',
     all: 'ټول',
     noData: 'تراوسه کوم معلومات نشته',

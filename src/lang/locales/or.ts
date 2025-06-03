@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'ଉପକରଣ ତାଲିକା',
-    smartKitchenAssistant: 'ସ୍ମାର୍ଟ କିଚେନ୍ ସହାୟକ',
-    operationInstructions: 'ଚାଳନା ନିର୍ଦ୍ଦେଶାବଳୀ',
-    productDescription: 'ଉତ୍ପାଦ ବିବରଣୀ',
-    completeRecipeCollection: 'ସମ୍ପୂର୍ଣ୍ଣ ପାକପଦ୍ଧତି ସଂଗ୍ରହ',
+    smartKitchenAssistant: 'ବୁଦ୍ଧିମାନ {appName} ସହକାରୀ',
+    operationInstructions: 'ମାର୍ଗଦର୍ଶନ',
+    productDescription: 'ଉତ୍ପାଦ',
+    completeRecipeCollection: 'ମେନୁ',
     smartAnalysis: 'ସ୍ମାର୍ଟ ବିଶ୍ଲେଷଣ',
-    qa: 'ସହାୟତା କେନ୍ଦ୍ର',
-    poster: 'ପୋଷ୍ଟର୍', // 海报
+    qa: 'Q&A',
+    poster: 'ପୋଷ୍ଟର୍',
     all: 'ସମସ୍ତ',
     noData: 'ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ତଥ୍ୟ ନାହିଁ',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'my collection',
   },
   qa: {
-    search: 'ପ୍ରଶ୍ନଗୁଡିକୁ ଖୋଜନ୍ତୁ', // 搜索问题
+    search: 'ପ୍ରଶ୍ନଗୁଡିକୁ ଖୋଜନ୍ତୁ',
   },
 }
 export default zh_CN

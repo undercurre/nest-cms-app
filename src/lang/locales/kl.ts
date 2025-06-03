@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Atortut allattorsimaffiat',
-    smartKitchenAssistant: 'Smart igaffimmi assistenti',
-    operationInstructions: 'Ingerlatsinermut najoqqutassiaq',
-    productDescription: 'Nioqqutissap nassuiaataa',
-    completeRecipeCollection: 'Receptinik katersuineq',
+    smartKitchenAssistant: 'Smart {appName} ikiorti',
+    operationInstructions: 'Ilitsersuut',
+    productDescription: 'Nassuiaat',
+    completeRecipeCollection: 'Nerisassiat allattorsimaffiat',
     smartAnalysis: 'Smart Analyse',
-    qa: 'Ikiuinerit Qinersuut',
+    qa: 'Q&A',
     poster: 'Plakati',
     all: 'tamaasa',
     noData: 'Suli paasissutissaqanngilaq',

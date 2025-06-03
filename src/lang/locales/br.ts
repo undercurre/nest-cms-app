@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Roll an dafar',
-    smartKitchenAssistant: 'Skoazeller kegin speredek',
-    operationInstructions: 'Titouroù obererezh',
-    productDescription: 'Deskrivadur ar produ',
-    completeRecipeCollection: 'Dastumad rekipeoù',
+    smartKitchenAssistant: 'Skoazeller kegin {appName} a-feson',
+    operationInstructions: 'Titouroù',
+    productDescription: 'Deskrivadur produ',
+    completeRecipeCollection: 'Lañv',
     smartAnalysis: 'Dielfennadur speredek',
-    qa: 'Kreiz skoazell',
+    qa: 'Q&A',
     poster: 'Afenner',
     all: 'holl',
     noData: "Roadenn ebet c'hoazh",

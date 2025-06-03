@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'បញ្ជីឧបករណ៍',
-    smartKitchenAssistant: 'ជំនួយការផ្ទះបាយឆ្លាតវៃ',
-    operationInstructions: 'មគ្គុទ្ទេសក៍ប្រតិបត្តិការ',
-    productDescription: 'ការពិពណ៌នាផលិតផល',
-    completeRecipeCollection: 'ការប្រមូលរូបមន្ត',
+    smartKitchenAssistant: 'ដេលមានរបាច្ញា {appName} រសីអ្នកចមនយយការ',
+    operationInstructions: 'ការនេនាម',
+    productDescription: 'ផលិតផល',
+    completeRecipeCollection: 'បហ្ជីមុខម្ហូប',
     smartAnalysis: 'ការវិភាគឆ្លាតវៃ',
-    qa: 'មជ្ឈមណ្ឌលជំនួយ',
+    qa: 'Q&A',
     poster: 'ប៉ុស្តិ៍',
     all: 'ទាំងអស់។',
     noData: 'មិនមានទិន្នន័យនៅឡើយទេ',

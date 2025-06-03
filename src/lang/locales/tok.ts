@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'ilo pi tomo moku',
-    smartKitchenAssistant: 'jan pi sona tomo moku',
-    operationInstructions: 'nasin pali',
-    productDescription: 'toki pi ijo',
-    completeRecipeCollection: 'poki pi toki moku ale',
+    smartKitchenAssistant: 'sona {appName} musi',
+    operationInstructions: 'moku musi',
+    productDescription: 'sowa',
+    completeRecipeCollection: 'suli soweli',
     smartAnalysis: 'sona pi pona',
-    qa: 'tomo pana sona',
-    poster: 'sitelen suli', // 海报
+    qa: 'Q&A',
+    poster: 'sitelen suli',
     all: 'ale',
     noData: 'ala data',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'mi lon sewi',
   },
   qa: {
-    search: 'alasa nimi pi toki', // 搜索问题
+    search: 'alasa nimi pi toki',
   },
 }
 export default zh_CN

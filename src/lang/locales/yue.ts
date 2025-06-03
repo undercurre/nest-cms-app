@@ -8,7 +8,7 @@ const zh_CN = {
     completeRecipeCollection: '菜單',
     smartAnalysis: '智能分析',
     qa: 'Q&A',
-    poster: '海報', // 海报
+    poster: '海報',
     all: '全部',
     noData: '暫時冇數據',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: '我的收藏',
   },
   qa: {
-    search: '搜尋問題', // 搜索问题
+    search: '搜尋問題',
   },
 }
 export default zh_CN

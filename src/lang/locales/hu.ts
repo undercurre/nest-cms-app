@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Felszerelési lista',
-    smartKitchenAssistant: 'Okos konyhai asszisztens',
-    operationInstructions: 'Használati útmutató',
-    productDescription: 'Termékleírás',
-    completeRecipeCollection: 'Receptgyűjtemény',
+    smartKitchenAssistant: 'intelligens {appName} helyettes',
+    operationInstructions: 'Irányítás',
+    productDescription: 'termék',
+    completeRecipeCollection: 'menü',
     smartAnalysis: 'Intelligens elemzés',
-    qa: 'Súgóközpont',
+    qa: 'Q&A',
     poster: 'Plakát',
     all: 'minden',
     noData: 'Még nincsenek adatok',

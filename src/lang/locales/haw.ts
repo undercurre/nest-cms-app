@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Papa Lako',
-    smartKitchenAssistant: 'Kōkua kīhini akamai',
-    operationInstructions: 'Alakaʻi hana',
-    productDescription: 'Hōʻike huahana',
-    completeRecipeCollection: 'ʻOhi meaʻai',
+    smartKitchenAssistant: 'akamai {appName} kōkua',
+    operationInstructions: 'Alakaʻi alakaʻi',
+    productDescription: "'Ōpilo Froper",
+    completeRecipeCollection: 'papa kuhikuhi',
     smartAnalysis: 'ʻIkena akamai',
-    qa: 'Kapu Hale Kōkua',
+    qa: 'Q&A',
     poster: 'Palapala Hōʻike',
     all: 'pau loa',
     noData: 'ʻAʻohe ʻikepili i kēia manawa',

@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Ifilondalanda fyabakushisya',
-    smartKitchenAssistant: 'Ichishinka cha kukosha mu kulya',
-    operationInstructions: 'Imilangilo yabucushi',
-    productDescription: 'Inkumbo yacitundu',
-    completeRecipeCollection: 'Ukusanganisya ubucushi bwonse',
+    smartKitchenAssistant: 'Asistenti ya kicheni ya {appName}',
+    operationInstructions: 'Mbuya xeray',
+    productDescription: 'Xeray ya product',
+    completeRecipeCollection: 'Kolisi ya mapishi',
     smartAnalysis: 'Ukulolesha ubwikoshi',
-    qa: 'Maswali na majibu',
+    qa: 'Q&A',
     poster: 'Bango',
     all: 'Bonse',
     noData: 'Tapali data',

@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'עקוויפּמענט רשימה',
-    smartKitchenAssistant: 'קלוגע קיך אַסיסטאַנט',
-    operationInstructions: 'אָפּעראַציע גייד',
-    productDescription: 'פּראָדוקט באַשרייַבונג',
-    completeRecipeCollection: 'רעצעפּט זאַמלונג',
+    smartKitchenAssistant: 'ינטעליגענט {appName} אַססיסטאַנט',
+    operationInstructions: 'גיידאַנס',
+    productDescription: 'פּראָדוקט',
+    completeRecipeCollection: 'מעניו',
     smartAnalysis: 'קלוגע אנאליז',
-    qa: 'הילף צענטער',
-    poster: 'פּאָסטער', // 海报
+    qa: 'Q&A',
+    poster: 'פּאָסטער',
     all: 'אַלע',
     noData: 'קיין דאַטן נאָך נישט',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Mayn sammlung',
   },
   qa: {
-    search: 'זוך פֿראגן', // 搜索问题
+    search: 'זוך פֿראגן',
   },
 }
 export default zh_CN

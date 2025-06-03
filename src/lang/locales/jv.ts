@@ -1,11 +1,11 @@
-// 埃翁多语
+// 爪哇语
 const zh_CN = {
   common: {
     equipmentList: 'Equipment List',
-    smartKitchenAssistant: 'Smart {appName} assistant',
-    operationInstructions: 'Guide',
-    productDescription: 'Product',
-    completeRecipeCollection: 'menu',
+    smartKitchenAssistant: 'cerdas {appName} Asisten',
+    operationInstructions: 'Pandhuan',
+    productDescription: 'Produk',
+    completeRecipeCollection: 'Menu',
     smartAnalysis: 'Smart Analysis',
     qa: 'Q&A',
     poster: 'Poster',

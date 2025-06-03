@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'उपकरणसूची',
-    smartKitchenAssistant: 'स्मार्ट किचन सहायक',
-    operationInstructions: 'संचालन मार्गदर्शिका',
-    productDescription: 'उत्पाद विवरण',
-    completeRecipeCollection: 'नुस्खा संग्रह',
+    smartKitchenAssistant: 'स्मार्ट {appName} सहायक',
+    operationInstructions: 'मार्गदर्शकः',
+    productDescription: 'उत्पादाः',
+    completeRecipeCollection: 'मेनू',
     smartAnalysis: 'स्मार्ट एनालिसिस',
-    qa: 'सहाय्यकेन्द्रम्',
+    qa: 'Q&A',
     poster: 'पोस्टर',
     all: 'सर्वे',
     noData: 'अद्यापि कोऽपि दत्तांशः नास्ति',

@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'ዝርዝር መሳርያ',
-    smartKitchenAssistant: 'ምሁር ኣብያተ ምግቢ ሓጋዚ',
-    operationInstructions: 'መመርዕ ስራሕ',
-    productDescription: 'መግለጺ ፍርያት',
-    completeRecipeCollection: 'ምሉእ ዝርዝር ግዕ',
+    smartKitchenAssistant: 'ሰራተኛ {appName} ምረጥ',
+    operationInstructions: 'ምመሪያ',
+    productDescription: 'መግለጫ',
+    completeRecipeCollection: 'መዝገብ',
     smartAnalysis: 'ምሁር ትንተና',
-    qa: 'ዓይነት ሓጋዚ',
-    poster: 'ፖስተር', // 海报
+    qa: 'Q&A',
+    poster: 'ፖስተር',
     all: 'ኩሉ',
     noData: 'ዳታ የለን',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'ስብርኝ',
   },
   qa: {
-    search: 'ጥያቄታት ድለ', // 搜索问题
+    search: 'ጥያቄታት ድለ',
   },
 }
 export default zh_CN

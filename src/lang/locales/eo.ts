@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Ekipaĵlisto',
-    smartKitchenAssistant: 'Inteligenta kuireja asistanto',
-    operationInstructions: 'Operacia Gvidilo',
-    productDescription: 'Produkta Priskribo',
-    completeRecipeCollection: 'Recepto-Kolekto',
+    smartKitchenAssistant: 'Inteligenta {appName} Asistanto',
+    operationInstructions: 'Gvidado',
+    productDescription: 'Produkto',
+    completeRecipeCollection: 'Menuo',
     smartAnalysis: 'Inteligenta Analizo',
-    qa: 'Helpcentro',
+    qa: 'Q&A',
     poster: 'Afgardo',
     all: 'ĉio',
     noData: 'Ankoraŭ neniuj datumoj',

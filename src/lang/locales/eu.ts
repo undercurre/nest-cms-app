@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Ekipamenduen zerrenda',
-    smartKitchenAssistant: 'Sukaldeko laguntzaile adimenduna',
-    operationInstructions: 'Eragiketa Gida',
-    productDescription: 'Produktuaren deskribapena',
-    completeRecipeCollection: 'Errezeta bilduma',
+    smartKitchenAssistant: 'admientsu {appName} laguntzaile',
+    operationInstructions: 'Orientazio',
+    productDescription: 'ekoizkin',
+    completeRecipeCollection: 'menu',
     smartAnalysis: 'Analisi Adimenduna',
-    qa: 'Laguntza Zentroa',
+    qa: 'Q&A',
     poster: 'Poster',
     all: 'guztiak',
     noData: 'Daturik ez oraindik',

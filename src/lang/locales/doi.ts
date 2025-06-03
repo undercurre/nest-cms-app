@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'उपकरण दी सूची',
-    smartKitchenAssistant: 'स्मार्ट किचन असिस्टेंट',
-    operationInstructions: 'ऑपरेशन गाइड',
-    productDescription: 'उत्पाद विवरण',
-    completeRecipeCollection: 'नुस्खा संग्रह',
+    smartKitchenAssistant: 'स्मार्ट {appName} असिस्टेंट',
+    operationInstructions: 'निर्देश',
+    productDescription: 'उत्पाद',
+    completeRecipeCollection: 'मेनू',
     smartAnalysis: 'स्मार्ट एनालिसिस',
-    qa: 'मदद केंद्र',
-    poster: 'पोस्टर', // 海报
+    qa: 'Q&A',
+    poster: 'पोस्टर',
     all: 'सब्भै',
     noData: 'अजे तक कोई डाटा नहीं',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'मेरी संग्रह',
   },
   qa: {
-    search: 'प्रश्न खोजें', // 搜索问题
+    search: 'प्रश्न खोजें',
   },
 }
 export default zh_CN

@@ -1,11 +1,11 @@
-// 埃翁多语
+// 豪萨语
 const zh_CN = {
   common: {
     equipmentList: 'Equipment List',
-    smartKitchenAssistant: 'Smart {appName} assistant',
-    operationInstructions: 'Guide',
-    productDescription: 'Product',
-    completeRecipeCollection: 'menu',
+    smartKitchenAssistant: 'na basira {appName} mataimakiya',
+    operationInstructions: 'Jagoranci',
+    productDescription: 'abin sarrafawa',
+    completeRecipeCollection: 'takardar tsarin abinci',
     smartAnalysis: 'Smart Analysis',
     qa: 'Q&A',
     poster: 'Poster',

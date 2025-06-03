@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Equipment List',
-    smartKitchenAssistant: 'Smart {appName} assistant',
-    operationInstructions: 'Guide',
-    productDescription: 'Product',
-    completeRecipeCollection: 'menu',
+    smartKitchenAssistant: 'manan-tsaina {appName} mpanampy',
+    operationInstructions: 'Tari-dalana',
+    productDescription: 'vokatra',
+    completeRecipeCollection: 'sakafo',
     smartAnalysis: 'Smart Analysis',
-    qa: 'Ivontoerana Fanampiana',
+    qa: 'Q&A',
     poster: 'Afisy',
     all: 'All',
     noData: 'No data available',

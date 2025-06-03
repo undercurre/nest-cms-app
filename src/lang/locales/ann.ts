@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Lista di equipamento',
-    smartKitchenAssistant: 'Assistente di cozinha inteligente',
-    operationInstructions: 'Instruções di operação',
-    productDescription: 'Descrição di produto',
-    completeRecipeCollection: 'Coleção completa di receitas',
+    smartKitchenAssistant: 'Ọrụ ọgụgụ isi {appName} enyemaka',
+    operationInstructions: 'Ntuziaka',
+    productDescription: 'Nkọwa ngwaahịa',
+    completeRecipeCollection: 'Nchịkọta nri dum',
     smartAnalysis: 'Análise inteligente',
-    qa: 'Ụlọ enyemaka',
+    qa: 'Q&A',
     poster: 'Akwụkwọ mgbasa ozi',
     all: 'Tudu',
     noData: 'Nada di dados',

@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Búnaðarlisti',
-    smartKitchenAssistant: 'Snjall eldhúsaðstoðarmaður',
-    operationInstructions: 'Notkunarleiðbeiningar',
-    productDescription: 'Vörulýsing',
-    completeRecipeCollection: 'Uppskriftasafn',
+    smartKitchenAssistant: 'greindur {appName} aðstoðarmaður',
+    operationInstructions: 'Leiðbeiningar',
+    productDescription: 'Vara',
+    completeRecipeCollection: 'Matseðill',
     smartAnalysis: 'Snjallgreining',
-    qa: 'Aðstoðarmiðstöð',
+    qa: 'Q&A',
     poster: 'Vefspjald',
     all: 'allt',
     noData: 'Engin gögn ennþá',

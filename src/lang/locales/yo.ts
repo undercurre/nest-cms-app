@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Akojọ Ẹrọ',
-    smartKitchenAssistant: 'Iranlọwọ ibi idana ọlọgbọn',
-    operationInstructions: 'Itọsọna isẹ',
-    productDescription: 'Apejuwe ọja',
-    completeRecipeCollection: 'Akojọpọ ohunelo pipe',
+    smartKitchenAssistant: 'oye {appName} amugbalẹgbẹ obinrin',
+    operationInstructions: 'Itọran',
+    productDescription: 'ọja',
+    completeRecipeCollection: 'mẹnu',
     smartAnalysis: 'Onínọmbà ọlọgbọn',
-    qa: 'Ile-iṣẹ Iranlọwọ',
-    poster: 'Fíto', // 海报
+    qa: 'Q&A',
+    poster: 'Fíto',
     all: 'gbogbo',
     noData: 'Ko si data sibẹsibẹ',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Eri mi',
   },
   qa: {
-    search: 'Wa ibeere', // 搜索问题
+    search: 'Wa ibeere',
   },
 }
 export default zh_CN

@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Danh sách thiết bị',
-    smartKitchenAssistant: 'Trợ lý nhà bếp thông minh',
-    operationInstructions: 'Hướng dẫn vận hành',
-    productDescription: 'Mô tả sản phẩm',
-    completeRecipeCollection: 'Bộ sưu tập công thức',
+    smartKitchenAssistant: 'thông minh {appName} trợ lý',
+    operationInstructions: 'Hướng dẫn',
+    productDescription: 'sản phẩm',
+    completeRecipeCollection: 'Menu',
     smartAnalysis: 'Phân tích thông minh',
-    qa: 'Trung tâm trợ giúp',
-    poster: 'Áp phích', // 海报
+    qa: 'Q&A',
+    poster: 'Áp phích',
     all: 'tất cả',
     noData: 'Chưa có dữ liệu',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Tập hợp của tôi',
   },
   qa: {
-    search: 'Tìm kiếm câu hỏi', // 搜索问题
+    search: 'Tìm kiếm câu hỏi',
   },
 }
 export default zh_CN

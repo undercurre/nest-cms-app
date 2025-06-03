@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Gerätelist',
-    smartKitchenAssistant: 'Smart Köökhelper',
-    operationInstructions: 'Bedienungsanwiesung',
+    smartKitchenAssistant: 'Smart {appName} Hölper',
+    operationInstructions: 'Bedienungsanwiessungen',
     productDescription: 'Produktbeschrieven',
-    completeRecipeCollection: 'Vull Rezeptsammlung',
+    completeRecipeCollection: 'Rezeptensammlung',
     smartAnalysis: 'Smart Analyse',
-    qa: 'Hülpzentrum',
+    qa: 'Q&A',
     poster: 'Plakaa',
     all: 'All',
     noData: 'Keen Daten',

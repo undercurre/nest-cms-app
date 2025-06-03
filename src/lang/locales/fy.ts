@@ -1,10 +1,10 @@
-// 埃翁多语
+// 西弗里西亚语
 const zh_CN = {
   common: {
     equipmentList: 'Equipment List',
-    smartKitchenAssistant: 'Smart {appName} assistant',
-    operationInstructions: 'Guide',
-    productDescription: 'Product',
+    smartKitchenAssistant: 'yntelligint {appName} assistint',
+    operationInstructions: 'Lieding',
+    productDescription: 'produkt',
     completeRecipeCollection: 'menu',
     smartAnalysis: 'Smart Analysis',
     qa: 'Q&A',

@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Список оборудования',
-    smartKitchenAssistant: 'Умный помощник на кухне',
-    operationInstructions: 'Руководство по эксплуатации',
-    productDescription: 'Описание продукта',
-    completeRecipeCollection: 'Коллекция рецептов',
+    smartKitchenAssistant: 'Умный {appName} помощник',
+    operationInstructions: 'Руководство',
+    productDescription: 'Продукт',
+    completeRecipeCollection: 'Меню',
     smartAnalysis: 'Умный анализ',
-    qa: 'Центр помощи',
-    poster: 'Плакат', // 海报
+    qa: 'Q&A',
+    poster: 'Плакат',
     all: 'все',
     noData: 'Пока нет данных',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Мой сборник',
   },
   qa: {
-    search: 'Поиск вопросов', // 搜索问题
+    search: 'Поиск вопросов',
   },
 }
 export default zh_CN

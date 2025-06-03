@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Оборудовани списокӗ',
-    smartKitchenAssistant: 'Ӑслӑ кухня пулӑшаканӗ',
-    operationInstructions: 'Ӗҫлемелли ҫул-йӗр',
-    productDescription: 'Тавар ҫинчен ҫырса кӑтартни',
-    completeRecipeCollection: 'Рецептсен пуххи',
+    smartKitchenAssistant: 'Ăслă {appName} пулăшуçи',
+    operationInstructions: 'Кăтарту',
+    productDescription: 'Продукт',
+    completeRecipeCollection: 'Меню',
     smartAnalysis: 'Ӑслӑ анализ',
-    qa: 'Пулӑшкан центрӗ',
-    poster: 'Плакат', // 海报
+    qa: 'Q&A',
+    poster: 'Плакат',
     all: 'пурте',
     noData: 'Хальлӗхе даннӑйсем ҫук',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Моя коллекция',
   },
   qa: {
-    search: 'Суравсемне шыраса тупӑр', // 搜索问题
+    search: 'Суравсемне шыраса тупӑр',
   },
 }
 export default zh_CN

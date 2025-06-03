@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: "Uskunalar ro'yxati",
-    smartKitchenAssistant: 'Aqlli oshxona yordamchisi',
-    operationInstructions: "Operatsion qo'llanma",
-    productDescription: 'Mahsulot tavsifi',
-    completeRecipeCollection: "Retseptlar to'plami",
+    smartKitchenAssistant: 'aqlli {appName} yordamchi',
+    operationInstructions: 'Yo"l-yo"riq',
+    productDescription: 'mahsulot',
+    completeRecipeCollection: 'menyu',
     smartAnalysis: 'Aqlli tahlil',
-    qa: 'Yordam markazi',
-    poster: 'Poster', // 海报
+    qa: 'Q&A',
+    poster: 'Poster',
     all: 'hammasi',
     noData: 'Hozircha maʼlumot yoʻq',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: "Mening to'plamim",
   },
   qa: {
-    search: 'Savollarni qidirish', // 搜索问题
+    search: 'Savollarni qidirish',
   },
 }
 export default zh_CN

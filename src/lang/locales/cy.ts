@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Rhestr Offer',
-    smartKitchenAssistant: 'Cynorthwyydd cegin clyfar',
-    operationInstructions: 'Canllaw Gweithredu',
-    productDescription: 'Disgrifiad Cynnyrch',
-    completeRecipeCollection: 'Casgliad Ryseitiau',
+    smartKitchenAssistant: 'ddeallus {appName} chynorthwywyr',
+    operationInstructions: 'Harweiniad',
+    productDescription: 'nghynnyrch',
+    completeRecipeCollection: 'bwydlen',
     smartAnalysis: 'Dadansoddiad Clyfar',
-    qa: 'Canolfan Cymorth',
-    poster: 'Posteri', // 海报
+    qa: 'Q&A',
+    poster: 'Posteri',
     all: 'pob un',
     noData: 'Dim data eto',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Fy myfyrwyr',
   },
   qa: {
-    search: 'Chwilio cwestiynau', // 搜索问题
+    search: 'Chwilio cwestiynau',
   },
 }
 export default zh_CN

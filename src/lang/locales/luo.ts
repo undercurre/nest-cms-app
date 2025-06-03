@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Listi mar gige tich',
-    smartKitchenAssistant: 'Jakony mar jokon mariek',
-    operationInstructions: 'Yor Tiyo',
-    productDescription: 'Lero mar mwandu',
-    completeRecipeCollection: 'Choko yore mag chiemo',
+    smartKitchenAssistant: 'Jamulamaka {appName} mariek',
+    operationInstructions: 'Chike',
+    productDescription: 'Neno mar gik',
+    completeRecipeCollection: 'Yore mag loso chiemo',
     smartAnalysis: 'Nonro mariek',
-    qa: 'Kendni Kony',
+    qa: 'Q&A',
     poster: 'Posta',
     all: 'duto',
     noData: 'Onge data nyaka sani',

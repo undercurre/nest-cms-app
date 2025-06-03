@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'ഉപകരണ പട്ടിക',
-    smartKitchenAssistant: 'സ്മാർട്ട് കിച്ചൺ അസിസ്റ്റന്റ്',
-    operationInstructions: 'ഓപ്പറേഷൻ ഗൈഡ്',
-    productDescription: 'ഉൽപ്പന്ന വിവരണം',
-    completeRecipeCollection: 'പാചകക്കുറിപ്പ് ശേഖരം',
+    smartKitchenAssistant: 'ബുദ്ധിയുള്ള {appName} സഹായി',
+    operationInstructions: 'മാര്ഗ്ഗനിര്ദ്ദേശം',
+    productDescription: 'ഉത്പന്നം',
+    completeRecipeCollection: 'മെനു',
     smartAnalysis: 'സ്മാർട്ട് വിശകലനം',
-    qa: 'സഹായ കേന്ദ്രം',
+    qa: 'Q&A',
     poster: 'പോസ്റ്റർ',
     all: 'എല്ലാം',
     noData: 'ഇതുവരെ ഡാറ്റയൊന്നുമില്ല',

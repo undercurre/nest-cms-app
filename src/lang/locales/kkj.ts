@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: "Liste d'équipement",
-    smartKitchenAssistant: 'Assistant de cuisine intelligent',
-    operationInstructions: "Instructions d'utilisation",
-    productDescription: 'Description du produit',
-    completeRecipeCollection: 'Collection complète de recettes',
+    smartKitchenAssistant: 'Asistɛ̃ sɔ́ndá {appName}',
+    operationInstructions: 'Ndíŋgɛ sɔ́ndá',
+    productDescription: 'Ndíŋgɛ mɛ́ndɛ',
+    completeRecipeCollection: 'Lis ndíŋgɛ',
     smartAnalysis: 'Analyse intelligente',
-    qa: 'Hep Sentah',
+    qa: 'Q&A',
     poster: 'Posda',
     all: 'Tout',
     noData: 'Pas de données',

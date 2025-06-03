@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Olukalala lw’Ebyuma',
-    smartKitchenAssistant: 'Omuyambi w’omu ffumbiro omugezi',
-    operationInstructions: 'Ekitabo ekikwata ku nkola y’emirimu',
-    productDescription: "Ennyonnyola y'ebintu",
-    completeRecipeCollection: "Okukunganya enkola y'emmere",
+    smartKitchenAssistant: 'Omuyambi wa {appName} ow’amagezi',
+    operationInstructions: 'Ebiragiro',
+    productDescription: 'Ekifaananyi ky’ekikozesebwa',
+    completeRecipeCollection: 'Enkola z’okufumba',
     smartAnalysis: 'Okwekenenya okw’amagezi',
-    qa: "Kituu ky'Obuyambi",
+    qa: 'Q&A',
     poster: 'Posita',
     all: '-onna',
     noData: "Tewali data yonna n'okutuusa kati",

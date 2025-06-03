@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Lista tat-Tagħmir',
-    smartKitchenAssistant: 'Assistent tal-kċina intelliġenti',
-    operationInstructions: 'Gwida tal-Operazzjoni',
-    productDescription: 'Deskrizzjoni tal-Prodott',
-    completeRecipeCollection: "Kollezzjoni ta' Riċetti",
+    smartKitchenAssistant: 'intelliġenti {appName} assistent',
+    operationInstructions: 'Gwida',
+    productDescription: 'prodott',
+    completeRecipeCollection: 'menu',
     smartAnalysis: 'Analiżi Intelliġenti',
-    qa: "Ċentru ta' Għajnuna",
+    qa: 'Q&A',
     poster: 'Poster',
     all: 'kollha',
     noData: "Għad m'hemm l-ebda dejta",

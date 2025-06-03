@@ -1,11 +1,11 @@
-// 埃翁多语
+// 柯尔克孜语
 const zh_CN = {
   common: {
     equipmentList: 'Equipment List',
-    smartKitchenAssistant: 'Smart {appName} assistant',
-    operationInstructions: 'Guide',
-    productDescription: 'Product',
-    completeRecipeCollection: 'menu',
+    smartKitchenAssistant: 'акылдуу {appName} жардамчы',
+    operationInstructions: 'Окуу',
+    productDescription: 'продукт',
+    completeRecipeCollection: 'меню',
     smartAnalysis: 'Smart Analysis',
     qa: 'Q&A',
     poster: 'Poster',

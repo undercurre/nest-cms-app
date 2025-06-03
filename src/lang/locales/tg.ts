@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Рӯйхати таҷҳизот',
-    smartKitchenAssistant: 'Ёрдамчии оқилонаи ошхона',
-    operationInstructions: 'Дастури амалиёт',
-    productDescription: 'Тавсифи Маҳсулот',
-    completeRecipeCollection: 'Маҷмӯаи рецептҳо',
+    smartKitchenAssistant: 'доно {appName} ёрдамчӣ',
+    operationInstructions: 'Ҳидоят',
+    productDescription: 'маҳсул',
+    completeRecipeCollection: 'меню',
     smartAnalysis: 'Таҳлили оқилона',
-    qa: 'Маркази кӯмак',
-    poster: 'Плакат', // 海报
+    qa: 'Q&A',
+    poster: 'Плакат',
     all: 'ҳама',
     noData: 'Ҳанӯз маълумот нест',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Куллекцияи ман',
   },
   qa: {
-    search: 'Ҷустуҷӯи саволҳо', // 搜索问题
+    search: 'Ҷустуҷӯи саволҳо',
   },
 }
 export default zh_CN

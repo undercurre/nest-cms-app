@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Láđđevisttus',
-    smartKitchenAssistant: 'Fánaš giehtabargu veahkki',
-    operationInstructions: 'Barguohját',
-    productDescription: 'Produkta dadjan',
-    completeRecipeCollection: 'Olles receptaklár',
+    smartKitchenAssistant: 'Eahppameahcci {appName} earálddjan',
+    operationInstructions: 'Dálkká',
+    productDescription: 'Mearra',
+    completeRecipeCollection: 'Báiki vuolggus',
     smartAnalysis: 'Fánaš analyysa',
-    qa: 'Veahkkinálli',
+    qa: 'Q&A',
     poster: 'Plakáhtta',
     all: 'Buot',
     noData: 'Ii dátu',

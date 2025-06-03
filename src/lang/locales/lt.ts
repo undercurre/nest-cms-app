@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Įrangos sąrašas',
-    smartKitchenAssistant: 'Išmanus virtuvės asistentas',
-    operationInstructions: 'Naudojimo vadovas',
-    productDescription: 'Produkto aprašymas',
-    completeRecipeCollection: 'Receptų rinkinys',
+    smartKitchenAssistant: 'protingas {appName} asistentas',
+    operationInstructions: 'Patarimai',
+    productDescription: 'produktas',
+    completeRecipeCollection: 'meniu',
     smartAnalysis: 'Išmanioji analizė',
-    qa: 'Pagalbos centras',
-    poster: 'Plakatas', // 海报
+    qa: 'Q&A',
+    poster: 'Plakatas',
     all: 'visi',
     noData: 'Dar nėra duomenų',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Mano kolekcija',
   },
   qa: {
-    search: 'Ieškoti klausimų', // 搜索问题
+    search: 'Ieškoti klausimų',
   },
 }
 export default zh_CN

@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Tarree Meeshaalee',
-    smartKitchenAssistant: 'Gargaaraa mana nyaataa ismaartii',
-    operationInstructions: 'Qajeelfama Hojii',
-    productDescription: 'Ibsa Omishaa',
-    completeRecipeCollection: 'Walitti qabama qophii nyaataa',
+    smartKitchenAssistant: 'Smart {appName} Gargaaraa',
+    operationInstructions: 'Kallattii kennuu',
+    productDescription: 'Oomishaalee',
+    completeRecipeCollection: 'Menu',
     smartAnalysis: 'Xiinxala Ismaartii',
-    qa: 'Gargaarsa Guddaa',
-    poster: 'Poostara', // 海报
+    qa: 'Q&A',
+    poster: 'Poostara',
     all: 'hunda',
     noData: 'Hanga ammaatti daataa hin jiru',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Qabtii fiiri',
   },
   qa: {
-    search: 'Gaaffilee barbaadi', // 搜索问题
+    search: 'Gaaffilee barbaadi',
   },
 }
 export default zh_CN

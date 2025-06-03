@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Тэрилтэлэр тиһиктэрэ',
-    smartKitchenAssistant: 'Умнаах куукуна ассистена',
-    operationInstructions: 'Тутуу ньымата',
-    productDescription: 'Бу продукт туһунан',
-    completeRecipeCollection: 'Аһылык рецептара',
+    smartKitchenAssistant: 'Үлээн {appName} аһыылара',
+    operationInstructions: 'Үс үгүт',
+    productDescription: 'Бүлүүнүм',
+    completeRecipeCollection: 'Тумат таҥыл',
     smartAnalysis: 'Умнаах анализ',
-    qa: 'Көмө Центра',
+    qa: 'Q&A',
     poster: 'Плакат',
     all: 'Барыта',
     noData: 'Билигин дааннайдара суох',

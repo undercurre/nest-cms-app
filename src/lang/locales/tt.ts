@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Җиһазлар исемлеге',
-    smartKitchenAssistant: 'Акыллы кухня ярдәмчесе',
-    operationInstructions: 'Операция өчен кулланма',
-    productDescription: 'Продукция тасвирламасы',
-    completeRecipeCollection: 'Рецепт коллекциясе',
+    smartKitchenAssistant: 'интеллектуаль {appName} ярдәмчесе',
+    operationInstructions: 'Җитәкчелек',
+    productDescription: 'продукт',
+    completeRecipeCollection: 'меню',
     smartAnalysis: 'Акыллы анализ',
-    qa: 'Ярдәм үзәге',
-    poster: 'Плакат', // 海报
+    qa: 'Q&A',
+    poster: 'Плакат',
     all: 'Барысы да',
     noData: 'Әлегә мәгълүмат юк',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Мин嘅 сакламаларым',
   },
   qa: {
-    search: 'Сорауларны эзләү', // 搜索问题
+    search: 'Сорауларны эзләү',
   },
 }
 export default zh_CN

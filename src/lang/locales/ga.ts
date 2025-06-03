@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Liosta Trealaimh',
-    smartKitchenAssistant: 'Cúntóir cistine cliste',
-    operationInstructions: 'Treoir Oibriúcháin',
-    productDescription: 'Cur Síos ar an Táirge',
-    completeRecipeCollection: 'Bailiúchán Oidis',
+    smartKitchenAssistant: 'cliste {appName} leas-',
+    operationInstructions: 'Treoir',
+    productDescription: 'toradh',
+    completeRecipeCollection: 'biachlár',
     smartAnalysis: 'Anailís Chliste',
-    qa: 'Ionad Cabhrach',
-    poster: 'Póstaer', // 海报
+    qa: 'Q&A',
+    poster: 'Póstaer',
     all: 'uile',
     noData: 'Gan aon sonraí fós',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Réamh mo',
   },
   qa: {
-    search: 'Cuardaigh Ceisteanna', // 搜索问题
+    search: 'Cuardaigh Ceisteanna',
   },
 }
 export default zh_CN

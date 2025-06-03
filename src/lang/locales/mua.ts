@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Equipment List',
-    smartKitchenAssistant: 'Smart {appName} assistant',
-    operationInstructions: 'Guide',
-    productDescription: 'Product',
+    smartKitchenAssistant: 'intelligent {appName} assistant',
+    operationInstructions: 'Guidance',
+    productDescription: 'product',
     completeRecipeCollection: 'menu',
     smartAnalysis: 'Smart Analysis',
-    qa: 'Diŋgol Koot',
-    poster: 'Pose',
+    qa: 'Q&A',
+    poster: 'Poster',
     all: 'All',
     noData: 'No data available',
   },
@@ -310,12 +310,12 @@ const zh_CN = {
     haw: 'Hawaiian',
   },
   list: {
-    collectPrefix: 'Bạn đã thu thập',
-    collectSuffix: ' Thiết bị',
-    myCollection: 'Tập hợp của tôi',
+    collectPrefix: 'You have bookmarked',
+    collectSuffix: 'device',
+    myCollection: 'my collection',
   },
   qa: {
-    search: "So'o Mba'",
+    search: 'Search for questions',
   },
 }
 export default zh_CN

@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Liste ya bisaleli',
-    smartKitchenAssistant: 'Mosungi ya kuku ya mayele',
-    operationInstructions: 'Buku ya mosala',
-    productDescription: 'Bolimbisi ya biloko',
-    completeRecipeCollection: 'Collection ya ba recettes',
+    smartKitchenAssistant: 'Asistant ya mayele {appName}',
+    operationInstructions: 'Mitindo ya kosalela',
+    productDescription: 'Maloba ya biloko',
+    completeRecipeCollection: 'Makomi ya biloko ya kolamba',
     smartAnalysis: 'Analyse ya mayele',
-    qa: 'Centre ya Lisalisi',
+    qa: 'Q&A',
     poster: 'Affiche',
     all: 'nyonso',
     noData: 'Ba données moko te nanu',

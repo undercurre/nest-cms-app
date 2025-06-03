@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Laitteistoluettelo',
-    smartKitchenAssistant: 'Älykäs keittiöavustaja',
-    operationInstructions: 'Käyttöopas',
-    productDescription: 'Tuotekuvaus',
-    completeRecipeCollection: 'Reseptikokoelma',
+    smartKitchenAssistant: 'älykäs {appName} avustaja',
+    operationInstructions: 'Opas',
+    productDescription: 'tuote',
+    completeRecipeCollection: 'valikko',
     smartAnalysis: 'Älykäs analyysi',
-    qa: 'Apukeskus',
+    qa: 'Q&A',
     poster: 'Plakkaatti',
     all: 'kaikki',
     noData: 'Ei vielä tietoja',

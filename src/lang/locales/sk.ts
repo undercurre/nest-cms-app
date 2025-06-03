@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Zoznam vybavenia',
-    smartKitchenAssistant: 'Inteligentný kuchynský asistent',
-    operationInstructions: 'Návod na obsluhu',
-    productDescription: 'Popis produktu',
-    completeRecipeCollection: 'Zbierka receptov',
+    smartKitchenAssistant: 'inteligentný {appName} asistent',
+    operationInstructions: 'pokyny',
+    productDescription: 'produkt',
+    completeRecipeCollection: 'menu',
     smartAnalysis: 'Inteligentná analýza',
-    qa: 'Centrum pomoci',
-    poster: 'Plagát', // 海报
+    qa: 'Q&A',
+    poster: 'Plagát',
     all: 'všetky',
     noData: 'Zatiaľ žiadne údaje',
   },
@@ -315,7 +315,7 @@ const zh_CN = {
     myCollection: 'Moja sborka',
   },
   qa: {
-    search: 'Vyhľadávanie otázok', // 搜索问题
+    search: 'Vyhľadávanie otázok',
   },
 }
 export default zh_CN

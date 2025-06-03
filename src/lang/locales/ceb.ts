@@ -2,13 +2,13 @@
 const zh_CN = {
   common: {
     equipmentList: 'Listahan sa Kagamitan',
-    smartKitchenAssistant: 'Smart {appName} assistant',
-    operationInstructions: 'Giya sa Operasyon',
-    productDescription: 'Deskripsyon sa Produkto',
-    completeRecipeCollection: 'Koleksyon sa Resipe',
+    smartKitchenAssistant: 'intelehente {appName} katabang',
+    operationInstructions: 'Pag-agak',
+    productDescription: 'produkto',
+    completeRecipeCollection: 'listahan sa mga potahe',
     smartAnalysis: 'Maalamon nga Pagtuki',
-    qa: 'Sentro sa Tabang',
-    poster: 'Poster', // 海报
+    qa: 'Q&A',
+    poster: 'Poster',
     all: 'tanan',
     noData: 'Wala pay datos',
   },
@@ -316,6 +316,6 @@ const zh_CN = {
   },
   qa: {
     search: 'Pangitaa ang mga pangutana',
-  }, // 搜索问题
+  },
 }
 export default zh_CN

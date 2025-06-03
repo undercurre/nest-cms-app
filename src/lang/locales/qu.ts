@@ -2,12 +2,12 @@
 const zh_CN = {
   common: {
     equipmentList: 'Lista de Equipos nisqa',
-    smartKitchenAssistant: 'Yachaysapa cocina yanapaq',
-    operationInstructions: 'Operación nisqamanta yanapakuy',
-    productDescription: 'Rurumanta Willakuy',
-    completeRecipeCollection: 'Receta Huñusqa',
+    smartKitchenAssistant: 'Yachaykuy {appName} yanapakuq',
+    operationInstructions: 'Ruwanakuy kamachikuy',
+    productDescription: 'Ruruykuna willakuy',
+    completeRecipeCollection: 'Mikhuy ruwanakuy tantanakuy',
     smartAnalysis: 'Análisis Inteligente nisqa',
-    qa: 'Yanapakuy Wasin',
+    qa: 'Q&A',
     poster: 'Unancha',
     all: 'llapan',
     noData: 'Manaraqmi datukuna kanchu',
