@@ -27,7 +27,7 @@ export interface Diet {
   cookingTime: number
   difficultyLevel: number
   taste: string
-  category: string
+  categoryId: number
   imageUrl: string
   productModelIdList?: ProductModel[]
   cookbookNutritionList: CookbookNutrition[]
@@ -49,8 +49,16 @@ export interface CookBookMultiLanguage extends MultiLanguage {
   cookbookIngredientList: Ingredients[]
   cookbookStepList: Steps[]
 }
-export type Category = {
-  typeEn: string
+export interface CategoryMultiLanguage extends MultiLanguage {
+  id?: string
+  categoryId?: string
+  categoryName?: string
+}
+export interface Category {
+  id: number
+  categoryLanguageRelationList: CategoryMultiLanguage[]
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  categoryMultiLanguageObj?: any
 }
 
 export interface Ingredients {
@@ -72,8 +80,8 @@ export interface Steps {
 export const searchDiet = (params: {
   time?: number
   difficulty?: number
-  name?: string
-  category?: string
+  cookbookName?: string
+  categoryId?: string | number
   pageNo: number
   pageSize: number
   productModel?: string
@@ -87,9 +95,10 @@ export const searchDiet = (params: {
 /**
  * @name 查询品类列表
  */
-export const getCategoryList = () => {
-  return userService.get<ResultData<{ categoryList: Category[] }>>(
+export const getCategoryList = (params) => {
+  return userService.post<ResultData<{ categoryList: Category[] }>>(
     PORT1 + '/web/cookbook/category/list',
+    params,
   )
 }
 

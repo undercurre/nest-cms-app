@@ -4,9 +4,9 @@
     <div class="flex flex-col items-center justify-center mt-20px">
       <p class="text-center font-bold text-20px my-10px">{{ getI18NDietName() }}</p>
       <span
-        v-if="diet?.category"
+        v-if="diet?.categoryId && categoryName"
         class="text-12px bg-#ddd leading-12px rounded-20px font-bold p-10px text-[--vt-c-text-light-2]"
-        >{{ $t(`cookbook.${diet?.category}`) }}</span
+        >{{ categoryName }}</span
       >
     </div>
     <div class="flex flex-col mt-20px">
@@ -54,9 +54,9 @@
 </template>
 
 <script lang="ts" setup>
-import { getDietById, type Diet } from '@/api/modules/diet'
+import { Category, getCategoryList, getDietById, type Diet } from '@/api/modules/diet'
 import { useAppStore } from '@/stores/app'
-import { onBeforeMount, ref } from 'vue'
+import { computed, onBeforeMount, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 
@@ -68,7 +68,39 @@ const diet = ref<Diet>()
 const { locale } = useI18n()
 const appStore = useAppStore()
 appStore.tabbarActive = 'diet'
+const category = ref<Category[]>([])
+const getCategory = async () => {
+  const categoryListRes = await getCategoryList({
+    categoryLevel: 1,
+  })
+  const categoryListRes1 = await getCategoryList({
+    categoryLevel: 2,
+  })
+  category.value = [...categoryListRes.data.categoryList, ...categoryListRes1.data.categoryList]
+  category.value?.forEach((item) => {
+    item.categoryMultiLanguageObj = item?.categoryLanguageRelationList?.reduce((acc, curr) => {
+      acc[curr.languageCode] = curr
+      return acc
+    }, {})
+    if (!Object.keys(item.categoryMultiLanguageObj).length) {
+      item.categoryMultiLanguageObj = {
+        zh: {},
+        en: {},
+      }
+    }
+  })
+}
 
+const categoryName = computed(() => {
+  return (
+    category.value.find((item) => item.id === diet.value?.categoryId)?.categoryMultiLanguageObj[
+      (locale.value === 'zh-CN' ? 'zh' : locale.value) || 'en'
+    ]?.categoryName ??
+    category.value.find((item) => item.id === diet.value?.categoryId)?.categoryMultiLanguageObj[
+      'en'
+    ]?.categoryName
+  )
+})
 const getI18NDietName = () => {
   return (
     diet.value?.dietMultiLanguageObj[locale.value || 'en']?.cookbookName ??
@@ -104,5 +136,6 @@ onBeforeMount(async () => {
       }
     }
   }
+  getCategory()
 })
 </script>

@@ -7,9 +7,18 @@ import { useProductStore } from '@/stores/product'
 import { useLocation } from '@/hooks/useLocation'
 import { useThemeMode } from '@/hooks/useThemeMode'
 import { useAppStore } from '@/stores/app'
-import { computed, onMounted, ref } from 'vue'
+import { computed, onMounted, ref, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
+import {
+  getMenuList,
+  getPageInfoByProductId,
+  PageConfigEntity,
+  TabItem,
+} from './api/modules/product'
 
 const route = useRoute()
+
+const { t, locale } = useI18n()
 const appStore = useAppStore()
 
 // 检查当前路由是否为 list
@@ -22,42 +31,137 @@ const productStore = useProductStore()
 
 const couponShow = ref(false)
 
+// 根据产品id获取页面配置
+const pageConfig = ref<PageConfigEntity>()
+const getPageConfigInfo = async () => {
+  try {
+    const res = await getPageInfoByProductId(productStore.id)
+    const { data } = res
+    data.pageConfigMultiLanguageObj = data?.pageLanguageRelationList?.reduce((acc, curr) => {
+      acc[curr.languageCode] = curr
+      return acc
+    }, {})
+    if (!Object.keys(data.pageConfigMultiLanguageObj).length) {
+      data.pageConfigMultiLanguageObj = {
+        zh: {},
+        en: {},
+      }
+    }
+    pageConfig.value = data
+  } catch (error) {
+    console.log('error: ', error)
+    pageConfig.value = undefined
+  }
+}
+
 const tabList = computed(() => {
-  return [
-    {
-      name: 'poster',
-      icon: 'material-symbols:imagesmode-outline',
-      path: `/poster/${productStore.id}`,
-      text: 'common.poster',
-      hidden: !productStore.posterImageUrls?.length,
-    },
-    {
-      name: 'guide',
-      icon: 'nrk:media-programguide',
-      path: `/guide/${productStore.id}`,
-      text: 'common.operationInstructions',
-    },
-    {
+  const selectMenuList = menuList.value.filter((item) =>
+    pageConfig.value?.menuIdList?.includes(item.id),
+  )
+  const res = selectMenuList.map((item) => {
+    const pathSplit = item.path?.split('/')
+    const name = pathSplit.length > 1 ? pathSplit?.[1] : ''
+    return {
+      name: name,
+      icon: item.source,
+      path: `${item.path.replace('${id}', productStore.id.toString())}`,
+      text:
+        item.menuMultiLanguageObj?.[(locale.value == 'zh-CN' ? 'zh' : locale.value) ?? 'en']
+          ?.menuName ??
+        item.menuMultiLanguageObj?.['en']?.menuName ??
+        '',
+      hidden: !productStore.posterImageUrls?.length && name === 'poster',
+    }
+  })
+  const tabRes = res.length
+    ? res
+    : [
+        {
+          name: 'poster',
+          icon: 'material-symbols:imagesmode-outline',
+          path: `/poster/${productStore.id}`,
+          text: 'common.poster',
+          hidden: !productStore.posterImageUrls?.length,
+        },
+        {
+          name: 'guide',
+          icon: 'nrk:media-programguide',
+          path: `/guide/${productStore.id}`,
+          text: 'common.operationInstructions',
+        },
+        {
+          name: 'product',
+          icon: 'icon-park-outline:ad-product',
+          path: `/product/${productStore.id}`,
+          text: 'common.productDescription',
+        },
+        {
+          name: 'diet',
+          icon: 'icon-park-outline:knife-fork',
+          path: `/diet/${productStore.id}`,
+          text: 'common.completeRecipeCollection',
+        },
+        {
+          name: 'qa',
+          icon: 'material-symbols:help',
+          path: `/qa/${productStore.id}`,
+          text: 'common.qa',
+        },
+      ]
+  if (!tabRes.find((item) => item.path.indexOf('product') > -1)) {
+    // 在数据最中间位置插入元素
+    tabRes.splice(Math.floor(tabRes.length / 2), 0, {
       name: 'product',
       icon: 'icon-park-outline:ad-product',
       path: `/product/${productStore.id}`,
       text: 'common.productDescription',
-    },
-    {
-      name: 'diet',
-      icon: 'icon-park-outline:knife-fork',
-      path: `/diet/${productStore.id}`,
-      text: 'common.completeRecipeCollection',
-    },
-    {
-      name: 'qa',
-      icon: 'material-symbols:help',
-      path: `/qa/${productStore.id}`,
-      text: 'common.qa',
-    },
-  ]
+      hidden: false,
+    })
+  }
+  return tabRes
 })
-console.log('tabList: ', tabList)
+const menuList = ref<TabItem[]>([])
+const getTab = async () => {
+  const res = await getMenuList({
+    pageNo: 1,
+    pageSize: 9999999,
+  })
+  menuList.value = res.data.menuList
+  menuList.value?.forEach((item) => {
+    item.menuMultiLanguageObj = item?.menuLanguageRelationList?.reduce((acc, curr) => {
+      acc[curr.languageCode] = curr
+      return acc
+    }, {})
+    if (!Object.keys(item.menuMultiLanguageObj).length) {
+      item.menuMultiLanguageObj = {
+        zh: {},
+        en: {},
+      }
+    }
+  })
+}
+
+watch(
+  () => productStore.id,
+  (newVal) => {
+    if (!newVal) {
+      return
+    }
+    getPageConfigInfo()
+    getTab()
+  },
+  { immediate: true, deep: true },
+)
+
+const getTitle = computed(() => {
+  return (
+    pageConfig.value?.pageConfigMultiLanguageObj?.[
+      (locale.value == 'zh-CN' ? 'zh' : locale.value) ?? 'en'
+    ]?.title ??
+    pageConfig.value?.pageConfigMultiLanguageObj?.['en']?.title ??
+    t('common.smartKitchenAssistant')
+  )
+})
 // NavBar
 function onClickLeft() {
   console.log(window.history)
@@ -145,7 +249,7 @@ onMounted(() => {
             @click="onClickLeft"
           />
           <span class="font-bold leading-28px text-18px truncate w-67vw text-left">{{
-            isListRoute ? $t('common.equipmentList') : $t('common.smartKitchenAssistant')
+            isListRoute ? $t('common.equipmentList') : getTitle
           }}</span>
         </div>
       </template>
@@ -169,7 +273,7 @@ onMounted(() => {
       :defaultColor="themeMode === 'dark' ? '#ffffff' : '#9ca3af'"
       :activeColor="themeMode === 'dark' ? 'rgba(255, 107, 107, 0.8)' : '#ff6b6b'"
     />
-    <LanguageSwitcher v-if="appStore.tabbarActive == 'product'" />
+    <LanguageSwitcher v-if="appStore.tabbarActive == 'product' && !isListRoute" />
     <TipIcon v-if="productStore.posterImageUrls?.length" />
   </div>
 </template>

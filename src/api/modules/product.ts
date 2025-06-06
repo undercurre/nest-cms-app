@@ -1,5 +1,5 @@
 import { userService } from '..'
-import { PORT2 } from '../config/servicePort'
+import { PORT1, PORT2 } from '../config/servicePort'
 
 // 请求响应参数（不包含data）
 export interface Result {
@@ -12,10 +12,12 @@ export interface ResultData<T = unknown> extends Result {
   data: T
 }
 
-export interface ProductMultiLanguage {
+export interface MultiLanguage {
   languageId: number
   languageCode: string
   displayLanguage: string
+}
+export interface ProductMultiLanguage extends MultiLanguage {
   productName: string
   description: string
   manualOssUrl: string
@@ -68,4 +70,47 @@ export const getProductLanguageList = () => {
     {},
     { loading: true },
   )
+}
+
+// 页面配置
+export interface PageConfigMultiLanguage extends MultiLanguage {
+  title: string
+}
+export interface PageConfigEntity {
+  id: number
+  productIdList: number[]
+  menuIdList: string[]
+  pageLanguageRelationList: PageConfigMultiLanguage[]
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  pageConfigMultiLanguageObj?: any
+}
+/**
+ * @name 查询产品的页面配置
+ */
+export const getPageInfoByProductId = (id: number) => {
+  return userService.post<ResultData<PageConfigEntity>>(
+    PORT1 + `/web/page/selectPageByProductId?productId=${id}`,
+    {},
+    { loading: true },
+  )
+}
+export interface TabMultiLanguage extends MultiLanguage {
+  menuName: string
+}
+export interface TabItem {
+  menuLanguageRelationList: TabMultiLanguage[]
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  menuMultiLanguageObj?: any
+  source: string
+  path: string
+  sort?: number
+  id: string
+}
+export const getMenuList = (params) => {
+  return userService.post<
+    ResultData<{
+      menuList: TabItem[]
+      total: number
+    }>
+  >(PORT1 + `/web/menu/list`, params, { loading: true })
 }

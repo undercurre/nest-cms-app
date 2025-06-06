@@ -1,5 +1,5 @@
 <template>
-  <div class="flex px-12px w-full gap-10px overflow-scroll hide-scrollbar">
+  <div class="flex flex-1 gap-10px overflow-scroll hide-scrollbar">
     <div
       class="h-34px rounded-4px flex justify-center items-center shrink-0 px-6px"
       v-for="item in listWithAll"
@@ -10,39 +10,46 @@
       }"
       @click="handleSelect(item.value)"
     >
-      <span class="text-14px">{{
-        item.value === 'all' ? item.label : $t(`cookbook.${item.label}`)
-      }}</span>
+      <span class="text-14px">{{ item.label }}</span>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
+import { type Category } from '@/api/modules/diet'
 import { computed, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 interface Props {
-  list: { label: string; value: string }[]
+  list: Category[]
   cur?: string
 }
 
 const props = withDefaults(defineProps<Props>(), {
   list: () => [],
-  cur: 'all',
+  cur: '',
 })
 
-const { t } = useI18n()
+const { locale } = useI18n()
 const listWithAll = computed(() => {
-  const all = [{ label: t('common.all'), value: 'all' }]
-  const result = all.concat(props.list)
-  return result
+  const resList = props.list.map((item) => {
+    return {
+      label:
+        item?.categoryMultiLanguageObj?.[(locale.value === 'zh-CN' ? 'zh' : locale.value) ?? 'en']
+          ?.categoryName ??
+        item?.categoryMultiLanguageObj?.['en']?.categoryName ??
+        '',
+      value: item.id,
+    }
+  })
+  return resList
 })
 
-const curItemKey = ref('all')
+const curItemKey = ref<string | number>('all')
 
 const emit = defineEmits(['change'])
 
-const handleSelect = (key: string) => {
+const handleSelect = (key: string | number) => {
   curItemKey.value = key
   emit('change', key)
 }
@@ -51,6 +58,10 @@ watch(
   () => props.cur,
   (newVal) => {
     curItemKey.value = newVal
+  },
+  {
+    immediate: true,
+    deep: true,
   },
 )
 </script>

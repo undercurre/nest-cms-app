@@ -1,11 +1,10 @@
 <script setup lang="ts">
 import { getUrlConcat } from '@/utils/index'
-import { onBeforeMount, ref, watch } from 'vue'
+import { ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
-import { getCategoryList, searchDiet, type Diet } from '@/api/modules/diet'
+import { getCategoryList, searchDiet, type Category, type Diet } from '@/api/modules/diet'
 import DietCard from '@/components/diet/DietCard.vue'
-import TabList from '@/components/diet/TabList.vue'
 import { useAppStore } from '@/stores/app'
 import { useProductStore } from '@/stores/product'
 import { useI18n } from 'vue-i18n'
@@ -19,73 +18,28 @@ const productId = route.params.id // 获取路径参数
 productStore.id = Number(productId || 0)
 appStore.tabbarActive = route.name as string
 
-const keyword = ref('')
+const keyword = ref<string | undefined>('')
 
-const category = ref<{ label: string; value: string }[]>([])
+const category = ref<Category[]>([])
 
 const diet = ref<Diet[]>([])
-
+const categoryId = ref<string | number | undefined>('')
 watch(
   () => keyword.value,
   async () => {
-    const dietRes = await searchDiet({
-      name: keyword.value,
-      productModel: productStore.productModel,
-      pageNo: 1,
-      pageSize: 9999999,
-    })
-    diet.value = dietRes.data.cookbookList
-    diet.value?.forEach((item) => {
-      item.dietMultiLanguageObj = {}
-      item.cookbookMultiLanguageList?.forEach((row) => {
-        if (row.languageCode === 'zh') {
-          row.languageCode = 'zh-CN'
-        }
-      })
-      item.dietMultiLanguageObj = item?.cookbookMultiLanguageList?.reduce((acc, curr) => {
-        acc[curr.languageCode] = curr
-        return acc
-      }, {})
-      if (!Object.keys(item.dietMultiLanguageObj).length) {
-        item.dietMultiLanguageObj = {
-          zh: {},
-          en: {},
-        }
-      }
-    })
+    getDiet()
   },
 )
 
 async function handleCategoryChange(key: string) {
-  if (key === 'all') {
-    const dietRes = await searchDiet({
-      productModel: productStore.productModel,
-      pageNo: 1,
-      pageSize: 9999999,
-    })
-    diet.value = dietRes.data.cookbookList
-    diet.value?.forEach((item) => {
-      item.dietMultiLanguageObj = {}
-      item.cookbookMultiLanguageList?.forEach((row) => {
-        if (row.languageCode === 'zh') {
-          row.languageCode = 'zh-CN'
-        }
-      })
-      item.dietMultiLanguageObj = item?.cookbookMultiLanguageList?.reduce((acc, curr) => {
-        acc[curr.languageCode] = curr
-        return acc
-      }, {})
-      if (!Object.keys(item.dietMultiLanguageObj).length) {
-        item.dietMultiLanguageObj = {
-          zh: {},
-          en: {},
-        }
-      }
-    })
-    return
-  }
+  categoryId.value = key
+  getDiet()
+}
+const getDiet = async () => {
+  diet.value = []
   const dietRes = await searchDiet({
-    category: key,
+    categoryId: categoryId.value || undefined,
+    cookbookName: keyword.value || undefined,
     productModel: productStore.productModel,
     pageNo: 1,
     pageSize: 9999999,
@@ -111,66 +65,114 @@ async function handleCategoryChange(key: string) {
   })
 }
 
-onBeforeMount(async () => {
-  const categoryListRes = await getCategoryList()
-  category.value = categoryListRes.data.categoryList.map((item) => {
-    return {
-      label: item.typeEn,
-      value: item.typeEn,
+const getCategory = async (item) => {
+  diet.value = []
+  category.value = []
+  return new Promise(async (resolve, reject) => {
+    try {
+      const dietRes = await searchDiet({
+        categoryId: item.id,
+        cookbookName: keyword.value || undefined,
+        productModel: productStore.productModel,
+        pageNo: 1,
+        pageSize: 9999999,
+      })
+      const categoryListRes = await getCategoryList({
+        id: item.id,
+      })
+      category.value = categoryListRes.data.categoryList
+      category.value?.forEach((item) => {
+        item.categoryMultiLanguageObj = item?.categoryLanguageRelationList?.reduce((acc, curr) => {
+          acc[curr.languageCode] = curr
+          return acc
+        }, {})
+        if (!Object.keys(item.categoryMultiLanguageObj).length) {
+          item.categoryMultiLanguageObj = {
+            zh: {},
+            en: {},
+          }
+        }
+      })
+      if (dietRes.data.total) {
+        category.value.unshift(item)
+        diet.value = dietRes.data.cookbookList
+        diet.value?.forEach((item) => {
+          item.dietMultiLanguageObj = {}
+          item.cookbookMultiLanguageList?.forEach((row) => {
+            if (row.languageCode === 'zh') {
+              row.languageCode = 'zh-CN'
+            }
+          })
+          item.dietMultiLanguageObj = item?.cookbookMultiLanguageList?.reduce((acc, curr) => {
+            acc[curr.languageCode] = curr
+            return acc
+          }, {})
+          if (!Object.keys(item.dietMultiLanguageObj).length) {
+            item.dietMultiLanguageObj = {
+              zh: {},
+              en: {},
+            }
+          }
+        })
+        categoryId.value = category.value?.[0]?.id
+        resolve(false)
+      } else {
+        categoryId.value = category.value?.[0]?.id ?? ''
+        if (!categoryId.value) {
+          diet.value = []
+        }
+        resolve(categoryId.value)
+      }
+    } catch (err) {
+      reject(err)
     }
   })
-  const dietRes = await searchDiet({
-    productModel: productStore.productModel,
-    pageNo: 1,
-    pageSize: 9999999,
-  })
-  diet.value = dietRes.data.cookbookList
-  diet.value?.forEach((item) => {
-    item.dietMultiLanguageObj = {}
-    item.cookbookMultiLanguageList?.forEach((row) => {
-      if (row.languageCode === 'zh') {
-        row.languageCode = 'zh-CN'
-      }
-    })
-    item.dietMultiLanguageObj = item?.cookbookMultiLanguageList?.reduce((acc, curr) => {
-      acc[curr.languageCode] = curr
-      return acc
-    }, {})
-    if (!Object.keys(item.dietMultiLanguageObj).length) {
-      item.dietMultiLanguageObj = {
-        zh: {},
-        en: {},
-      }
-    }
-  })
-})
+}
+const changeSide = async (item) => {
+  const res = await getCategory(item)
+  if (res) {
+    getDiet()
+  }
+}
 </script>
 
 <template>
   <div class="w-full h-full flex flex-col items-center">
     <van-search class="w-full" v-model="keyword" :placeholder="$t('diet.searchForRecipes')" />
-    <TabList :list="category" @change="handleCategoryChange"></TabList>
-    <div
-      class="w-full grid grid-cols-2 grid-rows-[repeat(2,_minmax(100px,_209px))] gap-20px p-12px flex-1 box-border overflow-scroll"
-      v-if="diet?.length"
-    >
-      <DietCard
-        v-for="item in diet"
-        :key="item.id"
-        :id="item.id"
-        :url="getUrlConcat(item.imageUrl)"
-        :title="
-          item.dietMultiLanguageObj[locale || 'en']?.cookbookName ??
-          item.dietMultiLanguageObj['en']?.cookbookName
-        "
-        :time="item.cookingTime"
-        :difficulty="item.difficultyLevel"
-      ></DietCard>
-    </div>
-
-    <EmptyData v-else />
-    <!-- <div class="mb-50px">
-      <p class="text-#8B0000">下载APP查看更多菜谱 >>></p>
-    </div> -->
+    <SideTabList @changeSide="changeSide">
+      <div class="w-78vw">
+        <TabList
+          :list="category"
+          :cur="categoryId"
+          @change="handleCategoryChange"
+          class="m-b-12px"
+        ></TabList>
+        <div v-if="diet?.length" class="overflow-scroll diet-list-box">
+          <div
+            class="w-full grid grid-cols-2 grid-rows-[repeat(2,_minmax(100px,_180px))] gap-12px p-x-12px p-b-12px flex-1 box-border"
+          >
+            <DietCard
+              v-for="item in diet"
+              :key="item.id"
+              :id="item.id"
+              :url="getUrlConcat(item.imageUrl)"
+              :title="
+                item.dietMultiLanguageObj[locale || 'en']?.cookbookName ??
+                item.dietMultiLanguageObj['en']?.cookbookName
+              "
+              :time="item.cookingTime"
+              :difficulty="item.difficultyLevel"
+            ></DietCard>
+          </div>
+        </div>
+        <EmptyData v-else />
+      </div>
+    </SideTabList>
   </div>
 </template>
+
+<style lang="less" scoped>
+.diet-list-box {
+  height: calc(100vh - 197px);
+}
+</style>

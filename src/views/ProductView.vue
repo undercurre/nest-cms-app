@@ -90,19 +90,20 @@ onBeforeMount(async () => {
     },
     {},
   )
-  productStore.posterImageUrls = curProduct.value?.productMultiLanguageObj?.[locale.value]
-    ? curProduct.value?.productMultiLanguageObj?.[locale.value]?.posterImageUrls
-    : curProduct.value?.productMultiLanguageObj?.['en']?.posterImageUrls
+  storePosterImageUrls()
   const deviceListRes = await getDeviceListByUid()
   deviceList.value = deviceListRes.data
 })
-
+// 存储海报到store
+const storePosterImageUrls = () => {
+  productStore.posterImageUrls = curProduct.value?.productMultiLanguageObj?.[locale.value]
+    ? curProduct.value?.productMultiLanguageObj?.[locale.value]?.posterImageUrls
+    : curProduct.value?.productMultiLanguageObj?.['en']?.posterImageUrls
+}
 watch(
   () => locale.value,
   () => {
-    productStore.posterImageUrls = curProduct.value?.productMultiLanguageObj?.[locale.value]
-      ? curProduct.value?.productMultiLanguageObj?.[locale.value]?.posterImageUrls
-      : curProduct.value?.productMultiLanguageObj?.['en']?.posterImageUrls
+    storePosterImageUrls()
   },
 )
 </script>
