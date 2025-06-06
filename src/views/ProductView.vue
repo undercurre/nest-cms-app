@@ -91,8 +91,11 @@ onBeforeMount(async () => {
     {},
   )
   storePosterImageUrls()
-  const deviceListRes = await getDeviceListByUid()
-  deviceList.value = deviceListRes.data
+  // 获取设备列表
+  if (token) {
+    const deviceListRes = await getDeviceListByUid()
+    deviceList.value = deviceListRes.data
+  }
 })
 // 存储海报到store
 const storePosterImageUrls = () => {
