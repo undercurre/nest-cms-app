@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import he from 'he'
 import { RouterView, useRoute } from 'vue-router'
 
 import router from '@/router'
@@ -129,7 +130,7 @@ const getTab = async () => {
   menuList.value = res.data.menuList
   menuList.value?.forEach((item) => {
     item.menuMultiLanguageObj = item?.menuLanguageRelationList?.reduce((acc, curr) => {
-      acc[curr.languageCode] = curr
+      acc[curr.languageCode] = { ...curr, menuName: he.decode(curr.menuName) }
       return acc
     }, {})
     if (!Object.keys(item.menuMultiLanguageObj).length) {
