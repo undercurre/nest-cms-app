@@ -44,7 +44,7 @@ const props = withDefaults(defineProps<Props>(), {
 const map: Record<number, string> = {
   1: 'simple',
   2: 'normal',
-  3: 'difficult',
+  3: 'difficulty',
 }
 
 function formatDifficulty(level: number) {
