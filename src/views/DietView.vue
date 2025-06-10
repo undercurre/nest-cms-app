@@ -3,7 +3,12 @@ import { getUrlConcat } from '@/utils/index'
 import { ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
-import { getCategoryList, searchDiet, type Category, type Diet } from '@/api/modules/diet'
+import {
+  getCategoryListByProductModel,
+  searchDiet,
+  type Category,
+  type Diet,
+} from '@/api/modules/diet'
 import DietCard from '@/components/diet/DietCard.vue'
 import { useCountryList } from '@/hooks/useCountryList'
 import { useAppStore } from '@/stores/app'
@@ -79,7 +84,7 @@ const getCategory = async (item) => {
         pageSize: 9999999,
         countryId,
       })
-      const categoryListRes = await getCategoryList({
+      const categoryListRes = await getCategoryListByProductModel({
         id: item.id,
         productModel: productStore.productModel,
       })
@@ -112,6 +117,7 @@ const getCategory = async (item) => {
             }
           }
         })
+        category.value.sort((a, b) => Number(b.existCookbook) - Number(a.existCookbook))
         const index = category.value.findIndex((item) => item.existCookbook)
         if (index > -1) {
           categoryId.value = category.value?.[index]?.id
@@ -120,6 +126,7 @@ const getCategory = async (item) => {
         }
         resolve(false)
       } else {
+        category.value.sort((a, b) => Number(b.existCookbook) - Number(a.existCookbook))
         const index = category.value.findIndex((item) => item.existCookbook)
         if (index > -1) {
           categoryId.value = category.value?.[index]?.id

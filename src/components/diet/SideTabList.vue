@@ -15,7 +15,7 @@
   </div>
 </template>
 <script lang="ts" setup>
-import { getCategoryList, type Category } from '@/api/modules/diet'
+import { getCategoryListByProductModel, type Category } from '@/api/modules/diet'
 import { appLang } from '@/lang/app-lang'
 import { useProductStore } from '@/stores/product'
 import { onBeforeMount, ref } from 'vue'
@@ -27,7 +27,7 @@ const { locale } = useI18n()
 const category = ref<Category[]>([])
 const productStore = useProductStore()
 onBeforeMount(async () => {
-  const categoryListRes = await getCategoryList({
+  const categoryListRes = await getCategoryListByProductModel({
     categoryLevel: 1,
     productModel: productStore.productModel,
   })
@@ -44,7 +44,9 @@ onBeforeMount(async () => {
       }
     }
   })
+  category.value.sort((a, b) => Number(b.existCookbook) - Number(a.existCookbook))
   const index = category.value.findIndex((item) => item.existCookbook)
+  active.value = index
   if (index > -1) {
     emits('changeSide', category.value?.[index])
   } else {

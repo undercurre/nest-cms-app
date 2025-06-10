@@ -111,6 +111,16 @@ export const getCategoryList = (params) => {
   )
 }
 
+/**
+ * @name 通过产品型号查询品类列表
+ */
+export const getCategoryListByProductModel = (params) => {
+  return userService.post<ResultData<{ categoryList: Category[] }>>(
+    PORT1 + '/web/cookbook/category/getCategoryByProductModel',
+    params,
+  )
+}
+
 export interface CountryRes<T> {
   countryInfoList: T[]
 }

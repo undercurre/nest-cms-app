@@ -13,45 +13,49 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const plugins: any[] = [
+    vue(),
+    UnoCSS({
+      configFile: '../uno.config.ts',
+    }),
+    eslint({ cache: false }),
+    AutoImport({
+      imports: [
+        'vue',
+        'vue-router',
+        {
+          'vue-i18n': [
+            // 自动导入 vue-i18n 相关函数
+            'useI18n',
+          ],
+        },
+      ],
+      resolvers: [VantResolver()],
+    }),
+    Components({
+      resolvers: [VantResolver()],
+    }),
+    // 添加构建分析插件（仅在生产环境启用）
+    // visualizer({
+    //   open: true,
+    //   filename: 'stats.html',
+    //   gzipSize: true,
+    //   brotliSize: true,
+    // }),
+    viteCompression({
+      algorithm: 'gzip', // 压缩算法
+      ext: '.gz', // 生成的文件后缀
+      threshold: 10240, // 对大于 10KB 的文件压缩
+      deleteOriginFile: false, // 是否删除原始文件（建议保留）
+    }),
+  ]
+  if (mode === 'uat') {
+    plugins.push(vueDevTools())
+  }
   return {
     base: mode === 'development' ? './' : '/kitchen/offlinedevice/web/cms/markH5/',
-    plugins: [
-      vue(),
-      vueDevTools(),
-      UnoCSS({
-        configFile: '../uno.config.ts',
-      }),
-      eslint({ cache: false }),
-      AutoImport({
-        imports: [
-          'vue',
-          'vue-router',
-          {
-            'vue-i18n': [
-              // 自动导入 vue-i18n 相关函数
-              'useI18n',
-            ],
-          },
-        ],
-        resolvers: [VantResolver()],
-      }),
-      Components({
-        resolvers: [VantResolver()],
-      }),
-      // 添加构建分析插件（仅在生产环境启用）
-      // visualizer({
-      //   open: true,
-      //   filename: 'stats.html',
-      //   gzipSize: true,
-      //   brotliSize: true,
-      // }),
-      viteCompression({
-        algorithm: 'gzip', // 压缩算法
-        ext: '.gz', // 生成的文件后缀
-        threshold: 10240, // 对大于 10KB 的文件压缩
-        deleteOriginFile: false, // 是否删除原始文件（建议保留）
-      }),
-    ],
+    plugins: plugins,
     server: {
       host: '0.0.0.0', // 监听所有网络接口
       port: 5173, // 保持端口不变

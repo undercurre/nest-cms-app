@@ -41,8 +41,8 @@ onMounted(() => {
 })
 </script>
 <template>
-  <div>
-    <van-sticky offset-top="46px">
+  <div class="p-t-48px">
+    <div class="fixed w-full left-0 top-0px z-99999">
       <van-search
         class="w-full qa-search"
         v-model="keyword"
@@ -50,7 +50,7 @@ onMounted(() => {
         @search="getData"
         @blur="getData"
       />
-    </van-sticky>
+    </div>
     <div class="bg-#f6f6f6 p-t-12px qa-page" v-if="qaList?.length">
       <van-collapse v-model="activeName" accordion>
         <van-collapse-item
@@ -69,7 +69,10 @@ onMounted(() => {
 </template>
 <style lang="less">
 .qa-page {
+  height: calc(100vh - 144px);
   .van-collapse {
+    height: 100%;
+    overflow: auto;
     .van-collapse-item:first-child {
       .van-cell {
         border-top-left-radius: 20px;
@@ -80,6 +83,10 @@ onMounted(() => {
       .van-cell {
         border-bottom: 1px solid #f6f6f6;
       }
+    }
+    .van-cell__title {
+      font-size: 16px;
+      font-weight: bold;
     }
   }
 }

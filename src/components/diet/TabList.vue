@@ -10,7 +10,7 @@
             ? '#FF6B6B'
             : '#9CA3AF'
           : 'rgb(200, 201, 204, 0.4)',
-        color: item.value === curItemKey ? '#fff' : '#000',
+        color: item.existCookbook ? (item.value === curItemKey ? '#fff' : '#000') : '#fff',
       }"
       @click="handleSelect(item)"
     >
