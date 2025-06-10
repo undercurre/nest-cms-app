@@ -83,6 +83,7 @@ export const useLocation = () => {
     })
   }
   const getLocation = async () => {
+    console.log('route.query.lang: ', route.query.lang)
     if (route.query.lang) {
       language.value = route.query.lang as string
       return
