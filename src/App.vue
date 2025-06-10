@@ -25,7 +25,7 @@ const { t, locale } = useI18n()
 const appStore = useAppStore()
 
 // 检查当前路由是否为 list
-const isListRoute = computed(() => route.name === 'list')
+const isListRoute = computed(() => ['dietDetail', 'list'].includes(route.name as string))
 const isHomeRoute = computed(
   () => route.name === 'product' || route.name === 'guide' || route.name === 'diet',
 )
@@ -239,6 +239,7 @@ onBeforeMount(() => {
   localStorage.removeItem('displayCountry')
   localStorage.removeItem('languageList')
   localStorage.removeItem('countryInfoList')
+  localStorage.removeItem('isManualSwitch')
 })
 </script>
 
@@ -259,7 +260,7 @@ onBeforeMount(() => {
             @click="onClickLeft"
           />
           <span class="font-bold leading-28px text-18px truncate w-67vw text-left">{{
-            isListRoute ? $t('common.equipmentList') : getTitle
+            route.name == 'list' ? $t('common.equipmentList') : getTitle
           }}</span>
         </div>
       </template>
@@ -268,7 +269,9 @@ onBeforeMount(() => {
         <!-- @click="go2AI" -->
       </template>
     </van-nav-bar>
-    <div class="flex flex-col h-full main-content">
+    <div
+      :class="['flex', 'flex-col', 'h-full', isListRoute ? 'main-content-no-pad' : 'main-content']"
+    >
       <div class="shadow-md w-full h-46px"></div>
       <div class="w-full flex-1 overflow-hidden">
         <div class="h-full overflow-scroll router-container">
@@ -279,6 +282,7 @@ onBeforeMount(() => {
       </div>
     </div>
     <TabBar
+      v-if="!isListRoute"
       :tabList="tabList"
       :defaultColor="themeMode === 'dark' ? '#ffffff' : '#9ca3af'"
       :activeColor="themeMode === 'dark' ? 'rgba(255, 107, 107, 0.8)' : '#ff6b6b'"
@@ -361,6 +365,10 @@ nav a:first-of-type {
 .main-content {
   padding-bottom: calc(constant(safe-area-inset-bottom) + 50px); /* 兼容 iOS < 11.2 */
   padding-bottom: calc(env(safe-area-inset-bottom) + 50px); /* 兼容 iOS >= 11.2 */
+}
+.main-content-no-pad {
+  padding-bottom: calc(constant(safe-area-inset-bottom)); /* 兼容 iOS < 11.2 */
+  padding-bottom: calc(env(safe-area-inset-bottom)); /* 兼容 iOS >= 11.2 */
 }
 
 .router-container {

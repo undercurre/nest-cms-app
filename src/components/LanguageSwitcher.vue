@@ -20,7 +20,7 @@ const changeLanguage = (e) => {
   locale.value = e
   localStorage.setItem('locale', locale.value)
   // 手动切换后，页面刷新就取切换的语言
-  sessionStorage.setItem('isManualSwitch', 'true')
+  localStorage.setItem('isManualSwitch', 'true')
 }
 
 watch(

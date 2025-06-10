@@ -33,7 +33,7 @@ export function useCountryList() {
     if (countryCode.code) {
       const country = countryInfoList.value.find((item) => item.countryCode === countryCode.code)
       const countryId = country?.id
-      if (!localStorage.getItem('displayCountry')) {
+      if (!localStorage.getItem('displayCountry') && country?.displayCountry) {
         localStorage.setItem('displayCountry', country?.displayCountry || '')
         showToast(`定位到您的位置为:${country?.displayCountry}`)
       }
@@ -45,7 +45,7 @@ export function useCountryList() {
     )?.id
     const country = countryInfoList.value.find((item) => item.languageId === languageId)
     const countryId = country?.id
-    if (!localStorage.getItem('displayCountry')) {
+    if (!localStorage.getItem('displayCountry') && country?.displayCountry) {
       localStorage.setItem('displayCountry', country?.displayCountry || '')
       showToast(`定位到您的位置为:${country?.displayCountry}`)
     }

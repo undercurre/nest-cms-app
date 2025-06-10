@@ -13,7 +13,7 @@ export const useLanguage = () => {
       localStorage.getItem('locale') ||
       'en'
     // 手动切换后，页面刷新就取切换的语言
-    if (sessionStorage.getItem('isManualSwitch') == 'true') {
+    if (localStorage.getItem('isManualSwitch') == 'true') {
       lang = localStorage.getItem('locale') || 'en'
     }
 

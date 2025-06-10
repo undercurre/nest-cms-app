@@ -11,7 +11,7 @@
           </template>
         </el-card>
 
-        <div class="my-20px pl-10px">
+        <div class="m-t-10px m-b-20px pl-10px">
           <p>
             <span class="font-semibold">{{ $t('list.collectPrefix') }}</span>
             <span class="font-black p-16px">{{ deviceList.length }}</span>
@@ -19,7 +19,7 @@
           </p>
         </div>
 
-        <div class="w-full grid grid-cols-3 gap-10px place-items-center">
+        <div class="w-full grid grid-cols-2 gap-10px place-items-center">
           <div
             class="w-full h-200px flex flex-col justify-center shadow-2xl rounded-20px overflow-hidden border-1px border-solid border-[#434343]/10 cursor-pointer"
             v-for="item in deviceList"
@@ -27,7 +27,7 @@
             @click="go2Detail(item.id)"
           >
             <img
-              class="w-full h-full object-cover shadow-md"
+              class="w-full h-full object-contain shadow-md"
               :src="getUrlConcat(item.imageOssUrl)"
             />
             <div class="w-full">
