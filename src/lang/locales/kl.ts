@@ -34,10 +34,180 @@ const zh_CN = {
     SichuanCuisine: 'Sichuanimi nerisassat',
     all: 'tamaasa',
     AppropriateAmount: 'Ingasanngitsoq',
-    strip: 'amitsunngorlugu aggugaq',
-    piece: 'ilaa',
-    root: 'issoq',
-    g: 'gram',
+    accessory: "atuagaq",
+    units: {
+      "kilogram": "kilogrammi",    // 国际单位直接音译
+      "g": "grammi",              
+      "ton": "tonni",             
+      "milligram": "milligrammi",  
+      "jin": "jin",               // 保留中文单位拼音
+      "liang": "liang",           
+      "pound": "paundi",          
+      "ounce": "auksi",           
+      "carat": "karat",           
+      "liter": "liiteri",         
+      "milliliter": "milliliiteri",
+      "cubic_meter": "kubikmeteri",
+      "cubic_centimeter": "kubiksentimeteri",
+      "gallon": "galluni",        
+      "quart": "kvart",           
+      "pint": "pinti",            
+      "cup": "kuppi",             
+      "tablespoon": "qaannarisasiut",  // 字面直译"汤勺"
+      "teaspoon": "teeqquliarsasiut",  // "茶匙"变体
+      "drop": "qaartorpoq",          // 滴落动作名词化
+      "piece": "illu",               // 通用量词
+      "animal_unit": "uumasoq",      // 生物个体量词
+      "head_livestock": "niuverujuk",// 牲畜头数
+      "small_piece": "illuaaraq",    
+      "grain": "ernassaq",           // 细小颗粒
+      "chunk": "pujuraq",            // 块状物
+      "segment": "qarasaasaq",      
+      "shred": "pilutaq",           // 丝状物
+      "minced": "qulitserpoq",       // 剁碎状态
+      "paste": "aqqut",              // 糊状物
+      "thin_slice": "kukkuriaraq",  // 薄片
+      "thick_slice": "kukkuniaq",   // 厚片
+      "strip": "pilutaq qanik",     // 条状+长形
+      "thin_strip": "kukkut pilutaq",  
+      "thick_strip": "kukkuniaq pilutaq",
+      "root": "suliffik",           // 植物根部
+      "clove": "qeqertaq",          // 蒜瓣(借丹麦语"hvidløg")
+      "flower_unit": "pernasaq",    // 花朵单位
+      "string": "qilut",            // 串状物
+      "bundle_tied": "ikkiuut",     // 绑扎量词
+      "handful": "assak",           // 把抓量词
+      "lump": "pujoq",              
+      "ball": "atsaq",              
+      "bowl": "qajaq",              // 传统石碗
+      "plate": "puugutaq",          // 盘子
+      "small_plate": "puugutaaraq",
+      "basin": "imaq",              // 盆状容器(借"水"扩展)
+      "pot": "puugutaq angivoq",   // 带盖容器
+      "spoon_unit": "savi",         // 传统骨勺
+      "shovel_unit": "kapi",        // 铲状工具
+      "bundle": "ikkiut",           
+      "bunch": "iluaat",            // 束状集合
+      "layer": "seqineq",           
+      "leaf": "pilutaq pulaaq",     // 叶状薄片
+      "sheet": "qaanngaaq",         // 平面片状
+      "small_object": "miteq",      
+      "lantern_unit": "qulliq",     // 传统油灯
+      "can": "kani",               // 罐头(借词)
+      "bottle": "puugutaq imeqqulik", // 带液体容器
+      "bag": "poki",               // 袋子
+      "box": "qassi",              // 盒状容器
+      "barrel": "puugutaq angallak",// 大型容器
+      "pack": "atuarneq",           
+      "stick_unit": "qerruq",       // 细长杆状
+      "branch": "kussak",           // 枝条
+      "cluster_plants": "illut",   // 植物丛
+      "cluster": "illut",           
+      "slice": "kukkuniaq",        
+      "door_window": "matu",        // 开合结构
+      "section": "paasissutissat", // 章节/分段
+      "leg": "niu",                // 动物腿
+      "wing": "isaroq",            // 翅膀
+      "claw": "kukkaq",            // 爪
+      "tail": "umiaq",             // 尾部
+      "breast": "qunguaq",         
+      "belly": "aaneq",            
+      "back": "tui",               
+      "rib": "qalik",              
+      "liver": "tinguk",           
+      "kidney": "tunilik",         
+      "heart": "uumasoq qunguaq",  // 心脏(字面"身体中心")
+      "intestine": "itaaq",        
+      "brain": "qarasaasat",       
+      "tongue": "uqaq",            
+      "ear": "siut",               
+      "skin": "amik",              
+      "shell": "qullik",           // 硬壳
+      "seed": "ernassaq",          
+      "pit": "kigutaq",            // 核/种子核心
+      "stem": "kussak pulaaq",     // 茎+薄片组合
+      "flower": "pernasaq",        
+      "sprout": "ernernaq",        
+      "bamboo_shoot": "qajaq qernertoq", // "碗状生长物"
+      "stamen": "pernasaq qarali", // 花蕊结构
+      "powder": "qulinneq",        
+      "pulp": "imaq qulinneq",     // 浆液(水+粉末)
+      "juice": "imaq",             // 液体通用词
+      "standard_cup": "qajaq taagu", // 标准杯
+      "bushel": "puisi",            // 借丹麦语"bøschel"
+      "dozen": "tusind",           // 借丹麦语"dusin"
+      "ream": "riimi",             // 借词
+      "container_unit": "puugutaq ineriartortitaanik", 
+      "cartload": "qamutit atuarneq", // 雪橇装载量
+      "hectare": "hektari",        
+      "group_animals": "uumasut",  
+      "litter_nest": "illut ittaaq",// 窝状排泄物
+      "cage": "anngia",            // 封闭空间
+      "steamer_tier": "puugutaq qanga", // 蒸煮层
+      "serving_person": "inuit atuarneq", // 人员服务量
+      "serving_dish": "nerisassat atuarneq",
+      "cun": "tsun",               // 寸音译
+      "bolt_fabric": "pilutaq malik", // 织物卷
+      "roll": "qarlut",            
+      "stack": "qarlut",           // 堆叠量词
+      "pile": "qarlut",            
+      "spread": "paatineq",        // 摊开状态
+      "strand": "pilutaq",         
+      "wisp": "pilutaq aaraq",     
+      "side": "savak",             
+      "package_bag_box": "poki/missak/qassi",
+      "can_unit": "kani",          
+      "dozen_box": "tusind/qassi",  
+      "bottle_cap": "puugutaq imeqqulik/qungia",
+      "spoon_bowl": "savi/qajaq",  
+      "cup_saucer": "kuppi/qaanngaaq",
+      "plate_table": "puugutaq/savimmit",
+      "pot_stove": "puugutaq/kuuk",
+      "per_person": "inuk eqqaani",
+      "meal_quantity": "nerisassat eqqaanit",
+      "dan_weight": "tan",          // 石音译
+      "dou": "tu",                 
+      "ge": "ge",                  
+      "dan_100jin": "tan 100jin",  
+      "guan": "kuan",              
+      "jun": "jun",                
+      "hu": "hu",                  
+      "yue": "ju",                 
+      "pinch": "qitsuk",           // 捏取动作
+      "bunch_tied": "ikkiuut/illi",
+      "portion": "atuarneq",       
+      "bit": "miteq",              
+      "some": "soorli",            
+      "batch": "paasissutissat",   
+      "sea": "imaq",               // 借"水"表抽象量
+      "whole": "tamanik",          
+      "half": "akui",              
+      "crushed": "qulitsimmi",     
+      "mashed": "qulitserpoq",     
+      "sauce": "tupeq",            // 酱汁
+      "paste_ointment": "qimirlaq",// 油膏
+      "jelly": "imarpik",          // 海藻胶
+      "hertz": "hertsi",           
+      "pixel": "pikseli",          
+      "nanometer": "nanometri",    
+      "light_year": "ulloriaq ukiuq", 
+      "joule": "joule",            
+      "decibel": "decibel",        
+      "celsius": "celsius",        
+      "pascal": "pascal",          
+      "mole": "mole",              
+      "second": "sekundi",         
+      "hour": "timi",              
+      "day": "ulloq",              
+      "week": "sapaatip-akui",     // 7天周期
+      "month": "qaammat",          
+      "year": "ukiuk",             
+      "generation": "inuiaq",      // 人类世代
+      "epoch": "ulloriaq",         // 时间纪元
+      "century": "ukiut hundredilit", 
+      "cosmic_unit": "silarsuup ineriartortitaanik", // 宇宙量度单位
+      "abstract_unit": "inersuutinik ineriartortitaanik", // 抽象计量单位
+    },
     MainDishes: 'Nerisassat pingaarnerit',
     Soups: 'Suppi',
     Salads: 'salati',

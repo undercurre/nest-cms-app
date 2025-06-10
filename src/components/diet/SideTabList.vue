@@ -3,11 +3,12 @@
     <van-sidebar v-model="active" @change="onChange" class="side-tab-list">
       <van-sidebar-item
         :title="
-          item?.categoryMultiLanguageObj?.[(locale === 'zh-CN' ? 'zh' : locale) ?? 'en']
-            ?.categoryName ?? item?.categoryMultiLanguageObj?.['en']?.categoryName
+          item?.categoryMultiLanguageObj?.[appLang[locale] ?? locale ?? 'en']?.categoryName ??
+          item?.categoryMultiLanguageObj?.['en']?.categoryName
         "
         v-for="item in category"
         :key="item.id"
+        :disabled="!item.existCookbook"
       />
     </van-sidebar>
     <slot />
@@ -15,6 +16,8 @@
 </template>
 <script lang="ts" setup>
 import { getCategoryList, type Category } from '@/api/modules/diet'
+import { appLang } from '@/lang/app-lang'
+import { useProductStore } from '@/stores/product'
 import { onBeforeMount, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 
@@ -22,9 +25,11 @@ const emits = defineEmits(['changeSide'])
 const active = ref(0)
 const { locale } = useI18n()
 const category = ref<Category[]>([])
+const productStore = useProductStore()
 onBeforeMount(async () => {
   const categoryListRes = await getCategoryList({
     categoryLevel: 1,
+    productModel: productStore.productModel,
   })
   category.value = categoryListRes.data.categoryList
   category.value?.forEach((item) => {
@@ -39,7 +44,12 @@ onBeforeMount(async () => {
       }
     }
   })
-  emits('changeSide', category.value?.[0])
+  const index = category.value.findIndex((item) => item.existCookbook)
+  if (index > -1) {
+    emits('changeSide', category.value?.[index])
+  } else {
+    emits('changeSide', category.value?.[0])
+  }
 })
 const onChange = (index) => {
   emits('changeSide', category.value[index])

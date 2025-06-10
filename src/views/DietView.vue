@@ -5,6 +5,7 @@ import { useRoute } from 'vue-router'
 
 import { getCategoryList, searchDiet, type Category, type Diet } from '@/api/modules/diet'
 import DietCard from '@/components/diet/DietCard.vue'
+import { useCountryList } from '@/hooks/useCountryList'
 import { useAppStore } from '@/stores/app'
 import { useProductStore } from '@/stores/product'
 import { useI18n } from 'vue-i18n'
@@ -24,6 +25,8 @@ const category = ref<Category[]>([])
 
 const diet = ref<Diet[]>([])
 const categoryId = ref<string | number | undefined>('')
+
+const { getCurrentCountryCode } = useCountryList()
 watch(
   () => keyword.value,
   async () => {
@@ -36,6 +39,7 @@ async function handleCategoryChange(key: string) {
   getDiet()
 }
 const getDiet = async () => {
+  const countryId = await getCurrentCountryCode()
   diet.value = []
   const dietRes = await searchDiet({
     categoryId: categoryId.value || undefined,
@@ -43,15 +47,11 @@ const getDiet = async () => {
     productModel: productStore.productModel,
     pageNo: 1,
     pageSize: 9999999,
+    countryId,
   })
   diet.value = dietRes.data.cookbookList
   diet.value?.forEach((item) => {
     item.dietMultiLanguageObj = {}
-    item.cookbookMultiLanguageList?.forEach((row) => {
-      if (row.languageCode === 'zh') {
-        row.languageCode = 'zh-CN'
-      }
-    })
     item.dietMultiLanguageObj = item?.cookbookMultiLanguageList?.reduce((acc, curr) => {
       acc[curr.languageCode] = curr
       return acc
@@ -66,6 +66,7 @@ const getDiet = async () => {
 }
 
 const getCategory = async (item) => {
+  const countryId = await getCurrentCountryCode()
   diet.value = []
   category.value = []
   return new Promise(async (resolve, reject) => {
@@ -76,9 +77,11 @@ const getCategory = async (item) => {
         productModel: productStore.productModel,
         pageNo: 1,
         pageSize: 9999999,
+        countryId,
       })
       const categoryListRes = await getCategoryList({
         id: item.id,
+        productModel: productStore.productModel,
       })
       category.value = categoryListRes.data.categoryList
       category.value?.forEach((item) => {
@@ -98,11 +101,6 @@ const getCategory = async (item) => {
         diet.value = dietRes.data.cookbookList
         diet.value?.forEach((item) => {
           item.dietMultiLanguageObj = {}
-          item.cookbookMultiLanguageList?.forEach((row) => {
-            if (row.languageCode === 'zh') {
-              row.languageCode = 'zh-CN'
-            }
-          })
           item.dietMultiLanguageObj = item?.cookbookMultiLanguageList?.reduce((acc, curr) => {
             acc[curr.languageCode] = curr
             return acc
@@ -114,10 +112,20 @@ const getCategory = async (item) => {
             }
           }
         })
-        categoryId.value = category.value?.[0]?.id
+        const index = category.value.findIndex((item) => item.existCookbook)
+        if (index > -1) {
+          categoryId.value = category.value?.[index]?.id
+        } else {
+          categoryId.value = category.value?.[0]?.id
+        }
         resolve(false)
       } else {
-        categoryId.value = category.value?.[0]?.id ?? ''
+        const index = category.value.findIndex((item) => item.existCookbook)
+        if (index > -1) {
+          categoryId.value = category.value?.[index]?.id
+        } else {
+          categoryId.value = category.value?.[0]?.id
+        }
         if (!categoryId.value) {
           diet.value = []
         }

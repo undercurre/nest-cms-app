@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { Entity, getQAList } from '@/api/modules/qa'
+import { appLang } from '@/lang/app-lang'
 import { useAppStore } from '@/stores/app'
 import { useProductStore } from '@/stores/product'
 import { onMounted, ref } from 'vue'
@@ -28,7 +29,7 @@ const getData = async () => {
       question: keyword.value,
       answer: keyword.value,
       keyword: keyword.value,
-      languageCodes: locale.value ? [locale.value === 'zh-CN' ? 'zh' : locale.value] : [],
+      languageCodes: locale.value ? [appLang[locale.value] ?? locale.value ?? 'en'] : [],
     })
     qaList.value = res.data
   } catch (error) {

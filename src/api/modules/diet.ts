@@ -1,5 +1,5 @@
 import { userService } from '..'
-import { PORT1 } from '../config/servicePort'
+import { PORT1, PORT2 } from '../config/servicePort'
 
 // 请求响应参数（不包含data）
 export interface Result {
@@ -48,7 +48,13 @@ export interface CookBookMultiLanguage extends MultiLanguage {
   description: string
   cookbookIngredientList: Ingredients[]
   cookbookStepList: Steps[]
+  cookbookUtensilList: Accessories[]
 }
+
+export interface Accessories {
+  utensilName: string
+}
+
 export interface CategoryMultiLanguage extends MultiLanguage {
   id?: string
   categoryId?: string
@@ -59,6 +65,7 @@ export interface Category {
   categoryLanguageRelationList: CategoryMultiLanguage[]
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   categoryMultiLanguageObj?: any
+  existCookbook: boolean
 }
 
 export interface Ingredients {
@@ -72,6 +79,7 @@ export interface Steps {
   id: number
   stepNum: number
   description: string
+  imageUrl?: string
 }
 
 /**
@@ -85,6 +93,7 @@ export const searchDiet = (params: {
   pageNo: number
   pageSize: number
   productModel?: string
+  countryId?: number
 }) => {
   return userService.post<ResultData<{ cookbookList: Diet[]; total: number }>>(
     PORT1 + '/web/cookbook/list',
@@ -99,6 +108,26 @@ export const getCategoryList = (params) => {
   return userService.post<ResultData<{ categoryList: Category[] }>>(
     PORT1 + '/web/cookbook/category/list',
     params,
+  )
+}
+
+export interface CountryRes<T> {
+  countryInfoList: T[]
+}
+export interface CountryEntity {
+  id: number
+  countryCode: string
+  displayCountry: string
+  languageId: number
+}
+
+/**
+ * @name 查询国家列表
+ */
+export const getCountries = () => {
+  return userService.post<ResultData<CountryRes<CountryEntity>>>(
+    PORT2 + '/h5/products/getCountries',
+    {},
   )
 }
 

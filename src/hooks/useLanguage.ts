@@ -1,3 +1,4 @@
+import { appLang } from '@/lang/app-lang'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 // 获取知识空间节点信息/获取工作表/获取多个工作表范围/获取单个工作表范围
@@ -16,7 +17,7 @@ export const useLanguage = () => {
       lang = localStorage.getItem('locale') || 'en'
     }
 
-    const langRes = lang == 'zh' ? 'zh-CN' : lang
+    const langRes = appLang[lang] ?? lang ?? 'en'
     localStorage.setItem('locale', langRes || 'en')
     locale.value = langRes || 'en'
   }

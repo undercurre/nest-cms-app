@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { appLang } from '@/lang/app-lang'
 import he from 'he'
 import { RouterView, useRoute } from 'vue-router'
 
@@ -8,7 +9,7 @@ import { useProductStore } from '@/stores/product'
 import { useLocation } from '@/hooks/useLocation'
 import { useThemeMode } from '@/hooks/useThemeMode'
 import { useAppStore } from '@/stores/app'
-import { computed, onMounted, ref, watch } from 'vue'
+import { computed, onBeforeMount, onMounted, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import {
   getMenuList,
@@ -16,6 +17,7 @@ import {
   PageConfigEntity,
   TabItem,
 } from './api/modules/product'
+import { useCountryCodeByLocationOrIp } from './stores/countryCodeByLocationOrIp'
 
 const route = useRoute()
 
@@ -67,8 +69,7 @@ const tabList = computed(() => {
       icon: item.source,
       path: `${item.path.replace('${id}', productStore.id.toString())}`,
       text:
-        item.menuMultiLanguageObj?.[(locale.value == 'zh-CN' ? 'zh' : locale.value) ?? 'en']
-          ?.menuName ??
+        item.menuMultiLanguageObj?.[appLang[locale.value] ?? locale.value ?? 'en']?.menuName ??
         item.menuMultiLanguageObj?.['en']?.menuName ??
         '',
       hidden: !productStore.posterImageUrls?.length && name === 'poster',
@@ -156,9 +157,8 @@ watch(
 
 const getTitle = computed(() => {
   return (
-    pageConfig.value?.pageConfigMultiLanguageObj?.[
-      (locale.value == 'zh-CN' ? 'zh' : locale.value) ?? 'en'
-    ]?.title ??
+    pageConfig.value?.pageConfigMultiLanguageObj?.[appLang[locale.value] ?? locale.value ?? 'en']
+      ?.title ??
     pageConfig.value?.pageConfigMultiLanguageObj?.['en']?.title ??
     t('common.smartKitchenAssistant')
   )
@@ -180,7 +180,7 @@ function onClickLeft() {
   }
 }
 
-const { getLocation } = useLocation()
+const { getLocation, getCountryCodeByLocationOrIp, countryCodeByLocationOrIp } = useLocation()
 
 // 获取系统色系
 const { getThemeMode, themeMode } = useThemeMode()
@@ -226,10 +226,19 @@ onMounted(() => {
     getThemeMode()
   }, 300)
 })
-onMounted(() => {
-  setTimeout(() => {
+const countryCode = useCountryCodeByLocationOrIp()
+onMounted(async () => {
+  await getCountryCodeByLocationOrIp()
+  countryCode.code = countryCodeByLocationOrIp.value
+  setTimeout(async () => {
     getLocation()
   }, 300)
+})
+
+onBeforeMount(() => {
+  localStorage.removeItem('displayCountry')
+  localStorage.removeItem('languageList')
+  localStorage.removeItem('countryInfoList')
 })
 </script>
 

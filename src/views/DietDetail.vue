@@ -3,17 +3,24 @@
     <img class="w-full" :src="diet?.imageUrl" />
     <div class="flex flex-col items-center justify-center mt-20px">
       <p class="text-center font-bold text-20px my-10px">{{ getI18NDietName() }}</p>
-      <span
-        v-if="diet?.categoryId && categoryName"
-        class="text-12px bg-#ddd leading-12px rounded-20px font-bold p-10px text-[--vt-c-text-light-2]"
-        >{{ categoryName }}</span
-      >
+      <div class="flex gap-10px">
+        <span
+          v-if="diet?.categoryId && categoryName"
+          class="text-12px bg-#ddd leading-12px rounded-20px font-bold p-10px text-[--vt-c-text-light-2]"
+          >{{ categoryName }}</span
+        >
+        <span
+          v-if="diet?.taste"
+          class="text-12px bg-#ddd leading-12px rounded-20px font-bold p-10px text-[--vt-c-text-light-2]"
+          >{{ tasteName }}</span
+        >
+      </div>
     </div>
-    <div class="flex flex-col mt-20px">
+    <div class="flex flex-col mt-20px" v-if="getI18NDescription()">
       <span class="font-bold text-18px px-10px">{{ $t('diet.introduction') }}</span>
       <p class="text-14px my-10px px-10px pre-line-content">{{ getI18NDescription() }}</p>
     </div>
-    <div class="flex flex-col mt-20px">
+    <div class="flex flex-col mt-20px" v-if="diet?.cookbookNutritionList.length">
       <span class="font-bold text-18px px-10px">{{ $t('cookbook.nutrition') }}</span>
       <p
         v-for="item in diet?.cookbookNutritionList"
@@ -35,26 +42,50 @@
         }}{{
           item.quantity === 'AppropriateAmount' ? $t(`cookbook.${item.quantity}`) : item.quantity
         }}{{
-          item.quantity === 'AppropriateAmount' ? '' : item.unit ? $t(`cookbook.${item.unit}`) : ''
+          item.quantity === 'AppropriateAmount'
+            ? ''
+            : item.unit
+              ? $t(`cookbook.units.${item.unit}`)
+              : ''
         }}
       </p>
     </div>
     <div class="flex flex-col mt-20px">
       <span class="font-bold text-18px px-10px">{{ $t('diet.steps') }}</span>
-      <p
+      <div
         v-for="item in diet?.dietMultiLanguageObj[locale || 'en']?.cookbookStepList ??
         diet?.dietMultiLanguageObj['en']?.cookbookStepList"
         :key="item.id"
         class="text-14px my-10px px-10px"
       >
         {{ item.stepNum }}、{{ item.description }}
-      </p>
+        <img v-if="item.imageUrl" class="w-full mt-10px" :src="item.imageUrl" />
+      </div>
+    </div>
+    <div
+      class="flex flex-col mt-20px"
+      v-if="
+        diet?.dietMultiLanguageObj?.[locale || 'en']?.cookbookUtensilList?.length ||
+        diet?.dietMultiLanguageObj?.['en']?.cookbookUtensilList?.length
+      "
+    >
+      <span class="font-bold text-18px px-10px">{{ $t('cookbook.accessory') }}</span>
+      <div class="text-14px my-10px px-10px">
+        {{
+          Array.from(
+            diet?.dietMultiLanguageObj?.[locale || 'en']?.cookbookUtensilList ??
+              diet?.dietMultiLanguageObj?.['en']?.cookbookUtensilList,
+            ({ utensilName }) => utensilName,
+          ).join('、')
+        }}
+      </div>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
 import { Category, getCategoryList, getDietById, type Diet } from '@/api/modules/diet'
+import { appLang } from '@/lang/app-lang'
 import { useAppStore } from '@/stores/app'
 import { computed, onBeforeMount, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
@@ -65,7 +96,7 @@ console.log('route: ', route)
 
 const diet = ref<Diet>()
 
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 const appStore = useAppStore()
 appStore.tabbarActive = 'diet'
 const category = ref<Category[]>([])
@@ -91,10 +122,14 @@ const getCategory = async () => {
   })
 }
 
+const tasteName = computed(() => {
+  return diet.value?.taste ? t(`cookbook.${diet.value?.taste}`) : ''
+})
+
 const categoryName = computed(() => {
   return (
     category.value.find((item) => item.id === diet.value?.categoryId)?.categoryMultiLanguageObj[
-      (locale.value === 'zh-CN' ? 'zh' : locale.value) || 'en'
+      (appLang[locale.value] ?? locale.value) || 'en'
     ]?.categoryName ??
     category.value.find((item) => item.id === diet.value?.categoryId)?.categoryMultiLanguageObj[
       'en'
@@ -120,11 +155,6 @@ onBeforeMount(async () => {
   diet.value = dietRes.data
   if (diet.value) {
     diet.value.dietMultiLanguageObj = {}
-    diet.value.cookbookMultiLanguageList?.forEach((item) => {
-      if (item.languageCode === 'zh') {
-        item.languageCode = 'zh-CN'
-      }
-    })
     diet.value.dietMultiLanguageObj = diet.value?.cookbookMultiLanguageList?.reduce((acc, curr) => {
       acc[curr.languageCode] = curr
       return acc

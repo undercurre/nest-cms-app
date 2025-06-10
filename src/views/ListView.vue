@@ -54,6 +54,7 @@
 <script lang="ts" setup>
 import { getDeviceListByUid } from '@/api/modules/list'
 import type { Product } from '@/api/modules/product'
+import { appLang } from '@/lang/app-lang'
 import router from '@/router'
 import { useAppStore } from '@/stores/app'
 import { getUrlConcat } from '@/utils/index'
@@ -82,7 +83,7 @@ const handleProductName = (item) => {
 }
 
 const handleLocaleIndex = () => {
-  return locale.value === 'zh-CN' ? 'zh' : locale.value
+  return appLang[locale.value] ?? locale.value ?? 'en'
 }
 
 onBeforeMount(async () => {

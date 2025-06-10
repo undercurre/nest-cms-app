@@ -28,11 +28,6 @@ onBeforeMount(async () => {
   guides.value = res.data.guideList
   guides.value.forEach((item) => {
     item.guideMultiLanguageObj = {}
-    item.guideLanguageRelationList?.forEach((item) => {
-      if (item.languageCode === 'zh') {
-        item.languageCode = 'zh-CN'
-      }
-    })
     item.guideMultiLanguageObj = item?.guideLanguageRelationList?.reduce((acc, curr) => {
       acc[curr.languageCode] = curr
       return acc

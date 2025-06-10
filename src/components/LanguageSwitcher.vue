@@ -5,27 +5,17 @@
 </template>
 
 <script lang="ts" setup>
-import { getProductLanguageList, type LangItem } from '@/api/modules/product'
-import { onMounted, onUnmounted, ref, watch } from 'vue'
+import { useLanguageList } from '@/hooks/useLanguageList'
+import { appLang } from '@/lang/app-lang'
+import { onMounted, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 const { t, locale } = useI18n()
 
 const currentLocale = ref<string>(locale.value)
 
-const languageList = ref<LangItem[]>([])
 const options = ref<{ text: string; value: string }[]>([])
-const getLanguageList = async () => {
-  if (!localStorage.getItem('languageList')) {
-    try {
-      const res = await getProductLanguageList()
-      localStorage.setItem('languageList', JSON.stringify(res?.data?.languageInfoList ?? ''))
-    } catch (error) {
-      console.log('error: ', error)
-    }
-  }
-  languageList.value = JSON.parse(localStorage.getItem('languageList') ?? '')
-}
+const { languageList, getLanguageList } = useLanguageList()
 const changeLanguage = (e) => {
   locale.value = e
   localStorage.setItem('locale', locale.value)
@@ -39,7 +29,7 @@ watch(
     options.value = newVal?.[0]?.map((item) => {
       return {
         text: t(`lang.${item.languageCode ?? ''}`),
-        value: item.languageCode === 'zh' ? 'zh-CN' : (item.languageCode ?? ''),
+        value: appLang[item.languageCode] ?? item.languageCode ?? 'en',
       }
     })
     currentLocale.value = newVal?.[1]
@@ -48,9 +38,6 @@ watch(
 
 onMounted(() => {
   getLanguageList()
-})
-onUnmounted(() => {
-  localStorage.removeItem('languageList')
 })
 </script>
 

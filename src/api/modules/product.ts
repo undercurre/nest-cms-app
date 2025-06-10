@@ -52,7 +52,7 @@ export interface LangItem {
   createTime?: string
   deleted?: string
   displayLanguage?: string
-  id?: string
+  id?: number
   languageCode?: string
   updateTime?: string
   text?: string

@@ -5,10 +5,14 @@
       v-for="item in listWithAll"
       :key="item.value"
       :style="{
-        backgroundColor: item.value === curItemKey ? '#FF6B6B' : '#9CA3AF',
+        backgroundColor: item.existCookbook
+          ? item.value === curItemKey
+            ? '#FF6B6B'
+            : '#9CA3AF'
+          : 'rgb(200, 201, 204, 0.4)',
         color: item.value === curItemKey ? '#fff' : '#000',
       }"
-      @click="handleSelect(item.value)"
+      @click="handleSelect(item)"
     >
       <span class="text-14px">{{ item.label }}</span>
     </div>
@@ -17,6 +21,7 @@
 
 <script lang="ts" setup>
 import { type Category } from '@/api/modules/diet'
+import { appLang } from '@/lang/app-lang'
 import { computed, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 
@@ -35,11 +40,12 @@ const listWithAll = computed(() => {
   const resList = props.list.map((item) => {
     return {
       label:
-        item?.categoryMultiLanguageObj?.[(locale.value === 'zh-CN' ? 'zh' : locale.value) ?? 'en']
+        item?.categoryMultiLanguageObj?.[appLang[locale.value] ?? locale.value ?? 'en']
           ?.categoryName ??
         item?.categoryMultiLanguageObj?.['en']?.categoryName ??
         '',
       value: item.id,
+      existCookbook: item.existCookbook,
     }
   })
   return resList
@@ -49,9 +55,12 @@ const curItemKey = ref<string | number>('all')
 
 const emit = defineEmits(['change'])
 
-const handleSelect = (key: string | number) => {
-  curItemKey.value = key
-  emit('change', key)
+const handleSelect = (item) => {
+  if (!item.existCookbook) {
+    return
+  }
+  curItemKey.value = item.value
+  emit('change', item.value)
 }
 
 watch(
