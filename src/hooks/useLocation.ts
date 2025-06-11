@@ -57,6 +57,11 @@ export const useLocation = () => {
   // 使用示例
   const getCountryCodeByLocationOrIp = () => {
     return new Promise((resolve) => {
+      if (route.query.lang) {
+        countryCodeByLocationOrIp.value = (route.query.lang as string)?.split('-')?.[1]
+        resolve(countryCodeByLocationOrIp.value)
+        return
+      }
       navigator.geolocation.getCurrentPosition(
         (position) => {
           const coords = {
@@ -83,7 +88,6 @@ export const useLocation = () => {
     })
   }
   const getLocation = async () => {
-    console.log('route.query.lang: ', route.query.lang)
     if (route.query.lang) {
       language.value = route.query.lang as string
       return

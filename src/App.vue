@@ -228,15 +228,15 @@ onMounted(() => {
 })
 const countryCode = useCountryCodeByLocationOrIp()
 onMounted(async () => {
-  setTimeout(() => {
+  setTimeout(async () => {
     getLocation()
+    try {
+      await getCountryCodeByLocationOrIp()
+      countryCode.code = countryCodeByLocationOrIp.value
+    } catch (error) {
+      console.log('error: ', error)
+    }
   }, 300)
-  try {
-    await getCountryCodeByLocationOrIp()
-    countryCode.code = countryCodeByLocationOrIp.value
-  } catch (error) {
-    console.log('error: ', error)
-  }
 })
 
 onBeforeMount(() => {

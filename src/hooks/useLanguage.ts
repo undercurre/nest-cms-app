@@ -18,7 +18,6 @@ export const useLanguage = () => {
     }
 
     const langRes = appLang[lang] ?? lang ?? ''
-    console.log('langRes: ', langRes)
     localStorage.setItem('locale', langRes || 'en')
     locale.value = langRes || 'en'
   }
