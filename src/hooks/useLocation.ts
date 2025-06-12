@@ -1,4 +1,5 @@
 import { useCountryCodeByLocationOrIp } from '@/stores/countryCodeByLocationOrIp'
+import { useProductStore } from '@/stores/product'
 import countryIso from 'country-iso'
 import getCountryISO2 from 'country-iso-3-to-2'
 import { getCountryLanguages } from 'country-language'
@@ -7,6 +8,7 @@ import { useRoute } from 'vue-router'
 import { useLanguage } from './useLanguage'
 export const useLocation = () => {
   const { setLanguage } = useLanguage()
+  const productStore = useProductStore()
   const route = useRoute()
   const countryCodeByLocationOrIp = ref('')
   const ipStore = useCountryCodeByLocationOrIp()
@@ -87,6 +89,41 @@ export const useLocation = () => {
       )
     })
   }
+  // 获取图标和title
+  const getIsRu = () => {
+    return new Promise((resolve, reject) => {
+      const productTrouver = productStore.productModel.indexOf('trouver') > -1
+      const isLangRu = route.query.lang && (route.query.lang as string)?.split('-')?.[1] === 'RU'
+
+      if (productTrouver || isLangRu) {
+        resolve(true)
+      } else {
+        navigator.geolocation.getCurrentPosition(
+          (position) => {
+            const coords = {
+              wgsLat: position.coords.latitude, // WGS84坐标系纬度
+              wgsLng: position.coords.longitude, // WGS84坐标系经度
+              accuracy: position.coords.accuracy, // 定位精度(米)
+            }
+            const isRu = getCountryISO2(countryIso.get(coords.wgsLat, coords.wgsLng)) === 'RU'
+            if (isRu) {
+              resolve(true)
+            } else {
+              resolve(false)
+            }
+          },
+          async (error) => {
+            reject(error)
+          },
+          {
+            enableHighAccuracy: true, // 使用高精度模式
+            timeout: 30000, // 30秒超时
+            maximumAge: 60000, // 缓存有效期60秒
+          },
+        )
+      }
+    })
+  }
   const getLocation = async () => {
     if (route.query.lang) {
       language.value = route.query.lang as string
@@ -142,5 +179,6 @@ export const useLocation = () => {
     getLocation,
     getCountryCodeByLocationOrIp,
     countryCodeByLocationOrIp,
+    getIsRu,
   }
 }

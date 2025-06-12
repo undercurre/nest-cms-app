@@ -180,7 +180,8 @@ function onClickLeft() {
   }
 }
 
-const { getLocation, getCountryCodeByLocationOrIp, countryCodeByLocationOrIp } = useLocation()
+const { getLocation, getCountryCodeByLocationOrIp, countryCodeByLocationOrIp, getIsRu } =
+  useLocation()
 
 // 获取系统色系
 const { getThemeMode, themeMode } = useThemeMode()
@@ -227,9 +228,25 @@ onMounted(() => {
   }, 300)
 })
 const countryCode = useCountryCodeByLocationOrIp()
+const iconType = ref(-1)
 onMounted(async () => {
   setTimeout(async () => {
     getLocation()
+    try {
+      const isRu = await getIsRu()
+      if (isRu) {
+        document.title = 'trouver'
+        iconType.value = 1
+      } else {
+        document.title = 'Mova'
+        iconType.value = 2
+      }
+    } catch (error) {
+      console.log('error: ', error)
+      iconType.value = -1
+      document.title = ''
+    }
+    console.log('dfghgjhk')
     try {
       await getCountryCodeByLocationOrIp()
       countryCode.code = countryCodeByLocationOrIp.value
@@ -269,8 +286,16 @@ onBeforeMount(() => {
         </div>
       </template>
       <template #right>
-        <img v-if="!isListRoute" class="h-150% dark-logo" src="@/assets/images/app/logo.png" />
-        <!-- @click="go2AI" -->
+        <img
+          v-if="!isListRoute && iconType == 2"
+          class="h-150% dark-logo"
+          src="@/assets/images/app/logo.png"
+        />
+        <img
+          v-if="!isListRoute && iconType == 1"
+          class="h-100% dark-logo"
+          src="@/assets/images/app/logo-trouver.png"
+        />
       </template>
     </van-nav-bar>
     <div
