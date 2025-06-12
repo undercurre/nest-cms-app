@@ -235,7 +235,7 @@ onMounted(async () => {
     try {
       const isRu = await getIsRu()
       if (isRu) {
-        document.title = 'trouver'
+        document.title = 'TROUVER'
         iconType.value = 1
       } else {
         document.title = 'Mova'
@@ -246,7 +246,7 @@ onMounted(async () => {
       iconType.value = -1
       document.title = ''
     }
-    console.log('dfghgjhk')
+    console.log('继续')
     try {
       await getCountryCodeByLocationOrIp()
       countryCode.code = countryCodeByLocationOrIp.value

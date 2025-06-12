@@ -112,7 +112,7 @@ watch(
       <img class="w-full rounded-8px" :src="getUrlConcat(curProduct?.imageOssUrl ?? '')" />
     </div>
     <p class="font-bold text-20px w-full leading-30px py-10px">
-      <span class="mr-8px">{{ curProduct?.productModel }}</span>
+      <span class="mr-8px">{{ curProduct?.productModel.replace(/\[trouver\]|trouver/g, '') }}</span>
       <span>{{ getI18NProductName() }}</span>
     </p>
 
