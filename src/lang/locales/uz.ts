@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Savollarni qidirish',
+    searchKeyword: 'Iltimos, kalit so’zlarni kiriting',
+    frequentlyAskedQuestions: 'Tez-tez beriladigan savollar',
+    troubleshooting: 'muammolarni bartaraf qilish; nosozliklarni TUZATISH',
   },
 }
 export default zh_CN

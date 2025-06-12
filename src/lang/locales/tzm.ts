@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Afella n usawal',
+    searchKeyword: 'ⴰⵔ ⴽⵕ ⵜⴰⵔⴰ ⵜⴰⵎⵓⵙⵜⴰ',
+    frequentlyAskedQuestions: 'ⵜⵉⵙⵉⵜ ⵜ ⵢ ⵜ ⵜ ⴷ ⵉ ⵏ',
+    troubleshooting: 'Tasenselkamt n yirugen',
   },
 }
 export default zh_CN

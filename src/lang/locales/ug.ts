@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'سوئال ئىزدەش',
+    searchKeyword: 'ئاچقۇچلۇق سۆزلەرنى كىرگۈزۈڭ',
+    frequentlyAskedQuestions: 'دائىم سورايدىغان سوئاللار',
+    troubleshooting: 'مەسىلىنى ھەل قىلىش',
   },
 }
 export default zh_CN

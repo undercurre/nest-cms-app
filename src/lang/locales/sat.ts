@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'ᱟᱸᱡᱽ ᱥᱮᱸᱫᱽᱨᱟ',
+    searchKeyword: 'ᱫᱟᱹᱲ ᱚᱞ ᱠᱤᱭᱟᱹᱢ ᱟᱫᱮᱨ',
+    frequentlyAskedQuestions: 'ᱥᱟᱱᱟᱢ ᱠᱟᱛᱷᱟ ᱠᱚ',
+    troubleshooting: 'ᱵᱮᱼᱵᱟᱹᱛᱤᱞ ᱮ ᱚᱰᱚᱠ',
   },
 }
 export default zh_CN

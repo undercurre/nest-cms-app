@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Æххуысон фæрсыд',
+    searchKeyword: 'Дæ ключон ныхас бафыссæг',
+    frequentlyAskedQuestions: 'Æппæтæй фæрæздæр æрвитæнтæ',
+    troubleshooting: 'Рæдыдты иcправит',
   },
 }
 export default zh_CN

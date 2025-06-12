@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Wa ibeere',
+    searchKeyword: 'Jọwọ tẹ awọn koko-ọrọ',
+    frequentlyAskedQuestions: 'Awọn ibeere nigbagbogbo',
+    troubleshooting: 'laasigbotitusita',
   },
 }
 export default zh_CN

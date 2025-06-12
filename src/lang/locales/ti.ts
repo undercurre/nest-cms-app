@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'ጥያቄታት ድለ',
+    searchKeyword: 'እቲ ቁልፊ ቃል ኣእትው',
+    frequentlyAskedQuestions: 'ተደጋጋሚ ሕቶታት',
+    troubleshooting: 'ጠመንጂ ምፍታሽ',
   },
 }
 export default zh_CN

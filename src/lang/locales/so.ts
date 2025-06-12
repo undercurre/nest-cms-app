@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Raadi Su’aalaha',
+    searchKeyword: 'Fadlan gali ereyada furaha',
+    frequentlyAskedQuestions: 'Su’aalaha badanaa la isweydiiyo',
+    troubleshooting: 'Dhibaataynta',
   },
 }
 export default zh_CN

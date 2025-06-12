@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: '搜尋問題',
+    searchKeyword: '請輸入關鍵字',
+    frequentlyAskedQuestions: '常見問題',
+    troubleshooting: '故障排除',
   },
 }
 export default zh_CN

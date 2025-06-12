@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Căutare Probleme',
+    searchKeyword: 'Vă rugăm să introduceți cuvinte cheie',
+    frequentlyAskedQuestions: 'Întrebări frecvente',
+    troubleshooting: 'depanare',
   },
 }
 export default zh_CN

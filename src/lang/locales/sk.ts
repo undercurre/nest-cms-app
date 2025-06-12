@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Vyhľadávanie otázok',
+    searchKeyword: 'Zadajte kľúčové slová',
+    frequentlyAskedQuestions: 'Často kladené otázky',
+    troubleshooting: 'riešenie problémov',
   },
 }
 export default zh_CN

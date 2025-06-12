@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Tìm kiếm câu hỏi',
+    searchKeyword: 'Vui lòng nhập từ khóa',
+    frequentlyAskedQuestions: 'Câu hỏi thường gặp',
+    troubleshooting: 'Khắc phục sự cố',
   },
 }
 export default zh_CN

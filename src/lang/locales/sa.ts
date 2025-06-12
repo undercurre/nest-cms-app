@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'समस्यान्वेषणम्',
+    searchKeyword: 'कृपया कीवर्ड दर्ज करें',
+    frequentlyAskedQuestions: 'सामान्य प्रश्न',
+    troubleshooting: 'समस्या निवारण',
   },
 }
 export default zh_CN

@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Afella n usawal',
+    searchKeyword: 'Asekcem awal uḍfir',
+    frequentlyAskedQuestions: 'Isteqsiyen i yettwaseqsač menča',
+    troubleshooting: 'Ussifgel ibuggen',
   },
 }
 export default zh_CN

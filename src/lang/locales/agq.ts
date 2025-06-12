@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Fə́ŋ mə́ndə́ŋ',
+    searchKeyword: 'Nyekét yəká wákwá',
+    frequentlyAskedQuestions: 'Mámpíkilá nkwímgá',
+    troubleshooting: 'Nyímír yá kwímgá',
   },
 }
 export default zh_CN

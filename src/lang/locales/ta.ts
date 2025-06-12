@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'ప్రశ్నలను శోధించు',
+    searchKeyword: 'முக்கிய வார்த்தைகளை உள்ளிடவும்',
+    frequentlyAskedQuestions: 'அடிக்கடி கேட்கப்படும் கேள்விகள்',
+    troubleshooting: 'சரிசெய்தல்',
   },
 }
 export default zh_CN

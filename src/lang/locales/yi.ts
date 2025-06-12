@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'זוך פֿראגן',
+    searchKeyword: 'ביטע אַרייַן טערמינען',
+    frequentlyAskedQuestions: 'אָפט געשטעלטע פֿראגן',
+    troubleshooting: 'טראָובלעשאָאָטינג',
   },
 }
 export default zh_CN

@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Kërko pyetje',
+    searchKeyword: 'Ju lutemi shkruani fjalë kyçe',
+    frequentlyAskedQuestions: 'Pyetjet e bëra më shpesh',
+    troubleshooting: 'zgjidhjen e problemeve',
   },
 }
 export default zh_CN

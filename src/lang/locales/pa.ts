@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'ਸਵਾਲ ਖੋਜੋ',
+    searchKeyword: 'ਕਿਰਪਾ ਕਰਕੇ ਕੀਵਰਡ ਦਿਓ',
+    frequentlyAskedQuestions: 'ਅਕਸਰ ਪੁੱਛੇ ਜਾਂਦੇ ਪ੍ਰਸ਼ਨ',
+    troubleshooting: 'ਸਮੱਸਿਆ ਨਿਪਟਾਰਾ',
   },
 }
 export default zh_CN

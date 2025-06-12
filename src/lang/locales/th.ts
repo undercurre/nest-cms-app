@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'ค้นหาคำถาม',
+    searchKeyword: 'โปรดป้อนคำหลัก',
+    frequentlyAskedQuestions: 'คำถามที่พบบ่อย',
+    troubleshooting: 'การแก้ไขปัญหา',
   },
 }
 export default zh_CN

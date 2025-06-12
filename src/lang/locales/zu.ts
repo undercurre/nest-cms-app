@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Sesha imibuzo',
+    searchKeyword: 'Sicela ufake amagama angukhiye',
+    frequentlyAskedQuestions: 'imibuzo ejwayelekile ukubuzwa',
+    troubleshooting: 'Ukuxazulula inkinga',
   },
 }
 export default zh_CN

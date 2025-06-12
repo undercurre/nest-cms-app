@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Sök frågor',
+    searchKeyword: 'Ange nyckelord',
+    frequentlyAskedQuestions: 'Vanliga frågor',
+    troubleshooting: 'felsökning',
   },
 }
 export default zh_CN

@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'د ستونزو لټون',
+    searchKeyword: 'مهرباني وکړئ کلیدي ټکي داخل کړئ',
+    frequentlyAskedQuestions: 'پوښتل شوې پوښتنې',
+    troubleshooting: 'ستونزه حل کول',
   },
 }
 export default zh_CN

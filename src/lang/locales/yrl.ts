@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Mbaé resá atã',
+    searchKeyword: 'Ako namba bilong painim',
+    frequentlyAskedQuestions: 'Ol askim i kamap planti taim',
+    troubleshooting: 'Painim as bilong wari',
   },
 }
 export default zh_CN

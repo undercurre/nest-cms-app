@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Ukufuna Izinkinga',
+    searchKeyword: 'Faka igama lokusesha',
+    frequentlyAskedQuestions: 'Imibuzo evame ukubuzwa',
+    troubleshooting: 'Ukuxazulula izinkinga',
   },
 }
 export default zh_CN

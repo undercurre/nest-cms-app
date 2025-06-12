@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Shakisha ibibazo',
+    searchKeyword: 'Nyamuneka andika ijambo ryibanze',
+    frequentlyAskedQuestions: 'Ibibazo bikunze kubazwa',
+    troubleshooting: 'Gukemura ibibazo',
   },
 }
 export default zh_CN

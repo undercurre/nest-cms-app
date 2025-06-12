@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Váttisvuođa Ohcan',
+    searchKeyword: 'Čále dieđuid',
+    frequentlyAskedQuestions: 'Dávjá jearahanlágat',
+    troubleshooting: 'Hálddašanváttisvuođat',
   },
 }
 export default zh_CN

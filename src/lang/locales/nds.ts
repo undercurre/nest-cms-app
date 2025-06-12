@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Probleemsöök',
+    searchKeyword: 'Gif een Stichwoort in',
+    frequentlyAskedQuestions: 'Häufig fraagt Fragen',
+    troubleshooting: 'Probleemlösen',
   },
 }
 export default zh_CN

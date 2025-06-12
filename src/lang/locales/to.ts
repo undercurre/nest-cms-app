@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Kumi ngaahi fehuʻi',
+    searchKeyword: 'Fakamolemole ki he kupuʻi meʻa mahuʻinga',
+    frequentlyAskedQuestions: 'ʻO e fehuʻi ʻoku fai lahi taha',
+    troubleshooting: 'Fakatonutonu ʻo e palopalema',
   },
 }
 export default zh_CN

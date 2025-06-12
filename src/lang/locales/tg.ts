@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Ҷустуҷӯи саволҳо',
+    searchKeyword: 'Лутфан калимаҳои калидиро ворид кунед',
+    frequentlyAskedQuestions: 'Саволҳои зуд-зуд додашуда',
+    troubleshooting: 'Мушкилкушо',
   },
 }
 export default zh_CN

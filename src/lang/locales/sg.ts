@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Gi Lütï',
+    searchKeyword: 'Veuillez entrer un mot-clé',
+    frequentlyAskedQuestions: 'Questions fréquemment posées',
+    troubleshooting: 'Dépannage',
   },
 }
 export default zh_CN

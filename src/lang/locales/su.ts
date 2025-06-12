@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Pilarian patarosan',
+    searchKeyword: 'Punten lebetkeun kecap konci',
+    frequentlyAskedQuestions: 'Patarosan anu sering ditaroskeun',
+    troubleshooting: 'pamérésan masalah',
   },
 }
 export default zh_CN

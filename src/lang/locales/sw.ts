@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Tafuta Maswali',
+    searchKeyword: 'Tafadhali ingiza maneno',
+    frequentlyAskedQuestions: 'Maswali yanayoulizwa mara kwa mara',
+    troubleshooting: 'utatuzi',
   },
 }
 export default zh_CN

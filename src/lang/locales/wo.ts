@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Seetal laaj yi',
+    searchKeyword: 'Sooñu ci mbir yi nga bëgg',
+    frequentlyAskedQuestions: 'Làkkuwaay yu fees delluwaay',
+    troubleshooting: 'Yëngu-yëngu njëkkute',
   },
 }
 export default zh_CN

@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'جستجوی سوالات',
+    searchKeyword: 'کلید واژه ره بنویسن',
+    frequentlyAskedQuestions: 'پرسمونای همیشکی',
+    troubleshooting: 'رفع مشکل',
   },
 }
 export default zh_CN

@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Gushakisha Ibibazo',
+    searchKeyword: "Shira ingingo y'ingenzi",
+    frequentlyAskedQuestions: "Ibibazo vy'abasanga babazwa",
+    troubleshooting: 'Gukemura ibibazo',
   },
 }
 export default zh_CN

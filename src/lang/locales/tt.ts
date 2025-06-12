@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Сорауларны эзләү',
+    searchKeyword: 'Зинһар, ачкыч сүзләр кертегез',
+    frequentlyAskedQuestions: 'Еш бирелә торган сораулар',
+    troubleshooting: 'Проблеманы чишү',
   },
 }
 export default zh_CN

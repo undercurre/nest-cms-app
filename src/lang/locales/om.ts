@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Gaaffilee barbaadi',
+    searchKeyword: 'Maqaa barbaachisoo galchaa',
+    frequentlyAskedQuestions: 'Gaaffilee waan waanii gaafataman',
+    troubleshooting: 'Rakkoo furmaata',
   },
 }
 export default zh_CN

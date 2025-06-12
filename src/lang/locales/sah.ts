@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Мэһээйи Тылааһын',
+    searchKeyword: 'Күлүүс суруйуоххун сөп',
+    frequentlyAskedQuestions: 'Чэпчэки ыйытыылар',
+    troubleshooting: 'Махтала суох буолуу',
   },
 }
 export default zh_CN

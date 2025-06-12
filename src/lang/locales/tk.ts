@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Soraglary gözle',
+    searchKeyword: 'Açar sözleri giriziň',
+    frequentlyAskedQuestions: 'Ýygy-ýygydan berilýän soraglar',
+    troubleshooting: 'Näsazlyklary düzeltmek',
   },
 }
 export default zh_CN

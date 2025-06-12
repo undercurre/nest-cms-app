@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'سوال تلاش کریں',
+    searchKeyword: 'براہ کرم مطلوبہ الفاظ درج کریں',
+    frequentlyAskedQuestions: 'اکثر پوچھے گئے سوالات',
+    troubleshooting: 'خرابیوں کا سراغ لگانا',
   },
 }
 export default zh_CN

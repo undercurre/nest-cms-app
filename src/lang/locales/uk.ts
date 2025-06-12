@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Пошук питань',
+    searchKeyword: 'Введіть ключові слова',
+    frequentlyAskedQuestions: 'Часті запитання',
+    troubleshooting: 'усунення несправностей',
   },
 }
 export default zh_CN

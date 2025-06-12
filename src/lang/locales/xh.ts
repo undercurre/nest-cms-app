@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Phendla imibuzo',
+    searchKeyword: 'Nceda ufake amagama aphambili',
+    frequentlyAskedQuestions: 'Imibuzo ebuzwa qho',
+    troubleshooting: 'ukulungisa ingxaki',
   },
 }
 export default zh_CN

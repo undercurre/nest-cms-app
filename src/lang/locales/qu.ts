@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Sasachakuy Maskay',
+    searchKeyword: 'Allin willayta maskhay',
+    frequentlyAskedQuestions: 'Askhata tapukuna',
+    troubleshooting: 'Pantaykunata allichay',
   },
 }
 export default zh_CN

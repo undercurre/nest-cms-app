@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Søk i problemer',
+    searchKeyword: 'Vennligst skriv inn nøkkelord',
+    frequentlyAskedQuestions: 'Ofte stilte spørsmål',
+    troubleshooting: 'feilsøking',
   },
 }
 export default zh_CN

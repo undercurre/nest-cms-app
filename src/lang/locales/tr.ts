@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Soruları Ara',
+    searchKeyword: 'Lütfen Anahtar Kelimeleri Girin',
+    frequentlyAskedQuestions: 'Sık sorulan sorular',
+    troubleshooting: 'sorun giderme',
   },
 }
 export default zh_CN

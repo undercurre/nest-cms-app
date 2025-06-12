@@ -486,6 +486,9 @@ const zh_CN = {
   },
   qa: {
     search: 'Soek vrae',
+    searchKeyword: 'Voer asseblief sleutelwoorde in',
+    frequentlyAskedQuestions: 'Gereeld gevra vrae',
+    troubleshooting: 'Probleemoplossing',
   },
 }
 export default zh_CN
