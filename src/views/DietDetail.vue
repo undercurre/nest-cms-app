@@ -50,18 +50,6 @@
         }}
       </p>
     </div>
-    <div class="flex flex-col mt-20px">
-      <span class="font-bold text-18px px-10px">{{ $t('diet.steps') }}</span>
-      <div
-        v-for="item in diet?.dietMultiLanguageObj[locale || 'en']?.cookbookStepList ??
-        diet?.dietMultiLanguageObj['en']?.cookbookStepList"
-        :key="item.id"
-        class="text-14px my-10px px-10px"
-      >
-        {{ item.stepNum }}、{{ item.description }}
-        <img v-if="item.imageUrl" class="w-full mt-10px" :src="item.imageUrl" />
-      </div>
-    </div>
     <div
       class="flex flex-col mt-20px"
       v-if="
@@ -78,6 +66,18 @@
             ({ utensilName }) => utensilName,
           ).join('、')
         }}
+      </div>
+    </div>
+    <div class="flex flex-col mt-20px">
+      <span class="font-bold text-18px px-10px">{{ $t('diet.steps') }}</span>
+      <div
+        v-for="item in diet?.dietMultiLanguageObj[locale || 'en']?.cookbookStepList ??
+        diet?.dietMultiLanguageObj['en']?.cookbookStepList"
+        :key="item.id"
+        class="text-14px my-10px px-10px"
+      >
+        {{ item.stepNum }}、{{ item.description }}
+        <img v-if="item.imageUrl" class="w-full mt-10px" :src="item.imageUrl" />
       </div>
     </div>
   </div>
