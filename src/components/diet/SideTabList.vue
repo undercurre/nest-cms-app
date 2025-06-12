@@ -44,7 +44,8 @@ onBeforeMount(async () => {
       }
     }
   })
-  category.value.sort((a, b) => Number(b.existCookbook) - Number(a.existCookbook))
+  // category.value.sort((a, b) => Number(b.existCookbook) - Number(a.existCookbook))
+  category.value = category.value.filter((item) => item.existCookbook)
   const index = category.value.findIndex((item) => item.existCookbook)
   active.value = index
   if (index > -1) {
