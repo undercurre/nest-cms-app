@@ -6,9 +6,11 @@ export const useProductStore = defineStore(
   () => {
     const id = ref(1)
     const productModel = ref('')
+    const isHasPoster = ref(false)
     const posterImageUrls = ref<string[]>([])
+    const currentPosterId = ref<number>()
 
-    return { id, productModel, posterImageUrls }
+    return { id, productModel, posterImageUrls, isHasPoster, currentPosterId }
   },
   {
     persist: true,

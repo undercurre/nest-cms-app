@@ -72,7 +72,7 @@ const tabList = computed(() => {
         item.menuMultiLanguageObj?.[appLang[locale.value] ?? locale.value ?? 'en']?.menuName ??
         item.menuMultiLanguageObj?.['en']?.menuName ??
         '',
-      hidden: !productStore.posterImageUrls?.length && name === 'poster',
+      hidden: !productStore.isHasPoster && name === 'poster',
     }
   })
   const tabRes = res.length
@@ -83,7 +83,7 @@ const tabList = computed(() => {
           icon: 'material-symbols:imagesmode-outline',
           path: `/poster/${productStore.id}`,
           text: 'common.poster',
-          hidden: !productStore.posterImageUrls?.length,
+          hidden: !productStore.isHasPoster,
         },
         {
           name: 'guide',
@@ -317,7 +317,7 @@ onBeforeMount(() => {
       :activeColor="themeMode === 'dark' ? 'rgba(255, 107, 107, 0.8)' : '#ff6b6b'"
     />
     <LanguageSwitcher v-if="appStore.tabbarActive == 'product' && !isListRoute" />
-    <TipIcon v-if="productStore.posterImageUrls?.length" />
+    <TipIcon v-if="productStore.isHasPoster" />
   </div>
 </template>
 

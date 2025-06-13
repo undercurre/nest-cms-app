@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import { getProductInfo, type Product } from '@/api/modules/product'
+import { useLanguageList } from '@/hooks/useLanguageList'
+import { appLang } from '@/lang/app-lang'
 import { getUrlConcat } from '@/utils/index'
 import { computed, onBeforeMount, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
 import { collectProduct, getDeviceListByUid } from '@/api/modules/list'
+import { getPosterList } from '@/api/modules/poster'
 import router from '@/router'
 import { useAppStore } from '@/stores/app'
 import { useProductStore } from '@/stores/product'
@@ -92,11 +95,26 @@ onBeforeMount(async () => {
     deviceList.value = deviceListRes.data
   }
 })
+const { languageList, getLanguageList } = useLanguageList()
 // 存储海报到store
-const storePosterImageUrls = () => {
-  productStore.posterImageUrls = curProduct.value?.productMultiLanguageObj?.[locale.value]
-    ? curProduct.value?.productMultiLanguageObj?.[locale.value]?.posterImageUrls
-    : curProduct.value?.productMultiLanguageObj?.['en']?.posterImageUrls
+const storePosterImageUrls = async () => {
+  getLanguageList()
+  const languageId = languageList.value.find(
+    (item) => item.languageCode === (appLang[locale.value] ?? locale.value ?? 'en'),
+  )?.id
+  const res = await getPosterList({
+    pageSize: 9999999,
+    pageNo: 1,
+    productId: productStore.id,
+    languageId: languageId,
+  })
+  if (res.data.total) {
+    productStore.currentPosterId = res.data.posterList?.[0]?.id
+    productStore.isHasPoster = true
+  } else {
+    productStore.currentPosterId = undefined
+    productStore.isHasPoster = false
+  }
 }
 watch(
   () => locale.value,
