@@ -21,6 +21,7 @@ export interface ProductMultiLanguage extends MultiLanguage {
   productName: string
   description: string
   manualOssUrl: string
+  posterId?: string
 }
 export interface Product {
   createTime: string
