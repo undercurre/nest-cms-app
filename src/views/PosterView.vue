@@ -4,7 +4,7 @@ import { getPosterDetail } from '@/api/modules/poster'
 import { useAppStore } from '@/stores/app'
 import { useProductStore } from '@/stores/product'
 import he from 'he'
-import 'https://cdn.jsdelivr.net/npm/marked/marked.min.js'
+import 'https://unpkg.com/marked/marked.min.js'
 import { onBeforeMount, ref } from 'vue'
 import { useRoute } from 'vue-router'
 
