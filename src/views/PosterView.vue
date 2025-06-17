@@ -116,6 +116,15 @@ renderer.td = ({ text }) => {
 }
 
 // 自定义 marked 的块引用渲染器，保留样式
+renderer.p = ({ text }) => {
+  // 检查是否已经包含样式
+  if (text.startsWith('<p ') && text.endsWith('</p>')) {
+    return text
+  }
+  return `<p>${text}</p>`
+}
+
+// 自定义 marked 的块引用渲染器，保留样式
 renderer.span = ({ text }) => {
   // 检查是否已经包含样式
   if (text.startsWith('<span ') && text.endsWith('</span>')) {
@@ -149,6 +158,15 @@ renderer.div = ({ text }) => {
     return text
   }
   return `<div>${text}</div>`
+}
+
+// 自定义 marked 的块引用渲染器，保留样式
+renderer.u = ({ text }) => {
+  // 检查是否已经包含样式
+  if (text.startsWith('<u ') && text.endsWith('</u>')) {
+    return text
+  }
+  return `<u>${text}</u>`
 }
 
 // 自定义 marked 的块引用渲染器，保留样式
