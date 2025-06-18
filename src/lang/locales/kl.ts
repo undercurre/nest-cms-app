@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'Uumassusaq',
     protein: 'Protein',
     carbohydrate: 'Kulhydrat',
+    portion: 'porcionit',
+    status: 'imi',
   },
   lang: {
     he: 'Hebræerisut',

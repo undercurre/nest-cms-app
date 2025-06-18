@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'tuk',
     protein: 'bielkovina',
     carbohydrate: 'cukor',
+    portion: 'Komponent',
+    status: 'uviesť',
   },
   lang: {
     he: 'Hebrejčina',

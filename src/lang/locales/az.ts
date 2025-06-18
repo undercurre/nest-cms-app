@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'yağ',
     protein: 'zülal',
     carbohydrate: 'karbohidrat',
+    portion: 'hissə',
+    status: 'status',
   },
   lang: {
     he: 'İvrit',

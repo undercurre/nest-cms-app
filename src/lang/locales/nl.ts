@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'vet',
     protein: 'eiwit',
     carbohydrate: 'suiker',
+    portion: 'Onderdeel',
+    status: 'staat',
   },
   lang: {
     he: 'Hebreeuws',

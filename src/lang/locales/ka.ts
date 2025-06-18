@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'ცხიმი',
     protein: 'ცილა',
     carbohydrate: 'ნახშირწყლები',
+    portion: 'კომპონენტი',
+    status: 'სახელმწიფო',
   },
   lang: {
     he: 'ებრაული',

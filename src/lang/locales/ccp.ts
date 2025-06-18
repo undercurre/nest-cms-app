@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'চর্বি',
     protein: 'প্রোটিন',
     carbohydrate: 'কার্বোহাইড্রেট',
+    portion: 'বিভাগ',
+    status: 'অবস্থা',
   },
   lang: {
     he: 'হিব্রু',

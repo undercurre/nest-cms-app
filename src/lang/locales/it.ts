@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'grassi',
     protein: 'proteine',
     carbohydrate: 'carboidrati',
+    portion: 'Componente',
+    status: 'stato',
   },
   lang: {
     he: 'ebraico',

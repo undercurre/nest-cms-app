@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'fedt',
     protein: 'protein',
     carbohydrate: 'sukker',
+    portion: 'Komponent',
+    status: 'tilstand',
   },
   lang: {
     he: 'Hebraisk',

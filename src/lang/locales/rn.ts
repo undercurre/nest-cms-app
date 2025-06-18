@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'amavuta',
     protein: 'proteyine',
     carbohydrate: 'sukari',
+    portion: 'igice',
+    status: 'imiterere',
   },
   lang: {
     he: 'Igiheburayo',

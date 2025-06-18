@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'fit',
     protein: 'protein',
     carbohydrate: 'kolvetni',
+    portion: 'partur',
+    status: 'støða',
   },
   lang: {
     he: 'hebraiskt',

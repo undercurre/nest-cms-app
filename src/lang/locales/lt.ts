@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'riebalai',
     protein: 'baltymai',
     carbohydrate: 'angliavandeniai',
+    portion: 'Komponentas',
+    status: 'būsena',
   },
   lang: {
     he: 'Hebrajų kalba',

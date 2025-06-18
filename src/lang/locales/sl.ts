@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'maščoba',
     protein: 'beljakovina',
     carbohydrate: 'sladkor',
+    portion: 'Komponenta',
+    status: 'stanje',
   },
   lang: {
     he: 'Hebrejščina',

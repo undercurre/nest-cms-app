@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'saill',
     protein: 'próitéin',
     carbohydrate: 'carbaihiodráit',
+    portion: 'Cuid',
+    status: 'staid',
   },
   lang: {
     he: 'Eabhrais',

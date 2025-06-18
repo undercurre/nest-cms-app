@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'gantz',
     protein: 'proteina',
     carbohydrate: 'karbohidrato',
+    portion: 'Osagai',
+    status: 'azaldu',
   },
   lang: {
     he: 'Hebreera',

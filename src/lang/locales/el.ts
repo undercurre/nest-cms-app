@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'λίπος',
     protein: 'πρωτεΐνη',
     carbohydrate: 'σάκχαρο',
+    portion: 'Συστατικό',
+    status: 'κατάσταση',
   },
   lang: {
     he: 'Εβραϊκά',

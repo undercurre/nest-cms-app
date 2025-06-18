@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'غوړي',
     protein: 'پروټین',
     carbohydrate: 'کاربوهایډریټ',
+    portion: 'برخه',
+    status: 'دولت',
   },
   lang: {
     he: 'عبري',

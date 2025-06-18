@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'ໄຂມັນ',
     protein: 'ໂປຣຕີນ',
     carbohydrate: 'ຄາໂບໄຮເດຣດ',
+    portion: 'ສ່ວນປະກອບ',
+    status: 'ລັດ',
   },
   lang: {
     he: 'ເຮັບເຣີ',

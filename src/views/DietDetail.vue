@@ -53,6 +53,31 @@
     <div
       class="flex flex-col mt-20px"
       v-if="
+        diet?.dietMultiLanguageObj?.[locale || 'en']?.aiCookingData?.length ||
+        diet?.dietMultiLanguageObj?.['en']?.aiCookingData?.length
+      "
+    >
+      <span class="font-bold text-18px px-10px">
+        <span class="colorful-text">AI COOKING</span>
+      </span>
+      <VantTable
+        class="text-14px my-10px px-10px"
+        :columns="
+          diet?.dietMultiLanguageObj?.[locale || 'en']?.aiCookingData?.length
+            ? diet?.dietMultiLanguageObj[locale || 'en']?.columns
+            : diet?.dietMultiLanguageObj['en']?.columns
+        "
+        :data="
+          diet?.dietMultiLanguageObj?.[locale || 'en']?.aiCookingData?.length
+            ? diet?.dietMultiLanguageObj[locale || 'en']?.aiCookingData
+            : diet?.dietMultiLanguageObj['en']?.aiCookingData
+        "
+        :height="350"
+      ></VantTable>
+    </div>
+    <div
+      class="flex flex-col mt-20px"
+      v-if="
         diet?.dietMultiLanguageObj?.[locale || 'en']?.cookbookUtensilList?.length ||
         diet?.dietMultiLanguageObj?.['en']?.cookbookUtensilList?.length
       "
@@ -61,8 +86,9 @@
       <div class="text-14px my-10px px-10px">
         {{
           Array.from(
-            diet?.dietMultiLanguageObj?.[locale || 'en']?.cookbookUtensilList ??
-              diet?.dietMultiLanguageObj?.['en']?.cookbookUtensilList,
+            diet?.dietMultiLanguageObj?.[locale || 'en']?.cookbookUtensilList?.length
+              ? diet?.dietMultiLanguageObj?.[locale || 'en']?.cookbookUtensilList
+              : diet?.dietMultiLanguageObj?.['en']?.cookbookUtensilList,
             ({ utensilName }) => utensilName,
           ).join('、')
         }}
@@ -87,12 +113,12 @@
 import { Category, getCategoryList, getDietById, type Diet } from '@/api/modules/diet'
 import { appLang } from '@/lang/app-lang'
 import { useAppStore } from '@/stores/app'
+import VantTable from 'vant-table'
 import { computed, onBeforeMount, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 
 const route = useRoute()
-console.log('route: ', route)
 
 const diet = ref<Diet>()
 
@@ -149,14 +175,83 @@ const getI18NDescription = () => {
     diet.value?.dietMultiLanguageObj['en']?.description
   )
 }
-
 onBeforeMount(async () => {
   const dietRes = await getDietById({ id: Number(route.params.id as string) })
   diet.value = dietRes.data
   if (diet.value) {
     diet.value.dietMultiLanguageObj = {}
     diet.value.dietMultiLanguageObj = diet.value?.cookbookMultiLanguageList?.reduce((acc, curr) => {
-      acc[curr.languageCode] = curr
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const aiCookingData: any[] = []
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const columns: any[] = [
+        {
+          prop: 'portion',
+          title: '分量/状态',
+          minWidth: '78px',
+          sortable: false,
+          filterable: false,
+          fixed: 'left',
+          cellClass: 'test',
+          thCellClass: 'thclass',
+          tdCellClass: 'tdClass',
+          renderHeaderCell: (h) => {
+            return h(
+              'div',
+              {
+                class: 'diagonal-box',
+              },
+              [
+                h(
+                  'span',
+                  {
+                    class: 'text portion',
+                  },
+                  t('cookbook.portion'),
+                ),
+                h(
+                  'span',
+                  {
+                    class: 'text status',
+                  },
+                  t('cookbook.status'),
+                ),
+              ],
+            )
+          },
+        },
+      ]
+      curr.cookbookAiCookingList?.forEach((item) => {
+        const portionIndex = aiCookingData.findIndex((row) => row.portion === item.quantity)
+        if (portionIndex === -1) {
+          aiCookingData.push({
+            portion: item.quantity,
+            [item.ingredientStatus]: item.cookingTime,
+          })
+        } else {
+          Object.assign(aiCookingData[portionIndex], {
+            [item.ingredientStatus]: item.cookingTime,
+          })
+        }
+        if (columns.findIndex((row) => item.ingredientStatus === row.title) === -1) {
+          columns.push({
+            prop: item.ingredientStatus,
+            title: item.ingredientStatus,
+            sortable: false,
+            filterable: false,
+            cellClass: 'test',
+            thCellClass: 'thclass',
+            tdCellClass: 'tdClass',
+            minWidth: '78px',
+            renderCell: (h, { row }) => {
+              return row[item.ingredientStatus]
+                ? row[item.ingredientStatus] + t('cookbook.minute')
+                : ''
+            },
+          })
+        }
+      })
+      acc[curr.languageCode] = { ...curr, aiCookingData, columns }
       return acc
     }, {})
     if (!Object.keys(diet.value?.dietMultiLanguageObj).length) {
@@ -169,3 +264,47 @@ onBeforeMount(async () => {
   getCategory()
 })
 </script>
+
+<style lang="less" scoped>
+.colorful-text {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Poppins', sans-serif;
+}
+</style>
+
+<style>
+.diagonal-box {
+  position: relative;
+  width: 70px;
+  height: 16px;
+}
+
+.diagonal-box::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -36px;
+  width: 100%;
+  height: 100%;
+  /* 绘制斜线，通过旋转实现，这里角度可根据容器宽高比例微调 */
+  transform: skew(55deg);
+  border-right: 1px solid #000; /* 斜线边框 */
+}
+
+.text {
+  position: absolute;
+}
+
+.portion {
+  bottom: -13px;
+  left: 3px;
+}
+
+.status {
+  bottom: 0;
+  right: 5px;
+}
+</style>

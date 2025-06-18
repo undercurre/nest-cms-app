@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { userService } from '..'
 import { PORT1, PORT2 } from '../config/servicePort'
 
@@ -32,7 +33,7 @@ export interface Diet {
   productModelIdList?: ProductModel[]
   cookbookNutritionList: CookbookNutrition[]
   cookbookMultiLanguageList: CookBookMultiLanguage[]
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
   dietMultiLanguageObj?: any
 }
 
@@ -49,10 +50,17 @@ export interface CookBookMultiLanguage extends MultiLanguage {
   cookbookIngredientList: Ingredients[]
   cookbookStepList: Steps[]
   cookbookUtensilList: Accessories[]
+  cookbookAiCookingList: AICooking[]
+  aiCookingData: any[]
 }
 
 export interface Accessories {
   utensilName: string
+}
+export interface AICooking {
+  quantity: string
+  ingredientStatus: string
+  cookingTime: string
 }
 
 export interface CategoryMultiLanguage extends MultiLanguage {
@@ -63,7 +71,7 @@ export interface CategoryMultiLanguage extends MultiLanguage {
 export interface Category {
   id: number
   categoryLanguageRelationList: CategoryMultiLanguage[]
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
   categoryMultiLanguageObj?: any
   existCookbook: boolean
 }

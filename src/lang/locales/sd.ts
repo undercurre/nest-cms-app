@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'چربي',
     protein: 'پروٽين',
     carbohydrate: 'ڪاربوهاائيڊريٽ',
+    portion: 'جز',
+    status: 'اسٽيٽ وق',
   },
   lang: {
     he: 'عبراني',

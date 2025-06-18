@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'chất béo',
     protein: 'protein',
     carbohydrate: 'đường',
+    portion: 'Thành phần',
+    status: 'tình trạng',
   },
   lang: {
     he: 'Tiếng Do Thái',

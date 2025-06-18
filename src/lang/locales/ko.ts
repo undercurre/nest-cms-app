@@ -250,6 +250,8 @@ const zh_CN = {
     fat: '지방',
     protein: '단백질',
     carbohydrate: '당류',
+    portion: '요소',
+    status: '상태',
   },
   lang: {
     he: '헤브라이 사람',

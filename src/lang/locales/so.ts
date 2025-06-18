@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'baruur',
     protein: 'borotiin',
     carbohydrate: 'karbohaydrayt',
+    portion: 'Qayb',
+    status: 'sheegid',
   },
   lang: {
     he: 'Cibraaniga',

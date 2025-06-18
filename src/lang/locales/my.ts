@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'အဆီ',
     protein: 'ပရိုတိန်း',
     carbohydrate: 'ကာဗိုဟိုက်ဒရိတ်',
+    portion: 'ဘက်စပ်ပါဝင်ရာ',
+    status: 'အသေအချာပေြာဆို',
   },
   lang: {
     he: 'ဟီး',

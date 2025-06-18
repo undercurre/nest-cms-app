@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'මේදය',
     protein: 'ප්‍රෝටීන්',
     carbohydrate: 'කාබෝහයිඩ්‍රේට්',
+    portion: 'සංරචකය',
+    status: 'රාජ්ය',
   },
   lang: {
     he: 'හෙබ්රෙව්',

@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'Grès',
     protein: 'Protein',
     carbohydrate: 'Sik',
+    porsion: 'kantité',
+    statit: 'sitiyasyon',
   },
   lang: {
     he: 'Hebre',

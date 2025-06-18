@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'چربی',
     protein: 'پروٹین',
     carbohydrate: 'کاربوہائیڈریٹ',
+    portion: 'اجزاء',
+    status: 'ریاست',
   },
   lang: {
     he: 'عبرانی',

@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'Amafuta',
     protein: 'Protein',
     carbohydrate: 'Sukari',
+    portion: 'kabotu',
+    status: 'bupilo',
   },
   lang: {
     he: 'Lwivriti',

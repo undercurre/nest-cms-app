@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'lemak',
     protein: 'protein',
     carbohydrate: 'karbohidrat',
+    portion: 'Komponen',
+    status: 'Negeri',
   },
   lang: {
     he: 'bahasa Ibrani',

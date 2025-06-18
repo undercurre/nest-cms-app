@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'sɛgɛn',
     protein: 'protein',
     carbohydrate: 'sukari',
+    portion: 'fɛnwuli',
+    status: 'yɔrɔ',
   },
   lang: {
     he: 'Heburukan na',

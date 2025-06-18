@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'Fáhtta',
     protein: 'Proteiidna',
     carbohydrate: 'Karbohydráhtta',
+    portion: 'oassi',
+    status: 'dilli',
   },
   lang: {
     he: 'Hebreagiella',

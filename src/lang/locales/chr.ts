@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'ᎤᏍᏗ',
     protein: 'ᎤᏍᏗ',
     carbohydrate: 'ᎤᏍᏗ',
+    portion: 'ᎢᏳᏍᏗ',
+    status: 'ᎦᏚᎸᎢ',
   },
   lang: {
     he: 'ᎮᏊ',

@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'geir',
     protein: 'pròtain',
     carbohydrate: 'gualaisg',
+    portion: 'Co-phàirteach',
+    status: 'Stàite',
   },
   lang: {
     he: 'Eabhrach',

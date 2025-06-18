@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'amafutha',
     protein: 'i-protein',
     carbohydrate: 'i-carbohydrate',
+    portion: 'Icandelo',
+    status: 'ilizwe',
   },
   lang: {
     he: 'IsiHebhere',

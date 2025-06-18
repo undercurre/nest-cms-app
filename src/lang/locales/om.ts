@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'furdaa',
     protein: 'prooteenii',
     carbohydrate: 'kaarbohayidireetii',
+    portion: 'qooda',
+    status: 'haala',
   },
   lang: {
     he: 'Afaan Ibrootaa',

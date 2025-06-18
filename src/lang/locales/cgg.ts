@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'tambok',
     protein: 'protina',
     carbohydrate: 'carbohydrate',
+    portion: 'portion',
+    status: 'state',
   },
   lang: {
     he: 'Oruheburayo',

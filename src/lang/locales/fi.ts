@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'rasva',
     protein: 'proteiini',
     carbohydrate: 'sokeri',
+    portion: 'Komponentti',
+    status: 'osavaltio',
   },
   lang: {
     he: 'Heprea',

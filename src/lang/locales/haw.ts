@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'momona',
     protein: 'protein',
     carbohydrate: 'kōpaʻa',
+    portion: 'Hui',
+    status: "moku'āina",
   },
   lang: {
     he: 'Hepela',

@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'ياغ',
     protein: 'ئاقسىل',
     carbohydrate: 'كاربوهىدرات',
+    portion: 'زاپچاس',
+    status: 'ئىشتات',
   },
   lang: {
     he: 'ئىبرانىي تىلى',

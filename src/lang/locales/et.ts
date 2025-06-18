@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'rasvad',
     protein: 'valgud',
     carbohydrate: 'süsivesikud',
+    portion: 'Komponent',
+    status: 'riik',
   },
   lang: {
     he: 'heebrea keeles',

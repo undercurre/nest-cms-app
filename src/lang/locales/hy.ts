@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'ճարպ',
     protein: 'սպիտակուց',
     carbohydrate: 'ածխաջրեր',
+    portion: 'Բաղադրիչ',
+    status: 'պետություն',
   },
   lang: {
     he: 'եբրայերեն',

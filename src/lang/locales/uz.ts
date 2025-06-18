@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'yog‘',
     protein: 'oqsil',
     carbohydrate: 'uglevod',
+    portion: 'Tarkibiy qism',
+    status: 'davlat',
   },
   lang: {
     he: 'Ibroniy tili',

@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'vet',
     protein: 'proteïen',
     carbohydrate: 'koolhidrate',
+    portion: 'Komponent',
+    status: 'toestand',
   },
   lang: {
     he: 'Hebreeus',

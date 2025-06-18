@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'tłuszcz',
     protein: 'białko',
     carbohydrate: 'cukier',
+    portion: 'Część',
+    status: 'państwo',
   },
   lang: {
     he: 'hebrajski',

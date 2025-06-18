@@ -250,6 +250,8 @@ const zh_CN = {
     fat: '脂肪',
     protein: 'タンパク質',
     carbohydrate: '糖',
+    portion: '成分',
+    status: '状況',
   },
   lang: {
     he: 'ヘブライ語',

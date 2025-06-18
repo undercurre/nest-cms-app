@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'puranga',
     protein: 'proteína',
     carbohydrate: 'carboidrato',
+    portion: 'tseka',
+    status: 'mara',
   },
   lang: {
     he: 'Hebreu resá',

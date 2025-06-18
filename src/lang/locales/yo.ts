@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'ira',
     protein: 'protein',
     carbohydrate: 'sukari',
+    portion: 'Ẹya',
+    status: 'ipo',
   },
   lang: {
     he: 'Èdè Heberu',

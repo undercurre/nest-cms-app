@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'wira',
     protein: 'proteína',
     carbohydrate: 'carbohidrato',
+    portion: 'rakhu',
+    status: 'sayay',
   },
   lang: {
     he: 'Hebreo rimaypi',

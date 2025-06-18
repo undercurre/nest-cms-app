@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'fita',
     protein: 'prótein',
     carbohydrate: 'kolvetni',
+    portion: 'Hluti',
+    status: 'Ríki',
   },
   lang: {
     he: 'Hebreska',

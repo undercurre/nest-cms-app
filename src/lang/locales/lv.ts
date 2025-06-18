@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'tauki',
     protein: 'olbaltumvielas',
     carbohydrate: 'ogļhidrāti',
+    portion: 'Komponents',
+    status: 'štats',
   },
   lang: {
     he: 'Ebreju',

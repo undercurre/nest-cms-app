@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'Mafuta',
     protein: 'Protini',
     carbohydrate: 'Wanga',
+    portion: 'Sehemu',
+    status: 'jimbo',
   },
   lang: {
     he: 'Kiebrania',

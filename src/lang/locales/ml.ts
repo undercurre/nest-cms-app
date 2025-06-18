@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'കൊഴുപ്പ്',
     protein: 'പ്രോട്ടീൻ',
     carbohydrate: 'കാർബോഹൈഡ്രേറ്റ്',
+    portion: 'ഘടകം',
+    status: 'രാജം',
   },
   lang: {
     he: 'ഹീബ്രു',

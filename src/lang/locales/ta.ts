@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'கொழுப்பு',
     protein: 'புரதம்',
     carbohydrate: 'கார்போஹைட்ரேட்',
+    portion: 'கூறு',
+    status: 'மாநிலம்',
   },
   lang: {
     he: 'எபிரேய மொழி',

@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'abụba',
     protein: 'protein',
     carbohydrate: 'shuga',
+    portion: 'Anuahu',
+    status: 'onodu',
   },
   lang: {
     he: 'Hibru',

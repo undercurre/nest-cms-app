@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'mafuta',
     protein: 'protini',
     carbohydrate: 'kandabhohidrati',
+    portion: 'porsiyon',
+    status: 'kamugtakan',
   },
   lang: {
     he: 'Hebrew',

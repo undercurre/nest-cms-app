@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'taba',
     protein: 'protina',
     carbohydrate: 'karbohidrato',
+    portion: 'bahagi',
+    status: 'katayuan',
   },
   lang: {
     he: 'Hebrew',

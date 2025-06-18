@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'zsír',
     protein: 'fehérje',
     carbohydrate: 'cukor',
+    portion: 'Összetevő',
+    status: 'állami',
   },
   lang: {
     he: 'héber',

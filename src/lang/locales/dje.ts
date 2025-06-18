@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'Mai',
     protein: 'Furotin',
     carbohydrate: 'Sukari',
+    portion: 'barka',
+    status: 'hali',
   },
   lang: {
     he: 'Hebrew',

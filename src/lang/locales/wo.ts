@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'diwlin',
     protein: 'protein',
     carbohydrate: 'karbonaidraat',
+    portion: 'bëj',
+    status: 'yoon',
   },
   lang: {
     he: 'Hebreu',

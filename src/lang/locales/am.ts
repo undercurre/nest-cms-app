@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'ስብ',
     protein: 'ፕሮቲን',
     carbohydrate: 'ካርቦሃይድሬት',
+    portion: 'አካል',
+    status: 'ግዛት',
   },
   lang: {
     he: 'ሂብሩ',

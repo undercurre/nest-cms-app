@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'ಕೊಬ್ಬು',
     protein: 'ಪ್ರೋಟೀನ್',
     carbohydrate: 'ಅಂಶ',
+    portion: 'ಅಂಶ',
+    status: 'ರಾಜ್ಯ',
   },
   lang: {
     he: 'ಹೀಬ್ರೂ',

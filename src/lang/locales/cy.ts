@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'braster',
     protein: 'protein',
     carbohydrate: 'carbohydrad',
+    portion: 'Gydrannau',
+    status: 'ngwladwriaeth',
   },
   lang: {
     he: 'Hebraeg',

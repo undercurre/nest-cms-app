@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'Amavuta',
     protein: 'Puloteeni',
     carbohydrate: 'Sukaali',
+    portion: 'ekipimo',
+    status: 'embaga',
   },
   lang: {
     he: 'Olwebbulaniya',

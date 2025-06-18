@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'ខ្លាញ់',
     protein: 'ប្រូតេអ៊ីន',
     carbohydrate: 'កាបូអ៊ីដ្រាត',
+    portion: 'សមាសផាប',
+    status: 'សផាប',
   },
   lang: {
     he: 'ភាសាហេព្រើរ',

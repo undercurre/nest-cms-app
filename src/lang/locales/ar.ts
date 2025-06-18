@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'دهون',
     protein: 'بروتين',
     carbohydrate: 'سكر',
+    portion: 'عنصر',
+    status: 'ولاية',
   },
   lang: {
     he: 'العبرية',

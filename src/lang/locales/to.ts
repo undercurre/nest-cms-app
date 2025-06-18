@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'mamafu',
     protein: 'pulotini',
     carbohydrate: 'suka',
+    portion: 'ʻuhinga',
+    status: 'tuʻunga',
   },
   lang: {
     he: 'Hepelū',

@@ -250,6 +250,8 @@ const zh_CN = {
     fat: 'mach',
     protein: 'protein',
     carbohydrate: 'sukari',
+    portion: 'chogo',
+    status: 'kelo',
   },
   lang: {
     he: 'Ki Hibrania',
