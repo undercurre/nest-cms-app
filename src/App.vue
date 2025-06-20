@@ -8,6 +8,7 @@ import { useProductStore } from '@/stores/product'
 
 import { useLocation } from '@/hooks/useLocation'
 import { useThemeMode } from '@/hooks/useThemeMode'
+import { useUserInfo } from '@/hooks/useUserInfo' //数据缓存
 import { useAppStore } from '@/stores/app'
 import { computed, onBeforeMount, onMounted, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
@@ -31,6 +32,7 @@ const isHomeRoute = computed(
 )
 
 const productStore = useProductStore()
+const { createdFingerprint } = useUserInfo()
 
 const couponShow = ref(false)
 
@@ -231,6 +233,7 @@ const countryCode = useCountryCodeByLocationOrIp()
 const iconType = ref(-1)
 onMounted(async () => {
   setTimeout(async () => {
+    createdFingerprint()
     getLocation()
     try {
       const isRu = await getIsRu()
