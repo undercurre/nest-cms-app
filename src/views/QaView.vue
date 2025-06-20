@@ -88,13 +88,13 @@ const getTroubleshootingData = async () => {
       <van-search
         class="w-full qa-search"
         v-model="keyword"
-        :placeholder="$t('qa.searchKeyword')"
+        :placeholder="$t('searchKeyword')"
         @search="search(activeTab)"
         @blur="search(activeTab)"
       />
     </div>
     <van-tabs v-model:active="activeTab" class="m-t-12px qa-tabs">
-      <van-tab :title="$t('qa.frequentlyAskedQuestions')">
+      <van-tab :title="$t('frequentlyAskedQuestions')">
         <div class="bg-#f6f6f6 qa-page" v-if="qaList?.length">
           <van-collapse v-model="activeName" accordion>
             <van-collapse-item
@@ -110,7 +110,7 @@ const getTroubleshootingData = async () => {
         </div>
         <EmptyData v-else />
       </van-tab>
-      <van-tab :title="$t('qa.troubleshooting')">
+      <van-tab :title="$t('troubleshooting')">
         <div class="qa-page" v-if="troubleshootingList?.length">
           <van-collapse v-model="activeName" accordion>
             <van-collapse-item

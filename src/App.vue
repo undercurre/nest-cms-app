@@ -160,7 +160,7 @@ const getTitle = computed(() => {
     pageConfig.value?.pageConfigMultiLanguageObj?.[appLang[locale.value] ?? locale.value ?? 'en']
       ?.title ??
     pageConfig.value?.pageConfigMultiLanguageObj?.['en']?.title ??
-    t('common.smartKitchenAssistant')
+    t('smartKitchenAssistant')
   )
 })
 // NavBar
@@ -281,7 +281,7 @@ onBeforeMount(() => {
             @click="onClickLeft"
           />
           <span class="font-bold leading-28px text-18px truncate w-67vw text-left">{{
-            route.name == 'list' ? $t('common.equipmentList') : getTitle
+            route.name == 'list' ? $t('equipmentList') : getTitle
           }}</span>
         </div>
       </template>

@@ -10,7 +10,7 @@
       <div class="flex text-12px">
         <div class="flex items-center mr-8px">
           <img class="w-15px h-15px mr-2px" src="@/assets/images/app/time.png" />
-          <span class="text-[--vt-c-text-light-2]">{{ time }}{{ t('cookbook.minute') }}</span>
+          <span class="text-[--vt-c-text-light-2]">{{ time }}{{ t('minute') }}</span>
         </div>
         <div class="flex items-center">
           <img class="w-15px h-15px mr-2px" src="@/assets/images/app/difficulty.png" />
@@ -48,7 +48,7 @@ const map: Record<number, string> = {
 }
 
 function formatDifficulty(level: number) {
-  return t(`cookbook.${map[level]}`)
+  return t(`${map[level]}`)
 }
 
 function handle2Detail() {

@@ -6,16 +6,16 @@
         <el-card class="device-list">
           <template #header>
             <div class="header">
-              <span>{{ $t('common.equipmentList') }}</span>
+              <span>{{ $t('equipmentList') }}</span>
             </div>
           </template>
         </el-card>
 
         <div class="m-t-10px m-b-20px pl-10px">
           <p>
-            <span class="font-semibold">{{ $t('list.collectPrefix') }}</span>
+            <span class="font-semibold">{{ $t('collectPrefix') }}</span>
             <span class="font-black p-16px">{{ deviceList.length }}</span>
-            <span class="font-semibold">{{ $t('list.collectSuffix') }}</span>
+            <span class="font-semibold">{{ $t('collectSuffix') }}</span>
           </p>
         </div>
 
@@ -43,7 +43,7 @@
 
         <div v-if="deviceList.length === 0">
           <div class="w-full h-300px flex justify-center items-center">
-            <span>{{ $t('common.noData') }}</span>
+            <span>{{ $t('noData') }}</span>
           </div>
         </div>
       </div>

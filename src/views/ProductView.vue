@@ -55,7 +55,7 @@ const { t, locale } = useI18n()
 const add2my = async () => {
   if (!isCollected.value) {
     await collectProduct(Number(productId))
-    showSuccessToast(t('product.successfullyAdded'))
+    showSuccessToast(t('successfullyAdded'))
   }
   router.push('/list')
 }
@@ -126,7 +126,7 @@ watch(
       color="#FF6B6B"
       type="danger"
       @click="add2my"
-      >{{ isCollected ? $t('list.myCollection') : $t('product.addToMyDevices') }}</van-button
+      >{{ isCollected ? $t('myCollection') : $t('addToMyDevices') }}</van-button
     >
     <van-button
       :class="['w-full', 'mt-20px!']"
@@ -137,7 +137,7 @@ watch(
       <template #icon>
         <div class="flex items-center">
           <img class="w-16px mr-2px" src="@/assets/images/app/download.png" />
-          <span class="text-#000 text-14px">{{ $t('product.downloadInstructionManual') }}</span>
+          <span class="text-#000 text-14px">{{ $t('downloadInstructionManual') }}</span>
         </div>
       </template>
     </van-button>

@@ -17,21 +17,21 @@
       </div>
     </div>
     <div class="flex flex-col mt-20px" v-if="getI18NDescription()">
-      <span class="font-bold text-18px px-10px">{{ $t('diet.introduction') }}</span>
+      <span class="font-bold text-18px px-10px">{{ $t('introduction') }}</span>
       <p class="text-14px my-10px px-10px pre-line-content">{{ getI18NDescription() }}</p>
     </div>
     <div class="flex flex-col mt-20px" v-if="diet?.cookbookNutritionList.length">
-      <span class="font-bold text-18px px-10px">{{ $t('cookbook.nutrition') }}</span>
+      <span class="font-bold text-18px px-10px">{{ $t('nutrition') }}</span>
       <p
         v-for="item in diet?.cookbookNutritionList"
         :key="item.id"
         class="text-14px my-10px px-10px"
       >
-        {{ $t(`cookbook.${item.category}`) }}{{ item.quantity ? '：' : '' }}{{ item.quantity }}
+        {{ $t(`${item.category}`) }}{{ item.quantity ? '：' : '' }}{{ item.quantity }}
       </p>
     </div>
     <div class="flex flex-col mt-20px">
-      <span class="font-bold text-18px px-10px">{{ $t('diet.ingredients') }}</span>
+      <span class="font-bold text-18px px-10px">{{ $t('ingredients') }}</span>
       <p
         v-for="item in diet?.dietMultiLanguageObj[locale || 'en']?.cookbookIngredientList ??
         diet?.dietMultiLanguageObj['en']?.cookbookIngredientList"
@@ -39,15 +39,8 @@
         class="text-14px my-10px px-10px"
       >
         {{ item.ingredientName }}{{ item.quantity || item.unit ? '：' : ''
-        }}{{
-          item.quantity === 'AppropriateAmount' ? $t(`cookbook.${item.quantity}`) : item.quantity
-        }}{{
-          item.quantity === 'AppropriateAmount'
-            ? ''
-            : item.unit
-              ? $t(`cookbook.units.${item.unit}`)
-              : ''
-        }}
+        }}{{ item.quantity === 'AppropriateAmount' ? $t(`${item.quantity}`) : item.quantity
+        }}{{ item.quantity === 'AppropriateAmount' ? '' : item.unit ? $t(`${item.unit}`) : '' }}
       </p>
     </div>
     <div
@@ -82,7 +75,7 @@
         diet?.dietMultiLanguageObj?.['en']?.cookbookUtensilList?.length
       "
     >
-      <span class="font-bold text-18px px-10px">{{ $t('cookbook.accessory') }}</span>
+      <span class="font-bold text-18px px-10px">{{ $t('accessory') }}</span>
       <div class="text-14px my-10px px-10px">
         {{
           Array.from(
@@ -95,7 +88,7 @@
       </div>
     </div>
     <div class="flex flex-col mt-20px">
-      <span class="font-bold text-18px px-10px">{{ $t('diet.steps') }}</span>
+      <span class="font-bold text-18px px-10px">{{ $t('steps') }}</span>
       <div
         v-for="item in diet?.dietMultiLanguageObj[locale || 'en']?.cookbookStepList ??
         diet?.dietMultiLanguageObj['en']?.cookbookStepList"
@@ -149,7 +142,7 @@ const getCategory = async () => {
 }
 
 const tasteName = computed(() => {
-  return diet.value?.taste ? t(`cookbook.${diet.value?.taste}`) : ''
+  return diet.value?.taste ? t(`${diet.value?.taste}`) : ''
 })
 
 const categoryName = computed(() => {
@@ -207,14 +200,14 @@ onBeforeMount(async () => {
                   {
                     class: 'text portion',
                   },
-                  t('cookbook.portion'),
+                  t('portion1'),
                 ),
                 h(
                   'span',
                   {
                     class: 'text status',
                   },
-                  t('cookbook.status'),
+                  t('status'),
                 ),
               ],
             )
@@ -244,9 +237,7 @@ onBeforeMount(async () => {
             tdCellClass: 'tdClass',
             minWidth: '78px',
             renderCell: (h, { row }) => {
-              return row[item.ingredientStatus]
-                ? row[item.ingredientStatus] + t('cookbook.minute')
-                : ''
+              return row[item.ingredientStatus] ? row[item.ingredientStatus] + t('minute') : ''
             },
           })
         }

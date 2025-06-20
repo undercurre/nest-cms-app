@@ -153,7 +153,7 @@ const changeSide = async (item) => {
 
 <template>
   <div class="w-full h-full flex flex-col items-center">
-    <van-search class="w-full" v-model="keyword" :placeholder="$t('diet.searchForRecipes')" />
+    <van-search class="w-full" v-model="keyword" :placeholder="$t('searchForRecipes')" />
     <SideTabList @changeSide="changeSide">
       <div class="w-78vw">
         <TabList

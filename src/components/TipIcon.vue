@@ -15,7 +15,7 @@ const gotoPoster = () => {
     v-if="appStore.tabbarActive !== 'poster'"
   >
     <img class="w-20px h-20px" src="@/assets/images/app/tip-icon.png" alt="" />
-    <span class="ml-4px text-14px text-#6f4fd4">{{ $t('common.poster') }}</span>
+    <span class="ml-4px text-14px text-#6f4fd4">{{ $t('poster') }}</span>
   </div>
 </template>
 

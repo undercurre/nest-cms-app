@@ -28,7 +28,7 @@ watch(
   (newVal: unknown) => {
     options.value = newVal?.[0]?.map((item) => {
       return {
-        text: t(`lang.${item.languageCode ?? ''}`),
+        text: t(`${item.languageCode ?? ''}`),
         value: appLang[item.languageCode] ?? item.languageCode ?? 'en',
       }
     })
