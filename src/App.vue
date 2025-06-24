@@ -26,7 +26,9 @@ const { t, locale } = useI18n()
 const appStore = useAppStore()
 
 // 检查当前路由是否为 list
-const isListRoute = computed(() => ['dietDetail', 'list'].includes(route.name as string))
+const isListRoute = computed(() =>
+  ['dietDetail', 'AiDietDetail', 'list'].includes(route.name as string),
+)
 const isHomeRoute = computed(
   () => route.name === 'product' || route.name === 'guide' || route.name === 'diet',
 )
@@ -321,6 +323,7 @@ onBeforeMount(() => {
     />
     <LanguageSwitcher v-if="appStore.tabbarActive == 'product' && !isListRoute" />
     <TipIcon v-if="productStore.isHasPoster" />
+    <AIDietTipIcon />
   </div>
 </template>
 

@@ -8,6 +8,10 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    AiDietCard: typeof import('./src/components/diet/AiDietCard.vue')['default']
+    AIDietTipIcon: typeof import('./src/components/AIDietTipIcon.vue')['default']
+    CommentList: typeof import('./src/components/diet/CommentList.vue')['default']
+    copy: typeof import('./src/components/TipIcon copy.vue')['default']
     DietCard: typeof import('./src/components/diet/DietCard.vue')['default']
     EmptyData: typeof import('./src/components/emptyData.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
@@ -33,7 +37,9 @@ declare module 'vue' {
     VanEmpty: typeof import('vant/es')['Empty']
     VanField: typeof import('vant/es')['Field']
     VanForm: typeof import('vant/es')['Form']
+    VanIcon: typeof import('vant/es')['Icon']
     VanNavBar: typeof import('vant/es')['NavBar']
+    VanPopup: typeof import('vant/es')['Popup']
     VanSearch: typeof import('vant/es')['Search']
     VanSidebar: typeof import('vant/es')['Sidebar']
     VanSidebarItem: typeof import('vant/es')['SidebarItem']

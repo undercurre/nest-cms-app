@@ -10,6 +10,7 @@
         :key="item.id"
         :disabled="!item.existCookbook"
       />
+      <van-sidebar-item :title="$t('AiDiet')" :key="'ai-cookbook'" />
     </van-sidebar>
     <slot />
   </div>
@@ -20,8 +21,10 @@ import { appLang } from '@/lang/app-lang'
 import { useProductStore } from '@/stores/product'
 import { onBeforeMount, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRoute } from 'vue-router'
 
 const emits = defineEmits(['changeSide'])
+const route = useRoute()
 const active = ref(0)
 const { locale } = useI18n()
 const category = ref<Category[]>([])
@@ -47,15 +50,24 @@ onBeforeMount(async () => {
   // category.value.sort((a, b) => Number(b.existCookbook) - Number(a.existCookbook))
   category.value = category.value.filter((item) => item.existCookbook)
   const index = category.value.findIndex((item) => item.existCookbook)
-  active.value = index
-  if (index > -1) {
-    emits('changeSide', category.value?.[index])
+  if (route.query.tab === 'ai-cookbook') {
+    active.value = category.value.length
+    emits('changeSide', 'ai-cookbook')
   } else {
-    emits('changeSide', category.value?.[0])
+    active.value = index
+    if (index > -1) {
+      emits('changeSide', category.value?.[index])
+    } else {
+      emits('changeSide', category.value?.[0])
+    }
   }
 })
 const onChange = (index) => {
-  emits('changeSide', category.value[index])
+  if (category.value[index]) {
+    emits('changeSide', category.value[index])
+  } else {
+    emits('changeSide', 'ai-cookbook')
+  }
 }
 </script>
 

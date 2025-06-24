@@ -33,8 +33,9 @@
     <div class="flex flex-col mt-20px">
       <span class="font-bold text-18px px-10px">{{ $t('ingredients') }}</span>
       <p
-        v-for="item in diet?.dietMultiLanguageObj[locale || 'en']?.cookbookIngredientList ??
-        diet?.dietMultiLanguageObj['en']?.cookbookIngredientList"
+        v-for="item in diet?.dietMultiLanguageObj[locale || 'en']?.cookbookIngredientList?.length
+          ? diet?.dietMultiLanguageObj[locale || 'en']?.cookbookIngredientList
+          : diet?.dietMultiLanguageObj['en']?.cookbookIngredientList"
         :key="item.id"
         class="text-14px my-10px px-10px"
       >
@@ -90,8 +91,9 @@
     <div class="flex flex-col mt-20px">
       <span class="font-bold text-18px px-10px">{{ $t('steps') }}</span>
       <div
-        v-for="item in diet?.dietMultiLanguageObj[locale || 'en']?.cookbookStepList ??
-        diet?.dietMultiLanguageObj['en']?.cookbookStepList"
+        v-for="item in diet?.dietMultiLanguageObj[locale || 'en']?.cookbookStepList?.length
+          ? diet?.dietMultiLanguageObj[locale || 'en']?.cookbookStepList
+          : diet?.dietMultiLanguageObj['en']?.cookbookStepList"
         :key="item.id"
         class="text-14px my-10px px-10px"
       >
@@ -117,7 +119,7 @@ const diet = ref<Diet>()
 
 const { locale, t } = useI18n()
 const appStore = useAppStore()
-appStore.tabbarActive = 'diet'
+appStore.tabbarActive = route.name as string
 const category = ref<Category[]>([])
 const getCategory = async () => {
   const categoryListRes = await getCategoryList({

@@ -40,6 +40,11 @@ const router = createRouter({
       component: () => import('../views/DietDetail.vue'),
     },
     {
+      path: '/diet/aiDetail/:id',
+      name: 'AiDietDetail',
+      component: () => import('../views/AiDietDetail.vue'),
+    },
+    {
       path: '/qa/:id',
       name: 'qa',
       component: () => import('../views/QaView.vue'),

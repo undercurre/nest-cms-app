@@ -12,7 +12,7 @@ const gotoPoster = () => {
   <div
     class="absolute bottom-80px right-0 flex items-center py-4px p-l-4px p-r-6px border-2px rounded-l-20px bg-#e0d5fd"
     @click="gotoPoster"
-    v-if="appStore.tabbarActive !== 'poster'"
+    v-if="!['dietDetail', 'AiDietDetail', 'poster'].includes(appStore.tabbarActive)"
   >
     <img class="w-20px h-20px" src="@/assets/images/app/tip-icon.png" alt="" />
     <span class="ml-4px text-14px text-#6f4fd4">{{ $t('poster') }}</span>
