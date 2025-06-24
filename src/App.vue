@@ -86,32 +86,32 @@ const tabList = computed(() => {
           name: 'poster',
           icon: 'material-symbols:imagesmode-outline',
           path: `/poster/${productStore.id}`,
-          text: 'common.poster',
+          text: 'poster',
           hidden: !productStore.isHasPoster,
         },
         {
           name: 'guide',
           icon: 'nrk:media-programguide',
           path: `/guide/${productStore.id}`,
-          text: 'common.operationInstructions',
+          text: 'operationInstructions',
         },
         {
           name: 'product',
           icon: 'icon-park-outline:ad-product',
           path: `/product/${productStore.id}`,
-          text: 'common.productDescription',
+          text: 'productDescription',
         },
         {
           name: 'diet',
           icon: 'icon-park-outline:knife-fork',
           path: `/diet/${productStore.id}`,
-          text: 'common.completeRecipeCollection',
+          text: 'completeRecipeCollection',
         },
         {
           name: 'qa',
           icon: 'material-symbols:help',
           path: `/qa/${productStore.id}`,
-          text: 'common.qa',
+          text: 'qa',
         },
       ]
   if (!tabRes.find((item) => item.path.indexOf('product') > -1)) {
@@ -120,7 +120,7 @@ const tabList = computed(() => {
       name: 'product',
       icon: 'icon-park-outline:ad-product',
       path: `/product/${productStore.id}`,
-      text: 'common.productDescription',
+      text: 'productDescription',
       hidden: false,
     })
   }
