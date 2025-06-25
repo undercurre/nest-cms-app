@@ -188,11 +188,11 @@ const loadAiDietData = async () => {
     pageSize: pageConfig.value.pageSize,
     cookbookName: keyword.value || undefined,
     ingredient: keyword.value || undefined,
-    likeOrder: 'ASC',
-    commentOrder: 'ASC',
+    likeOrder: 'DESC',
+    commentOrder: 'DESC',
     userId: userInfoStore.id,
   })
-  aiDietList.value = [...aiDietList.value, ...res.data.aiCookbookList]
+  aiDietList.value = [...aiDietList.value, ...(res.data.aiCookbookList || [])]
   pageConfig.value.total = res.data.total
   // 判断是否还有更多数据
   hasMoreData.value = pageConfig.value.total > aiDietList.value.length
