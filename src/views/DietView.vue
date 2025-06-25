@@ -197,6 +197,13 @@ const loadAiDietData = async () => {
   // 判断是否还有更多数据
   hasMoreData.value = pageConfig.value.total > aiDietList.value.length
 
+  if (pageConfig.value.pageNo === 1) {
+    document.querySelector('#ai-diet-list-box')?.removeEventListener('scroll', handleScroll)
+    nextTick(() => {
+      // 监听滚动
+      document.querySelector('#ai-diet-list-box')?.addEventListener('scroll', handleScroll)
+    })
+  }
   if (hasMoreData.value) {
     pageConfig.value.pageNo++
   }
@@ -227,10 +234,6 @@ const changeSide = async (item) => {
     }
     isLoading.value = false
     hasMoreData.value = true
-    nextTick(() => {
-      // 监听滚动
-      document.querySelector('#ai-diet-list-box')?.addEventListener('scroll', handleScroll)
-    })
     loadAiDietData()
   } else {
     cookbookType.value = ''
