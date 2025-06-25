@@ -484,4 +484,6 @@ export default {
   commentSuccessful: 'Maoni yamefanikiwa',
   commentFailed: 'Maoni yalishindwa',
   AiDietTips: 'Kichocheo hiki kinatolewa na AI na ni kwa kumbukumbu tu.',
+  noAiDietDataTips:
+    'Hakuna mapishi yanayohusiana, tutasasisha zaidi katika siku zijazo, kwa hivyo kaa tuned~',
 }

@@ -484,4 +484,6 @@ export default {
   commentSuccessful: 'Şərh uğurlu',
   commentFailed: 'Şərh uğursuz oldu',
   AiDietTips: 'Bu resept AI tərəfindən yaradılır və yalnız istinad üçündür.',
+  noAiDietDataTips:
+    'Müvafiq reseptlər yoxdur, gələcəkdə daha çox yeniləyəcəyik, buna görə də qalın~',
 }

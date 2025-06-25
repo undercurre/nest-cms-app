@@ -484,4 +484,6 @@ export default {
   commentSuccessful: 'Iruzkina arrakastatsua',
   commentFailed: 'Iruzkina huts egin du',
   AiDietTips: 'Errezeta hau AI-k sortzen du eta erreferentzia soilik da.',
+  noAiDietDataTips:
+    'Ez dago loturarik errezetarik, etorkizunean gehiago eguneratuko dugu, beraz, adi egon~',
 }

@@ -484,4 +484,5 @@ export default {
   commentSuccessful: 'להגיב מצליח',
   commentFailed: 'התגובה נכשלה',
   AiDietTips: 'מתכון זה נוצר על ידי AI ונועד להתייחסות בלבד.',
+  noAiDietDataTips: 'אין מתכונים קשורים, אנו נעדכן יותר בעתיד, אז הישאר מעודכן~',
 }

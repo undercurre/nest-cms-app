@@ -484,4 +484,6 @@ export default {
   commentSuccessful: 'Komen berjaya',
   commentFailed: 'Komen gagal',
   AiDietTips: 'Resipi ini dihasilkan oleh AI dan hanya untuk rujukan.',
+  noAiDietDataTips:
+    'Tidak ada resipi yang berkaitan, kami akan mengemas kini lebih banyak lagi pada masa akan datang, jadi tunggu~',
 }

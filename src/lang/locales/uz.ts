@@ -483,5 +483,7 @@ export default {
   notes: "Narsalar e'tiborga olinadi",
   commentSuccessful: 'Fikr muvaffaqiyatli',
   commentFailed: 'Izoh muvaffaqiyatsiz tugadi',
-  AiDietTips: 'یہ نسخہ AI کے ذریعہ تیار کیا گیا ہے اور یہ صرف حوالہ کے لئے ہے۔',
+  AiDietTips: "Ushbu retseptni AI tomonidan yaratilgan va faqat ma'lumot uchun mo'ljallangan.",
+  noAiDietDataTips:
+    "Hech qanday retseptlar yo'q, biz kelajakda ko'proq yangilanamiz, shuning uchun tik turing~",
 }

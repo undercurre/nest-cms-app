@@ -484,4 +484,5 @@ export default {
   commentSuccessful: 'Komentar uspešen',
   commentFailed: 'Komentar ni uspel',
   AiDietTips: 'Ta recept ustvari AI in je samo za referenco.',
+  noAiDietDataTips: 'Ni povezanih receptov, v prihodnosti bomo posodobili več, zato spremljajte~',
 }

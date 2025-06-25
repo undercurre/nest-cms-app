@@ -484,4 +484,6 @@ export default {
   commentSuccessful: "Kumment ta 'suċċess",
   commentFailed: 'Kumment falla',
   AiDietTips: 'Din ir-riċetta hija ġġenerata mill-AI u hija għal referenza biss.',
+  noAiDietDataTips:
+    "M'hemm l-ebda riċetti relatati, aħna se naġġornaw aktar fil-futur, għalhekk nibqgħu sintonizzati~",
 }

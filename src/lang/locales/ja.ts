@@ -484,4 +484,5 @@ export default {
   commentSuccessful: 'コメントが成功しました',
   commentFailed: 'コメントは失敗しました',
   AiDietTips: 'このレシピはAIによって生成され、参照用のみです。',
+  noAiDietDataTips: '関連するレシピはありません、将来さらに更新するので、お楽しみに~',
 }

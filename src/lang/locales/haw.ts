@@ -484,4 +484,6 @@ export default {
   commentSuccessful: 'Kōkua kūleʻa',
   commentFailed: 'ʻAʻole hiki',
   AiDietTips: 'Hoʻokumuʻia kēiaʻano hana e AI a no ka mea e pili wale ana.',
+  noAiDietDataTips:
+    'ʻAʻohe mea e pili ana i nā mea e pili ana, e hoʻonui hou mākou i nā mea hou aku i ka wā e hiki mai ana, pēlā e noho ai~',
 }

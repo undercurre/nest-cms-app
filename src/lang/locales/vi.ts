@@ -484,4 +484,6 @@ export default {
   commentSuccessful: 'Nhận xét thành công',
   commentFailed: 'Nhận xét thất bại',
   AiDietTips: 'Công thức này được tạo ra bởi AI và chỉ để tham khảo.',
+  noAiDietDataTips:
+    'Không có công thức nấu ăn liên quan, chúng tôi sẽ cập nhật thêm trong tương lai, vì vậy hãy theo dõi~',
 }

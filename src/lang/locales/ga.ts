@@ -484,4 +484,6 @@ export default {
   commentSuccessful: 'Trácht rathúil',
   commentFailed: 'Theip ar thrácht',
   AiDietTips: 'Is é AI a ghineann an t -oideas seo agus tá sé le haghaidh tagartha amháin.',
+  noAiDietDataTips:
+    'Níl aon oidis ghaolmhara ann, déanfaimid níos mó a nuashonrú amach anseo, mar sin fan tiúnta~',
 }

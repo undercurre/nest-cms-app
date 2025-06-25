@@ -484,4 +484,6 @@ export default {
   commentSuccessful: 'Kommentaar edukas',
   commentFailed: 'Kommentaar ebaõnnestus',
   AiDietTips: 'Selle retsepti genereerib AI ja on ainult viitamiseks.',
+  noAiDietDataTips:
+    'No hay recetas relacionadas, actualizaremos más en el futuro, así que estad atentos~',
 }

@@ -484,4 +484,6 @@ export default {
   commentSuccessful: 'Kommentaar suksesvol',
   commentFailed: 'Opmerking het misluk',
   AiDietTips: 'Hierdie resep word deur AI gegenereer en is slegs vir verwysing.',
+  noAiDietDataTips:
+    'Daar is geen verwante resepte nie, ons sal in die toekoms meer opdateer, so bly op hoogte ~',
 }

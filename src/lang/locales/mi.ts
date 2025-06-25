@@ -484,4 +484,6 @@ export default {
   commentSuccessful: 'He angitu te korero',
   commentFailed: 'I rahua te korero',
   AiDietTips: 'Ko tenei tohutao ka hangaia e AI me te korero anake.',
+  noAiDietDataTips:
+    'Kaore he tohutao e hono ana, ka whakahou ake i nga mea kei te heke mai, kia noho noho ai~',
 }

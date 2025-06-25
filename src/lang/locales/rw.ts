@@ -484,4 +484,6 @@ export default {
   commentSuccessful: 'Igitekerezo cyatsinze',
   commentFailed: 'Igitekerezo cyatsinzwe',
   AiDietTips: "Iyi resept ikorwa na AI kandi ni iy'amaberewe gusa.",
+  noAiDietDataTips:
+    'Nta bisobanuro bifitanye isano, tuzavugurura byinshi mugihe kizaza, bityo rero ukomeze kuba mushya~',
 }

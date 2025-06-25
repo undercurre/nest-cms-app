@@ -484,4 +484,6 @@ export default {
   commentSuccessful: 'Commento di successo',
   commentFailed: 'Commento non riuscito',
   AiDietTips: "Questa ricetta è generata dall'intelligenza artificiale ed è solo a riferimento.",
+  noAiDietDataTips:
+    'Non ci sono ricette correlate, aggiorneremo di più in futuro, quindi rimanete sintonizzati~',
 }

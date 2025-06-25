@@ -484,4 +484,5 @@ export default {
   commentSuccessful: '댓글을 달성했습니다',
   commentFailed: '댓글이 실패했습니다',
   AiDietTips: '이 레시피는 AI에 의해 생성되며 참조 용입니다.',
+  noAiDietDataTips: '관련 레시피가없고 앞으로 더 많은 업데이트를 할 것입니다.~',
 }

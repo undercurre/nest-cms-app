@@ -313,7 +313,7 @@ onBeforeUnmount(() => {
             <p>{{ $t('noMore') }}</p>
           </div>
         </div>
-        <EmptyData v-else />
+        <EmptyData v-else :description="cookbookType ? `${$t('noAiDietDataTips')}` : ''" />
       </div>
     </SideTabList>
   </div>

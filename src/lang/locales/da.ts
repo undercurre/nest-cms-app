@@ -484,4 +484,6 @@ export default {
   commentSuccessful: 'Kommentar er blevet sendt',
   commentFailed: 'Kommentar sendes ikke',
   AiDietTips: 'Denne opskrift genereres af AI og er kun til reference.',
+  noAiDietDataTips:
+    'Der er ingen relaterede opskrifter, vi opdaterer mere i fremtiden, så hold dig tunet~',
 }

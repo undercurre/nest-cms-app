@@ -484,4 +484,6 @@ export default {
   commentSuccessful: 'Kommentarer',
   commentFailed: 'Kommentar gescheitert',
   AiDietTips: 'Dës Rezept gëtt vum Ai generéiert an ass nëmme fir Referenz.',
+  noAiDietDataTips:
+    'Et gi keng verbonne Rezepter, wäerte mir méi an der Zukunft aktualiséieren, da bleiwen et drun~',
 }

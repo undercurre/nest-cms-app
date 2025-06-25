@@ -483,5 +483,7 @@ export default {
   notes: 'د یادولو لپاره شیان',
   commentSuccessful: 'څرګندونې بریالۍ',
   commentFailed: 'نظر ناکام شو',
-  AiDietTips: 'Ten przepis jest generowany przez AI i jest tylko w celach informacyjnych.',
+  AiDietTips: 'دا ترکیب د AI لخوا تولید شوی او یوازې د ریفرډ لپاره دی.',
+  noAiDietDataTips:
+    'هیڅ اړونده ترکیبونه شتون نلري، موږ به په راتلونکي کې نور تازه معلومات تازه کړو، نو پاتې اوسئ~',
 }

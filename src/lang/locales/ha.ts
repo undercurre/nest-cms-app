@@ -484,4 +484,6 @@ export default {
   commentSuccessful: 'Sharhi nasara',
   commentFailed: 'Sharhi ya kasa',
   AiDietTips: 'Wannan girke-girke yana haifar da AI kuma yana kan batun kawai.',
+  noAiDietDataTips:
+    'Babu wasu girke-girke masu dangantaka, za mu sabunta ƙarin a nan gaba, don haka ku dage~',
 }

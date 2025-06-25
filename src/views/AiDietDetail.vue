@@ -44,7 +44,7 @@
           :key="item.id"
           class="text-14px my-10px px-10px"
         >
-          {{ item.description }}
+          {{ item.stepNum }}、 {{ item.description }}
           <img v-if="item.imageUrl" class="w-full mt-10px" :src="item.imageUrl" />
         </div>
       </div>
@@ -58,7 +58,7 @@
           :key="item.id"
           class="text-14px my-10px px-10px"
         >
-          {{ item.noteNum }}. {{ item.description }}
+          {{ item.noteNum }}、 {{ item.description }}
         </div>
       </div>
       <div class="text-12px text-center my-20px text-gray-300">

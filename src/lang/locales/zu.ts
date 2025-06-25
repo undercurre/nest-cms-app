@@ -484,4 +484,6 @@ export default {
   commentSuccessful: 'Beka amazwana',
   commentFailed: 'Amazwana wehlulekile',
   AiDietTips: 'Le iresiphi ikhiqizwa yi-AI futhi isereferensi kuphela.',
+  noAiDietDataTips:
+    'Azikho izindlela zokupheka ezihlobene, sizobuyekeza okuningi ngokuzayo, ngakho-ke hlala ubukele~',
 }

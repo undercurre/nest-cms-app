@@ -484,4 +484,6 @@ export default {
   commentSuccessful: 'Ọrọìwòye aṣeyọri',
   commentFailed: 'Ọrọìwòye kuna',
   AiDietTips: 'Ohunelo yii ti ipilẹṣẹ nipasẹ AI ati pe o wa fun itọkasi nikan.',
+  noAiDietDataTips:
+    'Ko si awọn ilana ti o ni ibatan, a yoo ṣe imudojuiwọn diẹ sii ni ọjọ iwaju, nitorinaa duro ni aifọwọyi~',
 }

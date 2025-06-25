@@ -20,7 +20,7 @@ withDefaults(
   <van-empty
     :image="image || emptyDefaultImage"
     :image-size="imageSize"
-    :description="description ?? t('noData')"
+    :description="description || t('noData')"
   />
 </template>
 

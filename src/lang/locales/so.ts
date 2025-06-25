@@ -484,4 +484,6 @@ export default {
   commentSuccessful: 'Faallo guul',
   commentFailed: 'Faallo faallo',
   AiDietTips: 'Cuntadani waxaa soo saaray AI waxaana loo tixraacayaa kaliya.',
+  noAiDietDataTips:
+    'Ma jiraan cuntooyin la xiriira, waxaan cusbooneysiin doonaa mustaqbalka inbadan, sidaa darteed la soco~',
 }

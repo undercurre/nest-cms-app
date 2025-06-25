@@ -484,4 +484,6 @@ export default {
   commentSuccessful: 'Commenter le succès',
   commentFailed: 'Le commentaire a échoué',
   AiDietTips: "Cette recette est générée par l'IA et est pour référence uniquement.",
+  noAiDietDataTips:
+    "Il n'y a pas de recettes connexes, nous mettrons à jour plus à l'avenir, alors restez à l'écoute~",
 }

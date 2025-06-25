@@ -484,4 +484,6 @@ export default {
   commentSuccessful: 'Kutaura kwakabudirira',
   commentFailed: 'Kutaura kwakundikana',
   AiDietTips: 'Iyi yekubheka inogadzirwa neAI uye ndeyekunongedzera chete.',
+  noAiDietDataTips:
+    'Iko hakuna mabhureki akarondedzera, isu tichavandudza yakawanda mune ramangwana, saka garai tuned~',
 }

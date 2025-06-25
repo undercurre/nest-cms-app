@@ -484,4 +484,6 @@ export default {
   commentSuccessful: 'Mairan suksés',
   commentFailed: 'Komentar gagal',
   AiDietTips: 'Resep ieu dirawat ku AI sareng nyaéta pikeun rujukan hungkul.',
+  noAiDietDataTips:
+    'Henteu aya resep anu patali, kami bakal ngomean langkung di hareup, janten tetep ditujukeun~',
 }

@@ -484,4 +484,6 @@ export default {
   commentSuccessful: 'Malampuson ang Komento',
   commentFailed: 'Napakyas ang Komento',
   AiDietTips: 'Kini nga resipe gihimo pinaagi sa AI ug alang lamang sa pakisayran.',
+  noAiDietDataTips:
+    "Wala'y kalabutan nga mga resipe, mag-update kami labi pa sa umaabot, busa magpabilin nga gipunting~",
 }

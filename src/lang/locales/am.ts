@@ -484,4 +484,5 @@ export default {
   commentSuccessful: 'አስተያየት ስኬታማ',
   commentFailed: 'አስተያየት አልተሳካም',
   AiDietTips: 'ይህ የምግብ አሰራር በአይን የተገኘ ሲሆን ለማጣቀሻ ብቻ ነው.',
+  noAiDietDataTips: 'ምንም ተዛማጅ የምግብ አፕሌቶች የሉም, ለወደፊቱ የበለጠ እናዘምነዋለን, ስለዚህ ተስተካክለው ይቆዩ ~',
 }

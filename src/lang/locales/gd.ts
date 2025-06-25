@@ -484,4 +484,6 @@ export default {
   commentSuccessful: 'Beachd soirbheachail',
   commentFailed: 'Beachd air fàiligeadh',
   AiDietTips: 'Tha an reasabaidh seo air a chruthachadh le Ai agus tha e airson iomradh a-mhàin.',
+  noAiDietDataTips:
+    'Chan eil reasabaidhean co-cheangailte ann, ùraichidh sinn barrachd san àm ri teachd, mar sin cùm sùil air~',
 }

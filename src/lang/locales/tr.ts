@@ -484,4 +484,6 @@ export default {
   commentSuccessful: 'Başarılı yorum',
   commentFailed: 'Yorum başarısız oldu',
   AiDietTips: 'Bu tarif AI tarafından üretilir ve yalnızca referans içindir.',
+  noAiDietDataTips:
+    'İlgili tarifler yok, gelecekte daha fazla güncelleme yapacağız, bu yüzden bizi izlemeye devam edin~',
 }

@@ -484,4 +484,6 @@ export default {
   commentSuccessful: 'Rhoi sylwadau llwyddiannus',
   commentFailed: 'Methodd y Sylw',
   AiDietTips: 'Cynhyrchir y rysáit hon gan AI ac mae ar gyfer cyfeirio yn unig.',
+  noAiDietDataTips:
+    'Nid oes unrhyw ryseitiau cysylltiedig, byddwn yn diweddaru mwy yn y dyfodol, felly cadwch draw~',
 }
