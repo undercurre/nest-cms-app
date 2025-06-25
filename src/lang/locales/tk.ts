@@ -483,4 +483,5 @@ export default {
   notes: 'Bellemek üçin zatlar',
   commentSuccessful: 'Teswir',
   commentFailed: 'Teswir şowsuz boldy',
+  AiDietTips: 'Bu resept AI tarapyndan döredilýär we diňe salgylanma üçin.',
 }

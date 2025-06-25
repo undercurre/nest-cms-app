@@ -483,4 +483,5 @@ export default {
   notes: 'লক্ষণীয় বিষয়',
   commentSuccessful: 'মন্তব্য সফল',
   commentFailed: 'মন্তব্য ব্যর্থ',
+  AiDietTips: 'এই রেসিপিটি এআই দ্বারা উত্পাদিত হয় এবং এটি কেবল রেফারেন্সের জন্য।',
 }

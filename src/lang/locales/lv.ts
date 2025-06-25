@@ -483,4 +483,5 @@ export default {
   notes: 'Lietas, kas jāatzīmē',
   commentSuccessful: 'Komentēt veiksmīgi',
   commentFailed: 'Komentārs neizdevās',
+  AiDietTips: 'Šo recepti ģenerē AI, un tā ir paredzēta tikai atsaucei.',
 }

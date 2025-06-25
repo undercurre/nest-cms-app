@@ -483,4 +483,5 @@ export default {
   notes: 'Նշելու բաներ',
   commentSuccessful: 'Մեկնաբանեք հաջող',
   commentFailed: 'Մեկնաբանությունը ձախողվեց',
+  AiDietTips: 'Այս բաղադրատոմսը ստեղծվում է AI-ի կողմից եւ միայն հղման համար է:',
 }

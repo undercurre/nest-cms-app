@@ -483,4 +483,5 @@ export default {
   notes: "Pethau i'w nodi",
   commentSuccessful: 'Rhoi sylwadau llwyddiannus',
   commentFailed: 'Methodd y Sylw',
+  AiDietTips: 'Cynhyrchir y rysáit hon gan AI ac mae ar gyfer cyfeirio yn unig.',
 }

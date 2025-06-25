@@ -483,4 +483,5 @@ export default {
   notes: 'Abubuwa don lura',
   commentSuccessful: 'Sharhi nasara',
   commentFailed: 'Sharhi ya kasa',
+  AiDietTips: 'Wannan girke-girke yana haifar da AI kuma yana kan batun kawai.',
 }

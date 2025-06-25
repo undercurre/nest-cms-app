@@ -483,4 +483,5 @@ export default {
   notes: 'דאס צו טאָן',
   commentSuccessful: 'באַמערקונגען',
   commentFailed: 'קאָמענטאַר ניט אַנדערש',
+  AiDietTips: 'דער רעצעפּט איז דזשענערייטאַד דורך AI און איז בלויז פֿאַר דערמאָנען.',
 }

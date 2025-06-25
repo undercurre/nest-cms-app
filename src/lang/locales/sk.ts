@@ -483,4 +483,5 @@ export default {
   notes: 'Veci, ktoré treba poznamenať',
   commentSuccessful: 'Komentár úspešný',
   commentFailed: 'Komentár zlyhal',
+  AiDietTips: 'Tento recept je generovaný pomocou AI a je určený iba pre odkaz.',
 }

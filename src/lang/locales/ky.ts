@@ -483,4 +483,5 @@ export default {
   notes: 'Эскертүү',
   commentSuccessful: 'Ийгиликтүү комментарий',
   commentFailed: 'Комментарий ишке ашкан жок',
+  AiDietTips: 'Бул рецепт ai тарабынан түзүлөт жана маалымдама үчүн гана.',
 }

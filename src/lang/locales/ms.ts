@@ -483,4 +483,5 @@ export default {
   notes: 'Perkara yang perlu diperhatikan',
   commentSuccessful: 'Komen berjaya',
   commentFailed: 'Komen gagal',
+  AiDietTips: 'Resipi ini dihasilkan oleh AI dan hanya untuk rujukan.',
 }

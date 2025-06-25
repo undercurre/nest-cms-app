@@ -483,4 +483,5 @@ export default {
   notes: 'MEGJEGYZÉSEK',
   commentSuccessful: 'Sikeres megjegyzés',
   commentFailed: 'A megjegyzés sikertelen',
+  AiDietTips: 'Ezt a receptet az AI generálja, és csak referenciaként szolgál.',
 }

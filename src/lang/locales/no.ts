@@ -483,4 +483,5 @@ export default {
   notes: 'Ting å merke seg',
   commentSuccessful: 'Kommentar vellykket',
   commentFailed: 'Kommentar mislyktes',
+  AiDietTips: 'Denne oppskriften genereres av AI og er kun for referanse.',
 }

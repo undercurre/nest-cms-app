@@ -483,4 +483,5 @@ export default {
   notes: 'નોંધવાની બાબતો',
   commentSuccessful: 'સફળ ટિપ્પણી',
   commentFailed: 'ટિપ્પણી નિષ્ફળ',
+  AiDietTips: 'આ રેસીપી એઆઈ દ્વારા પેદા થાય છે અને તે ફક્ત સંદર્ભ માટે છે.',
 }

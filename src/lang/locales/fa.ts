@@ -483,4 +483,5 @@ export default {
   notes: 'چیزهایی که باید توجه داشته باشید',
   commentSuccessful: 'نظر موفقیت آمیز',
   commentFailed: 'نظر انجام نشد',
+  AiDietTips: 'این دستور العمل توسط AI تولید می شود و فقط برای مرجع است.',
 }

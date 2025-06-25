@@ -483,4 +483,5 @@ export default {
   notes: 'Zavatra tokony hojerena',
   commentSuccessful: 'Comment mahomby',
   commentFailed: 'Tsy nahomby ny fanehoan-kevitra',
+  AiDietTips: "Ity fomba fiasa ity dia novokarin'i Ai ary natao ho an'ny fanondroana ihany.",
 }

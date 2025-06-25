@@ -483,4 +483,5 @@ export default {
   notes: 'Lucruri de remarcat',
   commentSuccessful: 'Comentează succesul',
   commentFailed: 'Comentariul a eșuat',
+  AiDietTips: 'Această rețetă este generată de AI și este doar pentru referință.',
 }

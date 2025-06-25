@@ -483,4 +483,5 @@ export default {
   notes: 'Nga mea hei tuhi',
   commentSuccessful: 'He angitu te korero',
   commentFailed: 'I rahua te korero',
+  AiDietTips: 'Ko tenei tohutao ka hangaia e AI me te korero anake.',
 }

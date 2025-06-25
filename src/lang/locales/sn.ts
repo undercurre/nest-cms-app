@@ -483,4 +483,5 @@ export default {
   notes: 'Zvinhu zvekucherekedza',
   commentSuccessful: 'Kutaura kwakabudirira',
   commentFailed: 'Kutaura kwakundikana',
+  AiDietTips: 'Iyi yekubheka inogadzirwa neAI uye ndeyekunongedzera chete.',
 }

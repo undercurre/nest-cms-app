@@ -483,4 +483,5 @@ export default {
   notes: 'Игътибар итәрлек әйберләр',
   commentSuccessful: 'Аңлатма бирү уңышлы',
   commentFailed: 'Аңлатма уңышсыз',
+  AiDietTips: 'Bu tarif AI tarafından üretilir ve yalnızca referans içindir.',
 }

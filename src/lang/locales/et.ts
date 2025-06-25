@@ -483,4 +483,5 @@ export default {
   notes: 'Asjad, mida märkida',
   commentSuccessful: 'Kommentaar edukas',
   commentFailed: 'Kommentaar ebaõnnestus',
+  AiDietTips: 'Selle retsepti genereerib AI ja on ainult viitamiseks.',
 }

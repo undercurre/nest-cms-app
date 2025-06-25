@@ -483,4 +483,5 @@ export default {
   notes: 'د یادولو لپاره شیان',
   commentSuccessful: 'څرګندونې بریالۍ',
   commentFailed: 'نظر ناکام شو',
+  AiDietTips: 'Ten przepis jest generowany przez AI i jest tylko w celach informacyjnych.',
 }

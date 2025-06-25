@@ -483,4 +483,5 @@ export default {
   notes: 'Coses a destacar',
   commentSuccessful: 'Comentari amb èxit',
   commentFailed: 'El comentari ha fallat',
+  AiDietTips: 'Aquesta recepta és generada per IA i només és de referència.',
 }

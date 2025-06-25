@@ -483,4 +483,5 @@ export default {
   notes: 'Hal pikeun dicatet',
   commentSuccessful: 'Mairan suksés',
   commentFailed: 'Komentar gagal',
+  AiDietTips: 'Resep ieu dirawat ku AI sareng nyaéta pikeun rujukan hungkul.',
 }

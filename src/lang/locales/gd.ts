@@ -483,4 +483,5 @@ export default {
   notes: 'Rudan ri chomharrachadh',
   commentSuccessful: 'Beachd soirbheachail',
   commentFailed: 'Beachd air fàiligeadh',
+  AiDietTips: 'Tha an reasabaidh seo air a chruthachadh le Ai agus tha e airson iomradh a-mhàin.',
 }

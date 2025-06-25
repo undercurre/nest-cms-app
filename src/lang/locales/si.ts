@@ -483,4 +483,5 @@ export default {
   notes: 'සටහන් කළ යුතු දේවල්',
   commentSuccessful: 'අදහස් සාර්ථකයි',
   commentFailed: 'අදහස් දැක්වීම අසාර්ථක විය',
+  AiDietTips: 'මෙම වට්ටෝරුව AI විසින් ජනනය වන අතර එය යොමු කිරීම සඳහා පමණි.',
 }

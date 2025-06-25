@@ -483,4 +483,5 @@ export default {
   notes: 'Ihe ị ga-ede',
   commentSuccessful: 'Ikwu ihe ịga nke ọma',
   commentFailed: 'Ikwu dara ada',
+  AiDietTips: 'Ntụziaka a na-emepụta site na AI ma bụrụ maka ntụle naanị.',
 }

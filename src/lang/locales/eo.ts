@@ -483,4 +483,5 @@ export default {
   notes: 'Aferoj',
   commentSuccessful: 'Komento sukcesa',
   commentFailed: 'Komento malsukcesis',
+  AiDietTips: 'Ĉi tiu recepto estas generita de AI kaj estas nur por referenco.',
 }

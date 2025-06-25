@@ -483,4 +483,5 @@ export default {
   notes: 'Ibintu byo kumenya',
   commentSuccessful: 'Igitekerezo cyatsinze',
   commentFailed: 'Igitekerezo cyatsinzwe',
+  AiDietTips: "Iyi resept ikorwa na AI kandi ni iy'amaberewe gusa.",
 }

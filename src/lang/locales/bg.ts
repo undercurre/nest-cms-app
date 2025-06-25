@@ -483,4 +483,5 @@ export default {
   notes: 'Неща, които трябва да се отбележи',
   commentSuccessful: 'Коментар успешен',
   commentFailed: 'Коментарът не успя',
+  AiDietTips: 'Тази рецепта се генерира от AI и е само за справка.',
 }

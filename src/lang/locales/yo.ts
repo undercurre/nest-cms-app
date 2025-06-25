@@ -483,4 +483,5 @@ export default {
   notes: 'Awọn nkan lati ṣe akiyesi',
   commentSuccessful: 'Ọrọìwòye aṣeyọri',
   commentFailed: 'Ọrọìwòye kuna',
+  AiDietTips: 'Ohunelo yii ti ipilẹṣẹ nipasẹ AI ati pe o wa fun itọkasi nikan.',
 }

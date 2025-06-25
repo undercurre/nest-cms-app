@@ -483,4 +483,5 @@ export default {
   notes: '注意事項',
   commentSuccessful: '評論成功',
   commentFailed: '評論失敗',
+  AiDietTips: '本菜譜為AI生成，僅供參考。',
 }

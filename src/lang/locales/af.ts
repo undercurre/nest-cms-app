@@ -483,4 +483,5 @@ export default {
   notes: 'Dinge om op te let',
   commentSuccessful: 'Kommentaar suksesvol',
   commentFailed: 'Opmerking het misluk',
+  AiDietTips: 'Hierdie resep word deur AI gegenereer en is slegs vir verwysing.',
 }

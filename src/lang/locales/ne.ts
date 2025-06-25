@@ -483,4 +483,5 @@ export default {
   notes: 'नोट गर्न चीजहरू',
   commentSuccessful: 'टिप्पणी सफल',
   commentFailed: 'टिप्पणी असफल भयो',
+  AiDietTips: 'यो नुस्खा AI द्वारा उत्पन्न गरिएको छ र सन्दर्भ मात्र हो।',
 }

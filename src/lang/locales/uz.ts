@@ -483,4 +483,5 @@ export default {
   notes: "Narsalar e'tiborga olinadi",
   commentSuccessful: 'Fikr muvaffaqiyatli',
   commentFailed: 'Izoh muvaffaqiyatsiz tugadi',
+  AiDietTips: 'یہ نسخہ AI کے ذریعہ تیار کیا گیا ہے اور یہ صرف حوالہ کے لئے ہے۔',
 }

@@ -483,4 +483,5 @@ export default {
   notes: 'Saachen ze notéieren',
   commentSuccessful: 'Kommentarer',
   commentFailed: 'Kommentar gescheitert',
+  AiDietTips: 'Dës Rezept gëtt vum Ai generéiert an ass nëmme fir Referenz.',
 }

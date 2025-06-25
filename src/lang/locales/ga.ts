@@ -483,4 +483,5 @@ export default {
   notes: 'Rudaí le tabhairt faoi deara',
   commentSuccessful: 'Trácht rathúil',
   commentFailed: 'Theip ar thrácht',
+  AiDietTips: 'Is é AI a ghineann an t -oideas seo agus tá sé le haghaidh tagartha amháin.',
 }

@@ -483,4 +483,5 @@ export default {
   notes: 'Mga Butang nga Mamatikdan',
   commentSuccessful: 'Malampuson ang Komento',
   commentFailed: 'Napakyas ang Komento',
+  AiDietTips: 'Kini nga resipe gihimo pinaagi sa AI ug alang lamang sa pakisayran.',
 }

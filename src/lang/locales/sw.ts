@@ -483,4 +483,5 @@ export default {
   notes: 'Mambo ya kuzingatia',
   commentSuccessful: 'Maoni yamefanikiwa',
   commentFailed: 'Maoni yalishindwa',
+  AiDietTips: 'Kichocheo hiki kinatolewa na AI na ni kwa kumbukumbu tu.',
 }

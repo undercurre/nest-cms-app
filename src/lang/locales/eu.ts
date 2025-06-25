@@ -483,4 +483,5 @@ export default {
   notes: 'Kontuan hartu beharreko gauzak',
   commentSuccessful: 'Iruzkina arrakastatsua',
   commentFailed: 'Iruzkina huts egin du',
+  AiDietTips: 'Errezeta hau AI-k sortzen du eta erreferentzia soilik da.',
 }

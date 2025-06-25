@@ -483,4 +483,5 @@ export default {
   notes: 'Dikkat edilmesi gereken şeyler',
   commentSuccessful: 'Başarılı yorum',
   commentFailed: 'Yorum başarısız oldu',
+  AiDietTips: 'Bu tarif AI tarafından üretilir ve yalnızca referans içindir.',
 }

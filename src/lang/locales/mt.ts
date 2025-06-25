@@ -483,4 +483,5 @@ export default {
   notes: 'Affarijiet li wieħed jinnota',
   commentSuccessful: "Kumment ta 'suċċess",
   commentFailed: 'Kumment falla',
+  AiDietTips: 'Din ir-riċetta hija ġġenerata mill-AI u hija għal referenza biss.',
 }

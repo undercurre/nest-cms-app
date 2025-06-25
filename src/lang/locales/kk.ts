@@ -483,4 +483,5 @@ export default {
   notes: 'Ескертетін заттар',
   commentSuccessful: 'Түсініктеме сәтті',
   commentFailed: 'Түсініктеме сәтсіз аяқталды',
+  AiDietTips: 'Бұл рецепт AI-мен жасалады және тек сілтеме жасау үшін.',
 }

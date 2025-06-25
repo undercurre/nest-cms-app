@@ -483,4 +483,5 @@ export default {
   notes: 'ਨੋਟ ਕਰਨ ਵਾਲੀਆਂ ਚੀਜ਼ਾਂ',
   commentSuccessful: 'ਟਿੱਪਣੀ ਸਫਲ',
   commentFailed: 'ਟਿੱਪਣੀ ਅਸਫਲ',
+  AiDietTips: 'ਇਹ ਵਿਅੰਜਨ ਏਆਈ ਦੁਆਰਾ ਤਿਆਰ ਕੀਤਾ ਗਿਆ ਹੈ ਅਤੇ ਸਿਰਫ ਸੰਦਰਭ ਲਈ ਹੈ.',
 }

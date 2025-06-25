@@ -483,4 +483,5 @@ export default {
   notes: 'မှတ်သားရန်အရာ',
   commentSuccessful: 'မှတ်ချက်ပေးပါ',
   commentFailed: 'မှတ်ချက်မအောင်မြင်ပါ',
+  AiDietTips: 'ဤစာရွက်ကို AI မှထုတ်လုပ်ပြီးရည်ညွှန်းသည်။',
 }

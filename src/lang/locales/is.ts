@@ -483,4 +483,5 @@ export default {
   notes: 'Hlutir sem þarf að hafa í huga',
   commentSuccessful: 'Athugasemd vel',
   commentFailed: 'Athugasemd mistókst',
+  AiDietTips: 'Þessi uppskrift er búin til af AI og er eingöngu til viðmiðunar.',
 }

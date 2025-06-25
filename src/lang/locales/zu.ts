@@ -483,4 +483,5 @@ export default {
   notes: 'Izinto okufanele uphawule',
   commentSuccessful: 'Beka amazwana',
   commentFailed: 'Amazwana wehlulekile',
+  AiDietTips: 'Le iresiphi ikhiqizwa yi-AI futhi isereferensi kuphela.',
 }

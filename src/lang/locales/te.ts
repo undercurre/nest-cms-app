@@ -483,4 +483,5 @@ export default {
   notes: 'గమనించవలసిన విషయాలు',
   commentSuccessful: 'వ్యాఖ్య విజయవంతమైంది',
   commentFailed: 'వ్యాఖ్య విఫలమైంది',
+  AiDietTips: 'ఈ రెసిపీ AI చేత ఉత్పత్తి అవుతుంది మరియు ఇది సూచన కోసం మాత్రమే.',
 }

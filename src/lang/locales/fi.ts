@@ -483,4 +483,5 @@ export default {
   notes: 'Asiat huomataan',
   commentSuccessful: 'Kommentoida onnistunut',
   commentFailed: 'Kommentti epäonnistui',
+  AiDietTips: 'Tätä reseptiä luodaan AI ja se on vain viite.',
 }

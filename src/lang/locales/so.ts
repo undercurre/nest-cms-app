@@ -483,4 +483,5 @@ export default {
   notes: 'Waxyaabaha la xuso',
   commentSuccessful: 'Faallo guul',
   commentFailed: 'Faallo faallo',
+  AiDietTips: 'Cuntadani waxaa soo saaray AI waxaana loo tixraacayaa kaliya.',
 }

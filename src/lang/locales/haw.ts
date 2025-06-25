@@ -483,4 +483,5 @@ export default {
   notes: 'Mea e pono ai',
   commentSuccessful: 'Kōkua kūleʻa',
   commentFailed: 'ʻAʻole hiki',
+  AiDietTips: 'Hoʻokumuʻia kēiaʻano hana e AI a no ka mea e pili wale ana.',
 }

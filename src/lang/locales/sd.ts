@@ -483,4 +483,5 @@ export default {
   notes: 'نوٽ ڪرڻ جون شيون',
   commentSuccessful: 'تبصرو ڪامياب',
   commentFailed: 'تبصرو ناڪام ٿيو',
+  AiDietTips: 'اهو نسخو اي آئي پاران پيدا ٿيل آهي ۽ صرف حوالي لاء آهي.',
 }

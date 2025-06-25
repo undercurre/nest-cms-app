@@ -483,4 +483,5 @@ export default {
   notes: 'Những điều cần lưu ý',
   commentSuccessful: 'Nhận xét thành công',
   commentFailed: 'Nhận xét thất bại',
+  AiDietTips: 'Công thức này được tạo ra bởi AI và chỉ để tham khảo.',
 }

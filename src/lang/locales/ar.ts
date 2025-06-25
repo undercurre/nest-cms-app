@@ -483,4 +483,5 @@ export default {
   notes: 'أشياء يجب ملاحظتها',
   commentSuccessful: 'التعليق ناجح',
   commentFailed: 'فشل التعليق',
+  AiDietTips: 'يتم إنشاء هذه الوصفة بواسطة منظمة العفو الدولية وهي للرجوع إليها فقط.',
 }

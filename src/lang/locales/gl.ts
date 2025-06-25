@@ -483,4 +483,5 @@ export default {
   notes: 'Cousas a notar',
   commentSuccessful: 'Comentario exitoso',
   commentFailed: 'Fallou o comentario',
+  AiDietTips: 'Esta receita é xerada por AI e só é para referencia.',
 }

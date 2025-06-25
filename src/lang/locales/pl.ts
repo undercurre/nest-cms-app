@@ -483,4 +483,5 @@ export default {
   notes: 'Rzeczy do odnotowania',
   commentSuccessful: 'Komentarz odnoszący sukcesy',
   commentFailed: 'Komentarz nie powiódł się',
+  AiDietTips: 'Ten przepis jest generowany przez AI i jest tylko w celach informacyjnych.',
 }

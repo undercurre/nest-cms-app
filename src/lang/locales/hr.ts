@@ -483,4 +483,5 @@ export default {
   notes: 'Stvari koje treba napomenuti',
   commentSuccessful: 'Komentirajte uspješno',
   commentFailed: 'Komentar nije uspio',
+  AiDietTips: 'Ovaj recept generira AI i namijenjen je samo referenci.',
 }

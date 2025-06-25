@@ -483,4 +483,5 @@ export default {
   notes: 'Saker att notera',
   commentSuccessful: 'Kommentar framgångsrik',
   commentFailed: 'Kommentar misslyckades',
+  AiDietTips: 'Detta recept genereras av AI och är endast för referens.',
 }

@@ -61,6 +61,9 @@
           {{ item.noteNum }}. {{ item.description }}
         </div>
       </div>
+      <div class="text-12px text-center my-20px text-gray-300">
+        {{ $t('AiDietTips') }}
+      </div>
     </div>
     <CommentList ref="commentListRef" @comment-created="commentSubmit" />
     <div

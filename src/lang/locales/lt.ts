@@ -483,4 +483,5 @@ export default {
   notes: 'Reikia atkreipti dėmesį',
   commentSuccessful: 'Komentuoti sėkmingai',
   commentFailed: 'Komentaras nepavyko',
+  AiDietTips: 'Šį receptą sukuria AI ir skirtas tik nuorodoms.',
 }

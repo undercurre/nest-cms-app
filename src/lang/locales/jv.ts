@@ -483,4 +483,5 @@ export default {
   notes: 'Barang sing kudu dicathet',
   commentSuccessful: 'Komentar Sukses',
   commentFailed: 'Komentar Gagal',
+  AiDietTips: 'Resep iki digawe dening AI lan mung kanggo referensi.',
 }

@@ -483,4 +483,5 @@ export default {
   notes: 'Izinto zokuqaphela',
   commentSuccessful: 'Izimvo ziyaphumelela',
   commentFailed: 'Inkcazo ayiphumelelanga',
+  AiDietTips: 'Le ndlela yokupheka iveliswa yi-AI kwaye yenzelwe kuphela.',
 }

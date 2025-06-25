@@ -483,4 +483,5 @@ export default {
   notes: 'Чизҳо',
   commentSuccessful: 'Шарҳ муваффақ',
   commentFailed: 'Шарҳ ноком шуд',
+  AiDietTips: 'Ин дорухат аз ҷониби AI тавлид мешавад ва танҳо барои истинод аст.',
 }

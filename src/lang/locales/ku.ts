@@ -483,4 +483,5 @@ export default {
   notes: 'Tiştên ku bala xwe didin',
   commentSuccessful: 'Comment Serkeftin',
   commentFailed: 'Şîrove têk çû',
+  AiDietTips: 'Ev Recipe ji hêla AI ve tête çêkirin û tenê ji bo referansê ye.',
 }

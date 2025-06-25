@@ -483,4 +483,5 @@ export default {
   notes: 'Qeyd edəcək şeylər',
   commentSuccessful: 'Şərh uğurlu',
   commentFailed: 'Şərh uğursuz oldu',
+  AiDietTips: 'Bu resept AI tərəfindən yaradılır və yalnız istinad üçündür.',
 }

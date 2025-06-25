@@ -483,4 +483,5 @@ export default {
   notes: 'የሚመለከቱ ነገሮች',
   commentSuccessful: 'አስተያየት ስኬታማ',
   commentFailed: 'አስተያየት አልተሳካም',
+  AiDietTips: 'ይህ የምግብ አሰራር በአይን የተገኘ ሲሆን ለማጣቀሻ ብቻ ነው.',
 }
