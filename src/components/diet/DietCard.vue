@@ -5,7 +5,7 @@
   >
     <img class="w-full h-130px" :src="url" />
 
-    <div class="h-49px bg-#fff px-8px py-6px flex flex-col justify-between">
+    <div class="bg-#fff px-8px py-6px flex flex-col justify-between">
       <p class="font-bold text-14px leading-21px text-#000 truncate">{{ title }}</p>
       <div class="flex text-12px">
         <div class="flex items-center mr-8px">
