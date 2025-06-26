@@ -1,23 +1,34 @@
-// src/lang/locales.ts
-const messages = {}
-
-// 动态导入所有语言文件
-const languageFiles: Record<string, { default: Record<string, string> }> = import.meta.glob('@/lang/locales/*.ts', { eager: true })
-
-for (const path in languageFiles) {
-  // 从文件名中提取语言代码
-  const langCodeMatch = path.match(/\/([^/]+)\.ts$/)
-  if (!langCodeMatch) continue
-  const langCode = langCodeMatch[1]
-  messages[langCode] = languageFiles?.[path]?.default
+import en from '@/lang/locales/en'
+import zh from '@/lang/locales/zh'
+import { createI18n } from 'vue-i18n'
+const messages = {
+  zh,
+  en,
 }
 
-const il8nOptions = {
-    locale: 'en',
-    fallbackLocale: 'en',
-    messages,
-    legacy: false,
-    globalInjection: true,
+// 动态加载语言文件的函数
+export async function loadLocaleMessages(locale) {
+  // 如果语言已加载，直接返回
+  if (i18n.global.availableLocales.includes(locale)) return
+
+  try {
+    // 动态导入语言文件（Webpack/Vite 会拆分 chunk）
+    const messages = await import(`@/lang/locales/${locale}.ts`)
+    i18n.global.setLocaleMessage(locale, messages.default || messages)
+    return true
+  } catch (error) {
+    console.error(`Failed to load ${locale} messages:`, error)
+    return false
+  }
 }
 
-export default il8nOptions
+const i18nOptions = {
+  locale: 'en',
+  fallbackLocale: 'en',
+  messages,
+  legacy: false,
+  globalInjection: true,
+}
+const i18n = createI18n(i18nOptions)
+
+export default i18n

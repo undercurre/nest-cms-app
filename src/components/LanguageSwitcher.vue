@@ -7,6 +7,7 @@
 <script lang="ts" setup>
 import { useLanguageList } from '@/hooks/useLanguageList'
 import { appLang } from '@/lang/app-lang'
+import { loadLocaleMessages } from '@/lang/locales'
 import { onMounted, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 
@@ -16,7 +17,8 @@ const currentLocale = ref<string>(locale.value)
 
 const options = ref<{ text: string; value: string }[]>([])
 const { languageList, getLanguageList } = useLanguageList()
-const changeLanguage = (e) => {
+const changeLanguage = async (e) => {
+  await loadLocaleMessages(e)
   locale.value = e
   localStorage.setItem('locale', locale.value)
   // 手动切换后，页面刷新就取切换的语言

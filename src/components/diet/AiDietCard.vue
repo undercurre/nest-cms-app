@@ -9,12 +9,14 @@
         <div class="flex items-center mr-8px" @click.stop="handleLike">
           <van-icon name="like-o" v-if="!isLiked" class="mr-2px" />
           <van-icon name="like" v-else color="#ff6b6b" class="mr-2px" />
-          <span class="text-[--vt-c-text-light-2]">{{ likeCount ? likeCount : $t('like') }}</span>
+          <span class="text-[--vt-c-text-light-2] truncate">{{
+            likeCount ? likeCount : $t('like')
+          }}</span>
         </div>
         <div class="flex items-center">
           <van-icon name="comment-o" v-if="!isCommented" class="mr-2px" />
           <van-icon name="comment" v-else color="#ff6b6b" class="mr-2px" />
-          <span class="text-[--vt-c-text-light-2]">{{
+          <span class="text-[--vt-c-text-light-2] truncate">{{
             commentCount ? commentCount : $t('comment')
           }}</span>
         </div>

@@ -1,17 +1,15 @@
 import './assets/main.css'
 
-import i18nOptions from '@/lang/locales'
+import i18n from '@/lang/locales'
 import { createPinia } from 'pinia'
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 import { createApp } from 'vue'
-import { createI18n } from 'vue-i18n'
 
 import App from './App.vue'
 import router from './router'
 
-import 'virtual:uno.css'
 import 'vant/es/toast/style'
-const i18n = createI18n(i18nOptions)
+import 'virtual:uno.css'
 const app = createApp(App)
 
 const pinia = createPinia()
