@@ -484,5 +484,6 @@ export default {
   commentSuccessful: 'Impendulo ithumelwe ngempumelelo',
   commentFailed: 'Kukhona ingxaki ekuthumeni impendulo',
   AiDietTips: 'Le resipisi yakhiwe yi-AI futhi kusetshenziselwe nje njengomqondiso.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips: 'Akukho ma-resipisi ahlobene, sizozivuselela ngeminye kamuva, lihloniphe!',
 }

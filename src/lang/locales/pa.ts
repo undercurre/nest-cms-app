@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'ਟਿੱਪਣੀ ਸਫਲ',
   commentFailed: 'ਟਿੱਪਣੀ ਅਸਫਲ',
   AiDietTips: 'ਇਹ ਵਿਅੰਜਨ ਏਆਈ ਦੁਆਰਾ ਤਿਆਰ ਕੀਤਾ ਗਿਆ ਹੈ ਅਤੇ ਸਿਰਫ ਸੰਦਰਭ ਲਈ ਹੈ.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'ਇੱਥੇ ਕੋਈ ਸਬੰਧਤ ਪਕਵਾਨਾ ਨਹੀਂ ਹਨ, ਅਸੀਂ ਭਵਿੱਖ ਵਿੱਚ ਹੋਰ ਅਪਡੇਟ ਕਰਾਂਗੇ, ਇਸ ਲਈ ਬਣੇ ਰਹੋ~',
 }

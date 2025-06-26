@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'კომენტარი წარმატებით',
   commentFailed: 'კომენტარი ვერ მოხერხდა',
   AiDietTips: 'ეს რეცეპტი წარმოიქმნება AI-ს მიერ და მხოლოდ მითითებისთვისაა.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'არ არსებობს დაკავშირებული რეცეპტები, მომავალში უფრო მეტს განვაახლებთ, ასე რომ დარჩით~',
 }

@@ -484,5 +484,6 @@ export default {
   commentSuccessful: 'Аңлатма бирү уңышлы',
   commentFailed: 'Аңлатма уңышсыз',
   AiDietTips: 'Bu tarif AI tarafından üretilir ve yalnızca referans içindir.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips: 'Бәйләнешле рецептлар юк, киләчәктә күбрәк яңарырбыз, шуңа күрә көйләгез~',
 }

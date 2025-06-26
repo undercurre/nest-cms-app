@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Kommentar klappt!',
   commentFailed: 'Kommentar mislukket!',
   AiDietTips: 'Dës Rezept is vun en AI gennereerd un serveert allinich as Referens.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'Et sikke keen relateert Rezept. Mir wullen noch mear late updaten, wachts oant!',
 }

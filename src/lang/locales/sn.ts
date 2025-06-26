@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Kutaura kwakabudirira',
   commentFailed: 'Kutaura kwakundikana',
   AiDietTips: 'Iyi yekubheka inogadzirwa neAI uye ndeyekunongedzera chete.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'Iko hakuna mabhureki akarondedzera, isu tichavandudza yakawanda mune ramangwana, saka garai tuned~',
 }

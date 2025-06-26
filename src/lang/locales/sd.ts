@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'تبصرو ڪامياب',
   commentFailed: 'تبصرو ناڪام ٿيو',
   AiDietTips: 'اهو نسخو اي آئي پاران پيدا ٿيل آهي ۽ صرف حوالي لاء آهي.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'هتي لاڳاپيل ترڪيبون نه آهن، اسان مستقبل ۾ وڌيڪ تازه ڪاري ڪنداسين، تنهن ڪري رهو~',
 }

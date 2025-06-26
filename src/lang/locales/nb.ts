@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Kommentaren ble sendt',
   commentFailed: 'Kunne ikke sende kommentaren',
   AiDietTips: 'Denne oppskriften er generert av AI og er kun ment som en referanse.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'Det finnes ingen relevante oppskrifter. Vi vil oppdatere med flere senere, så hold utkikk!',
 }

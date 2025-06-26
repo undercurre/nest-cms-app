@@ -484,5 +484,6 @@ export default {
   commentSuccessful: 'Komentuoti sėkmingai',
   commentFailed: 'Komentaras nepavyko',
   AiDietTips: 'Šį receptą sukuria AI ir skirtas tik nuorodoms.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips: 'Nėra susijusių receptų, ateityje atnaujinsime daugiau, todėl stebėkite~',
 }

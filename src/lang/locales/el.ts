@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Σχόλιο επιτυχημένο',
   commentFailed: 'Απέτυχε',
   AiDietTips: 'Αυτή η συνταγή παράγεται από το AI και είναι μόνο για αναφορά.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'Δεν υπάρχουν σχετικές συνταγές, θα ενημερώσουμε περισσότερα στο μέλλον, οπότε μείνετε συντονισμένοι~',
 }

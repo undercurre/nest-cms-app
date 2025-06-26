@@ -484,5 +484,6 @@ export default {
   commentSuccessful: 'Kayna kayna furu da bana',
   commentFailed: 'Kayna kayna furu da sona',
   AiDietTips: 'Tiyara yi aye AI gendé, tî aye só mbiri kpe.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips: 'Aye tiyara yi gbé kpe, a mboka gendé aye mbiri, só aye tî ngbétè!',
 }

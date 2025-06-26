@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Comente bem -sucedido',
   commentFailed: 'O comentário falhou',
   AiDietTips: 'Esta receita é gerada pela IA e é apenas para referência.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'Não há receitas relacionadas, atualizaremos mais no futuro, então fique atento~',
 }

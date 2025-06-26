@@ -484,5 +484,6 @@ export default {
   commentSuccessful: 'মতামত সফলভাবে পাঠানো হয়েছে',
   commentFailed: 'মতামত পাঠানো ব্যর্থ হয়েছে',
   AiDietTips: 'ইয়াকৈ ৰেসিপি AI দ্বাৰা উৎপন্ন হৈছে, কেবল তত্ত্বাবধানৰ উদ্দেশ্যত।',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips: 'সম্পৰ্কিত ৰেসিপি নাই, আমি পিছতৰত অধিক আপডেট কৰিব, প্লিজ ৰজি থাকুন~',
 }

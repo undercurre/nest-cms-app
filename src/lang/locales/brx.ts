@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'सम्बाद सफल भय',
   commentFailed: 'सम्बाद असफल भय',
   AiDietTips: 'आइ एसि बेलानाय ए AI दिमा सनाय, सारथक बायलानाय गोनि सावदान हाबा माय।',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'गोनि बेलानाय आइ मिथि नाहोनि, हाबा माय बिथि सोनाय बेलानाय दिमा हायाय दि माय, सावदान हाबा माय।',
 }

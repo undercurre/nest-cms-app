@@ -484,6 +484,7 @@ export default {
   commentSuccessful: "Kumment ta 'suċċess",
   commentFailed: 'Kumment falla',
   AiDietTips: 'Din ir-riċetta hija ġġenerata mill-AI u hija għal referenza biss.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     "M'hemm l-ebda riċetti relatati, aħna se naġġornaw aktar fil-futur, għalhekk nibqgħu sintonizzati~",
 }

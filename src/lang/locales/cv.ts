@@ -484,5 +484,6 @@ export default {
   commentSuccessful: 'Пӗрӗлӗх хушнӑ',
   commentFailed: 'Пӗрӗлӗх хальлӗхе',
   AiDietTips: 'Анны меню AI лӗ кӗрӑҫӗ, шӑлла тӑхар кӑйна.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips: 'Гӑнжа махкӑллелле меню дӗ, бахьла кӗрӑҫӗ йарам дӑхьар, цӑна дӑрай!',
 }

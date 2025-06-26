@@ -484,5 +484,6 @@ export default {
   commentSuccessful: 'Munay allin yapasqa',
   commentFailed: 'Munay allin yapayta manaraqmi',
   AiDietTips: 'Iyi resipisi AI gahapina qabeenya dhaqan qamani.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips: 'Resipisi aangoo qallanqa, biraan biraan kan dhaqan chaytani, qariypay!',
 }

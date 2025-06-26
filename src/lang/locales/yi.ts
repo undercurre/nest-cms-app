@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'באַמערקונגען',
   commentFailed: 'קאָמענטאַר ניט אַנדערש',
   AiDietTips: 'דער רעצעפּט איז דזשענערייטאַד דורך AI און איז בלויז פֿאַר דערמאָנען.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'עס זענען קיין פֿאַרבונדענע רעסאַפּיז, מיר וועלן דערהייַנטיקן מער אין דער צוקונפֿט, אַזוי בלייַבן טונד~',
 }

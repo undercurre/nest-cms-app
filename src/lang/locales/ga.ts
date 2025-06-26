@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Trácht rathúil',
   commentFailed: 'Theip ar thrácht',
   AiDietTips: 'Is é AI a ghineann an t -oideas seo agus tá sé le haghaidh tagartha amháin.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'Níl aon oidis ghaolmhara ann, déanfaimid níos mó a nuashonrú amach anseo, mar sin fan tiúnta~',
 }

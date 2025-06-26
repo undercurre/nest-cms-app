@@ -484,5 +484,6 @@ export default {
   commentSuccessful: 'Komentēt veiksmīgi',
   commentFailed: 'Komentārs neizdevās',
   AiDietTips: 'Šo recepti ģenerē AI, un tā ir paredzēta tikai atsaucei.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips: 'Nav saistītu recepšu, mēs nākotnē atjaunināsim vairāk, tāpēc sekojiet līdzi~',
 }

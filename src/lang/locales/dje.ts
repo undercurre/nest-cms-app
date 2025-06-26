@@ -484,5 +484,6 @@ export default {
   commentSuccessful: 'Sharhi ya yi nasara',
   commentFailed: 'Sharhi ya gaza',
   AiDietTips: 'Wannan menyu an ƙirƙira shi ta AI, don kawai amfani da su azaman nassoshi.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips: 'Babu menyu masu dacewa, za mu ƙara sabunta ƙarin a gaba, jira!',
 }

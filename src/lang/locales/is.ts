@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Athugasemd vel',
   commentFailed: 'Athugasemd mistókst',
   AiDietTips: 'Þessi uppskrift er búin til af AI og er eingöngu til viðmiðunar.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'Það eru engar tengdar uppskriftir, við munum uppfæra meira í framtíðinni, svo fylgstu með~',
 }

@@ -484,5 +484,6 @@ export default {
   commentSuccessful: 'टिप्पणी सफलतापूर्वक की गई',
   commentFailed: 'टिप्पणी असफल रही',
   AiDietTips: 'यह व्यंजन AI द्वारा बनाया गया है, केवल संदर्भ के लिए।',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips: 'संबंधित कोई व्यंजन नहीं है, हम बाद में और अधिक अपडेट करेंगे, प्रतीक्षा करें~',
 }

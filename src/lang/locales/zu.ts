@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Beka amazwana',
   commentFailed: 'Amazwana wehlulekile',
   AiDietTips: 'Le iresiphi ikhiqizwa yi-AI futhi isereferensi kuphela.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'Azikho izindlela zokupheka ezihlobene, sizobuyekeza okuningi ngokuzayo, ngakho-ke hlala ubukele~',
 }

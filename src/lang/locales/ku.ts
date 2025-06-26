@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Comment Serkeftin',
   commentFailed: 'Şîrove têk çû',
   AiDietTips: 'Ev Recipe ji hêla AI ve tête çêkirin û tenê ji bo referansê ye.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'Di pêşerojê de, em ê di pêşerojê de bêtir neyên nûvekirin, ji ber vê yekê bimînin~',
 }

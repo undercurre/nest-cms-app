@@ -484,5 +484,6 @@ export default {
   commentSuccessful: 'Cummentari inviat cun sucès',
   commentFailed: 'Inviu del cummentari fallit',
   AiDietTips: 'Sta ricetis l’è generada da l’AI, serve solemaent com a referénza.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips: 'Nissun ricetis cunnessi, in futuri le sarei atualizate, aspetta~',
 }

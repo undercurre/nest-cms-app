@@ -484,5 +484,6 @@ export default {
   commentSuccessful: 'Rembiapo mba’éreko iwí',
   commentFailed: 'Rembiapo mba’éreko nã iwí',
   AiDietTips: 'I rembiapo ai aye AI, só aye só mbiri kpe.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips: 'Nã i rembiapo mba’éreko, a mboka gendé aye mbiri, só aye tî ngbétè!',
 }

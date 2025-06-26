@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'ମନ୍ତବ୍ୟ ସଫଳ ହୋଇଛି |',
   commentFailed: 'ମନ୍ତବ୍ୟ ବିଫଳ ହେଲା |',
   AiDietTips: 'ଏହି ରେସିପି ଆଇଙ୍କ ଦ୍ୱାରା ସୃଷ୍ଟି ହୁଏ ଏବଂ କେବଳ ରେଫରେନ୍ସ ପାଇଁ ଅଟେ |',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'ସେଠାରେ କ related ଣସି ସମ୍ବନ୍ଧୀୟ ରେସିପି ନାହିଁ, ଆମେ ଭବିଷ୍ୟତରେ ଅଧିକ ଅପଡେଟ୍ କରିବୁ, ତେଣୁ ସନ୍ନିବେଶ କର |~',
 }

@@ -485,6 +485,7 @@ export default {
   commentFailed: 'Na mouaʻi fakamatala',
   AiDietTips:
     'Ko e menu ʻi he aiʻai ʻenei naa hoko mai ʻi he AI, ʻoku naʻe naʻe fai mo e fakatatauʻanga fakatatauʻanga.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'ʻikai ke ʻi ai he menu fesiʻi, ʻoku taʻe tuku mai ʻi he menu ʻei he taimi ʻosi, totonu ʻi he ʻaʻonga!',
 }

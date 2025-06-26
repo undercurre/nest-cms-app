@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Komentář úspěšný',
   commentFailed: 'Komentář selhal',
   AiDietTips: 'Tento recept je generován AI a je pouze pro informaci.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'Neexistují žádné související recepty, v budoucnu budeme více aktualizovat, takže zůstaňte naladěni~',
 }

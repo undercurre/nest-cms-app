@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Ийгиликтүү комментарий',
   commentFailed: 'Комментарий ишке ашкан жок',
   AiDietTips: 'Бул рецепт ai тарабынан түзүлөт жана маалымдама үчүн гана.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'Эч кандай рецепттер жок, биз келечекте дагы бир жолу жаңыртып турабыз, ошондуктан жөндө~',
 }

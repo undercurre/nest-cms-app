@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'باھا مۇۋەپپەقىيەتلىك',
   commentFailed: 'باھا مەغلۇپ بولدى',
   AiDietTips: 'بۇ رېتسېپ AI تەرىپىدىن بارلىققا كەلگەن بولۇپ, پەقەت پايدىلىنىش ئۈچۈنلا ئۇچرايدۇ.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'مۇناسىۋەتلىك رېتسىپى يوق, كەلگۈسىدە تېخىمۇ كۆپ يېڭىلىنىمىز, شۇڭا داۋاملىق تۇرۇڭ~',
 }

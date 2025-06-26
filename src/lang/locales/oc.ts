@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Comentari enviat amb succès',
   commentFailed: "Fracàs de l'enviament del comentari",
   AiDietTips: 'Aquesta recepta es generada per una IA e serve sol com a referència.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     "Cap recepta relativa per moment. N'afegirem d'autres pòsteriòrament, esperatz!",
 }

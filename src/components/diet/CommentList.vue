@@ -99,7 +99,7 @@ const handleScroll = () => {
       (document.querySelector('#ai-diet-detail')?.clientHeight || 0) >=
     (document.querySelector('#ai-diet-detail')?.scrollHeight || 0) - 100
   ) {
-    getComments()
+    handleGetComments()
   }
 }
 const getComments = async () => {
@@ -110,9 +110,8 @@ const getComments = async () => {
     pageNo: pageConfig.value.pageNo,
     pageSize: pageConfig.value.pageSize,
   })
-  comments.value = [...comments.value, ...res.data.aiCookbookCommentList]
+  comments.value = [...comments.value, ...(res.data?.aiCookbookCommentList || [])]
   pageConfig.value.total = res.data.total
-  emits('comment-created', pageConfig.value.total)
   // 判断是否还有更多数据
   hasMoreData.value = pageConfig.value.total > comments.value.length
 
@@ -122,6 +121,8 @@ const getComments = async () => {
 
   isLoading.value = false
 }
+
+const handleGetComments = _.debounce(getComments, 250, { maxWait: 1000 })
 const showCommentInput = ref(false)
 const commentListInput = ref()
 const handleOpenCommentInput = () => {
@@ -150,12 +151,13 @@ const submitComment = async () => {
     isLoading.value = false
     hasMoreData.value = true
     comments.value = []
-    getComments()
+    handleGetComments()
     showToast(t('commentSuccessful'))
     setTimeout(() => {
       document.querySelector('#comment-list')?.scrollIntoView({
         behavior: 'smooth',
       })
+      emits('comment-created', pageConfig.value.total)
     }, 500)
   } catch (e) {
     console.log('e: ', e)
@@ -166,7 +168,7 @@ const handleSubmitComment = _.debounce(submitComment, 250, { maxWait: 1000 })
 watch(
   () => route.params.id,
   () => {
-    getComments()
+    handleGetComments()
 
     nextTick(() => {
       // 监听滚动

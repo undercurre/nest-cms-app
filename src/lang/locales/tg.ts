@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Шарҳ муваффақ',
   commentFailed: 'Шарҳ ноком шуд',
   AiDietTips: 'Ин дорухат аз ҷониби AI тавлид мешавад ва танҳо барои истинод аст.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'МЕГӮЗИШИ РОЙГОН НЕСТ, мо дар оянда бештар нав хоҳем шуд, бинобар ин рост бошед~',
 }

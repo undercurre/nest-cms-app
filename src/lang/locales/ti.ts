@@ -484,5 +484,6 @@ export default {
   commentSuccessful: 'ብሃሊ ተሳካእ',
   commentFailed: 'ብሃሊ ኣልተሳካእም',
   AiDietTips: 'ዚህ ምግብ መቅረብ AI ነው የተፈጠረው፣ ለማጣቀሻ ብቻ ነው።',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips: 'ምንጻሕ ምግብ መቅረብ የለም፣ በቀጣይነት ብዙዎችን እንደገና መዘግባት እንደማለን ያጠብቁ~',
 }

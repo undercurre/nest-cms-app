@@ -484,5 +484,6 @@ export default {
   commentSuccessful: 'التعليق ناجح',
   commentFailed: 'فشل التعليق',
   AiDietTips: 'يتم إنشاء هذه الوصفة بواسطة منظمة العفو الدولية وهي للرجوع إليها فقط.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips: 'لا توجد وصفات ذات صلة ، سنقوم بتحديث المزيد في المستقبل ، لذا ترقبوا ~',
 }

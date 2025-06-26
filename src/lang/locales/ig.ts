@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Ikwu ihe ịga nke ọma',
   commentFailed: 'Ikwu dara ada',
   AiDietTips: 'Ntụziaka a na-emepụta site na AI ma bụrụ maka ntụle naanị.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     "Enweghị ntụziaka ndị ọzọ metụtara, anyị ga-emelite ihe n'ọdịnihu, yabụ nọrọ na nlele~",
 }

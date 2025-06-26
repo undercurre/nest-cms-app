@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Sikeres megjegyzés',
   commentFailed: 'A megjegyzés sikertelen',
   AiDietTips: 'Ezt a receptet az AI generálja, és csak referenciaként szolgál.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'Nincsenek kapcsolódó receptek, a jövőben többet fogunk frissíteni, tehát maradj velünk~',
 }

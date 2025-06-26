@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Atussut ujarput angusaqarluartumik',
   commentFailed: 'Atussut ujarput angusaqarluartumik ilanngunneqarpoq',
   AiDietTips: 'Atortut allattorsimaffiat inuup AI qerniqqut, atussut allattorsimaffiat.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'Suli atortut allattorsimaffiat, illullu atussut allattorsimaffiat ilitsut, assanngitsoq!',
 }

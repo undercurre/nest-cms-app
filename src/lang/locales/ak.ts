@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Nkyerɛaseɛ a ɛyɛ',
   commentFailed: 'Nkyerɛaseɛ a ɛnyɛ',
   AiDietTips: 'Eyi nsaako a yie AI naa, yi merew ne mpo no. ',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'Eyi nsaako debiara, yee yee no, a yew frɛ mpo awɔ bɛbɔ baa, yɛfo nsa me ɔkyerɛ! ',
 }

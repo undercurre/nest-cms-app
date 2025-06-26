@@ -484,5 +484,6 @@ export default {
   commentSuccessful: 'Komen Wo Dɔ Wo',
   commentFailed: 'Komen Wo Fali',
   AiDietTips: 'Nyaɖuɖu ƒe AI kɔ́tɔ, só ngó mɔ́tɔ mɔ́kɔ.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips: 'Nyatakaka aɖeke meli haɖe o, wé kɔ́tɔ mɔ́tɔ tɛ́ tɛ́, só ngó tɔ́kɔ mbó!',
 }

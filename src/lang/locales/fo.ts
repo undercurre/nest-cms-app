@@ -484,5 +484,6 @@ export default {
   commentSuccessful: 'Athugasemd Tókst',
   commentFailed: 'Athugasemd Mistókst',
   AiDietTips: 'Denne matreiðing er útbúin af AI, ber bara viðmiðunarvirði.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips: 'Ingen tilheyrandi matreiðingar, við munum uppfæra fleiri seinna, vent eftir!',
 }

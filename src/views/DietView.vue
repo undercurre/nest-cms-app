@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { getUrlConcat } from '@/utils/index'
+import { getUrlConcat, isAllEnglish } from '@/utils/index'
+import _ from 'lodash'
 import { nextTick, onBeforeUnmount, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
@@ -36,8 +37,11 @@ const categoryId = ref<string | number | undefined>('')
 const { getCurrentCountryCode } = useCountryList()
 watch(
   () => keyword.value,
-  async () => {
+  async (newVal, oldVal) => {
     if (cookbookType.value === 'ai-cookbook') {
+      if (isAllEnglish(newVal) && (newVal?.length ?? 0) <= 2 && (oldVal ? oldVal.length : 0) < 2) {
+        return
+      }
       aiDietList.value = []
       category.value = []
       diet.value = []
@@ -48,7 +52,7 @@ watch(
       }
       isLoading.value = false
       hasMoreData.value = true
-      loadAiDietData()
+      handleLoadAiDietData()
     } else {
       getDiet()
     }
@@ -177,7 +181,7 @@ const handleScroll = () => {
   const { scrollTop, scrollHeight, clientHeight } = listRef.value
   // 当滚动到距离底部 100px 时加载更多数据
   if (scrollTop + clientHeight >= scrollHeight - 100) {
-    loadAiDietData()
+    handleLoadAiDietData()
   }
 }
 const loadAiDietData = async () => {
@@ -186,8 +190,14 @@ const loadAiDietData = async () => {
   const res = await getAiCookbookList({
     pageNo: pageConfig.value.pageNo,
     pageSize: pageConfig.value.pageSize,
-    cookbookName: keyword.value || undefined,
-    ingredient: keyword.value || undefined,
+    cookbookName:
+      isAllEnglish(keyword.value) && (keyword.value?.length ?? 0) <= 2
+        ? undefined
+        : keyword.value || undefined,
+    ingredient:
+      isAllEnglish(keyword.value) && (keyword.value?.length ?? 0) <= 2
+        ? undefined
+        : keyword.value || undefined,
     likeOrder: 'DESC',
     commentOrder: 'DESC',
     userId: userInfoStore.id,
@@ -223,6 +233,8 @@ const loadAiDietData = async () => {
     }
   })
 }
+
+const handleLoadAiDietData = _.debounce(loadAiDietData, 250, { maxWait: 1000 })
 const changeSide = async (item) => {
   if (item === 'ai-cookbook') {
     cookbookType.value = item
@@ -235,7 +247,7 @@ const changeSide = async (item) => {
     }
     isLoading.value = false
     hasMoreData.value = true
-    loadAiDietData()
+    handleLoadAiDietData()
   } else {
     cookbookType.value = ''
     aiDietList.value = []
@@ -252,7 +264,11 @@ onBeforeUnmount(() => {
 
 <template>
   <div class="w-full h-full flex flex-col items-center">
-    <van-search class="w-full" v-model="keyword" :placeholder="$t('searchForRecipes')" />
+    <van-search
+      class="w-full"
+      v-model="keyword"
+      :placeholder="cookbookType ? $t('searchForRecipesAndIngredients') : $t('searchForRecipes')"
+    />
     <SideTabList @changeSide="changeSide">
       <div class="w-78vw">
         <TabList

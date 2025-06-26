@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Komentarz wuspěšnje dodaś',
   commentFailed: 'Komentarz nje dodaś',
   AiDietTips: 'Ten recept wu AI generěrowany jo, jenako za rěferencju.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'Žedne powiązane recepty njejsu, my bůdźeme wotkryjowe wěcej akutalizować, prosim za čekanje~',
 }

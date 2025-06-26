@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Комментарий успешно',
   commentFailed: 'Комментарий не удался',
   AiDietTips: 'Этот рецепт генерируется ИИ и только для справки.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'Связанных рецептов нет, мы будем обновлять больше в будущем, так что следите за обновлениями~',
 }

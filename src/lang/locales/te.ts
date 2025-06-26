@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'వ్యాఖ్య విజయవంతమైంది',
   commentFailed: 'వ్యాఖ్య విఫలమైంది',
   AiDietTips: 'ఈ రెసిపీ AI చేత ఉత్పత్తి అవుతుంది మరియు ఇది సూచన కోసం మాత్రమే.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'సంబంధిత వంటకాలు లేవు, భవిష్యత్తులో మేము మరింత అప్‌డేట్ చేస్తాము, కాబట్టి వేచి ఉండండి~',
 }

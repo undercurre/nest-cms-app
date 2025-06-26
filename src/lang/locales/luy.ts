@@ -484,5 +484,6 @@ export default {
   commentSuccessful: 'Maoni yamewasilishwa kikamilifu',
   commentFailed: 'Kutuma maoni kimekosa',
   AiDietTips: 'Eno n’kola ebya AI kola, kosala na ntango kosala.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips: 'Tebe na n’kola ebya nzela, tuba kosala na mboka mpe mingi, mbote mokili!',
 }

@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'टिप्पणी सफलतापूर्वक जमा हो गई',
   commentFailed: 'टिप्पणी जमा करने में असफलता',
   AiDietTips: 'यह रेसिपी AI द्वारा बनाई गई है, केवल संदर्भ के लिए।',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'कोई संबंधित रेसिपी नहीं है, हम बाद में और अधिक अपडेट करेंगे, कृपया प्रतीक्षा करें~',
 }

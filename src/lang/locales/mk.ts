@@ -484,5 +484,6 @@ export default {
   commentSuccessful: 'Коментирајте успешно',
   commentFailed: 'Коментарот не успеа',
   AiDietTips: 'Овој рецепт е генериран од АИ и е само за повикување.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips: 'Нема поврзани рецепти, ќе ажурираме повеќе во иднина, затоа останете во тек~',
 }

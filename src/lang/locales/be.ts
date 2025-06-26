@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Каментар паспяховы',
   commentFailed: 'Каментар не атрымаўся',
   AiDietTips: 'Гэты рэцэпт генеруецца AI і прызначаны толькі для даведкі.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'У будучыні няма адпаведных рэцэптаў, мы будзем абнаўляць больш, таму сачыце за навінамі~',
 }

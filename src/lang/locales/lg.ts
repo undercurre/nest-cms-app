@@ -484,5 +484,6 @@ export default {
   commentSuccessful: 'Kutanga kuyambirize',
   commentFailed: 'Kutanga kuyambirize n’okukundika',
   AiDietTips: 'Eno n’enkola ebyange ebyo AI akole, ekitendeera okufuna okubiri.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips: 'Tebirungi n’enkola, tuba kubulungi n’okufuna okubiri, twalafuna!',
 }

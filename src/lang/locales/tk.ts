@@ -484,5 +484,6 @@ export default {
   commentSuccessful: 'Teswir',
   commentFailed: 'Teswir şowsuz boldy',
   AiDietTips: 'Bu resept AI tarapyndan döredilýär we diňe salgylanma üçin.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips: 'Degişli resept ýok, geljekde has köp täzeleneris, şonuň üçin sazlaň~',
 }

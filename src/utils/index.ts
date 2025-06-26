@@ -17,3 +17,7 @@ export function isElementPartiallyInViewport(el) {
     rect.right > 0
   )
 }
+export function isAllEnglish(text) {
+  // 匹配所有非a-zA-Z的字符
+  return !/[^a-zA-Z]/.test(text)
+}

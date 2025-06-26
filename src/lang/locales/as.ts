@@ -484,5 +484,6 @@ export default {
   commentSuccessful: 'মন্তব্য সফল',
   commentFailed: 'মন্তব্য বিফল',
   AiDietTips: 'এই রেসিপিটি এআই দ্বারা তৈরি করা হয়েছে, এটি কেবল উল্লেখ্য হিসেবে বিবেচনা করুন।',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips: 'সম্পর্কিত রেসিপি নেই, আমরা পরবর্তীতে আরও অনেক কিছু আপডেট করব, অপেক্ষা করুন~',
 }

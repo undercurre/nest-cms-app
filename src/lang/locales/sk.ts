@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Komentár úspešný',
   commentFailed: 'Komentár zlyhal',
   AiDietTips: 'Tento recept je generovaný pomocou AI a je určený iba pre odkaz.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'Neexistujú žiadne súvisiace recepty, v budúcnosti budeme viac aktualizovať, takže zostaňte naladení~',
 }

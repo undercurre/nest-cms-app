@@ -484,5 +484,6 @@ export default {
   commentSuccessful: 'Kòmantè a siksè',
   commentFailed: 'Kòmantè a echwe',
   AiDietTips: 'Sa resèt la te pwodwi pa AI, li sèvi sèlman kòm referans.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips: 'Pa gen resèt ki gen rapò, nou pral mete ajou plis pita, tann ak atant~',
 }

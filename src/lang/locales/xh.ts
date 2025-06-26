@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Izimvo ziyaphumelela',
   commentFailed: 'Inkcazo ayiphumelelanga',
   AiDietTips: 'Le ndlela yokupheka iveliswa yi-AI kwaye yenzelwe kuphela.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'Akukho zipholo ezinxulumene noko, siya kuhlaziya ngakumbi kwixesha elizayo, ngoko ke hlalani~',
 }

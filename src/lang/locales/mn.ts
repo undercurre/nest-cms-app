@@ -484,5 +484,6 @@ export default {
   commentSuccessful: 'Тайлбар амжилттай болсон',
   commentFailed: 'Сэтгэгдэл амжилтгүй болсон',
   AiDietTips: 'Энэ жор нь AI-ээс үүсгэдэг бөгөөд зөвхөн лавлагаанд зориулагдсан болно.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips: 'Үүнтэй холбоотой жор байхгүй, бид ирээдүйд илүү их шинэчлэгдэх болно~',
 }

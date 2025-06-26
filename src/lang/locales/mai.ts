@@ -484,5 +484,6 @@ export default {
   commentSuccessful: 'टिप्पणी सफलतापूर्वक दर्ज हो गई',
   commentFailed: 'टिप्पणी दर्ज करने में असफलता',
   AiDietTips: 'एह मेनू AI द्वारा बनाइला गयल, केवल संदर्भ के लिए।',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips: 'कुनै संबंधित मेनू नहीं, हम बाद में और भी अपडेट करेंगे, कृपया प्रतीक्षा करें~',
 }

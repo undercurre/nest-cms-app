@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Faallo guul',
   commentFailed: 'Faallo faallo',
   AiDietTips: 'Cuntadani waxaa soo saaray AI waxaana loo tixraacayaa kaliya.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'Ma jiraan cuntooyin la xiriira, waxaan cusbooneysiin doonaa mustaqbalka inbadan, sidaa darteed la soco~',
 }

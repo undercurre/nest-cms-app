@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'تبصرہ کامیاب',
   commentFailed: 'تبصرہ ناکام ہوگیا',
   AiDietTips: 'یہ نسخہ AI کے ذریعہ تیار کیا گیا ہے اور یہ صرف حوالہ کے لئے ہے۔',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'اس سے متعلقہ ترکیبیں نہیں ہیں ، ہم مستقبل میں مزید تازہ کاری کریں گے ، لہذا ہم آہنگ رہیں~',
 }

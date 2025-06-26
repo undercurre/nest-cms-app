@@ -484,5 +484,6 @@ export default {
   commentSuccessful: '評論成功',
   commentFailed: '評論失敗',
   AiDietTips: '本菜譜為AI生成，僅供參考。',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips: '沒有相關的菜譜，我們將會在後續更新更多，敬請期待~',
 }

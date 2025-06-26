@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Comentariu esitosu',
   commentFailed: 'Comentariu fallíu',
   AiDietTips: "Esta receta s'ha xeneráu con Intelixencia Artificial, soamente pa referencia.",
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'Nun hai recetes relacionaes, actualizaremos más na so sequencia, esperen con ganespa!',
 }

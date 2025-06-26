@@ -484,5 +484,6 @@ export default {
   commentSuccessful: 'แสดงความคิดเห็นที่ประสบความสำเร็จ',
   commentFailed: 'ความคิดเห็นล้มเหลว',
   AiDietTips: 'สูตรนี้ถูกสร้างขึ้นโดย AI และใช้สำหรับการอ้างอิงเท่านั้น',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips: 'ไม่มีสูตรอาหารที่เกี่ยวข้องเราจะอัปเดตเพิ่มเติมในอนาคตดังนั้นคอยติดตาม~',
 }

@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Kubasha kwandiragire',
   commentFailed: 'Kubasha kwararire',
   AiDietTips: "Ebya okurya ebyino byakurikirizwa n'AI, byakoreka obwo mu gusubiza.",
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'Tihariho ebya okurya byomubare, tuba tumaze gutanga ebya okurya byebye muri ngeri, simbire...',
 }

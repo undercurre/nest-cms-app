@@ -484,5 +484,6 @@ export default {
   commentSuccessful: 'ꠔꠣ꠆ꠟꠌꠔꠞꠂ ꠓꠞꠣꠌꠝ꠆ꠞꠂ ꠓꠞꠂꠣꠁꠂ',
   commentFailed: 'ꠔꠣ꠆ꠟꠌꠔꠞꠂ ꠓꠞꠣꠌꠝ꠆ꠞꠂ ꠊ꠆ꠟꠂ',
   AiDietTips: 'एह पाककल्प AI-स जनरेट किरिए, सिर्फ संदर्भ के लिए।',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips: 'कोई संबंधित पाककल्प नहीं है, हम बाद में और अधिक अपडेट करेंगे, प्रतीक्षा करें~',
 }

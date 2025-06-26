@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Sharhi nasara',
   commentFailed: 'Sharhi ya kasa',
   AiDietTips: 'Wannan girke-girke yana haifar da AI kuma yana kan batun kawai.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'Babu wasu girke-girke masu dangantaka, za mu sabunta ƙarin a nan gaba, don haka ku dage~',
 }

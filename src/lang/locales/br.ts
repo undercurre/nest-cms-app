@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Kementadur a zo bet graet mat',
   commentFailed: 'Kementadur a zo bet fiallet',
   AiDietTips: 'An rekipe-mañ zo gentaet gant ar AI, da skrivañ un eusomp.',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     "N'eo ket ebet rekipeoù gantañ, a rait echu implijout eber eus ar c'hwistre, gavo e bremañ!",
 }

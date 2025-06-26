@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'འགྲེམས་བཤད་འགྲུབ་པ།',
   commentFailed: 'འགྲེམས་བཤད་མི་འགྲུབ།',
   AiDietTips: 'འདི་ཚོགས་ཚུལ་ AI གིས་རྫོང་བཞིན་ཡིན། རིགས་འཚོལ་གཅིག་ཡིན།',
+  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
   noAiDietDataTips:
     'འདི་ལ་བསྡུ་རུབ་མེད། ནང་སྐབས་ལ་གཞན་གྱི་ཚོགས་ཚུལ་ཞིག་བརྒྱུད་རྗེས་ཡོད། མཛེས་སྐབས་ཡིན།~',
 }
