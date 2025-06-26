@@ -191,6 +191,7 @@ const loadAiDietData = async () => {
     likeOrder: 'DESC',
     commentOrder: 'DESC',
     userId: userInfoStore.id,
+    clientType: 2,
   })
   aiDietList.value = [...aiDietList.value, ...(res.data.aiCookbookList || [])]
   pageConfig.value.total = res.data.total
