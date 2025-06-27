@@ -484,7 +484,8 @@ export default {
   commentSuccessful: 'Kōkua kūleʻa',
   commentFailed: 'ʻAʻole hiki',
   AiDietTips: 'Hoʻokumuʻia kēiaʻano hana e AI a no ka mea e pili wale ana.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    "Ka inoa inoa a me nā mea waiwai, ma kahi o 2 mau kiʻi i ka'ōlelo Pelekania",
   noAiDietDataTips:
     'ʻAʻohe mea e pili ana i nā mea e pili ana, e hoʻonui hou mākou i nā mea hou aku i ka wā e hiki mai ana, pēlā e noho ai~',
 }

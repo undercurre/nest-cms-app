@@ -484,7 +484,7 @@ export default {
   commentSuccessful: 'نظر با موفقیت ثبت شد',
   commentFailed: 'ثبت نظر ناموفق بود',
   AiDietTips: 'این دستور پخت توسط AI تولید شده است و صرفاً به عنوان مرجع است.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients: 'نوم دستور پخت و مواد لازم، حداقل ۲ نویسه انگلیسی',
   noAiDietDataTips:
     'دستور پخت مربوطه‌ای وجود ندارد، ما در آینده محتوای بیشتری را بروزرسانی خواهیم کرد، منتظر بمانید~',
 }

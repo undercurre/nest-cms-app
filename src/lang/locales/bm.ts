@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'dòònin kòròla bè',
   commentFailed: 'dòònin kòròla bè ka',
   AiDietTips: 'Iyi resipin a bè AI kè yè, n fò nògòn wulè.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'Mɛnu tɔgɔ nafɛnw, ɲin kɛse kɛse ka anglɛtɛri kɛse kɛse, ɲin kɛse kɛse kɛse kɛse 2 ɲin kɛse kɛse.',
   noAiDietDataTips: 'Resipin bè yè fògòn ma bè, a kè nònin fò nògòn kè yè, n fò kè dòònin!',
 }

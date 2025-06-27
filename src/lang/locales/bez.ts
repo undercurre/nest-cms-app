@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Maoni yamewekwa kikamilifu',
   commentFailed: 'Kukosa kutuma maoni',
   AiDietTips: 'Eyi pishi lyekele AI, liyeleke nyi yange.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'Jina la mapishi na viungo, angalau herufi mbili zote za Kiingereza.',
   noAiDietDataTips: 'Pali pishi lyekele, twanyo kusanyusha fye fye, tufyeshe!',
 }

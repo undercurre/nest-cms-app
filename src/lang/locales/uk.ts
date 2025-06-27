@@ -484,7 +484,8 @@ export default {
   commentSuccessful: 'Коментар успішного',
   commentFailed: 'Коментар не вдався',
   AiDietTips: 'Цей рецепт генерується AI і призначений лише для довідок.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'Назва рецепту та інгредієнти, щонайменше 2 символи англійською мовою',
   noAiDietDataTips:
     'Немає пов’язаних рецептів, ми будемо оновлювати більше в майбутньому, тому слідкуйте за новинами~',
 }

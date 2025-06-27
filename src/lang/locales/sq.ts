@@ -484,7 +484,8 @@ export default {
   commentSuccessful: 'Komentoni të suksesshëm',
   commentFailed: 'Komenti dështoi',
   AiDietTips: 'Kjo recetë gjenerohet nga AI dhe është vetëm për referencë.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'Emri i recetës dhe përbërësit, të paktën 2 karaktere në anglisht',
   noAiDietDataTips:
     'Nuk ka receta të lidhura, ne do të azhurnojmë më shumë në të ardhmen, kështu që qëndroni të ndigjuar~',
 }

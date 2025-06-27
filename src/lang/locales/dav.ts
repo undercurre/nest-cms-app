@@ -484,7 +484,7 @@ export default {
   commentSuccessful: 'Maoni yalifanikiwa',
   commentFailed: 'Maoni hayakufanikiwa',
   AiDietTips: "Ebya okurya ebyino byakurikirizwa n'AI, byakoreka obwo mu gusubiza.",
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients: 'Имя меню и ингредиенты, минимум 2 английских символа',
   noAiDietDataTips:
     'Emeere embeere etayi eyasikilile, tutakuta kutangaza zaidi nyuma, subiri tena~',
 }

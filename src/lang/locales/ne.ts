@@ -484,7 +484,7 @@ export default {
   commentSuccessful: 'टिप्पणी सफल',
   commentFailed: 'टिप्पणी असफल भयो',
   AiDietTips: 'यो नुस्खा AI द्वारा उत्पन्न गरिएको छ र सन्दर्भ मात्र हो।',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients: 'रेसिपी नाम र सामग्रीहरू, कम्तिमा 2 वर्णहरू अंग्रेजीमा',
   noAiDietDataTips:
     'त्यहाँ कुनै सम्बन्धित विधिहरू छैनन्, हामी भविष्यमा अधिक अपडेट गर्नेछौं, त्यसैले ट्यूट गर्नुहोस्~',
 }

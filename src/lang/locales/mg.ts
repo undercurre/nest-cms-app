@@ -484,7 +484,8 @@ export default {
   commentSuccessful: 'Comment mahomby',
   commentFailed: 'Tsy nahomby ny fanehoan-kevitra',
   AiDietTips: "Ity fomba fiasa ity dia novokarin'i Ai ary natao ho an'ny fanondroana ihany.",
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    "Ny anarana sy ny akora, farafahakeliny 2 litera amin'ny teny anglisy",
   noAiDietDataTips:
     "Tsy misy fomba fiasa mifandraika amin'izany, hanavao bebe kokoa amin'ny ho avy isika, ka mitohy hatrany~",
 }

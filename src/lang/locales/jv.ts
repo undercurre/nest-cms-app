@@ -484,7 +484,7 @@ export default {
   commentSuccessful: 'Komentar Sukses',
   commentFailed: 'Komentar Gagal',
   AiDietTips: 'Resep iki digawe dening AI lan mung kanggo referensi.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients: 'Jeneng resep lan bahan, paling ora 2 karakter ing basa Inggris',
   noAiDietDataTips:
     'Ora ana resep sing gegandhengan, kita bakal nganyari luwih akeh ing mangsa ngarep, dadi tetep dirungokake~',
 }

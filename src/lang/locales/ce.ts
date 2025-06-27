@@ -484,6 +484,6 @@ export default {
   commentSuccessful: 'Барах лаха тӀетоьхна',
   commentFailed: 'Барах лаха дац тӀетоьхна',
   AiDietTips: 'Энэ мерзак AI-ла йӀаллан, шӀала тахар кӀойна.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients: 'Рецепташ лаха',
   noAiDietDataTips: 'ГӀанжа махкӀаллелла мерзак дац, бахьла йӀалла йарам дахьар, цӀана дӀарай!',
 }

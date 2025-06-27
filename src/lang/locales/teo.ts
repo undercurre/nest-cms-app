@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Okaibik okulot emi okwiyelo',
   commentFailed: 'Okaibik okulot emi okwiyelo nyok',
   AiDietTips: 'Liro iyi itelezwa na AI, inyo me tic kpe.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'Amiro nyi ebelet na obuor, inyangi ebyo eburu English emi yeno maber nyaka 2',
   noAiDietDataTips: 'Emeto liro lina, turakwena liro nyikinyi dala, ongera umerekeze!',
 }

@@ -484,7 +484,7 @@ export default {
   commentSuccessful: 'Comentário enviado com sucesso',
   commentFailed: 'Falha ao enviar o comentário',
   AiDietTips: 'Sta receita foi xerada por AI, serve só como referência.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients: 'Nóm di menu i ingridientu, mínimo 2 caráter ingles.',
   noAiDietDataTips:
     'Nha nenguma receita relacionada, vamós atualizá mais no futuro, agarda com expectativa~',
 }

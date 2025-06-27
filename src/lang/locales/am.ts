@@ -484,6 +484,6 @@ export default {
   commentSuccessful: 'አስተያየት ስኬታማ',
   commentFailed: 'አስተያየት አልተሳካም',
   AiDietTips: 'ይህ የምግብ አሰራር በአይን የተገኘ ሲሆን ለማጣቀሻ ብቻ ነው.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients: 'የምግብ አሰራር ስም እና ንጥረ ነገሮች, ቢያንስ 2 ቁምፊዎች በእንግሊዝኛ ቢያንስ 2 ቁምፊዎች',
   noAiDietDataTips: 'ምንም ተዛማጅ የምግብ አፕሌቶች የሉም, ለወደፊቱ የበለጠ እናዘምነዋለን, ስለዚህ ተስተካክለው ይቆዩ ~',
 }

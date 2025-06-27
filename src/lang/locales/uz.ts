@@ -484,7 +484,7 @@ export default {
   commentSuccessful: 'Fikr muvaffaqiyatli',
   commentFailed: 'Izoh muvaffaqiyatsiz tugadi',
   AiDietTips: "Ushbu retseptni AI tomonidan yaratilgan va faqat ma'lumot uchun mo'ljallangan.",
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients: 'Retsept nomi va ingredientlar, ingliz tilida kamida 2 ta belgi',
   noAiDietDataTips:
     "Hech qanday retseptlar yo'q, biz kelajakda ko'proq yangilanamiz, shuning uchun tik turing~",
 }

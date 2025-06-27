@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'মন্তব্য সফল হয়েছে',
   commentFailed: 'মন্তব্য সফল নহয়েছে',
   AiDietTips: 'এই রেসিপিটি AI দ্বারা তৈরি করা হয়েছে, শুধুমাত্র তত্ত্বাবধানের জন্য।',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'বোতাইনামক বাক বোতাইবাহী বিহত্তা, বাংলাদেশী আখরত বিহত্তা দুইটাই বা বেশি হোন।',
   noAiDietDataTips: 'সম্পর্কিত কোনও রেসিপি নেই, আমরা পরবর্তীতে আরও আপডেট করব, অপেক্ষা করুন~',
 }

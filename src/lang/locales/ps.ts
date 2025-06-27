@@ -484,7 +484,7 @@ export default {
   commentSuccessful: 'څرګندونې بریالۍ',
   commentFailed: 'نظر ناکام شو',
   AiDietTips: 'دا ترکیب د AI لخوا تولید شوی او یوازې د ریفرډ لپاره دی.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients: 'نوم او اجزاء په (لږترلږه 2 حروف په انګلیسي کې',
   noAiDietDataTips:
     'هیڅ اړونده ترکیبونه شتون نلري، موږ به په راتلونکي کې نور تازه معلومات تازه کړو، نو پاتې اوسئ~',
 }

@@ -484,7 +484,7 @@ export default {
   commentSuccessful: 'Түсініктеме сәтті',
   commentFailed: 'Түсініктеме сәтсіз аяқталды',
   AiDietTips: 'Бұл рецепт AI-мен жасалады және тек сілтеме жасау үшін.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients: 'Рецепт атауы және ингредиенттері, кемінде 2 таңбадан кем емес',
   noAiDietDataTips:
     'Байланысты рецепттер жоқ, біз болашақта көбірек жаңартамыз, сондықтан реттеліңіз~',
 }

@@ -484,7 +484,8 @@ export default {
   commentSuccessful: 'Үлэһитэр ааптардаан кубаттаах',
   commentFailed: 'Үлэһитэр ааптардаан кубатыллаах',
   AiDietTips: 'Бул таҥыл AI-с ырытыллаах, кэпсэнэр эрдэстэр киирдэ.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'Таҥыллардын ааттары уонна аһылык компоненнара, аанглис кылаастаах кэпсэнэр мэҥэ 2 биир',
   noAiDietDataTips:
     'Үстэҕэ тутуох таҥыл суох, биир дараахтаахта кэпсэнэр таҥыл ылбытыар, таҥыллары көмөккөр!',
 }

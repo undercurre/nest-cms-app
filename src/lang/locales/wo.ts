@@ -484,6 +484,6 @@ export default {
   commentSuccessful: 'Rëw naa bëtt',
   commentFailed: 'Rëw naa ñépp',
   AiDietTips: 'Rëset yi aye AI gendé, tî aye só mbiri kpe.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients: 'Nàkk yi rëset na kobé, amul ak mbir 2 yi motu ngbétè Anglèè',
   noAiDietDataTips: 'Aye rëset yi gbé kpe, a mboka gendé aye rëset yi, só aye tî ngbétè!',
 }

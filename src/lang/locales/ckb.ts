@@ -484,7 +484,7 @@ export default {
   commentSuccessful: 'ڕاویەوە سەرکەوتوو بوو',
   commentFailed: 'ڕاویەوە نەسەرکەوتوو بوو',
   AiDietTips: 'مەنۆوەکە لەلایەن AI خەرجی کراوە، تەنها بۆ بەرهەم دانە.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients: 'ناوی مینوو و موادەکان، بە لەوانەیە 2 پیتەکان لە ئینگلیزی',
   noAiDietDataTips:
     'هیچ مەنۆوێکی بەربەست نیە، ئێمە دەست بە نوێکردنەوەی زۆرتر دەکەین لەدوای، تکایە چاوەڕوان بێنە~',
 }

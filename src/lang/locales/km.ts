@@ -484,7 +484,7 @@ export default {
   commentSuccessful: 'មតិយោបល់ទទួលបានជោគជ័យ',
   commentFailed: 'មតិយោបល់បានបរាជ័យ',
   AiDietTips: 'រូបមន្តនេះត្រូវបានបង្កើតដោយអេអាយអេហើយគឺសម្រាប់តែឯកសារយោងប៉ុណ្ណោះ។',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients: 'រូបមន្តឈ្មោះនិងគ្រឿងផ្សំយ៉ាងហោចណាស់ 2 តួអក្សរជាភាសាអង់គ្លេស',
   noAiDietDataTips:
     'មិនមានរូបមន្តដែលទាក់ទងទេយើងនឹងធ្វើបច្ចុប្បន្នភាពបន្ថែមទៀតនាពេលអនាគតដូច្នេះសូមរង់ចាំ~',
 }

@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Фæрæздæ бæрæггæнæнтæ энтыстджынæй!',
   commentFailed: 'Фæрæздæ бæрæггæнæнтæ йæххæрзон!',
   AiDietTips: 'И гӕрман рецепт AI-ом гыдзуджо, гӕлгӕм ахтыр зы гыфтир.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'Рецептты номхыгъд и ингредиенттæ, аанглисаг къæвзаг иууылдæр мæкæнтæ 2 иууылдæр.',
   noAiDietDataTips: 'Ӕхтыр-гӕм рецепт не, мылдӕ ары зы ахтыр гыфтир ду, ӕхтыр дӕрсигӕн!',
 }

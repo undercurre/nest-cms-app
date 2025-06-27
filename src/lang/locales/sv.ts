@@ -484,7 +484,7 @@ export default {
   commentSuccessful: 'Kommentar framgångsrik',
   commentFailed: 'Kommentar misslyckades',
   AiDietTips: 'Detta recept genereras av AI och är endast för referens.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients: 'Receptnamn och ingredienser, minst 2 tecken på engelska',
   noAiDietDataTips:
     'Det finns inga relaterade recept, vi kommer att uppdatera mer i framtiden, så håll dig uppdaterad~',
 }

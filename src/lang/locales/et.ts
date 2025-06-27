@@ -484,7 +484,8 @@ export default {
   commentSuccessful: 'Kommentaar edukas',
   commentFailed: 'Kommentaar ebaõnnestus',
   AiDietTips: 'Selle retsepti genereerib AI ja on ainult viitamiseks.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'Retsepti nimi ja koostisosad, vähemalt 2 tähemärki inglise keeles',
   noAiDietDataTips:
     'No hay recetas relacionadas, actualizaremos más en el futuro, así que estad atentos~',
 }

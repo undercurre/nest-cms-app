@@ -484,7 +484,8 @@ export default {
   commentSuccessful: 'Komentar berhasil',
   commentFailed: 'Komentar gagal',
   AiDietTips: 'Resep ini dihasilkan oleh AI dan hanya untuk referensi.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'Nama dan bahan resep, setidaknya 2 karakter dalam bahasa Inggris',
   noAiDietDataTips:
     'Tidak ada resep terkait, kami akan memperbarui lebih banyak di masa depan, jadi tetaplah disini~',
 }

@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Ubusobanuro bwabyaye neza',
   commentFailed: 'Ubusobanuro bwarangije',
   AiDietTips: 'Recepti iyi itekelezwa na AI, ni bidiwa tu kutumia kama mfano.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'Izina ry’ibikubiyemwo n’ibyo byakoreshejwe, ibitegereza byose by’Ikinyaruganda, ibintu byinshi ibiri',
   noAiDietDataTips: 'Hakuna recepti zinazohusiana, tutakusanyia zaidi baadaye, subiri na tamani!',
 }

@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Comentário enviado com sucesso',
   commentFailed: 'Falha ao enviar comentário',
   AiDietTips: 'Receita iyi iya AI, só serve pa referência.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'Maanu a mapishi na vinyenzo, vichwa cha Kiingereza vito vitampila 2.',
   noAiDietDataTips: 'Nha receita eka, nha vamos a atualizar mais, só espera!',
 }

@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Kùtɛ̃ à tɛ̃ kɔ̃tɛ̃ kɔ̃lɔ̃ kɔ̃lɔ̃ kɔ̃tɛ̃',
   commentFailed: 'Kùtɛ̃ à tɛ̃ kɔ̃tɛ̃ kɔ̃lɔ̃ kɔ̃lɔ̃ mɔ̃ kɔ̃tɛ̃',
   AiDietTips: 'Ndíŋgɛ mɛ́ndɛ yɛ́ AI xerɛ̃, só kɛ́tɛ̃ tɔ́ndɔ́.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'Ndíŋgɛ mɛ́ndɛ yɛ́ AI xerɛ̃ nɔ́nɔ́, à kɔ̃tɛ̃ à tɛ̃ kɔ̃tɛ̃ à tɛ̃ 2 à kɔ̃tɛ̃ à tɛ̃ kɔ̃tɛ̃ à tɛ̃ angilɛ̃.',
   noAiDietDataTips: 'Nha nenguma ndíŋgɛ mɛ́ndɛ, mɔ́kɔ tɛ́ tɛ́ kɔ́tɔ mɔ́tɔ, só ngó tɔ́kɔ mbó!',
 }

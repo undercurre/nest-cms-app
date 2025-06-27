@@ -484,7 +484,8 @@ export default {
   commentSuccessful: 'ಕಾಮೆಂಟ್ ಯಶಸ್ವಿಯಾಗಿದೆ',
   commentFailed: 'ಕಾಮೆಂಟ್ ವಿಫಲವಾಗಿದೆ',
   AiDietTips: 'ಈ ಪಾಕವಿಧಾನವನ್ನು AI ನಿಂದ ಉತ್ಪಾದಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ಇದು ಉಲ್ಲೇಖಕ್ಕಾಗಿ ಮಾತ್ರ.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'ಪಾಕವಿಧಾನ ಹೆಸರು ಮತ್ತು ಪದಾರ್ಥಗಳು, ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ಕನಿಷ್ಠ 2 ಅಕ್ಷರಗಳು',
   noAiDietDataTips:
     'ಯಾವುದೇ ಸಂಬಂಧಿತ ಪಾಕವಿಧಾನಗಳಿಲ್ಲ, ಭವಿಷ್ಯದಲ್ಲಿ ನಾವು ಹೆಚ್ಚಿನದನ್ನು ನವೀಕರಿಸುತ್ತೇವೆ, ಆದ್ದರಿಂದ ಟ್ಯೂನ್ ಮಾಡಿ~',
 }

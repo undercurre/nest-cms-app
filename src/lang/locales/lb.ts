@@ -484,7 +484,7 @@ export default {
   commentSuccessful: 'Kommentarer',
   commentFailed: 'Kommentar gescheitert',
   AiDietTips: 'Dës Rezept gëtt vum Ai generéiert an ass nëmme fir Referenz.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients: "Rezept Numm an Zutaten, op d'mannst 2 Zeechen op Englesch",
   noAiDietDataTips:
     'Et gi keng verbonne Rezepter, wäerte mir méi an der Zukunft aktualiséieren, da bleiwen et drun~',
 }

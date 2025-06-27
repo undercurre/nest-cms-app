@@ -484,7 +484,8 @@ export default {
   commentSuccessful: 'අදහස් සාර්ථකයි',
   commentFailed: 'අදහස් දැක්වීම අසාර්ථක විය',
   AiDietTips: 'මෙම වට්ටෝරුව AI විසින් ජනනය වන අතර එය යොමු කිරීම සඳහා පමණි.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'ලේඛනය නම සහ අමුද්රව්ය, අවම වශයෙන් ඉංග්රීසි භාෂාවෙන් අක්ෂර 2 ක් වත්',
   noAiDietDataTips:
     'අදාළ වට්ටෝරු නොමැත, අපි අනාගතයේදී තවත් වැඩිදුර යාවත්කාලීන කරන්නෙමු, එබැවින් සුසර කරන්න~',
 }

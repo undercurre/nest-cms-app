@@ -484,7 +484,8 @@ export default {
   commentSuccessful: 'Ọrọìwòye aṣeyọri',
   commentFailed: 'Ọrọìwòye kuna',
   AiDietTips: 'Ohunelo yii ti ipilẹṣẹ nipasẹ AI ati pe o wa fun itọkasi nikan.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'Apejuwe Ohunelo ati awọn eroja, o kere ju awọn ohun kikọ 2 ni Gẹẹsi',
   noAiDietDataTips:
     'Ko si awọn ilana ti o ni ibatan, a yoo ṣe imudojuiwọn diẹ sii ni ọjọ iwaju, nitorinaa duro ni aifọwọyi~',
 }

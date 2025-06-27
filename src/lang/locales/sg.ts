@@ -484,6 +484,6 @@ export default {
   commentSuccessful: 'Bila tema ngani',
   commentFailed: 'Bila tema keke ngani',
   AiDietTips: 'Menu iyi aye AI gendé, tî aye só mbiri kpe.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients: 'Nama menu na kobé, makélé mbari 2 ya motu ngbétè Anglèè',
   noAiDietDataTips: 'Menu aye gbé kpe, a mboka gendé aye mbiri, só aye tî ngbétè!',
 }

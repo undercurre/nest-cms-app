@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Tekele kosala na nzela ya malamu',
   commentFailed: 'Tekele kosala na nzela ya mosu',
   AiDietTips: 'Mbi lísanga bí AI kɔ́tɔ, só ngó mɔ́tɔ mɔ́kɔ.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'Njeŋ bilanga a mituna na biloko ya cuisine, kèrrè 2 angielske buky',
   noAiDietDataTips: 'Té na lísanga bí ngó, mɔ́kɔ tɛ́ tɛ́ kɔ́tɔ mɔ́tɔ, só ngó tɔ́kɔ mbó!',
 }

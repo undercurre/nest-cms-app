@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Onyaka dhi maber',
   commentFailed: 'Onyaka geng',
   AiDietTips: 'Lisolo lino liyalwayo AI, linyalo kanyo konygi.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'Amar gige yore mag loso na gige tedo, achiel 2 otong’o ang’wen piny',
   noAiDietDataTips: 'Te lisolo lino liyie, tayo tayo tiyawuon lino liyie, kaka kaka~',
 }

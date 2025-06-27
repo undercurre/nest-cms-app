@@ -484,7 +484,7 @@ export default {
   commentSuccessful: 'सफल टिप्पणी करें',
   commentFailed: 'टिप्पणी विफल हो गई',
   AiDietTips: 'यह नुस्खा AI द्वारा उत्पन्न होता है और केवल संदर्भ के लिए है।',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients: 'नुस्खा नाम और सामग्री, अंग्रेजी में कम से कम 2 वर्ण',
   noAiDietDataTips:
     'कोई संबंधित व्यंजनों नहीं हैं, हम भविष्य में अधिक अपडेट करेंगे, इसलिए बने रहें~',
 }

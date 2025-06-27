@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'toki e nimi li pona',
   commentFailed: 'toki e nimi li ike',
   AiDietTips: 'soweli ni li lon AI, li lon mute tawa sona.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'o lukin e nimi pi soweli moku en sitelen pi moku. o ken lukin e sitelen mute pi toki Inli li lon lili pi tu.',
   noAiDietDataTips: 'ala soweli ni, mi lon pana e soweli suli tawa pini la, o pali sona.',
 }

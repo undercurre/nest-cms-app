@@ -484,7 +484,7 @@ export default {
   commentSuccessful: 'မှတ်ချက်ပေးပါ',
   commentFailed: 'မှတ်ချက်မအောင်မြင်ပါ',
   AiDietTips: 'ဤစာရွက်ကို AI မှထုတ်လုပ်ပြီးရည်ညွှန်းသည်။',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients: 'စာရွက်အမည်နှင့်ပါဝင်ပစ္စည်းများ, အနည်းဆုံးစာလုံး 2 လုံး',
   noAiDietDataTips:
     'ဆက်စပ်သောချက်ပြုတ်နည်းများမရှိပါ။ ကျွန်ုပ်တို့သည်အနာဂတ်တွင် ပိုမို. အသစ်ပြောင်းမည်,~',
 }

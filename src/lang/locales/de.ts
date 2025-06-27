@@ -484,7 +484,7 @@ export default {
   commentSuccessful: 'Kommentar erfolgreich',
   commentFailed: 'Kommentar fehlgeschlagen',
   AiDietTips: 'Dieses Rezept wird von KI erzeugt und dient nur als Referenz.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients: 'Rezeptname und Zutaten, mindestens 2 Zeichen in Englisch',
   noAiDietDataTips:
     'Es gibt keine verwandten Rezepte, wir werden in Zukunft mehr aktualisieren, also bleiben Sie dran~',
 }

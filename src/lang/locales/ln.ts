@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Mosusu kosala na malamu',
   commentFailed: 'Mosusu kosala na mosu',
   AiDietTips: 'Eno n’kola ebya AI kola, kosala na ntango kosala.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'Amazina g’emmere na ebirungo, okw’okunoonya n’okusinga okungereza abantu ab’okulira atandeka abiri.',
   noAiDietDataTips: 'Tebe na n’kola ebya nzela, tuba kosala na mboka mpe mingi, mbote mokili!',
 }

@@ -484,7 +484,8 @@ export default {
   commentSuccessful: 'Kukoresha amazwi kugira ngo kwishoboye',
   commentFailed: 'Kukoresha amazwi kugira ngo kwishize',
   AiDietTips: 'Iyi resipisi rikoresheje AI kugenera, rishobora gutangira ku buryo bwa ku bumenya.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'Izina ry’ibikubiyemwo n’ibyo byakoreshejwe, inkurikiranyo zose z’Ikinyaruganda, ibintu byinshi ibiri',
   noAiDietDataTips:
     'Nta resipisi zivuguranye, tubashobora guhindura ibindi byiza mu buryo bwa muri nyuma, ongera umerekeze!',
 }

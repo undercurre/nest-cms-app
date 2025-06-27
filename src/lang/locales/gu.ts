@@ -484,6 +484,6 @@ export default {
   commentSuccessful: 'સફળ ટિપ્પણી',
   commentFailed: 'ટિપ્પણી નિષ્ફળ',
   AiDietTips: 'આ રેસીપી એઆઈ દ્વારા પેદા થાય છે અને તે ફક્ત સંદર્ભ માટે છે.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients: 'રેસીપી નામ અને ઘટકો, અંગ્રેજીમાં ઓછામાં ઓછા 2 અક્ષરો',
   noAiDietDataTips: 'ત્યાં કોઈ સંબંધિત વાનગીઓ નથી, અમે ભવિષ્યમાં વધુ અપડેટ કરીશું, તેથી ટ્યુન રહો~',
 }

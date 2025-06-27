@@ -484,6 +484,6 @@ export default {
   commentSuccessful: '댓글을 달성했습니다',
   commentFailed: '댓글이 실패했습니다',
   AiDietTips: '이 레시피는 AI에 의해 생성되며 참조 용입니다.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients: '레시피 이름과 재료, 영어로 된 2 개 이상의 문자',
   noAiDietDataTips: '관련 레시피가없고 앞으로 더 많은 업데이트를 할 것입니다.~',
 }

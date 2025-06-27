@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'tarkan veldar',
   commentFailed: 'tarkan nekdar',
   AiDietTips: 'Heshi kulinar AI-genetika, zhal tasvirlanadi.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'Mbàfàn àtòg á àbàng ìdèm, ndàd nfèr nfèr yàng àfèr nfèr ngā ngā ngā ngā.',
   noAiDietDataTips: "Tegishli retsept yo'q, keyingi yangilanishlar kutilmoqda~",
 }

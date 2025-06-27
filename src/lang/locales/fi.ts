@@ -484,7 +484,7 @@ export default {
   commentSuccessful: 'Kommentoida onnistunut',
   commentFailed: 'Kommentti epäonnistui',
   AiDietTips: 'Tätä reseptiä luodaan AI ja se on vain viite.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients: 'Reseptin nimi ja ainesosat, vähintään 2 merkkiä englanniksi',
   noAiDietDataTips:
     'Muita liittyviä reseptejä ei ole, päivitämme enemmän tulevaisuudessa, joten pysy kuulolla~',
 }

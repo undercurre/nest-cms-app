@@ -484,7 +484,7 @@ export default {
   commentSuccessful: 'Şərh uğurlu',
   commentFailed: 'Şərh uğursuz oldu',
   AiDietTips: 'Bu resept AI tərəfindən yaradılır və yalnız istinad üçündür.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients: 'Resept adı və maddələr, ingilis dilində ən azı 2 simvol',
   noAiDietDataTips:
     'Müvafiq reseptlər yoxdur, gələcəkdə daha çox yeniləyəcəyik, buna görə də qalın~',
 }

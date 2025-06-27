@@ -484,6 +484,6 @@ export default {
   commentSuccessful: 'Komentirajte uspješno',
   commentFailed: 'Komentar nije uspio',
   AiDietTips: 'Ovaj recept generira AI i namijenjen je samo referenci.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients: 'Naziv recepta i sastojci, najmanje 2 znaka na engleskom jeziku',
   noAiDietDataTips: 'Nema povezanih recepata, ažurirat ćemo više u budućnosti, pa budite u tijeku~',
 }

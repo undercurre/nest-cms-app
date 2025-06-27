@@ -484,7 +484,8 @@ export default {
   commentSuccessful: 'نظر موفقیت آمیز',
   commentFailed: 'نظر انجام نشد',
   AiDietTips: 'این دستور العمل توسط AI تولید می شود و فقط برای مرجع است.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'نام و مواد تشکیل دهنده دستور العمل ، حداقل 2 کاراکتر به زبان انگلیسی',
   noAiDietDataTips:
     'هیچ دستور العمل مرتبط وجود ندارد ، ما در آینده بیشتر به روز خواهیم کرد ، بنابراین با ما همراه باشید~',
 }

@@ -484,7 +484,8 @@ export default {
   commentSuccessful: 'Okusambuza kube kyali okuyimbiriza',
   commentFailed: 'Okusambuza kube kyali okulanda',
   AiDietTips: 'Ebirungo byino byagize AI, bira bwo okuganiza.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'Emirongo y’ebirungo na ebikozesebwa, ekigambo kya English kikiro kye mbiri',
   noAiDietDataTips:
     'Tebali ebirungo byino bingibwa, tubabereza okusonyera ebiyebakubakutsa, tebambe!',
 }

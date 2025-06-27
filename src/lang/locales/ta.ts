@@ -484,7 +484,8 @@ export default {
   commentSuccessful: 'கருத்து வெற்றிகரமாக',
   commentFailed: 'கருத்து தோல்வியடைந்தது',
   AiDietTips: 'இந்த செய்முறை AI ஆல் உருவாக்கப்படுகிறது மற்றும் குறிப்புக்கு மட்டுமே.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'செய்முறை பெயர் மற்றும் பொருட்கள், ஆங்கிலத்தில் குறைந்தது 2 எழுத்துக்கள்',
   noAiDietDataTips:
     'தொடர்புடைய சமையல் குறிப்புகள் எதுவும் இல்லை, எதிர்காலத்தில் நாங்கள் அதிகம் புதுப்பிப்போம், எனவே காத்திருங்கள்~',
 }

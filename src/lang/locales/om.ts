@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Fiiriin dhufan dandeessuu',
   commentFailed: 'Fiiriin dhufan jireenyaa',
   AiDietTips: 'Iyi resipisi AI gahaa fiirii jira, qabeenyaa dhaabbataa dha. ',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'Resipisi akka baraa fi maqaa dhiigii, ingilizii akka muraasa 2 kaayyoo',
   noAiDietDataTips: 'Resipisi aangoo jira, biraan biraan kan dhaabbatanii harka akkamnuu. ',
 }

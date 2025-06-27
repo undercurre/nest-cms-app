@@ -484,7 +484,8 @@ export default {
   commentSuccessful: 'Igitekerezo cyatsinze',
   commentFailed: 'Igitekerezo cyatsinzwe',
   AiDietTips: "Iyi resept ikorwa na AI kandi ni iy'amaberewe gusa.",
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'Izina rya resept hamwe nibikoresho, byibuze inyuguti 2 mucyongereza',
   noAiDietDataTips:
     'Nta bisobanuro bifitanye isano, tuzavugurura byinshi mugihe kizaza, bityo rero ukomeze kuba mushya~',
 }

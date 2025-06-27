@@ -484,7 +484,7 @@ export default {
   commentSuccessful: 'Մեկնաբանեք հաջող',
   commentFailed: 'Մեկնաբանությունը ձախողվեց',
   AiDietTips: 'Այս բաղադրատոմսը ստեղծվում է AI-ի կողմից եւ միայն հղման համար է:',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients: 'Բաղադրատոմսը եւ բաղադրատոմսերը, առնվազն 2 նիշ անգլերեն լեզվով',
   noAiDietDataTips:
     'Հետագա բաղադրատոմսեր չկան, ապագայում ավելի շատ կթարմացնենք, ուստի մնացեք լարված~',
 }

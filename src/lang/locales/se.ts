@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Mearrat leat sáhttášan',
   commentFailed: 'Mearrat leat sáhttálaš',
   AiDietTips: 'Ivvut vuolggusid AI lea gearddat, lea mii dálkkán geardda.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'Vuolggus namma ja aines, lea manaiid dán eahppameahcci vuostát lea gosmán 2',
   noAiDietDataTips: 'Leama vuolggus lea guhkku, bihkkálaš mii vuolggusid lea dálkkat, lea gávdji!',
 }

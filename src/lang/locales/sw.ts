@@ -484,7 +484,7 @@ export default {
   commentSuccessful: 'Maoni yamefanikiwa',
   commentFailed: 'Maoni yalishindwa',
   AiDietTips: 'Kichocheo hiki kinatolewa na AI na ni kwa kumbukumbu tu.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients: 'Jina la mapishi na viungo, angalau herufi 2 kwa Kiingereza',
   noAiDietDataTips:
     'Hakuna mapishi yanayohusiana, tutasasisha zaidi katika siku zijazo, kwa hivyo kaa tuned~',
 }

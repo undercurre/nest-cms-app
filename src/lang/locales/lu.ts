@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Mbeso yatafika',
   commentFailed: 'Mbeso teyatafika',
   AiDietTips: 'Lisolo liyi lya menu lya AI yalayi, lya kutemboana peke.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'Amazina ya lisolo na ebirungo, bikonse n’ebitanda-ntanda bya kikilumbu 2.',
   noAiDietDataTips: 'Te na lisolo lya menu libanga, tapangala libanga mpe mu kasi, nana kasi!',
 }

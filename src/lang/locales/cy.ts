@@ -484,7 +484,7 @@ export default {
   commentSuccessful: 'Rhoi sylwadau llwyddiannus',
   commentFailed: 'Methodd y Sylw',
   AiDietTips: 'Cynhyrchir y rysáit hon gan AI ac mae ar gyfer cyfeirio yn unig.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients: 'Enw a chynhwysion rysáit, o leiaf 2 gymeriad yn Saesneg',
   noAiDietDataTips:
     'Nid oes unrhyw ryseitiau cysylltiedig, byddwn yn diweddaru mwy yn y dyfodol, felly cadwch draw~',
 }

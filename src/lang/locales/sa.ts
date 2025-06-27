@@ -484,7 +484,8 @@ export default {
   commentSuccessful: 'टिप्पणी सफलतया सम्पन्ना',
   commentFailed: 'टिप्पणी असफलतया सम्पन्ना',
   AiDietTips: 'एह पाककल्प AI-सृजन्तः सन्ति, केवलम् प्रधानम् भवन्ति।',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'पाककल्पानां नामानि च सामग्री च, किमपि अंग्रेजी वर्णानां किमपि कमत्तमं २ संख्यया भवेत्',
   noAiDietDataTips:
     'संबन्धितानि पाककल्पानि नास्ति, मयाम् पश्चात् अधिकानि अपडेटयिष्यामः, अतः आशान्वेषणीयम्!',
 }

@@ -484,7 +484,8 @@ export default {
   commentSuccessful: 'Matagumpay Na Nai-post ang Komento',
   commentFailed: 'Nabigo ang Pag-post ng Komento',
   AiDietTips: 'Ang recipe na ito ay nabuo ng AI, para lamang sa sanggunian.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'Pangalan ng recipe at mga sangkap, mayroong hindi bababa sa 2 buong Ingles na karakter',
   noAiDietDataTips:
     'Walang kaugnay na recipe, magkakaroon kami ng karagdagang update sa hinaharap, abangan!',
 }

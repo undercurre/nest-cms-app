@@ -484,7 +484,8 @@ export default {
   commentSuccessful: 'Comentează succesul',
   commentFailed: 'Comentariul a eșuat',
   AiDietTips: 'Această rețetă este generată de AI și este doar pentru referință.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'Numele rețetei și ingredientele, cel puțin 2 caractere în engleză',
   noAiDietDataTips:
     'Nu există rețete conexe, vom actualiza mai mult în viitor, așa că rămâneți la curent~',
 }

@@ -484,7 +484,8 @@ export default {
   commentSuccessful: 'Okwu gara nke ọma',
   commentFailed: 'Okwu dara',
   AiDietTips: 'Ebe nri a nyere AI nye, etinyere ka nnukwu ihe aka aka.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'Nkpọgharị aha nri na ihe oriri, ọ dị mkpa ka ọ dị opekata mpe akara asụsụ Bekee abụọ.',
   noAiDietDataTips:
     'Enweghị nri metụtara, anyị ga - eme ngbanwe kariri n’ime oge na - esote, tinye anya!',
 }

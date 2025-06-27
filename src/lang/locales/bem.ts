@@ -484,6 +484,7 @@ export default {
   commentSuccessful: 'Chifupi chatumwa bwino',
   commentFailed: 'Chifupi chatumwa abwino',
   AiDietTips: 'Ichi chishimwa chibyandi AI, chikabwisa tu kuli mubako.',
-  searchForRecipesAndIngredients: 'recipe name and ingredients, at least 2 characters in english',
+  searchForRecipesAndIngredients:
+    'Minkonko yabemba na zokwata, zifupi zifupi zifupa ziwiri zya Chingeleza',
   noAiDietDataTips: 'Pali chishimwa chali pamona, twaipilisha fye fye, tufyeshe!',
 }
