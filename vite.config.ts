@@ -64,8 +64,8 @@ export default defineConfig(({ mode }) => {
         '/kitchen-app-server': {
           // target: 'http://172.27.65.66:20000', // 龙超的本地服务器
           // target: 'http://172.27.64.144:20030', // 刘晴的本地服务器
-          target: 'https://uat-mova-common.mova-tech.com/api', // UAT服务器地址
-          // target: 'https://mova-common.mova-tech.com/api', // 生产服务器
+          // target: 'https://uat-mova-common.mova-tech.com/api', // UAT服务器地址
+          target: 'https://mova-common.mova-tech.com/api', // 生产服务器
           changeOrigin: true, // 是否修改请求的源
           configure: (proxy, options) => {
             proxy.on('proxyReq', (proxyReq, req) => {
@@ -83,8 +83,8 @@ export default defineConfig(({ mode }) => {
         '/mova-device': {
           // target: 'http://172.27.65.66:20000', // 龙超的本地服务器
           // target: 'http://172.27.64.144:20010', // 刘晴的本地服务器
-          target: 'https://uat-mova-common.mova-tech.com/api', // UAT服务器地址
-          // target: 'https://mova-common.mova-tech.com/api', // 生产服务器地址
+          // target: 'https://uat-mova-common.mova-tech.com/api', // UAT服务器地址
+          target: 'https://mova-common.mova-tech.com/api', // 生产服务器地址
           changeOrigin: true, // 修改请求头中的 Host
           // rewrite: (path) => path.replace(/^\/mova-device/, '/device-api'), // 注意！！！刘晴的本地服务器
         },

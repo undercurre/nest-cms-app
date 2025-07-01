@@ -1,10 +1,10 @@
+<!-- eslint-disable vue/block-lang -->
 <!-- eslint-disable @typescript-eslint/no-explicit-any -->
-<script lang="ts" setup>
+<script setup>
 import { getPosterDetail } from '@/api/modules/poster'
 import { useAppStore } from '@/stores/app'
 import { useProductStore } from '@/stores/product'
 import he from 'he'
-import 'https://unpkg.com/marked/marked.min.js'
 import { onBeforeMount, ref } from 'vue'
 import { useRoute } from 'vue-router'
 
@@ -14,22 +14,11 @@ const appStore = useAppStore()
 const route = useRoute()
 const productId = route.params.id // 获取路径参数
 productStore.id = Number(productId || 0)
-appStore.tabbarActive = route.name as string
+appStore.tabbarActive = route.name
 const title = ref('')
 const markdownContent = ref('')
 const valueHtml = ref('')
-onBeforeMount(async () => {
-  const res = await getPosterDetail({
-    id: productStore.posterId,
-  })
-  const { data } = res
-  // 标题
-  title.value = data.title
-  // 内容
-  markdownContent.value = he.decode(data.markdownSource)
-  convertToHtml()
-})
-const marked = (window as any).marked
+const marked = window.marked
 // 自定义 marked 的图片渲染器
 const renderer = new marked.Renderer()
 /**
@@ -48,10 +37,10 @@ function parseDivElements(htmlString) {
   const divs = tempDiv.querySelectorAll('div')
 
   // 存储解析结果
-  const result: any[] = []
+  const result = []
 
   // 遍历每个div元素，提取属性和内容
-  divs.forEach((div: any) => {
+  divs.forEach((div) => {
     result.push({
       style: div.getAttribute('style') || '',
       class: div.getAttribute('class') || '',
@@ -209,6 +198,17 @@ const convertToHtml = () => {
     console.error('转换为HTML时出错:', error)
   }
 }
+onBeforeMount(async () => {
+  const res = await getPosterDetail({
+    id: productStore.posterId,
+  })
+  const { data } = res
+  // 标题
+  title.value = data.title
+  // 内容
+  markdownContent.value = he.decode(data.markdownSource)
+  convertToHtml()
+})
 </script>
 <template>
   <div class="preview-container w-full w-e-text-container" ref="previewRef">
