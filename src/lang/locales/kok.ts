@@ -15,6 +15,7 @@ export default {
   introduction: 'Introduction',
   ingredients: 'Ingredients',
   steps: 'Steps',
+  disclaimer: 'जापसालदारकीचें न्हयकारप',
   searchForRecipes: 'Search Recipes',
   deviceName: 'Device Name',
   deviceModel: 'Device Model',

@@ -15,6 +15,7 @@ export default {
   introduction: 'پېژندنه',
   ingredients: 'عنصرونه',
   steps: 'ګام',
+  disclaimer: 'انکار',
   searchForRecipes: 'د ترکیبونو لټون',
   deviceName: 'د وسیلې نوم',
   deviceModel: 'د وسیلې ماډل',

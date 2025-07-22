@@ -15,6 +15,7 @@ export default {
   introduction: 'Introduktion',
   ingredients: 'Ingredienser',
   steps: 'steg',
+  disclaimer: 'Ansvarsfriskrivning',
   searchForRecipes: 'Sök recept',
   deviceName: 'Enhetsnamn',
   deviceModel: 'Enhetsmodell',

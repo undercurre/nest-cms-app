@@ -15,6 +15,7 @@ export default {
   introduction: 'Kpɔkplɔyiɖeme',
   ingredients: 'Nuɖanuwo',
   steps: 'afɔɖeɖe',
+  disclaimer: 'Dɔlékué',
   searchForRecipes: 'Di Nuɖaɖa Ŋuti Mɔfiamewo',
   deviceName: 'Mɔ̃a ƒe Ŋkɔ',
   deviceModel: 'Mɔ̃a ƒe Kpɔɖeŋu',

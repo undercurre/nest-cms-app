@@ -15,6 +15,7 @@ export default {
   introduction: 'הקדמה',
   ingredients: 'אינהאַלטן',
   steps: 'שריט',
+  disclaimer: 'אָפּזאָג',
   searchForRecipes: 'זוכן רעצעפּטן',
   deviceName: 'מיטל נאָמען',
   deviceModel: 'מיטל מאָדעל',

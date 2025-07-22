@@ -15,6 +15,7 @@ export default {
   introduction: 'Intangiriro',
   ingredients: 'Ibikoresho',
   steps: 'intambwe',
+  disclaimer: 'Kwirega ubwite',
   searchForRecipes: 'Shakisha ibisubizo',
   deviceName: 'Izina ryibikoresho',
   deviceModel: 'Icyitegererezo cyibikoresho',

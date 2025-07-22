@@ -20,6 +20,7 @@ export interface MultiLanguage {
 export interface ProductMultiLanguage extends MultiLanguage {
   productName: string
   description: string
+  disclaimer: string
   manualOssUrl: string
   posterId?: string
 }

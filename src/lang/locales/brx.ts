@@ -15,6 +15,7 @@ export default {
   introduction: 'परिचय',
   ingredients: 'सामग्री',
   steps: 'चरणहरू',
+  disclaimer: 'दावा फुंखारनाय',
   searchForRecipes: 'रेसिपी खोज्नुहोस्',
   deviceName: 'उपकरणको नाम',
   deviceModel: 'उपकरण मोडेल',

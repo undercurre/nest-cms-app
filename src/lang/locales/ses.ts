@@ -15,6 +15,7 @@ export default {
   introduction: 'Introduction',
   ingredients: 'Ingredients',
   steps: 'Steps',
+  disclaimer: 'Daandoloo',
   searchForRecipes: 'Search Recipes',
   deviceName: 'Device Name',
   deviceModel: 'Device Model',

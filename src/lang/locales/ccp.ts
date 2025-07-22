@@ -15,6 +15,7 @@ export default {
   introduction: 'প্রবেশিকা',
   ingredients: 'সামগ্রী',
   steps: 'পদক্ষেপ',
+  disclaimer: 'দাবী পরিহার',
   searchForRecipes: 'রেসিপি खোজা',
   deviceName: 'ডিভাইচৰ নাম',
   deviceModel: 'ডিভাইচৰ মডেল',

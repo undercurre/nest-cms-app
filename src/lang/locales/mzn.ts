@@ -15,6 +15,7 @@ export default {
   introduction: 'معرفی',
   ingredients: 'مواد لازم',
   steps: 'مراحل',
+  disclaimer: 'سلب مسئولیت',
   searchForRecipes: 'جستجوی دستور پخت',
   deviceName: 'نام دستگاه',
   deviceModel: 'مدل دستگاه',

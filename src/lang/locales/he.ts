@@ -15,6 +15,7 @@ export default {
   introduction: 'הקדמה',
   ingredients: 'מרכיבים',
   steps: 'שלבים',
+  disclaimer: 'התנערות מאחריות',
   searchForRecipes: 'חפש מתכונים',
   deviceName: 'שם המכשיר',
   deviceModel: 'דגם המכשיר',

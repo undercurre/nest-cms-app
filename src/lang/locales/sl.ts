@@ -15,6 +15,7 @@ export default {
   introduction: 'Uvod',
   ingredients: 'Sestavine',
   steps: 'korak',
+  disclaimer: 'Opozorilo',
   searchForRecipes: 'Iskanje receptov',
   deviceName: 'Ime naprave',
   deviceModel: 'Model naprave',

@@ -15,6 +15,7 @@ export default {
   introduction: 'Kirish',
   ingredients: 'Ingredientlar',
   steps: 'qadam',
+  disclaimer: "Mas'uliyatni rad etish",
   searchForRecipes: 'Retseptlarni qidirish',
   deviceName: 'Qurilma nomi',
   deviceModel: 'Qurilma modeli',

@@ -15,6 +15,7 @@ export default {
   introduction: 'Introdução',
   ingredients: 'Ingredientes',
   steps: 'Passos',
+  disclaimer: 'Nkịrị na-akpọgharị',
   searchForRecipes: 'Busca receitas',
   deviceName: 'Nome di dispositivo',
   deviceModel: 'Modelo di dispositivo',

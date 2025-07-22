@@ -15,6 +15,7 @@ export default {
   introduction: 'Introduzzjoni',
   ingredients: 'Ingredjenti',
   steps: 'pass',
+  disclaimer: 'Diskarż',
   searchForRecipes: 'Fittex Riċetti',
   deviceName: 'Isem tal-Apparat',
   deviceModel: 'Mudell tal-Apparat',

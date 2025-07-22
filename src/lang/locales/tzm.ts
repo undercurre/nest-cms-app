@@ -15,6 +15,7 @@ export default {
   introduction: 'ⵜⴰⵣⵙⴰⵔⴻⵜ',
   ingredients: 'ⵍⴻⵃⵡⴰⵍ',
   steps: 'ⴰⵙⵓⵔⵉⴼ',
+  disclaimer: 'ⵜⴰⵏⴼⵓⵙⵜ ⵏ ⵓⵎⴰⵏⴽ',
   searchForRecipes: 'ⵏⴰⴷⵉ ⵖⴻⴼ Tislafin',
   deviceName: 'ⵉⵙⴻⵎ ⵏ ⵡⴰⵍⵍⴰⵍ',
   deviceModel: 'ⴰⵎⵣⵓⵏ ⵏ ⵡⴰⵍⵍⴰⵍ',

@@ -15,6 +15,7 @@ export default {
   introduction: 'Innleiðsla',
   ingredients: 'Partar',
   steps: 'fet',
+  disclaimer: 'Ábyrgdarfrágreiðing',
   searchForRecipes: 'Leita eftir uppskriftum',
   deviceName: 'Navn á tóli',
   deviceModel: 'Tólmodell',

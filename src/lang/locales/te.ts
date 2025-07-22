@@ -15,6 +15,7 @@ export default {
   introduction: 'పరిచయం',
   ingredients: 'పదార్థాలు',
   steps: 'అడుగు',
+  disclaimer: 'నిరాకరణ',
   searchForRecipes: 'వంటకాలను శోధించు',
   deviceName: 'పరికర పేరు',
   deviceModel: 'పరికర నమూనా',

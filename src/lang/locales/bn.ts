@@ -15,6 +15,7 @@ export default {
   introduction: 'ভূমিকা',
   ingredients: 'উপকরণ',
   steps: 'ধাপ',
+  disclaimer: 'দায়মুক্তি',
   searchForRecipes: 'রেসিপি অনুসন্ধান করুন',
   deviceName: 'ডিভাইসের নাম',
   deviceModel: 'ডিভাইস মডেল',

@@ -15,6 +15,7 @@ export default {
   introduction: 'Муқаддима',
   ingredients: 'Компонентхо',
   steps: 'қадам',
+  disclaimer: 'Радди масъулият',
   searchForRecipes: 'Рецептҳоро ҷустуҷӯ кунед',
   deviceName: 'Номи дастгоҳ',
   deviceModel: 'Модели дастгоҳ',

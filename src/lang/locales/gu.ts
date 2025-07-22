@@ -15,6 +15,7 @@ export default {
   introduction: 'પરિચય',
   ingredients: 'ઘટકો',
   steps: 'પગલું',
+  disclaimer: 'જવાબદારીનો ઇનકાર',
   searchForRecipes: 'વાનગીઓ શોધો',
   deviceName: 'ઉપકરણનું નામ',
   deviceModel: 'ડિવાઇસ મોડેલ',

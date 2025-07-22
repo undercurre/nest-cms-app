@@ -15,6 +15,7 @@ export default {
   introduction: 'Bevezetés',
   ingredients: 'Hozzávalók',
   steps: 'lépés',
+  disclaimer: 'Felelősségkizárás',
   searchForRecipes: 'Receptek keresése',
   deviceName: 'Eszköz neve',
   deviceModel: 'Eszközmodell',

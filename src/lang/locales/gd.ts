@@ -15,6 +15,7 @@ export default {
   introduction: 'Ro-ràdh',
   ingredients: 'Tàthchuid',
   steps: 'ceum',
+  disclaimer: 'Diùltadh uallach',
   searchForRecipes: 'Lorg reasabaidhean',
   deviceName: 'Ainm an inneil',
   deviceModel: 'Modail an inneil',

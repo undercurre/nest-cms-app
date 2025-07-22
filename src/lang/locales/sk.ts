@@ -15,6 +15,7 @@ export default {
   introduction: 'Úvod',
   ingredients: 'Zloženie',
   steps: 'krok',
+  disclaimer: 'Vylúčenie zodpovednosti',
   searchForRecipes: 'Vyhľadávanie receptov',
   deviceName: 'Názov zariadenia',
   deviceModel: 'Model zariadenia',

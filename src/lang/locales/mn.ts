@@ -15,6 +15,7 @@ export default {
   introduction: 'Танилцуулга',
   ingredients: 'Найрлага',
   steps: 'алхам',
+  disclaimer: 'Хариуцлага хүлээхгүй',
   searchForRecipes: 'Жор хайх',
   deviceName: 'Төхөөрөмжийн нэр',
   deviceModel: 'Төхөөрөмжийн загвар',

@@ -15,6 +15,7 @@ export default {
   introduction: 'Maloba ya ebandeli',
   ingredients: 'Biloko',
   steps: 'etambe',
+  disclaimer: 'Kotíya ntína',
   searchForRecipes: 'Boluka ba Recettes',
   deviceName: 'Kombo ya Esaleli',
   deviceModel: 'Modèle ya Appareil',

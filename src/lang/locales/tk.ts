@@ -15,6 +15,7 @@ export default {
   introduction: 'Giriş',
   ingredients: 'Göz önünde tutulan zatlar',
   steps: 'Ädimler',
+  disclaimer: 'Responsibiliteni ret etmek',
   searchForRecipes: 'Tagamlar gözle',
   deviceName: 'Enjam ady',
   deviceModel: 'Enjam modeli',

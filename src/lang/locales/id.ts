@@ -15,6 +15,7 @@ export default {
   introduction: 'Pengantar',
   ingredients: 'Bahan-bahan',
   steps: 'Langkah-langkah',
+  disclaimer: 'Penyangkalan',
   searchForRecipes: 'Cari Resep',
   deviceName: 'Nama Perangkat',
   deviceModel: 'Model Perangkat',

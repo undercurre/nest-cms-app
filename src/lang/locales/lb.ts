@@ -15,6 +15,7 @@ export default {
   introduction: 'Einféierung',
   ingredients: 'Ingrëssënten',
   steps: 'Schëtten',
+  disclaimer: 'Haftungsausschluss',
   searchForRecipes: 'Rezepthennëseru lëtzecke',
   deviceName: 'Num vum Téchnik',
   deviceModel: 'Modell vum Téchnik',

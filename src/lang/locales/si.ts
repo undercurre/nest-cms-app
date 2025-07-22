@@ -15,6 +15,7 @@ export default {
   introduction: 'හැඳින්වීම',
   ingredients: 'අමුද්රව්ය',
   steps: 'පියවර',
+  disclaimer: 'බැහැර කිරීම',
   searchForRecipes: 'වට්ටෝරු සොයන්න',
   deviceName: 'උපාංගයේ නම',
   deviceModel: 'උපාංග ආකෘතිය',

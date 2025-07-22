@@ -15,6 +15,7 @@ export default {
   introduction: 'Ilisaritsitsineq',
   ingredients: 'Akuutissat',
   steps: 'allorneq',
+  disclaimer: 'Ansaqqissuseqanngitsoq',
   searchForRecipes: 'Ujartuineq Receptit',
   deviceName: 'Atortup Aqqa',
   deviceModel: 'Atortup Modelia',

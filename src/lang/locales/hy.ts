@@ -15,6 +15,7 @@ export default {
   introduction: 'Ներածություն',
   ingredients: 'Բաղադրիչներ',
   steps: 'քայլ',
+  disclaimer: 'Հրաժարում',
   searchForRecipes: 'Որոնել բաղադրատոմսեր',
   deviceName: 'Սարքի անունը',
   deviceModel: 'Սարքի մոդել',

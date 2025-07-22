@@ -15,6 +15,7 @@ export default {
   introduction: 'परिचय',
   ingredients: 'सामग्रीहरू',
   steps: 'चरण',
+  disclaimer: 'अस्वीकरण',
   searchForRecipes: 'खोज व्यञ्जनहरू',
   deviceName: 'उपकरणको नाम',
   deviceModel: 'उपकरण मोडेल',

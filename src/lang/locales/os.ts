@@ -15,6 +15,7 @@ export default {
   introduction: 'Бацæуæн',
   ingredients: 'Ингредиенттæ',
   steps: 'къахдзæф',
+  disclaimer: 'Æххуысæй цæуын',
   searchForRecipes: 'Рецепттæ агурын',
   deviceName: 'Аппараты ном',
   deviceModel: 'Аппараты модель',

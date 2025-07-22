@@ -15,6 +15,7 @@ export default {
   introduction: 'Tene ti tongo nda ni',
   ingredients: 'Kobe',
   steps: 'mbage',
+  disclaimer: 'Kpälë',
   searchForRecipes: 'Gi arecette .',
   deviceName: 'Iri ti appareil',
   deviceModel: 'Modèle ti appareil',

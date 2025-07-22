@@ -15,6 +15,7 @@ export default {
   introduction: 'پێشکەش',
   ingredients: 'پێخاتە',
   steps: 'گەورەکان',
+  disclaimer: 'Berdêlkirin',
   searchForRecipes: 'لگەڕی خواردنەکان',
   deviceName: 'ناوی تجهیز',
   deviceModel: 'مۆدەلی تجهیز',

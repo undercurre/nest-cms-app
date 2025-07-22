@@ -79,6 +79,7 @@ export interface Category {
 export interface Ingredients {
   id: number
   ingredientName: string
+  ingredientImageUrl: string
   quantity: string
   unit: string
 }

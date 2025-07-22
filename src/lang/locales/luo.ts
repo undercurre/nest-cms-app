@@ -15,6 +15,7 @@ export default {
   introduction: 'Yangruok',
   ingredients: 'Gige tedo',
   steps: 'ondam',
+  disclaimer: 'Gik ma ok oyud gi lwet',
   searchForRecipes: 'Many yore mag loso chiemo',
   deviceName: 'Nying masin',
   deviceModel: 'Model mar masin',

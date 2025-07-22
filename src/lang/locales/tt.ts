@@ -15,6 +15,7 @@ export default {
   introduction: 'Кереш сүз',
   ingredients: 'Ингредиентлар',
   steps: 'Адым',
+  disclaimer: 'Җаваплылыктан баш тарту',
   searchForRecipes: 'Рецептларны эзләү',
   deviceName: 'Җайланма исеме',
   deviceModel: 'Җайланма моделе',

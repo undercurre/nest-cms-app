@@ -15,6 +15,7 @@ export default {
   introduction: 'Entwodiksyon',
   ingredients: 'Engredyan',
   steps: 'Etap',
+  disclaimer: 'Avertisman legal',
   searchForRecipes: 'Chèche resèt',
   deviceName: 'Non ekipman',
   deviceModel: 'Modèl ekipman',

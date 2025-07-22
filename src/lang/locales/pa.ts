@@ -15,6 +15,7 @@ export default {
   introduction: 'ਜਾਣ-ਪਛਾਣ',
   ingredients: 'ਸਮੱਗਰੀ',
   steps: 'ਕਦਮ',
+  disclaimer: 'ਅਸਵੀਕਰਨ',
   searchForRecipes: 'ਪਕਵਾਨਾਂ ਦੀ ਖੋਜ ਕਰੋ',
   deviceName: 'ਡਿਵਾਈਸ ਦਾ ਨਾਮ',
   deviceModel: 'ਡਿਵਾਈਸ ਮਾਡਲ',

@@ -15,6 +15,7 @@ export default {
   introduction: 'Sarrera',
   ingredients: 'Osagaiak',
   steps: 'urratsa',
+  disclaimer: 'Legezko oharra',
   searchForRecipes: 'Bilatu errezetak',
   deviceName: 'Gailuaren izena',
   deviceModel: 'Gailuaren modeloa',

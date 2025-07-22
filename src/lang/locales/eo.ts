@@ -15,6 +15,7 @@ export default {
   introduction: 'Enkonduko',
   ingredients: 'Ingrediencoj',
   steps: 'paŝo',
+  disclaimer: 'Malgarantio',
   searchForRecipes: 'Serĉi Receptojn',
   deviceName: 'Aparata Nomo',
   deviceModel: 'Aparata Modelo',

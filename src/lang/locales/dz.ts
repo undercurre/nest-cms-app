@@ -15,6 +15,7 @@ export default {
   introduction: 'ངོ་སྤྲོད',
   ingredients: 'རྫས༌སྦྱོར',
   steps: 'རིམ༌པ༌',
+  disclaimer: 'འགན་སྲུང་མི་འཇུག་པ',
   searchForRecipes: 'བཞེས་སྒོའི་རིགས་འཚོལ་ཞིབ་འབད།',
   deviceName: 'ཐབས་འཕྲུལ་གྱི་མིང་།',
   deviceModel: 'ཐབས་འཕྲུལ་དཔེ་ཚད།',

@@ -15,6 +15,7 @@ export default {
   introduction: 'Hoʻolauna',
   ingredients: 'Nā mea hoʻohui',
   steps: 'ʻanuʻu',
+  disclaimer: 'Palapala hoʻokuʻu kuleana',
   searchForRecipes: 'Huli i nā meaʻai',
   deviceName: 'Inoa Mea Hana',
   deviceModel: 'Ke Ana Hoʻohālike',

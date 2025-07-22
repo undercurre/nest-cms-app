@@ -15,6 +15,7 @@ export default {
   introduction: 'შესავალი',
   ingredients: 'ინგრედიენტები',
   steps: 'ნაბიჯი',
+  disclaimer: 'პასუხისმგებლობის შეზღუდვა',
   searchForRecipes: 'რეცეპტების ძიება',
   deviceName: 'მოწყობილობის სახელი',
   deviceModel: 'მოწყობილობის მოდელი',

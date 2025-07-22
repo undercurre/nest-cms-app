@@ -15,6 +15,7 @@ export default {
   introduction: 'Introducción',
   ingredients: 'Ingredientes',
   steps: 'Pasos',
+  disclaimer: 'Kutokana na madai',
   searchForRecipes: 'Buscar recetes',
   deviceName: 'Nome del dispositivu',
   deviceModel: 'Modelu del dispositivu',

@@ -15,6 +15,7 @@ export default {
   introduction: 'ಪರಿಚಯ',
   ingredients: 'ಪದಾರ್ಥಗಳು',
   steps: 'ಹೆಜ್ಜೆ',
+  disclaimer: 'ದಾಯಿತ್ಯ ನಿರಾಕರಣೆ',
   searchForRecipes: 'ಪಾಕವಿಧಾನಗಳನ್ನು ಹುಡುಕಿ',
   deviceName: 'ಸಾಧನದ ಹೆಸರು',
   deviceModel: 'ಸಾಧನ ಮಾದರಿ',

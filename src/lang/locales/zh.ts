@@ -15,6 +15,7 @@ export default {
   introduction: '简介',
   ingredients: '食材',
   steps: '步骤',
+  disclaimer: '免责建议',
   searchForRecipes: '搜索食谱',
   deviceName: '设备名称',
   deviceModel: '设备型号',

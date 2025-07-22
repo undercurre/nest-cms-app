@@ -15,6 +15,7 @@ export default {
   introduction: 'Encholo yokhufwala',
   ingredients: 'Ebisole byokhulia',
   steps: 'Amachelo',
+  disclaimer: 'Okhukanja',
   searchForRecipes: 'Khuchela ebiakulia',
   deviceName: 'Erikhana lishindu',
   deviceModel: 'Efano yeshindu',

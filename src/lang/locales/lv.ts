@@ -15,6 +15,7 @@ export default {
   introduction: 'Ievads',
   ingredients: 'Sastāvdaļas',
   steps: 'Soli',
+  disclaimer: 'Atteikšanās',
   searchForRecipes: 'Meklēt receptes',
   deviceName: 'Ierīces nosaukums',
   deviceModel: 'Ierīces modelis',

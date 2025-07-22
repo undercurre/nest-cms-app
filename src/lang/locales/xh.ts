@@ -15,6 +15,7 @@ export default {
   introduction: 'Intshayelelo',
   ingredients: 'Izithako',
   steps: 'inyathelo',
+  disclaimer: 'Isaziso sokungathathi mxholo',
   searchForRecipes: 'Phendla Iiresiphi',
   deviceName: 'Igama Lesixhobo',
   deviceModel: 'Imodeli yesixhobo',

@@ -15,6 +15,7 @@ export default {
   introduction: 'Isingeniso',
   ingredients: 'Izithako',
   steps: 'Izinyathelo',
+  disclaimer: 'Sibhemu',
   searchForRecipes: 'Sesha amaqhinga okupheka',
   deviceName: 'Igama lesisetshenziswa',
   deviceModel: 'Uhlobo lwesetshenziswa',

@@ -15,6 +15,7 @@ export default {
   introduction: '簡介',
   ingredients: '食材',
   steps: '步驟',
+  disclaimer: '免責聲明',
   searchForRecipes: '搜尋食譜',
   deviceName: '設備名稱',
   deviceModel: '設備型號',

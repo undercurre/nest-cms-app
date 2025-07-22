@@ -15,6 +15,7 @@ export default {
   introduction: 'Unuduk̕',
   ingredients: 'Johṛa',
   steps: 'dhap',
+  disclaimer: 'दायित्व अस्वीकार',
   searchForRecipes: 'Recipe ko sendra',
   deviceName: 'Divais ńutum',
   deviceModel: 'Divais model',

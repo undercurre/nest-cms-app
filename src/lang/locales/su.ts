@@ -15,6 +15,7 @@ export default {
   introduction: 'Bubuka',
   ingredients: 'bahan',
   steps: 'léngkah',
+  disclaimer: 'Bantahan',
   searchForRecipes: 'Pilarian Resep',
   deviceName: 'Ngaran alat',
   deviceModel: 'Modél Alat',

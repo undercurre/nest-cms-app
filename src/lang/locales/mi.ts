@@ -15,6 +15,7 @@ export default {
   introduction: 'Kupu Whakataki',
   ingredients: 'Nga kai',
   steps: 'takahanga',
+  disclaimer: 'Whakapāhau',
   searchForRecipes: 'Rapu Recipes',
   deviceName: 'Ingoa Pūrere',
   deviceModel: 'Tauira Pūrere',

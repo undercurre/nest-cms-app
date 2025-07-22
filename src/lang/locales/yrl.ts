@@ -15,6 +15,7 @@ export default {
   introduction: 'Resá',
   ingredients: 'Mbaé',
   steps: 'Mbaé puranga',
+  disclaimer: 'Kano',
   searchForRecipes: 'Tupã resá',
   deviceName: 'Mbaé resá',
   deviceModel: 'Mbaé puranga',

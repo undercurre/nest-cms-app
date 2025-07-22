@@ -15,6 +15,7 @@ export default {
   introduction: 'Introduction',
   ingredients: 'Ingrédients',
   steps: 'Étapes',
+  disclaimer: 'Nkwuputa',
   searchForRecipes: 'Rechercher des recettes',
   deviceName: "Nom de l'appareil",
   deviceModel: "Modèle de l'appareil",

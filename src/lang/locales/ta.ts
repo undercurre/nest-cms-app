@@ -15,6 +15,7 @@ export default {
   introduction: 'அறிமுகம்',
   ingredients: 'பொருட்கள்',
   steps: 'படிகள்',
+  disclaimer: 'பொறுப்புத் துறப்பு',
   searchForRecipes: 'செய்முறைகளை தேடு',
   deviceName: 'சாதன பெயர்',
   deviceModel: 'சாதன மாதிரி',

@@ -15,6 +15,7 @@ export default {
   introduction: 'Вступ',
   ingredients: 'Інгредієнти',
   steps: 'крок',
+  disclaimer: 'Відмова від відповідальності',
   searchForRecipes: 'Пошук рецептів',
   deviceName: 'Назва пристрою',
   deviceModel: 'Модель пристрою',

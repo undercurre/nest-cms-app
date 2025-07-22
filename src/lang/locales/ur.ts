@@ -15,6 +15,7 @@ export default {
   introduction: 'تعارف',
   ingredients: 'اجزاء',
   steps: 'قدم',
+  disclaimer: 'ڈس کلیمر',
   searchForRecipes: 'ترکیبیں تلاش کریں۔',
   deviceName: 'ڈیوائس کا نام',
   deviceModel: 'ڈیوائس ماڈل',

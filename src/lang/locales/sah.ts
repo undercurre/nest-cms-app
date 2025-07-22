@@ -15,6 +15,7 @@ export default {
   introduction: 'Кылгас информация',
   ingredients: 'Аһылык компоненнара',
   steps: 'Ньымалар',
+  disclaimer: 'Эппиэтинэн тахсыы',
   searchForRecipes: 'Рецептары көрдөө',
   deviceName: 'Тэрил тэриллэр ааттара',
   deviceModel: 'Тэрил тэриллэр моделлара',

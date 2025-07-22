@@ -15,6 +15,7 @@ export default {
   introduction: 'Invoering',
   ingredients: 'Ingrediënten',
   steps: 'stap',
+  disclaimer: 'Disclaimer',
   searchForRecipes: 'Zoek recepten',
   deviceName: 'Apparaatnaam',
   deviceModel: 'Apparaatmodel',

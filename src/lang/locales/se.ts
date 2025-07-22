@@ -15,6 +15,7 @@ export default {
   introduction: 'Algovuohta',
   ingredients: 'Aines',
   steps: 'Molsut',
+  disclaimer: 'Ođđasit',
   searchForRecipes: 'Oza recepttaid',
   deviceName: 'Láđđevisttu namma',
   deviceModel: 'Láđđevisttu modell',

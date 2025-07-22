@@ -15,6 +15,7 @@ export default {
   introduction: '導入',
   ingredients: '材料',
   steps: 'ステップ',
+  disclaimer: '免責事項',
   searchForRecipes: 'レシピを検索',
   deviceName: 'デバイス名',
   deviceModel: 'デバイスモデル',

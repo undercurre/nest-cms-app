@@ -15,6 +15,7 @@ export default {
   introduction: 'Giới thiệu',
   ingredients: 'Thành phần',
   steps: 'bước chân',
+  disclaimer: 'Tuyên bố miễn trừ trách nhiệm',
   searchForRecipes: 'Tìm kiếm công thức nấu ăn',
   deviceName: 'Tên thiết bị',
   deviceModel: 'Mô hình thiết bị',

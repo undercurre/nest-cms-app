@@ -15,6 +15,7 @@ export default {
   introduction: 'Ulupapulo',
   ingredients: 'Ifyakunwa',
   steps: 'Inkolo',
+  disclaimer: 'Ukutula responsabili',
   searchForRecipes: 'Ukufwaya ifyakulya',
   deviceName: 'Ishina lyakushisya',
   deviceModel: 'Ubunolo bwakushisya',

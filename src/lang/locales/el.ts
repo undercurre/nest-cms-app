@@ -15,6 +15,7 @@ export default {
   introduction: 'Εισαγωγή',
   ingredients: 'Συστατικά',
   steps: 'βήμα',
+  disclaimer: 'Αποποίηση ευθυνών',
   searchForRecipes: 'Αναζήτηση Συνταγών',
   deviceName: 'Όνομα συσκευής',
   deviceModel: 'Μοντέλο συσκευής',

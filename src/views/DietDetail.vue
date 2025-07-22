@@ -32,17 +32,20 @@
     </div>
     <div class="flex flex-col mt-20px">
       <span class="font-bold text-18px px-10px">{{ $t('ingredients') }}</span>
-      <p
+      <div
         v-for="item in diet?.dietMultiLanguageObj[locale || 'en']?.cookbookIngredientList?.length
           ? diet?.dietMultiLanguageObj[locale || 'en']?.cookbookIngredientList
           : diet?.dietMultiLanguageObj['en']?.cookbookIngredientList"
         :key="item.id"
         class="text-14px my-10px px-10px"
       >
-        {{ item.ingredientName }}{{ item.quantity || item.unit ? '：' : ''
-        }}{{ item.quantity === 'AppropriateAmount' ? $t(`${item.quantity}`) : item.quantity
-        }}{{ item.quantity === 'AppropriateAmount' ? '' : item.unit ? $t(`${item.unit}`) : '' }}
-      </p>
+        <p>
+          {{ item.ingredientName }}{{ item.quantity || item.unit ? '：' : ''
+          }}{{ item.quantity === 'AppropriateAmount' ? $t(`${item.quantity}`) : item.quantity
+          }}{{ item.quantity === 'AppropriateAmount' ? '' : item.unit ? $t(`${item.unit}`) : '' }}
+        </p>
+        <img v-if="item.ingredientImageUrl" class="w-full mt-10px" :src="item.ingredientImageUrl" />
+      </div>
     </div>
     <div
       class="flex flex-col mt-20px"
@@ -101,6 +104,12 @@
         <img v-if="item.imageUrl" class="w-full mt-10px" :src="item.imageUrl" />
       </div>
     </div>
+    <div class="flex flex-col mt-20px" v-if="getI18NDisclaimer()">
+      <span class="font-bold text-18px px-10px">{{ $t('disclaimer') }}</span>
+      <div class="text-14px my-10px px-10px whitespace-pre-wrap">
+        <span>{{ getI18NDisclaimer() }}</span>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -108,6 +117,7 @@
 import { Category, getCategoryList, getDietById, type Diet } from '@/api/modules/diet'
 import { appLang } from '@/lang/app-lang'
 import { useAppStore } from '@/stores/app'
+import { useProductStore } from '@/stores/product'
 import VantTable from 'vant-table'
 import { computed, onBeforeMount, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
@@ -119,6 +129,7 @@ const diet = ref<Diet>()
 
 const { locale, t } = useI18n()
 const appStore = useAppStore()
+const productStore = useProductStore()
 appStore.tabbarActive = route.name as string
 const category = ref<Category[]>([])
 const getCategory = async () => {
@@ -170,6 +181,24 @@ const getI18NDescription = () => {
     diet.value?.dietMultiLanguageObj['en']?.description
   )
 }
+
+const getI18NDisclaimer = () => {
+  if (productStore.productLanguageDtoList.length === 0) {
+    productStore.getProductDetail4Store()
+  }
+
+  const should = productStore.productLanguageDtoList.find(
+    (item) => item.languageCode === locale.value,
+  )
+
+  if (should) {
+    return should.disclaimer
+  } else {
+    return productStore.productLanguageDtoList.find((item) => item.languageCode === 'en')
+      ?.disclaimer
+  }
+}
+
 onBeforeMount(async () => {
   const dietRes = await getDietById({ id: Number(route.params.id as string) })
   diet.value = dietRes.data

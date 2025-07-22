@@ -15,6 +15,7 @@ export default {
   introduction: 'Seensa',
   ingredients: "Mi'a dheedhii",
   steps: 'sadarkaa',
+  disclaimer: 'Hin duubuu',
   searchForRecipes: 'Recipes Barbaadi',
   deviceName: 'Maqaa Meeshaa',
   deviceModel: 'Moodeela Meeshaa',

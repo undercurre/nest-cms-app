@@ -15,6 +15,7 @@ export default {
   introduction: 'Introduçon',
   ingredients: 'Ingredientes',
   steps: 'Pasus',
+  disclaimer: 'Diskonfia',
   searchForRecipes: 'Buska Reseitas',
   deviceName: 'Nomi di Dispozitivu',
   deviceModel: 'Modelu di Dispozitivu',

@@ -15,6 +15,7 @@ export default {
   introduction: 'تونۇشتۇرۇش',
   ingredients: 'تەركىبلەر',
   steps: 'قەدەم',
+  disclaimer: 'مەسئۇلىيەتنى رەت قىلىش',
   searchForRecipes: 'رېتسېپ ئىزدەش',
   deviceName: 'ئۈسكۈنىنىڭ ئىسمى',
   deviceModel: 'ئۈسكۈنە مودېلى',

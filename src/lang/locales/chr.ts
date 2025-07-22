@@ -15,6 +15,7 @@ export default {
   introduction: 'ᎤᎪᏓ ᎠᏕᎶᏆᏍᎩ',
   ingredients: 'ᎠᏓᏅᏖᎯ ᎤᏂᏍᏆᏂᎪᏙᏗ',
   steps: 'ᎤᏍᏗᎢᏍᏗ',
+  disclaimer: 'ᎤᎵᏍᏕᎸᏗ ᏂᎦᏛᏁᎬ',
   searchForRecipes: 'ᎦᏚᎲ ᎠᏓᏅᏖᎯ ᎠᏍᎦᏯᎠᏅᎢᏍᏗ',
   deviceName: 'ᎠᏑᏫᏓ ᎤᏙᏢᏒ',
   deviceModel: 'ᎠᏑᏫᏓ ᎤᏙᏢᏒ ᎤᏙᏢᏒ',

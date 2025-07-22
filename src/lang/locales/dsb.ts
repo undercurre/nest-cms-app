@@ -15,6 +15,7 @@ export default {
   introduction: 'Zastup',
   ingredients: 'Ingrediency',
   steps: 'Kroki',
+  disclaimer: 'Zajimnjene',
   searchForRecipes: 'Recepty pytaś',
   deviceName: 'Mě rěda',
   deviceModel: 'Model rěda',

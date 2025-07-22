@@ -15,6 +15,7 @@ export default {
   introduction: 'आमुख',
   ingredients: 'तत्व',
   steps: 'चरण',
+  disclaimer: 'निराकरणम्',
   searchForRecipes: 'Search Recipes',
   deviceName: 'यन्त्रनाम',
   deviceModel: 'यन्त्रप्रतिरूपम्',

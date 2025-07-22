@@ -15,6 +15,7 @@ export default {
   introduction: 'መግቢያ',
   ingredients: 'ንጥረ ነገሮች',
   steps: 'ደረጃ',
+  disclaimer: 'ኃላፊነት አለመስጠት',
   searchForRecipes: 'የምግብ አዘገጃጀት ይፈልጉ',
   deviceName: 'የመሣሪያ ስም',
   deviceModel: 'የመሳሪያ ሞዴል',

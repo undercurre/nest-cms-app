@@ -15,6 +15,7 @@ export default {
   introduction: 'Introduzion',
   ingredients: 'Ingredients',
   steps: 'pas',
+  disclaimer: 'Dispense',
   searchForRecipes: 'Cirî ricetis',
   deviceName: 'Nome dal dispositîf',
   deviceModel: 'Model dal dispositîf',

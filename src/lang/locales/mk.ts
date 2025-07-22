@@ -15,6 +15,7 @@ export default {
   introduction: 'Вовед',
   ingredients: 'Состојки',
   steps: 'чекор',
+  disclaimer: 'Одрекување од одговорност',
   searchForRecipes: 'Пребарување рецепти',
   deviceName: 'Име на уред',
   deviceModel: 'Модел на уред',

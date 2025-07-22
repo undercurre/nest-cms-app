@@ -15,6 +15,7 @@ export default {
   introduction: 'Ifaara',
   ingredients: 'Awọn eroja',
   steps: 'igbese',
+  disclaimer: 'Ìfòhùntàǹtàn',
   searchForRecipes: 'Wa Ilana',
   deviceName: 'Orukọ ẹrọ',
   deviceModel: 'Awoṣe ẹrọ',

@@ -15,6 +15,7 @@ export default {
   introduction: 'Johdanto',
   ingredients: 'Ainesosat',
   steps: 'askel',
+  disclaimer: 'Vastuuvapauslauseke',
   searchForRecipes: 'Hae reseptejä',
   deviceName: 'Laitteen nimi',
   deviceModel: 'Laitemalli',

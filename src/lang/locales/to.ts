@@ -15,6 +15,7 @@ export default {
   introduction: "Fakafe'iloaki",
   ingredients: 'Meʻa kehekehe ʻoku fefioʻaki ai',
   steps: 'sitepu',
+  disclaimer: 'Fakafoou',
   searchForRecipes: 'Fekumi ki he ngaahi founga kai',
   deviceName: 'Hingoa ʻo e meʻangāué',
   deviceModel: "Sipinga 'o e me'angaue",

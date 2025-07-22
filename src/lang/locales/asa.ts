@@ -15,6 +15,7 @@ export default {
   introduction: 'Utangulizi',
   ingredients: 'Viungo',
   steps: 'Hatua',
+  disclaimer: 'Kutokana na madai',
   searchForRecipes: 'Tafuta mapishi',
   deviceName: 'Jina la kifaa',
   deviceModel: 'Muundo wa kifaa',

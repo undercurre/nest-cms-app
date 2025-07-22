@@ -15,6 +15,7 @@ export default {
   introduction: '소개',
   ingredients: '재료',
   steps: '단계',
+  disclaimer: '면책 조항',
   searchForRecipes: '레시피 검색',
   deviceName: '장치 이름',
   deviceModel: '장치 모델',

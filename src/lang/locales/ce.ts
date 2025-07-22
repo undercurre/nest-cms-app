@@ -15,6 +15,7 @@ export default {
   introduction: 'Чудахар',
   ingredients: 'Ингридиенташ',
   steps: 'ког',
+  disclaimer: 'Жоп цаоьстор',
   searchForRecipes: 'Рецепташ лаха',
   deviceName: 'ГӀирсан цӀе',
   deviceModel: 'ГӀирсан модель',

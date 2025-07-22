@@ -15,6 +15,7 @@ export default {
   introduction: 'Introducere',
   ingredients: 'Ingrediente',
   steps: 'pas',
+  disclaimer: 'Notă de informare',
   searchForRecipes: 'Căutare rețete',
   deviceName: 'Nume dispozitiv',
   deviceModel: 'Modelul dispozitivului',

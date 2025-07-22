@@ -15,6 +15,7 @@ export default {
   introduction: 'Okwanjula',
   ingredients: 'Ebirungo',
   steps: 'eddaala',
+  disclaimer: 'Okukakasa',
   searchForRecipes: "Noonya Enkola z'okufumba",
   deviceName: 'Erinnya ly’Ekyuma',
   deviceModel: 'Omuze gw’Ekyuma',

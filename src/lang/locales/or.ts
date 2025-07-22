@@ -15,6 +15,7 @@ export default {
   introduction: 'Introduction',
   ingredients: 'Ingredients',
   steps: 'Steps',
+  disclaimer: 'ଦାୟିତ୍ୱ ନିରାକରଣ',
   searchForRecipes: 'Search Recipes',
   deviceName: 'Device Name',
   deviceModel: 'Device Model',

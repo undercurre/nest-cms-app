@@ -15,6 +15,7 @@ export default {
   introduction: 'পাতনি',
   ingredients: 'সামগ্ৰীসমূহ',
   steps: 'পদক্ষেপ',
+  disclaimer: 'দায়মুক্তিৰ ঘোষণা',
   searchForRecipes: 'ৰেচিপি সন্ধান কৰক',
   deviceName: 'ডিভাইচৰ নাম',
   deviceModel: 'ডিভাইচ মডেল',

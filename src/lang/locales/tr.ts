@@ -15,6 +15,7 @@ export default {
   introduction: 'giriiş',
   ingredients: 'İçindekiler',
   steps: 'adım',
+  disclaimer: 'Sorumluluk Reddi',
   searchForRecipes: 'Tarifleri Ara',
   deviceName: 'Aygıt Adı',
   deviceModel: 'Cihaz Modeli',

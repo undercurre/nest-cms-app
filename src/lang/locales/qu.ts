@@ -15,6 +15,7 @@ export default {
   introduction: 'Qallariy',
   ingredients: 'Kaqninkuna',
   steps: 'tatki',
+  disclaimer: 'Mananakuy mana chaskisqa',
   searchForRecipes: 'Recetas de búsqueda',
   deviceName: 'Dispositivopa Suti',
   deviceModel: 'Dispositivo Modelo nisqa',

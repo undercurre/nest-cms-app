@@ -15,6 +15,7 @@ export default {
   introduction: 'Кіріспе',
   ingredients: 'Ингредиенттер',
   steps: 'қадам',
+  disclaimer: 'Жауапкершіліктен бас тарту',
   searchForRecipes: 'Рецепттерді іздеу',
   deviceName: 'Құрылғы атауы',
   deviceModel: 'Құрылғы үлгісі',

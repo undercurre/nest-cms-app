@@ -15,6 +15,7 @@ export default {
   introduction: 'Увод',
   ingredients: 'Састојци',
   steps: 'корак',
+  disclaimer: 'Одрицање одговорности',
   searchForRecipes: 'Претражи рецепте',
   deviceName: 'Назив уређаја',
   deviceModel: 'Модел уређаја',

@@ -15,6 +15,7 @@ export default {
   introduction: 'Hordhac',
   ingredients: 'Maaddooyinka',
   steps: 'tallaabo',
+  disclaimer: 'Diidmo',
   searchForRecipes: 'Raadi Recipe',
   deviceName: 'Magaca aaladda',
   deviceModel: 'Qaabka Aaladaha',

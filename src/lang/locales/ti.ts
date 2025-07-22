@@ -15,6 +15,7 @@ export default {
   introduction: 'እተዊ',
   ingredients: 'ኣተሓሕዛ',
   steps: 'መስመራት',
+  disclaimer: 'እምቢልታ',
   searchForRecipes: 'ዋጋዕ ድለ',
   deviceName: 'ስም መሳርያ',
   deviceModel: 'ሞዴል መሳርያ',

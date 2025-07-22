@@ -15,6 +15,7 @@ export default {
   introduction: 'Réamhrá',
   ingredients: 'Comhábhair',
   steps: 'céim',
+  disclaimer: 'Séanadh',
   searchForRecipes: 'Cuardaigh Oidis',
   deviceName: 'Ainm an Ghléis',
   deviceModel: 'Múnla Gléas',

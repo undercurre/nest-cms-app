@@ -15,6 +15,7 @@ export default {
   introduction: 'Wstęp',
   ingredients: 'Składniki',
   steps: 'krok',
+  disclaimer: 'Zastrzeżenie',
   searchForRecipes: 'Wyszukaj przepisy',
   deviceName: 'Nazwa urządzenia',
   deviceModel: 'Model urządzenia',

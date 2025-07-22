@@ -15,6 +15,7 @@ export default {
   introduction: 'pengenalan',
   ingredients: 'bahan-bahan',
   steps: 'langkah',
+  disclaimer: 'Penafian',
   searchForRecipes: 'Cari Resipi',
   deviceName: 'Nama Peranti',
   deviceModel: 'Model Peranti',

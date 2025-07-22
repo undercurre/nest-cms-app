@@ -15,6 +15,7 @@ export default {
   introduction: 'íntródúkshón',
   ingredients: 'íngrédyéns',
   steps: 'étápés',
+  disclaimer: 'Ǹkwɛlɛ̀ ntsɛ̀',
   searchForRecipes: 'sétch fór rísípi',
   deviceName: 'nám ya áwà',
   deviceModel: 'módél ya áwà',

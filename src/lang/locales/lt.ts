@@ -15,6 +15,7 @@ export default {
   introduction: 'Įvadas',
   ingredients: 'Ingredientai',
   steps: 'žingsnis',
+  disclaimer: 'Atsakomybės apribojimas',
   searchForRecipes: 'Ieškoti receptų',
   deviceName: 'Įrenginio pavadinimas',
   deviceModel: 'Įrenginio modelis',

@@ -15,6 +15,7 @@ export default {
   introduction: 'تعارف',
   ingredients: 'عنصر',
   steps: 'قدم',
+  disclaimer: 'انڪار',
   searchForRecipes: 'ترڪيبون ڳوليو',
   deviceName: 'ڊوائيس جو نالو',
   deviceModel: 'ڊوائيس ماڊل',

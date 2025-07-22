@@ -15,6 +15,7 @@ export default {
   introduction: 'Imenyekanisha',
   ingredients: 'Ibirungo',
   steps: 'intambwe',
+  disclaimer: 'Kureka',
   searchForRecipes: 'Gushaka amaresipe',
   deviceName: "Izina ry'igikoresho",
   deviceModel: "Igikoresho c'akarorero",

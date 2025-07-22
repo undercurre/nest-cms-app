@@ -15,6 +15,7 @@ export default {
   introduction: 'Hyrje',
   ingredients: 'Përbërësit',
   steps: 'hap',
+  disclaimer: 'Mohimi',
   searchForRecipes: 'Kërko Receta',
   deviceName: 'Emri i pajisjes',
   deviceModel: 'Modeli i pajisjes',

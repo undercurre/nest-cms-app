@@ -15,6 +15,7 @@ export default {
   introduction: 'Kwanjura',
   ingredients: 'Ebirungo',
   steps: 'eidara',
+  disclaimer: 'Okwekweka omukago',
   searchForRecipes: "Ronda eby'okurya",
   deviceName: "Eiziina ry'ekikwato",
   deviceModel: "Eky'okureeberaho ky'ekikwato",

@@ -15,6 +15,7 @@ export default {
   introduction: 'Inngangur',
   ingredients: 'Innihaldsefni',
   steps: 'skref',
+  disclaimer: 'Fyrirvari',
   searchForRecipes: 'Leita að uppskriftum',
   deviceName: 'Nafn tækis',
   deviceModel: 'Tækigerð',

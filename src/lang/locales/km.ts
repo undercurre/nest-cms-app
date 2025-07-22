@@ -15,6 +15,7 @@ export default {
   introduction: 'សេចក្តីផ្តើម',
   ingredients: 'គ្រឿងផ្សំ',
   steps: 'ជំហាន',
+  disclaimer: 'ការបដិសេធ',
   searchForRecipes: 'ស្វែងរករូបមន្ត',
   deviceName: 'ឈ្មោះឧបករណ៍',
   deviceModel: 'ម៉ូដែលឧបករណ៍',

@@ -15,6 +15,7 @@ export default {
   introduction: 'Eloko ya koyeba',
   ingredients: 'Biloko ya cuisine',
   steps: 'Batape',
+  disclaimer: 'Désengagement',
   searchForRecipes: 'Longa biloko ya cuisine',
   deviceName: 'Kombo ya eloko',
   deviceModel: 'Model ya eloko',

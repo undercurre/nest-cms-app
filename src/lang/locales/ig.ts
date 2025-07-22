@@ -15,6 +15,7 @@ export default {
   introduction: 'Okwu mmalite',
   ingredients: 'Efrata',
   steps: 'nzọụkwụ',
+  disclaimer: 'Nkwuputa',
   searchForRecipes: 'Chọọ Ezi ntụziaka',
   deviceName: 'Aha ngwaọrụ',
   deviceModel: 'Ụdị ngwaọrụ',

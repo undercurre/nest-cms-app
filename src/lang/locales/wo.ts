@@ -15,6 +15,7 @@ export default {
   introduction: 'Duggal',
   ingredients: 'Ay safsafal',
   steps: 'jéego',
+  disclaimer: 'Déni',
   searchForRecipes: 'Seetal rëset',
   deviceName: 'Tur aparey',
   deviceModel: 'Modèlu aparey',

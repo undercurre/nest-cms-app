@@ -15,6 +15,7 @@ export default {
   introduction: 'परिचय',
   ingredients: 'साहित्य',
   steps: 'पाऊल',
+  disclaimer: 'अस्वीकरण',
   searchForRecipes: 'पाककृती शोधा',
   deviceName: 'डिव्हाइसचे नाव',
   deviceModel: 'डिव्हाइस मॉडेल',

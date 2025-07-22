@@ -79,6 +79,7 @@ onBeforeMount(async () => {
   const res = await getProductInfo(Number(productId))
   curProduct.value = { ...res.data, productMultiLanguageObj: {} }
   productStore.productModel = curProduct.value?.productModel
+  productStore.productLanguageDtoList = curProduct.value?.productLanguageDtoList || []
   curProduct.value.productMultiLanguageObj = curProduct.value?.productLanguageDtoList?.reduce(
     (acc, curr) => {
       acc[curr.languageCode] = curr

@@ -15,6 +15,7 @@ export default {
   introduction: 'বিবরণী',
   ingredients: 'বিভাজক',
   steps: 'পদক্ষেপ',
+  disclaimer: 'দায়িত্ব অস্বীকরণ',
   searchForRecipes: 'রেসিপ খোজাৰ',
   deviceName: 'ব্যূটি নাম',
   deviceModel: 'ব্যূটি মডেল',

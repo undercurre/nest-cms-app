@@ -15,6 +15,7 @@ export default {
   introduction: 'Sissejuhatus',
   ingredients: 'Koostisosad',
   steps: 'samm',
+  disclaimer: 'Vastutustõrge',
   searchForRecipes: 'Otsi retsepte',
   deviceName: 'Seadme nimi',
   deviceModel: 'Seadme mudel',

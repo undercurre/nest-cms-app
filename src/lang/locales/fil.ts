@@ -15,6 +15,7 @@ export default {
   introduction: 'Panimula',
   ingredients: 'Mga sangkap',
   steps: 'hakbang',
+  disclaimer: 'Disclaimer',
   searchForRecipes: 'Maghanap ng Mga Recipe',
   deviceName: 'Pangalan ng Device',
   deviceModel: 'Modelo ng Device',

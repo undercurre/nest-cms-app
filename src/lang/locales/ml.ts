@@ -15,6 +15,7 @@ export default {
   introduction: 'ആമുഖം',
   ingredients: 'ചേരുവകൾ',
   steps: 'ഘട്ടം',
+  disclaimer: 'ഇടപാട് നിരാകരണം',
   searchForRecipes: 'പാചകക്കുറിപ്പുകൾ തിരയുക',
   deviceName: 'ഉപകരണത്തിന്റെ പേര്',
   deviceModel: 'ഉപകരണ മോഡൽ',
