@@ -114,11 +114,11 @@ watch(
       <img class="w-full rounded-8px" :src="getUrlConcat(curProduct?.imageOssUrl ?? '')" />
     </div>
     <p class="font-bold text-20px w-full leading-30px py-10px">
-      <span class="mr-8px">{{ curProduct?.productModel.replace(/\[trouver\]|trouver/g, '') }}</span>
+      <!-- <span class="mr-8px">{{ curProduct?.productModel.replace(/\[trouver\]|trouver/g, '') }}</span> -->
       <span>{{ getI18NProductName() }}</span>
     </p>
 
-    <p class="text-#4B5563 pre-line-content">{{ getI18NDescription() }}</p>
+    <p class="text-#4B5563 pre-line-content whitespace-pre-wrap">{{ getI18NDescription() }}</p>
 
     <van-button
       v-if="token"
