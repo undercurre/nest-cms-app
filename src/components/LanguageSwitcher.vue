@@ -20,10 +20,12 @@
 import { useLanguageList } from '@/hooks/useLanguageList'
 import { appLang } from '@/lang/app-lang'
 import { loadLocaleMessages } from '@/lang/locales'
+import { DropdownMenuInstance } from 'vant/lib/dropdown-menu/types'
 import { computed, onMounted, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 const searchKeyword = ref('')
+const menuRef = ref<DropdownMenuInstance | null>(null)
 
 const filteredOptions = computed(() => {
   if (!searchKeyword.value) {
@@ -52,6 +54,7 @@ const changeLanguage = async (e) => {
   localStorage.setItem('locale', locale.value)
   // 手动切换后，页面刷新就取切换的语言
   localStorage.setItem('isManualSwitch', 'true')
+  menuRef.value?.close()
 }
 
 watch(
