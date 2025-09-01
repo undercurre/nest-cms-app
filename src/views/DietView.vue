@@ -91,6 +91,7 @@ const getDiet = async () => {
 }
 
 const getCategory = async (item) => {
+  if (!item) return
   const countryId = await getCurrentCountryCode()
   diet.value = []
   category.value = []

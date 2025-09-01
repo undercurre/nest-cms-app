@@ -53,6 +53,7 @@ const getPageConfigInfo = async () => {
       }
     }
     pageConfig.value = data
+    appStore.setPageConfig(pageConfig.value)
   } catch (error) {
     console.log('error: ', error)
     pageConfig.value = undefined
@@ -130,7 +131,9 @@ const getTab = async () => {
     pageNo: 1,
     pageSize: 9999999,
   })
-  menuList.value = res.data.menuList
+  menuList.value = res.data.menuList.filter((item) => item.path.includes('#'))
+  // 存入appStore
+  appStore.setMenuList(menuList.value)
   menuList.value?.forEach((item) => {
     item.menuMultiLanguageObj = item?.menuLanguageRelationList?.reduce((acc, curr) => {
       acc[curr.languageCode] = { ...curr, menuName: he.decode(curr.menuName) }

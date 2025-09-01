@@ -10,7 +10,7 @@
         :key="item.id"
         :disabled="!item.existCookbook"
       />
-      <van-sidebar-item :title="$t('AiDiet')" :key="'ai-cookbook'" />
+      <van-sidebar-item v-for="extra in extraMenuList" :title="extra.text" :key="extra.source" />
     </van-sidebar>
     <slot />
   </div>
@@ -18,6 +18,7 @@
 <script lang="ts" setup>
 import { getCategoryListByProductModel, type Category } from '@/api/modules/diet'
 import { appLang } from '@/lang/app-lang'
+import { useAppStore } from '@/stores/app'
 import { useProductStore } from '@/stores/product'
 import { onBeforeMount, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
@@ -29,6 +30,17 @@ const active = ref(0)
 const { locale } = useI18n()
 const category = ref<Category[]>([])
 const productStore = useProductStore()
+const appStore = useAppStore()
+
+const extraMenuList = appStore.menuList
+  .filter((item) => appStore.pageConfig?.menuIdList?.includes(item.id) && item.path === '#diet')
+  .map((item) => ({
+    text: item.menuLanguageRelationList.find(
+      (item) => item.languageCode === (appLang[locale.value] ?? locale.value ?? 'en'),
+    )?.menuName,
+    source: item.source,
+  }))
+
 onBeforeMount(async () => {
   const categoryListRes = await getCategoryListByProductModel({
     categoryLevel: 1,
