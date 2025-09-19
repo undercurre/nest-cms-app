@@ -48,11 +48,11 @@ const playVideo = (e: number) => {
 </script>
 
 <template>
-  <div class="flex flex-col justify-around items-center">
-    <van-sticky v-show="guides?.length">
+  <div class="flex flex-col justify-around items-center h-full">
+    <div class="w-full flex justify-center" v-show="guides?.length">
       <VideoPlayerBox :url="videoUrl" />
-    </van-sticky>
-    <VideoList :list="guides" @play="playVideo" />
+    </div>
+    <VideoList class="flex-1 overflow-y-scroll" :list="guides" @play="playVideo" />
     <EmptyData v-if="!guides?.length" />
   </div>
 </template>

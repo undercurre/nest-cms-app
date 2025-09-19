@@ -54,22 +54,31 @@ const getPageConfigInfo = async () => {
     }
     pageConfig.value = data
     appStore.setPageConfig(pageConfig.value)
+    console.log('getPageConfigInfo: ', data)
   } catch (error) {
     console.log('error: ', error)
     pageConfig.value = undefined
   }
 }
 
-const tabList = computed(() => {
-  const selectMenuList = menuList.value.filter((item) =>
+const isHasAIDietTip = computed(() => {
+  const selectMenuList = sourceMenuList.value.filter((item) =>
     pageConfig.value?.menuIdList?.includes(item.id),
+  )
+  return selectMenuList.some((item) => item.id === 8)
+})
+
+const tabList = computed(() => {
+  const selectMenuList = menuList.value.filter(
+    (item) => pageConfig.value?.menuIdList?.includes(item.id) && !item.path.includes('#'),
   )
   const res = selectMenuList.map((item) => {
     const pathSplit = item.path?.split('/')
     const name = pathSplit.length > 1 ? pathSplit?.[1] : ''
     return {
       name: name,
-      icon: item.source,
+      icon: item.type === 'custom' ? item.sourceUrl : item.source,
+      type: item.type,
       path: `${item.path.replace('${id}', productStore.id.toString())}`,
       text:
         item.menuMultiLanguageObj?.[appLang[locale.value] ?? locale.value ?? 'en']?.menuName ??
@@ -126,14 +135,16 @@ const tabList = computed(() => {
   return tabRes
 })
 const menuList = ref<TabItem[]>([])
+const sourceMenuList = ref<TabItem[]>([])
 const getTab = async () => {
   const res = await getMenuList({
     pageNo: 1,
     pageSize: 9999999,
   })
-  menuList.value = res.data.menuList.filter((item) => item.path.includes('#'))
+  menuList.value = res.data.menuList.filter((item) => !item.path.includes('#'))
+  sourceMenuList.value = res.data.menuList
   // 存入appStore
-  appStore.setMenuList(menuList.value)
+  appStore.setMenuList(res.data.menuList)
   menuList.value?.forEach((item) => {
     item.menuMultiLanguageObj = item?.menuLanguageRelationList?.reduce((acc, curr) => {
       acc[curr.languageCode] = { ...curr, menuName: he.decode(curr.menuName) }
@@ -324,7 +335,7 @@ onBeforeMount(() => {
     />
     <LanguageSwitcher v-if="appStore.tabbarActive == 'product' && !isListRoute" />
     <TipIcon v-if="productStore.isHasPoster" />
-    <AIDietTipIcon />
+    <AIDietTipIcon v-if="isHasAIDietTip" />
   </div>
 </template>
 

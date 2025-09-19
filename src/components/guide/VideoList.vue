@@ -92,7 +92,7 @@ function formatDuration(seconds: number) {
 }
 </script>
 <template>
-  <div class="px-12px w-full pb-12px">
+  <div class="px-12px w-full pb-12px h-full">
     <div
       :class="[
         'border',

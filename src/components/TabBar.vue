@@ -12,6 +12,7 @@ const props = withDefaults(
       path: string
       text: string
       hidden: boolean
+      type: string
     }[]
     defaultColor: string
     activeColor: string
@@ -47,14 +48,15 @@ const handleTabClick = (item: {
         }"
         v-if="!item.hidden"
       >
-        <Icon :icon="item.icon" width="16" height="16" />
+        <Icon v-if="item.type !== 'custom'" :icon="item.icon" width="16" height="16" />
+        <img v-if="item.type === 'custom'" :src="item.icon" width="24" height="24" />
         <Icon
           v-if="item.activeIcon && appStore.tabbarActive === item.name"
           :icon="item.activeIcon"
           width="16"
           height="16"
         />
-        <span class="p-t-4px text-center" v-if="appStore.tabbarActive === item.name">{{
+        <span class="p-t-4px text-center font-bold" v-if="appStore.tabbarActive === item.name">{{
           $t(item.text)
         }}</span>
       </li>

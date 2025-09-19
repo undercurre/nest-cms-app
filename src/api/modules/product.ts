@@ -81,7 +81,7 @@ export interface PageConfigMultiLanguage extends MultiLanguage {
 export interface PageConfigEntity {
   id: number
   productIdList: number[]
-  menuIdList: string[]
+  menuIdList: number[]
   pageLanguageRelationList: PageConfigMultiLanguage[]
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   pageConfigMultiLanguageObj?: any
@@ -104,9 +104,11 @@ export interface TabItem {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   menuMultiLanguageObj?: any
   source: string
+  sourceUrl?: string
+  type: string
   path: string
   sort?: number
-  id: string
+  id: number
 }
 export const getMenuList = (params) => {
   return userService.post<
