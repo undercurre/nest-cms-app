@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>语言字段管理工具</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+          'Cantarell', sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f5f5f5;
+        padding: 20px;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        margin-bottom: 20px;
+        color: #2c3e50;
+        text-align: center;
+      }
+      .message {
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+      }
+      .message.info {
+        background-color: #e3f2fd;
+        color: #1976d2;
+      }
+      .message.success {
+        background-color: #e8f5e9;
+        color: #2e7d32;
+      }
+      .message.error {
+        background-color: #ffebee;
+        color: #c62828;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+        color: #424242;
+      }
+      input[type='text'],
+      textarea,
+      select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+      textarea {
+        min-height: 100px;
+        resize: vertical;
+      }
+      .action-buttons {
+        display: flex;
+        gap: 10px;
+        margin-top: 30px;
+      }
+      button {
+        padding: 12px 24px;
+        background-color: #1976d2;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+        transition: background-color 0.2s;
+      }
+      button:hover {
+        background-color: #1565c0;
+      }
+      button.secondary {
+        background-color: #757575;
+      }
+      button.secondary:hover {
+        background-color: #616161;
+      }
+      .key-preview {
+        margin-top: 30px;
+        padding: 20px;
+        background-color: #f5f5f5;
+        border-radius: 4px;
+      }
+      .key-item {
+        margin-bottom: 10px;
+        padding: 10px;
+        background: white;
+        border: 1px solid #e0e0e0;
+        border-radius: 4px;
+      }
+      .key-name {
+        font-weight: 500;
+        color: #1976d2;
+      }
+      .tab-container {
+        margin-bottom: 20px;
+      }
+      .tabs {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #e0e0e0;
+      }
+      .tab {
+        padding: 10px 20px;
+        cursor: pointer;
+        border: none;
+        background: none;
+        font-size: 14px;
+        font-weight: 500;
+        color: #757575;
+        border-bottom: 2px solid transparent;
+        transition: all 0.2s;
+      }
+      .tab.active {
+        color: #1976d2;
+        border-bottom-color: #1976d2;
+      }
+      .tab-content {
+        display: none;
+      }
+      .tab-content.active {
+        display: block;
+      }
+      .language-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+        margin-top: 10px;
+      }
+      .language-item {
+        padding: 8px;
+        border: 1px solid #e0e0e0;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .language-item:hover {
+        background-color: #f5f5f5;
+        border-color: #1976d2;
+      }
+      .language-item.selected {
+        background-color: #e3f2fd;
+        border-color: #1976d2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>语言字段管理工具</h1>
+
+      <!-- 消息提示区域 -->
+      <div id="messageContainer"></div>
+
+      <div class="tab-container">
+        <div class="tabs">
+          <button class="tab active" data-tab="add">新增字段</button>
+          <button class="tab" data-tab="edit">修改字段</button>
+          <button class="tab" data-tab="view">查看现有字段</button>
+        </div>
+
+        <div class="tab-content active" id="tab-add">
+          <form id="addFieldForm" method="POST" action="/add-field">
+            <div class="form-group">
+              <label for="fieldKey">字段键名</label>
+              <input
+                type="text"
+                id="fieldKey"
+                name="fieldKey"
+                placeholder="例如: helloWorld"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="defaultValue">默认值 (用于英语)</label>
+              <input
+                type="text"
+                id="defaultValue"
+                name="defaultValue"
+                placeholder="例如: Hello World"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="languages">选择要更新的语言 (默认所有语言)</label>
+              <div id="languageGrid" class="language-grid">
+                <!-- 语言选择项将通过服务器动态生成 -->
+              </div>
+            </div>
+
+            <div class="action-buttons">
+              <button type="submit">添加字段</button>
+              <button type="button" class="secondary" onclick="toggleAllLanguages()">
+                全选/取消全选
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="tab-content" id="tab-edit">
+          <form id="editFieldForm" method="POST" action="/edit-field">
+            <div class="form-group">
+              <label for="editFieldKey">选择字段</label>
+              <select id="editFieldKey" name="editFieldKey" required>
+                <!-- 字段选项将通过服务器动态生成 -->
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="editLanguages">选择要更新的语言</label>
+              <div id="editLanguageGrid" class="language-grid">
+                <!-- 语言选择项将通过服务器动态生成 -->
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="newValue">新值</label>
+              <textarea
+                rows="3"
+                id="newValue"
+                name="newValue"
+                placeholder="例如: 你好世界"
+                required
+              ></textarea>
+            </div>
+
+            <div class="action-buttons">
+              <button type="submit" id="updateBtn">更新字段</button>
+              <button type="button" class="secondary" onclick="toggleAllEditLanguages()">
+                全选/取消全选
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="tab-content" id="tab-view">
+          <div class="form-group">
+            <label for="filterKey">搜索字段</label>
+            <input type="text" id="filterKey" placeholder="输入关键字搜索" />
+          </div>
+
+          <div class="key-preview">
+            <h3>现有字段列表</h3>
+            <div id="keyList">
+              <!-- 字段列表将通过服务器动态生成 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // 切换标签页
+      document.querySelectorAll('.tab').forEach((tab) => {
+        tab.addEventListener('click', () => {
+          const tabId = tab.getAttribute('data-tab')
+
+          // 移除所有活动状态
+          document.querySelectorAll('.tab').forEach((t) => t.classList.remove('active'))
+          document
+            .querySelectorAll('.tab-content')
+            .forEach((content) => content.classList.remove('active'))
+
+          // 添加活动状态
+          tab.classList.add('active')
+          document.getElementById(`tab-${tabId}`).classList.add('active')
+        })
+      })
+
+      // 语言选择切换
+      document.querySelectorAll('.language-grid').forEach((grid) => {
+        grid.addEventListener('click', (e) => {
+          if (
+            e.target.tagName !== 'INPUT' &&
+            e.target.tagName !== 'LABEL' &&
+            e.target.closest('.language-item')
+          ) {
+            const item = e.target.closest('.language-item')
+            const checkbox = item.querySelector('input[type="checkbox"]')
+            checkbox.checked = !checkbox.checked
+          }
+        })
+      })
+
+      // 全选/取消全选语言
+      function toggleAllLanguages() {
+        const checkboxes = document.querySelectorAll('input[name="languages"]')
+        const isAllChecked = [...checkboxes].every((cb) => cb.checked)
+        checkboxes.forEach((cb) => (cb.checked = !isAllChecked))
+      }
+
+      function toggleAllEditLanguages() {
+        const checkboxes = document.querySelectorAll('input[name="editLanguages"]')
+        const isAllChecked = [...checkboxes].every((cb) => cb.checked)
+        checkboxes.forEach((cb) => (cb.checked = !isAllChecked))
+      }
+
+      // 字段搜索
+      document.getElementById('filterKey')?.addEventListener('input', (e) => {
+        const filter = e.target.value.toLowerCase()
+        const keyList = document.getElementById('keyList')
+        const keyItems = keyList.querySelectorAll('.key-item')
+
+        keyItems.forEach((item) => {
+          const keyName = item.querySelector('.key-name').textContent.toLowerCase()
+          item.style.display = keyName.includes(filter) ? 'block' : 'none'
+        })
+      })
+
+      // 提交更新字段表单
+      document.getElementById('editFieldForm')?.addEventListener('submit', (e) => {
+        e.preventDefault()
+        const formData = new FormData(e.target)
+        // 这里的editLanguages是一个数组，需要转换为字符串
+        const editLanguages = [...formData.getAll('editLanguages')].join(',')
+        formData.set('editLanguages', editLanguages)
+        const updateBtn = document.getElementById('updateBtn')
+        updateBtn.disabled = true
+        updateBtn.textContent = '更新中...'
+
+        fetch('/edit-field', {
+          method: 'POST',
+          body: formData,
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            updateBtn.disabled = false
+            updateBtn.textContent = '更新字段'
+            if (data.success) {
+              console.log('更新成功', 'success')
+            } else {
+              console.log('更新失败：' + data.error, 'error')
+            }
+          })
+          .catch((error) => {
+            updateBtn.disabled = false
+            updateBtn.textContent = '更新字段'
+            console.log('更新失败：' + error.message, 'error')
+          })
+      })
+    </script>
+  </body>
+</html>

@@ -15,7 +15,7 @@ export default {
   introduction: 'ແນະນຳ',
   ingredients: 'ສ່ວນປະກອບ',
   steps: 'ຂັ້ນ​ຕອນ​',
-  disclaimer: 'ຂໍ້ປະຕິເສດຄວາມຮັບຜິດຊອບ',
+  disclaimer: 'ຄຳແນະນຳການແຕ່ງອາຫານ',
   searchForRecipes: 'ຊອກຫາສູດ',
   deviceName: 'ຊື່ອຸປະກອນ',
   deviceModel: 'ຮູບແບບອຸປະກອນ',

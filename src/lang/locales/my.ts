@@ -15,7 +15,7 @@ export default {
   introduction: 'နိဒါန်း',
   ingredients: 'ပါဝင်ပစ္စည်းများ',
   steps: 'အဆင့်',
-  disclaimer: 'တာဝန်မယူကြောင်း ကြေညာချက်',
+  disclaimer: 'ချက်ပြုတ်နည်း',
   searchForRecipes: 'ဟင်းချက်နည်းများကို ရှာဖွေပါ။',
   deviceName: 'စက်အမည်',
   deviceModel: 'စက်ပစ္စည်း မော်ဒယ်',
