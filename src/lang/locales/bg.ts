@@ -15,7 +15,7 @@ export default {
   introduction: 'Въведение',
   ingredients: 'Съставки',
   steps: 'стъпка',
-  disclaimer: 'Отказ от отговорност',
+  disclaimer: 'Съвети за готвене',
   searchForRecipes: 'Търсене на рецепти',
   deviceName: 'Име на устройството',
   deviceModel: 'Модел на устройството',

@@ -15,7 +15,7 @@ export default {
   introduction: 'Паллашу',
   ingredients: 'Ингредиентсем',
   steps: 'утӑм',
-  disclaimer: 'Йĕркеленӳ çукки',
+  disclaimer: 'Çиек советсем',
   searchForRecipes: 'Рецептсем шыраса тупӑр',
   deviceName: 'Устройство ячӗ',
   deviceModel: 'Устройство моделӗ',

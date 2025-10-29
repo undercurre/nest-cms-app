@@ -15,7 +15,7 @@ export default {
   introduction: 'پیشخênیاری',
   ingredients: 'موادەک',
   steps: 'پەیوەندیان',
-  disclaimer: 'ڕەتکردنەوەی بەرپرسیارێتی',
+  disclaimer: 'ڕێنماییەکانی خواردن دروستکردن',
   searchForRecipes: 'ڕێسپیسەک کەشی کردن',
   deviceName: 'ناروو کاتێکا',
   deviceModel: 'نامەسەی کاتێکا',

@@ -15,7 +15,7 @@ export default {
   introduction: 'Nkyerɛmu',
   ingredients: 'Nneɛma a wɔde yɛ',
   steps: 'Nkwan',
-  disclaimer: 'Nkwasoɔ a wɔde bɔ ban',
+  disclaimer: 'usobnwwunɔ',
   searchForRecipes: 'Hwehwɛ aduan',
   deviceName: 'Adeɛ din',
   deviceModel: 'Adeɛ ho nhyehyɛeɛ',

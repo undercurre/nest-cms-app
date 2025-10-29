@@ -15,7 +15,7 @@ export default {
   introduction: 'Pasiuna',
   ingredients: 'Mga sangkap',
   steps: 'lakang',
-  disclaimer: 'Disclaimer',
+  disclaimer: 'Mga Tip sa Pagluto',
   searchForRecipes: 'Pangitaa ang mga Recipe',
   deviceName: 'Ngalan sa Device',
   deviceModel: 'Modelo sa Device',

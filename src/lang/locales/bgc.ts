@@ -15,7 +15,7 @@ export default {
   introduction: 'kufafanua',
   ingredients: 'vitu viutwa',
   steps: 'hatua',
-  disclaimer: 'अस्वीकरण',
+  disclaimer: 'Bgc cooking tips',
   searchForRecipes: 'tafuta jinsi',
   deviceName: 'jina la vifaa',
   deviceModel: 'mdoel wa vifaa',

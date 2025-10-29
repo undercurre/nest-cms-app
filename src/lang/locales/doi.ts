@@ -15,7 +15,7 @@ export default {
   introduction: 'परिचे',
   ingredients: 'समग्गरी',
   steps: 'गैं',
-  disclaimer: 'जिम्मेवारी अस्वीकरण',
+  disclaimer: 'कुकिंग टिप्स',
   searchForRecipes: 'नुस्खे खोजें',
   deviceName: 'डिवाइस दा नाम',
   deviceModel: 'डिवाइस मॉडल',

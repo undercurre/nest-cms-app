@@ -26,6 +26,7 @@ onBeforeMount(async () => {
     pageSize: 9999999,
   })
   guides.value = res.data.guideList
+  console.info(guides.value)
   guides.value.forEach((item) => {
     item.guideMultiLanguageObj = {}
     item.guideMultiLanguageObj = item?.guideLanguageRelationList?.reduce((acc, curr) => {

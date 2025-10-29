@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 import { type Guide } from '@/api/modules/guide'
-import { getUrlConcat } from '@/utils'
 import { Icon } from '@iconify/vue'
-import { ref, watch } from 'vue'
+import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const props = withDefaults(defineProps<{ list: Guide[] }>(), {
   list: () => [],
 })
@@ -14,58 +14,58 @@ const playVideo = (index) => {
   currentIndex.value = index
   emit('play', index)
 }
-const getFirstImg = (url) => {
-  return new Promise((resolve, reject) => {
-    const video = document.createElement('video')
-    try {
-      if (!video) return
-      video.src = url
-      video.addEventListener(
-        'loadedmetadata',
-        () => {
-          if (!video) return
-          console.log('loadedmetadata')
-          video.currentTime = 2
-          const canvas = document.createElement('canvas')
-          video.addEventListener('canplaythrough', () => {
-            console.log('canplaythrough')
-            if (!video) return
-            canvas.width = video.videoWidth
-            canvas.height = video.videoHeight
-            canvas.getContext('2d')?.drawImage(video, 0, 0, canvas.width, canvas.height)
-            resolve(video.duration)
-            video.pause()
-          })
-        },
-        { once: true },
-      )
-    } catch (err) {
-      console.error(err)
-      reject('')
-    }
-  })
-}
+// const getFirstImg = (url) => {
+//   return new Promise((resolve, reject) => {
+//     const video = document.createElement('video')
+//     try {
+//       if (!video) return
+//       video.src = url
+//       video.addEventListener(
+//         'loadedmetadata',
+//         () => {
+//           if (!video) return
+//           console.log('loadedmetadata')
+//           video.currentTime = 2
+//           const canvas = document.createElement('canvas')
+//           video.addEventListener('canplaythrough', () => {
+//             console.log('canplaythrough')
+//             if (!video) return
+//             canvas.width = video.videoWidth
+//             canvas.height = video.videoHeight
+//             canvas.getContext('2d')?.drawImage(video, 0, 0, canvas.width, canvas.height)
+//             resolve(video.duration)
+//             video.pause()
+//           })
+//         },
+//         { once: true },
+//       )
+//     } catch (err) {
+//       console.error(err)
+//       reject('')
+//     }
+//   })
+// }
 
-watch(
-  () => props.list,
-  (newValue) => {
-    // 获取每项视频的时长
-    newValue?.forEach((item) => {
-      getFirstImg(
-        getUrlConcat(
-          item?.guideMultiLanguageObj?.[locale.value]?.videoUrl ??
-            item?.guideMultiLanguageObj?.['en']?.videoUrl,
-        ),
-      ).then((duration) => {
-        if (typeof duration === 'number' && !isNaN(duration)) {
-          item.duration = formatDuration(duration)
-        } else {
-          item.duration = '00:00'
-        }
-      })
-    })
-  },
-)
+// watch(
+//   () => props.list,
+//   (newValue) => {
+//     // 获取每项视频的时长
+//     newValue?.forEach((item) => {
+//       getFirstImg(
+//         getUrlConcat(
+//           item?.guideMultiLanguageObj?.[locale.value]?.videoUrl ??
+//             item?.guideMultiLanguageObj?.['en']?.videoUrl,
+//         ),
+//       ).then((duration) => {
+//         if (typeof duration === 'number' && !isNaN(duration)) {
+//           item.duration = formatDuration(duration)
+//         } else {
+//           item.duration = '00:00'
+//         }
+//       })
+//     })
+//   },
+// )
 
 const getI18NTitle = (item) => {
   return (
@@ -79,17 +79,17 @@ const getI18NDescription = (item) => {
     item?.guideMultiLanguageObj?.['en']?.description
   )
 }
-// 转换视频时间格式
-function formatDuration(seconds: number) {
-  const minute = Math.floor(seconds / 60)
-    .toString()
-    .padStart(2, '0')
-  const second = Math.floor(seconds % 60)
-    .toString()
-    .padStart(2, '0')
+// // 转换视频时间格式
+// function formatDuration(seconds: number) {
+//   const minute = Math.floor(seconds / 60)
+//     .toString()
+//     .padStart(2, '0')
+//   const second = Math.floor(seconds % 60)
+//     .toString()
+//     .padStart(2, '0')
 
-  return minute + ':' + second
-}
+//   return minute + ':' + second
+// }
 </script>
 <template>
   <div class="px-12px w-full pb-12px h-full">

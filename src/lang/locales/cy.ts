@@ -15,7 +15,7 @@ export default {
   introduction: 'Cyflwyniad',
   ingredients: 'Cynhwysion',
   steps: 'cam',
-  disclaimer: 'Ymwadiad',
+  disclaimer: 'Cynghorion Coginio',
   searchForRecipes: 'Chwilio Ryseitiau',
   deviceName: "Enw'r Dyfais",
   deviceModel: 'Model Dyfais',

@@ -15,7 +15,7 @@ export default {
   introduction: 'Zavedení',
   ingredients: 'Ingredience',
   steps: 'krok',
-  disclaimer: 'Vyloučení odpovědnosti',
+  disclaimer: 'Tipy pro vaření',
   searchForRecipes: 'Hledat recepty',
   deviceName: 'Název zařízení',
   deviceModel: 'Model zařízení',

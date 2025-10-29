@@ -15,7 +15,7 @@ export default {
   introduction: 'Daminɛ kuma',
   ingredients: 'Nafɛnw',
   steps: 'etapu',
-  disclaimer: 'Dantigɛli',
+  disclaimer: 'Bamanankan kɔnɔna',
   searchForRecipes: 'Ɲini Recettes (Fɔcogo furakɛcogo) la',
   deviceName: 'Minɛn Tɔgɔ',
   deviceModel: 'Minɛnw ka misali',

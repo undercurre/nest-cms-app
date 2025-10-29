@@ -15,7 +15,7 @@ export default {
   introduction: 'Indledning',
   ingredients: 'Ingredienser',
   steps: 'trin',
-  disclaimer: 'Ansvarsfraskrivelse',
+  disclaimer: 'Madlavningstips',
   searchForRecipes: 'Søg efter opskrifter',
   deviceName: 'Enhedsnavn',
   deviceModel: 'Enhedsmodel',

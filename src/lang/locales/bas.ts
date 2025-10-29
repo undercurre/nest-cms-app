@@ -15,7 +15,7 @@ export default {
   introduction: 'Introdukzioa',
   ingredients: 'Osagaiak',
   steps: 'Urratsak',
-  disclaimer: 'Ŋgàmndàŋ ndàm',
+  disclaimer: 'Consells per a cuinar',
   searchForRecipes: 'Oinarriak Bilatu',
   deviceName: 'Aparatuaren Izena',
   deviceModel: 'Aparatuaren Modeloa',

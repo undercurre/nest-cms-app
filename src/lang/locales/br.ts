@@ -15,7 +15,7 @@ export default {
   introduction: 'Digoradur',
   ingredients: 'Aozennoù',
   steps: 'derez',
-  disclaimer: 'Diwall',
+  disclaimer: 'Kuzul kegin',
   searchForRecipes: 'Klask rekipeoù',
   deviceName: 'Anv an urzhiataer',
   deviceModel: 'Skouer an dafariad',

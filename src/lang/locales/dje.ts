@@ -15,7 +15,7 @@ export default {
   introduction: 'Bayani',
   ingredients: 'Abubuwan da ake amfani da su',
   steps: 'Hanyoyi',
-  disclaimer: 'Daandoloo',
+  disclaimer: 'Tuyaux de cuisine',
   searchForRecipes: 'Bincika Miyan',
   deviceName: 'Suna Awaka',
   deviceModel: 'Samfurin Awaka',

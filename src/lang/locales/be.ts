@@ -15,7 +15,7 @@ export default {
   introduction: 'Уводзіны',
   ingredients: 'Інгрэдыенты',
   steps: 'крок',
-  disclaimer: 'Адмова ад адказнасці',
+  disclaimer: 'Парады па гатаванні',
   searchForRecipes: 'Пошук рэцэптаў',
   deviceName: 'Назва прылады',
   deviceModel: 'Мадэль прылады',

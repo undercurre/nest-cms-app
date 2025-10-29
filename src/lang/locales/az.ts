@@ -15,7 +15,7 @@ export default {
   introduction: 'Giriş',
   ingredients: 'Tərkibi',
   steps: 'addım',
-  disclaimer: 'İmtina',
+  disclaimer: 'Pişirmə məsləhətləri',
   searchForRecipes: 'Reseptləri axtarın',
   deviceName: 'Cihaz Adı',
   deviceModel: 'Cihaz Modeli',
